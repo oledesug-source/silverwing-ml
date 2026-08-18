@@ -1,0 +1,21 @@
+{
+  "dataset_name": "silverwing-sft",
+  "version": "sft-dataset-v1",
+  "config_digest": "ea6c5e90db964347ec4211542e1549f0171431edab5af1a2081179c079841871",
+  "seed": 42,
+  "per_topic": 200,
+  "topics": [
+    "arithmetic",
+    "algebra",
+    "linear_equations",
+    "functions",
+    "differentiation",
+    "integration",
+    "geometry",
+    "probability",
+    "number_theory",
+    "trigonometry"
+  ],
+  "records": 2000,
+  "output_path": "experiments\\sft\\sft-v1.jsonl"
+}

@@ -1,0 +1,12 @@
+{
+  "version": "tokenizer-v1",
+  "algorithm": "byte-level-bpe",
+  "vocab_size": 16384,
+  "special_tokens": [
+    "<|endoftext|>",
+    "<|pad|>",
+    "<|unk|>",
+    "<|bos|>"
+  ],
+  "num_specials": 4
+}

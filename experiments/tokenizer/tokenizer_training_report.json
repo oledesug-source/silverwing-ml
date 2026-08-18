@@ -1,0 +1,20 @@
+{
+  "tokenizer_version": "tokenizer-v1",
+  "vocab_size": 16384,
+  "requested_vocab_size": 16384,
+  "min_frequency": 2,
+  "corpus_dir": "experiments\\corpus",
+  "corpus_split": "train",
+  "corpus_dataset_hash": "c049878033198f7197376e8de93ef94e41a3563e0a53ba4afe8db88efc936445",
+  "corpus_stats": {
+    "documents": 3064,
+    "bytes": 3286929,
+    "symbols": 3286929,
+    "requested_merges": 16124,
+    "produced_merges": 16124,
+    "early_stopped": false
+  },
+  "tokenizer_hash": "22398c052521a4308f9b8f8a07fd7534dd6b15a5b2aa7d047e17ef74a35c472e",
+  "git_commit": "dbccb1f22bf27d483baa9c4df75e69ae02602cfe",
+  "trained_at": "2026-08-16T09:53:54.106287+00:00"
+}

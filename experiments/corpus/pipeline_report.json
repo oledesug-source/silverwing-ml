@@ -1,0 +1,75 @@
+{
+  "config_path": "configs/corpus.yaml",
+  "config_digest": "91a0183b5e480ef9080309d6938e32b6d5279fb5a7613a3650885b4729aa1e99",
+  "git_commit": "3a3e4e07c470fa4ea10c4bc54fdd5a68595af119",
+  "output_dir": "experiments/corpus",
+  "sources": [
+    {
+      "source_id": "math",
+      "path": "experiments\\raw-math",
+      "source_type": "other",
+      "domain": "unknown",
+      "language": "unknown",
+      "kind": "directory"
+    }
+  ],
+  "report": {
+    "started_at": "2026-08-16T08:27:08.999400+00:00",
+    "completed_at": "2026-08-16T08:28:20.988913+00:00",
+    "stages": {
+      "ingested": 3200,
+      "quality_and_language_filter": {
+        "kept": 3200,
+        "dropped": 0
+      },
+      "deduplication": {
+        "kept": 3196,
+        "dropped": 4
+      },
+      "chunking": {
+        "documents": 3196,
+        "chunks": 3196
+      },
+      "contamination": {
+        "kept": 3196,
+        "dropped": 0,
+        "flagged": []
+      }
+    },
+    "manifest": {
+      "dataset_name": "silverwing",
+      "created_at": "2026-08-16T08:28:20.861101+00:00",
+      "splits": {
+        "train": {
+          "records": 3064,
+          "tokens": 813636,
+          "first_content_hash": "739b12ca2c2de0fb16992aa2d1bfc2c01129d20f8398386fcc9f114120f8ffc5",
+          "last_content_hash": "948996200acfbdd718168164fe80ca92c5fde2aef6e45d9a65f24b49492211eb",
+          "shards": [
+            "train.0.jsonl"
+          ]
+        },
+        "validation": {
+          "records": 57,
+          "tokens": 14778,
+          "first_content_hash": "e18b6bbab776b9bff3e77e912e11303f8137aa718010dea5f34a9e9426a3b825",
+          "last_content_hash": "3e2ee8f76ad49fed42a88eea60bae070e5469cabdff8d02495255a479f1fc767",
+          "shards": [
+            "validation.0.jsonl"
+          ]
+        },
+        "test": {
+          "records": 75,
+          "tokens": 20200,
+          "first_content_hash": "af8ad51552bd10509435a3bde5fd3da7af596f268ab6035683fd9225e6b7f410",
+          "last_content_hash": "381fba97a49bba2c724ab4d5dd954aae3024081f37f0ffe72a4ca55adc3850ff",
+          "shards": [
+            "test.0.jsonl"
+          ]
+        }
+      },
+      "shards": [],
+      "dataset_hash": "c049878033198f7197376e8de93ef94e41a3563e0a53ba4afe8db88efc936445"
+    }
+  }
+}
