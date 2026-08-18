@@ -1,0 +1,25 @@
+# ============================================================
+# SILVERWING ML - Mathematics Benchmark (M09)
+# ============================================================
+# This is an independently generated held-out evaluation set. It is not
+# training data. Its release must be checked against the selected corpus.
+
+math_benchmark:
+  version: math-benchmark-v1
+  seed: 20260816
+  items_per_topic: 20
+  topics:
+    - arithmetic
+    - algebra
+    - linear_equations
+    - functions
+    - differentiation
+    - integration
+    - geometry
+    - probability
+    - number_theory
+    - trigonometry
+  output_path: benchmarks/math/math-v1.jsonl
+  corpus_dir: experiments/corpus
+  contamination_ngram: 8
+  contamination_threshold: 0.6

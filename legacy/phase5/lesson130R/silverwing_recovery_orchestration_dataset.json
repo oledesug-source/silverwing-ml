@@ -1,0 +1,70 @@
+{
+    "lesson": "130R",
+    "capability": "self_healing_recovery_orchestration_failure_absorption",
+    "recovery_frame": {
+        "spillover_ratio": 0.35,
+        "failure_threshold": 0.8,
+        "safe_ceiling": 0.7,
+        "playbook": [
+            {
+                "action": "RETRY",
+                "cost": 1.0,
+                "success": 0.6,
+                "recovery": 0.3
+            },
+            {
+                "action": "REDUNDANT_CHANNEL",
+                "cost": 2.0,
+                "success": 0.75,
+                "recovery": 0.45
+            },
+            {
+                "action": "ISOLATE",
+                "cost": 3.0,
+                "success": 0.85,
+                "recovery": 0.55
+            },
+            {
+                "action": "REBUILD",
+                "cost": 4.0,
+                "success": 0.95,
+                "recovery": 0.7
+            },
+            {
+                "action": "QUARANTINE",
+                "cost": 5.0,
+                "success": 1.0,
+                "recovery": 0.9
+            }
+        ]
+    },
+    "base_penetration": {
+        "pattern_001": 0.6872230570864468,
+        "pattern_004": 0.8675800000000001,
+        "pattern_003": 0.7045538541576759,
+        "pattern_006": 0.7528548352010486,
+        "pattern_005": 0.6608088028033707,
+        "pattern_002": 0.5797603153381193
+    },
+    "absorption_capacity": 1.7472191354133386,
+    "breach_failed_set": [
+        "pattern_003",
+        "pattern_004",
+        "pattern_006"
+    ],
+    "breach_recovery": {
+        "pattern_003": "REDUNDANT_CHANNEL",
+        "pattern_004": "REDUNDANT_CHANNEL",
+        "pattern_006": "RETRY"
+    },
+    "breach_residuals": {
+        "pattern_003": 0.55,
+        "pattern_004": 0.50265985,
+        "pattern_006": 0.587548950016477
+    },
+    "absorbed": 1.113073842864205,
+    "root_induced_failures": [
+        "pattern_001"
+    ],
+    "root_recovery_action": "ISOLATE"
+}

@@ -1,0 +1,312 @@
+{
+    "memory_version": "129R.1",
+    "lesson": "129R",
+    "capability": "anomaly_first_adaptive_scheduling_critical_path_defense",
+    "created_at": "2026-08-15T11:25:12.955946",
+    "source_lesson": "128R",
+    "tuned_records": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "risk_score": 0.8048129425657967,
+            "risk_class": "HIGH",
+            "severity": 0.95,
+            "impact": 0.9,
+            "outcome_status": "prevented",
+            "priority": 1
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.7793000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.8,
+            "impact": 0.75,
+            "outcome_status": "not_prevented",
+            "priority": 2
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.7755,
+            "risk_class": "MEDIUM",
+            "severity": 0.82,
+            "impact": 0.62,
+            "outcome_status": "prevented",
+            "priority": 3
+        },
+        {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "origin": "122R_RUNTIME",
+            "risk_score": 0.7619000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.79,
+            "impact": 0.84,
+            "outcome_status": "prevented",
+            "priority": 4
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.75142,
+            "risk_class": "MEDIUM",
+            "severity": 0.85,
+            "impact": 0.8,
+            "outcome_status": "prevented",
+            "priority": 5
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.6184000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.78,
+            "impact": 0.88,
+            "outcome_status": "prevented",
+            "priority": 6
+        }
+    ],
+    "tuned_order": [
+        "pattern_001",
+        "pattern_004",
+        "pattern_003",
+        "pattern_006",
+        "pattern_005",
+        "pattern_002"
+    ],
+    "tuned_plan": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "dependency": null
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_005",
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 4,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY"
+        },
+        {
+            "step": 5,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        },
+        {
+            "step": 6,
+            "pattern_id": "pattern_006",
+            "action": "VALIDATE_ACTUATOR_RESPONSE",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        }
+    ],
+    "policy_frame": [
+        {
+            "policy_id": "P1",
+            "name": "CRITICAL_COVERAGE",
+            "description": "Every HIGH or RISING pattern must be planned."
+        },
+        {
+            "policy_id": "P2",
+            "name": "DEPENDENCY_ORDER",
+            "description": "No step may run before its dependency."
+        },
+        {
+            "policy_id": "P3",
+            "name": "ANCHOR_IMMUTABILITY",
+            "description": "The priority-1 pattern must open the plan."
+        },
+        {
+            "policy_id": "P4",
+            "name": "ACTION_UNIQUENESS",
+            "description": "Every action may appear exactly once."
+        },
+        {
+            "policy_id": "P5",
+            "name": "MITIGATION_CAPACITY",
+            "description": "Rehearsed mean effectiveness must meet the floor."
+        },
+        {
+            "policy_id": "P6",
+            "name": "RESIDUAL_TOLERANCE",
+            "description": "Total residual risk must stay within budget."
+        }
+    ],
+    "critical_set": [
+        "pattern_001",
+        "pattern_004"
+    ],
+    "control_actions": {
+        "pattern_001": "HOLD",
+        "pattern_004": "ESCALATE",
+        "pattern_003": "ESCALATE",
+        "pattern_006": "ESCALATE",
+        "pattern_005": "HOLD",
+        "pattern_002": "HOLD"
+    },
+    "trends": {
+        "pattern_001": "FALLING",
+        "pattern_003": "FALLING",
+        "pattern_005": "FALLING",
+        "pattern_006": "STABLE",
+        "pattern_004": "RISING",
+        "pattern_002": "FALLING"
+    },
+    "baseline_bands": {
+        "pattern_001": 0.06571634271612933,
+        "pattern_004": 0.08040258515625001,
+        "pattern_003": 0.07694651353149423,
+        "pattern_006": 0.07098417332999998,
+        "pattern_005": 0.06752427886612805,
+        "pattern_002": 0.06712661171124998
+    },
+    "dependencies": {
+        "pattern_001": null,
+        "pattern_005": "VALIDATE_EVIDENCE_PROVENANCE",
+        "pattern_002": "VALIDATE_EVIDENCE_PROVENANCE",
+        "pattern_003": "VALIDATE_SCHEMA_CONSISTENCY",
+        "pattern_004": "VALIDATE_SENSOR_ALIGNMENT",
+        "pattern_006": "VALIDATE_SENSOR_ALIGNMENT"
+    },
+    "action_map": {
+        "VALIDATE_EVIDENCE_PROVENANCE": "pattern_001",
+        "VALIDATE_TIMELINE_INTEGRITY": "pattern_005",
+        "VALIDATE_SCHEMA_CONSISTENCY": "pattern_002",
+        "VALIDATE_SENSOR_ALIGNMENT": "pattern_003",
+        "VALIDATE_TELEMETRY_FUSION": "pattern_004",
+        "VALIDATE_ACTUATOR_RESPONSE": "pattern_006"
+    },
+    "anomaly_frame": {
+        "threshold": 0.7,
+        "risk_weight": 0.6,
+        "band_weight": 0.25,
+        "trend_weight": 0.15
+    },
+    "anomaly_scores": {
+        "pattern_001": 0.6872230570864468,
+        "pattern_004": 0.8675800000000001,
+        "pattern_003": 0.7045538541576759,
+        "pattern_006": 0.7528548352010486,
+        "pattern_005": 0.6608088028033707,
+        "pattern_002": 0.5797603153381193
+    },
+    "anomaly_set": [
+        "pattern_003",
+        "pattern_004",
+        "pattern_006"
+    ],
+    "normal_set": [
+        "pattern_001",
+        "pattern_002",
+        "pattern_005"
+    ],
+    "critical_path": {
+        "length": 4,
+        "patterns": [
+            "pattern_001",
+            "pattern_002",
+            "pattern_003",
+            "pattern_004",
+            "pattern_006"
+        ]
+    },
+    "risk_first_schedule": [
+        "pattern_001",
+        "pattern_005",
+        "pattern_002",
+        "pattern_003",
+        "pattern_004",
+        "pattern_006"
+    ],
+    "anomaly_schedule": [
+        "pattern_001",
+        "pattern_002",
+        "pattern_003",
+        "pattern_004",
+        "pattern_006",
+        "pattern_005"
+    ],
+    "positions": {
+        "pattern_001": 0,
+        "pattern_002": 1,
+        "pattern_003": 2,
+        "pattern_004": 3,
+        "pattern_006": 4,
+        "pattern_005": 5
+    },
+    "earliest_feasible": {
+        "pattern_001": 0,
+        "pattern_004": 3,
+        "pattern_003": 2,
+        "pattern_006": 3,
+        "pattern_005": 1,
+        "pattern_002": 1
+    },
+    "defense_tiers": {
+        "pattern_001": "CRITICAL",
+        "pattern_004": "ANOMALY",
+        "pattern_003": "ANOMALY",
+        "pattern_006": "ANOMALY",
+        "pattern_005": "SECONDARY",
+        "pattern_002": "CRITICAL"
+    },
+    "drift": {
+        "pattern": "pattern_005",
+        "trend": "RISING",
+        "scores": {
+            "pattern_001": 0.6872230570864468,
+            "pattern_004": 0.8675800000000001,
+            "pattern_003": 0.7045538541576759,
+            "pattern_006": 0.7528548352010486,
+            "pattern_005": 0.8108088028033708,
+            "pattern_002": 0.5797603153381193
+        },
+        "anomaly_set": [
+            "pattern_003",
+            "pattern_004",
+            "pattern_005",
+            "pattern_006"
+        ],
+        "tiers": {
+            "pattern_001": "CRITICAL",
+            "pattern_004": "ANOMALY",
+            "pattern_003": "ANOMALY",
+            "pattern_006": "ANOMALY",
+            "pattern_005": "ANOMALY",
+            "pattern_002": "CRITICAL"
+        },
+        "schedule": [
+            "pattern_001",
+            "pattern_002",
+            "pattern_003",
+            "pattern_004",
+            "pattern_006",
+            "pattern_005"
+        ]
+    },
+    "verification": {
+        "anomalies_first": true,
+        "earliest_placed": true,
+        "adaptive": true,
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

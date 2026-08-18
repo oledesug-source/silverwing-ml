@@ -1,0 +1,6 @@
+{
+    "lesson": "84R",
+    "capability": "verified_execution_and_replanning",
+    "maximum_steps": 3,
+    "sequence_limit": 256
+}

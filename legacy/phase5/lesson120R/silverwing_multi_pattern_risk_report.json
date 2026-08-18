@@ -1,0 +1,10 @@
+{
+    "lesson": "120R",
+    "memory_version": "120R.8",
+    "pattern_count": 3,
+    "plan_steps": 3,
+    "plan_verified": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

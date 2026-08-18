@@ -1,0 +1,84 @@
+{
+    "lesson": "82R",
+    "capability": "native_tool_aware_learning",
+    "tools": [
+        "calculator",
+        "unit_conversion",
+        "machine_risk"
+    ],
+    "verified_tool_executions": [
+        {
+            "tool": "calculator",
+            "arguments": {
+                "expression": "25 * 8"
+            },
+            "result": {
+                "status": "success",
+                "result": 200.0,
+                "expression": "25 * 8"
+            },
+            "verified": true,
+            "verification": "Calculator result reproduced."
+        },
+        {
+            "tool": "unit_conversion",
+            "arguments": {
+                "value": 3,
+                "from_unit": "hours",
+                "to_unit": "minutes"
+            },
+            "result": {
+                "status": "success",
+                "result": 180.0,
+                "from_unit": "hours",
+                "to_unit": "minutes"
+            },
+            "verified": true,
+            "verification": "Conversion result reproduced."
+        },
+        {
+            "tool": "machine_risk",
+            "arguments": {
+                "temperature": 97,
+                "pressure": 130,
+                "rpm": 2600,
+                "operating_hours": 3500
+            },
+            "result": {
+                "status": "success",
+                "prediction": "WARNING",
+                "confidence": 0.85
+            },
+            "verified": true,
+            "verification": "Risk prediction reproduced."
+        }
+    ],
+    "training_examples": 4,
+    "validation_examples": 2,
+    "sequence_limit": 256,
+    "baseline": {
+        "loss": 5.0112810134887695,
+        "perplexity": 150.09688918712408,
+        "accuracy": 0.017937219730941704,
+        "tokens": 223
+    },
+    "candidate": {
+        "loss": 4.990530967712402,
+        "perplexity": 147.01446270866464,
+        "accuracy": 0.017937219730941704,
+        "tokens": 223
+    },
+    "numerical_health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "parameter_change": {
+        "changed_tensors": 53,
+        "total_absolute_parameter_change": 42.916546158492565
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Tool-aware validation loss improved."
+    }
+}

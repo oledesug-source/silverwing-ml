@@ -1,0 +1,29 @@
+# SILVERWING ML - Combined SFT (basic + reasoning)
+# SFT on combined 3000 examples (2000 basic + 1000 reasoning CoT)
+# Init from cont/best.pt (stronger base).
+
+sft:
+  version: sft-v1-combined
+  model_config_path: configs/model.yaml
+  tokenizer_dir: experiments/tokenizer
+  init_from: experiments/checkpoints/cont/best.pt
+  dataset_path: experiments/sft/sft-v1-combined.jsonl
+  checkpoint_dir: experiments/checkpoints/sft-combined
+  batch_size: 1
+  block_size: 512
+  max_steps: 300
+  warmup_steps: 25
+  lr: 1.0e-4
+  min_lr_ratio: 0.1
+  weight_decay: 0.1
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  grad_clip: 1.0
+  seed: 42
+  log_steps: 10
+  eval_steps: 50
+  eval_examples: 32
+  save_steps: 250
+  eval_fraction: 0.1
+  require_clean_repo: true
+  device: cpu

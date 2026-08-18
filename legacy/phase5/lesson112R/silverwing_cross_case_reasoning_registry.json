@@ -1,0 +1,11 @@
+{
+    "lesson": "112R",
+    "capability": "native_failure_prototype_validation_cross_case_reasoning",
+    "memory_version": "112R.1",
+    "representation_dimension": 14,
+    "case_count": 3,
+    "cross_case_evidence_score": 0.4444444444444445,
+    "diagnostic_confidence": 0.7037037037037037,
+    "contradiction_state": "CONTRADICTORY_CASES_PRESENT",
+    "next": "113R Native Contradiction Resolution + Evidence Arbitration"
+}

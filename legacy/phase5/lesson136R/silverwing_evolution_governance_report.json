@@ -1,0 +1,16 @@
+{
+    "lesson": "136R",
+    "memory_version": "136R.1",
+    "generations_audited": 3,
+    "all_governed": true,
+    "max_boost_delta": 0.03249277326450817,
+    "max_exposure_step": 0.002850361168384552,
+    "boost_bound": 0.05,
+    "exposure_bound": 0.005,
+    "lineage_continuous": true,
+    "final_compliant": true,
+    "protocol_enforced": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

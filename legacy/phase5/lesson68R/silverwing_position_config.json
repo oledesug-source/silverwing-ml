@@ -1,0 +1,10 @@
+{
+    "model": "Silverwing-Position-v1",
+    "dimension": 128,
+    "maximum_sequence_length": 256,
+    "supported_modes": [
+        "learned",
+        "sinusoidal"
+    ],
+    "default_mode": "learned"
+}

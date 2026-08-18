@@ -1,0 +1,47 @@
+{
+    "lesson": "129R",
+    "memory_version": "129R.1",
+    "anomaly_threshold": 0.7,
+    "anomaly_set": [
+        "pattern_003",
+        "pattern_004",
+        "pattern_006"
+    ],
+    "critical_path_length": 4,
+    "critical_patterns": [
+        "pattern_001",
+        "pattern_002",
+        "pattern_003",
+        "pattern_004",
+        "pattern_006"
+    ],
+    "risk_first_schedule": [
+        "pattern_001",
+        "pattern_005",
+        "pattern_002",
+        "pattern_003",
+        "pattern_004",
+        "pattern_006"
+    ],
+    "anomaly_schedule": [
+        "pattern_001",
+        "pattern_002",
+        "pattern_003",
+        "pattern_004",
+        "pattern_006",
+        "pattern_005"
+    ],
+    "defense_tiers": {
+        "pattern_001": "CRITICAL",
+        "pattern_004": "ANOMALY",
+        "pattern_003": "ANOMALY",
+        "pattern_006": "ANOMALY",
+        "pattern_005": "SECONDARY",
+        "pattern_002": "CRITICAL"
+    },
+    "drift_pattern": "pattern_005",
+    "drifted_tier": "ANOMALY",
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

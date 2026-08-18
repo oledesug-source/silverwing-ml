@@ -1,0 +1,292 @@
+{
+    "memory_version": "133R.1",
+    "lesson": "133R",
+    "capability": "end_to_end_self_improving_control_ledger_autonomous_policy_memory",
+    "created_at": "2026-08-15T13:18:38.128168",
+    "source_lessons": [
+        "125R",
+        "126R",
+        "127R",
+        "128R",
+        "129R",
+        "130R",
+        "131R",
+        "132R"
+    ],
+    "genesis_hash": "576fdde124060d5e061139eead901a0a7b4c14145e399600060f621523521074",
+    "ledger": [
+        {
+            "lesson": "125R",
+            "capability": "cross_cycle_risk_trending_adaptive_threshold_tuning",
+            "contribution": {
+                "trends": [
+                    {
+                        "pattern_id": "pattern_001",
+                        "cycle_1_risk": 0.8423129425657967,
+                        "cycle_2_risk": 0.8048129425657967,
+                        "delta": -0.03749999999999998,
+                        "trend": "FALLING"
+                    },
+                    {
+                        "pattern_id": "pattern_003",
+                        "cycle_1_risk": 0.8115,
+                        "cycle_2_risk": 0.7755,
+                        "delta": -0.03600000000000003,
+                        "trend": "FALLING"
+                    },
+                    {
+                        "pattern_id": "pattern_005",
+                        "cycle_1_risk": 0.78142,
+                        "cycle_2_risk": 0.75142,
+                        "delta": -0.030000000000000027,
+                        "trend": "FALLING"
+                    },
+                    {
+                        "pattern_id": "pattern_006",
+                        "cycle_1_risk": 0.7619000000000001,
+                        "cycle_2_risk": 0.7619000000000001,
+                        "delta": 0.0,
+                        "trend": "STABLE"
+                    },
+                    {
+                        "pattern_id": "pattern_004",
+                        "cycle_1_risk": 0.7603,
+                        "cycle_2_risk": 0.7793000000000001,
+                        "delta": 0.019000000000000128,
+                        "trend": "RISING"
+                    },
+                    {
+                        "pattern_id": "pattern_002",
+                        "cycle_1_risk": 0.6559000000000001,
+                        "cycle_2_risk": 0.6184000000000001,
+                        "delta": -0.03750000000000009,
+                        "trend": "FALLING"
+                    }
+                ],
+                "tuned_order": [
+                    "pattern_001",
+                    "pattern_004",
+                    "pattern_003",
+                    "pattern_006",
+                    "pattern_005",
+                    "pattern_002"
+                ]
+            },
+            "prev_hash": "576fdde124060d5e061139eead901a0a7b4c14145e399600060f621523521074",
+            "entry_hash": "d5bab16962ac3437dbe41296ba267e52d7a10485a61ff283abaaf0a189716c72"
+        },
+        {
+            "lesson": "126R",
+            "capability": "preventive_control_loop_governance_policy_rehearsal",
+            "contribution": {
+                "approved_rehearsal": 1.0296515412667768,
+                "residual_budget": 1.1,
+                "critical_set": [
+                    "pattern_001",
+                    "pattern_004"
+                ]
+            },
+            "prev_hash": "d5bab16962ac3437dbe41296ba267e52d7a10485a61ff283abaaf0a189716c72",
+            "entry_hash": "cd16a35f598ca730d1f6347f380c105df906ef18a06a444dee49266a025082ab"
+        },
+        {
+            "lesson": "127R",
+            "capability": "multi_layer_defense_simulation_adaptive_control",
+            "contribution": {
+                "control_actions": {
+                    "pattern_001": "HOLD",
+                    "pattern_004": "ESCALATE",
+                    "pattern_003": "ESCALATE",
+                    "pattern_006": "ESCALATE",
+                    "pattern_005": "HOLD",
+                    "pattern_002": "HOLD"
+                },
+                "baseline_mean_stop_rate": 0.8604507915529602,
+                "controlled_mean_stop_rate": 0.9045346033263203,
+                "penetration_threshold": 0.12
+            },
+            "prev_hash": "cd16a35f598ca730d1f6347f380c105df906ef18a06a444dee49266a025082ab",
+            "entry_hash": "86e89322cf353fdf3598bcd52d7ec447cbb53498950c66463e131b5fdd272ead"
+        },
+        {
+            "lesson": "128R",
+            "capability": "uncertainty_aware_preventive_execution_probabilistic_guardrails",
+            "contribution": {
+                "controlled_gate": [],
+                "guardrail_threshold": 0.18
+            },
+            "prev_hash": "86e89322cf353fdf3598bcd52d7ec447cbb53498950c66463e131b5fdd272ead",
+            "entry_hash": "60ba2ea1f42e75566bcc563bd64545ada57a1e2e75a70f9bc53ebe59ab0f1482"
+        },
+        {
+            "lesson": "129R",
+            "capability": "anomaly_first_adaptive_scheduling_critical_path_defense",
+            "contribution": {
+                "anomaly_schedule": [
+                    "pattern_001",
+                    "pattern_002",
+                    "pattern_003",
+                    "pattern_004",
+                    "pattern_006",
+                    "pattern_005"
+                ],
+                "critical_path": {
+                    "length": 4,
+                    "patterns": [
+                        "pattern_001",
+                        "pattern_002",
+                        "pattern_003",
+                        "pattern_004",
+                        "pattern_006"
+                    ]
+                },
+                "defense_tiers": {
+                    "pattern_001": "CRITICAL",
+                    "pattern_004": "ANOMALY",
+                    "pattern_003": "ANOMALY",
+                    "pattern_006": "ANOMALY",
+                    "pattern_005": "SECONDARY",
+                    "pattern_002": "CRITICAL"
+                },
+                "anomaly_set": [
+                    "pattern_003",
+                    "pattern_004",
+                    "pattern_006"
+                ]
+            },
+            "prev_hash": "60ba2ea1f42e75566bcc563bd64545ada57a1e2e75a70f9bc53ebe59ab0f1482",
+            "entry_hash": "cb5e7946b28fd1766740730866461ad80dc3228bf18f32bd2be9b4e186b5b0a7"
+        },
+        {
+            "lesson": "130R",
+            "capability": "self_healing_recovery_orchestration_failure_absorption",
+            "contribution": {
+                "absorption_capacity": 1.7472191354133386,
+                "absorbed": 1.113073842864205,
+                "recovery_actions": {
+                    "pattern_003": "REDUNDANT_CHANNEL",
+                    "pattern_004": "REDUNDANT_CHANNEL",
+                    "pattern_006": "RETRY"
+                },
+                "root_recovery": "ISOLATE"
+            },
+            "prev_hash": "cb5e7946b28fd1766740730866461ad80dc3228bf18f32bd2be9b4e186b5b0a7",
+            "entry_hash": "c9e7f2c8f4190a5159f78987e20204d87c3dedc6fc03da879bc1f209ca8ed7de"
+        },
+        {
+            "lesson": "131R",
+            "capability": "collective_defense_consolidation_system_resilience_audit",
+            "contribution": {
+                "resilience_score": 1.0,
+                "resilience_grade": "RESILIENT",
+                "collective_exposure": 0.7087968107644436
+            },
+            "prev_hash": "c9e7f2c8f4190a5159f78987e20204d87c3dedc6fc03da879bc1f209ca8ed7de",
+            "entry_hash": "3a576ec7e7ee2db404f946f07145875d1f042590764b775423cc243691721b5e"
+        },
+        {
+            "lesson": "132R",
+            "capability": "autonomous_defense_self_tuning_online_control_refinement",
+            "contribution": {
+                "converged_boost": 1.4809082896716,
+                "static_exposure": 0.11785064320053527,
+                "tuned_exposure": 0.09803454739782567,
+                "exposure_reduction": 0.0198160958027096
+            },
+            "prev_hash": "3a576ec7e7ee2db404f946f07145875d1f042590764b775423cc243691721b5e",
+            "entry_hash": "479eea1f6cd01de04c874fdda315611f7e4df523fe296a08977f15e5253b54c5"
+        }
+    ],
+    "ledger_hash": "479eea1f6cd01de04c874fdda315611f7e4df523fe296a08977f15e5253b54c5",
+    "policy": {
+        "pattern_001": {
+            "trend": "FALLING",
+            "tier": "CRITICAL",
+            "control_action": "HOLD",
+            "schedule_position": 0,
+            "critical": true,
+            "boost": 1.0,
+            "penetration": 0.10710215090658792,
+            "recovery_action": "ISOLATE",
+            "recovery_cost": 3.0,
+            "compliant": true
+        },
+        "pattern_004": {
+            "trend": "RISING",
+            "tier": "ANOMALY",
+            "control_action": "ESCALATE",
+            "schedule_position": 3,
+            "critical": true,
+            "boost": 1.4809082896716,
+            "penetration": 0.12000504327065654,
+            "recovery_action": "REDUNDANT_CHANNEL",
+            "recovery_cost": 2.0,
+            "compliant": true
+        },
+        "pattern_003": {
+            "trend": "FALLING",
+            "tier": "ANOMALY",
+            "control_action": "ESCALATE",
+            "schedule_position": 2,
+            "critical": true,
+            "boost": 1.0,
+            "penetration": 0.08003637784217832,
+            "recovery_action": "REDUNDANT_CHANNEL",
+            "recovery_cost": 2.0,
+            "compliant": true
+        },
+        "pattern_006": {
+            "trend": "STABLE",
+            "tier": "ANOMALY",
+            "control_action": "ESCALATE",
+            "schedule_position": 4,
+            "critical": true,
+            "boost": 1.0,
+            "penetration": 0.053028708701500005,
+            "recovery_action": "RETRY",
+            "recovery_cost": 1.0,
+            "compliant": true
+        },
+        "pattern_005": {
+            "trend": "FALLING",
+            "tier": "SECONDARY",
+            "control_action": "HOLD",
+            "schedule_position": 5,
+            "critical": false,
+            "boost": 1.0,
+            "penetration": 0.11490134647853123,
+            "recovery_action": "NONE",
+            "recovery_cost": 0.0,
+            "compliant": true
+        },
+        "pattern_002": {
+            "trend": "FALLING",
+            "tier": "CRITICAL",
+            "control_action": "HOLD",
+            "schedule_position": 1,
+            "critical": true,
+            "boost": 1.0,
+            "penetration": 0.11313365718750001,
+            "recovery_action": "NONE",
+            "recovery_cost": 0.0,
+            "compliant": true
+        }
+    },
+    "policy_hash": "1cc16f7bb2647d89d0fcc6594c1e8ed8866f8597dc73127f5d76a34b2733f796",
+    "improvement_proof": {
+        "closed_loop_gain": 0.04408381177336007,
+        "resilience_score": 1.0,
+        "resilience_grade": "RESILIENT",
+        "static_exposure": 0.11785064320053527,
+        "tuned_exposure": 0.09803454739782567,
+        "exposure_reduction": 0.0198160958027096,
+        "absorption_capacity": 1.7472191354133386
+    },
+    "verification": {
+        "chain_integrity": true,
+        "policy_complete": true,
+        "all_compliant": true,
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

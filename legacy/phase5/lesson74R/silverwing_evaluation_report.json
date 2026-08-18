@@ -1,0 +1,65 @@
+{
+    "system": "Silverwing",
+    "evaluation_version": "74R",
+    "timestamp": 1786631843.9831707,
+    "model": {
+        "architecture": "Silverwing-Decoder-v1",
+        "parameters": 900864,
+        "vocabulary_size": 300,
+        "layers": 4,
+        "model_dimension": 128,
+        "attention_heads": 8
+    },
+    "checkpoint": {
+        "epoch": 5,
+        "global_step": 35,
+        "training_loss": 4.9826410838535855,
+        "recorded_validation_loss": 5.180940628051758,
+        "best_validation_loss": 5.1872498989105225
+    },
+    "metrics": {
+        "validation_loss": 5.180940628051758,
+        "perplexity": 177.85002305955118,
+        "token_accuracy": 0.0625,
+        "top_k": {
+            "top_1": 0.0625,
+            "top_3": 0.16796875,
+            "top_5": 0.2421875,
+            "top_10": 0.359375
+        },
+        "confidence": {
+            "mean_confidence": 0.011759355198591948,
+            "correct_confidence": 0.013608651235699654,
+            "incorrect_confidence": 0.011636068920294444
+        },
+        "calibration": [
+            {
+                "bin": 0,
+                "lower": 0.0,
+                "upper": 0.1,
+                "count": 256,
+                "confidence": 0.01175935531500727,
+                "accuracy": 0.0625,
+                "gap": 0.05074064468499273
+            }
+        ]
+    },
+    "health": {
+        "nan_parameters": 0,
+        "inf_parameters": 0,
+        "numerically_healthy": true
+    },
+    "comparison": {
+        "status": "improved",
+        "improvement": true,
+        "difference": -0.0063092708587646484
+    },
+    "best_checkpoint_comparison": {
+        "latest_validation_loss": 5.180940628051758,
+        "best_checkpoint_validation_loss": 5.180940628051758,
+        "latest_accuracy": 0.0625,
+        "best_checkpoint_accuracy": 0.0625,
+        "loss_difference": 0.0,
+        "accuracy_difference": 0.0
+    }
+}

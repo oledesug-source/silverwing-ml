@@ -1,0 +1,54 @@
+{
+    "lesson": "89R",
+    "capability": "native_data_analysis_and_sql_reasoning",
+    "domains": [
+        "aggregation",
+        "average",
+        "filtering",
+        "grouping",
+        "join",
+        "null_reasoning",
+        "projection",
+        "sorting"
+    ],
+    "data_task_count": 8,
+    "training_examples": 5,
+    "validation_examples": 3,
+    "sequence_limit": 256,
+    "baseline": {
+        "loss": 4.99036169052124,
+        "perplexity": 146.9895786195709,
+        "accuracy": 0.01639344262295082,
+        "tokens": 305
+    },
+    "candidate": {
+        "loss": 4.982664108276367,
+        "perplexity": 145.86245786676844,
+        "accuracy": 0.019672131147540985,
+        "tokens": 305
+    },
+    "numerical_health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "parameter_change": {
+        "changed_tensors": 53,
+        "total_absolute_parameter_change": 21.763544455636293
+    },
+    "independent_validation": {
+        "passed": true
+    },
+    "sql_validation": {
+        "filter": true,
+        "count": true,
+        "sum": true,
+        "average": true,
+        "join": true,
+        "null_handling": true
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Data-analysis validation loss improved."
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "lesson": "78R",
+    "model": "Silverwing-Decoder-v1",
+    "training_mode": "supervised_instruction_fine_tuning",
+    "response_only_loss": true,
+    "device": "cpu",
+    "baseline": {
+        "loss": 5.365843772888184,
+        "perplexity": 213.97170205452665,
+        "accuracy": 0.0,
+        "supervised_tokens": 187
+    },
+    "candidate": {
+        "loss": 5.038721084594727,
+        "perplexity": 154.27258721766393,
+        "accuracy": 0.058823529411764705,
+        "supervised_tokens": 187
+    },
+    "numerical_health": {
+        "nan_parameters": 0,
+        "inf_parameters": 0,
+        "healthy": true
+    },
+    "parameter_change": {
+        "changed_tensors": 53,
+        "total_absolute_change": 619.6922237798572
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Instruction validation loss improved."
+    }
+}

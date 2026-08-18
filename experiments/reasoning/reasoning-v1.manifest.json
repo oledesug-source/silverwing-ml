@@ -1,0 +1,21 @@
+{
+  "dataset_name": "silverwing-reasoning",
+  "version": "reasoning-dataset-v1",
+  "config_digest": "9dc15b4148ee9dfbae3acac0321eb6d891c680ca0b03b50c7f9f6cf93503440e",
+  "seed": 42,
+  "per_topic": 100,
+  "topics": [
+    "arithmetic",
+    "algebra",
+    "linear_equations",
+    "functions",
+    "differentiation",
+    "integration",
+    "geometry",
+    "probability",
+    "number_theory",
+    "trigonometry"
+  ],
+  "records": 1000,
+  "output_path": "experiments\\reasoning\\reasoning-v1.jsonl"
+}

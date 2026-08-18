@@ -1,0 +1,232 @@
+{
+    "memory_version": "02R.1",
+    "lesson": "02R",
+    "capability": "differentiation_all_possible_outcomes",
+    "created_at": "2026-08-15T13:43:08.276419",
+    "rules": [
+        "power",
+        "constant",
+        "linear",
+        "sum",
+        "constant_multiple",
+        "product",
+        "quotient",
+        "chain"
+    ],
+    "derivative_cases": [
+        {
+            "name": "power",
+            "rule": "power",
+            "formula": "f(x)=x^2 -> f'(x)=2x",
+            "points": [
+                0.5,
+                1.0,
+                2.0
+            ],
+            "values": {
+                "0.5": 1.0,
+                "1.0": 2.0,
+                "2.0": 4.0
+            },
+            "numeric_errors": {
+                "0.5": 1.7755796832830129e-12,
+                "1.0": 2.000177801164682e-12,
+                "2.0": 2.6204816094832495e-11
+            }
+        },
+        {
+            "name": "power_cubic",
+            "rule": "power",
+            "formula": "f(x)=x^3 -> f'(x)=3x^2",
+            "points": [
+                0.5,
+                1.0,
+                2.0
+            ],
+            "values": {
+                "0.5": 0.75,
+                "1.0": 3.0,
+                "2.0": 12.0
+            },
+            "numeric_errors": {
+                "0.5": 9.928224908861694e-11,
+                "1.0": 9.736877970567548e-11,
+                "2.0": 2.1183943488267687e-10
+            }
+        },
+        {
+            "name": "constant",
+            "rule": "constant",
+            "formula": "f(x)=7 -> f'(x)=0",
+            "points": [
+                0.5,
+                1.0,
+                2.0
+            ],
+            "values": {
+                "0.5": 0.0,
+                "1.0": 0.0,
+                "2.0": 0.0
+            },
+            "numeric_errors": {
+                "0.5": 0.0,
+                "1.0": 0.0,
+                "2.0": 0.0
+            }
+        },
+        {
+            "name": "linear",
+            "rule": "linear",
+            "formula": "f(x)=3x+2 -> f'(x)=3",
+            "points": [
+                0.5,
+                1.0,
+                2.0
+            ],
+            "values": {
+                "0.5": 3.0,
+                "1.0": 3.0,
+                "2.0": 3.0
+            },
+            "numeric_errors": {
+                "0.5": 2.475575300309174e-11,
+                "1.0": 1.965316798191452e-11,
+                "2.0": 6.406208896692078e-11
+            }
+        },
+        {
+            "name": "sum",
+            "rule": "sum",
+            "formula": "f(x)=x^3+2x -> f'(x)=3x^2+2",
+            "points": [
+                0.5,
+                1.0,
+                2.0
+            ],
+            "values": {
+                "0.5": 2.75,
+                "1.0": 5.0,
+                "2.0": 14.0
+            },
+            "numeric_errors": {
+                "0.5": 9.573097869974845e-11,
+                "1.0": 9.936940159605001e-11,
+                "2.0": 1.8053292194508685e-10
+            }
+        },
+        {
+            "name": "constant_multiple",
+            "rule": "constant_multiple",
+            "formula": "f(x)=5x^2 -> f'(x)=10x",
+            "points": [
+                0.5,
+                1.0,
+                2.0
+            ],
+            "values": {
+                "0.5": 5.0,
+                "1.0": 10.0,
+                "2.0": 20.0
+            },
+            "numeric_errors": {
+                "0.5": 5.506706202140776e-13,
+                "1.0": 2.1103119252074976e-11,
+                "2.0": 1.3102408047416247e-10
+            }
+        },
+        {
+            "name": "product",
+            "rule": "product",
+            "formula": "f(x)=x*x^2 -> f'(x)=3x^2 (product rule)",
+            "points": [
+                0.5,
+                1.0,
+                2.0
+            ],
+            "values": {
+                "0.5": 0.75,
+                "1.0": 3.0,
+                "2.0": 12.0
+            },
+            "numeric_errors": {
+                "0.5": 9.928224908861694e-11,
+                "1.0": 9.736877970567548e-11,
+                "2.0": 2.1183943488267687e-10
+            }
+        },
+        {
+            "name": "quotient",
+            "rule": "quotient",
+            "formula": "f(x)=x^4/x^2 -> f'(x)=2x (quotient rule)",
+            "points": [
+                0.5,
+                1.0,
+                2.0
+            ],
+            "values": {
+                "0.5": 1.0,
+                "1.0": 2.0,
+                "2.0": 4.0
+            },
+            "numeric_errors": {
+                "0.5": 3.1633584640644585e-12,
+                "1.0": 2.000177801164682e-12,
+                "2.0": 2.6204816094832495e-11
+            }
+        },
+        {
+            "name": "chain",
+            "rule": "chain",
+            "formula": "f(x)=(x^2+1)^2 -> f'(x)=4x^3+4x (chain rule)",
+            "points": [
+                0.5,
+                1.0,
+                2.0
+            ],
+            "values": {
+                "0.5": 2.5,
+                "1.0": 8.0,
+                "2.0": 40.0
+            },
+            "numeric_errors": {
+                "0.5": 2.1621815449179849e-10,
+                "1.0": 3.8547653957721195e-10,
+                "2.0": 9.725908967084251e-10
+            }
+        }
+    ],
+    "critical_cases": [
+        {
+            "name": "local_min",
+            "formula": "f(x)=x^2-4x+3",
+            "critical": 2.0,
+            "kind": "min",
+            "value": -1.0
+        },
+        {
+            "name": "local_max",
+            "formula": "f(x)=-x^2+2x",
+            "critical": 1.0,
+            "kind": "max",
+            "value": 1.0
+        }
+    ],
+    "outcome_classes": {
+        "rule_power": 2,
+        "rule_constant": 1,
+        "rule_linear": 1,
+        "rule_sum": 1,
+        "rule_constant_multiple": 1,
+        "rule_product": 1,
+        "rule_quotient": 1,
+        "rule_chain": 1,
+        "extremum_local_min": 1,
+        "extremum_local_max": 1,
+        "monotonic_increasing": 1,
+        "monotonic_decreasing": 1
+    },
+    "verification": {
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

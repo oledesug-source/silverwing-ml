@@ -1,0 +1,18 @@
+{
+    "lesson": "91R",
+    "capability": "native_machine_learning_foundations",
+    "domains": [
+        "classification",
+        "classification_metric",
+        "dataset",
+        "feature_target",
+        "generalization",
+        "loss",
+        "overfitting",
+        "regression",
+        "regression_metric",
+        "train_validation_test"
+    ],
+    "sequence_limit": 256,
+    "example_count": 10
+}

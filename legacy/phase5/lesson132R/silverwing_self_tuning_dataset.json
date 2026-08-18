@@ -1,0 +1,30 @@
+{
+    "lesson": "132R",
+    "capability": "autonomous_defense_self_tuning_online_control_refinement",
+    "control_frame": {
+        "tolerance": 0.12,
+        "stress_pattern": "pattern_004",
+        "stress_degradation": 0.85,
+        "learning_rate": 0.75,
+        "max_cycles": 8
+    },
+    "static_exposure": 0.11785064320053527,
+    "tuned_exposure": 0.09803454739782567,
+    "exposure_reduction": 0.0198160958027096,
+    "tuned_boosts": {
+        "pattern_001": 1.0,
+        "pattern_004": 1.4809082896716,
+        "pattern_003": 1.0,
+        "pattern_006": 1.0,
+        "pattern_005": 1.0,
+        "pattern_002": 1.0
+    },
+    "converged_penetrations": {
+        "pattern_001": 0.10710215090658792,
+        "pattern_004": 0.12000504327065654,
+        "pattern_003": 0.08003637784217832,
+        "pattern_006": 0.053028708701500005,
+        "pattern_005": 0.11490134647853123,
+        "pattern_002": 0.11313365718750001
+    }
+}

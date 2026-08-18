@@ -1,0 +1,43 @@
+{
+    "memory_version": "116R.1",
+    "capability": "native_independent_reasoning_validator_error_detection",
+    "created_at": "2026-08-14T20:01:29.403936",
+    "source_memory_version": "115R.1",
+    "reasoning_id": "reasoning_114_001",
+    "primary_decision": {
+        "support": 1.4,
+        "conflict": 0.3273756556212902,
+        "net": 1.0726243443787098,
+        "strength": 0.6209560386521228,
+        "confidence": 0.6139706924347484,
+        "state": "RESOLVED_WITH_CONFIDENCE"
+    },
+    "validator_decision": {
+        "support": 1.4,
+        "conflict": 0.3273756556212902,
+        "net": 1.0726243443787098,
+        "strength": 0.6209560386521228,
+        "confidence": 0.6139706924347484,
+        "state": "RESOLVED_WITH_CONFIDENCE"
+    },
+    "validator_agreement_score": 1.0,
+    "direction_agreement": true,
+    "state_agreement": true,
+    "disagreements": [],
+    "error_localization": [],
+    "verification": {
+        "deterministic": true,
+        "validated": true
+    },
+    "event": {
+        "event_id": "validator_116_001",
+        "timestamp": "2026-08-14T20:01:29.403886",
+        "source": "116R",
+        "reasoning_id": "reasoning_114_001",
+        "validator_agreement_score": 1.0,
+        "direction_agreement": true,
+        "state_agreement": true,
+        "disagreement_count": 0,
+        "validated": true
+    }
+}

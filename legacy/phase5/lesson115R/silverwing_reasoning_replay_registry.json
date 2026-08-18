@@ -1,0 +1,9 @@
+{
+    "lesson": "115R",
+    "capability": "native_reasoning_replay_decision_verification",
+    "memory_version": "115R.1",
+    "reasoning_id": "reasoning_114_001",
+    "decision_verified": true,
+    "replay_deterministic": true,
+    "next": "116R Native Independent Reasoning Validator + Error Detection"
+}

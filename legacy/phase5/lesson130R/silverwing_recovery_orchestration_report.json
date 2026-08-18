@@ -1,0 +1,25 @@
+{
+    "lesson": "130R",
+    "memory_version": "130R.1",
+    "breach_pattern": "pattern_003",
+    "failed_set": [
+        "pattern_003",
+        "pattern_004",
+        "pattern_006"
+    ],
+    "recovery_actions": {
+        "pattern_003": "REDUNDANT_CHANNEL",
+        "pattern_004": "REDUNDANT_CHANNEL",
+        "pattern_006": "RETRY"
+    },
+    "pre_recovery_total": 4.681074818108619,
+    "post_recovery_total": 3.5680009752444137,
+    "absorbed": 1.113073842864205,
+    "absorption_rate": 0.2377816817963061,
+    "absorption_capacity": 1.7472191354133386,
+    "total_recovery_cost": 5.0,
+    "root_cascade_contained": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

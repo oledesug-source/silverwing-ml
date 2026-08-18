@@ -1,0 +1,19 @@
+{
+    "lesson": "124R",
+    "memory_version": "124R.1",
+    "pattern_count": 6,
+    "mean_effectiveness": 0.75,
+    "calibration_shift": 0.025,
+    "calibrated_high": 0.775,
+    "calibrated_medium": 0.42500000000000004,
+    "high_patterns": [
+        "pattern_001",
+        "pattern_003",
+        "pattern_005"
+    ],
+    "order_changed": true,
+    "plan_changed": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

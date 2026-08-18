@@ -1,0 +1,44 @@
+{
+    "calculator": {
+        "name": "calculator",
+        "description": "Performs deterministic arithmetic calculations.",
+        "argument_schema": {
+            "expression": "string"
+        },
+        "result_schema": {
+            "result": "number"
+        },
+        "risk_level": "low",
+        "deterministic": true
+    },
+    "unit_conversion": {
+        "name": "unit_conversion",
+        "description": "Converts supported engineering units.",
+        "argument_schema": {
+            "value": "number",
+            "from_unit": "string",
+            "to_unit": "string"
+        },
+        "result_schema": {
+            "result": "number"
+        },
+        "risk_level": "low",
+        "deterministic": true
+    },
+    "machine_risk": {
+        "name": "machine_risk",
+        "description": "Estimates machine risk from operating measurements.",
+        "argument_schema": {
+            "temperature": "number",
+            "pressure": "number",
+            "rpm": "number",
+            "operating_hours": "number"
+        },
+        "result_schema": {
+            "prediction": "string",
+            "confidence": "number"
+        },
+        "risk_level": "medium",
+        "deterministic": true
+    }
+}

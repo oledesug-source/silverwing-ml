@@ -1,0 +1,43 @@
+{
+    "lesson": "85R",
+    "capability": "native_mathematical_reasoning",
+    "domains": [
+        "algebra",
+        "arithmetic",
+        "geometry",
+        "probability",
+        "statistics"
+    ],
+    "math_task_count": 6,
+    "training_examples": 4,
+    "validation_examples": 2,
+    "sequence_limit": 256,
+    "baseline": {
+        "loss": 4.869113922119141,
+        "perplexity": 130.20549355916853,
+        "accuracy": 0.012048192771084338,
+        "tokens": 166
+    },
+    "candidate": {
+        "loss": 4.852950096130371,
+        "perplexity": 128.11779268942618,
+        "accuracy": 0.012048192771084338,
+        "tokens": 166
+    },
+    "numerical_health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "parameter_change": {
+        "changed_tensors": 53,
+        "total_absolute_parameter_change": 25.629693645983934
+    },
+    "independent_validation": {
+        "passed": true
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Mathematical validation loss improved."
+    }
+}

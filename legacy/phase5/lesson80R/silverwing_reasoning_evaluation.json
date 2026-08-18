@@ -1,0 +1,33 @@
+{
+    "lesson": "80R",
+    "model": "Silverwing native decoder",
+    "dataset": "Silverwing-Reasoning-v1",
+    "external_llm": false,
+    "external_reasoning_model": false,
+    "base_checkpoint": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson78R\\checkpoints\\silverwing_instruction_best.pt",
+    "baseline": {
+        "loss": 5.088359355926514,
+        "perplexity": 162.12365652269247,
+        "accuracy": 0.041237113402061855,
+        "tokens": 388
+    },
+    "candidate": {
+        "loss": 5.050555229187012,
+        "perplexity": 156.10911676621868,
+        "accuracy": 0.03350515463917526,
+        "tokens": 388
+    },
+    "numerical_health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "parameter_change": {
+        "changed_tensors": 53,
+        "total_absolute_parameter_change": 104.74572487175465
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Reasoning validation loss improved."
+    }
+}

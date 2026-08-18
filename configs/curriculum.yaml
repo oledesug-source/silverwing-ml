@@ -1,0 +1,55 @@
+# M14: Curriculum Learning
+# 3-stage progressive SFT with increasing difficulty.
+
+curriculum:
+  version: curriculum-v1
+  model_config_path: configs/model.yaml
+  tokenizer_dir: experiments/tokenizer
+  init_from: experiments/checkpoints/best.pt
+  block_size: 512
+  batch_size: 1
+  grad_accum_steps: 1
+  weight_decay: 0.1
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  grad_clip: 1.0
+  seed: 42
+  log_steps: 10
+  eval_fraction: 0.1
+  eval_examples: 32
+  require_clean_repo: true
+  device: cpu
+
+  stages:
+    - name: stage1-basic
+      dataset_path: experiments/curriculum/stage1-basic.jsonl
+      max_steps: 500
+      lr: 1.0e-4
+      warmup_steps: 50
+      checkpoint_dir: experiments/checkpoints/curriculum/stage1
+      log_steps: 10
+      eval_steps: 50
+      save_steps: 100
+      description: "Basic arithmetic, geometry, probability"
+
+    - name: stage2-intermediate
+      dataset_path: experiments/curriculum/stage2-intermediate.jsonl
+      max_steps: 500
+      lr: 5.0e-5
+      warmup_steps: 50
+      checkpoint_dir: experiments/checkpoints/curriculum/stage2
+      log_steps: 10
+      eval_steps: 50
+      save_steps: 100
+      description: "Algebra, linear equations, functions, number theory"
+
+    - name: stage3-advanced
+      dataset_path: experiments/curriculum/stage3-advanced.jsonl
+      max_steps: 500
+      lr: 2.0e-5
+      warmup_steps: 50
+      checkpoint_dir: experiments/checkpoints/curriculum/stage3
+      log_steps: 10
+      eval_steps: 50
+      save_steps: 100
+      description: "Differentiation, integration, trigonometry"

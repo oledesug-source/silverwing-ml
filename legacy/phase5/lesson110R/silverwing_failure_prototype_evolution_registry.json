@@ -1,0 +1,10 @@
+{
+    "lesson": "110R",
+    "capability": "native_failure_prototype_evolution_continual_memory",
+    "memory_version": "110R.1",
+    "pattern_vector_dimension": 14,
+    "evolution_action": "UPDATE_EXISTING_PROTOTYPE",
+    "novelty_score": 0.0,
+    "stability_score": 1.0,
+    "next": "111R Native Novel Failure Discovery + Prototype Birth"
+}

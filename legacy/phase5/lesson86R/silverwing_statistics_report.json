@@ -1,0 +1,15 @@
+{
+    "lesson": "86R",
+    "capability": "native_probability_and_statistical_reasoning",
+    "domains": [
+        "complement_probability",
+        "confidence_interval",
+        "expected_value",
+        "population_variance",
+        "sample_variability",
+        "sampling"
+    ],
+    "training_examples": 4,
+    "validation_examples": 2,
+    "external_llm": false
+}

@@ -1,0 +1,93 @@
+{
+    "lesson": "113R",
+    "capability": "native_contradiction_resolution_evidence_arbitration",
+    "representation_dimension": 14,
+    "contradiction_state": "CONTRADICTIONS_PRESENT",
+    "contradiction_pairs": [
+        {
+            "case_a": "case_001",
+            "case_b": "case_003",
+            "similarity": 0.06464098393917084,
+            "agreement": false,
+            "contradiction": true
+        }
+    ],
+    "evidence_sources": [
+        {
+            "evidence_id": "evidence_001",
+            "source_type": "cross_case_similarity",
+            "case_a": "case_001",
+            "case_b": "case_002",
+            "similarity": 0.6746165752410889,
+            "direction": "neutral",
+            "reliability": 0.4,
+            "magnitude": 0.0,
+            "weight": 0.0,
+            "contribution": 0.0
+        },
+        {
+            "evidence_id": "evidence_002",
+            "source_type": "cross_case_similarity",
+            "case_a": "case_001",
+            "case_b": "case_003",
+            "similarity": 0.06464098393917084,
+            "direction": "conflict",
+            "reliability": 0.7,
+            "magnitude": 0.4676795080304146,
+            "weight": 0.3273756556212902,
+            "contribution": -0.3273756556212902
+        },
+        {
+            "evidence_id": "evidence_003",
+            "source_type": "cross_case_similarity",
+            "case_a": "case_002",
+            "case_b": "case_003",
+            "similarity": 0.496437132358551,
+            "direction": "neutral",
+            "reliability": 0.4,
+            "magnitude": 0.0,
+            "weight": 0.0,
+            "contribution": 0.0
+        },
+        {
+            "evidence_id": "prototype_prototype_001",
+            "source_type": "prototype_consistency",
+            "prototype_id": "prototype_001",
+            "consistency": 0.6666666666666666,
+            "direction": "support",
+            "reliability": 0.7,
+            "magnitude": 0.6666666666666666,
+            "weight": 0.4666666666666666,
+            "contribution": 0.4666666666666666
+        },
+        {
+            "evidence_id": "prototype_prototype_002",
+            "source_type": "prototype_consistency",
+            "prototype_id": "prototype_002",
+            "consistency": 0.6666666666666666,
+            "direction": "support",
+            "reliability": 0.7,
+            "magnitude": 0.6666666666666666,
+            "weight": 0.4666666666666666,
+            "contribution": 0.4666666666666666
+        },
+        {
+            "evidence_id": "prototype_prototype_003",
+            "source_type": "prototype_consistency",
+            "prototype_id": "prototype_003",
+            "consistency": 0.6666666666666666,
+            "direction": "support",
+            "reliability": 0.7,
+            "magnitude": 0.6666666666666666,
+            "weight": 0.4666666666666666,
+            "contribution": 0.4666666666666666
+        }
+    ],
+    "support_score": 1.4,
+    "conflict_score": 0.3273756556212902,
+    "net_evidence": 1.0726243443787098,
+    "arbitration_strength": 0.6209560386521228,
+    "resolution_confidence": 0.6139706924347484,
+    "resolution_state": "RESOLVED_WITH_CONFIDENCE",
+    "conclusion": "Primary hypothesis remains the best-supported interpretation after evidence arbitration."
+}

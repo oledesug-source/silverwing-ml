@@ -1,0 +1,71 @@
+{
+    "lesson": "83R",
+    "training_mode": "native_planning_and_tool_sequencing",
+    "base_checkpoint": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson82R\\checkpoints\\silverwing_tool_best.pt",
+    "external_llm": false,
+    "device": "cpu",
+    "plan_count": 5,
+    "maximum_plan_steps": 2,
+    "sequence_limit": 256,
+    "training_examples": 3,
+    "validation_examples": 2,
+    "epochs": 5,
+    "global_steps": 10,
+    "training_duration_seconds": 1.2702711000019917,
+    "baseline": {
+        "loss": 4.954031944274902,
+        "perplexity": 141.7453225634773,
+        "accuracy": 0.02813852813852814,
+        "tokens": 462
+    },
+    "final": {
+        "loss": 4.930536270141602,
+        "perplexity": 138.45374104217734,
+        "accuracy": 0.030303030303030304,
+        "tokens": 462
+    },
+    "decision": "PROMOTE_CANDIDATE",
+    "reason": "Planning validation loss improved.",
+    "history": [
+        {
+            "epoch": 1,
+            "train_loss": 4.937695741653442,
+            "validation_loss": 4.94545841217041,
+            "validation_perplexity": 140.53525916071285,
+            "validation_accuracy": 0.030303030303030304,
+            "learning_rate": 9.045084971874738e-06
+        },
+        {
+            "epoch": 2,
+            "train_loss": 4.931680679321289,
+            "validation_loss": 4.938282012939453,
+            "validation_perplexity": 139.5303322262562,
+            "validation_accuracy": 0.030303030303030304,
+            "learning_rate": 6.545084971874738e-06
+        },
+        {
+            "epoch": 3,
+            "train_loss": 4.923937559127808,
+            "validation_loss": 4.933387279510498,
+            "validation_perplexity": 138.8490371837934,
+            "validation_accuracy": 0.030303030303030304,
+            "learning_rate": 3.4549150281252635e-06
+        },
+        {
+            "epoch": 4,
+            "train_loss": 4.9207963943481445,
+            "validation_loss": 4.9310479164123535,
+            "validation_perplexity": 138.5245985078865,
+            "validation_accuracy": 0.030303030303030304,
+            "learning_rate": 9.549150281252633e-07
+        },
+        {
+            "epoch": 5,
+            "train_loss": 4.912460088729858,
+            "validation_loss": 4.930536270141602,
+            "validation_perplexity": 138.45374104217734,
+            "validation_accuracy": 0.030303030303030304,
+            "learning_rate": 0.0
+        }
+    ]
+}

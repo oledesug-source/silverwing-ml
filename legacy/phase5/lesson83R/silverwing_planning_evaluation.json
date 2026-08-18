@@ -1,0 +1,37 @@
+{
+    "lesson": "83R",
+    "capability": "native_planning_and_tool_sequencing",
+    "maximum_plan_steps": 2,
+    "planning_examples": 5,
+    "training_examples": 3,
+    "validation_examples": 2,
+    "sequence_limit": 256,
+    "baseline": {
+        "loss": 4.954031944274902,
+        "perplexity": 141.7453225634773,
+        "accuracy": 0.02813852813852814,
+        "tokens": 462
+    },
+    "candidate": {
+        "loss": 4.930536270141602,
+        "perplexity": 138.45374104217734,
+        "accuracy": 0.030303030303030304,
+        "tokens": 462
+    },
+    "numerical_health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "parameter_change": {
+        "changed_tensors": 53,
+        "total_absolute_parameter_change": 39.5579103869386
+    },
+    "planning_behavior": {
+        "valid": 5
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Planning validation loss improved."
+    }
+}

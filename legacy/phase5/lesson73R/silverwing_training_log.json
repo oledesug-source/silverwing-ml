@@ -1,0 +1,52 @@
+{
+    "model": "Silverwing-Decoder-v1",
+    "dataset": "Silverwing-Corpus-v1",
+    "epochs": 5,
+    "global_steps": 35,
+    "best_validation_loss": 5.180940628051758,
+    "final_validation_loss": 5.180940628051758,
+    "final_perplexity": 177.85002305955118,
+    "training_duration_seconds": 3.284997499999008,
+    "history": [
+        {
+            "epoch": 1,
+            "train_loss": 5.642386845179966,
+            "validation_loss": 5.524895191192627,
+            "validation_perplexity": 250.86004430090114,
+            "learning_rate": 0.0002713525491562421,
+            "duration_seconds": 1.3137998999991396
+        },
+        {
+            "epoch": 2,
+            "train_loss": 5.32312045778547,
+            "validation_loss": 5.340295314788818,
+            "validation_perplexity": 208.57429626927905,
+            "learning_rate": 0.0001963525491562421,
+            "duration_seconds": 0.3532480000030773
+        },
+        {
+            "epoch": 3,
+            "train_loss": 5.125322614397321,
+            "validation_loss": 5.228946208953857,
+            "validation_perplexity": 186.59606661433554,
+            "learning_rate": 0.0001036474508437579,
+            "duration_seconds": 0.4187682000010682
+        },
+        {
+            "epoch": 4,
+            "train_loss": 5.02126407623291,
+            "validation_loss": 5.1872498989105225,
+            "validation_perplexity": 178.97567431254058,
+            "learning_rate": 2.86474508437579e-05,
+            "duration_seconds": 0.38336340000023483
+        },
+        {
+            "epoch": 5,
+            "train_loss": 4.9826410838535855,
+            "validation_loss": 5.180940628051758,
+            "validation_perplexity": 177.85002305955118,
+            "learning_rate": 0.0,
+            "duration_seconds": 0.34292999999888707
+        }
+    ]
+}

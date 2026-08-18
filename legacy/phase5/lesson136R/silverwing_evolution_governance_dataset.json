@@ -1,0 +1,54 @@
+{
+    "lesson": "136R",
+    "capability": "autonomous_cross_cycle_evolution_governance_bounded_innovation_protocol",
+    "generation_deltas": [
+        {
+            "generation": 1,
+            "max_boost_delta": 0.029755911214364827,
+            "exposure_delta": -0.0008341670036315918
+        },
+        {
+            "generation": 2,
+            "max_boost_delta": 0.031048163305828158,
+            "exposure_delta": -0.002172499895095825
+        },
+        {
+            "generation": 3,
+            "max_boost_delta": 0.03249277326450817,
+            "exposure_delta": -0.002850361168384552
+        }
+    ],
+    "audit_verdicts": [
+        {
+            "generation": 1,
+            "governed": true,
+            "scope_valid": true
+        },
+        {
+            "generation": 2,
+            "governed": true,
+            "scope_valid": true
+        },
+        {
+            "generation": 3,
+            "governed": true,
+            "scope_valid": true
+        }
+    ],
+    "final_boosts": {
+        "pattern_001": 1.0088733020451952,
+        "pattern_004": 1.574205137456301,
+        "pattern_003": 1.0,
+        "pattern_006": 1.0,
+        "pattern_005": 1.0416482548438843,
+        "pattern_002": 1.034237370621646
+    },
+    "final_penetrations": {
+        "pattern_001": 0.105,
+        "pattern_004": 0.105,
+        "pattern_003": 0.08003637784217832,
+        "pattern_006": 0.053028708701500005,
+        "pattern_005": 0.105,
+        "pattern_002": 0.105
+    }
+}

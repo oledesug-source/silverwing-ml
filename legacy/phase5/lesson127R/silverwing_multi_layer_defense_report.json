@@ -1,0 +1,23 @@
+{
+    "lesson": "127R",
+    "memory_version": "127R.1",
+    "layer_count": 4,
+    "penetration_threshold": 0.12,
+    "reinforcement_boost": 1.3,
+    "baseline_mean_stop_rate": 0.8604507915529602,
+    "controlled_mean_stop_rate": 0.9045346033263203,
+    "escalated_patterns": [
+        "pattern_003",
+        "pattern_004",
+        "pattern_006"
+    ],
+    "held_patterns": [
+        "pattern_001",
+        "pattern_002",
+        "pattern_005"
+    ],
+    "closed_loop": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

@@ -1,0 +1,30 @@
+{
+    "lesson": "102R",
+    "capability": "native_multimodal_memory_integration",
+    "memory_version": "102R.1",
+    "base_checkpoint": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson101R\\checkpoints\\silverwing_hard_negative_best.pt",
+    "encoder_state_mode": "controlled_native_memory_retraining",
+    "external_llm": false,
+    "device": "cpu",
+    "memory_count": 6,
+    "shared_dimension": 16,
+    "retrieval": {
+        "text_to_numeric": 1.0,
+        "numeric_to_text": 1.0,
+        "identity": 1.0
+    },
+    "metadata": {
+        "timestamp_order": true,
+        "provenance": true,
+        "confidence": true
+    },
+    "health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "promotion": {
+        "passed": true,
+        "errors": []
+    }
+}

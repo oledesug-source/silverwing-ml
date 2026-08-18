@@ -1,0 +1,17 @@
+{
+    "lesson": "88R",
+    "capability": "native_algorithms_and_data_structures",
+    "domains": [
+        "binary_search",
+        "binary_tree",
+        "graph_bfs",
+        "graph_shortest_path",
+        "linear_search",
+        "queue",
+        "sorting",
+        "stack"
+    ],
+    "training_examples": 5,
+    "validation_examples": 3,
+    "external_llm": false
+}

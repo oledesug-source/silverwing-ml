@@ -1,0 +1,10 @@
+{
+    "model": "Silverwing-Attention-v1",
+    "model_dimension": 128,
+    "number_of_heads": 8,
+    "head_dimension": 16,
+    "maximum_sequence_length": 256,
+    "dropout": 0.0,
+    "causal": true,
+    "device": "cpu"
+}

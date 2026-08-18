@@ -1,0 +1,64 @@
+{
+    "model": "Silverwing-Decoder-v1",
+    "base_checkpoint": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson73R\\checkpoints\\silverwing_best.pt",
+    "dataset": "Silverwing-Instruction-v1",
+    "epochs": 5,
+    "global_steps": 25,
+    "duration_seconds": 2.2000638999998046,
+    "baseline_metrics": {
+        "loss": 5.365843772888184,
+        "perplexity": 213.97170205452665,
+        "accuracy": 0.0,
+        "supervised_tokens": 187
+    },
+    "final_metrics": {
+        "loss": 5.038721084594727,
+        "perplexity": 154.27258721766393,
+        "accuracy": 0.058823529411764705,
+        "supervised_tokens": 187
+    },
+    "promotion_decision": "PROMOTE_CANDIDATE",
+    "promotion_reason": "Instruction validation loss improved.",
+    "history": [
+        {
+            "epoch": 1,
+            "train_loss": 5.268385982513427,
+            "validation_loss": 5.208856105804443,
+            "validation_perplexity": 182.88473770637927,
+            "validation_accuracy": 0.03208556149732621,
+            "learning_rate": 9.045084971874738e-05
+        },
+        {
+            "epoch": 2,
+            "train_loss": 5.120929718017578,
+            "validation_loss": 5.114743709564209,
+            "validation_perplexity": 166.45811389341796,
+            "validation_accuracy": 0.0481283422459893,
+            "learning_rate": 6.545084971874737e-05
+        },
+        {
+            "epoch": 3,
+            "train_loss": 5.0370580673217775,
+            "validation_loss": 5.062901258468628,
+            "validation_perplexity": 158.04839102868638,
+            "validation_accuracy": 0.053475935828877004,
+            "learning_rate": 3.454915028125265e-05
+        },
+        {
+            "epoch": 4,
+            "train_loss": 4.999024963378906,
+            "validation_loss": 5.042188882827759,
+            "validation_perplexity": 154.80850210831892,
+            "validation_accuracy": 0.058823529411764705,
+            "learning_rate": 9.549150281252635e-06
+        },
+        {
+            "epoch": 5,
+            "train_loss": 4.976048564910888,
+            "validation_loss": 5.038721084594727,
+            "validation_perplexity": 154.27258721766393,
+            "validation_accuracy": 0.058823529411764705,
+            "learning_rate": 0.0
+        }
+    ]
+}

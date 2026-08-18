@@ -1,0 +1,1002 @@
+{"id": "stage3-advanced-differentiation-0000", "instruction": "Find the derivative of f(x) = 2x^4.", "response": "f'(x) = 8x^3"}
+{"id": "stage3-advanced-differentiation-0001", "instruction": "Find the derivative of f(x) = 3x^2.", "response": "f'(x) = 6x^1"}
+{"id": "stage3-advanced-differentiation-0002", "instruction": "Find the derivative of f(x) = 4x^3 - 3x^2 + 4x - 4.", "response": "f'(x) = 12x^2 - 6x + 4"}
+{"id": "stage3-advanced-differentiation-0003", "instruction": "Find the derivative of f(x) = 1x^3.", "response": "f'(x) = 3x^2"}
+{"id": "stage3-advanced-differentiation-0004", "instruction": "Find the derivative of f(x) = 5*sin(2x).", "response": "f'(x) = 10*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0005", "instruction": "Find the derivative of f(x) = 2x^3.", "response": "f'(x) = 6x^2"}
+{"id": "stage3-advanced-differentiation-0006", "instruction": "Find the derivative of f(x) = 5x^3 + x^2 + 5x - 4.", "response": "f'(x) = 15x^2 + 2x + 5"}
+{"id": "stage3-advanced-differentiation-0007", "instruction": "Find the derivative of f(x) = 5*sin(2x).", "response": "f'(x) = 10*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0008", "instruction": "Find the derivative of f(x) = -2x^3 - 5x^2 + 4x - 3.", "response": "f'(x) = -6x^2 - 10x + 4"}
+{"id": "stage3-advanced-differentiation-0009", "instruction": "Find the derivative of f(x) = -4x^3 - 4x^2 - 1x - 3.", "response": "f'(x) = -12x^2 - 8x - 1"}
+{"id": "stage3-advanced-differentiation-0010", "instruction": "Find the derivative of f(x) = -3x^3 + 3x - 3.", "response": "f'(x) = -9x^2 + 3"}
+{"id": "stage3-advanced-differentiation-0011", "instruction": "Find the derivative of f(x) = -2x^3 + 4x^2 - 5x - 3.", "response": "f'(x) = -6x^2 + 8x - 5"}
+{"id": "stage3-advanced-differentiation-0012", "instruction": "Find the derivative of f(x) = 6x^4.", "response": "f'(x) = 24x^3"}
+{"id": "stage3-advanced-differentiation-0013", "instruction": "Find the derivative of f(x) = -3x^3 - 5x^2 + 2x - 4.", "response": "f'(x) = -9x^2 - 10x + 2"}
+{"id": "stage3-advanced-differentiation-0014", "instruction": "Find the derivative of f(x) = 1x^2.", "response": "f'(x) = 2x^1"}
+{"id": "stage3-advanced-differentiation-0015", "instruction": "Find the derivative of f(x) = 6x^4.", "response": "f'(x) = 24x^3"}
+{"id": "stage3-advanced-differentiation-0016", "instruction": "Find the derivative of f(x) = 3*sin(4x).", "response": "f'(x) = 12*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0017", "instruction": "Find the derivative of f(x) = 4*sin(2x).", "response": "f'(x) = 8*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0018", "instruction": "Find the derivative of f(x) = 2x^4.", "response": "f'(x) = 8x^3"}
+{"id": "stage3-advanced-differentiation-0019", "instruction": "Find the derivative of f(x) = 3x^3 + 2x^2 + x - 2.", "response": "f'(x) = 9x^2 + 4x + 1"}
+{"id": "stage3-advanced-differentiation-0020", "instruction": "Find the derivative of f(x) = 5x^4.", "response": "f'(x) = 20x^3"}
+{"id": "stage3-advanced-differentiation-0021", "instruction": "Find the derivative of f(x) = 5x^2.", "response": "f'(x) = 10x^1"}
+{"id": "stage3-advanced-differentiation-0022", "instruction": "Find the derivative of f(x) = 4*sin(1x).", "response": "f'(x) = 4*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0023", "instruction": "Find the derivative of f(x) = 3*sin(3x).", "response": "f'(x) = 9*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0024", "instruction": "Find the derivative of f(x) = -5x^3 + 3x^2 - 2x - 2.", "response": "f'(x) = -15x^2 + 6x - 2"}
+{"id": "stage3-advanced-differentiation-0025", "instruction": "Find the derivative of f(x) = 5x^2.", "response": "f'(x) = 10x^1"}
+{"id": "stage3-advanced-differentiation-0026", "instruction": "Find the derivative of f(x) = 3*sin(2x).", "response": "f'(x) = 6*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0027", "instruction": "Find the derivative of f(x) = 5x^3 + 5x^2 - 2x - 1.", "response": "f'(x) = 15x^2 + 10x - 2"}
+{"id": "stage3-advanced-differentiation-0028", "instruction": "Find the derivative of f(x) = 2x^2.", "response": "f'(x) = 4x^1"}
+{"id": "stage3-advanced-differentiation-0029", "instruction": "Find the derivative of f(x) = 6x^3.", "response": "f'(x) = 18x^2"}
+{"id": "stage3-advanced-differentiation-0030", "instruction": "Find the derivative of f(x) = -3x^3 - 3x^2 + 5x - 5.", "response": "f'(x) = -9x^2 - 6x + 5"}
+{"id": "stage3-advanced-differentiation-0031", "instruction": "Find the derivative of f(x) = 6x^3.", "response": "f'(x) = 18x^2"}
+{"id": "stage3-advanced-differentiation-0032", "instruction": "Find the derivative of f(x) = -2x^3 + x^2 - 1x.", "response": "f'(x) = -6x^2 + 2x - 1"}
+{"id": "stage3-advanced-differentiation-0033", "instruction": "Find the derivative of f(x) = 4*sin(1x).", "response": "f'(x) = 4*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0034", "instruction": "Find the derivative of f(x) = 6x^2.", "response": "f'(x) = 12x^1"}
+{"id": "stage3-advanced-differentiation-0035", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "response": "f'(x) = 4*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0036", "instruction": "Find the derivative of f(x) = 4x^4.", "response": "f'(x) = 16x^3"}
+{"id": "stage3-advanced-differentiation-0037", "instruction": "Find the derivative of f(x) = 1x^2.", "response": "f'(x) = 2x^1"}
+{"id": "stage3-advanced-differentiation-0038", "instruction": "Find the derivative of f(x) = 4*sin(3x).", "response": "f'(x) = 12*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0039", "instruction": "Find the derivative of f(x) = -2x^3 + 5x^2 - 4x - 2.", "response": "f'(x) = -6x^2 + 10x - 4"}
+{"id": "stage3-advanced-differentiation-0040", "instruction": "Find the derivative of f(x) = -2x^3 - 4x^2 - 2x + 1.", "response": "f'(x) = -6x^2 - 8x - 2"}
+{"id": "stage3-advanced-differentiation-0041", "instruction": "Find the derivative of f(x) = 4x^2.", "response": "f'(x) = 8x^1"}
+{"id": "stage3-advanced-differentiation-0042", "instruction": "Find the derivative of f(x) = 4x^4.", "response": "f'(x) = 16x^3"}
+{"id": "stage3-advanced-differentiation-0043", "instruction": "Find the derivative of f(x) = -5x^3 + x^2 - 3x - 2.", "response": "f'(x) = -15x^2 + 2x - 3"}
+{"id": "stage3-advanced-differentiation-0044", "instruction": "Find the derivative of f(x) = 4*sin(2x).", "response": "f'(x) = 8*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0045", "instruction": "Find the derivative of f(x) = 5x^3 - 3x^2 + 2x - 2.", "response": "f'(x) = 15x^2 - 6x + 2"}
+{"id": "stage3-advanced-differentiation-0046", "instruction": "Find the derivative of f(x) = -1x^3 - 2x^2 - 5x - 3.", "response": "f'(x) = -3x^2 - 4x - 5"}
+{"id": "stage3-advanced-differentiation-0047", "instruction": "Find the derivative of f(x) = 5*sin(1x).", "response": "f'(x) = 5*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0048", "instruction": "Find the derivative of f(x) = -3x^3 - 4x^2 + 2x + 2.", "response": "f'(x) = -9x^2 - 8x + 2"}
+{"id": "stage3-advanced-differentiation-0049", "instruction": "Find the derivative of f(x) = -3x^3 - 2x - 1.", "response": "f'(x) = -9x^2 - 2"}
+{"id": "stage3-advanced-differentiation-0050", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "response": "f'(x) = 4*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0051", "instruction": "Find the derivative of f(x) = 5*sin(2x).", "response": "f'(x) = 10*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0052", "instruction": "Find the derivative of f(x) = 4x^4.", "response": "f'(x) = 16x^3"}
+{"id": "stage3-advanced-differentiation-0053", "instruction": "Find the derivative of f(x) = -2x^3 + 4x^2 + 2x + 2.", "response": "f'(x) = -6x^2 + 8x + 2"}
+{"id": "stage3-advanced-differentiation-0054", "instruction": "Find the derivative of f(x) = -5x^3 + x^2 - 2x - 2.", "response": "f'(x) = -15x^2 + 2x - 2"}
+{"id": "stage3-advanced-differentiation-0055", "instruction": "Find the derivative of f(x) = x^3 + 4x^2 - 2x + 4.", "response": "f'(x) = 3x^2 + 8x - 2"}
+{"id": "stage3-advanced-differentiation-0056", "instruction": "Find the derivative of f(x) = 5x^2.", "response": "f'(x) = 10x^1"}
+{"id": "stage3-advanced-differentiation-0057", "instruction": "Find the derivative of f(x) = -5x^3 - 5x^2 + 2x + 3.", "response": "f'(x) = -15x^2 - 10x + 2"}
+{"id": "stage3-advanced-differentiation-0058", "instruction": "Find the derivative of f(x) = 4x^4.", "response": "f'(x) = 16x^3"}
+{"id": "stage3-advanced-differentiation-0059", "instruction": "Find the derivative of f(x) = 2x^3 - 4x^2 + 2x + 2.", "response": "f'(x) = 6x^2 - 8x + 2"}
+{"id": "stage3-advanced-differentiation-0060", "instruction": "Find the derivative of f(x) = 1x^4.", "response": "f'(x) = 4x^3"}
+{"id": "stage3-advanced-differentiation-0061", "instruction": "Find the derivative of f(x) = 6x^4.", "response": "f'(x) = 24x^3"}
+{"id": "stage3-advanced-differentiation-0062", "instruction": "Find the derivative of f(x) = -2x^3 - 3x^2 - 2x - 1.", "response": "f'(x) = -6x^2 - 6x - 2"}
+{"id": "stage3-advanced-differentiation-0063", "instruction": "Find the derivative of f(x) = 1*sin(1x).", "response": "f'(x) = 1*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0064", "instruction": "Find the derivative of f(x) = 5x^3 - 1x^2 - 3x + 2.", "response": "f'(x) = 15x^2 - 2x - 3"}
+{"id": "stage3-advanced-differentiation-0065", "instruction": "Find the derivative of f(x) = 5*sin(1x).", "response": "f'(x) = 5*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0066", "instruction": "Find the derivative of f(x) = 2x^3 - 3x^2 + x - 3.", "response": "f'(x) = 6x^2 - 6x + 1"}
+{"id": "stage3-advanced-differentiation-0067", "instruction": "Find the derivative of f(x) = 5x^3 + 2x^2 + 5x - 5.", "response": "f'(x) = 15x^2 + 4x + 5"}
+{"id": "stage3-advanced-differentiation-0068", "instruction": "Find the derivative of f(x) = 1*sin(4x).", "response": "f'(x) = 4*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0069", "instruction": "Find the derivative of f(x) = 3*sin(1x).", "response": "f'(x) = 3*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0070", "instruction": "Find the derivative of f(x) = x^3 - 1x^2 + 4x + 3.", "response": "f'(x) = 3x^2 - 2x + 4"}
+{"id": "stage3-advanced-differentiation-0071", "instruction": "Find the derivative of f(x) = 2*sin(1x).", "response": "f'(x) = 2*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0072", "instruction": "Find the derivative of f(x) = 3*sin(1x).", "response": "f'(x) = 3*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0073", "instruction": "Find the derivative of f(x) = 3*sin(1x).", "response": "f'(x) = 3*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0074", "instruction": "Find the derivative of f(x) = 4x^3.", "response": "f'(x) = 12x^2"}
+{"id": "stage3-advanced-differentiation-0075", "instruction": "Find the derivative of f(x) = 4x^3 - 5x^2 - 3x.", "response": "f'(x) = 12x^2 - 10x - 3"}
+{"id": "stage3-advanced-differentiation-0076", "instruction": "Find the derivative of f(x) = 5*sin(1x).", "response": "f'(x) = 5*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0077", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "response": "f'(x) = 4*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0078", "instruction": "Find the derivative of f(x) = -2x^3 + 3x^2 - 4x + 5.", "response": "f'(x) = -6x^2 + 6x - 4"}
+{"id": "stage3-advanced-differentiation-0079", "instruction": "Find the derivative of f(x) = 4x^3 - 2x^2 - 2x.", "response": "f'(x) = 12x^2 - 4x - 2"}
+{"id": "stage3-advanced-differentiation-0080", "instruction": "Find the derivative of f(x) = -1x^3 + 3x^2 + 5x + 1.", "response": "f'(x) = -3x^2 + 6x + 5"}
+{"id": "stage3-advanced-differentiation-0081", "instruction": "Find the derivative of f(x) = -5x^3 - 4x^2 + 2x.", "response": "f'(x) = -15x^2 - 8x + 2"}
+{"id": "stage3-advanced-differentiation-0082", "instruction": "Find the derivative of f(x) = 3x^3 + 3x^2 - 4x + 2.", "response": "f'(x) = 9x^2 + 6x - 4"}
+{"id": "stage3-advanced-differentiation-0083", "instruction": "Find the derivative of f(x) = 5*sin(3x).", "response": "f'(x) = 15*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0084", "instruction": "Find the derivative of f(x) = 4x^3 + 5x - 4.", "response": "f'(x) = 12x^2 + 5"}
+{"id": "stage3-advanced-differentiation-0085", "instruction": "Find the derivative of f(x) = 4x^2.", "response": "f'(x) = 8x^1"}
+{"id": "stage3-advanced-differentiation-0086", "instruction": "Find the derivative of f(x) = 4x^2.", "response": "f'(x) = 8x^1"}
+{"id": "stage3-advanced-differentiation-0087", "instruction": "Find the derivative of f(x) = -4x^3 - 4x^2 - 3x - 1.", "response": "f'(x) = -12x^2 - 8x - 3"}
+{"id": "stage3-advanced-differentiation-0088", "instruction": "Find the derivative of f(x) = 6x^2.", "response": "f'(x) = 12x^1"}
+{"id": "stage3-advanced-differentiation-0089", "instruction": "Find the derivative of f(x) = -3x^3 - 2x^2 + 3x + 5.", "response": "f'(x) = -9x^2 - 4x + 3"}
+{"id": "stage3-advanced-differentiation-0090", "instruction": "Find the derivative of f(x) = 3x^3.", "response": "f'(x) = 9x^2"}
+{"id": "stage3-advanced-differentiation-0091", "instruction": "Find the derivative of f(x) = 5*sin(2x).", "response": "f'(x) = 10*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0092", "instruction": "Find the derivative of f(x) = -5x^3 + x^2 + 2x + 5.", "response": "f'(x) = -15x^2 + 2x + 2"}
+{"id": "stage3-advanced-differentiation-0093", "instruction": "Find the derivative of f(x) = -2x^3 - 4x^2 - 5x - 2.", "response": "f'(x) = -6x^2 - 8x - 5"}
+{"id": "stage3-advanced-differentiation-0094", "instruction": "Find the derivative of f(x) = 3*sin(4x).", "response": "f'(x) = 12*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0095", "instruction": "Find the derivative of f(x) = 3*sin(3x).", "response": "f'(x) = 9*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0096", "instruction": "Find the derivative of f(x) = 4x^3 + 5x^2 + 3x + 3.", "response": "f'(x) = 12x^2 + 10x + 3"}
+{"id": "stage3-advanced-differentiation-0097", "instruction": "Find the derivative of f(x) = 2x^3 - 1x^2 + 4x - 3.", "response": "f'(x) = 6x^2 - 2x + 4"}
+{"id": "stage3-advanced-differentiation-0098", "instruction": "Find the derivative of f(x) = -3x^3 - 1x^2 - 2x + 2.", "response": "f'(x) = -9x^2 - 2x - 2"}
+{"id": "stage3-advanced-differentiation-0099", "instruction": "Find the derivative of f(x) = -1x^3 - 5x^2 - 3x.", "response": "f'(x) = -3x^2 - 10x - 3"}
+{"id": "stage3-advanced-differentiation-0100", "instruction": "Find the derivative of f(x) = 2x^3 - 3x^2 + 4x - 3.", "response": "f'(x) = 6x^2 - 6x + 4"}
+{"id": "stage3-advanced-differentiation-0101", "instruction": "Find the derivative of f(x) = 5*sin(3x).", "response": "f'(x) = 15*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0102", "instruction": "Find the derivative of f(x) = 2x^4.", "response": "f'(x) = 8x^3"}
+{"id": "stage3-advanced-differentiation-0103", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "response": "f'(x) = 4*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0104", "instruction": "Find the derivative of f(x) = 1x^2.", "response": "f'(x) = 2x^1"}
+{"id": "stage3-advanced-differentiation-0105", "instruction": "Find the derivative of f(x) = 4x^3 - 3x^2 + 2x - 1.", "response": "f'(x) = 12x^2 - 6x + 2"}
+{"id": "stage3-advanced-differentiation-0106", "instruction": "Find the derivative of f(x) = -3x^3 - 2x^2 + 3x - 5.", "response": "f'(x) = -9x^2 - 4x + 3"}
+{"id": "stage3-advanced-differentiation-0107", "instruction": "Find the derivative of f(x) = 3*sin(3x).", "response": "f'(x) = 9*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0108", "instruction": "Find the derivative of f(x) = 3x^3.", "response": "f'(x) = 9x^2"}
+{"id": "stage3-advanced-differentiation-0109", "instruction": "Find the derivative of f(x) = 2*sin(3x).", "response": "f'(x) = 6*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0110", "instruction": "Find the derivative of f(x) = 1x^3.", "response": "f'(x) = 3x^2"}
+{"id": "stage3-advanced-differentiation-0111", "instruction": "Find the derivative of f(x) = -3x^3 + 2x^2 - 5x - 3.", "response": "f'(x) = -9x^2 + 4x - 5"}
+{"id": "stage3-advanced-differentiation-0112", "instruction": "Find the derivative of f(x) = 5*sin(3x).", "response": "f'(x) = 15*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0113", "instruction": "Find the derivative of f(x) = 3*sin(4x).", "response": "f'(x) = 12*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0114", "instruction": "Find the derivative of f(x) = 4x^3 + 5x^2 - 3x + 4.", "response": "f'(x) = 12x^2 + 10x - 3"}
+{"id": "stage3-advanced-differentiation-0115", "instruction": "Find the derivative of f(x) = 4*sin(3x).", "response": "f'(x) = 12*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0116", "instruction": "Find the derivative of f(x) = 1*sin(4x).", "response": "f'(x) = 4*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0117", "instruction": "Find the derivative of f(x) = 2x^4.", "response": "f'(x) = 8x^3"}
+{"id": "stage3-advanced-differentiation-0118", "instruction": "Find the derivative of f(x) = 1*sin(3x).", "response": "f'(x) = 3*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0119", "instruction": "Find the derivative of f(x) = 4x^4.", "response": "f'(x) = 16x^3"}
+{"id": "stage3-advanced-differentiation-0120", "instruction": "Find the derivative of f(x) = 4x^3.", "response": "f'(x) = 12x^2"}
+{"id": "stage3-advanced-differentiation-0121", "instruction": "Find the derivative of f(x) = 3x^2.", "response": "f'(x) = 6x^1"}
+{"id": "stage3-advanced-differentiation-0122", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "response": "f'(x) = 4*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0123", "instruction": "Find the derivative of f(x) = -2x^3 - 5x^2 - 4x + 3.", "response": "f'(x) = -6x^2 - 10x - 4"}
+{"id": "stage3-advanced-differentiation-0124", "instruction": "Find the derivative of f(x) = 5x^3 + 5x^2 - 4x + 3.", "response": "f'(x) = 15x^2 + 10x - 4"}
+{"id": "stage3-advanced-differentiation-0125", "instruction": "Find the derivative of f(x) = -2x^3 + 2x^2 + 4x + 4.", "response": "f'(x) = -6x^2 + 4x + 4"}
+{"id": "stage3-advanced-differentiation-0126", "instruction": "Find the derivative of f(x) = 1*sin(3x).", "response": "f'(x) = 3*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0127", "instruction": "Find the derivative of f(x) = -3x^3 + x^2 - 5x + 1.", "response": "f'(x) = -9x^2 + 2x - 5"}
+{"id": "stage3-advanced-differentiation-0128", "instruction": "Find the derivative of f(x) = 3x^3 - 1x + 2.", "response": "f'(x) = 9x^2 - 1"}
+{"id": "stage3-advanced-differentiation-0129", "instruction": "Find the derivative of f(x) = 2x^4.", "response": "f'(x) = 8x^3"}
+{"id": "stage3-advanced-differentiation-0130", "instruction": "Find the derivative of f(x) = x^3 + 2x^2 - 1x - 3.", "response": "f'(x) = 3x^2 + 4x - 1"}
+{"id": "stage3-advanced-differentiation-0131", "instruction": "Find the derivative of f(x) = 4*sin(4x).", "response": "f'(x) = 16*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0132", "instruction": "Find the derivative of f(x) = 5x^4.", "response": "f'(x) = 20x^3"}
+{"id": "stage3-advanced-differentiation-0133", "instruction": "Find the derivative of f(x) = 2x^2.", "response": "f'(x) = 4x^1"}
+{"id": "stage3-advanced-differentiation-0134", "instruction": "Find the derivative of f(x) = 2x^3 + 3x^2 + 4x - 4.", "response": "f'(x) = 6x^2 + 6x + 4"}
+{"id": "stage3-advanced-differentiation-0135", "instruction": "Find the derivative of f(x) = -4x^3 - 5x^2 + x + 5.", "response": "f'(x) = -12x^2 - 10x + 1"}
+{"id": "stage3-advanced-differentiation-0136", "instruction": "Find the derivative of f(x) = x^3 - 3x^2 + 3x + 2.", "response": "f'(x) = 3x^2 - 6x + 3"}
+{"id": "stage3-advanced-differentiation-0137", "instruction": "Find the derivative of f(x) = 5*sin(2x).", "response": "f'(x) = 10*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0138", "instruction": "Find the derivative of f(x) = 2x^3.", "response": "f'(x) = 6x^2"}
+{"id": "stage3-advanced-differentiation-0139", "instruction": "Find the derivative of f(x) = 3x^3 + 2x^2 - 5x - 1.", "response": "f'(x) = 9x^2 + 4x - 5"}
+{"id": "stage3-advanced-differentiation-0140", "instruction": "Find the derivative of f(x) = 3*sin(4x).", "response": "f'(x) = 12*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0141", "instruction": "Find the derivative of f(x) = 4*sin(2x).", "response": "f'(x) = 8*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0142", "instruction": "Find the derivative of f(x) = 1x^2.", "response": "f'(x) = 2x^1"}
+{"id": "stage3-advanced-differentiation-0143", "instruction": "Find the derivative of f(x) = -1x^3 + 5x^2 + 5x + 2.", "response": "f'(x) = -3x^2 + 10x + 5"}
+{"id": "stage3-advanced-differentiation-0144", "instruction": "Find the derivative of f(x) = 6x^4.", "response": "f'(x) = 24x^3"}
+{"id": "stage3-advanced-differentiation-0145", "instruction": "Find the derivative of f(x) = x^3 - 3x^2 + 2x + 5.", "response": "f'(x) = 3x^2 - 6x + 2"}
+{"id": "stage3-advanced-differentiation-0146", "instruction": "Find the derivative of f(x) = 1x^2.", "response": "f'(x) = 2x^1"}
+{"id": "stage3-advanced-differentiation-0147", "instruction": "Find the derivative of f(x) = 2x^3 - 4x^2 + 4x.", "response": "f'(x) = 6x^2 - 8x + 4"}
+{"id": "stage3-advanced-differentiation-0148", "instruction": "Find the derivative of f(x) = 4*sin(4x).", "response": "f'(x) = 16*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0149", "instruction": "Find the derivative of f(x) = 5x^3 + 5x^2 + 2x - 4.", "response": "f'(x) = 15x^2 + 10x + 2"}
+{"id": "stage3-advanced-differentiation-0150", "instruction": "Find the derivative of f(x) = 3x^3 + 4x^2 - 5x - 1.", "response": "f'(x) = 9x^2 + 8x - 5"}
+{"id": "stage3-advanced-differentiation-0151", "instruction": "Find the derivative of f(x) = 5x^2.", "response": "f'(x) = 10x^1"}
+{"id": "stage3-advanced-differentiation-0152", "instruction": "Find the derivative of f(x) = 3x^3.", "response": "f'(x) = 9x^2"}
+{"id": "stage3-advanced-differentiation-0153", "instruction": "Find the derivative of f(x) = 2*sin(3x).", "response": "f'(x) = 6*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0154", "instruction": "Find the derivative of f(x) = 1x^3.", "response": "f'(x) = 3x^2"}
+{"id": "stage3-advanced-differentiation-0155", "instruction": "Find the derivative of f(x) = x^3 + 5x^2 - 1x - 5.", "response": "f'(x) = 3x^2 + 10x - 1"}
+{"id": "stage3-advanced-differentiation-0156", "instruction": "Find the derivative of f(x) = 3x^3 + 5x^2 - 4x + 3.", "response": "f'(x) = 9x^2 + 10x - 4"}
+{"id": "stage3-advanced-differentiation-0157", "instruction": "Find the derivative of f(x) = 6x^2.", "response": "f'(x) = 12x^1"}
+{"id": "stage3-advanced-differentiation-0158", "instruction": "Find the derivative of f(x) = 5x^2.", "response": "f'(x) = 10x^1"}
+{"id": "stage3-advanced-differentiation-0159", "instruction": "Find the derivative of f(x) = 3*sin(3x).", "response": "f'(x) = 9*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0160", "instruction": "Find the derivative of f(x) = 3*sin(3x).", "response": "f'(x) = 9*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0161", "instruction": "Find the derivative of f(x) = 3*sin(1x).", "response": "f'(x) = 3*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0162", "instruction": "Find the derivative of f(x) = 5*sin(3x).", "response": "f'(x) = 15*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0163", "instruction": "Find the derivative of f(x) = 1x^2.", "response": "f'(x) = 2x^1"}
+{"id": "stage3-advanced-differentiation-0164", "instruction": "Find the derivative of f(x) = 3*sin(3x).", "response": "f'(x) = 9*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0165", "instruction": "Find the derivative of f(x) = x^3 - 3x - 4.", "response": "f'(x) = 3x^2 - 3"}
+{"id": "stage3-advanced-differentiation-0166", "instruction": "Find the derivative of f(x) = 2x^4.", "response": "f'(x) = 8x^3"}
+{"id": "stage3-advanced-differentiation-0167", "instruction": "Find the derivative of f(x) = 2x^4.", "response": "f'(x) = 8x^3"}
+{"id": "stage3-advanced-differentiation-0168", "instruction": "Find the derivative of f(x) = 5*sin(1x).", "response": "f'(x) = 5*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0169", "instruction": "Find the derivative of f(x) = 2x^3 - 4x^2 - 4x - 3.", "response": "f'(x) = 6x^2 - 8x - 4"}
+{"id": "stage3-advanced-differentiation-0170", "instruction": "Find the derivative of f(x) = 4x^3.", "response": "f'(x) = 12x^2"}
+{"id": "stage3-advanced-differentiation-0171", "instruction": "Find the derivative of f(x) = 3x^3 - 3x^2 + 2x + 4.", "response": "f'(x) = 9x^2 - 6x + 2"}
+{"id": "stage3-advanced-differentiation-0172", "instruction": "Find the derivative of f(x) = -3x^3 - 1x^2 - 5x - 4.", "response": "f'(x) = -9x^2 - 2x - 5"}
+{"id": "stage3-advanced-differentiation-0173", "instruction": "Find the derivative of f(x) = 2x^4.", "response": "f'(x) = 8x^3"}
+{"id": "stage3-advanced-differentiation-0174", "instruction": "Find the derivative of f(x) = 6x^2.", "response": "f'(x) = 12x^1"}
+{"id": "stage3-advanced-differentiation-0175", "instruction": "Find the derivative of f(x) = -3x^3 - 2x^2 - 3x - 4.", "response": "f'(x) = -9x^2 - 4x - 3"}
+{"id": "stage3-advanced-differentiation-0176", "instruction": "Find the derivative of f(x) = -4x^3 - 4x^2 - 5x + 2.", "response": "f'(x) = -12x^2 - 8x - 5"}
+{"id": "stage3-advanced-differentiation-0177", "instruction": "Find the derivative of f(x) = -5x^3 - 2x^2 - 4x - 5.", "response": "f'(x) = -15x^2 - 4x - 4"}
+{"id": "stage3-advanced-differentiation-0178", "instruction": "Find the derivative of f(x) = 5*sin(1x).", "response": "f'(x) = 5*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0179", "instruction": "Find the derivative of f(x) = -4x^3 - 1x^2 - 5x - 4.", "response": "f'(x) = -12x^2 - 2x - 5"}
+{"id": "stage3-advanced-differentiation-0180", "instruction": "Find the derivative of f(x) = 5x^3 - 5x^2 - 4x - 4.", "response": "f'(x) = 15x^2 - 10x - 4"}
+{"id": "stage3-advanced-differentiation-0181", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "response": "f'(x) = 4*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0182", "instruction": "Find the derivative of f(x) = 6x^3.", "response": "f'(x) = 18x^2"}
+{"id": "stage3-advanced-differentiation-0183", "instruction": "Find the derivative of f(x) = 1x^2.", "response": "f'(x) = 2x^1"}
+{"id": "stage3-advanced-differentiation-0184", "instruction": "Find the derivative of f(x) = 3*sin(3x).", "response": "f'(x) = 9*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0185", "instruction": "Find the derivative of f(x) = -3x^3 + 3x^2 + 4x - 2.", "response": "f'(x) = -9x^2 + 6x + 4"}
+{"id": "stage3-advanced-differentiation-0186", "instruction": "Find the derivative of f(x) = 5*sin(1x).", "response": "f'(x) = 5*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0187", "instruction": "Find the derivative of f(x) = 5x^2.", "response": "f'(x) = 10x^1"}
+{"id": "stage3-advanced-differentiation-0188", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "response": "f'(x) = 4*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0189", "instruction": "Find the derivative of f(x) = -3x^3 + 3x^2 - 5x - 4.", "response": "f'(x) = -9x^2 + 6x - 5"}
+{"id": "stage3-advanced-differentiation-0190", "instruction": "Find the derivative of f(x) = 5x^4.", "response": "f'(x) = 20x^3"}
+{"id": "stage3-advanced-differentiation-0191", "instruction": "Find the derivative of f(x) = 5x^3 + 4x^2 - 3x + 2.", "response": "f'(x) = 15x^2 + 8x - 3"}
+{"id": "stage3-advanced-differentiation-0192", "instruction": "Find the derivative of f(x) = 2x^3.", "response": "f'(x) = 6x^2"}
+{"id": "stage3-advanced-differentiation-0193", "instruction": "Find the derivative of f(x) = x^3 - 2x^2 + 3x - 2.", "response": "f'(x) = 3x^2 - 4x + 3"}
+{"id": "stage3-advanced-differentiation-0194", "instruction": "Find the derivative of f(x) = -4x^3 - 4x + 2.", "response": "f'(x) = -12x^2 - 4"}
+{"id": "stage3-advanced-differentiation-0195", "instruction": "Find the derivative of f(x) = 5x^2.", "response": "f'(x) = 10x^1"}
+{"id": "stage3-advanced-differentiation-0196", "instruction": "Find the derivative of f(x) = -4x^3 - 1x^2 + 3x - 5.", "response": "f'(x) = -12x^2 - 2x + 3"}
+{"id": "stage3-advanced-differentiation-0197", "instruction": "Find the derivative of f(x) = 2x^3 - 4x^2 + x - 1.", "response": "f'(x) = 6x^2 - 8x + 1"}
+{"id": "stage3-advanced-differentiation-0198", "instruction": "Find the derivative of f(x) = 4x^3 - 1x^2 + 5x + 2.", "response": "f'(x) = 12x^2 - 2x + 5"}
+{"id": "stage3-advanced-differentiation-0199", "instruction": "Find the derivative of f(x) = 5x^3.", "response": "f'(x) = 15x^2"}
+{"id": "stage3-advanced-differentiation-0200", "instruction": "Find the derivative of f(x) = x^3 - 2x^2 - 4x + 2.", "response": "f'(x) = 3x^2 - 4x - 4"}
+{"id": "stage3-advanced-differentiation-0201", "instruction": "Find the derivative of f(x) = 3*sin(2x).", "response": "f'(x) = 6*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0202", "instruction": "Find the derivative of f(x) = 6x^3.", "response": "f'(x) = 18x^2"}
+{"id": "stage3-advanced-differentiation-0203", "instruction": "Find the derivative of f(x) = 1*sin(4x).", "response": "f'(x) = 4*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0204", "instruction": "Find the derivative of f(x) = 3x^3 + 5x^2 + 5x - 4.", "response": "f'(x) = 9x^2 + 10x + 5"}
+{"id": "stage3-advanced-differentiation-0205", "instruction": "Find the derivative of f(x) = 2x^3.", "response": "f'(x) = 6x^2"}
+{"id": "stage3-advanced-differentiation-0206", "instruction": "Find the derivative of f(x) = 4x^3 - 4x^2 - 3x - 4.", "response": "f'(x) = 12x^2 - 8x - 3"}
+{"id": "stage3-advanced-differentiation-0207", "instruction": "Find the derivative of f(x) = -2x^3 - 2x + 4.", "response": "f'(x) = -6x^2 - 2"}
+{"id": "stage3-advanced-differentiation-0208", "instruction": "Find the derivative of f(x) = -4x^3 - 2x^2 + x + 2.", "response": "f'(x) = -12x^2 - 4x + 1"}
+{"id": "stage3-advanced-differentiation-0209", "instruction": "Find the derivative of f(x) = 4x^3 + 4x^2 - 1x + 5.", "response": "f'(x) = 12x^2 + 8x - 1"}
+{"id": "stage3-advanced-differentiation-0210", "instruction": "Find the derivative of f(x) = x^3 + 2x^2 + 5x + 4.", "response": "f'(x) = 3x^2 + 4x + 5"}
+{"id": "stage3-advanced-differentiation-0211", "instruction": "Find the derivative of f(x) = 3x^3 - 1x^2 - 3x + 2.", "response": "f'(x) = 9x^2 - 2x - 3"}
+{"id": "stage3-advanced-differentiation-0212", "instruction": "Find the derivative of f(x) = 1x^3.", "response": "f'(x) = 3x^2"}
+{"id": "stage3-advanced-differentiation-0213", "instruction": "Find the derivative of f(x) = 2x^3 - 2x^2 + 5x - 3.", "response": "f'(x) = 6x^2 - 4x + 5"}
+{"id": "stage3-advanced-differentiation-0214", "instruction": "Find the derivative of f(x) = 1x^4.", "response": "f'(x) = 4x^3"}
+{"id": "stage3-advanced-differentiation-0215", "instruction": "Find the derivative of f(x) = 1x^3.", "response": "f'(x) = 3x^2"}
+{"id": "stage3-advanced-differentiation-0216", "instruction": "Find the derivative of f(x) = 1*sin(2x).", "response": "f'(x) = 2*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0217", "instruction": "Find the derivative of f(x) = 4x^3 + 5x^2 - 1x - 3.", "response": "f'(x) = 12x^2 + 10x - 1"}
+{"id": "stage3-advanced-differentiation-0218", "instruction": "Find the derivative of f(x) = 5*sin(1x).", "response": "f'(x) = 5*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0219", "instruction": "Find the derivative of f(x) = 6x^4.", "response": "f'(x) = 24x^3"}
+{"id": "stage3-advanced-differentiation-0220", "instruction": "Find the derivative of f(x) = 2x^3 - 2x^2 - 1x + 5.", "response": "f'(x) = 6x^2 - 4x - 1"}
+{"id": "stage3-advanced-differentiation-0221", "instruction": "Find the derivative of f(x) = 2x^3 + 3x^2 - 1x + 3.", "response": "f'(x) = 6x^2 + 6x - 1"}
+{"id": "stage3-advanced-differentiation-0222", "instruction": "Find the derivative of f(x) = 3x^3 + 3x^2 - 5x - 5.", "response": "f'(x) = 9x^2 + 6x - 5"}
+{"id": "stage3-advanced-differentiation-0223", "instruction": "Find the derivative of f(x) = -4x^3 + x^2 + 2x.", "response": "f'(x) = -12x^2 + 2x + 2"}
+{"id": "stage3-advanced-differentiation-0224", "instruction": "Find the derivative of f(x) = 2x^3 + 2x^2 - 5x - 5.", "response": "f'(x) = 6x^2 + 4x - 5"}
+{"id": "stage3-advanced-differentiation-0225", "instruction": "Find the derivative of f(x) = 5x^4.", "response": "f'(x) = 20x^3"}
+{"id": "stage3-advanced-differentiation-0226", "instruction": "Find the derivative of f(x) = -3x^3 + 2x^2 + x - 3.", "response": "f'(x) = -9x^2 + 4x + 1"}
+{"id": "stage3-advanced-differentiation-0227", "instruction": "Find the derivative of f(x) = x^3 + 2x^2 - 4x + 4.", "response": "f'(x) = 3x^2 + 4x - 4"}
+{"id": "stage3-advanced-differentiation-0228", "instruction": "Find the derivative of f(x) = 4*sin(4x).", "response": "f'(x) = 16*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0229", "instruction": "Find the derivative of f(x) = 3x^3 - 3x^2 + 3x - 5.", "response": "f'(x) = 9x^2 - 6x + 3"}
+{"id": "stage3-advanced-differentiation-0230", "instruction": "Find the derivative of f(x) = -1x^3 + 2x^2 + 4x + 1.", "response": "f'(x) = -3x^2 + 4x + 4"}
+{"id": "stage3-advanced-differentiation-0231", "instruction": "Find the derivative of f(x) = 3*sin(3x).", "response": "f'(x) = 9*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0232", "instruction": "Find the derivative of f(x) = -5x^3 - 5x^2 + 4x - 5.", "response": "f'(x) = -15x^2 - 10x + 4"}
+{"id": "stage3-advanced-differentiation-0233", "instruction": "Find the derivative of f(x) = 3x^3.", "response": "f'(x) = 9x^2"}
+{"id": "stage3-advanced-differentiation-0234", "instruction": "Find the derivative of f(x) = 5*sin(1x).", "response": "f'(x) = 5*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0235", "instruction": "Find the derivative of f(x) = 3*sin(4x).", "response": "f'(x) = 12*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0236", "instruction": "Find the derivative of f(x) = 4x^3.", "response": "f'(x) = 12x^2"}
+{"id": "stage3-advanced-differentiation-0237", "instruction": "Find the derivative of f(x) = x^3 - 5x + 5.", "response": "f'(x) = 3x^2 - 5"}
+{"id": "stage3-advanced-differentiation-0238", "instruction": "Find the derivative of f(x) = 2x^2.", "response": "f'(x) = 4x^1"}
+{"id": "stage3-advanced-differentiation-0239", "instruction": "Find the derivative of f(x) = 3*sin(1x).", "response": "f'(x) = 3*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0240", "instruction": "Find the derivative of f(x) = 1*sin(3x).", "response": "f'(x) = 3*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0241", "instruction": "Find the derivative of f(x) = 3x^2.", "response": "f'(x) = 6x^1"}
+{"id": "stage3-advanced-differentiation-0242", "instruction": "Find the derivative of f(x) = 5x^3.", "response": "f'(x) = 15x^2"}
+{"id": "stage3-advanced-differentiation-0243", "instruction": "Find the derivative of f(x) = 4x^4.", "response": "f'(x) = 16x^3"}
+{"id": "stage3-advanced-differentiation-0244", "instruction": "Find the derivative of f(x) = 4x^3 + 3x^2 + x - 1.", "response": "f'(x) = 12x^2 + 6x + 1"}
+{"id": "stage3-advanced-differentiation-0245", "instruction": "Find the derivative of f(x) = 6x^3.", "response": "f'(x) = 18x^2"}
+{"id": "stage3-advanced-differentiation-0246", "instruction": "Find the derivative of f(x) = 1*sin(3x).", "response": "f'(x) = 3*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0247", "instruction": "Find the derivative of f(x) = 4x^3 + x^2 - 4x + 4.", "response": "f'(x) = 12x^2 + 2x - 4"}
+{"id": "stage3-advanced-differentiation-0248", "instruction": "Find the derivative of f(x) = -4x^3 + 5x^2 - 2x.", "response": "f'(x) = -12x^2 + 10x - 2"}
+{"id": "stage3-advanced-differentiation-0249", "instruction": "Find the derivative of f(x) = 3x^3 + 5x^2 + 4x - 3.", "response": "f'(x) = 9x^2 + 10x + 4"}
+{"id": "stage3-advanced-differentiation-0250", "instruction": "Find the derivative of f(x) = 5x^3 + x^2 - 2x + 2.", "response": "f'(x) = 15x^2 + 2x - 2"}
+{"id": "stage3-advanced-differentiation-0251", "instruction": "Find the derivative of f(x) = 5x^2.", "response": "f'(x) = 10x^1"}
+{"id": "stage3-advanced-differentiation-0252", "instruction": "Find the derivative of f(x) = -1x^3 - 5x^2 - 1x + 4.", "response": "f'(x) = -3x^2 - 10x - 1"}
+{"id": "stage3-advanced-differentiation-0253", "instruction": "Find the derivative of f(x) = -2x^3 + 4x^2 - 4x + 4.", "response": "f'(x) = -6x^2 + 8x - 4"}
+{"id": "stage3-advanced-differentiation-0254", "instruction": "Find the derivative of f(x) = 5x^3.", "response": "f'(x) = 15x^2"}
+{"id": "stage3-advanced-differentiation-0255", "instruction": "Find the derivative of f(x) = -4x^3 + 4x^2 + 3x + 2.", "response": "f'(x) = -12x^2 + 8x + 3"}
+{"id": "stage3-advanced-differentiation-0256", "instruction": "Find the derivative of f(x) = -2x^3 - 4x + 5.", "response": "f'(x) = -6x^2 - 4"}
+{"id": "stage3-advanced-differentiation-0257", "instruction": "Find the derivative of f(x) = 3x^3 - 1x^2 + x + 5.", "response": "f'(x) = 9x^2 - 2x + 1"}
+{"id": "stage3-advanced-differentiation-0258", "instruction": "Find the derivative of f(x) = 3*sin(2x).", "response": "f'(x) = 6*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0259", "instruction": "Find the derivative of f(x) = x^3 - 1x^2 + 4x + 3.", "response": "f'(x) = 3x^2 - 2x + 4"}
+{"id": "stage3-advanced-differentiation-0260", "instruction": "Find the derivative of f(x) = 5x^3 + 3x^2 - 3x - 5.", "response": "f'(x) = 15x^2 + 6x - 3"}
+{"id": "stage3-advanced-differentiation-0261", "instruction": "Find the derivative of f(x) = 5*sin(2x).", "response": "f'(x) = 10*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0262", "instruction": "Find the derivative of f(x) = 4*sin(2x).", "response": "f'(x) = 8*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0263", "instruction": "Find the derivative of f(x) = 4*sin(3x).", "response": "f'(x) = 12*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0264", "instruction": "Find the derivative of f(x) = 5*sin(4x).", "response": "f'(x) = 20*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0265", "instruction": "Find the derivative of f(x) = 1*sin(2x).", "response": "f'(x) = 2*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0266", "instruction": "Find the derivative of f(x) = 2x^3 - 3x^2 - 2x - 3.", "response": "f'(x) = 6x^2 - 6x - 2"}
+{"id": "stage3-advanced-differentiation-0267", "instruction": "Find the derivative of f(x) = 3*sin(4x).", "response": "f'(x) = 12*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0268", "instruction": "Find the derivative of f(x) = x^3 - 4x^2 + 5x - 2.", "response": "f'(x) = 3x^2 - 8x + 5"}
+{"id": "stage3-advanced-differentiation-0269", "instruction": "Find the derivative of f(x) = -1x^3 + 5x^2 - 3x - 1.", "response": "f'(x) = -3x^2 + 10x - 3"}
+{"id": "stage3-advanced-differentiation-0270", "instruction": "Find the derivative of f(x) = 5*sin(2x).", "response": "f'(x) = 10*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0271", "instruction": "Find the derivative of f(x) = -2x^3 - 4x^2 - 3x - 2.", "response": "f'(x) = -6x^2 - 8x - 3"}
+{"id": "stage3-advanced-differentiation-0272", "instruction": "Find the derivative of f(x) = 2x^3.", "response": "f'(x) = 6x^2"}
+{"id": "stage3-advanced-differentiation-0273", "instruction": "Find the derivative of f(x) = 2x^3 + 3x^2 + x + 1.", "response": "f'(x) = 6x^2 + 6x + 1"}
+{"id": "stage3-advanced-differentiation-0274", "instruction": "Find the derivative of f(x) = 1*sin(2x).", "response": "f'(x) = 2*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0275", "instruction": "Find the derivative of f(x) = 3x^2.", "response": "f'(x) = 6x^1"}
+{"id": "stage3-advanced-differentiation-0276", "instruction": "Find the derivative of f(x) = 3x^3.", "response": "f'(x) = 9x^2"}
+{"id": "stage3-advanced-differentiation-0277", "instruction": "Find the derivative of f(x) = 5*sin(2x).", "response": "f'(x) = 10*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0278", "instruction": "Find the derivative of f(x) = 1*sin(4x).", "response": "f'(x) = 4*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0279", "instruction": "Find the derivative of f(x) = 1x^2.", "response": "f'(x) = 2x^1"}
+{"id": "stage3-advanced-differentiation-0280", "instruction": "Find the derivative of f(x) = 4x^3 - 1x^2 - 4x + 1.", "response": "f'(x) = 12x^2 - 2x - 4"}
+{"id": "stage3-advanced-differentiation-0281", "instruction": "Find the derivative of f(x) = 5x^3 + 5x^2 - 4x + 1.", "response": "f'(x) = 15x^2 + 10x - 4"}
+{"id": "stage3-advanced-differentiation-0282", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "response": "f'(x) = 4*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0283", "instruction": "Find the derivative of f(x) = 5x^4.", "response": "f'(x) = 20x^3"}
+{"id": "stage3-advanced-differentiation-0284", "instruction": "Find the derivative of f(x) = 1*sin(3x).", "response": "f'(x) = 3*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0285", "instruction": "Find the derivative of f(x) = -4x^3 - 2x^2 + 4x - 4.", "response": "f'(x) = -12x^2 - 4x + 4"}
+{"id": "stage3-advanced-differentiation-0286", "instruction": "Find the derivative of f(x) = x^3 + 4x^2 + x - 2.", "response": "f'(x) = 3x^2 + 8x + 1"}
+{"id": "stage3-advanced-differentiation-0287", "instruction": "Find the derivative of f(x) = 2x^2.", "response": "f'(x) = 4x^1"}
+{"id": "stage3-advanced-differentiation-0288", "instruction": "Find the derivative of f(x) = 2x^3.", "response": "f'(x) = 6x^2"}
+{"id": "stage3-advanced-differentiation-0289", "instruction": "Find the derivative of f(x) = x^3 - 1x^2 + 4x - 5.", "response": "f'(x) = 3x^2 - 2x + 4"}
+{"id": "stage3-advanced-differentiation-0290", "instruction": "Find the derivative of f(x) = 3x^3 - 4x.", "response": "f'(x) = 9x^2 - 4"}
+{"id": "stage3-advanced-differentiation-0291", "instruction": "Find the derivative of f(x) = 4*sin(4x).", "response": "f'(x) = 16*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0292", "instruction": "Find the derivative of f(x) = 2*sin(3x).", "response": "f'(x) = 6*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0293", "instruction": "Find the derivative of f(x) = 3x^3.", "response": "f'(x) = 9x^2"}
+{"id": "stage3-advanced-differentiation-0294", "instruction": "Find the derivative of f(x) = 3*sin(3x).", "response": "f'(x) = 9*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0295", "instruction": "Find the derivative of f(x) = 6x^4.", "response": "f'(x) = 24x^3"}
+{"id": "stage3-advanced-differentiation-0296", "instruction": "Find the derivative of f(x) = 6x^4.", "response": "f'(x) = 24x^3"}
+{"id": "stage3-advanced-differentiation-0297", "instruction": "Find the derivative of f(x) = 6x^4.", "response": "f'(x) = 24x^3"}
+{"id": "stage3-advanced-differentiation-0298", "instruction": "Find the derivative of f(x) = 3x^4.", "response": "f'(x) = 12x^3"}
+{"id": "stage3-advanced-differentiation-0299", "instruction": "Find the derivative of f(x) = -1x^3 + 5x^2 - 4x + 5.", "response": "f'(x) = -3x^2 + 10x - 4"}
+{"id": "stage3-advanced-differentiation-0300", "instruction": "Find the derivative of f(x) = 2*sin(4x).", "response": "f'(x) = 8*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0301", "instruction": "Find the derivative of f(x) = -5x^3 + x^2 - 1x - 1.", "response": "f'(x) = -15x^2 + 2x - 1"}
+{"id": "stage3-advanced-differentiation-0302", "instruction": "Find the derivative of f(x) = 2x^3.", "response": "f'(x) = 6x^2"}
+{"id": "stage3-advanced-differentiation-0303", "instruction": "Find the derivative of f(x) = 2x^3.", "response": "f'(x) = 6x^2"}
+{"id": "stage3-advanced-differentiation-0304", "instruction": "Find the derivative of f(x) = 3*sin(4x).", "response": "f'(x) = 12*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0305", "instruction": "Find the derivative of f(x) = 3x^2.", "response": "f'(x) = 6x^1"}
+{"id": "stage3-advanced-differentiation-0306", "instruction": "Find the derivative of f(x) = 2x^3 + x^2 - 4x + 1.", "response": "f'(x) = 6x^2 + 2x - 4"}
+{"id": "stage3-advanced-differentiation-0307", "instruction": "Find the derivative of f(x) = 6x^3.", "response": "f'(x) = 18x^2"}
+{"id": "stage3-advanced-differentiation-0308", "instruction": "Find the derivative of f(x) = 1*sin(3x).", "response": "f'(x) = 3*cos(3x)"}
+{"id": "stage3-advanced-differentiation-0309", "instruction": "Find the derivative of f(x) = 4x^3 + 3x^2 - 5x + 2.", "response": "f'(x) = 12x^2 + 6x - 5"}
+{"id": "stage3-advanced-differentiation-0310", "instruction": "Find the derivative of f(x) = 6x^4.", "response": "f'(x) = 24x^3"}
+{"id": "stage3-advanced-differentiation-0311", "instruction": "Find the derivative of f(x) = 6x^3.", "response": "f'(x) = 18x^2"}
+{"id": "stage3-advanced-differentiation-0312", "instruction": "Find the derivative of f(x) = 2*sin(1x).", "response": "f'(x) = 2*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0313", "instruction": "Find the derivative of f(x) = -2x^3 + 5x^2 - 1x.", "response": "f'(x) = -6x^2 + 10x - 1"}
+{"id": "stage3-advanced-differentiation-0314", "instruction": "Find the derivative of f(x) = 1*sin(1x).", "response": "f'(x) = 1*cos(1x)"}
+{"id": "stage3-advanced-differentiation-0315", "instruction": "Find the derivative of f(x) = 2x^4.", "response": "f'(x) = 8x^3"}
+{"id": "stage3-advanced-differentiation-0316", "instruction": "Find the derivative of f(x) = 2*sin(4x).", "response": "f'(x) = 8*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0317", "instruction": "Find the derivative of f(x) = 2x^3 + 2x^2 - 3x - 1.", "response": "f'(x) = 6x^2 + 4x - 3"}
+{"id": "stage3-advanced-differentiation-0318", "instruction": "Find the derivative of f(x) = 6x^4.", "response": "f'(x) = 24x^3"}
+{"id": "stage3-advanced-differentiation-0319", "instruction": "Find the derivative of f(x) = -1x^3 - 2x^2 - 4x + 1.", "response": "f'(x) = -3x^2 - 4x - 4"}
+{"id": "stage3-advanced-differentiation-0320", "instruction": "Find the derivative of f(x) = -3x^3 + x^2 + x + 4.", "response": "f'(x) = -9x^2 + 2x + 1"}
+{"id": "stage3-advanced-differentiation-0321", "instruction": "Find the derivative of f(x) = 1x^2.", "response": "f'(x) = 2x^1"}
+{"id": "stage3-advanced-differentiation-0322", "instruction": "Find the derivative of f(x) = 5*sin(2x).", "response": "f'(x) = 10*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0323", "instruction": "Find the derivative of f(x) = 4x^2.", "response": "f'(x) = 8x^1"}
+{"id": "stage3-advanced-differentiation-0324", "instruction": "Find the derivative of f(x) = -3x^3 - 5x^2 + x + 4.", "response": "f'(x) = -9x^2 - 10x + 1"}
+{"id": "stage3-advanced-differentiation-0325", "instruction": "Find the derivative of f(x) = 4x^3 - 1x^2 - 3x - 4.", "response": "f'(x) = 12x^2 - 2x - 3"}
+{"id": "stage3-advanced-differentiation-0326", "instruction": "Find the derivative of f(x) = -3x^3 + 4x^2 - 4x - 5.", "response": "f'(x) = -9x^2 + 8x - 4"}
+{"id": "stage3-advanced-differentiation-0327", "instruction": "Find the derivative of f(x) = 5*sin(4x).", "response": "f'(x) = 20*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0328", "instruction": "Find the derivative of f(x) = 5x^3 + 2x^2 - 4x - 2.", "response": "f'(x) = 15x^2 + 4x - 4"}
+{"id": "stage3-advanced-differentiation-0329", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "response": "f'(x) = 4*cos(2x)"}
+{"id": "stage3-advanced-differentiation-0330", "instruction": "Find the derivative of f(x) = -1x^3 + 2x^2 + x - 3.", "response": "f'(x) = -3x^2 + 4x + 1"}
+{"id": "stage3-advanced-differentiation-0331", "instruction": "Find the derivative of f(x) = -2x^3 + 4x^2 - 2x - 1.", "response": "f'(x) = -6x^2 + 8x - 2"}
+{"id": "stage3-advanced-differentiation-0332", "instruction": "Find the derivative of f(x) = 2*sin(4x).", "response": "f'(x) = 8*cos(4x)"}
+{"id": "stage3-advanced-differentiation-0333", "instruction": "Find the derivative of f(x) = 4x^2.", "response": "f'(x) = 8x^1"}
+{"id": "stage3-advanced-integration-0000", "instruction": "Evaluate the indefinite integral ∫ 3x^3 dx.", "response": "3/4x^4 + C"}
+{"id": "stage3-advanced-integration-0001", "instruction": "Evaluate the indefinite integral ∫ 5x^4 dx.", "response": "1x^5 + C"}
+{"id": "stage3-advanced-integration-0002", "instruction": "Evaluate the indefinite integral ∫ 3x^4 dx.", "response": "3/5x^5 + C"}
+{"id": "stage3-advanced-integration-0003", "instruction": "Evaluate the indefinite integral ∫ 1x^4 dx.", "response": "1/5x^5 + C"}
+{"id": "stage3-advanced-integration-0004", "instruction": "Evaluate the indefinite integral ∫ 3x^4 dx.", "response": "3/5x^5 + C"}
+{"id": "stage3-advanced-integration-0005", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 + 2x + 2) dx.", "response": "-1/3x^3 + 1x^2 + 2 + C"}
+{"id": "stage3-advanced-integration-0006", "instruction": "Evaluate the indefinite integral ∫ (4x^2 - 3x - 3) dx.", "response": "4/3x^3 - 3/2x^2 - 3 + C"}
+{"id": "stage3-advanced-integration-0007", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "response": "1/4x^4 + C"}
+{"id": "stage3-advanced-integration-0008", "instruction": "Evaluate the indefinite integral ∫ 4x^3 dx.", "response": "1x^4 + C"}
+{"id": "stage3-advanced-integration-0009", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 - 4x) dx.", "response": "-4/3x^3 - 2x^2 + C"}
+{"id": "stage3-advanced-integration-0010", "instruction": "Evaluate the indefinite integral ∫ (2x^2 + 2) dx.", "response": "2/3x^3 + 2 + C"}
+{"id": "stage3-advanced-integration-0011", "instruction": "Evaluate the indefinite integral ∫ (x^2 - 2x + 4) dx.", "response": "1/3x^3 - 1x^2 + 4 + C"}
+{"id": "stage3-advanced-integration-0012", "instruction": "Evaluate the indefinite integral ∫ 5x^2 dx.", "response": "5/3x^3 + C"}
+{"id": "stage3-advanced-integration-0013", "instruction": "Evaluate the definite integral ∫ from 1 to 5 of 4x^2 dx.", "response": "496/3"}
+{"id": "stage3-advanced-integration-0014", "instruction": "Evaluate the definite integral ∫ from 2 to 3 of 1x^2 dx.", "response": "19/3"}
+{"id": "stage3-advanced-integration-0015", "instruction": "Evaluate the definite integral ∫ from 4 to 4 of 2x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0016", "instruction": "Evaluate the definite integral ∫ from 0 to 3 of 1x^2 dx.", "response": "9"}
+{"id": "stage3-advanced-integration-0017", "instruction": "Evaluate the indefinite integral ∫ 4x^3 dx.", "response": "1x^4 + C"}
+{"id": "stage3-advanced-integration-0018", "instruction": "Evaluate the indefinite integral ∫ (x^2 + 2x) dx.", "response": "1/3x^3 + 1x^2 + C"}
+{"id": "stage3-advanced-integration-0019", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 3x^2 dx.", "response": "37"}
+{"id": "stage3-advanced-integration-0020", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 4x^2 dx.", "response": "104/3"}
+{"id": "stage3-advanced-integration-0021", "instruction": "Evaluate the indefinite integral ∫ 5x^4 dx.", "response": "1x^5 + C"}
+{"id": "stage3-advanced-integration-0022", "instruction": "Evaluate the indefinite integral ∫ 2x^2 dx.", "response": "2/3x^3 + C"}
+{"id": "stage3-advanced-integration-0023", "instruction": "Evaluate the indefinite integral ∫ 2x^2 dx.", "response": "2/3x^3 + C"}
+{"id": "stage3-advanced-integration-0024", "instruction": "Evaluate the indefinite integral ∫ 4x^3 dx.", "response": "1x^4 + C"}
+{"id": "stage3-advanced-integration-0025", "instruction": "Evaluate the indefinite integral ∫ 6x^4 dx.", "response": "6/5x^5 + C"}
+{"id": "stage3-advanced-integration-0026", "instruction": "Evaluate the definite integral ∫ from 0 to 4 of 1x^2 dx.", "response": "64/3"}
+{"id": "stage3-advanced-integration-0027", "instruction": "Evaluate the definite integral ∫ from 2 to 6 of 4x^2 dx.", "response": "832/3"}
+{"id": "stage3-advanced-integration-0028", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 2x^2 dx.", "response": "52/3"}
+{"id": "stage3-advanced-integration-0029", "instruction": "Evaluate the indefinite integral ∫ 3x^1 dx.", "response": "3/2x^2 + C"}
+{"id": "stage3-advanced-integration-0030", "instruction": "Evaluate the indefinite integral ∫ 3x^2 dx.", "response": "1x^3 + C"}
+{"id": "stage3-advanced-integration-0031", "instruction": "Evaluate the indefinite integral ∫ 6x^3 dx.", "response": "3/2x^4 + C"}
+{"id": "stage3-advanced-integration-0032", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 - 4x + 4) dx.", "response": "-1/3x^3 - 2x^2 + 4 + C"}
+{"id": "stage3-advanced-integration-0033", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 + 2x - 3) dx.", "response": "-2/3x^3 + 1x^2 - 3 + C"}
+{"id": "stage3-advanced-integration-0034", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "response": "2x^2 + C"}
+{"id": "stage3-advanced-integration-0035", "instruction": "Evaluate the definite integral ∫ from 0 to 3 of 1x^2 dx.", "response": "9"}
+{"id": "stage3-advanced-integration-0036", "instruction": "Evaluate the definite integral ∫ from 2 to 5 of 1x^2 dx.", "response": "39"}
+{"id": "stage3-advanced-integration-0037", "instruction": "Evaluate the definite integral ∫ from 1 to 1 of 1x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0038", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 3x^2 dx.", "response": "37"}
+{"id": "stage3-advanced-integration-0039", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 + x - 4) dx.", "response": "-4/3x^3 + 1/2x^2 - 4 + C"}
+{"id": "stage3-advanced-integration-0040", "instruction": "Evaluate the indefinite integral ∫ (3x^2 + x - 2) dx.", "response": "1x^3 + 1/2x^2 - 2 + C"}
+{"id": "stage3-advanced-integration-0041", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "response": "1/4x^4 + C"}
+{"id": "stage3-advanced-integration-0042", "instruction": "Evaluate the definite integral ∫ from 0 to 6 of 1x^2 dx.", "response": "72"}
+{"id": "stage3-advanced-integration-0043", "instruction": "Evaluate the indefinite integral ∫ (2x^2 - 3x + 2) dx.", "response": "2/3x^3 - 3/2x^2 + 2 + C"}
+{"id": "stage3-advanced-integration-0044", "instruction": "Evaluate the definite integral ∫ from 1 to 2 of 4x^2 dx.", "response": "28/3"}
+{"id": "stage3-advanced-integration-0045", "instruction": "Evaluate the indefinite integral ∫ 1x^2 dx.", "response": "1/3x^3 + C"}
+{"id": "stage3-advanced-integration-0046", "instruction": "Evaluate the indefinite integral ∫ 4x^4 dx.", "response": "4/5x^5 + C"}
+{"id": "stage3-advanced-integration-0047", "instruction": "Evaluate the definite integral ∫ from 1 to 1 of 3x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0048", "instruction": "Evaluate the definite integral ∫ from 3 to 6 of 3x^2 dx.", "response": "189"}
+{"id": "stage3-advanced-integration-0049", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 + x - 3) dx.", "response": "-2/3x^3 + 1/2x^2 - 3 + C"}
+{"id": "stage3-advanced-integration-0050", "instruction": "Evaluate the definite integral ∫ from 2 to 4 of 4x^2 dx.", "response": "224/3"}
+{"id": "stage3-advanced-integration-0051", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 3x^2 dx.", "response": "37"}
+{"id": "stage3-advanced-integration-0052", "instruction": "Evaluate the indefinite integral ∫ (2x^2 - 3x + 2) dx.", "response": "2/3x^3 - 3/2x^2 + 2 + C"}
+{"id": "stage3-advanced-integration-0053", "instruction": "Evaluate the definite integral ∫ from 2 to 4 of 4x^2 dx.", "response": "224/3"}
+{"id": "stage3-advanced-integration-0054", "instruction": "Evaluate the indefinite integral ∫ (2x^2 - 3x - 4) dx.", "response": "2/3x^3 - 3/2x^2 - 4 + C"}
+{"id": "stage3-advanced-integration-0055", "instruction": "Evaluate the indefinite integral ∫ (x^2 + 3x - 1) dx.", "response": "1/3x^3 + 3/2x^2 - 1 + C"}
+{"id": "stage3-advanced-integration-0056", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 + 3x + 4) dx.", "response": "-2/3x^3 + 3/2x^2 + 4 + C"}
+{"id": "stage3-advanced-integration-0057", "instruction": "Evaluate the indefinite integral ∫ (4x^2 - 3x) dx.", "response": "4/3x^3 - 3/2x^2 + C"}
+{"id": "stage3-advanced-integration-0058", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 4x^2 dx.", "response": "104/3"}
+{"id": "stage3-advanced-integration-0059", "instruction": "Evaluate the definite integral ∫ from 1 to 2 of 3x^2 dx.", "response": "7"}
+{"id": "stage3-advanced-integration-0060", "instruction": "Evaluate the indefinite integral ∫ 5x^4 dx.", "response": "1x^5 + C"}
+{"id": "stage3-advanced-integration-0061", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 1x^2 dx.", "response": "21"}
+{"id": "stage3-advanced-integration-0062", "instruction": "Evaluate the indefinite integral ∫ 5x^1 dx.", "response": "5/2x^2 + C"}
+{"id": "stage3-advanced-integration-0063", "instruction": "Evaluate the indefinite integral ∫ (2x^2 + 2x - 3) dx.", "response": "2/3x^3 + 1x^2 - 3 + C"}
+{"id": "stage3-advanced-integration-0064", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 3x^2 dx.", "response": "37"}
+{"id": "stage3-advanced-integration-0065", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 1x^2 dx.", "response": "21"}
+{"id": "stage3-advanced-integration-0066", "instruction": "Evaluate the indefinite integral ∫ 6x^4 dx.", "response": "6/5x^5 + C"}
+{"id": "stage3-advanced-integration-0067", "instruction": "Evaluate the indefinite integral ∫ 2x^4 dx.", "response": "2/5x^5 + C"}
+{"id": "stage3-advanced-integration-0068", "instruction": "Evaluate the indefinite integral ∫ 1x^4 dx.", "response": "1/5x^5 + C"}
+{"id": "stage3-advanced-integration-0069", "instruction": "Evaluate the indefinite integral ∫ (3x^2 + x + 3) dx.", "response": "1x^3 + 1/2x^2 + 3 + C"}
+{"id": "stage3-advanced-integration-0070", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 + x - 2) dx.", "response": "-1/3x^3 + 1/2x^2 - 2 + C"}
+{"id": "stage3-advanced-integration-0071", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "response": "1/4x^4 + C"}
+{"id": "stage3-advanced-integration-0072", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 + 2x + 4) dx.", "response": "-1x^3 + 1x^2 + 4 + C"}
+{"id": "stage3-advanced-integration-0073", "instruction": "Evaluate the indefinite integral ∫ 1x^4 dx.", "response": "1/5x^5 + C"}
+{"id": "stage3-advanced-integration-0074", "instruction": "Evaluate the indefinite integral ∫ 1x^2 dx.", "response": "1/3x^3 + C"}
+{"id": "stage3-advanced-integration-0075", "instruction": "Evaluate the indefinite integral ∫ (3x^2 + 3x + 2) dx.", "response": "1x^3 + 3/2x^2 + 2 + C"}
+{"id": "stage3-advanced-integration-0076", "instruction": "Evaluate the indefinite integral ∫ (3x^2 + 1) dx.", "response": "1x^3 + 1 + C"}
+{"id": "stage3-advanced-integration-0077", "instruction": "Evaluate the indefinite integral ∫ (2x^2 - 3) dx.", "response": "2/3x^3 - 3 + C"}
+{"id": "stage3-advanced-integration-0078", "instruction": "Evaluate the indefinite integral ∫ 2x^1 dx.", "response": "1x^2 + C"}
+{"id": "stage3-advanced-integration-0079", "instruction": "Evaluate the indefinite integral ∫ 1x^1 dx.", "response": "1/2x^2 + C"}
+{"id": "stage3-advanced-integration-0080", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 - 4x - 1) dx.", "response": "-1/3x^3 - 2x^2 - 1 + C"}
+{"id": "stage3-advanced-integration-0081", "instruction": "Evaluate the definite integral ∫ from 1 to 6 of 2x^2 dx.", "response": "430/3"}
+{"id": "stage3-advanced-integration-0082", "instruction": "Evaluate the definite integral ∫ from 2 to 4 of 1x^2 dx.", "response": "56/3"}
+{"id": "stage3-advanced-integration-0083", "instruction": "Evaluate the definite integral ∫ from 2 to 3 of 4x^2 dx.", "response": "76/3"}
+{"id": "stage3-advanced-integration-0084", "instruction": "Evaluate the definite integral ∫ from 0 to 1 of 2x^2 dx.", "response": "2/3"}
+{"id": "stage3-advanced-integration-0085", "instruction": "Evaluate the indefinite integral ∫ 6x^4 dx.", "response": "6/5x^5 + C"}
+{"id": "stage3-advanced-integration-0086", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 4x^2 dx.", "response": "104/3"}
+{"id": "stage3-advanced-integration-0087", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 - 1x) dx.", "response": "-1/3x^3 - 1/2x^2 + C"}
+{"id": "stage3-advanced-integration-0088", "instruction": "Evaluate the indefinite integral ∫ (2x^2 - 4x + 1) dx.", "response": "2/3x^3 - 2x^2 + 1 + C"}
+{"id": "stage3-advanced-integration-0089", "instruction": "Evaluate the indefinite integral ∫ 1x^4 dx.", "response": "1/5x^5 + C"}
+{"id": "stage3-advanced-integration-0090", "instruction": "Evaluate the definite integral ∫ from 3 to 6 of 3x^2 dx.", "response": "189"}
+{"id": "stage3-advanced-integration-0091", "instruction": "Evaluate the indefinite integral ∫ 4x^4 dx.", "response": "4/5x^5 + C"}
+{"id": "stage3-advanced-integration-0092", "instruction": "Evaluate the definite integral ∫ from 4 to 5 of 4x^2 dx.", "response": "244/3"}
+{"id": "stage3-advanced-integration-0093", "instruction": "Evaluate the indefinite integral ∫ 6x^1 dx.", "response": "3x^2 + C"}
+{"id": "stage3-advanced-integration-0094", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 + 2x + 1) dx.", "response": "-4/3x^3 + 1x^2 + 1 + C"}
+{"id": "stage3-advanced-integration-0095", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 + 2) dx.", "response": "-1x^3 + 2 + C"}
+{"id": "stage3-advanced-integration-0096", "instruction": "Evaluate the definite integral ∫ from 0 to 4 of 3x^2 dx.", "response": "64"}
+{"id": "stage3-advanced-integration-0097", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 2x^2 dx.", "response": "52/3"}
+{"id": "stage3-advanced-integration-0098", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 3x^2 dx.", "response": "63"}
+{"id": "stage3-advanced-integration-0099", "instruction": "Evaluate the definite integral ∫ from 1 to 5 of 2x^2 dx.", "response": "248/3"}
+{"id": "stage3-advanced-integration-0100", "instruction": "Evaluate the indefinite integral ∫ (x^2 + 3x - 2) dx.", "response": "1/3x^3 + 3/2x^2 - 2 + C"}
+{"id": "stage3-advanced-integration-0101", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 3x^2 dx.", "response": "37"}
+{"id": "stage3-advanced-integration-0102", "instruction": "Evaluate the definite integral ∫ from 1 to 5 of 2x^2 dx.", "response": "248/3"}
+{"id": "stage3-advanced-integration-0103", "instruction": "Evaluate the definite integral ∫ from 0 to 6 of 4x^2 dx.", "response": "288"}
+{"id": "stage3-advanced-integration-0104", "instruction": "Evaluate the indefinite integral ∫ 2x^2 dx.", "response": "2/3x^3 + C"}
+{"id": "stage3-advanced-integration-0105", "instruction": "Evaluate the indefinite integral ∫ 5x^4 dx.", "response": "1x^5 + C"}
+{"id": "stage3-advanced-integration-0106", "instruction": "Evaluate the indefinite integral ∫ 4x^4 dx.", "response": "4/5x^5 + C"}
+{"id": "stage3-advanced-integration-0107", "instruction": "Evaluate the definite integral ∫ from 1 to 2 of 1x^2 dx.", "response": "7/3"}
+{"id": "stage3-advanced-integration-0108", "instruction": "Evaluate the indefinite integral ∫ 3x^3 dx.", "response": "3/4x^4 + C"}
+{"id": "stage3-advanced-integration-0109", "instruction": "Evaluate the definite integral ∫ from 1 to 2 of 1x^2 dx.", "response": "7/3"}
+{"id": "stage3-advanced-integration-0110", "instruction": "Evaluate the indefinite integral ∫ 3x^4 dx.", "response": "3/5x^5 + C"}
+{"id": "stage3-advanced-integration-0111", "instruction": "Evaluate the indefinite integral ∫ 5x^2 dx.", "response": "5/3x^3 + C"}
+{"id": "stage3-advanced-integration-0112", "instruction": "Evaluate the indefinite integral ∫ 5x^2 dx.", "response": "5/3x^3 + C"}
+{"id": "stage3-advanced-integration-0113", "instruction": "Evaluate the definite integral ∫ from 2 to 3 of 3x^2 dx.", "response": "19"}
+{"id": "stage3-advanced-integration-0114", "instruction": "Evaluate the indefinite integral ∫ 5x^3 dx.", "response": "5/4x^4 + C"}
+{"id": "stage3-advanced-integration-0115", "instruction": "Evaluate the indefinite integral ∫ 6x^1 dx.", "response": "3x^2 + C"}
+{"id": "stage3-advanced-integration-0116", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 + 3x + 3) dx.", "response": "-4/3x^3 + 3/2x^2 + 3 + C"}
+{"id": "stage3-advanced-integration-0117", "instruction": "Evaluate the indefinite integral ∫ 1x^1 dx.", "response": "1/2x^2 + C"}
+{"id": "stage3-advanced-integration-0118", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 + 4x - 3) dx.", "response": "-4/3x^3 + 2x^2 - 3 + C"}
+{"id": "stage3-advanced-integration-0119", "instruction": "Evaluate the indefinite integral ∫ 6x^1 dx.", "response": "3x^2 + C"}
+{"id": "stage3-advanced-integration-0120", "instruction": "Evaluate the indefinite integral ∫ 3x^2 dx.", "response": "1x^3 + C"}
+{"id": "stage3-advanced-integration-0121", "instruction": "Evaluate the indefinite integral ∫ (3x^2 + 3x + 4) dx.", "response": "1x^3 + 3/2x^2 + 4 + C"}
+{"id": "stage3-advanced-integration-0122", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 - 2x + 1) dx.", "response": "-1x^3 - 1x^2 + 1 + C"}
+{"id": "stage3-advanced-integration-0123", "instruction": "Evaluate the definite integral ∫ from 1 to 1 of 2x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0124", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 2x^2 dx.", "response": "52/3"}
+{"id": "stage3-advanced-integration-0125", "instruction": "Evaluate the definite integral ∫ from 2 to 3 of 2x^2 dx.", "response": "38/3"}
+{"id": "stage3-advanced-integration-0126", "instruction": "Evaluate the indefinite integral ∫ 3x^3 dx.", "response": "3/4x^4 + C"}
+{"id": "stage3-advanced-integration-0127", "instruction": "Evaluate the indefinite integral ∫ (2x^2 + x - 1) dx.", "response": "2/3x^3 + 1/2x^2 - 1 + C"}
+{"id": "stage3-advanced-integration-0128", "instruction": "Evaluate the indefinite integral ∫ 5x^4 dx.", "response": "1x^5 + C"}
+{"id": "stage3-advanced-integration-0129", "instruction": "Evaluate the indefinite integral ∫ 2x^4 dx.", "response": "2/5x^5 + C"}
+{"id": "stage3-advanced-integration-0130", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 3x^2 dx.", "response": "37"}
+{"id": "stage3-advanced-integration-0131", "instruction": "Evaluate the indefinite integral ∫ 4x^2 dx.", "response": "4/3x^3 + C"}
+{"id": "stage3-advanced-integration-0132", "instruction": "Evaluate the indefinite integral ∫ 6x^1 dx.", "response": "3x^2 + C"}
+{"id": "stage3-advanced-integration-0133", "instruction": "Evaluate the indefinite integral ∫ 3x^3 dx.", "response": "3/4x^4 + C"}
+{"id": "stage3-advanced-integration-0134", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 1x^2 dx.", "response": "21"}
+{"id": "stage3-advanced-integration-0135", "instruction": "Evaluate the definite integral ∫ from 0 to 6 of 2x^2 dx.", "response": "144"}
+{"id": "stage3-advanced-integration-0136", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 + 4x) dx.", "response": "-4/3x^3 + 2x^2 + C"}
+{"id": "stage3-advanced-integration-0137", "instruction": "Evaluate the definite integral ∫ from 3 to 6 of 3x^2 dx.", "response": "189"}
+{"id": "stage3-advanced-integration-0138", "instruction": "Evaluate the indefinite integral ∫ (x^2 + x - 4) dx.", "response": "1/3x^3 + 1/2x^2 - 4 + C"}
+{"id": "stage3-advanced-integration-0139", "instruction": "Evaluate the definite integral ∫ from 4 to 5 of 2x^2 dx.", "response": "122/3"}
+{"id": "stage3-advanced-integration-0140", "instruction": "Evaluate the indefinite integral ∫ (2x^2 + 3x - 1) dx.", "response": "2/3x^3 + 3/2x^2 - 1 + C"}
+{"id": "stage3-advanced-integration-0141", "instruction": "Evaluate the indefinite integral ∫ (3x^2 + x + 2) dx.", "response": "1x^3 + 1/2x^2 + 2 + C"}
+{"id": "stage3-advanced-integration-0142", "instruction": "Evaluate the indefinite integral ∫ 3x^1 dx.", "response": "3/2x^2 + C"}
+{"id": "stage3-advanced-integration-0143", "instruction": "Evaluate the indefinite integral ∫ 5x^3 dx.", "response": "5/4x^4 + C"}
+{"id": "stage3-advanced-integration-0144", "instruction": "Evaluate the definite integral ∫ from 1 to 5 of 3x^2 dx.", "response": "124"}
+{"id": "stage3-advanced-integration-0145", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "response": "1/4x^4 + C"}
+{"id": "stage3-advanced-integration-0146", "instruction": "Evaluate the indefinite integral ∫ (x^2 - 2x - 4) dx.", "response": "1/3x^3 - 1x^2 - 4 + C"}
+{"id": "stage3-advanced-integration-0147", "instruction": "Evaluate the indefinite integral ∫ 5x^3 dx.", "response": "5/4x^4 + C"}
+{"id": "stage3-advanced-integration-0148", "instruction": "Evaluate the indefinite integral ∫ 3x^4 dx.", "response": "3/5x^5 + C"}
+{"id": "stage3-advanced-integration-0149", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 - 4x + 1) dx.", "response": "-1x^3 - 2x^2 + 1 + C"}
+{"id": "stage3-advanced-integration-0150", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 1x^2 dx.", "response": "37/3"}
+{"id": "stage3-advanced-integration-0151", "instruction": "Evaluate the indefinite integral ∫ 6x^1 dx.", "response": "3x^2 + C"}
+{"id": "stage3-advanced-integration-0152", "instruction": "Evaluate the definite integral ∫ from 2 to 5 of 1x^2 dx.", "response": "39"}
+{"id": "stage3-advanced-integration-0153", "instruction": "Evaluate the definite integral ∫ from 2 to 2 of 2x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0154", "instruction": "Evaluate the definite integral ∫ from 2 to 3 of 2x^2 dx.", "response": "38/3"}
+{"id": "stage3-advanced-integration-0155", "instruction": "Evaluate the indefinite integral ∫ (2x^2 + 4x - 1) dx.", "response": "2/3x^3 + 2x^2 - 1 + C"}
+{"id": "stage3-advanced-integration-0156", "instruction": "Evaluate the indefinite integral ∫ 3x^2 dx.", "response": "1x^3 + C"}
+{"id": "stage3-advanced-integration-0157", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 2x^2 dx.", "response": "52/3"}
+{"id": "stage3-advanced-integration-0158", "instruction": "Evaluate the indefinite integral ∫ (2x^2 + 2x - 3) dx.", "response": "2/3x^3 + 1x^2 - 3 + C"}
+{"id": "stage3-advanced-integration-0159", "instruction": "Evaluate the indefinite integral ∫ 1x^4 dx.", "response": "1/5x^5 + C"}
+{"id": "stage3-advanced-integration-0160", "instruction": "Evaluate the indefinite integral ∫ 4x^2 dx.", "response": "4/3x^3 + C"}
+{"id": "stage3-advanced-integration-0161", "instruction": "Evaluate the definite integral ∫ from 0 to 3 of 4x^2 dx.", "response": "36"}
+{"id": "stage3-advanced-integration-0162", "instruction": "Evaluate the indefinite integral ∫ (4x^2 + 4x + 2) dx.", "response": "4/3x^3 + 2x^2 + 2 + C"}
+{"id": "stage3-advanced-integration-0163", "instruction": "Evaluate the definite integral ∫ from 4 to 4 of 4x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0164", "instruction": "Evaluate the definite integral ∫ from 3 to 6 of 4x^2 dx.", "response": "252"}
+{"id": "stage3-advanced-integration-0165", "instruction": "Evaluate the indefinite integral ∫ 2x^2 dx.", "response": "2/3x^3 + C"}
+{"id": "stage3-advanced-integration-0166", "instruction": "Evaluate the definite integral ∫ from 2 to 3 of 1x^2 dx.", "response": "19/3"}
+{"id": "stage3-advanced-integration-0167", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 + 3x + 3) dx.", "response": "-1/3x^3 + 3/2x^2 + 3 + C"}
+{"id": "stage3-advanced-integration-0168", "instruction": "Evaluate the indefinite integral ∫ 6x^2 dx.", "response": "2x^3 + C"}
+{"id": "stage3-advanced-integration-0169", "instruction": "Evaluate the indefinite integral ∫ (x^2 - 3x + 2) dx.", "response": "1/3x^3 - 3/2x^2 + 2 + C"}
+{"id": "stage3-advanced-integration-0170", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "response": "1/4x^4 + C"}
+{"id": "stage3-advanced-integration-0171", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 - 4x + 4) dx.", "response": "-2/3x^3 - 2x^2 + 4 + C"}
+{"id": "stage3-advanced-integration-0172", "instruction": "Evaluate the indefinite integral ∫ 3x^3 dx.", "response": "3/4x^4 + C"}
+{"id": "stage3-advanced-integration-0173", "instruction": "Evaluate the definite integral ∫ from 2 to 3 of 4x^2 dx.", "response": "76/3"}
+{"id": "stage3-advanced-integration-0174", "instruction": "Evaluate the indefinite integral ∫ 2x^2 dx.", "response": "2/3x^3 + C"}
+{"id": "stage3-advanced-integration-0175", "instruction": "Evaluate the indefinite integral ∫ (2x^2 - 4x) dx.", "response": "2/3x^3 - 2x^2 + C"}
+{"id": "stage3-advanced-integration-0176", "instruction": "Evaluate the definite integral ∫ from 1 to 2 of 4x^2 dx.", "response": "28/3"}
+{"id": "stage3-advanced-integration-0177", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "response": "1/4x^4 + C"}
+{"id": "stage3-advanced-integration-0178", "instruction": "Evaluate the indefinite integral ∫ 1x^4 dx.", "response": "1/5x^5 + C"}
+{"id": "stage3-advanced-integration-0179", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 4x^2 dx.", "response": "148/3"}
+{"id": "stage3-advanced-integration-0180", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 2x^2 dx.", "response": "74/3"}
+{"id": "stage3-advanced-integration-0181", "instruction": "Evaluate the indefinite integral ∫ 5x^4 dx.", "response": "1x^5 + C"}
+{"id": "stage3-advanced-integration-0182", "instruction": "Evaluate the definite integral ∫ from 2 to 3 of 3x^2 dx.", "response": "19"}
+{"id": "stage3-advanced-integration-0183", "instruction": "Evaluate the indefinite integral ∫ 5x^4 dx.", "response": "1x^5 + C"}
+{"id": "stage3-advanced-integration-0184", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 3x^2 dx.", "response": "63"}
+{"id": "stage3-advanced-integration-0185", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 + 3x) dx.", "response": "-4/3x^3 + 3/2x^2 + C"}
+{"id": "stage3-advanced-integration-0186", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 - 2x - 4) dx.", "response": "-1x^3 - 1x^2 - 4 + C"}
+{"id": "stage3-advanced-integration-0187", "instruction": "Evaluate the indefinite integral ∫ (4x^2 + 4x - 3) dx.", "response": "4/3x^3 + 2x^2 - 3 + C"}
+{"id": "stage3-advanced-integration-0188", "instruction": "Evaluate the indefinite integral ∫ 2x^1 dx.", "response": "1x^2 + C"}
+{"id": "stage3-advanced-integration-0189", "instruction": "Evaluate the indefinite integral ∫ (4x^2 - 1x + 3) dx.", "response": "4/3x^3 - 1/2x^2 + 3 + C"}
+{"id": "stage3-advanced-integration-0190", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 - 3x + 4) dx.", "response": "-4/3x^3 - 3/2x^2 + 4 + C"}
+{"id": "stage3-advanced-integration-0191", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "response": "1/4x^4 + C"}
+{"id": "stage3-advanced-integration-0192", "instruction": "Evaluate the indefinite integral ∫ 2x^4 dx.", "response": "2/5x^5 + C"}
+{"id": "stage3-advanced-integration-0193", "instruction": "Evaluate the indefinite integral ∫ 5x^3 dx.", "response": "5/4x^4 + C"}
+{"id": "stage3-advanced-integration-0194", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 4x^2 dx.", "response": "84"}
+{"id": "stage3-advanced-integration-0195", "instruction": "Evaluate the indefinite integral ∫ 3x^4 dx.", "response": "3/5x^5 + C"}
+{"id": "stage3-advanced-integration-0196", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "response": "2x^2 + C"}
+{"id": "stage3-advanced-integration-0197", "instruction": "Evaluate the indefinite integral ∫ (x^2 + 2x) dx.", "response": "1/3x^3 + 1x^2 + C"}
+{"id": "stage3-advanced-integration-0198", "instruction": "Evaluate the indefinite integral ∫ 1x^1 dx.", "response": "1/2x^2 + C"}
+{"id": "stage3-advanced-integration-0199", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 - 2) dx.", "response": "-2/3x^3 - 2 + C"}
+{"id": "stage3-advanced-integration-0200", "instruction": "Evaluate the indefinite integral ∫ 3x^1 dx.", "response": "3/2x^2 + C"}
+{"id": "stage3-advanced-integration-0201", "instruction": "Evaluate the indefinite integral ∫ 3x^4 dx.", "response": "3/5x^5 + C"}
+{"id": "stage3-advanced-integration-0202", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 - 4x + 1) dx.", "response": "-2/3x^3 - 2x^2 + 1 + C"}
+{"id": "stage3-advanced-integration-0203", "instruction": "Evaluate the indefinite integral ∫ 1x^1 dx.", "response": "1/2x^2 + C"}
+{"id": "stage3-advanced-integration-0204", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 3x^2 dx.", "response": "26"}
+{"id": "stage3-advanced-integration-0205", "instruction": "Evaluate the indefinite integral ∫ 4x^3 dx.", "response": "1x^4 + C"}
+{"id": "stage3-advanced-integration-0206", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 1x^2 dx.", "response": "26/3"}
+{"id": "stage3-advanced-integration-0207", "instruction": "Evaluate the indefinite integral ∫ 2x^2 dx.", "response": "2/3x^3 + C"}
+{"id": "stage3-advanced-integration-0208", "instruction": "Evaluate the definite integral ∫ from 4 to 5 of 4x^2 dx.", "response": "244/3"}
+{"id": "stage3-advanced-integration-0209", "instruction": "Evaluate the indefinite integral ∫ 3x^1 dx.", "response": "3/2x^2 + C"}
+{"id": "stage3-advanced-integration-0210", "instruction": "Evaluate the definite integral ∫ from 3 to 5 of 4x^2 dx.", "response": "392/3"}
+{"id": "stage3-advanced-integration-0211", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "response": "2x^2 + C"}
+{"id": "stage3-advanced-integration-0212", "instruction": "Evaluate the definite integral ∫ from 1 to 1 of 3x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0213", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 - 1x + 4) dx.", "response": "-1x^3 - 1/2x^2 + 4 + C"}
+{"id": "stage3-advanced-integration-0214", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 + 2) dx.", "response": "-2/3x^3 + 2 + C"}
+{"id": "stage3-advanced-integration-0215", "instruction": "Evaluate the definite integral ∫ from 0 to 6 of 2x^2 dx.", "response": "144"}
+{"id": "stage3-advanced-integration-0216", "instruction": "Evaluate the indefinite integral ∫ 3x^2 dx.", "response": "1x^3 + C"}
+{"id": "stage3-advanced-integration-0217", "instruction": "Evaluate the indefinite integral ∫ 5x^4 dx.", "response": "1x^5 + C"}
+{"id": "stage3-advanced-integration-0218", "instruction": "Evaluate the indefinite integral ∫ (3x^2 - 4x - 4) dx.", "response": "1x^3 - 2x^2 - 4 + C"}
+{"id": "stage3-advanced-integration-0219", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 2x^2 dx.", "response": "74/3"}
+{"id": "stage3-advanced-integration-0220", "instruction": "Evaluate the indefinite integral ∫ 1x^4 dx.", "response": "1/5x^5 + C"}
+{"id": "stage3-advanced-integration-0221", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 4x^2 dx.", "response": "148/3"}
+{"id": "stage3-advanced-integration-0222", "instruction": "Evaluate the definite integral ∫ from 1 to 5 of 3x^2 dx.", "response": "124"}
+{"id": "stage3-advanced-integration-0223", "instruction": "Evaluate the indefinite integral ∫ 2x^1 dx.", "response": "1x^2 + C"}
+{"id": "stage3-advanced-integration-0224", "instruction": "Evaluate the definite integral ∫ from 0 to 4 of 1x^2 dx.", "response": "64/3"}
+{"id": "stage3-advanced-integration-0225", "instruction": "Evaluate the indefinite integral ∫ 6x^3 dx.", "response": "3/2x^4 + C"}
+{"id": "stage3-advanced-integration-0226", "instruction": "Evaluate the definite integral ∫ from 1 to 5 of 3x^2 dx.", "response": "124"}
+{"id": "stage3-advanced-integration-0227", "instruction": "Evaluate the indefinite integral ∫ (x^2 + 3) dx.", "response": "1/3x^3 + 3 + C"}
+{"id": "stage3-advanced-integration-0228", "instruction": "Evaluate the definite integral ∫ from 1 to 6 of 3x^2 dx.", "response": "215"}
+{"id": "stage3-advanced-integration-0229", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 3x^2 dx.", "response": "63"}
+{"id": "stage3-advanced-integration-0230", "instruction": "Evaluate the indefinite integral ∫ 6x^2 dx.", "response": "2x^3 + C"}
+{"id": "stage3-advanced-integration-0231", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 + 3x - 4) dx.", "response": "-4/3x^3 + 3/2x^2 - 4 + C"}
+{"id": "stage3-advanced-integration-0232", "instruction": "Evaluate the indefinite integral ∫ 6x^2 dx.", "response": "2x^3 + C"}
+{"id": "stage3-advanced-integration-0233", "instruction": "Evaluate the definite integral ∫ from 4 to 6 of 4x^2 dx.", "response": "608/3"}
+{"id": "stage3-advanced-integration-0234", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 1x^2 dx.", "response": "21"}
+{"id": "stage3-advanced-integration-0235", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 + 3x - 3) dx.", "response": "-4/3x^3 + 3/2x^2 - 3 + C"}
+{"id": "stage3-advanced-integration-0236", "instruction": "Evaluate the definite integral ∫ from 3 to 5 of 3x^2 dx.", "response": "98"}
+{"id": "stage3-advanced-integration-0237", "instruction": "Evaluate the definite integral ∫ from 1 to 6 of 1x^2 dx.", "response": "215/3"}
+{"id": "stage3-advanced-integration-0238", "instruction": "Evaluate the indefinite integral ∫ 4x^3 dx.", "response": "1x^4 + C"}
+{"id": "stage3-advanced-integration-0239", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "response": "2x^2 + C"}
+{"id": "stage3-advanced-integration-0240", "instruction": "Evaluate the indefinite integral ∫ 6x^1 dx.", "response": "3x^2 + C"}
+{"id": "stage3-advanced-integration-0241", "instruction": "Evaluate the definite integral ∫ from 2 to 2 of 1x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0242", "instruction": "Evaluate the indefinite integral ∫ (3x^2 - 1x - 1) dx.", "response": "1x^3 - 1/2x^2 - 1 + C"}
+{"id": "stage3-advanced-integration-0243", "instruction": "Evaluate the definite integral ∫ from 0 to 3 of 4x^2 dx.", "response": "36"}
+{"id": "stage3-advanced-integration-0244", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 - 4x - 1) dx.", "response": "-1/3x^3 - 2x^2 - 1 + C"}
+{"id": "stage3-advanced-integration-0245", "instruction": "Evaluate the indefinite integral ∫ (2x^2 - 3x) dx.", "response": "2/3x^3 - 3/2x^2 + C"}
+{"id": "stage3-advanced-integration-0246", "instruction": "Evaluate the indefinite integral ∫ (4x^2 + 3x - 2) dx.", "response": "4/3x^3 + 3/2x^2 - 2 + C"}
+{"id": "stage3-advanced-integration-0247", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 - 2x - 3) dx.", "response": "-1/3x^3 - 1x^2 - 3 + C"}
+{"id": "stage3-advanced-integration-0248", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 - 3x - 2) dx.", "response": "-2/3x^3 - 3/2x^2 - 2 + C"}
+{"id": "stage3-advanced-integration-0249", "instruction": "Evaluate the definite integral ∫ from 2 to 4 of 3x^2 dx.", "response": "56"}
+{"id": "stage3-advanced-integration-0250", "instruction": "Evaluate the indefinite integral ∫ 6x^1 dx.", "response": "3x^2 + C"}
+{"id": "stage3-advanced-integration-0251", "instruction": "Evaluate the indefinite integral ∫ (4x^2 + 4) dx.", "response": "4/3x^3 + 4 + C"}
+{"id": "stage3-advanced-integration-0252", "instruction": "Evaluate the definite integral ∫ from 0 to 4 of 1x^2 dx.", "response": "64/3"}
+{"id": "stage3-advanced-integration-0253", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 3x^2 dx.", "response": "37"}
+{"id": "stage3-advanced-integration-0254", "instruction": "Evaluate the indefinite integral ∫ 6x^4 dx.", "response": "6/5x^5 + C"}
+{"id": "stage3-advanced-integration-0255", "instruction": "Evaluate the definite integral ∫ from 2 to 5 of 1x^2 dx.", "response": "39"}
+{"id": "stage3-advanced-integration-0256", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 - 4x) dx.", "response": "-1/3x^3 - 2x^2 + C"}
+{"id": "stage3-advanced-integration-0257", "instruction": "Evaluate the definite integral ∫ from 4 to 4 of 3x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0258", "instruction": "Evaluate the indefinite integral ∫ 4x^2 dx.", "response": "4/3x^3 + C"}
+{"id": "stage3-advanced-integration-0259", "instruction": "Evaluate the definite integral ∫ from 0 to 5 of 1x^2 dx.", "response": "125/3"}
+{"id": "stage3-advanced-integration-0260", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 + 2x - 3) dx.", "response": "-1/3x^3 + 1x^2 - 3 + C"}
+{"id": "stage3-advanced-integration-0261", "instruction": "Evaluate the indefinite integral ∫ 2x^2 dx.", "response": "2/3x^3 + C"}
+{"id": "stage3-advanced-integration-0262", "instruction": "Evaluate the definite integral ∫ from 1 to 2 of 1x^2 dx.", "response": "7/3"}
+{"id": "stage3-advanced-integration-0263", "instruction": "Evaluate the indefinite integral ∫ 4x^4 dx.", "response": "4/5x^5 + C"}
+{"id": "stage3-advanced-integration-0264", "instruction": "Evaluate the indefinite integral ∫ 5x^3 dx.", "response": "5/4x^4 + C"}
+{"id": "stage3-advanced-integration-0265", "instruction": "Evaluate the definite integral ∫ from 1 to 1 of 4x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0266", "instruction": "Evaluate the indefinite integral ∫ 3x^1 dx.", "response": "3/2x^2 + C"}
+{"id": "stage3-advanced-integration-0267", "instruction": "Evaluate the definite integral ∫ from 2 to 4 of 1x^2 dx.", "response": "56/3"}
+{"id": "stage3-advanced-integration-0268", "instruction": "Evaluate the indefinite integral ∫ (3x^2 - 3x + 3) dx.", "response": "1x^3 - 3/2x^2 + 3 + C"}
+{"id": "stage3-advanced-integration-0269", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 - 3x - 4) dx.", "response": "-1x^3 - 3/2x^2 - 4 + C"}
+{"id": "stage3-advanced-integration-0270", "instruction": "Evaluate the indefinite integral ∫ 4x^3 dx.", "response": "1x^4 + C"}
+{"id": "stage3-advanced-integration-0271", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 - 2x - 4) dx.", "response": "-1x^3 - 1x^2 - 4 + C"}
+{"id": "stage3-advanced-integration-0272", "instruction": "Evaluate the definite integral ∫ from 0 to 3 of 4x^2 dx.", "response": "36"}
+{"id": "stage3-advanced-integration-0273", "instruction": "Evaluate the indefinite integral ∫ 1x^1 dx.", "response": "1/2x^2 + C"}
+{"id": "stage3-advanced-integration-0274", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 + 2) dx.", "response": "-4/3x^3 + 2 + C"}
+{"id": "stage3-advanced-integration-0275", "instruction": "Evaluate the definite integral ∫ from 0 to 5 of 4x^2 dx.", "response": "500/3"}
+{"id": "stage3-advanced-integration-0276", "instruction": "Evaluate the indefinite integral ∫ 5x^1 dx.", "response": "5/2x^2 + C"}
+{"id": "stage3-advanced-integration-0277", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 4x^2 dx.", "response": "148/3"}
+{"id": "stage3-advanced-integration-0278", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 + x - 4) dx.", "response": "-1x^3 + 1/2x^2 - 4 + C"}
+{"id": "stage3-advanced-integration-0279", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 2x^2 dx.", "response": "74/3"}
+{"id": "stage3-advanced-integration-0280", "instruction": "Evaluate the indefinite integral ∫ 1x^1 dx.", "response": "1/2x^2 + C"}
+{"id": "stage3-advanced-integration-0281", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 - 1x - 2) dx.", "response": "-1x^3 - 1/2x^2 - 2 + C"}
+{"id": "stage3-advanced-integration-0282", "instruction": "Evaluate the indefinite integral ∫ (4x^2 + 1) dx.", "response": "4/3x^3 + 1 + C"}
+{"id": "stage3-advanced-integration-0283", "instruction": "Evaluate the definite integral ∫ from 3 to 6 of 4x^2 dx.", "response": "252"}
+{"id": "stage3-advanced-integration-0284", "instruction": "Evaluate the indefinite integral ∫ 2x^2 dx.", "response": "2/3x^3 + C"}
+{"id": "stage3-advanced-integration-0285", "instruction": "Evaluate the indefinite integral ∫ 1x^2 dx.", "response": "1/3x^3 + C"}
+{"id": "stage3-advanced-integration-0286", "instruction": "Evaluate the definite integral ∫ from 4 to 4 of 3x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0287", "instruction": "Evaluate the definite integral ∫ from 4 to 5 of 2x^2 dx.", "response": "122/3"}
+{"id": "stage3-advanced-integration-0288", "instruction": "Evaluate the indefinite integral ∫ 4x^3 dx.", "response": "1x^4 + C"}
+{"id": "stage3-advanced-integration-0289", "instruction": "Evaluate the indefinite integral ∫ (x^2 + 1) dx.", "response": "1/3x^3 + 1 + C"}
+{"id": "stage3-advanced-integration-0290", "instruction": "Evaluate the indefinite integral ∫ 5x^2 dx.", "response": "5/3x^3 + C"}
+{"id": "stage3-advanced-integration-0291", "instruction": "Evaluate the indefinite integral ∫ 2x^1 dx.", "response": "1x^2 + C"}
+{"id": "stage3-advanced-integration-0292", "instruction": "Evaluate the definite integral ∫ from 2 to 2 of 2x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0293", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 - 3x + 1) dx.", "response": "-1/3x^3 - 3/2x^2 + 1 + C"}
+{"id": "stage3-advanced-integration-0294", "instruction": "Evaluate the indefinite integral ∫ 6x^4 dx.", "response": "6/5x^5 + C"}
+{"id": "stage3-advanced-integration-0295", "instruction": "Evaluate the indefinite integral ∫ (3x^2 + x + 1) dx.", "response": "1x^3 + 1/2x^2 + 1 + C"}
+{"id": "stage3-advanced-integration-0296", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 + 2x + 1) dx.", "response": "-2/3x^3 + 1x^2 + 1 + C"}
+{"id": "stage3-advanced-integration-0297", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "response": "2x^2 + C"}
+{"id": "stage3-advanced-integration-0298", "instruction": "Evaluate the definite integral ∫ from 1 to 1 of 2x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0299", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 + 3x - 1) dx.", "response": "-1/3x^3 + 3/2x^2 - 1 + C"}
+{"id": "stage3-advanced-integration-0300", "instruction": "Evaluate the indefinite integral ∫ 4x^3 dx.", "response": "1x^4 + C"}
+{"id": "stage3-advanced-integration-0301", "instruction": "Evaluate the indefinite integral ∫ (2x^2 - 1x + 2) dx.", "response": "2/3x^3 - 1/2x^2 + 2 + C"}
+{"id": "stage3-advanced-integration-0302", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "response": "1/4x^4 + C"}
+{"id": "stage3-advanced-integration-0303", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "response": "1/4x^4 + C"}
+{"id": "stage3-advanced-integration-0304", "instruction": "Evaluate the indefinite integral ∫ 5x^1 dx.", "response": "5/2x^2 + C"}
+{"id": "stage3-advanced-integration-0305", "instruction": "Evaluate the indefinite integral ∫ 3x^4 dx.", "response": "3/5x^5 + C"}
+{"id": "stage3-advanced-integration-0306", "instruction": "Evaluate the indefinite integral ∫ 6x^3 dx.", "response": "3/2x^4 + C"}
+{"id": "stage3-advanced-integration-0307", "instruction": "Evaluate the indefinite integral ∫ 1x^2 dx.", "response": "1/3x^3 + C"}
+{"id": "stage3-advanced-integration-0308", "instruction": "Evaluate the indefinite integral ∫ 3x^2 dx.", "response": "1x^3 + C"}
+{"id": "stage3-advanced-integration-0309", "instruction": "Evaluate the indefinite integral ∫ 3x^2 dx.", "response": "1x^3 + C"}
+{"id": "stage3-advanced-integration-0310", "instruction": "Evaluate the definite integral ∫ from 2 to 4 of 2x^2 dx.", "response": "112/3"}
+{"id": "stage3-advanced-integration-0311", "instruction": "Evaluate the indefinite integral ∫ 1x^2 dx.", "response": "1/3x^3 + C"}
+{"id": "stage3-advanced-integration-0312", "instruction": "Evaluate the definite integral ∫ from 0 to 1 of 2x^2 dx.", "response": "2/3"}
+{"id": "stage3-advanced-integration-0313", "instruction": "Evaluate the definite integral ∫ from 0 to 3 of 2x^2 dx.", "response": "18"}
+{"id": "stage3-advanced-integration-0314", "instruction": "Evaluate the definite integral ∫ from 2 to 3 of 3x^2 dx.", "response": "19"}
+{"id": "stage3-advanced-integration-0315", "instruction": "Evaluate the definite integral ∫ from 1 to 5 of 4x^2 dx.", "response": "496/3"}
+{"id": "stage3-advanced-integration-0316", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 - 3x - 2) dx.", "response": "-1x^3 - 3/2x^2 - 2 + C"}
+{"id": "stage3-advanced-integration-0317", "instruction": "Evaluate the indefinite integral ∫ 2x^2 dx.", "response": "2/3x^3 + C"}
+{"id": "stage3-advanced-integration-0318", "instruction": "Evaluate the indefinite integral ∫ (2x^2 + x + 1) dx.", "response": "2/3x^3 + 1/2x^2 + 1 + C"}
+{"id": "stage3-advanced-integration-0319", "instruction": "Evaluate the indefinite integral ∫ (2x^2 - 1x - 4) dx.", "response": "2/3x^3 - 1/2x^2 - 4 + C"}
+{"id": "stage3-advanced-integration-0320", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 + 4x) dx.", "response": "-1/3x^3 + 2x^2 + C"}
+{"id": "stage3-advanced-integration-0321", "instruction": "Evaluate the indefinite integral ∫ 3x^2 dx.", "response": "1x^3 + C"}
+{"id": "stage3-advanced-integration-0322", "instruction": "Evaluate the indefinite integral ∫ 6x^3 dx.", "response": "3/2x^4 + C"}
+{"id": "stage3-advanced-integration-0323", "instruction": "Evaluate the indefinite integral ∫ 5x^4 dx.", "response": "1x^5 + C"}
+{"id": "stage3-advanced-integration-0324", "instruction": "Evaluate the indefinite integral ∫ 6x^1 dx.", "response": "3x^2 + C"}
+{"id": "stage3-advanced-integration-0325", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 2x^2 dx.", "response": "42"}
+{"id": "stage3-advanced-integration-0326", "instruction": "Evaluate the indefinite integral ∫ (2x^2 + 4x + 1) dx.", "response": "2/3x^3 + 2x^2 + 1 + C"}
+{"id": "stage3-advanced-integration-0327", "instruction": "Evaluate the definite integral ∫ from 4 to 4 of 2x^2 dx.", "response": "0"}
+{"id": "stage3-advanced-integration-0328", "instruction": "Evaluate the definite integral ∫ from 2 to 5 of 4x^2 dx.", "response": "156"}
+{"id": "stage3-advanced-integration-0329", "instruction": "Evaluate the indefinite integral ∫ (3x^2 + 3x) dx.", "response": "1x^3 + 3/2x^2 + C"}
+{"id": "stage3-advanced-integration-0330", "instruction": "Evaluate the indefinite integral ∫ (2x^2 - 4x - 1) dx.", "response": "2/3x^3 - 2x^2 - 1 + C"}
+{"id": "stage3-advanced-integration-0331", "instruction": "Evaluate the indefinite integral ∫ 2x^4 dx.", "response": "2/5x^5 + C"}
+{"id": "stage3-advanced-integration-0332", "instruction": "Evaluate the indefinite integral ∫ 4x^2 dx.", "response": "4/3x^3 + C"}
+{"id": "stage3-advanced-integration-0333", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 2x^2 dx.", "response": "74/3"}
+{"id": "stage3-advanced-trigonometry-0000", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0001", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0002", "instruction": "Find the exact value of cos(30°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0003", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0004", "instruction": "Find the exact value of cos(30°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0005", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0006", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0007", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0008", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0009", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0010", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0011", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0012", "instruction": "Find the exact value of tan(60°).", "response": "√3"}
+{"id": "stage3-advanced-trigonometry-0013", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0014", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0015", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0016", "instruction": "Find the exact value of sin(30°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0017", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0018", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0019", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0020", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0021", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0022", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0023", "instruction": "Find the exact value of tan(45°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0024", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0025", "instruction": "Find the exact value of cos(60°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0026", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0027", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0028", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0029", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0030", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0031", "instruction": "Find the exact value of tan(90°).", "response": "undefined"}
+{"id": "stage3-advanced-trigonometry-0032", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0033", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0034", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0035", "instruction": "Find the exact value of cos(90°).", "response": "0"}
+{"id": "stage3-advanced-trigonometry-0036", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0037", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0038", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0039", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0040", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0041", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0042", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0043", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0044", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0045", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0046", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0047", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0048", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0049", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0050", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0051", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0052", "instruction": "Find the exact value of sin(90°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0053", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0054", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0055", "instruction": "Find the exact value of sin(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0056", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0057", "instruction": "Find the exact value of sin(90°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0058", "instruction": "Find the exact value of sin(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0059", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0060", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0061", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0062", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0063", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0064", "instruction": "Find the exact value of cos(60°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0065", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0066", "instruction": "Find the exact value of tan(45°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0067", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0068", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0069", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0070", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0071", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0072", "instruction": "Find the exact value of tan(60°).", "response": "√3"}
+{"id": "stage3-advanced-trigonometry-0073", "instruction": "Find the exact value of cos(90°).", "response": "0"}
+{"id": "stage3-advanced-trigonometry-0074", "instruction": "Find the exact value of sin(30°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0075", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0076", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0077", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0078", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0079", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0080", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0081", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0082", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0083", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0084", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0085", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0086", "instruction": "Find the exact value of cos(90°).", "response": "0"}
+{"id": "stage3-advanced-trigonometry-0087", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0088", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0089", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0090", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0091", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0092", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0093", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0094", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0095", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0096", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0097", "instruction": "Find the exact value of cos(60°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0098", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0099", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0100", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0101", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0102", "instruction": "Find the exact value of cos(90°).", "response": "0"}
+{"id": "stage3-advanced-trigonometry-0103", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0104", "instruction": "Find the exact value of sin(90°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0105", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0106", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0107", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0108", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0109", "instruction": "Find the exact value of tan(30°).", "response": "√3/3"}
+{"id": "stage3-advanced-trigonometry-0110", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0111", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0112", "instruction": "Find the exact value of cos(90°).", "response": "0"}
+{"id": "stage3-advanced-trigonometry-0113", "instruction": "Find the exact value of sin(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0114", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0115", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0116", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0117", "instruction": "Find the exact value of tan(30°).", "response": "√3/3"}
+{"id": "stage3-advanced-trigonometry-0118", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0119", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0120", "instruction": "Find the exact value of tan(45°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0121", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0122", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0123", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0124", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0125", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0126", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0127", "instruction": "Find the exact value of sin(90°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0128", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0129", "instruction": "Find the exact value of sin(30°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0130", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0131", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0132", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0133", "instruction": "Find the exact value of tan(30°).", "response": "√3/3"}
+{"id": "stage3-advanced-trigonometry-0134", "instruction": "Find the exact value of sin(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0135", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0136", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0137", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0138", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0139", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0140", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0141", "instruction": "Find the exact value of sin(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0142", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0143", "instruction": "Find the exact value of cos(30°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0144", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0145", "instruction": "Find the exact value of sin(90°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0146", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0147", "instruction": "Find the exact value of tan(60°).", "response": "√3"}
+{"id": "stage3-advanced-trigonometry-0148", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0149", "instruction": "Find the exact value of sin(30°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0150", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0151", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0152", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0153", "instruction": "Find the exact value of tan(60°).", "response": "√3"}
+{"id": "stage3-advanced-trigonometry-0154", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0155", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0156", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0157", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0158", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0159", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0160", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0161", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0162", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0163", "instruction": "Find the exact value of tan(30°).", "response": "√3/3"}
+{"id": "stage3-advanced-trigonometry-0164", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0165", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0166", "instruction": "Find the exact value of sin(30°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0167", "instruction": "Find the exact value of cos(60°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0168", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0169", "instruction": "Find the exact value of sin(90°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0170", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0171", "instruction": "Find the exact value of tan(90°).", "response": "undefined"}
+{"id": "stage3-advanced-trigonometry-0172", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0173", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0174", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0175", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0176", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0177", "instruction": "Find the exact value of tan(45°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0178", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0179", "instruction": "Find the exact value of tan(45°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0180", "instruction": "Find the exact value of tan(45°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0181", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0182", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0183", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0184", "instruction": "Find the exact value of tan(90°).", "response": "undefined"}
+{"id": "stage3-advanced-trigonometry-0185", "instruction": "Find the exact value of cos(30°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0186", "instruction": "Find the exact value of sin(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0187", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0188", "instruction": "Find the exact value of sin(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0189", "instruction": "Find the exact value of sin(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0190", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0191", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0192", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0193", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0194", "instruction": "Find the exact value of sin(90°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0195", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0196", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0197", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0198", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0199", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0200", "instruction": "Find the exact value of cos(60°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0201", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0202", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0203", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0204", "instruction": "Find the exact value of sin(90°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0205", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0206", "instruction": "Find the exact value of tan(60°).", "response": "√3"}
+{"id": "stage3-advanced-trigonometry-0207", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0208", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0209", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0210", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0211", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0212", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0213", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0214", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0215", "instruction": "Find the exact value of sin(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0216", "instruction": "Find the exact value of tan(30°).", "response": "√3/3"}
+{"id": "stage3-advanced-trigonometry-0217", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0218", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0219", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0220", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0221", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0222", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0223", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0224", "instruction": "Find the exact value of tan(90°).", "response": "undefined"}
+{"id": "stage3-advanced-trigonometry-0225", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0226", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0227", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0228", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0229", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0230", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0231", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0232", "instruction": "Find the exact value of sin(90°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0233", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0234", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0235", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0236", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0237", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0238", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0239", "instruction": "Find the exact value of sin(30°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0240", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0241", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0242", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0243", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0244", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0245", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0246", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0247", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0248", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0249", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0250", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0251", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0252", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0253", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0254", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0255", "instruction": "Find the exact value of sin(30°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0256", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0257", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0258", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0259", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0260", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0261", "instruction": "Find the exact value of sin(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0262", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0263", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0264", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0265", "instruction": "Find the exact value of sin(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0266", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0267", "instruction": "Find the exact value of cos(60°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0268", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0269", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0270", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0271", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0272", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0273", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0274", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0275", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0276", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0277", "instruction": "Find the exact value of cos(30°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0278", "instruction": "Find the exact value of sin(30°).", "response": "1/2"}
+{"id": "stage3-advanced-trigonometry-0279", "instruction": "Find the exact value of cos(30°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0280", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0281", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0282", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0283", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0284", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0285", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0286", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0287", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0288", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0289", "instruction": "Find the exact value of cos(30°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0290", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0291", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0292", "instruction": "Find the exact value of tan(30°).", "response": "√3/3"}
+{"id": "stage3-advanced-trigonometry-0293", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0294", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0295", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0296", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0297", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0298", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0299", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0300", "instruction": "Find the exact value of tan(60°).", "response": "√3"}
+{"id": "stage3-advanced-trigonometry-0301", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0302", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0303", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0304", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0305", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0306", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0307", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0308", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0309", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0310", "instruction": "Find the exact value of sin(90°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0311", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0312", "instruction": "Find the exact value of sin(90°).", "response": "1"}
+{"id": "stage3-advanced-trigonometry-0313", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0314", "instruction": "Find the exact value of sin(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0315", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0316", "instruction": "Find the exact value of tan(90°).", "response": "undefined"}
+{"id": "stage3-advanced-trigonometry-0317", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0318", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0319", "instruction": "Find the exact value of tan(60°).", "response": "√3"}
+{"id": "stage3-advanced-trigonometry-0320", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0321", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0322", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0323", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0324", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0325", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0326", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0327", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}
+{"id": "stage3-advanced-trigonometry-0328", "instruction": "Find the exact value of cos(45°).", "response": "√2/2"}
+{"id": "stage3-advanced-trigonometry-0329", "instruction": "Find the exact value of sin(60°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0330", "instruction": "Find the exact value of cos(30°).", "response": "√3/2"}
+{"id": "stage3-advanced-trigonometry-0331", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0332", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "response": "x = 30° or x = 150°"}
+{"id": "stage3-advanced-trigonometry-0333", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "response": "x = 60° or x = 300°"}

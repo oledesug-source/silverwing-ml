@@ -1,0 +1,8 @@
+{
+    "name": "Pump",
+    "temperature": 92,
+    "pressure": 120,
+    "rpm": 1500,
+    "operating_hours": 2500,
+    "status": "HIGH"
+}

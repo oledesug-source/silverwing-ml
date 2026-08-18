@@ -1,0 +1,16 @@
+{
+    "model_name": "Silverwing Risk Classifier",
+    "algorithm": "RandomForestClassifier",
+    "n_estimators": 100,
+    "max_depth": 5,
+    "features": [
+        "temperature",
+        "pressure",
+        "rpm",
+        "operating_hours"
+    ],
+    "target": "risk_level",
+    "training_samples": 20,
+    "testing_samples": 5,
+    "test_accuracy": 1.0
+}

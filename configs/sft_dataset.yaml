@@ -1,0 +1,10 @@
+# SILVERWING ML - SFT Dataset (M11)
+# Deterministic instruction/response pairs derived from the M08 math problem
+# generators (answers are computed in code, so the supervised text is exact).
+
+sft_dataset:
+  version: sft-dataset-v1
+  per_topic: 200
+  seed: 42
+  topics: null   # null = all ten M08 topics
+  output_path: experiments/sft/sft-v1.jsonl

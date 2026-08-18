@@ -1,0 +1,5 @@
+reasoning_dataset:
+  version: reasoning-dataset-v1
+  seed: 42
+  per_topic: 100
+  output_path: experiments/reasoning/reasoning-v1.jsonl

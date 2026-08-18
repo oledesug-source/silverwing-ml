@@ -1,0 +1,2 @@
+{"example_id": "math_001", "domain": "arithmetic", "formatted_text": "P:Calculate 48 multiplied by 25.\nM:Multiply 48 by 100, then divide by 4.\nC:48 * 25 = 1200\nV:valid\nA:1200", "token_count": 79}
+{"example_id": "math_006", "domain": "statistics", "formatted_text": "P:Find the population variance of 2, 4, 6, and 8.\nM:The mean is 5. Squared deviations are 9, 1, 1, and 9.\nC:(9 + 1 + 1 + 9) / 4 = 5\nV:variance=5\nA:5", "token_count": 89}

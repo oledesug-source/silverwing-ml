@@ -1,0 +1,191 @@
+{
+    "lesson": "141R",
+    "dataset": [
+        {
+            "sample_id": "b001",
+            "reasoning_type": "linear_equation",
+            "problem": "3x + 6 = 18",
+            "gold_answer": {
+                "type": "unique",
+                "value": "4"
+            },
+            "evaluator": "solution_state",
+            "source": "141R_NATIVE",
+            "parent_ids": [],
+            "generation_method": "controlled_mathematical_template",
+            "created_at": "2026-08-15T15:17:24.851380",
+            "content_hash": "472ef36cba282a7ce10f861cddc8eb4ed453cc776397ebde8f588abefda4cfc1"
+        },
+        {
+            "sample_id": "b002",
+            "reasoning_type": "linear_equation",
+            "problem": "0x + 8 = 8",
+            "gold_answer": {
+                "type": "infinite",
+                "value": null
+            },
+            "evaluator": "solution_state",
+            "source": "141R_NATIVE",
+            "parent_ids": [],
+            "generation_method": "controlled_mathematical_template",
+            "created_at": "2026-08-15T15:17:24.851515",
+            "content_hash": "166ac82be6b657e3a5c46b1a33349886fe2a1a0f7abc8d38ec8404f009098e34"
+        },
+        {
+            "sample_id": "b003",
+            "reasoning_type": "linear_equation",
+            "problem": "0x + 8 = 3",
+            "gold_answer": {
+                "type": "none",
+                "value": null
+            },
+            "evaluator": "solution_state",
+            "source": "141R_NATIVE",
+            "parent_ids": [],
+            "generation_method": "controlled_mathematical_template",
+            "created_at": "2026-08-15T15:17:24.851552",
+            "content_hash": "89e212e0fa08fe4fea1b22d90b6841e98ef458185a12f1985ff3208de081997d"
+        },
+        {
+            "sample_id": "b004",
+            "reasoning_type": "function",
+            "problem": "f(x)=3x+1, evaluate f(4)",
+            "gold_answer": "13",
+            "evaluator": "function_value",
+            "source": "141R_NATIVE",
+            "parent_ids": [],
+            "generation_method": "controlled_mathematical_template",
+            "created_at": "2026-08-15T15:17:24.851576",
+            "content_hash": "87857a1f8a2043cfc59905243933667027022de43e9e2e11e6a91f5354070b96"
+        },
+        {
+            "sample_id": "b005",
+            "reasoning_type": "system",
+            "problem": "x+y=5 and x-y=1",
+            "gold_answer": {
+                "type": "unique",
+                "x": "3",
+                "y": "2"
+            },
+            "evaluator": "system_solution",
+            "source": "141R_NATIVE",
+            "parent_ids": [],
+            "generation_method": "controlled_mathematical_template",
+            "created_at": "2026-08-15T15:17:24.851597",
+            "content_hash": "147027eda881f7ad640f91532f4710acc6f52e0f0a5bd38241d29db5e8b51baa"
+        },
+        {
+            "sample_id": "b006",
+            "reasoning_type": "system",
+            "problem": "x+2y=3 and 2x+4y=6",
+            "gold_answer": {
+                "type": "infinite",
+                "x": null,
+                "y": null
+            },
+            "evaluator": "system_solution",
+            "source": "141R_NATIVE",
+            "parent_ids": [],
+            "generation_method": "controlled_mathematical_template",
+            "created_at": "2026-08-15T15:17:24.851621",
+            "content_hash": "d61c7dd788e312a1da3b1aa0554c5ddda5febbb69ef97f0bdcfb5eb9c6bd7de6"
+        },
+        {
+            "sample_id": "b007",
+            "reasoning_type": "system",
+            "problem": "x+2y=3 and 2x+4y=7",
+            "gold_answer": {
+                "type": "none",
+                "x": null,
+                "y": null
+            },
+            "evaluator": "system_solution",
+            "source": "141R_NATIVE",
+            "parent_ids": [],
+            "generation_method": "controlled_mathematical_template",
+            "created_at": "2026-08-15T15:17:24.851645",
+            "content_hash": "5fd5a4bbc52a4311bba9a6dffae4609f6811bfce86100aede74ae2b3d8b00453"
+        },
+        {
+            "sample_id": "b008",
+            "reasoning_type": "inequality",
+            "problem": "2x+4<10",
+            "gold_answer": {
+                "kind": "interval",
+                "boundary": "3"
+            },
+            "evaluator": "inequality_solution",
+            "source": "141R_NATIVE",
+            "parent_ids": [],
+            "generation_method": "controlled_mathematical_template",
+            "created_at": "2026-08-15T15:17:24.851663",
+            "content_hash": "2b43284b7d3aa338d7c270e6dfe58bdd154b7f2258d37c1b26bf1d065741a43f"
+        },
+        {
+            "sample_id": "b009",
+            "reasoning_type": "engineering",
+            "problem": "flow=2t+1 at t=5",
+            "gold_answer": "11",
+            "evaluator": "function_value",
+            "source": "141R_NATIVE",
+            "parent_ids": [],
+            "generation_method": "controlled_mathematical_template",
+            "created_at": "2026-08-15T15:17:24.851683",
+            "content_hash": "fee265831575a0d683b41ea924e5dd58b0d28edeca4869a2bd5166dbe79064f3"
+        },
+        {
+            "sample_id": "b010",
+            "reasoning_type": "classification",
+            "problem": "What kind of equation is 0x=5?",
+            "gold_answer": "none",
+            "evaluator": "exact_text",
+            "source": "141R_NATIVE",
+            "parent_ids": [],
+            "generation_method": "controlled_mathematical_template",
+            "created_at": "2026-08-15T15:17:24.851700",
+            "content_hash": "586a7d61daa7ea724e7a90fa6d47a445b82debcac2dc83b7bac72bc07ac23bd6"
+        },
+        {
+            "sample_id": "b011",
+            "reasoning_type": "classification",
+            "problem": "What kind of equation is 0x=0?",
+            "gold_answer": "infinite",
+            "evaluator": "exact_text",
+            "source": "141R_NATIVE",
+            "parent_ids": [],
+            "generation_method": "controlled_mathematical_template",
+            "created_at": "2026-08-15T15:17:24.851717",
+            "content_hash": "98cf68aa2f0f7898f349972054fd675105e62bc02f63bd16132966d9529c223a"
+        },
+        {
+            "sample_id": "b012",
+            "reasoning_type": "algebraic",
+            "problem": "Solve 5x-10=0",
+            "gold_answer": "2",
+            "evaluator": "exact_fraction",
+            "source": "141R_NATIVE",
+            "parent_ids": [],
+            "generation_method": "controlled_mathematical_template",
+            "created_at": "2026-08-15T15:17:24.851734",
+            "content_hash": "b6ccc0bdc7f464164d96bc2a098c9fd69ff61b3742874d774550732185a4792a"
+        }
+    ],
+    "train_ids": [
+        "b001",
+        "b004",
+        "b007",
+        "b010"
+    ],
+    "validation_ids": [
+        "b002",
+        "b005",
+        "b008",
+        "b011"
+    ],
+    "held_out_ids": [
+        "b003",
+        "b006",
+        "b009",
+        "b012"
+    ]
+}

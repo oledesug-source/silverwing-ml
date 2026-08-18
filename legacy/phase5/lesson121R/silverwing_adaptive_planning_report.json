@@ -1,0 +1,17 @@
+{
+    "lesson": "121R",
+    "memory_version": "121R.1",
+    "pattern_count": 5,
+    "plan_steps": 5,
+    "reprioritized": true,
+    "adapted": true,
+    "added_actions": [
+        "VALIDATE_TELEMETRY_FUSION",
+        "VALIDATE_TIMELINE_INTEGRITY"
+    ],
+    "plan_verified": true,
+    "deterministic": true,
+    "stable": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

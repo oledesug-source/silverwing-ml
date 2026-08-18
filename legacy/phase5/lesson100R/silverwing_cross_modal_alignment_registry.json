@@ -1,0 +1,17 @@
+{
+    "lesson": "100R",
+    "capability": "native_cross_modal_alignment_retrieval",
+    "external_llm": false,
+    "sequence_limit": 256,
+    "shared_dimension": 16,
+    "temperature": 0.08,
+    "contrastive_weight": 1.0,
+    "instance_weight": 2.0,
+    "class_weight": 0.5,
+    "instance_margin": 0.2,
+    "class_margin": 0.05,
+    "modalities": [
+        "text_sequence",
+        "numeric_structured"
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "lesson": "139R",
+    "capability": "autonomous_full_cycle_audit_complete_self_reinforcing_verification",
+    "checks": [
+        {
+            "id": "C01",
+            "scope": "evolution",
+            "description": "135R commitment links to 134R commitment",
+            "passed": true
+        },
+        {
+            "id": "C02",
+            "scope": "evolution",
+            "description": "135R lineage chains from 134R to the evolution hash",
+            "passed": true
+        },
+        {
+            "id": "C03",
+            "scope": "evolution",
+            "description": "135R exposure trajectory is monotone",
+            "passed": true
+        },
+        {
+            "id": "C04",
+            "scope": "governance",
+            "description": "Every generation is governed",
+            "passed": true
+        },
+        {
+            "id": "C05",
+            "scope": "governance",
+            "description": "Every generation is scoped",
+            "passed": true
+        },
+        {
+            "id": "C06",
+            "scope": "governance",
+            "description": "All innovation deltas are within bounds",
+            "passed": true
+        },
+        {
+            "id": "C07",
+            "scope": "governance",
+            "description": "The governed policy is compliant",
+            "passed": true
+        },
+        {
+            "id": "C08",
+            "scope": "ledger",
+            "description": "Ledger has 7 correctly-ordered entries",
+            "passed": true
+        },
+        {
+            "id": "C09",
+            "scope": "ledger",
+            "description": "Ledger chain holds from genesis to seal",
+            "passed": true
+        },
+        {
+            "id": "C10",
+            "scope": "accountability",
+            "description": "All 8 innovations recorded and accepted",
+            "passed": true
+        },
+        {
+            "id": "C11",
+            "scope": "accountability",
+            "description": "Ledger seal locks the governed final policy",
+            "passed": true
+        },
+        {
+            "id": "C12",
+            "scope": "cascade",
+            "description": "Cascade originates from the 137R seal",
+            "passed": true
+        },
+        {
+            "id": "C13",
+            "scope": "cascade",
+            "description": "Cycle-2 commitment chains to the 137R seal",
+            "passed": true
+        },
+        {
+            "id": "C14",
+            "scope": "cascade",
+            "description": "Self-reinforcement holds across cycles",
+            "passed": true
+        },
+        {
+            "id": "C15",
+            "scope": "full_cycle",
+            "description": "Full-cycle exposure strictly improved",
+            "passed": true
+        },
+        {
+            "id": "C16",
+            "scope": "full_cycle",
+            "description": "Governed policy equals the evolved policy",
+            "passed": true
+        }
+    ],
+    "passed_count": 16,
+    "expected_count": 16,
+    "exposure_outcomes": {
+        "committed": 0.09803453832864761,
+        "governed": 0.09217751026153564,
+        "reinforced": 0.08217751234769821,
+        "full_cycle_reduction": 0.015857025980949402
+    }
+}

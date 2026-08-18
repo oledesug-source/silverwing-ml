@@ -1,0 +1,13 @@
+{
+    "model": "Silverwing-Decoder-v1",
+    "architecture": "decoder-only-transformer",
+    "vocabulary_size": 300,
+    "model_dimension": 128,
+    "attention_heads": 8,
+    "feed_forward_dimension": 512,
+    "layers": 4,
+    "maximum_sequence_length": 256,
+    "causal_attention": true,
+    "shared_token_lm_weights": false,
+    "checkpoint": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson71R\\silverwing_decoder_initial.pt"
+}

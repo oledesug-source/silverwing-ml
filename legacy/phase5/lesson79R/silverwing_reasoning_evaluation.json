@@ -1,0 +1,32 @@
+{
+    "lesson": "79R",
+    "dataset": "Silverwing-Reasoning-v1",
+    "evaluation_examples": 10,
+    "structurally_valid": 10,
+    "structure_score": 1.0,
+    "difficulty_bands": {
+        "basic": 3,
+        "intermediate": 5,
+        "advanced": 2
+    },
+    "complexity": {
+        "average_reasoning_steps": 3.1,
+        "minimum_reasoning_steps": 3,
+        "maximum_reasoning_steps": 4,
+        "average_difficulty": 0.666,
+        "average_quality": 0.96
+    },
+    "failure_categories": [
+        "missing_reasoning_steps",
+        "invalid_inference",
+        "contradictory_conclusion",
+        "unsupported_claim",
+        "numerical_error",
+        "constraint_violation",
+        "irrelevant_reasoning",
+        "premature_conclusion",
+        "ignored_context",
+        "unsupported_generalization"
+    ],
+    "created_at": 1786637929.293448
+}

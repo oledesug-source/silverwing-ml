@@ -1,0 +1,7 @@
+{
+    "lesson": "101R",
+    "capability": "native_hard_negative_multimodal_learning",
+    "external_llm": false,
+    "encoder_recovery_mode": "fresh_native_initialization",
+    "next": "102R Native Multimodal Memory Integration"
+}

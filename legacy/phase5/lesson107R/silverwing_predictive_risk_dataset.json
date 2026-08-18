@@ -1,0 +1,109 @@
+{
+    "lesson": "107R",
+    "capability": "native_predictive_risk_failure_reasoning",
+    "risk_class": "motor_warning",
+    "history": [
+        {
+            "memory_id": "mem_102_001",
+            "timestamp": "2026-08-14T08:00:00",
+            "numeric": [
+                0.9,
+                1.2,
+                2.5,
+                0.31,
+                0.11
+            ]
+        },
+        {
+            "memory_id": "mem_102_002",
+            "timestamp": "2026-08-14T08:30:00",
+            "numeric": [
+                0.88,
+                1.18,
+                2.45,
+                0.37,
+                0.13
+            ]
+        }
+    ],
+    "forecast": {
+        "current_state": [
+            0.8799999952316284,
+            1.1799999475479126,
+            2.450000047683716,
+            0.3700000047683716,
+            0.12999999523162842
+        ],
+        "forecast_delta": [
+            -0.019999980926513672,
+            -0.020000100135803223,
+            -0.04999995231628418,
+            0.06000000238418579,
+            0.019999995827674866
+        ],
+        "forecast_state": [
+            0.8600000143051147,
+            1.1599998474121094,
+            2.4000000953674316,
+            0.4300000071525574,
+            0.14999999105930328
+        ],
+        "forecast_time": "2026-08-14T09:00:00"
+    },
+    "residual": {
+        "vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "norm": 0.0,
+        "baseline_scale": 1e-08
+    },
+    "anomaly": {
+        "score": 0.0
+    },
+    "hypotheses": [
+        {
+            "hypothesis": "persistent_warning_condition",
+            "description": "Repeated historical observations contain warning/high language.",
+            "score": 0.75,
+            "evidence": [
+                0.75,
+                0.75
+            ]
+        },
+        {
+            "hypothesis": "progressive_operating_condition_change",
+            "description": "The machine operating state is changing relative to its historical memory.",
+            "score": 0.625,
+            "evidence": [
+                0.75,
+                0.5
+            ]
+        },
+        {
+            "hypothesis": "predictive_behavior_deviation",
+            "description": "Observed change differs from the native historical predictive baseline.",
+            "score": 0.375,
+            "evidence": [
+                0.25,
+                0.5
+            ]
+        }
+    ],
+    "risk": {
+        "score": 0.5833333333333334,
+        "state": "WARNING"
+    },
+    "diagnosis": {
+        "machine_class": "motor_warning",
+        "risk_state": "WARNING",
+        "diagnosis_state": "ELEVATED_RISK",
+        "primary_hypothesis": "persistent_warning_condition",
+        "evidence_score": 0.75,
+        "anomaly_score": 0.0,
+        "recommendation": "Continue observation and collect additional engineering measurements before confirming failure."
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "lesson": "118R",
+    "capability": "native_error_pattern_generalization_preventive_reasoning",
+    "external_llm": false,
+    "device": "cpu",
+    "memory_version": "118R.1",
+    "source_error": {
+        "error_id": "error_117_001",
+        "timestamp": "2026-08-14T20:09:28.598036",
+        "source_lesson": "116R",
+        "error_type": "evidence_magnitude_mismatch",
+        "evidence_id": "evidence_002",
+        "field": "magnitude",
+        "expected_value": 0.4676795080304146,
+        "observed_value": 0.5144474588334561,
+        "affected_fields": [
+            "conflict",
+            "net",
+            "strength",
+            "confidence"
+        ],
+        "detection_method": "independent_recalculation",
+        "correction_required": true
+    },
+    "generalized_pattern": {
+        "pattern_id": "error_pattern_001",
+        "source_error_type": "evidence_magnitude_mismatch",
+        "source_field": "magnitude",
+        "observable_signature": {
+            "field": "magnitude",
+            "expected_value": 0.4676795080304146,
+            "observed_value": 0.5144474588334561
+        },
+        "detection_method": "independent_recalculation",
+        "verified_correction": {
+            "strategy_id": "correction_001",
+            "strategy_type": "restore_source_evidence"
+        },
+        "source_lesson": "116R",
+        "generalization_scope": "evidence_representation_mismatch"
+    },
+    "prevention_rule": {
+        "rule_id": "prevention_rule_001",
+        "pattern_id": "error_pattern_001",
+        "trigger": {
+            "field": "magnitude",
+            "condition": "observed_value differs from provenance-backed value"
+        },
+        "action": "STOP_BEFORE_REASONING_COMPLETES",
+        "validation": "recalculate_using_provenance_value",
+        "promotion_requirement": "independent_verification",
+        "risk_level": "HIGH",
+        "description": "When an evidence representation differs from its provenance-backed value, prevent downstream reasoning until the evidence is restored and independently verified."
+    },
+    "risk": {
+        "preventive_risk": 0.6571078547149721,
+        "decision": "REQUIRE_VALIDATION"
+    },
+    "validation": {
+        "prevention_success": true,
+        "generalized_mismatch": true,
+        "generalization_confidence": 0.957107854714972
+    },
+    "determinism": {
+        "preventive_reasoning": true
+    },
+    "promotion": {
+        "passed": true,
+        "errors": []
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "baseline": {
+        "checkpoint": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson73R\\checkpoints\\silverwing_best.pt",
+        "validation_loss": 5.1872498989105225
+    },
+    "candidate": {
+        "checkpoint": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson73R\\checkpoints\\silverwing_latest.pt",
+        "validation_loss": 5.180940628051758,
+        "accuracy": 0.0625,
+        "perplexity": 177.85002305955118
+    },
+    "decision": {
+        "status": "improved",
+        "improved": true
+    }
+}

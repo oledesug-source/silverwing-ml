@@ -1,0 +1,502 @@
+{
+    "memory_version": "128R.1",
+    "lesson": "128R",
+    "capability": "uncertainty_aware_preventive_execution_probabilistic_guardrails",
+    "created_at": "2026-08-15T11:19:31.967845",
+    "source_lesson": "127R",
+    "tuned_records": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "risk_score": 0.8048129425657967,
+            "risk_class": "HIGH",
+            "severity": 0.95,
+            "impact": 0.9,
+            "outcome_status": "prevented",
+            "priority": 1
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.7793000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.8,
+            "impact": 0.75,
+            "outcome_status": "not_prevented",
+            "priority": 2
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.7755,
+            "risk_class": "MEDIUM",
+            "severity": 0.82,
+            "impact": 0.62,
+            "outcome_status": "prevented",
+            "priority": 3
+        },
+        {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "origin": "122R_RUNTIME",
+            "risk_score": 0.7619000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.79,
+            "impact": 0.84,
+            "outcome_status": "prevented",
+            "priority": 4
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.75142,
+            "risk_class": "MEDIUM",
+            "severity": 0.85,
+            "impact": 0.8,
+            "outcome_status": "prevented",
+            "priority": 5
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.6184000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.78,
+            "impact": 0.88,
+            "outcome_status": "prevented",
+            "priority": 6
+        }
+    ],
+    "tuned_order": [
+        "pattern_001",
+        "pattern_004",
+        "pattern_003",
+        "pattern_006",
+        "pattern_005",
+        "pattern_002"
+    ],
+    "tuned_plan": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "dependency": null
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_005",
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 4,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY"
+        },
+        {
+            "step": 5,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        },
+        {
+            "step": 6,
+            "pattern_id": "pattern_006",
+            "action": "VALIDATE_ACTUATOR_RESPONSE",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        }
+    ],
+    "policy_frame": [
+        {
+            "policy_id": "P1",
+            "name": "CRITICAL_COVERAGE",
+            "description": "Every HIGH or RISING pattern must be planned."
+        },
+        {
+            "policy_id": "P2",
+            "name": "DEPENDENCY_ORDER",
+            "description": "No step may run before its dependency."
+        },
+        {
+            "policy_id": "P3",
+            "name": "ANCHOR_IMMUTABILITY",
+            "description": "The priority-1 pattern must open the plan."
+        },
+        {
+            "policy_id": "P4",
+            "name": "ACTION_UNIQUENESS",
+            "description": "Every action may appear exactly once."
+        },
+        {
+            "policy_id": "P5",
+            "name": "MITIGATION_CAPACITY",
+            "description": "Rehearsed mean effectiveness must meet the floor."
+        },
+        {
+            "policy_id": "P6",
+            "name": "RESIDUAL_TOLERANCE",
+            "description": "Total residual risk must stay within budget."
+        }
+    ],
+    "critical_set": [
+        "pattern_001",
+        "pattern_004"
+    ],
+    "extended_history": {
+        "pattern_001": {
+            "family": "evidence_integrity",
+            "pattern_id": "pattern_001",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.95,
+            "lifetime_effectiveness": 0.935,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.92
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.95
+                }
+            ]
+        },
+        "pattern_002": {
+            "family": "schema_integrity",
+            "pattern_id": "pattern_002",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.95,
+            "lifetime_effectiveness": 0.8999999999999999,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.85
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.95
+                }
+            ]
+        },
+        "pattern_003": {
+            "family": "sensor_alignment",
+            "pattern_id": "pattern_003",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.9,
+            "lifetime_effectiveness": 0.625,
+            "status_counts": {
+                "not_prevented": 1,
+                "prevented": 1
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "not_prevented",
+                    "effectiveness": 0.35
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                }
+            ]
+        },
+        "pattern_004": {
+            "family": "telemetry_fusion",
+            "pattern_id": "pattern_004",
+            "occurrences": 2,
+            "last_status": "not_prevented",
+            "last_effectiveness": 0.4,
+            "lifetime_effectiveness": 0.5,
+            "status_counts": {
+                "partial": 1,
+                "not_prevented": 1
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "partial",
+                    "effectiveness": 0.6
+                },
+                {
+                    "cycle": 2,
+                    "status": "not_prevented",
+                    "effectiveness": 0.4
+                }
+            ]
+        },
+        "pattern_005": {
+            "family": "timeline_integrity",
+            "pattern_id": "pattern_005",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.9,
+            "lifetime_effectiveness": 0.89,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.88
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                }
+            ]
+        },
+        "pattern_006": {
+            "family": "actuator_response",
+            "pattern_id": "pattern_006",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.7,
+            "lifetime_effectiveness": 0.8,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.7
+                }
+            ]
+        }
+    },
+    "control_actions": {
+        "pattern_001": "HOLD",
+        "pattern_004": "ESCALATE",
+        "pattern_003": "ESCALATE",
+        "pattern_006": "ESCALATE",
+        "pattern_005": "HOLD",
+        "pattern_002": "HOLD"
+    },
+    "guardrail_frame": {
+        "uncertainty": 0.1,
+        "guardrail_threshold": 0.18,
+        "trip_probability_threshold": 0.25,
+        "monte_carlo_trials": 5000
+    },
+    "baseline_profiles": {
+        "pattern_001": {
+            "mean_penetration": 0.10697651654481888,
+            "std_penetration": 0.017156073823571205,
+            "p95_penetration": 0.13627295196056366,
+            "trip_probability": 0.00019999999494757503
+        },
+        "pattern_004": {
+            "mean_penetration": 0.20077161490917206,
+            "std_penetration": 0.02075781300663948,
+            "p95_penetration": 0.2359035611152649,
+            "trip_probability": 0.840399980545044
+        },
+        "pattern_003": {
+            "mean_penetration": 0.16934245824813843,
+            "std_penetration": 0.0199179258197546,
+            "p95_penetration": 0.2032286822795868,
+            "trip_probability": 0.2849999964237213
+        },
+        "pattern_006": {
+            "mean_penetration": 0.13159005343914032,
+            "std_penetration": 0.018455423414707184,
+            "p95_penetration": 0.16319790482521057,
+            "trip_probability": 0.00800000037997961
+        },
+        "pattern_005": {
+            "mean_penetration": 0.11477148532867432,
+            "std_penetration": 0.017602551728487015,
+            "p95_penetration": 0.14491595327854156,
+            "trip_probability": 0.0006000000284984708
+        },
+        "pattern_002": {
+            "mean_penetration": 0.11300472170114517,
+            "std_penetration": 0.017504388466477394,
+            "p95_penetration": 0.14294929802417755,
+            "trip_probability": 0.0006000000284984708
+        }
+    },
+    "controlled_profiles": {
+        "pattern_001": {
+            "mean_penetration": 0.10697651654481888,
+            "std_penetration": 0.017156073823571205,
+            "p95_penetration": 0.13627295196056366,
+            "trip_probability": 0.00019999999494757503
+        },
+        "pattern_004": {
+            "mean_penetration": 0.10446593910455704,
+            "std_penetration": 0.01700466312468052,
+            "p95_penetration": 0.13352446258068085,
+            "trip_probability": 0.00019999999494757503
+        },
+        "pattern_003": {
+            "mean_penetration": 0.07992774993181229,
+            "std_penetration": 0.015298889949917793,
+            "p95_penetration": 0.10616172850131989,
+            "trip_probability": 0.00019999999494757503
+        },
+        "pattern_006": {
+            "mean_penetration": 0.05294150486588478,
+            "std_penetration": 0.012799710035324097,
+            "p95_penetration": 0.07519827783107758,
+            "trip_probability": 0.0
+        },
+        "pattern_005": {
+            "mean_penetration": 0.11477148532867432,
+            "std_penetration": 0.017602551728487015,
+            "p95_penetration": 0.14491595327854156,
+            "trip_probability": 0.0006000000284984708
+        },
+        "pattern_002": {
+            "mean_penetration": 0.11300472170114517,
+            "std_penetration": 0.017504388466477394,
+            "p95_penetration": 0.14294929802417755,
+            "trip_probability": 0.0006000000284984708
+        }
+    },
+    "baseline_guardrails": {
+        "pattern_001": "CLEAR",
+        "pattern_004": "TRIP",
+        "pattern_003": "TRIP",
+        "pattern_006": "CLEAR",
+        "pattern_005": "CLEAR",
+        "pattern_002": "CLEAR"
+    },
+    "controlled_guardrails": {
+        "pattern_001": "CLEAR",
+        "pattern_004": "CLEAR",
+        "pattern_003": "CLEAR",
+        "pattern_006": "CLEAR",
+        "pattern_005": "CLEAR",
+        "pattern_002": "CLEAR"
+    },
+    "baseline_gate": {
+        "blocked": [
+            "pattern_003",
+            "pattern_004"
+        ],
+        "executed": [
+            "pattern_001",
+            "pattern_002",
+            "pattern_005",
+            "pattern_006"
+        ]
+    },
+    "controlled_gate": {
+        "blocked": [],
+        "executed": [
+            "pattern_001",
+            "pattern_002",
+            "pattern_003",
+            "pattern_004",
+            "pattern_005",
+            "pattern_006"
+        ]
+    },
+    "baseline_bands": {
+        "pattern_001": {
+            "conservative": 0.14358570439650464,
+            "optimistic": 0.07786936168037531,
+            "band_width": 0.06571634271612933
+        },
+        "pattern_004": {
+            "conservative": 0.24407162330078122,
+            "optimistic": 0.1636690381445312,
+            "band_width": 0.08040258515625001
+        },
+        "pattern_003": {
+            "conservative": 0.21114602948402408,
+            "optimistic": 0.13419951595252985,
+            "band_width": 0.07694651353149423
+        },
+        "pattern_006": {
+            "conservative": 0.17067896320149994,
+            "optimistic": 0.09969478987149996,
+            "band_width": 0.07098417332999998
+        },
+        "pattern_005": {
+            "conservative": 0.15223846552127526,
+            "optimistic": 0.08471418665514721,
+            "band_width": 0.06752427886612805
+        },
+        "pattern_002": {
+            "conservative": 0.15028359926978122,
+            "optimistic": 0.08315698755853124,
+            "band_width": 0.06712661171124998
+        }
+    },
+    "controlled_bands": {
+        "pattern_001": {
+            "conservative": 0.14358570439650464,
+            "optimistic": 0.07786936168037531,
+            "band_width": 0.06571634271612933
+        },
+        "pattern_004": {
+            "conservative": 0.1407829701579941,
+            "optimistic": 0.0756793082108066,
+            "band_width": 0.0651036619471875
+        },
+        "pattern_003": {
+            "conservative": 0.11291409506144205,
+            "optimistic": 0.05470074866279272,
+            "band_width": 0.058213346398649335
+        },
+        "pattern_006": {
+            "conservative": 0.08092904140924162,
+            "optimistic": 0.032783946063803616,
+            "band_width": 0.048145095345438
+        },
+        "pattern_005": {
+            "conservative": 0.15223846552127526,
+            "optimistic": 0.08471418665514721,
+            "band_width": 0.06752427886612805
+        },
+        "pattern_002": {
+            "conservative": 0.15028359926978122,
+            "optimistic": 0.08315698755853124,
+            "band_width": 0.06712661171124998
+        }
+    },
+    "verification": {
+        "baseline_trip": [
+            "pattern_003",
+            "pattern_004"
+        ],
+        "controlled_blocked": [],
+        "widest_band": "pattern_004",
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

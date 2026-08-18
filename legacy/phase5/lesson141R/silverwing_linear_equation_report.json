@@ -1,0 +1,22 @@
+{
+    "lesson": "141R",
+    "capability": "native_linear_equation_reasoning_function_foundation",
+    "reasoning_types": [
+        "algebraic",
+        "classification",
+        "engineering",
+        "function",
+        "inequality",
+        "linear_equation",
+        "system"
+    ],
+    "accuracy": 1.0,
+    "split_sizes": {
+        "train": 4,
+        "validation": 4,
+        "held_out": 4
+    },
+    "regression": false,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

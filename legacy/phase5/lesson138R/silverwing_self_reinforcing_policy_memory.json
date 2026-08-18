@@ -1,0 +1,147 @@
+{
+    "memory_version": "138R.1",
+    "lesson": "138R",
+    "capability": "autonomous_self_reinforcing_policy_continuous_commitment_cascade",
+    "created_at": "2026-08-15T13:52:07.133326",
+    "source_lessons": [
+        "135R",
+        "136R",
+        "137R"
+    ],
+    "cycle": 2,
+    "governance_frame": {
+        "boost_bound": 0.05,
+        "exposure_bound": 0.005,
+        "regression_limit": 0.0001,
+        "final_target": 0.105
+    },
+    "tuned_order": [
+        "pattern_001",
+        "pattern_004",
+        "pattern_003",
+        "pattern_006",
+        "pattern_005",
+        "pattern_002"
+    ],
+    "baseline_exposure": 0.09217751026153564,
+    "generation_targets": [
+        0.1,
+        0.095,
+        0.09
+    ],
+    "generations": [
+        {
+            "generation": 1,
+            "target": 0.1,
+            "changed": [
+                "pattern_001",
+                "pattern_004",
+                "pattern_005",
+                "pattern_002"
+            ],
+            "exposure": 0.0888441801071167,
+            "exposure_delta": -0.0033333301544189453
+        },
+        {
+            "generation": 2,
+            "target": 0.095,
+            "changed": [
+                "pattern_001",
+                "pattern_004",
+                "pattern_005",
+                "pattern_002"
+            ],
+            "exposure": 0.08551084995269775,
+            "exposure_delta": -0.0033333301544189453
+        },
+        {
+            "generation": 3,
+            "target": 0.09,
+            "changed": [
+                "pattern_001",
+                "pattern_004",
+                "pattern_005",
+                "pattern_002"
+            ],
+            "exposure": 0.08217751234769821,
+            "exposure_delta": -0.0033333376049995422
+        }
+    ],
+    "exposure_trajectory": [
+        0.09217751026153564,
+        0.0888441801071167,
+        0.08551084995269775,
+        0.08217751234769821
+    ],
+    "exposure_reduction": 0.009999997913837433,
+    "final_exposure": 0.08217751234769821,
+    "final_boosts": {
+        "pattern_001": 1.077876254967333,
+        "pattern_004": 1.6818745571638893,
+        "pattern_003": 1.0,
+        "pattern_006": 1.0,
+        "pattern_005": 1.1128928852099675,
+        "pattern_002": 1.1049751257497167
+    },
+    "final_penetrations": {
+        "pattern_001": 0.09,
+        "pattern_004": 0.09,
+        "pattern_003": 0.08003637784217832,
+        "pattern_006": 0.053028708701500005,
+        "pattern_005": 0.09,
+        "pattern_002": 0.09
+    },
+    "max_boost_deltas": [
+        0.0340784008831323,
+        0.03582675890749765,
+        0.03776425991695831
+    ],
+    "commitment_record": {
+        "cycle": 2,
+        "parent_ledger_hash": "d5b8208664587bdd589d5aaacf91ef285799ca6f6882fcb201a0e3d2e5e28b2c",
+        "parent_lesson": "137R",
+        "baseline_exposure": 0.09217751026153564,
+        "generation_targets": [
+            0.1,
+            0.095,
+            0.09
+        ],
+        "final_exposure": 0.08217751234769821,
+        "exposure_reduction": 0.009999997913837433,
+        "final_boosts": {
+            "pattern_001": 1.077876254967333,
+            "pattern_004": 1.6818745571638893,
+            "pattern_003": 1.0,
+            "pattern_006": 1.0,
+            "pattern_005": 1.1128928852099675,
+            "pattern_002": 1.1049751257497167
+        },
+        "final_penetrations": {
+            "pattern_001": 0.09,
+            "pattern_004": 0.09,
+            "pattern_003": 0.08003637784217832,
+            "pattern_006": 0.053028708701500005,
+            "pattern_005": 0.09,
+            "pattern_002": 0.09
+        }
+    },
+    "commitment_hash": "1bb3b613ff0b9bef30db42adf308d2ac76f70aa0946271a8f1a3e816c5f18f4e",
+    "cascade": [
+        {
+            "cycle": 1,
+            "lesson": "137R",
+            "hash": "d5b8208664587bdd589d5aaacf91ef285799ca6f6882fcb201a0e3d2e5e28b2c"
+        },
+        {
+            "cycle": 2,
+            "lesson": "138R",
+            "hash": "1bb3b613ff0b9bef30db42adf308d2ac76f70aa0946271a8f1a3e816c5f18f4e"
+        }
+    ],
+    "verification": {
+        "self_reinforcing": true,
+        "cascade_continuous": true,
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

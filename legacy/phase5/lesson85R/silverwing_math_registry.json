@@ -1,0 +1,13 @@
+{
+    "lesson": "85R",
+    "capability": "native_mathematical_reasoning",
+    "domains": [
+        "algebra",
+        "arithmetic",
+        "geometry",
+        "probability",
+        "statistics"
+    ],
+    "sequence_limit": 256,
+    "example_count": 6
+}

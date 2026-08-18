@@ -1,0 +1,581 @@
+{
+    "memory_version": "127R.1",
+    "lesson": "127R",
+    "capability": "multi_layer_defense_simulation_adaptive_control",
+    "created_at": "2026-08-15T11:16:31.049438",
+    "source_lesson": "126R",
+    "tuned_records": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "risk_score": 0.8048129425657967,
+            "risk_class": "HIGH",
+            "severity": 0.95,
+            "impact": 0.9,
+            "outcome_status": "prevented",
+            "priority": 1
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.7793000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.8,
+            "impact": 0.75,
+            "outcome_status": "not_prevented",
+            "priority": 2
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.7755,
+            "risk_class": "MEDIUM",
+            "severity": 0.82,
+            "impact": 0.62,
+            "outcome_status": "prevented",
+            "priority": 3
+        },
+        {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "origin": "122R_RUNTIME",
+            "risk_score": 0.7619000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.79,
+            "impact": 0.84,
+            "outcome_status": "prevented",
+            "priority": 4
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.75142,
+            "risk_class": "MEDIUM",
+            "severity": 0.85,
+            "impact": 0.8,
+            "outcome_status": "prevented",
+            "priority": 5
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.6184000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.78,
+            "impact": 0.88,
+            "outcome_status": "prevented",
+            "priority": 6
+        }
+    ],
+    "tuned_order": [
+        "pattern_001",
+        "pattern_004",
+        "pattern_003",
+        "pattern_006",
+        "pattern_005",
+        "pattern_002"
+    ],
+    "tuned_plan": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "dependency": null
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_005",
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 4,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY"
+        },
+        {
+            "step": 5,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        },
+        {
+            "step": 6,
+            "pattern_id": "pattern_006",
+            "action": "VALIDATE_ACTUATOR_RESPONSE",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        }
+    ],
+    "policy_frame": [
+        {
+            "policy_id": "P1",
+            "name": "CRITICAL_COVERAGE",
+            "description": "Every HIGH or RISING pattern must be planned."
+        },
+        {
+            "policy_id": "P2",
+            "name": "DEPENDENCY_ORDER",
+            "description": "No step may run before its dependency."
+        },
+        {
+            "policy_id": "P3",
+            "name": "ANCHOR_IMMUTABILITY",
+            "description": "The priority-1 pattern must open the plan."
+        },
+        {
+            "policy_id": "P4",
+            "name": "ACTION_UNIQUENESS",
+            "description": "Every action may appear exactly once."
+        },
+        {
+            "policy_id": "P5",
+            "name": "MITIGATION_CAPACITY",
+            "description": "Rehearsed mean effectiveness must meet the floor."
+        },
+        {
+            "policy_id": "P6",
+            "name": "RESIDUAL_TOLERANCE",
+            "description": "Total residual risk must stay within budget."
+        }
+    ],
+    "critical_set": [
+        "pattern_001",
+        "pattern_004"
+    ],
+    "extended_history": {
+        "pattern_001": {
+            "family": "evidence_integrity",
+            "pattern_id": "pattern_001",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.95,
+            "lifetime_effectiveness": 0.935,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.92
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.95
+                }
+            ]
+        },
+        "pattern_002": {
+            "family": "schema_integrity",
+            "pattern_id": "pattern_002",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.95,
+            "lifetime_effectiveness": 0.8999999999999999,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.85
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.95
+                }
+            ]
+        },
+        "pattern_003": {
+            "family": "sensor_alignment",
+            "pattern_id": "pattern_003",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.9,
+            "lifetime_effectiveness": 0.625,
+            "status_counts": {
+                "not_prevented": 1,
+                "prevented": 1
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "not_prevented",
+                    "effectiveness": 0.35
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                }
+            ]
+        },
+        "pattern_004": {
+            "family": "telemetry_fusion",
+            "pattern_id": "pattern_004",
+            "occurrences": 2,
+            "last_status": "not_prevented",
+            "last_effectiveness": 0.4,
+            "lifetime_effectiveness": 0.5,
+            "status_counts": {
+                "partial": 1,
+                "not_prevented": 1
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "partial",
+                    "effectiveness": 0.6
+                },
+                {
+                    "cycle": 2,
+                    "status": "not_prevented",
+                    "effectiveness": 0.4
+                }
+            ]
+        },
+        "pattern_005": {
+            "family": "timeline_integrity",
+            "pattern_id": "pattern_005",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.9,
+            "lifetime_effectiveness": 0.89,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.88
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                }
+            ]
+        },
+        "pattern_006": {
+            "family": "actuator_response",
+            "pattern_id": "pattern_006",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.7,
+            "lifetime_effectiveness": 0.8,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.7
+                }
+            ]
+        }
+    },
+    "layer_frame": [
+        {
+            "layer_id": "L1",
+            "name": "DETECT",
+            "base_effectiveness": 0.55
+        },
+        {
+            "layer_id": "L2",
+            "name": "INTERCEPT",
+            "base_effectiveness": 0.45
+        },
+        {
+            "layer_id": "L3",
+            "name": "VERIFY",
+            "base_effectiveness": 0.4
+        },
+        {
+            "layer_id": "L4",
+            "name": "REPAIR",
+            "base_effectiveness": 0.35
+        }
+    ],
+    "penetration_threshold": 0.12,
+    "reinforcement_boost": 1.3,
+    "baseline_simulation": [
+        {
+            "pattern_id": "pattern_001",
+            "risk_score": 0.8048129425657967,
+            "layer_effectiveness": [
+                0.5321250000000001,
+                0.435375,
+                0.387,
+                0.338625
+            ],
+            "stop_profile": [
+                0.5321250000000001,
+                0.20370107812499996,
+                0.10223530776562498,
+                0.054836463202787095
+            ],
+            "penetration": 0.10710215090658787,
+            "stop_rate": 0.8928978490934121,
+            "expected_depth": 1.8939875359843747
+        },
+        {
+            "pattern_id": "pattern_004",
+            "risk_score": 0.7793000000000001,
+            "layer_effectiveness": [
+                0.41250000000000003,
+                0.3375,
+                0.30000000000000004,
+                0.26249999999999996
+            ],
+            "stop_profile": [
+                0.41250000000000003,
+                0.19828125,
+                0.116765625,
+                0.07151894531249998
+            ],
+            "penetration": 0.2009341796875,
+            "stop_rate": 0.7990658203125001,
+            "expected_depth": 2.249171875
+        },
+        {
+            "pattern_id": "pattern_003",
+            "risk_score": 0.7755,
+            "layer_effectiveness": [
+                0.446875,
+                0.36562500000000003,
+                0.325,
+                0.284375
+            ],
+            "stop_profile": [
+                0.446875,
+                0.202236328125,
+                0.11403881835937499,
+                0.06735417709350586
+            ],
+            "penetration": 0.16949567642211913,
+            "stop_rate": 0.8305043235778808,
+            "expected_depth": 2.1408635253906247
+        },
+        {
+            "pattern_id": "pattern_006",
+            "risk_score": 0.7619000000000001,
+            "layer_effectiveness": [
+                0.49500000000000005,
+                0.405,
+                0.36000000000000004,
+                0.315
+            ],
+            "stop_profile": [
+                0.49500000000000005,
+                0.20452499999999996,
+                0.10817099999999999,
+                0.06057575999999998
+            ],
+            "penetration": 0.13172823999999997,
+            "stop_rate": 0.8682717600000001,
+            "expected_depth": 1.9977789999999995
+        },
+        {
+            "pattern_id": "pattern_005",
+            "risk_score": 0.75142,
+            "layer_effectiveness": [
+                0.51975,
+                0.42525,
+                0.37800000000000006,
+                0.33075
+            ],
+            "stop_profile": [
+                0.51975,
+                0.20422631249999998,
+                0.104336953875,
+                0.05678538714646873
+            ],
+            "penetration": 0.11490134647853122,
+            "stop_rate": 0.8850986535214688,
+            "expected_depth": 1.9279604211249999
+        },
+        {
+            "pattern_id": "pattern_002",
+            "risk_score": 0.6184000000000001,
+            "layer_effectiveness": [
+                0.5225,
+                0.4275,
+                0.38,
+                0.33249999999999996
+            ],
+            "stop_profile": [
+                0.5225,
+                0.20413125000000001,
+                0.10388012500000002,
+                0.056354967812500004
+            ],
+            "penetration": 0.11313365718750001,
+            "stop_rate": 0.8868663428125,
+            "expected_depth": 1.920357375
+        }
+    ],
+    "controlled_simulation": [
+        {
+            "pattern_id": "pattern_001",
+            "risk_score": 0.8048129425657967,
+            "layer_effectiveness": [
+                0.5321250000000001,
+                0.435375,
+                0.387,
+                0.338625
+            ],
+            "stop_profile": [
+                0.5321250000000001,
+                0.20370107812499996,
+                0.10223530776562498,
+                0.054836463202787095
+            ],
+            "penetration": 0.10710215090658787,
+            "stop_rate": 0.8928978490934121,
+            "expected_depth": 1.8939875359843747
+        },
+        {
+            "pattern_id": "pattern_004",
+            "risk_score": 0.7793000000000001,
+            "layer_effectiveness": [
+                0.5362500000000001,
+                0.43875000000000003,
+                0.39000000000000007,
+                0.34124999999999994
+            ],
+            "stop_profile": [
+                0.5362500000000001,
+                0.20347031249999997,
+                0.101509078125,
+                0.054180470449218726
+            ],
+            "penetration": 0.10459013892578123,
+            "stop_rate": 0.8954098610742187,
+            "expected_depth": 1.882800296875
+        },
+        {
+            "pattern_id": "pattern_003",
+            "risk_score": 0.7755,
+            "layer_effectiveness": [
+                0.5809375,
+                0.4753125000000001,
+                0.42250000000000004,
+                0.3696875
+            ],
+            "stop_profile": [
+                0.5809375,
+                0.19918564453125004,
+                0.09289797143554689,
+                0.04694250619102477
+            ],
+            "penetration": 0.08003637784217833,
+            "stop_rate": 0.9199636221578217,
+            "expected_depth": 1.765918239501953
+        },
+        {
+            "pattern_id": "pattern_006",
+            "risk_score": 0.7619000000000001,
+            "layer_effectiveness": [
+                0.6435000000000001,
+                0.5265000000000001,
+                0.4680000000000001,
+                0.40950000000000003
+            ],
+            "stop_profile": [
+                0.6435000000000001,
+                0.18769724999999998,
+                0.07899968699999999,
+                0.036774354298499984
+            ],
+            "penetration": 0.05302870870149998,
+            "stop_rate": 0.9469712912985,
+            "expected_depth": 1.615105813
+        },
+        {
+            "pattern_id": "pattern_005",
+            "risk_score": 0.75142,
+            "layer_effectiveness": [
+                0.51975,
+                0.42525,
+                0.37800000000000006,
+                0.33075
+            ],
+            "stop_profile": [
+                0.51975,
+                0.20422631249999998,
+                0.104336953875,
+                0.05678538714646873
+            ],
+            "penetration": 0.11490134647853122,
+            "stop_rate": 0.8850986535214688,
+            "expected_depth": 1.9279604211249999
+        },
+        {
+            "pattern_id": "pattern_002",
+            "risk_score": 0.6184000000000001,
+            "layer_effectiveness": [
+                0.5225,
+                0.4275,
+                0.38,
+                0.33249999999999996
+            ],
+            "stop_profile": [
+                0.5225,
+                0.20413125000000001,
+                0.10388012500000002,
+                0.056354967812500004
+            ],
+            "penetration": 0.11313365718750001,
+            "stop_rate": 0.8868663428125,
+            "expected_depth": 1.920357375
+        }
+    ],
+    "control_actions": {
+        "pattern_001": "HOLD",
+        "pattern_004": "ESCALATE",
+        "pattern_003": "ESCALATE",
+        "pattern_006": "ESCALATE",
+        "pattern_005": "HOLD",
+        "pattern_002": "HOLD"
+    },
+    "baseline_mean_stop_rate": 0.8604507915529602,
+    "controlled_mean_stop_rate": 0.9045346033263203,
+    "closed_loop": true,
+    "verification": {
+        "escaped": [
+            "pattern_003",
+            "pattern_004",
+            "pattern_006"
+        ],
+        "held": [
+            "pattern_001",
+            "pattern_002",
+            "pattern_005"
+        ],
+        "closed_loop": true,
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

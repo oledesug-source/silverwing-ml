@@ -1,0 +1,381 @@
+{
+    "memory_version": "114R.1",
+    "capability": "native_evidence_provenance_reasoning_trace",
+    "created_at": "2026-08-14T19:54:57.612626",
+    "source_memory_version": "113R.2",
+    "reasoning_id": "reasoning_114_001",
+    "provenance_records": [
+        {
+            "provenance_id": "provenance_0001",
+            "source_identity": {
+                "source_type": "cross_case_similarity",
+                "evidence_id": "evidence_001",
+                "case_a": "case_001",
+                "case_b": "case_002",
+                "prototype_id": null
+            },
+            "source_hash": "24dd833fcab4a301d6830bcfcef64ca8ab42f1e22b516afe57fe3b945eeba468",
+            "evidence_snapshot": {
+                "evidence_id": "evidence_001",
+                "source_type": "cross_case_similarity",
+                "case_a": "case_001",
+                "case_b": "case_002",
+                "similarity": 0.6746165752410889,
+                "direction": "neutral",
+                "reliability": 0.4,
+                "magnitude": 0.0,
+                "weight": 0.0,
+                "contribution": 0.0
+            },
+            "retrieval_stage": "113R_evidence_arbitration",
+            "captured_at": "2026-08-14T19:54:57.527650",
+            "reasoning_links": [
+                "reason_001",
+                "reason_002",
+                "reason_003",
+                "reason_004",
+                "reason_005",
+                "reason_006"
+            ]
+        },
+        {
+            "provenance_id": "provenance_0002",
+            "source_identity": {
+                "source_type": "cross_case_similarity",
+                "evidence_id": "evidence_002",
+                "case_a": "case_001",
+                "case_b": "case_003",
+                "prototype_id": null
+            },
+            "source_hash": "2ad61fa7c48ec586fd8666c36bd5c22603a7ec964fd09a05b2908e9fcc7b85e4",
+            "evidence_snapshot": {
+                "evidence_id": "evidence_002",
+                "source_type": "cross_case_similarity",
+                "case_a": "case_001",
+                "case_b": "case_003",
+                "similarity": 0.06464098393917084,
+                "direction": "conflict",
+                "reliability": 0.7,
+                "magnitude": 0.4676795080304146,
+                "weight": 0.3273756556212902,
+                "contribution": -0.3273756556212902
+            },
+            "retrieval_stage": "113R_evidence_arbitration",
+            "captured_at": "2026-08-14T19:54:57.528066",
+            "reasoning_links": [
+                "reason_001",
+                "reason_002",
+                "reason_003",
+                "reason_004",
+                "reason_005",
+                "reason_006"
+            ]
+        },
+        {
+            "provenance_id": "provenance_0003",
+            "source_identity": {
+                "source_type": "cross_case_similarity",
+                "evidence_id": "evidence_003",
+                "case_a": "case_002",
+                "case_b": "case_003",
+                "prototype_id": null
+            },
+            "source_hash": "a6c0f5c6c092f678ba7e935a9addd75aa9da7dc0f422885c363d4ce99f216cac",
+            "evidence_snapshot": {
+                "evidence_id": "evidence_003",
+                "source_type": "cross_case_similarity",
+                "case_a": "case_002",
+                "case_b": "case_003",
+                "similarity": 0.496437132358551,
+                "direction": "neutral",
+                "reliability": 0.4,
+                "magnitude": 0.0,
+                "weight": 0.0,
+                "contribution": 0.0
+            },
+            "retrieval_stage": "113R_evidence_arbitration",
+            "captured_at": "2026-08-14T19:54:57.528093",
+            "reasoning_links": [
+                "reason_001",
+                "reason_002",
+                "reason_003",
+                "reason_004",
+                "reason_005",
+                "reason_006"
+            ]
+        },
+        {
+            "provenance_id": "provenance_0004",
+            "source_identity": {
+                "source_type": "prototype_consistency",
+                "evidence_id": "prototype_prototype_001",
+                "case_a": null,
+                "case_b": null,
+                "prototype_id": "prototype_001"
+            },
+            "source_hash": "b5b8f84d27f5add1267ae697d3f7b452f42c8734c809643168e8dc3ddabbcfec",
+            "evidence_snapshot": {
+                "evidence_id": "prototype_prototype_001",
+                "source_type": "prototype_consistency",
+                "prototype_id": "prototype_001",
+                "consistency": 0.6666666666666666,
+                "direction": "support",
+                "reliability": 0.7,
+                "magnitude": 0.6666666666666666,
+                "weight": 0.4666666666666666,
+                "contribution": 0.4666666666666666
+            },
+            "retrieval_stage": "113R_evidence_arbitration",
+            "captured_at": "2026-08-14T19:54:57.528122",
+            "reasoning_links": [
+                "reason_001",
+                "reason_002",
+                "reason_003",
+                "reason_004",
+                "reason_005",
+                "reason_006"
+            ]
+        },
+        {
+            "provenance_id": "provenance_0005",
+            "source_identity": {
+                "source_type": "prototype_consistency",
+                "evidence_id": "prototype_prototype_002",
+                "case_a": null,
+                "case_b": null,
+                "prototype_id": "prototype_002"
+            },
+            "source_hash": "85455df5cb9834a4f3a0206b07262a8668f27110d16246eae89c84a5e7de97fb",
+            "evidence_snapshot": {
+                "evidence_id": "prototype_prototype_002",
+                "source_type": "prototype_consistency",
+                "prototype_id": "prototype_002",
+                "consistency": 0.6666666666666666,
+                "direction": "support",
+                "reliability": 0.7,
+                "magnitude": 0.6666666666666666,
+                "weight": 0.4666666666666666,
+                "contribution": 0.4666666666666666
+            },
+            "retrieval_stage": "113R_evidence_arbitration",
+            "captured_at": "2026-08-14T19:54:57.528140",
+            "reasoning_links": [
+                "reason_001",
+                "reason_002",
+                "reason_003",
+                "reason_004",
+                "reason_005",
+                "reason_006"
+            ]
+        },
+        {
+            "provenance_id": "provenance_0006",
+            "source_identity": {
+                "source_type": "prototype_consistency",
+                "evidence_id": "prototype_prototype_003",
+                "case_a": null,
+                "case_b": null,
+                "prototype_id": "prototype_003"
+            },
+            "source_hash": "e4f7ede78763d2aa0b0161062805cc4c0b0cd4572bc0fb91398c0b8f22a18bfb",
+            "evidence_snapshot": {
+                "evidence_id": "prototype_prototype_003",
+                "source_type": "prototype_consistency",
+                "prototype_id": "prototype_003",
+                "consistency": 0.6666666666666666,
+                "direction": "support",
+                "reliability": 0.7,
+                "magnitude": 0.6666666666666666,
+                "weight": 0.4666666666666666,
+                "contribution": 0.4666666666666666
+            },
+            "retrieval_stage": "113R_evidence_arbitration",
+            "captured_at": "2026-08-14T19:54:57.528156",
+            "reasoning_links": [
+                "reason_001",
+                "reason_002",
+                "reason_003",
+                "reason_004",
+                "reason_005",
+                "reason_006"
+            ]
+        }
+    ],
+    "reasoning_steps": [
+        {
+            "trace_id": "trace_0001",
+            "step_id": "reason_001",
+            "operation": "collect_evidence",
+            "input": "weighted_evidence",
+            "output": "provenance_records",
+            "description": "Collect and identify the evidence used by arbitration.",
+            "evidence_refs": [
+                "provenance_0001",
+                "provenance_0002",
+                "provenance_0003",
+                "provenance_0004",
+                "provenance_0005",
+                "provenance_0006"
+            ]
+        },
+        {
+            "trace_id": "trace_0002",
+            "step_id": "reason_002",
+            "operation": "separate_support_and_conflict",
+            "input": "provenance_records",
+            "output": "support_conflict_sets",
+            "description": "Separate evidence according to reasoning direction.",
+            "evidence_refs": [
+                "provenance_0001",
+                "provenance_0002",
+                "provenance_0003",
+                "provenance_0004",
+                "provenance_0005",
+                "provenance_0006"
+            ]
+        },
+        {
+            "trace_id": "trace_0003",
+            "step_id": "reason_003",
+            "operation": "weighted_arbitration",
+            "input": "support_conflict_sets",
+            "output": "support_conflict_scores",
+            "description": "Aggregate evidence using stored reliability weights.",
+            "evidence_refs": [
+                "provenance_0001",
+                "provenance_0002",
+                "provenance_0003",
+                "provenance_0004",
+                "provenance_0005",
+                "provenance_0006"
+            ]
+        },
+        {
+            "trace_id": "trace_0004",
+            "step_id": "reason_004",
+            "operation": "calculate_net_evidence",
+            "input": "support_conflict_scores",
+            "output": "net_evidence",
+            "description": "Compute the balance between supporting and conflicting evidence.",
+            "evidence_refs": [
+                "provenance_0001",
+                "provenance_0002",
+                "provenance_0003",
+                "provenance_0004",
+                "provenance_0005",
+                "provenance_0006"
+            ]
+        },
+        {
+            "trace_id": "trace_0005",
+            "step_id": "reason_005",
+            "operation": "calculate_confidence",
+            "input": "net_evidence",
+            "output": "resolution_confidence",
+            "description": "Convert evidence balance into the stored confidence state.",
+            "evidence_refs": [
+                "provenance_0001",
+                "provenance_0002",
+                "provenance_0003",
+                "provenance_0004",
+                "provenance_0005",
+                "provenance_0006"
+            ]
+        },
+        {
+            "trace_id": "trace_0006",
+            "step_id": "reason_006",
+            "operation": "resolve_conclusion",
+            "input": "resolution_confidence",
+            "output": "resolution_state",
+            "description": "Preserve either a resolved, cautious or unresolved state.",
+            "evidence_refs": [
+                "provenance_0001",
+                "provenance_0002",
+                "provenance_0003",
+                "provenance_0004",
+                "provenance_0005",
+                "provenance_0006"
+            ]
+        }
+    ],
+    "decision_contributions": [
+        {
+            "evidence_id": "evidence_001",
+            "provenance_id": "provenance_0001",
+            "direction": "neutral",
+            "weight": 0.0,
+            "contribution": 0.0,
+            "decision_effect": "neutral"
+        },
+        {
+            "evidence_id": "evidence_002",
+            "provenance_id": "provenance_0002",
+            "direction": "conflict",
+            "weight": 0.3273756556212902,
+            "contribution": -0.3273756556212902,
+            "decision_effect": "opposes"
+        },
+        {
+            "evidence_id": "evidence_003",
+            "provenance_id": "provenance_0003",
+            "direction": "neutral",
+            "weight": 0.0,
+            "contribution": 0.0,
+            "decision_effect": "neutral"
+        },
+        {
+            "evidence_id": "prototype_prototype_001",
+            "provenance_id": "provenance_0004",
+            "direction": "support",
+            "weight": 0.4666666666666666,
+            "contribution": 0.4666666666666666,
+            "decision_effect": "supports"
+        },
+        {
+            "evidence_id": "prototype_prototype_002",
+            "provenance_id": "provenance_0005",
+            "direction": "support",
+            "weight": 0.4666666666666666,
+            "contribution": 0.4666666666666666,
+            "decision_effect": "supports"
+        },
+        {
+            "evidence_id": "prototype_prototype_003",
+            "provenance_id": "provenance_0006",
+            "direction": "support",
+            "weight": 0.4666666666666666,
+            "contribution": 0.4666666666666666,
+            "decision_effect": "supports"
+        }
+    ],
+    "contradictions": [
+        {
+            "case_a": "case_001",
+            "case_b": "case_003",
+            "similarity": 0.06464098393917084,
+            "agreement": false,
+            "contradiction": true
+        }
+    ],
+    "decision": {
+        "support_score": 1.4,
+        "conflict_score": 0.3273756556212902,
+        "net_evidence": 1.0726243443787098,
+        "arbitration_strength": 0.6209560386521228,
+        "resolution_confidence": 0.6139706924347484,
+        "resolution_state": "RESOLVED_WITH_CONFIDENCE",
+        "conclusion": "Primary hypothesis remains the best-supported interpretation after evidence arbitration."
+    },
+    "trace_completeness": 1.0,
+    "provenance_event": {
+        "event_id": "provenance_114_001",
+        "timestamp": "2026-08-14T19:54:57.612607",
+        "source": "114R",
+        "reasoning_id": "reasoning_114_001",
+        "trace_completeness": 1.0,
+        "trace_deterministic": true,
+        "resolution_state": "RESOLVED_WITH_CONFIDENCE",
+        "resolution_confidence": 0.6139706924347484
+    }
+}

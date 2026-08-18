@@ -1,0 +1,35 @@
+{
+    "lesson": "84R",
+    "capability": "native_verified_execution_and_replanning",
+    "execution_tasks": 4,
+    "training_examples": 2,
+    "validation_examples": 2,
+    "baseline": {
+        "loss": 4.900167465209961,
+        "perplexity": 134.3122704342425,
+        "accuracy": 0.03492063492063492,
+        "tokens": 315
+    },
+    "candidate": {
+        "loss": 4.890972137451172,
+        "perplexity": 133.08288604421693,
+        "accuracy": 0.04126984126984127,
+        "tokens": 315
+    },
+    "numerical_health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "parameter_change": {
+        "changed_tensors": 53,
+        "total_absolute_parameter_change": 19.946917506167665
+    },
+    "closed_loop": {
+        "valid": 4
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Execution/replanning validation loss improved."
+    }
+}

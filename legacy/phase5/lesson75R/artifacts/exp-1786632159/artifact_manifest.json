@@ -1,0 +1,22 @@
+{
+    "model_config": {
+        "path": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson71R\\silverwing_decoder_config.json",
+        "sha256": "0729c5b6190fdfcf344db6d8dadfb8d9cbcd84f62da0cd41a9c54aa971911a2f"
+    },
+    "dataset_config": {
+        "path": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson72R\\silverwing_dataset_config.json",
+        "sha256": "1e1c38932d3c09f4e8e094277ed48ddd320bb799268cb06db1ce254da6cff165"
+    },
+    "training_log": {
+        "path": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson73R\\silverwing_training_log.json",
+        "sha256": "6dbfb3567ed810729b8402759745df26834e4c705d7ee1b9bfef20bf57a3b455"
+    },
+    "evaluation_report": {
+        "path": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson74R\\silverwing_evaluation_report.json",
+        "sha256": "9abd70f487ae97ee2d73a61be56a09c967dbc695a8dd175e0c7336354714a057"
+    },
+    "best_checkpoint": {
+        "path": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson73R\\checkpoints\\silverwing_best.pt",
+        "sha256": "2d7d760c7b864801708f1bc0818dd12abf0aec8bbb4dbad8377c17547600c3ed"
+    }
+}

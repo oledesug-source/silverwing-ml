@@ -1,0 +1,10 @@
+{
+    "lesson": "109R",
+    "capability": "native_failure_pattern_clustering_prototype_memory",
+    "memory_version": "109R.2",
+    "pattern_vector_dimension": 14,
+    "pattern_count": 3,
+    "prototype_count": 3,
+    "prototype_reasoning_score": 0.8118499309610989,
+    "next": "110R Native Failure Prototype Evolution + Continual Memory"
+}

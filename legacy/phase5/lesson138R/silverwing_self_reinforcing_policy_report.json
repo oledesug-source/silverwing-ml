@@ -1,0 +1,14 @@
+{
+    "lesson": "138R",
+    "memory_version": "138R.1",
+    "cycle": 2,
+    "baseline_exposure": 0.09217751026153564,
+    "final_exposure": 0.08217751234769821,
+    "exposure_reduction": 0.009999997913837433,
+    "max_boost_delta": 0.03776425991695831,
+    "self_reinforcing": true,
+    "cascade_continuous": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

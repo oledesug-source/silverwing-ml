@@ -1,0 +1,129 @@
+{
+    "lesson": "109R",
+    "capability": "native_failure_pattern_clustering_prototype_memory",
+    "pattern_vector_dimension": 14,
+    "pattern_count": 3,
+    "cluster_count": 3,
+    "cluster_assignments": [
+        {
+            "pattern_id": "pattern_001",
+            "cluster_id": 0
+        },
+        {
+            "pattern_id": "pattern_002",
+            "cluster_id": 1
+        },
+        {
+            "pattern_id": "pattern_003",
+            "cluster_id": 2
+        }
+    ],
+    "prototypes": [
+        {
+            "prototype_id": "prototype_001",
+            "cluster_id": 0,
+            "member_pattern_ids": [
+                "pattern_001"
+            ],
+            "member_count": 1,
+            "semantic_classes": [
+                "motor_warning"
+            ],
+            "prototype_vector": [
+                -0.11349387466907501,
+                -0.11349454522132874,
+                -0.28373467922210693,
+                0.3404819667339325,
+                0.11349395662546158,
+                -0.11346997320652008,
+                -0.1134706437587738,
+                -0.2836749255657196,
+                0.3404102623462677,
+                0.11347005516290665,
+                0.004142529331147671,
+                0.48484647274017334,
+                0.2444944828748703,
+                0.48484647274017334
+            ],
+            "prototype_dimension": 14,
+            "prototype_confidence": 1.0,
+            "member_similarity_scores": [
+                1.0000001192092896
+            ]
+        },
+        {
+            "prototype_id": "prototype_002",
+            "cluster_id": 1,
+            "member_pattern_ids": [
+                "pattern_002"
+            ],
+            "member_count": 1,
+            "semantic_classes": [
+                "pump_warning"
+            ],
+            "prototype_vector": [
+                0.23916508257389069,
+                -0.15944339334964752,
+                0.15944434702396393,
+                0.31888729333877563,
+                0.15944351255893707,
+                0.23909439146518707,
+                -0.1593962460756302,
+                0.1593971997499466,
+                0.31879299879074097,
+                0.15939638018608093,
+                0.0029497086070477962,
+                0.4849289059638977,
+                0.24393931031227112,
+                0.4849289059638977
+            ],
+            "prototype_dimension": 14,
+            "prototype_confidence": 1.0,
+            "member_similarity_scores": [
+                1.0000001192092896
+            ]
+        },
+        {
+            "prototype_id": "prototype_003",
+            "cluster_id": 2,
+            "member_pattern_ids": [
+                "pattern_003"
+            ],
+            "member_count": 1,
+            "semantic_classes": [
+                "sensor_normal"
+            ],
+            "prototype_vector": [
+                0.28289154171943665,
+                0.2828911244869232,
+                0.2828919589519501,
+                0.42433691024780273,
+                0.2828911244869232,
+                0.28278979659080505,
+                0.2827893793582916,
+                0.28279024362564087,
+                0.42418432235717773,
+                0.2827893793582916,
+                0.00353614310733974,
+                0.0,
+                0.00176807155366987,
+                0.0
+            ],
+            "prototype_dimension": 14,
+            "prototype_confidence": 1.0,
+            "member_similarity_scores": [
+                1.0000001192092896
+            ]
+        }
+    ],
+    "active_pattern": "pattern_001",
+    "nearest_prototype": {
+        "prototype_id": "prototype_001",
+        "cluster_id": 0,
+        "member_count": 1,
+        "confidence": 1.0,
+        "score": 1.0000001192092896
+    },
+    "prototype_reasoning_score": 0.8118499309610989,
+    "prototype_explanation": "The active Silverwing failure pattern was compared with clustered historical failure prototypes. The nearest prototype summarizes related historical patterns and provides generalized evidence rather than claiming an identical physical failure. Prototype similarity exceeds the configured cluster threshold."
+}

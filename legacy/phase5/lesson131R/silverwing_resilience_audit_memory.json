@@ -1,0 +1,461 @@
+{
+    "memory_version": "131R.1",
+    "lesson": "131R",
+    "capability": "collective_defense_consolidation_system_resilience_audit",
+    "created_at": "2026-08-15T11:32:50.230366",
+    "source_lesson": "130R",
+    "tuned_records": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "risk_score": 0.8048129425657967,
+            "risk_class": "HIGH",
+            "severity": 0.95,
+            "impact": 0.9,
+            "outcome_status": "prevented",
+            "priority": 1
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.7793000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.8,
+            "impact": 0.75,
+            "outcome_status": "not_prevented",
+            "priority": 2
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.7755,
+            "risk_class": "MEDIUM",
+            "severity": 0.82,
+            "impact": 0.62,
+            "outcome_status": "prevented",
+            "priority": 3
+        },
+        {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "origin": "122R_RUNTIME",
+            "risk_score": 0.7619000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.79,
+            "impact": 0.84,
+            "outcome_status": "prevented",
+            "priority": 4
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.75142,
+            "risk_class": "MEDIUM",
+            "severity": 0.85,
+            "impact": 0.8,
+            "outcome_status": "prevented",
+            "priority": 5
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.6184000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.78,
+            "impact": 0.88,
+            "outcome_status": "prevented",
+            "priority": 6
+        }
+    ],
+    "tuned_order": [
+        "pattern_001",
+        "pattern_004",
+        "pattern_003",
+        "pattern_006",
+        "pattern_005",
+        "pattern_002"
+    ],
+    "anomaly_scores": {
+        "pattern_001": 0.6872230570864468,
+        "pattern_004": 0.8675800000000001,
+        "pattern_003": 0.7045538541576759,
+        "pattern_006": 0.7528548352010486,
+        "pattern_005": 0.6608088028033707,
+        "pattern_002": 0.5797603153381193
+    },
+    "anomaly_set": [
+        "pattern_003",
+        "pattern_004",
+        "pattern_006"
+    ],
+    "anomaly_schedule": [
+        "pattern_001",
+        "pattern_002",
+        "pattern_003",
+        "pattern_004",
+        "pattern_006",
+        "pattern_005"
+    ],
+    "critical_path": {
+        "length": 4,
+        "patterns": [
+            "pattern_001",
+            "pattern_002",
+            "pattern_003",
+            "pattern_004",
+            "pattern_006"
+        ]
+    },
+    "defense_tiers": {
+        "pattern_001": "CRITICAL",
+        "pattern_004": "ANOMALY",
+        "pattern_003": "ANOMALY",
+        "pattern_006": "ANOMALY",
+        "pattern_005": "SECONDARY",
+        "pattern_002": "CRITICAL"
+    },
+    "drift_tiers": {
+        "pattern_001": "CRITICAL",
+        "pattern_004": "ANOMALY",
+        "pattern_003": "ANOMALY",
+        "pattern_006": "ANOMALY",
+        "pattern_005": "ANOMALY",
+        "pattern_002": "CRITICAL"
+    },
+    "control_actions": {
+        "pattern_001": "HOLD",
+        "pattern_004": "ESCALATE",
+        "pattern_003": "ESCALATE",
+        "pattern_006": "ESCALATE",
+        "pattern_005": "HOLD",
+        "pattern_002": "HOLD"
+    },
+    "baseline_bands": {
+        "pattern_001": 0.06571634271612933,
+        "pattern_004": 0.08040258515625001,
+        "pattern_003": 0.07694651353149423,
+        "pattern_006": 0.07098417332999998,
+        "pattern_005": 0.06752427886612805,
+        "pattern_002": 0.06712661171124998
+    },
+    "guardrail_frame": {
+        "uncertainty": 0.1,
+        "guardrail_threshold": 0.18,
+        "trip_probability_threshold": 0.25,
+        "monte_carlo_trials": 5000
+    },
+    "controlled_gate": {
+        "blocked": [],
+        "executed": [
+            "pattern_001",
+            "pattern_002",
+            "pattern_003",
+            "pattern_004",
+            "pattern_005",
+            "pattern_006"
+        ]
+    },
+    "layer_frame": [
+        {
+            "layer_id": "L1",
+            "name": "DETECT",
+            "base_effectiveness": 0.55
+        },
+        {
+            "layer_id": "L2",
+            "name": "INTERCEPT",
+            "base_effectiveness": 0.45
+        },
+        {
+            "layer_id": "L3",
+            "name": "VERIFY",
+            "base_effectiveness": 0.4
+        },
+        {
+            "layer_id": "L4",
+            "name": "REPAIR",
+            "base_effectiveness": 0.35
+        }
+    ],
+    "trends": {
+        "pattern_001": "FALLING",
+        "pattern_003": "FALLING",
+        "pattern_005": "FALLING",
+        "pattern_006": "STABLE",
+        "pattern_004": "RISING",
+        "pattern_002": "FALLING"
+    },
+    "recovery_frame": {
+        "spillover_ratio": 0.35,
+        "failure_threshold": 0.8,
+        "safe_ceiling": 0.7,
+        "playbook": [
+            {
+                "action": "RETRY",
+                "cost": 1.0,
+                "success": 0.6,
+                "recovery": 0.3
+            },
+            {
+                "action": "REDUNDANT_CHANNEL",
+                "cost": 2.0,
+                "success": 0.75,
+                "recovery": 0.45
+            },
+            {
+                "action": "ISOLATE",
+                "cost": 3.0,
+                "success": 0.85,
+                "recovery": 0.55
+            },
+            {
+                "action": "REBUILD",
+                "cost": 4.0,
+                "success": 0.95,
+                "recovery": 0.7
+            },
+            {
+                "action": "QUARANTINE",
+                "cost": 5.0,
+                "success": 1.0,
+                "recovery": 0.9
+            }
+        ]
+    },
+    "base_penetration": {
+        "pattern_001": 0.6872230570864468,
+        "pattern_004": 0.8675800000000001,
+        "pattern_003": 0.7045538541576759,
+        "pattern_006": 0.7528548352010486,
+        "pattern_005": 0.6608088028033707,
+        "pattern_002": 0.5797603153381193
+    },
+    "absorption_capacity": 1.7472191354133386,
+    "breach_scenario": {
+        "breach_pattern": "pattern_003",
+        "pre_recovery": {
+            "pattern_001": 0.6872230570864468,
+            "pattern_004": 0.913927,
+            "pattern_003": 1.0,
+            "pattern_006": 0.8393556428806815,
+            "pattern_005": 0.6608088028033707,
+            "pattern_002": 0.5797603153381193
+        },
+        "failed_set": [
+            "pattern_003",
+            "pattern_004",
+            "pattern_006"
+        ],
+        "recovery": {
+            "pattern_003": {
+                "pattern": "pattern_003",
+                "action": "REDUNDANT_CHANNEL",
+                "cost": 2.0,
+                "roll": 0.5607,
+                "residual": 0.55
+            },
+            "pattern_004": {
+                "pattern": "pattern_004",
+                "action": "REDUNDANT_CHANNEL",
+                "cost": 2.0,
+                "roll": 0.4226,
+                "residual": 0.50265985
+            },
+            "pattern_006": {
+                "pattern": "pattern_006",
+                "action": "RETRY",
+                "cost": 1.0,
+                "roll": 0.435,
+                "residual": 0.587548950016477
+            }
+        },
+        "post_recovery": {
+            "pattern_001": 0.6872230570864468,
+            "pattern_004": 0.50265985,
+            "pattern_003": 0.55,
+            "pattern_006": 0.587548950016477,
+            "pattern_005": 0.6608088028033707,
+            "pattern_002": 0.5797603153381193
+        },
+        "absorbed": 1.113073842864205,
+        "absorption_rate": 0.2377816817963061,
+        "pre_recovery_total": 4.681074818108619,
+        "post_recovery_total": 3.5680009752444137
+    },
+    "root_cascade_scenario": {
+        "root_pattern": "pattern_001",
+        "baseline_failed_set": [
+            "pattern_004"
+        ],
+        "pre_recovery": {
+            "pattern_001": 1.0,
+            "pattern_004": 0.8675800000000001,
+            "pattern_003": 0.7045538541576759,
+            "pattern_006": 0.7528548352010486,
+            "pattern_005": 0.7795257218221909,
+            "pattern_002": 0.7268442049697775
+        },
+        "failed_set": [
+            "pattern_001",
+            "pattern_004"
+        ],
+        "induced_failures": [
+            "pattern_001"
+        ],
+        "recovery": {
+            "pattern": "pattern_001",
+            "action": "ISOLATE",
+            "cost": 3.0,
+            "roll": 0.3829,
+            "residual": 0.44999999999999996
+        }
+    },
+    "chain_integrity": true,
+    "scorecard": {
+        "pattern_001": {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "risk_score": 0.8048129425657967,
+            "risk_class": "HIGH",
+            "severity": 0.95,
+            "impact": 0.9,
+            "trend": "FALLING",
+            "anomaly_score": 0.6872230570864468,
+            "classification": "NORMAL",
+            "defense_tier": "CRITICAL",
+            "control_action": "HOLD",
+            "band_width": 0.06571634271612933,
+            "base_stop_rate": 0.8928978490934121,
+            "controlled_stop_rate": 0.8928978490934121,
+            "base_penetration": 0.6872230570864468,
+            "on_critical_path": true
+        },
+        "pattern_004": {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "risk_score": 0.7793000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.8,
+            "impact": 0.75,
+            "trend": "RISING",
+            "anomaly_score": 0.8675800000000001,
+            "classification": "ANOMALY",
+            "defense_tier": "ANOMALY",
+            "control_action": "ESCALATE",
+            "band_width": 0.08040258515625001,
+            "base_stop_rate": 0.7990658203125001,
+            "controlled_stop_rate": 0.8954098610742187,
+            "base_penetration": 0.8675800000000001,
+            "on_critical_path": true
+        },
+        "pattern_003": {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "risk_score": 0.7755,
+            "risk_class": "MEDIUM",
+            "severity": 0.82,
+            "impact": 0.62,
+            "trend": "FALLING",
+            "anomaly_score": 0.7045538541576759,
+            "classification": "ANOMALY",
+            "defense_tier": "ANOMALY",
+            "control_action": "ESCALATE",
+            "band_width": 0.07694651353149423,
+            "base_stop_rate": 0.8305043235778808,
+            "controlled_stop_rate": 0.9199636221578217,
+            "base_penetration": 0.7045538541576759,
+            "on_critical_path": true
+        },
+        "pattern_006": {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "risk_score": 0.7619000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.79,
+            "impact": 0.84,
+            "trend": "STABLE",
+            "anomaly_score": 0.7528548352010486,
+            "classification": "ANOMALY",
+            "defense_tier": "ANOMALY",
+            "control_action": "ESCALATE",
+            "band_width": 0.07098417332999998,
+            "base_stop_rate": 0.8682717600000001,
+            "controlled_stop_rate": 0.9469712912985,
+            "base_penetration": 0.7528548352010486,
+            "on_critical_path": true
+        },
+        "pattern_005": {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "risk_score": 0.75142,
+            "risk_class": "MEDIUM",
+            "severity": 0.85,
+            "impact": 0.8,
+            "trend": "FALLING",
+            "anomaly_score": 0.6608088028033707,
+            "classification": "NORMAL",
+            "defense_tier": "SECONDARY",
+            "control_action": "HOLD",
+            "band_width": 0.06752427886612805,
+            "base_stop_rate": 0.8850986535214688,
+            "controlled_stop_rate": 0.8850986535214688,
+            "base_penetration": 0.6608088028033707,
+            "on_critical_path": false
+        },
+        "pattern_002": {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "risk_score": 0.6184000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.78,
+            "impact": 0.88,
+            "trend": "FALLING",
+            "anomaly_score": 0.5797603153381193,
+            "classification": "NORMAL",
+            "defense_tier": "CRITICAL",
+            "control_action": "HOLD",
+            "band_width": 0.06712661171124998,
+            "base_stop_rate": 0.8868663428125,
+            "controlled_stop_rate": 0.8868663428125,
+            "base_penetration": 0.5797603153381193,
+            "on_critical_path": true
+        }
+    },
+    "system_metrics": {
+        "collective_exposure": 0.7087968107644436,
+        "critical_exposure": 0.7183944123566581,
+        "critical_coverage": 1.0,
+        "closed_loop_gain": 0.04408381177336007,
+        "absorption_margin": 0.6341452925491335,
+        "baseline_mean_stop_rate": 0.8604507915529602,
+        "controlled_mean_stop_rate": 0.9045346033263203,
+        "rehearsal_residual": 1.0296515412667768,
+        "rehearsal_coverage": 1.0
+    },
+    "resilience_audit": {
+        "exposure_limit": 0.75,
+        "checks": {
+            "A1_COLLECTIVE_EXPOSURE": true,
+            "A2_CRITICAL_COVERAGE": true,
+            "A3_ANOMALY_FIRST": true,
+            "A4_CLOSED_LOOP_GAIN": true,
+            "A5_ABSORPTION_MARGIN": true,
+            "A6_RECOVERY_SAFETY": true,
+            "A7_GOVERNANCE_COMPLIANCE": true,
+            "A8_CHAIN_DETERMINISM": true
+        },
+        "passed": 8,
+        "total": 8,
+        "score": 1.0,
+        "grade": "RESILIENT"
+    },
+    "verification": {
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

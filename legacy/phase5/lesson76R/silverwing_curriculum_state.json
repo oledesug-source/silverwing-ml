@@ -1,0 +1,16 @@
+{
+    "current_stage_id": "stage_02",
+    "completed_stages": [
+        "stage_01"
+    ],
+    "stage_scores": {
+        "stage_01": 0.8415
+    },
+    "stage_attempts": {
+        "stage_01": 1
+    },
+    "total_experiments": 1,
+    "promoted_experiments": 1,
+    "rejected_experiments": 0,
+    "updated_at": 1786632675.2839174
+}

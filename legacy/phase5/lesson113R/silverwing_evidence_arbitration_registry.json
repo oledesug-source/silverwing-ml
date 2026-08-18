@@ -1,0 +1,9 @@
+{
+    "lesson": "113R",
+    "capability": "native_contradiction_resolution_evidence_arbitration",
+    "memory_version": "113R.2",
+    "contradiction_state": "CONTRADICTIONS_PRESENT",
+    "resolution_confidence": 0.6139706924347484,
+    "resolution_state": "RESOLVED_WITH_CONFIDENCE",
+    "next": "114R Native Evidence Provenance + Reasoning Trace"
+}

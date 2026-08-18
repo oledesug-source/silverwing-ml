@@ -1,0 +1,19 @@
+{
+    "lesson": "132R",
+    "memory_version": "132R.1",
+    "stress_pattern": "pattern_004",
+    "static_penetration": 0.23890161808691412,
+    "converged_boost": 1.4809082896716,
+    "converged_penetration": 0.12000504327065654,
+    "static_exposure": 0.11785064320053527,
+    "tuned_exposure": 0.09803454739782567,
+    "exposure_reduction": 0.0198160958027096,
+    "tuned_patterns": [
+        "pattern_004"
+    ],
+    "all_compliant": true,
+    "monotone": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

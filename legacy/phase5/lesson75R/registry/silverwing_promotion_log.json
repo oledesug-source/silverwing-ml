@@ -1,0 +1,11 @@
+[
+    {
+        "experiment_id": "exp-1786632159",
+        "from_version": "silverwing-v0.1.0",
+        "candidate_version": null,
+        "decision": "REJECT",
+        "reason": "Candidate did not improve validation loss.",
+        "timestamp": 1786632159.4477298,
+        "active_version_after": "silverwing-v0.1.0"
+    }
+]

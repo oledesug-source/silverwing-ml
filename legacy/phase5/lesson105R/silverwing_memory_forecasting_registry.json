@@ -1,0 +1,10 @@
+{
+    "lesson": "105R",
+    "capability": "native_memory_prediction_state_forecasting",
+    "memory_version": "105R.1",
+    "forecast_mode": "controlled_one_step_temporal_extrapolation",
+    "forecast_class": "motor_warning",
+    "directional_accuracy": 1.0,
+    "confidence": 1.0,
+    "next": "106R Native Predictive Memory + Anomaly Detection"
+}

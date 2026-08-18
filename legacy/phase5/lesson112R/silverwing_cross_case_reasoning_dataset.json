@@ -1,0 +1,84 @@
+{
+    "lesson": "112R",
+    "capability": "native_failure_prototype_validation_cross_case_reasoning",
+    "representation_dimension": 14,
+    "case_count": 3,
+    "agreement_pairs": [
+        {
+            "case_a": "case_001",
+            "case_b": "case_002",
+            "similarity": 0.6746165752410889,
+            "agreement": false,
+            "contradiction": false
+        },
+        {
+            "case_a": "case_001",
+            "case_b": "case_003",
+            "similarity": 0.06464098393917084,
+            "agreement": false,
+            "contradiction": true
+        },
+        {
+            "case_a": "case_002",
+            "case_b": "case_003",
+            "similarity": 0.496437132358551,
+            "agreement": false,
+            "contradiction": false
+        }
+    ],
+    "contradiction_cases": [
+        {
+            "case_a": "case_001",
+            "case_b": "case_003",
+            "similarity": 0.06464098393917084,
+            "agreement": false,
+            "contradiction": true
+        }
+    ],
+    "case_rankings": [
+        {
+            "case_id": "case_002",
+            "prototype_id": "prototype_002",
+            "mean_cross_case_similarity": 0.58552685379982,
+            "confidence": 1.0
+        },
+        {
+            "case_id": "case_001",
+            "prototype_id": "prototype_001",
+            "mean_cross_case_similarity": 0.36962877959012985,
+            "confidence": 1.0
+        },
+        {
+            "case_id": "case_003",
+            "prototype_id": "prototype_003",
+            "mean_cross_case_similarity": 0.28053905814886093,
+            "confidence": 1.0
+        }
+    ],
+    "prototype_consistency": [
+        {
+            "prototype_id": "prototype_001",
+            "member_count": 1,
+            "prototype_confidence": 1.0,
+            "membership_factor": 0.3333333333333333,
+            "consistency": 0.6666666666666666
+        },
+        {
+            "prototype_id": "prototype_002",
+            "member_count": 1,
+            "prototype_confidence": 1.0,
+            "membership_factor": 0.3333333333333333,
+            "consistency": 0.6666666666666666
+        },
+        {
+            "prototype_id": "prototype_003",
+            "member_count": 1,
+            "prototype_confidence": 1.0,
+            "membership_factor": 0.3333333333333333,
+            "consistency": 0.6666666666666666
+        }
+    ],
+    "cross_case_evidence_score": 0.4444444444444445,
+    "diagnostic_confidence": 0.7037037037037037,
+    "conclusion": "The prototype memory contains conflicting case evidence. The current diagnosis should remain cautious until additional observations resolve the contradiction."
+}

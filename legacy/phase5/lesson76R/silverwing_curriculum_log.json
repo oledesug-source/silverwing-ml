@@ -1,0 +1,11 @@
+[
+    {
+        "timestamp": 1786632675.2848246,
+        "stage": "stage_01",
+        "stage_name": "Language Foundations",
+        "score": 0.8415,
+        "completed": true,
+        "next_stage": "stage_02",
+        "selected_samples": 1
+    }
+]

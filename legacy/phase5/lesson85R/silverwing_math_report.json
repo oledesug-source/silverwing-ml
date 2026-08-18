@@ -1,0 +1,14 @@
+{
+    "lesson": "85R",
+    "capability": "native_mathematical_reasoning",
+    "domains": [
+        "algebra",
+        "arithmetic",
+        "geometry",
+        "probability",
+        "statistics"
+    ],
+    "training_examples": 4,
+    "validation_examples": 2,
+    "external_llm": false
+}

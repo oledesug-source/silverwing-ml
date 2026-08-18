@@ -1,0 +1,10 @@
+{
+    "lesson": "117R",
+    "capability": "native_reasoning_error_memory_self_correction",
+    "memory_version": "117R.2",
+    "reasoning_id": "reasoning_114_001",
+    "error_type": "evidence_magnitude_mismatch",
+    "self_correction_verified": true,
+    "correction_confidence": 0.8713235641449161,
+    "next": "118R Native Error Pattern Generalization + Preventive Reasoning"
+}

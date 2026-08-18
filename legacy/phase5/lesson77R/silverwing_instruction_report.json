@@ -1,0 +1,48 @@
+{
+    "dataset": "Silverwing-Instruction-v1",
+    "version": "77R",
+    "examples": 12,
+    "training_examples": 9,
+    "validation_examples": 3,
+    "total_instruction_tokens": 1387,
+    "average_quality": 0.9125,
+    "task_distribution": {
+        "question_answering": 3,
+        "explanation": 2,
+        "reasoning": 1,
+        "constraint_following": 1,
+        "transformation": 1,
+        "summarization": 1,
+        "structured_output": 1,
+        "tool_planning": 1,
+        "error_analysis": 1
+    },
+    "domain_distribution": {
+        "general_language": 1,
+        "engineering": 1,
+        "physics": 1,
+        "machine_learning": 1,
+        "reasoning": 1,
+        "instruction": 1,
+        "language": 1,
+        "technical": 1,
+        "structured_output": 1,
+        "memory": 1,
+        "tools": 1,
+        "continual_learning": 1
+    },
+    "stage_distribution": {
+        "stage_01": 1,
+        "stage_02": 2,
+        "stage_03": 1,
+        "stage_05": 1,
+        "stage_06": 2,
+        "stage_07": 2,
+        "stage_08": 1,
+        "stage_09": 1,
+        "stage_10": 1
+    },
+    "vocabulary_size": 300,
+    "max_instruction_tokens": 192,
+    "created_at": 1786636510.4485579
+}

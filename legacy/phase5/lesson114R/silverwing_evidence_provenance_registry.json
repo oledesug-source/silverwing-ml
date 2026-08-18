@@ -1,0 +1,9 @@
+{
+    "lesson": "114R",
+    "capability": "native_evidence_provenance_reasoning_trace",
+    "memory_version": "114R.1",
+    "reasoning_id": "reasoning_114_001",
+    "trace_completeness": 1.0,
+    "resolution_state": "RESOLVED_WITH_CONFIDENCE",
+    "next": "115R Native Reasoning Replay + Decision Verification"
+}

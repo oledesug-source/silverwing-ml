@@ -1,0 +1,283 @@
+{
+    "memory_version": "121R.1",
+    "lesson": "121R",
+    "capability": "adaptive_preventive_planning_dynamic_reprioritization",
+    "created_at": "2026-08-15T10:54:33.167459",
+    "source_lesson": "120R",
+    "inherited_patterns": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "confidence": 0.9785539273574859,
+            "severity": 0.95,
+            "impact": 0.9,
+            "recurrence": 1.0,
+            "cost": 0.3,
+            "origin": "119R"
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "confidence": 0.82,
+            "severity": 0.78,
+            "impact": 0.88,
+            "recurrence": 0.75,
+            "cost": 0.2,
+            "origin": "120R_EVALUATION"
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "confidence": 0.68,
+            "severity": 0.7,
+            "impact": 0.62,
+            "recurrence": 0.6,
+            "cost": 0.35,
+            "origin": "120R_EVALUATION"
+        }
+    ],
+    "inherited_plan": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "dependency": null
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY"
+        }
+    ],
+    "evidence_updates": [
+        {
+            "pattern_id": "pattern_002",
+            "origin": "121R_EVIDENCE",
+            "confidence_delta": -0.07,
+            "recurrence_delta": -0.2,
+            "evidence": "New schema consistency checks strengthened."
+        },
+        {
+            "pattern_id": "pattern_003",
+            "origin": "121R_EVIDENCE",
+            "confidence_delta": 0.27,
+            "recurrence_delta": 0.4,
+            "evidence": "Persistent sensor drift across two maintenance cycles."
+        },
+        {
+            "pattern_id": "pattern_004",
+            "origin": "121R_EVIDENCE",
+            "new_pattern": true,
+            "family": "telemetry_fusion",
+            "confidence": 0.85,
+            "severity": 0.8,
+            "impact": 0.75,
+            "recurrence": 0.9,
+            "cost": 0.25,
+            "evidence": "Cross-sensor telemetry inconsistencies observed."
+        },
+        {
+            "pattern_id": "pattern_005",
+            "origin": "121R_EVIDENCE",
+            "new_pattern": true,
+            "family": "timeline_integrity",
+            "confidence": 0.9,
+            "severity": 0.85,
+            "impact": 0.8,
+            "recurrence": 0.95,
+            "cost": 0.2,
+            "evidence": "Event ordering gaps detected in operational timeline."
+        }
+    ],
+    "revised_patterns": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "confidence": 0.9785539273574859,
+            "severity": 0.95,
+            "impact": 0.9,
+            "recurrence": 1.0,
+            "cost": 0.3,
+            "origin": "119R"
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "confidence": 0.75,
+            "severity": 0.78,
+            "impact": 0.88,
+            "recurrence": 0.55,
+            "cost": 0.2,
+            "origin": "120R_EVALUATION",
+            "evidence_origin": "121R_EVIDENCE"
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "confidence": 0.9500000000000001,
+            "severity": 0.7,
+            "impact": 0.62,
+            "recurrence": 1.0,
+            "cost": 0.35,
+            "origin": "120R_EVALUATION",
+            "evidence_origin": "121R_EVIDENCE"
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "confidence": 0.85,
+            "severity": 0.8,
+            "impact": 0.75,
+            "recurrence": 0.9,
+            "cost": 0.25,
+            "origin": "121R_EVIDENCE"
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "confidence": 0.9,
+            "severity": 0.85,
+            "impact": 0.8,
+            "recurrence": 0.95,
+            "cost": 0.2,
+            "origin": "121R_EVIDENCE"
+        }
+    ],
+    "dynamic_records": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "risk_score": 0.8960661782072458,
+            "risk_class": "HIGH",
+            "severity": 0.95,
+            "impact": 0.9,
+            "priority": 1
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.8225,
+            "risk_class": "HIGH",
+            "severity": 0.85,
+            "impact": 0.8,
+            "priority": 2
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.7725000000000001,
+            "risk_class": "HIGH",
+            "severity": 0.8,
+            "impact": 0.75,
+            "priority": 3
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.7665000000000001,
+            "risk_class": "HIGH",
+            "severity": 0.7,
+            "impact": 0.62,
+            "priority": 4
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.696,
+            "risk_class": "MEDIUM",
+            "severity": 0.78,
+            "impact": 0.88,
+            "priority": 5
+        }
+    ],
+    "dynamic_order": [
+        "pattern_001",
+        "pattern_005",
+        "pattern_004",
+        "pattern_003",
+        "pattern_002"
+    ],
+    "adapted_plan": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "dependency": null
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_005",
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 4,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY"
+        },
+        {
+            "step": 5,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        }
+    ],
+    "added_actions": [
+        "VALIDATE_TELEMETRY_FUSION",
+        "VALIDATE_TIMELINE_INTEGRITY"
+    ],
+    "execution_results": [
+        {
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "pattern_id": "pattern_001",
+            "status": "success"
+        },
+        {
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "pattern_id": "pattern_005",
+            "status": "success"
+        },
+        {
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "pattern_id": "pattern_002",
+            "status": "success"
+        },
+        {
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "pattern_id": "pattern_003",
+            "status": "success"
+        },
+        {
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "pattern_id": "pattern_004",
+            "status": "success"
+        }
+    ],
+    "verification": {
+        "reprioritized": true,
+        "adapted": true,
+        "plan_verified": true,
+        "deterministic": true,
+        "stable": true,
+        "numerically_healthy": true
+    }
+}

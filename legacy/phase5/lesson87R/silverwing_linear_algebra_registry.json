@@ -1,0 +1,15 @@
+{
+    "lesson": "87R",
+    "capability": "native_linear_algebra_and_optimization",
+    "domains": [
+        "dot_product",
+        "gradient_descent_1d",
+        "gradient_descent_2d",
+        "matrix_multiplication",
+        "matrix_vector",
+        "vector_addition",
+        "vector_norm"
+    ],
+    "sequence_limit": 256,
+    "example_count": 7
+}

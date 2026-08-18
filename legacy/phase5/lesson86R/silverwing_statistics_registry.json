@@ -1,0 +1,14 @@
+{
+    "lesson": "86R",
+    "capability": "native_probability_and_statistical_reasoning",
+    "domains": [
+        "complement_probability",
+        "confidence_interval",
+        "expected_value",
+        "population_variance",
+        "sample_variability",
+        "sampling"
+    ],
+    "sequence_limit": 256,
+    "example_count": 6
+}

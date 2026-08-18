@@ -1,0 +1,8 @@
+{
+    "lesson": "03R",
+    "memory_version": "03R.1",
+    "integral_cases": 5,
+    "outcome_classes": 9,
+    "max_riemann_error": 1.999999765800453e-08,
+    "promotion_passed": true
+}

@@ -1,0 +1,6 @@
+machine,temperature,pressure,rpm,operating_hours,temperature_status,risk_score,risk_level
+Pump,85,120,1500,2500,HIGH,20,MEDIUM
+Compressor,72,150,2800,3200,NORMAL,25,MEDIUM
+Generator,105,110,3200,4500,CRITICAL,80,CRITICAL
+Turbine,91,135,2900,3800,HIGH,45,HIGH
+Boiler,98,145,2600,4200,HIGH,45,HIGH

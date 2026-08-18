@@ -1,0 +1,22 @@
+{
+    "dataset": "Silverwing-Corpus-v1",
+    "tokenizer": "Silverwing-BPE-v1",
+    "vocabulary_size": 300,
+    "sequence_length": 64,
+    "batch_size": 2,
+    "validation_ratio": 0.2,
+    "minimum_quality_score": 0.45,
+    "raw_documents": 16,
+    "clean_documents": 16,
+    "quality_accepted": 16,
+    "quality_rejected": 0,
+    "unique_documents": 15,
+    "duplicates_removed": 1,
+    "total_tokens": 1136,
+    "training_sequences": 13,
+    "validation_sequences": 4,
+    "training_hash": "41c2309e2a31308254ac33f3456d7088bb73e0f06a6ba0dd44462a5729387509",
+    "validation_hash": "6ddb00cf7fb766069c0e0d554b0e3afd9069be4b24bc543fbd403d46bff3433d",
+    "seed": 42,
+    "device": "cpu"
+}

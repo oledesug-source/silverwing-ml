@@ -1,0 +1,197 @@
+{
+    "system": "Silverwing",
+    "version": "76R",
+    "strategy": "progressive_curriculum",
+    "stages": [
+        {
+            "stage_id": "stage_01",
+            "name": "Language Foundations",
+            "objective": "Learn fundamental language patterns, token relationships, syntax, and basic semantic structure.",
+            "difficulty": 0.1,
+            "domains": [
+                "general_language",
+                "grammar",
+                "basic_text"
+            ],
+            "training_weight": 1.0,
+            "evaluation_weight": 1.0,
+            "prerequisites": [],
+            "enabled": true
+        },
+        {
+            "stage_id": "stage_02",
+            "name": "Technical Foundations",
+            "objective": "Learn mathematics, science, programming, engineering, and technical terminology.",
+            "difficulty": 0.25,
+            "domains": [
+                "mathematics",
+                "physics",
+                "engineering",
+                "programming",
+                "computer_science"
+            ],
+            "training_weight": 1.0,
+            "evaluation_weight": 1.0,
+            "prerequisites": [
+                "stage_01"
+            ],
+            "enabled": true
+        },
+        {
+            "stage_id": "stage_03",
+            "name": "Machine Learning",
+            "objective": "Learn machine learning concepts, statistics, optimization, and data analysis.",
+            "difficulty": 0.35,
+            "domains": [
+                "machine_learning",
+                "statistics",
+                "data_analysis"
+            ],
+            "training_weight": 0.9,
+            "evaluation_weight": 1.1,
+            "prerequisites": [
+                "stage_01",
+                "stage_02"
+            ],
+            "enabled": true
+        },
+        {
+            "stage_id": "stage_04",
+            "name": "Deep Learning",
+            "objective": "Learn neural networks, optimization, representations, and deep learning.",
+            "difficulty": 0.45,
+            "domains": [
+                "deep_learning",
+                "neural_networks",
+                "optimization"
+            ],
+            "training_weight": 0.9,
+            "evaluation_weight": 1.1,
+            "prerequisites": [
+                "stage_02",
+                "stage_03"
+            ],
+            "enabled": true
+        },
+        {
+            "stage_id": "stage_05",
+            "name": "Reasoning",
+            "objective": "Develop structured reasoning patterns, multi-step inference, comparison, and problem solving.",
+            "difficulty": 0.6,
+            "domains": [
+                "reasoning",
+                "logic",
+                "problem_solving",
+                "mathematics"
+            ],
+            "training_weight": 1.0,
+            "evaluation_weight": 1.3,
+            "prerequisites": [
+                "stage_03",
+                "stage_04"
+            ],
+            "enabled": true
+        },
+        {
+            "stage_id": "stage_06",
+            "name": "Instruction Following",
+            "objective": "Learn to interpret user instructions, constraints, goals, and expected outputs.",
+            "difficulty": 0.65,
+            "domains": [
+                "instruction",
+                "tasks",
+                "dialogue"
+            ],
+            "training_weight": 1.0,
+            "evaluation_weight": 1.3,
+            "prerequisites": [
+                "stage_05"
+            ],
+            "enabled": true
+        },
+        {
+            "stage_id": "stage_07",
+            "name": "Multitask Learning",
+            "objective": "Learn multiple task families within one model.",
+            "difficulty": 0.72,
+            "domains": [
+                "classification",
+                "generation",
+                "reasoning",
+                "summarization",
+                "transformation"
+            ],
+            "training_weight": 1.0,
+            "evaluation_weight": 1.3,
+            "prerequisites": [
+                "stage_05",
+                "stage_06"
+            ],
+            "enabled": true
+        },
+        {
+            "stage_id": "stage_08",
+            "name": "Memory-Aware Learning",
+            "objective": "Learn to use retrieved information and maintain consistency with memory.",
+            "difficulty": 0.8,
+            "domains": [
+                "memory",
+                "retrieval",
+                "context"
+            ],
+            "training_weight": 0.8,
+            "evaluation_weight": 1.4,
+            "prerequisites": [
+                "stage_06",
+                "stage_07"
+            ],
+            "enabled": true
+        },
+        {
+            "stage_id": "stage_09",
+            "name": "Tool-Oriented Learning",
+            "objective": "Learn structured interaction with external capabilities and tool results.",
+            "difficulty": 0.85,
+            "domains": [
+                "tools",
+                "agents",
+                "structured_output"
+            ],
+            "training_weight": 0.8,
+            "evaluation_weight": 1.4,
+            "prerequisites": [
+                "stage_06",
+                "stage_07",
+                "stage_08"
+            ],
+            "enabled": true
+        },
+        {
+            "stage_id": "stage_10",
+            "name": "Continual Learning",
+            "objective": "Learn from new validated information without uncontrolled degradation of previously learned capabilities.",
+            "difficulty": 0.92,
+            "domains": [
+                "continual_learning",
+                "adaptation",
+                "evaluation"
+            ],
+            "training_weight": 0.7,
+            "evaluation_weight": 1.5,
+            "prerequisites": [
+                "stage_07",
+                "stage_08",
+                "stage_09"
+            ],
+            "enabled": true
+        }
+    ],
+    "principles": [
+        "progressive difficulty",
+        "prerequisite ordering",
+        "domain diversity",
+        "evaluation-driven progression",
+        "versioned learning",
+        "controlled adaptation"
+    ]
+}

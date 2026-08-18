@@ -1,0 +1,10 @@
+{
+    "lesson": "104R",
+    "capability": "native_multimodal_memory_reasoning",
+    "memory_version": "104R.1",
+    "text_embedding_source": "103R consolidated memory records",
+    "numeric_embedding_source": "103R consolidated memory records",
+    "exact_cross_modal_accuracy": 1.0,
+    "reasoning_evidence_score": 1.0,
+    "next": "105R Native Memory Prediction + State Forecasting"
+}

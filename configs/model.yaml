@@ -1,0 +1,16 @@
+model:
+  model_name: silverwing-decoder-v2
+  vocab_size: 16384
+  block_size: 2048
+  n_layer: 12
+  n_head: 12
+  n_kv_head: 4
+  n_embd: 768
+  mlp_hidden_size: 2560
+  mlp_activation: swiglu
+  dropout: 0.0
+  norm_eps: 1e-5
+  tie_embeddings: true
+  bias: false
+  init_std: 0.02
+  rope_base: 10000.0

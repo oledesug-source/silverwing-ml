@@ -1,0 +1,167 @@
+{
+    "lesson": "101R",
+    "history": [
+        {
+            "epoch": 1,
+            "total": 3.886692523956299,
+            "contrastive": 1.6244404315948486,
+            "hard_negative": 0.6192088723182678,
+            "instance_margin": 0.6192088723182678,
+            "class_margin": 0.3800833523273468
+        },
+        {
+            "epoch": 100,
+            "total": 0.0002604764886200428,
+            "contrastive": 0.0002604764886200428,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 200,
+            "total": 0.0001438134495401755,
+            "contrastive": 0.0001438134495401755,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 300,
+            "total": 0.00010567245772108436,
+            "contrastive": 0.00010567245772108436,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 400,
+            "total": 8.495230576954782e-05,
+            "contrastive": 8.495230576954782e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 500,
+            "total": 7.16716458555311e-05,
+            "contrastive": 7.16716458555311e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 600,
+            "total": 6.2423714553006e-05,
+            "contrastive": 6.2423714553006e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 700,
+            "total": 5.566899199038744e-05,
+            "contrastive": 5.566899199038744e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 800,
+            "total": 5.0463837396819144e-05,
+            "contrastive": 5.0463837396819144e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 900,
+            "total": 4.6291745093185455e-05,
+            "contrastive": 4.6291745093185455e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 1000,
+            "total": 4.2934188968501985e-05,
+            "contrastive": 4.2934188968501985e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 1100,
+            "total": 3.998389729531482e-05,
+            "contrastive": 3.998389729531482e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 1200,
+            "total": 3.752034535864368e-05,
+            "contrastive": 3.752034535864368e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 1300,
+            "total": 3.530513640725985e-05,
+            "contrastive": 3.530513640725985e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 1400,
+            "total": 3.332832420710474e-05,
+            "contrastive": 3.332832420710474e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 1500,
+            "total": 3.155018202960491e-05,
+            "contrastive": 3.155018202960491e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        }
+    ],
+    "report": {
+        "lesson": "101R",
+        "capability": "native_hard_negative_multimodal_learning",
+        "base_checkpoint": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson100R\\checkpoints\\silverwing_cross_modal_alignment_best.pt",
+        "encoder_recovery_mode": "fresh_native_initialization",
+        "external_llm": false,
+        "device": "cpu",
+        "sequence_limit": 256,
+        "shared_dimension": 16,
+        "alignment": {
+            "initial_loss": 3.886692523956299,
+            "final_loss": 3.155018202960491e-05,
+            "mean_positive": 0.9832766652107239,
+            "mean_hard_negative": 0.2030112420519193,
+            "mean_margin": 0.7802654231588045,
+            "text_exact_accuracy": 1.0,
+            "numeric_exact_accuracy": 1.0,
+            "text_class_accuracy": 1.0,
+            "numeric_class_accuracy": 1.0
+        },
+        "stress": {
+            "text_top_k_accuracy": 1.0,
+            "numeric_top_k_accuracy": 1.0,
+            "determinism_error": 0.0
+        },
+        "repair_actions": [
+            "Missing multimodal encoder state repaired through native retraining.",
+            "Previous decoder state inspected and preserved."
+        ],
+        "validation": {
+            "passed": true,
+            "errors": []
+        }
+    }
+}

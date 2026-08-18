@@ -1,0 +1,74 @@
+{
+    "lesson": "90R",
+    "capability": "native_data_engineering",
+    "domains": [
+        "duplicate_detection",
+        "etl",
+        "ingestion",
+        "missing_data",
+        "normalization",
+        "partitioning",
+        "quality_metrics",
+        "schema_evolution",
+        "schema_validation"
+    ],
+    "data_engineering_task_count": 9,
+    "training_examples": 5,
+    "validation_examples": 4,
+    "sequence_limit": 256,
+    "baseline": {
+        "loss": 5.00525164604187,
+        "perplexity": 149.19462267111837,
+        "accuracy": 0.01788617886178862,
+        "tokens": 615
+    },
+    "candidate": {
+        "loss": 4.9995200634002686,
+        "perplexity": 148.34194728558708,
+        "accuracy": 0.01951219512195122,
+        "tokens": 615
+    },
+    "numerical_health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "parameter_change": {
+        "changed_tensors": 53,
+        "total_absolute_parameter_change": 17.762710225535557
+    },
+    "pipeline": {
+        "raw_records": 5,
+        "deduplicated_records": 4,
+        "rejected_records": 1,
+        "published_records": 3
+    },
+    "quality": {
+        "row_count": 3,
+        "column_count": 5,
+        "null_counts": {
+            "machine_id": 0,
+            "temperature": 0,
+            "pressure": 0,
+            "region": 0,
+            "temperature_c": 0
+        },
+        "completeness": 1.0
+    },
+    "partitions": {
+        "East": 1,
+        "West": 1,
+        "South": 1
+    },
+    "schema_evolution": {
+        "passed": true
+    },
+    "independent_validation": {
+        "passed": true,
+        "errors": []
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Data-engineering validation loss improved."
+    }
+}

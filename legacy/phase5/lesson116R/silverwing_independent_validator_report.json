@@ -1,0 +1,42 @@
+{
+    "lesson": "116R",
+    "capability": "native_independent_reasoning_validator_error_detection",
+    "external_llm": false,
+    "device": "cpu",
+    "memory_version": "116R.1",
+    "reasoning_id": "reasoning_114_001",
+    "primary": {
+        "support": 1.4,
+        "conflict": 0.3273756556212902,
+        "net": 1.0726243443787098,
+        "strength": 0.6209560386521228,
+        "confidence": 0.6139706924347484,
+        "state": "RESOLVED_WITH_CONFIDENCE"
+    },
+    "validator": {
+        "support": 1.4,
+        "conflict": 0.3273756556212902,
+        "net": 1.0726243443787098,
+        "strength": 0.6209560386521228,
+        "confidence": 0.6139706924347484,
+        "state": "RESOLVED_WITH_CONFIDENCE"
+    },
+    "comparison": {
+        "agreement_score": 1.0,
+        "direction_agreement": true,
+        "state_agreement": true,
+        "disagreement_count": 0
+    },
+    "error_detection": {
+        "state": "NO_ERROR_DETECTED",
+        "fields": []
+    },
+    "verification": {
+        "deterministic": true,
+        "validated": true
+    },
+    "promotion": {
+        "passed": true,
+        "errors": []
+    }
+}

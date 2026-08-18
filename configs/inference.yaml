@@ -1,0 +1,25 @@
+# M14: Native inference configuration
+# Loaded via InferenceConfig.from_yaml("configs/inference.yaml")
+#
+# Top-level key: inference
+
+inference:
+  checkpoint_path: experiments/checkpoints/best.pt
+  model_config_path: configs/model.yaml
+  tokenizer_dir: experiments/tokenizer
+  device: cpu
+
+  # Decoding parameters
+  max_new_tokens: 128
+  min_new_tokens: 0
+  temperature: 0.8
+  top_k: 50
+  top_p: 0.9
+  repetition_penalty: 1.0
+
+  # Generation control
+  prompt_template: null
+  stop_on_eos: true
+
+  # Batching
+  batch_size: 1

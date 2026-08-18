@@ -1,0 +1,7 @@
+{
+    "lesson": "83R",
+    "capability": "native_planning_and_tool_sequencing",
+    "maximum_steps": 2,
+    "sequence_limit": 256,
+    "planning_examples": 5
+}

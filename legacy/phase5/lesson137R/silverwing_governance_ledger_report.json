@@ -1,0 +1,12 @@
+{
+    "lesson": "137R",
+    "memory_version": "137R.1",
+    "ledger_entries": 7,
+    "accountability_records": 8,
+    "final_ledger_hash": "d5b8208664587bdd589d5aaacf91ef285799ca6f6882fcb201a0e3d2e5e28b2c",
+    "chain_valid": true,
+    "accountability_complete": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

@@ -1,0 +1,165 @@
+{
+    "lesson": "125R",
+    "capability": "cross_cycle_risk_trending_adaptive_threshold_tuning",
+    "cycle": 2,
+    "cycle_1_risk": {
+        "pattern_001": 0.8423129425657967,
+        "pattern_003": 0.8115,
+        "pattern_005": 0.78142,
+        "pattern_006": 0.7619000000000001,
+        "pattern_004": 0.7603,
+        "pattern_002": 0.6559000000000001
+    },
+    "cycle_2_outcomes": [
+        {
+            "cycle": 2,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "status": "prevented",
+            "effectiveness": 0.95
+        },
+        {
+            "cycle": 2,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "status": "prevented",
+            "effectiveness": 0.95
+        },
+        {
+            "cycle": 2,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "status": "prevented",
+            "effectiveness": 0.9
+        },
+        {
+            "cycle": 2,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "status": "not_prevented",
+            "effectiveness": 0.4
+        },
+        {
+            "cycle": 2,
+            "pattern_id": "pattern_005",
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "status": "prevented",
+            "effectiveness": 0.9
+        },
+        {
+            "cycle": 2,
+            "pattern_id": "pattern_006",
+            "action": "VALIDATE_ACTUATOR_RESPONSE",
+            "status": "prevented",
+            "effectiveness": 0.7
+        }
+    ],
+    "cycle_2_risk": {
+        "pattern_001": 0.8048129425657967,
+        "pattern_004": 0.7793000000000001,
+        "pattern_003": 0.7755,
+        "pattern_006": 0.7619000000000001,
+        "pattern_005": 0.75142,
+        "pattern_002": 0.6184000000000001
+    },
+    "trends": [
+        {
+            "pattern_id": "pattern_001",
+            "cycle_1_risk": 0.8423129425657967,
+            "cycle_2_risk": 0.8048129425657967,
+            "delta": -0.03749999999999998,
+            "trend": "FALLING"
+        },
+        {
+            "pattern_id": "pattern_003",
+            "cycle_1_risk": 0.8115,
+            "cycle_2_risk": 0.7755,
+            "delta": -0.03600000000000003,
+            "trend": "FALLING"
+        },
+        {
+            "pattern_id": "pattern_005",
+            "cycle_1_risk": 0.78142,
+            "cycle_2_risk": 0.75142,
+            "delta": -0.030000000000000027,
+            "trend": "FALLING"
+        },
+        {
+            "pattern_id": "pattern_006",
+            "cycle_1_risk": 0.7619000000000001,
+            "cycle_2_risk": 0.7619000000000001,
+            "delta": 0.0,
+            "trend": "STABLE"
+        },
+        {
+            "pattern_id": "pattern_004",
+            "cycle_1_risk": 0.7603,
+            "cycle_2_risk": 0.7793000000000001,
+            "delta": 0.019000000000000128,
+            "trend": "RISING"
+        },
+        {
+            "pattern_id": "pattern_002",
+            "cycle_1_risk": 0.6559000000000001,
+            "cycle_2_risk": 0.6184000000000001,
+            "delta": -0.03750000000000009,
+            "trend": "FALLING"
+        }
+    ],
+    "trend_counts": {
+        "rising": 1,
+        "falling": 4,
+        "stable": 1
+    },
+    "tuned_thresholds": {
+        "tuning_shift": 0.024999999999999967,
+        "tuned_high": 0.8,
+        "tuned_medium": 0.45
+    },
+    "tuned_order": [
+        "pattern_001",
+        "pattern_004",
+        "pattern_003",
+        "pattern_006",
+        "pattern_005",
+        "pattern_002"
+    ],
+    "tuned_plan": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "dependency": null
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_005",
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 4,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY"
+        },
+        {
+            "step": 5,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        },
+        {
+            "step": 6,
+            "pattern_id": "pattern_006",
+            "action": "VALIDATE_ACTUATOR_RESPONSE",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        }
+    ]
+}

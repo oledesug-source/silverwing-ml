@@ -1,0 +1,179 @@
+{
+    "lesson": "01R",
+    "capability": "linear_equations_all_possible_outcomes",
+    "evaluation_outcomes": [
+        {
+            "case": "positive argument",
+            "m": 2.0,
+            "b": 3.0,
+            "x": 4.0,
+            "expected": 11.0
+        },
+        {
+            "case": "unit argument",
+            "m": 2.0,
+            "b": 3.0,
+            "x": 1.0,
+            "expected": 5.0
+        },
+        {
+            "case": "zero argument (intercept)",
+            "m": 2.0,
+            "b": 3.0,
+            "x": 0.0,
+            "expected": 3.0
+        },
+        {
+            "case": "negative argument",
+            "m": 2.0,
+            "b": 3.0,
+            "x": -1.0,
+            "expected": 1.0
+        },
+        {
+            "case": "fractional result",
+            "m": 0.5,
+            "b": 0.0,
+            "x": 1.0,
+            "expected": 0.5
+        },
+        {
+            "case": "negative slope value",
+            "m": -1.0,
+            "b": 2.0,
+            "x": 3.0,
+            "expected": -1.0
+        },
+        {
+            "case": "zero output",
+            "m": 2.0,
+            "b": 3.0,
+            "x": -1.5,
+            "expected": 0.0
+        },
+        {
+            "case": "horizontal line value",
+            "m": 0.0,
+            "b": 3.0,
+            "x": 7.0,
+            "expected": 3.0
+        },
+        {
+            "case": "zero line value",
+            "m": 0.0,
+            "b": 0.0,
+            "x": 100.0,
+            "expected": 0.0
+        }
+    ],
+    "root_outcomes": [
+        {
+            "case": "f1: m != 0",
+            "m": 2.0,
+            "b": 3.0,
+            "outcome_class": "one_solution",
+            "root": -1.5
+        },
+        {
+            "case": "f2: m != 0",
+            "m": -1.0,
+            "b": 2.0,
+            "outcome_class": "one_solution",
+            "root": 2.0
+        },
+        {
+            "case": "f0: m == 0, b != 0",
+            "m": 0.0,
+            "b": 3.0,
+            "outcome_class": "no_solution",
+            "root": null
+        },
+        {
+            "case": "fz: m == 0, b == 0",
+            "m": 0.0,
+            "b": 0.0,
+            "outcome_class": "infinite_solutions",
+            "root": null
+        }
+    ],
+    "equation_outcomes": [
+        [
+            "2x + 3 = 7",
+            2.0,
+            3.0,
+            7.0,
+            "one_solution",
+            2.0
+        ],
+        [
+            "0x + 3 = 7",
+            0.0,
+            3.0,
+            7.0,
+            "no_solution",
+            null
+        ],
+        [
+            "0x + 0 = 0",
+            0.0,
+            0.0,
+            0.0,
+            "infinite_solutions",
+            null
+        ],
+        [
+            "-3x + 6 = 0",
+            -3.0,
+            6.0,
+            0.0,
+            "one_solution",
+            2.0
+        ],
+        [
+            "0x + 5 = 5",
+            0.0,
+            5.0,
+            5.0,
+            "infinite_solutions",
+            null
+        ]
+    ],
+    "system_outcomes": [
+        [
+            "x + y = 3; x - y = 1",
+            1.0,
+            1.0,
+            3.0,
+            1.0,
+            -1.0,
+            1.0,
+            "unique_solution",
+            2.0,
+            1.0
+        ],
+        [
+            "x + y = 3; x + y = 5",
+            1.0,
+            1.0,
+            3.0,
+            1.0,
+            1.0,
+            5.0,
+            "no_solution",
+            null,
+            null
+        ],
+        [
+            "x + y = 3; 2x + 2y = 6",
+            1.0,
+            1.0,
+            3.0,
+            2.0,
+            2.0,
+            6.0,
+            "infinite_solutions",
+            null,
+            null
+        ]
+    ]
+}

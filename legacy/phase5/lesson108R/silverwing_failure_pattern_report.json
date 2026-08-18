@@ -1,0 +1,81 @@
+{
+    "lesson": "108R",
+    "capability": "native_failure_pattern_memory_retrieval",
+    "external_llm": false,
+    "device": "cpu",
+    "memory_version": "108R.1",
+    "pattern_count": 3,
+    "active_pattern": "pattern_001",
+    "retrieval": [
+        {
+            "pattern_id": "pattern_001",
+            "semantic_class": "motor_warning",
+            "from_memory": "mem_102_001",
+            "to_memory": "mem_102_002",
+            "score": 1.0000001192092896,
+            "self": true
+        },
+        {
+            "pattern_id": "pattern_002",
+            "semantic_class": "pump_warning",
+            "from_memory": "mem_102_003",
+            "to_memory": "mem_102_004",
+            "score": 0.6746165156364441,
+            "self": false
+        },
+        {
+            "pattern_id": "pattern_003",
+            "semantic_class": "sensor_normal",
+            "from_memory": "mem_102_005",
+            "to_memory": "mem_102_006",
+            "score": 0.06464098393917084,
+            "self": false
+        }
+    ],
+    "historical_analogues": [
+        {
+            "pattern_id": "pattern_002",
+            "semantic_class": "pump_warning",
+            "similarity": 0.6746165156364441,
+            "change_magnitude": 0.060827650129795074,
+            "warning_language": true,
+            "from_memory": "mem_102_003",
+            "to_memory": "mem_102_004"
+        },
+        {
+            "pattern_id": "pattern_003",
+            "semantic_class": "sensor_normal",
+            "similarity": 0.06464098393917084,
+            "change_magnitude": 0.05000000074505806,
+            "warning_language": false,
+            "from_memory": "mem_102_005",
+            "to_memory": "mem_102_006"
+        }
+    ],
+    "historical_transfer_score": 0.3967852524792155,
+    "case_reasoning_score": 0.5549776535688175,
+    "risk": {
+        "score": 0.5833333333333334,
+        "state": "WARNING"
+    },
+    "anomaly": {
+        "score": 0.0
+    },
+    "diagnosis": {
+        "primary_hypothesis": "persistent_warning_condition"
+    },
+    "case_explanation": "The current incident pattern was compared with historical Silverwing failure-pattern memory. The strongest retrieved historical analogue is pattern_002 with similarity 0.6746. The analogue is supporting evidence rather than proof of identical physical failure.",
+    "verification": {
+        "identity_errors": 0,
+        "deterministic": true
+    },
+    "health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "promotion": {
+        "passed": true,
+        "errors": []
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "memory_version": "03R.1",
+    "lesson": "03R",
+    "capability": "integration_all_possible_outcomes",
+    "created_at": "2026-08-15T13:43:58.660254",
+    "integral_cases": [
+        {
+            "name": "triangle",
+            "formula": "int x dx on [0,2]",
+            "a": 0.0,
+            "b": 2.0,
+            "value": 2.0,
+            "ftc_value": 2.0,
+            "riemann_error": 2.6645352591003757e-15
+        },
+        {
+            "name": "quadratic",
+            "formula": "int x^2 dx on [0,1]",
+            "a": 0.0,
+            "b": 1.0,
+            "value": 0.3333333333333333,
+            "ftc_value": 0.3333333333333333,
+            "riemann_error": 8.333345680178184e-10
+        },
+        {
+            "name": "linear_shifted",
+            "formula": "int (2x+1) dx on [0,3]",
+            "a": 0.0,
+            "b": 3.0,
+            "value": 12.0,
+            "ftc_value": 12.0,
+            "riemann_error": 2.3092638912203256e-14
+        },
+        {
+            "name": "cubic",
+            "formula": "int x^3 dx on [0,2]",
+            "a": 0.0,
+            "b": 2.0,
+            "value": 4.0,
+            "ftc_value": 4.0,
+            "riemann_error": 1.999999765800453e-08
+        },
+        {
+            "name": "reciprocal",
+            "formula": "int (1/x) dx on [1,2]",
+            "a": 1.0,
+            "b": 2.0,
+            "value": 0.6931471805599453,
+            "ftc_value": 0.6931471805599453,
+            "riemann_error": 3.124995817671561e-10
+        }
+    ],
+    "signed_areas": {
+        "positive": 2.0,
+        "negative": -2.0,
+        "zero": 0.0,
+        "absolute": 1.0000000000000002
+    },
+    "outcome_classes": {
+        "antiderivative_power": 4,
+        "reverse_check": 4,
+        "ftc_definite_integral": 5,
+        "riemann_convergence": 5,
+        "trapezoid_convergence": 1,
+        "signed_area_positive": 1,
+        "signed_area_negative": 1,
+        "symmetric_cancellation": 1,
+        "absolute_area": 1
+    },
+    "verification": {
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

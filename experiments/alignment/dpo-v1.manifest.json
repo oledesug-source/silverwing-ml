@@ -1,0 +1,20 @@
+{
+  "dataset_name": "silverwing-dpo",
+  "version": "dpo-v1",
+  "seed": 42,
+  "per_topic": 50,
+  "topics": [
+    "arithmetic",
+    "algebra",
+    "linear_equations",
+    "functions",
+    "differentiation",
+    "integration",
+    "geometry",
+    "probability",
+    "number_theory",
+    "trigonometry"
+  ],
+  "records": 500,
+  "output_path": "experiments\\alignment\\dpo-v1.jsonl"
+}

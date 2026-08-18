@@ -1,0 +1,50 @@
+{
+    "lesson": "111R",
+    "capability": "native_novel_failure_discovery_prototype_birth",
+    "external_llm": false,
+    "device": "cpu",
+    "memory_version": "111R.1",
+    "pattern_vector_dimension": 14,
+    "original_prototype_count": 3,
+    "expanded_prototype_count": 3,
+    "thresholds": {
+        "evolution": 0.7,
+        "novelty": 0.45
+    },
+    "known_case": {
+        "prototype": "prototype_001",
+        "similarity": 1.0000001192092896
+    },
+    "novel_case": {
+        "best_prototype": "prototype_001",
+        "similarity": 0.5298479199409485,
+        "novelty_score": 0.23507604002952576,
+        "decision": "AMBIGUOUS_PATTERN"
+    },
+    "prototype_birth": null,
+    "novelty_event": {
+        "event_id": "novelty_001",
+        "timestamp": "2026-08-14T19:40:08.538363",
+        "source": "111R",
+        "active_prototype": "prototype_001",
+        "probe_type": "deterministic_representation_perturbation",
+        "best_matching_prototype": "prototype_001",
+        "best_similarity": 0.5298479199409485,
+        "novelty_score": 0.23507604002952576,
+        "decision": "AMBIGUOUS_PATTERN",
+        "prototype_born": null
+    },
+    "verification": {
+        "deterministic": true,
+        "known_branch_valid": true
+    },
+    "health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "promotion": {
+        "passed": true,
+        "errors": []
+    }
+}

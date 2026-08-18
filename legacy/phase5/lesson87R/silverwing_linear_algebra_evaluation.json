@@ -1,0 +1,58 @@
+{
+    "lesson": "87R",
+    "capability": "native_linear_algebra_and_optimization",
+    "domains": [
+        "dot_product",
+        "gradient_descent_1d",
+        "gradient_descent_2d",
+        "matrix_multiplication",
+        "matrix_vector",
+        "vector_addition",
+        "vector_norm"
+    ],
+    "linear_task_count": 7,
+    "training_examples": 4,
+    "validation_examples": 3,
+    "sequence_limit": 256,
+    "baseline": {
+        "loss": 4.943554878234863,
+        "perplexity": 140.26799997492427,
+        "accuracy": 0.026246719160104987,
+        "tokens": 381
+    },
+    "candidate": {
+        "loss": 4.9317786693573,
+        "perplexity": 138.62586276126308,
+        "accuracy": 0.026246719160104987,
+        "tokens": 381
+    },
+    "numerical_health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "parameter_change": {
+        "changed_tensors": 53,
+        "total_absolute_parameter_change": 24.06621796870604
+    },
+    "independent_validation": {
+        "passed": true
+    },
+    "optimization_validation": {
+        "one_dimensional": {
+            "final_x": 2.98828125,
+            "objective": 2.0001373291015625
+        },
+        "two_dimensional": {
+            "final_vector": [
+                1.9921875,
+                -0.99609375
+            ],
+            "objective": 7.62939453125e-05
+        }
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Linear algebra validation loss improved."
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "lesson": "108R",
+    "capability": "native_failure_pattern_memory_retrieval",
+    "memory_version": "108R.1",
+    "pattern_count": 3,
+    "active_pattern": "pattern_001",
+    "case_reasoning_score": 0.5549776535688175,
+    "next": "109R Native Failure Pattern Clustering + Prototype Memory"
+}

@@ -1,0 +1,208 @@
+{
+    "lesson": "122R",
+    "capability": "continuous_adaptive_execution_runtime_replanning",
+    "inherited_plan": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "dependency": null
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_005",
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 4,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY"
+        },
+        {
+            "step": 5,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        }
+    ],
+    "runtime_evidence": [
+        {
+            "pattern_id": "pattern_003",
+            "origin": "122R_RUNTIME",
+            "confidence_delta": 0.03,
+            "severity_delta": 0.12,
+            "evidence": "Sensor drift accelerated during execution."
+        },
+        {
+            "pattern_id": "pattern_002",
+            "origin": "122R_RUNTIME",
+            "recurrence_delta": -0.1,
+            "evidence": "Schema hardening confirmed during execution."
+        },
+        {
+            "pattern_id": "pattern_006",
+            "origin": "122R_RUNTIME",
+            "new_pattern": true,
+            "family": "actuator_response",
+            "confidence": 0.88,
+            "severity": 0.79,
+            "impact": 0.84,
+            "recurrence": 0.92,
+            "cost": 0.22,
+            "evidence": "Actuator response lag discovered at runtime."
+        }
+    ],
+    "runtime_records": [
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.8055,
+            "risk_class": "HIGH",
+            "severity": 0.82,
+            "impact": 0.62,
+            "priority": 1
+        },
+        {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "origin": "122R_RUNTIME",
+            "risk_score": 0.8025000000000001,
+            "risk_class": "HIGH",
+            "severity": 0.79,
+            "impact": 0.84,
+            "priority": 2
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.7725000000000001,
+            "risk_class": "HIGH",
+            "severity": 0.8,
+            "impact": 0.75,
+            "priority": 3
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.6759999999999999,
+            "risk_class": "MEDIUM",
+            "severity": 0.78,
+            "impact": 0.88,
+            "priority": 4
+        }
+    ],
+    "runtime_order": [
+        "pattern_003",
+        "pattern_006",
+        "pattern_004",
+        "pattern_002"
+    ],
+    "replanned_tail": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_006",
+            "action": "VALIDATE_ACTUATOR_RESPONSE",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        },
+        {
+            "step": 4,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        }
+    ],
+    "execution_trace": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "dependency": null,
+            "status": "success"
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_005",
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE",
+            "status": "success"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE",
+            "status": "success"
+        },
+        {
+            "step": 4,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY",
+            "status": "success"
+        },
+        {
+            "step": 5,
+            "pattern_id": "pattern_006",
+            "action": "VALIDATE_ACTUATOR_RESPONSE",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT",
+            "status": "success"
+        },
+        {
+            "step": 6,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT",
+            "status": "success"
+        }
+    ],
+    "replan_events": [
+        {
+            "event": "runtime_evidence",
+            "after_step": 2,
+            "patterns": [
+                "pattern_003",
+                "pattern_002",
+                "pattern_006"
+            ]
+        },
+        {
+            "event": "replanned",
+            "after_step": 2,
+            "tail_actions": [
+                "VALIDATE_SCHEMA_CONSISTENCY",
+                "VALIDATE_SENSOR_ALIGNMENT",
+                "VALIDATE_ACTUATOR_RESPONSE",
+                "VALIDATE_TELEMETRY_FUSION"
+            ],
+            "tail_patterns": [
+                "pattern_002",
+                "pattern_003",
+                "pattern_006",
+                "pattern_004"
+            ]
+        }
+    ]
+}

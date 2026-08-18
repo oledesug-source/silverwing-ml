@@ -1,0 +1,35 @@
+{
+    "dataset": "Silverwing-Reasoning-v1",
+    "version": "79R",
+    "format": "structured_reasoning",
+    "fields": [
+        "example_id",
+        "reasoning_type",
+        "stage_id",
+        "domain",
+        "problem",
+        "context",
+        "reasoning_steps",
+        "final_answer",
+        "difficulty",
+        "source",
+        "quality_score",
+        "token_count",
+        "content_hash",
+        "validated"
+    ],
+    "reasoning_types": [
+        "deduction",
+        "induction",
+        "comparison",
+        "diagnosis",
+        "causal_reasoning",
+        "multi_step",
+        "constraint_reasoning",
+        "numerical_reasoning",
+        "error_analysis",
+        "decision_reasoning"
+    ],
+    "validation_ratio": 0.2,
+    "max_reasoning_tokens": 256
+}

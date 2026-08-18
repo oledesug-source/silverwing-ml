@@ -1,0 +1,65 @@
+{
+    "lesson": "105R",
+    "capability": "native_memory_prediction_state_forecasting",
+    "external_llm": false,
+    "device": "cpu",
+    "memory_version": "105R.1",
+    "forecast_mode": "controlled_one_step_temporal_extrapolation",
+    "forecast_class": "motor_warning",
+    "history_length": 2,
+    "forecast": {
+        "horizon_seconds": 1800.0,
+        "current_state": [
+            0.8799999952316284,
+            1.1799999475479126,
+            2.450000047683716,
+            0.3700000047683716,
+            0.12999999523162842
+        ],
+        "trend": [
+            -1.1111100320704281e-05,
+            -1.111116671381751e-05,
+            -2.7777750801760703e-05,
+            3.333333370392211e-05,
+            1.1111108506156597e-05
+        ],
+        "delta": [
+            -0.019999980926513672,
+            -0.020000100135803223,
+            -0.04999995231628418,
+            0.06000000238418579,
+            0.019999995827674866
+        ],
+        "predicted_state": [
+            0.8600000143051147,
+            1.1599998474121094,
+            2.4000000953674316,
+            0.4300000071525574,
+            0.14999999105930328
+        ],
+        "timestamp": "2026-08-14T09:00:00",
+        "confidence": 1.0
+    },
+    "verification": {
+        "observed_delta": [
+            -0.019999980926513672,
+            -0.020000100135803223,
+            -0.04999995231628418,
+            0.06000000238418579,
+            0.019999995827674866
+        ],
+        "directional_accuracy": 1.0,
+        "magnitude_ratio": 0.9999998829588491,
+        "temporal_consistency": true,
+        "deterministic": true
+    },
+    "health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "promotion": {
+        "passed": true,
+        "errors": []
+    }
+}

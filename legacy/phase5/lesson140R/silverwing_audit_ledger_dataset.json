@@ -1,0 +1,64 @@
+{
+    "lesson": "140R",
+    "capability": "autonomous_audit_ledger_end_to_end_trust_verification",
+    "ledger": [
+        {
+            "kind": "root",
+            "lesson": "134R",
+            "hash_ref": "7aedadeb67450decec7235cca23bcc9b5ffe1bfed5a9cb4a2ec7e77e6f4d9af4",
+            "prev_hash": "",
+            "hash": "51e2ed218166ef0c7aa6eb7137affe8e5fa6b7a4bc496c3bbf173a22ce96f340"
+        },
+        {
+            "kind": "evolution",
+            "lesson": "135R",
+            "hash_ref": "46e8964bf2f0f5eff44ff94ace7d284c549eda707a67a32ea89a66581b24b565",
+            "prev_hash": "51e2ed218166ef0c7aa6eb7137affe8e5fa6b7a4bc496c3bbf173a22ce96f340",
+            "hash": "56f3ce9e5b3f598a6f7e143c25053f6d9cea90994087282471c88e51d7a64220"
+        },
+        {
+            "kind": "governance",
+            "lesson": "136R",
+            "hash_ref": "9a3f74047026190e6aa5f4c234dd8e5a70bf5a27e49e250dfed95a1c683bd973",
+            "prev_hash": "56f3ce9e5b3f598a6f7e143c25053f6d9cea90994087282471c88e51d7a64220",
+            "hash": "f07bb3b832dd01f61edd938edac5eadf40470f70c3705894efbf0b128b033f03"
+        },
+        {
+            "kind": "ledger",
+            "lesson": "137R",
+            "hash_ref": "d5b8208664587bdd589d5aaacf91ef285799ca6f6882fcb201a0e3d2e5e28b2c",
+            "prev_hash": "f07bb3b832dd01f61edd938edac5eadf40470f70c3705894efbf0b128b033f03",
+            "hash": "5869c9dd16ea2058a68f6551ad8972938e11f308837d11108094ed61c077b18f"
+        },
+        {
+            "kind": "cascade",
+            "lesson": "138R",
+            "hash_ref": "1bb3b613ff0b9bef30db42adf308d2ac76f70aa0946271a8f1a3e816c5f18f4e",
+            "prev_hash": "5869c9dd16ea2058a68f6551ad8972938e11f308837d11108094ed61c077b18f",
+            "hash": "2c45acf939877e6491c9cb1c4a7355d71c84a6e5a71ed697438b25d8a0936880"
+        },
+        {
+            "kind": "audit",
+            "lesson": "139R",
+            "hash_ref": "4b9026e62e2dbafec5d2d37bb65d2f7e8d2922bf726dd7da2dce2e5e9b4cb90c",
+            "prev_hash": "2c45acf939877e6491c9cb1c4a7355d71c84a6e5a71ed697438b25d8a0936880",
+            "hash": "4cc60672c4023516c9911855435c628e1b7c98bb502b61fd317bbd2e56ad68ca"
+        },
+        {
+            "kind": "seal",
+            "lesson": "140R",
+            "hash_ref": "14e28896a854d92cccf5fb2cd81e0caeabfdebfcf4e1f56e73096e4bd9763448",
+            "prev_hash": "4cc60672c4023516c9911855435c628e1b7c98bb502b61fd317bbd2e56ad68ca",
+            "hash": "1fb86563151b214899276a8112a7a519861bd97f5c5cff415ad9409626f3d101"
+        }
+    ],
+    "trust_seal": "1fb86563151b214899276a8112a7a519861bd97f5c5cff415ad9409626f3d101",
+    "trust_index": 1.0,
+    "trust_grade": "TRUSTED",
+    "exposure_outcomes": {
+        "committed": 0.09803453832864761,
+        "governed": 0.09217751026153564,
+        "reinforced": 0.08217751234769821,
+        "full_cycle_reduction": 0.015857025980949402
+    }
+}

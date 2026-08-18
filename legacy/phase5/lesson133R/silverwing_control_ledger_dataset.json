@@ -1,0 +1,42 @@
+{
+    "lesson": "133R",
+    "capability": "end_to_end_self_improving_control_ledger_autonomous_policy_memory",
+    "ledger_lessons": [
+        "125R",
+        "126R",
+        "127R",
+        "128R",
+        "129R",
+        "130R",
+        "131R",
+        "132R"
+    ],
+    "ledger_hash": "479eea1f6cd01de04c874fdda315611f7e4df523fe296a08977f15e5253b54c5",
+    "policy_boosts": {
+        "pattern_001": 1.0,
+        "pattern_004": 1.4809082896716,
+        "pattern_003": 1.0,
+        "pattern_006": 1.0,
+        "pattern_005": 1.0,
+        "pattern_002": 1.0
+    },
+    "policy_actions": {
+        "pattern_001": "HOLD",
+        "pattern_004": "ESCALATE",
+        "pattern_003": "ESCALATE",
+        "pattern_006": "ESCALATE",
+        "pattern_005": "HOLD",
+        "pattern_002": "HOLD"
+    },
+    "policy_recovery": {
+        "pattern_001": "ISOLATE",
+        "pattern_004": "REDUNDANT_CHANNEL",
+        "pattern_003": "REDUNDANT_CHANNEL",
+        "pattern_006": "RETRY",
+        "pattern_005": "NONE",
+        "pattern_002": "NONE"
+    },
+    "closed_loop_gain": 0.04408381177336007,
+    "resilience_grade": "RESILIENT",
+    "exposure_reduction": 0.0198160958027096
+}

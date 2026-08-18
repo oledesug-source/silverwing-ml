@@ -1,0 +1,46 @@
+{
+    "lesson": "103R",
+    "capability": "native_memory_consolidation_temporal_retrieval",
+    "external_llm": false,
+    "device": "cpu",
+    "memory_version": "103R.1",
+    "source_checkpoint": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson102R\\checkpoints\\silverwing_multimodal_memory_best.pt",
+    "before": {
+        "records": 6
+    },
+    "consolidation": {
+        "duplicate_pairs": 0,
+        "related_pairs": 0,
+        "records_after": 6
+    },
+    "temporal": {
+        "earliest": "2026-08-14T08:00:00",
+        "latest": "2026-08-14T10:30:00",
+        "event_chains": {
+            "motor": 2,
+            "pump": 2,
+            "sensor": 2
+        }
+    },
+    "recency": {
+        "mem_102_001": 0.6065306597126334,
+        "mem_102_002": 0.6703200460356393,
+        "mem_102_003": 0.7408182206817179,
+        "mem_102_004": 0.8187307530779818,
+        "mem_102_005": 0.9048374180359595,
+        "mem_102_006": 1.0
+    },
+    "retrieval": {
+        "exact_query_memory": "mem_102_001",
+        "exact_query_rank": 1
+    },
+    "health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "promotion": {
+        "passed": true,
+        "errors": []
+    }
+}

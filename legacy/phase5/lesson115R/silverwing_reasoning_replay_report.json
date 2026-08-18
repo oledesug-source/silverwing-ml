@@ -1,0 +1,49 @@
+{
+    "lesson": "115R",
+    "capability": "native_reasoning_replay_decision_verification",
+    "external_llm": false,
+    "device": "cpu",
+    "memory_version": "115R.1",
+    "reasoning_id": "reasoning_114_001",
+    "original": {
+        "support_score": 1.4,
+        "conflict_score": 0.3273756556212902,
+        "net_evidence": 1.0726243443787098,
+        "arbitration_strength": 0.6209560386521228,
+        "resolution_confidence": 0.6139706924347484,
+        "resolution_state": "RESOLVED_WITH_CONFIDENCE",
+        "conclusion": "Primary hypothesis remains the best-supported interpretation after evidence arbitration."
+    },
+    "replay": {
+        "support": 1.4,
+        "conflict": 0.3273756556212902,
+        "net": 1.0726243443787098,
+        "strength": 0.6209560386521228,
+        "confidence": 0.6139706924347484,
+        "state": "RESOLVED_WITH_CONFIDENCE"
+    },
+    "verification": {
+        "decision_verified": true,
+        "replay_deterministic": true,
+        "trace_checks": {
+            "support_matches": true,
+            "conflict_matches": true,
+            "net_matches": true,
+            "strength_matches": true,
+            "confidence_matches": true,
+            "state_matches": true
+        },
+        "provenance_integrity": true
+    },
+    "numeric_differences": {
+        "support": 0.0,
+        "conflict": 0.0,
+        "net": 0.0,
+        "strength": 0.0,
+        "confidence": 0.0
+    },
+    "promotion": {
+        "passed": true,
+        "errors": []
+    }
+}

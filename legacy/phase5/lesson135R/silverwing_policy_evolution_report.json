@@ -1,0 +1,15 @@
+{
+    "lesson": "135R",
+    "memory_version": "135R.1",
+    "committed_exposure": 0.09803453832864761,
+    "evolved_exposure": 0.09217751026153564,
+    "exposure_reduction": 0.005857028067111969,
+    "generations": 3,
+    "monotone_improvement": true,
+    "chain_valid": true,
+    "evolution_hash": "46e8964bf2f0f5eff44ff94ace7d284c549eda707a67a32ea89a66581b24b565",
+    "guardrail_enforced": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

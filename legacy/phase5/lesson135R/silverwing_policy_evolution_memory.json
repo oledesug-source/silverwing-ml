@@ -1,0 +1,118 @@
+{
+    "memory_version": "135R.1",
+    "lesson": "135R",
+    "capability": "autonomous_policy_evolution_zero_regression_learning_protocol",
+    "created_at": "2026-08-15T13:26:26.415493",
+    "source_lesson": "134R",
+    "committed_exposure": 0.09803453832864761,
+    "commitment_hash": "7aedadeb67450decec7235cca23bcc9b5ffe1bfed5a9cb4a2ec7e77e6f4d9af4",
+    "tuned_order": [
+        "pattern_001",
+        "pattern_004",
+        "pattern_003",
+        "pattern_006",
+        "pattern_005",
+        "pattern_002"
+    ],
+    "generation_targets": [
+        0.115,
+        0.11,
+        0.105
+    ],
+    "generations": [
+        {
+            "generation": 1,
+            "target": 0.115,
+            "changed": [
+                "pattern_004"
+            ],
+            "exposure": 0.09720037132501602,
+            "adopted": true,
+            "verdict": "ACCEPT"
+        },
+        {
+            "generation": 2,
+            "target": 0.11,
+            "changed": [
+                "pattern_004",
+                "pattern_005",
+                "pattern_002"
+            ],
+            "exposure": 0.0950278714299202,
+            "adopted": true,
+            "verdict": "ACCEPT"
+        },
+        {
+            "generation": 3,
+            "target": 0.105,
+            "changed": [
+                "pattern_001",
+                "pattern_004",
+                "pattern_005",
+                "pattern_002"
+            ],
+            "exposure": 0.09217751026153564,
+            "adopted": true,
+            "verdict": "ACCEPT"
+        }
+    ],
+    "exposure_trajectory": [
+        0.09803453832864761,
+        0.09720037132501602,
+        0.0950278714299202,
+        0.09217751026153564
+    ],
+    "exposure_reduction": 0.005857028067111969,
+    "evolution_lineage": [
+        {
+            "generation": 1,
+            "target": 0.115,
+            "adopted": true,
+            "exposure": 0.09720037132501602,
+            "prev_hash": "7aedadeb67450decec7235cca23bcc9b5ffe1bfed5a9cb4a2ec7e77e6f4d9af4",
+            "hash": "3bff4c2d6f82fc7e774f543e3a49977ee0a03a805fba4964b6d2adc03eb436cc"
+        },
+        {
+            "generation": 2,
+            "target": 0.11,
+            "adopted": true,
+            "exposure": 0.0950278714299202,
+            "prev_hash": "3bff4c2d6f82fc7e774f543e3a49977ee0a03a805fba4964b6d2adc03eb436cc",
+            "hash": "d33f5ffae4eec09db0f941f18467f17a1c9e36b0a25aa3bdbbc4a28ed428781c"
+        },
+        {
+            "generation": 3,
+            "target": 0.105,
+            "adopted": true,
+            "exposure": 0.09217751026153564,
+            "prev_hash": "d33f5ffae4eec09db0f941f18467f17a1c9e36b0a25aa3bdbbc4a28ed428781c",
+            "hash": "46e8964bf2f0f5eff44ff94ace7d284c549eda707a67a32ea89a66581b24b565"
+        }
+    ],
+    "evolution_hash": "46e8964bf2f0f5eff44ff94ace7d284c549eda707a67a32ea89a66581b24b565",
+    "evolved_boosts": {
+        "pattern_001": 1.0088733020451952,
+        "pattern_004": 1.574205137456301,
+        "pattern_003": 1.0,
+        "pattern_006": 1.0,
+        "pattern_005": 1.0416482548438843,
+        "pattern_002": 1.034237370621646
+    },
+    "evolved_penetrations": {
+        "pattern_001": 0.105,
+        "pattern_004": 0.105,
+        "pattern_003": 0.08003637784217832,
+        "pattern_006": 0.053028708701500005,
+        "pattern_005": 0.105,
+        "pattern_002": 0.105
+    },
+    "regression_limit": 0.0001,
+    "verification": {
+        "monotone_improvement": true,
+        "chain_valid": true,
+        "all_adopted": true,
+        "guardrail_enforced": true,
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

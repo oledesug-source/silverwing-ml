@@ -1,0 +1,78 @@
+{
+    "memory_version": "118R.1",
+    "capability": "native_error_pattern_generalization_preventive_reasoning",
+    "created_at": "2026-08-14T20:12:34.343841",
+    "source_memory_version": "117R.2",
+    "error_patterns": [
+        {
+            "pattern_id": "error_pattern_001",
+            "source_error_type": "evidence_magnitude_mismatch",
+            "source_field": "magnitude",
+            "observable_signature": {
+                "field": "magnitude",
+                "expected_value": 0.4676795080304146,
+                "observed_value": 0.5144474588334561
+            },
+            "detection_method": "independent_recalculation",
+            "verified_correction": {
+                "strategy_id": "correction_001",
+                "strategy_type": "restore_source_evidence"
+            },
+            "source_lesson": "116R",
+            "generalization_scope": "evidence_representation_mismatch"
+        }
+    ],
+    "prevention_rules": [
+        {
+            "rule_id": "prevention_rule_001",
+            "pattern_id": "error_pattern_001",
+            "trigger": {
+                "field": "magnitude",
+                "condition": "observed_value differs from provenance-backed value"
+            },
+            "action": "STOP_BEFORE_REASONING_COMPLETES",
+            "validation": "recalculate_using_provenance_value",
+            "promotion_requirement": "independent_verification",
+            "risk_level": "HIGH",
+            "description": "When an evidence representation differs from its provenance-backed value, prevent downstream reasoning until the evidence is restored and independently verified."
+        }
+    ],
+    "validation_cases": [
+        {
+            "case_id": "preventive_case_001",
+            "evidence_id": "evidence_002",
+            "field": "magnitude",
+            "expected_value": 0.4676795080304146,
+            "observed_value": 0.5144474588334561,
+            "rule_id": "prevention_rule_001"
+        },
+        {
+            "case_id": "preventive_case_002",
+            "evidence_id": "evidence_generalized_001",
+            "field": "magnitude",
+            "expected_value": 0.25,
+            "observed_value": 0.0,
+            "rule_id": "prevention_rule_001"
+        }
+    ],
+    "events": [
+        {
+            "event_id": "prevention_118_001",
+            "timestamp": "2026-08-14T20:12:34.343485",
+            "source": "118R",
+            "source_error_id": "error_117_001",
+            "pattern_id": "error_pattern_001",
+            "rule_id": "prevention_rule_001",
+            "preventive_risk": 0.6571078547149721,
+            "decision": "REQUIRE_VALIDATION",
+            "generalization_confidence": 0.957107854714972,
+            "prevention_success": true
+        }
+    ],
+    "evaluation": {
+        "preventive_risk": 0.6571078547149721,
+        "preventive_decision": "REQUIRE_VALIDATION",
+        "prevention_success": true,
+        "generalization_confidence": 0.957107854714972
+    }
+}

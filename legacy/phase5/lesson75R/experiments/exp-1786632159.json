@@ -1,0 +1,13 @@
+{
+    "experiment_id": "exp-1786632159",
+    "model_family": "Silverwing-Decoder",
+    "base_model_version": "silverwing-v0.1.0",
+    "dataset_version": "Silverwing-Corpus-v1",
+    "objective": "Improve validation loss without introducing numerical instability.",
+    "learning_rate": 0.0003,
+    "epochs": 1,
+    "batch_size": 2,
+    "seed": 42,
+    "created_at": 1786632159.4317324,
+    "status": "created"
+}

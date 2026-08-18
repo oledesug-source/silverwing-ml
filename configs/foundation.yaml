@@ -1,0 +1,48 @@
+# ============================================================
+# SILVERWING ML — Foundation Configuration (M01)
+# ============================================================
+# Single authoritative configuration for the foundation stage.
+# Every training run must trace to the values below.
+
+project:
+  name: Silverwing
+  version: 1.0.0-foundation
+  external_llm: false
+
+reproducibility:
+  seed: 42
+  deterministic: true
+
+data:
+  version: dataset-v1
+  provenance_required: true
+  contamination_checks: true
+  deduplication_required: true
+
+tokenizer:
+  version: pending
+  vocabulary_size: pending
+
+model:
+  version: silverwing-decoder-v2
+  parameters_target: 100000000
+  architecture: decoder_only_transformer
+
+training:
+  stage: foundation_validation
+  max_sequence_length: 1024
+  precision: auto
+  checkpoint_interval: 1000
+
+evaluation:
+  held_out_required: true
+  regression_required: true
+  numerical_health_required: true
+  contamination_required: true
+
+promotion:
+  require_git_commit: true
+  require_dataset_hash: true
+  require_model_checkpoint: true
+  require_held_out_evaluation: true
+  require_zero_critical_regressions: true

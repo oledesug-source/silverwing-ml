@@ -1,0 +1,63 @@
+{
+    "lesson": "117R",
+    "capability": "native_reasoning_error_memory_self_correction",
+    "reasoning_id": "reasoning_114_001",
+    "error": {
+        "error_id": "error_117_001",
+        "timestamp": "2026-08-14T20:09:28.598036",
+        "source_lesson": "116R",
+        "error_type": "evidence_magnitude_mismatch",
+        "evidence_id": "evidence_002",
+        "field": "magnitude",
+        "expected_value": 0.4676795080304146,
+        "observed_value": 0.5144474588334561,
+        "affected_fields": [
+            "conflict",
+            "net",
+            "strength",
+            "confidence"
+        ],
+        "detection_method": "independent_recalculation",
+        "correction_required": true
+    },
+    "correction": {
+        "strategy_id": "correction_001",
+        "strategy_type": "restore_source_evidence",
+        "target": "evidence_002",
+        "field": "magnitude",
+        "replacement_value": 0.4676795080304146,
+        "reason": "Restore the provenance-backed source value identified independently before perturbation."
+    },
+    "baseline": {
+        "support": 1.4,
+        "conflict": 0.3273756556212902,
+        "net": 1.0726243443787098,
+        "strength": 0.6209560386521228,
+        "confidence": 0.6139706924347484,
+        "state": "RESOLVED_WITH_CONFIDENCE"
+    },
+    "perturbed": {
+        "support": 1.4,
+        "conflict": 0.36011322118341926,
+        "net": 1.0398867788165806,
+        "strength": 0.5908067539640481,
+        "confidence": 0.5938711693093653,
+        "state": "RESOLVED_WITH_CONFIDENCE"
+    },
+    "corrected": {
+        "support": 1.4,
+        "conflict": 0.3273756556212902,
+        "net": 1.0726243443787098,
+        "strength": 0.6209560386521228,
+        "confidence": 0.6139706924347484,
+        "state": "RESOLVED_WITH_CONFIDENCE"
+    },
+    "verification": {
+        "self_correction_verified": true,
+        "error_before": 0.032737565562129145,
+        "error_after": 0.0,
+        "improvement": 0.032737565562129145,
+        "correction_confidence": 0.8713235641449161,
+        "deterministic": true
+    }
+}

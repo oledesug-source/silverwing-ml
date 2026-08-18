@@ -1,0 +1,11 @@
+tokenizer:
+  version: tokenizer-v1
+  algorithm: byte-level-bpe
+  vocab_size: 16384
+  min_frequency: 2
+  seed: 42
+  corpus_dir: experiments/corpus
+  corpus_split: train
+  max_documents: null
+  max_bytes: null
+  output_dir: experiments/tokenizer

@@ -1,0 +1,118 @@
+{
+    "memory_version": "120R.8",
+    "lesson": "120R",
+    "capability": "multi_pattern_risk_arbitration_preventive_planning",
+    "created_at": "2026-08-14T23:57:38.512823",
+    "source_lesson": "119R",
+    "patterns": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "confidence": 0.9785539273574859,
+            "severity": 0.95,
+            "impact": 0.9,
+            "recurrence": 1.0,
+            "cost": 0.3,
+            "origin": "119R"
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "confidence": 0.82,
+            "severity": 0.78,
+            "impact": 0.88,
+            "recurrence": 0.75,
+            "cost": 0.2,
+            "origin": "120R_EVALUATION"
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "confidence": 0.68,
+            "severity": 0.7,
+            "impact": 0.62,
+            "recurrence": 0.6,
+            "cost": 0.35,
+            "origin": "120R_EVALUATION"
+        }
+    ],
+    "risk_records": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "risk_score": 0.8960661782072458,
+            "risk_class": "HIGH",
+            "severity": 0.95,
+            "impact": 0.9,
+            "priority": 1
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.757,
+            "risk_class": "HIGH",
+            "severity": 0.78,
+            "impact": 0.88,
+            "priority": 2
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.6055,
+            "risk_class": "MEDIUM",
+            "severity": 0.7,
+            "impact": 0.62,
+            "priority": 3
+        }
+    ],
+    "arbitration_order": [
+        "pattern_001",
+        "pattern_002",
+        "pattern_003"
+    ],
+    "preventive_plan": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "dependency": null
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY"
+        }
+    ],
+    "execution_results": [
+        {
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "pattern_id": "pattern_001",
+            "status": "success"
+        },
+        {
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "pattern_id": "pattern_002",
+            "status": "success"
+        },
+        {
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "pattern_id": "pattern_003",
+            "status": "success"
+        }
+    ],
+    "verification": {
+        "plan_verified": true,
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

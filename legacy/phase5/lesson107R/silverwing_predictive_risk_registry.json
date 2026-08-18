@@ -1,0 +1,10 @@
+{
+    "lesson": "107R",
+    "capability": "native_predictive_risk_failure_reasoning",
+    "memory_version": "107R.1",
+    "risk_class": "motor_warning",
+    "risk_state": "WARNING",
+    "risk_score": 0.5833333333333334,
+    "primary_hypothesis": "persistent_warning_condition",
+    "next": "108R Native Failure Pattern Memory + Retrieval"
+}

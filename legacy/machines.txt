@@ -1,0 +1,4 @@
+Pump,85,120,1500
+Compressor,72,150,2800
+Generator,105,110,3200
+Turbine,91,135,2900

@@ -1,0 +1,39 @@
+{
+    "lesson": "104R",
+    "capability": "native_multimodal_memory_reasoning",
+    "external_llm": false,
+    "device": "cpu",
+    "memory_version": "104R.1",
+    "memory_records": 6,
+    "embedding_sources": {
+        "text": "103R consolidated memory records",
+        "numeric": "103R consolidated memory records",
+        "memory": "103R memory index"
+    },
+    "cross_modal_alignment": {
+        "exact_accuracy": 1.0,
+        "mean_margin": 0.8347201297680537,
+        "agreement_ratio": 1.0
+    },
+    "reasoning": {
+        "evidence_score": 1.0,
+        "conclusion": "Historical multimodal evidence indicates a changing motor operating state requiring continued observation.",
+        "causal_order_valid": true
+    },
+    "stress": {
+        "cases": 6,
+        "failures": 0
+    },
+    "determinism": {
+        "errors": 0
+    },
+    "numerical_health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "promotion": {
+        "passed": true,
+        "errors": []
+    }
+}

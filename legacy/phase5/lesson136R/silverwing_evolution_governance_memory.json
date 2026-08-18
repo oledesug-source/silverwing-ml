@@ -1,0 +1,113 @@
+{
+    "memory_version": "136R.1",
+    "lesson": "136R",
+    "capability": "autonomous_cross_cycle_evolution_governance_bounded_innovation_protocol",
+    "created_at": "2026-08-15T13:29:23.419767",
+    "source_lessons": [
+        "134R",
+        "135R"
+    ],
+    "governance_frame": {
+        "boost_bound": 0.05,
+        "exposure_bound": 0.005,
+        "regression_limit": 0.0001,
+        "final_target": 0.105
+    },
+    "evolution_hash": "46e8964bf2f0f5eff44ff94ace7d284c549eda707a67a32ea89a66581b24b565",
+    "commitment_hash": "7aedadeb67450decec7235cca23bcc9b5ffe1bfed5a9cb4a2ec7e77e6f4d9af4",
+    "tuned_order": [
+        "pattern_001",
+        "pattern_004",
+        "pattern_003",
+        "pattern_006",
+        "pattern_005",
+        "pattern_002"
+    ],
+    "generation_deltas": [
+        {
+            "generation": 1,
+            "max_boost_delta": 0.029755911214364827,
+            "exposure_delta": -0.0008341670036315918
+        },
+        {
+            "generation": 2,
+            "max_boost_delta": 0.031048163305828158,
+            "exposure_delta": -0.002172499895095825
+        },
+        {
+            "generation": 3,
+            "max_boost_delta": 0.03249277326450817,
+            "exposure_delta": -0.002850361168384552
+        }
+    ],
+    "audit": [
+        {
+            "generation": 1,
+            "target": 0.115,
+            "changed": [
+                "pattern_004"
+            ],
+            "scope_valid": true,
+            "max_boost_delta": 0.029755911214364827,
+            "exposure_delta": -0.0008341670036315918,
+            "governed": true,
+            "reason": "ACCEPT"
+        },
+        {
+            "generation": 2,
+            "target": 0.11,
+            "changed": [
+                "pattern_004",
+                "pattern_005",
+                "pattern_002"
+            ],
+            "scope_valid": true,
+            "max_boost_delta": 0.031048163305828158,
+            "exposure_delta": -0.002172499895095825,
+            "governed": true,
+            "reason": "ACCEPT"
+        },
+        {
+            "generation": 3,
+            "target": 0.105,
+            "changed": [
+                "pattern_001",
+                "pattern_004",
+                "pattern_005",
+                "pattern_002"
+            ],
+            "scope_valid": true,
+            "max_boost_delta": 0.03249277326450817,
+            "exposure_delta": -0.002850361168384552,
+            "governed": true,
+            "reason": "ACCEPT"
+        }
+    ],
+    "final_policy": {
+        "boosts": {
+            "pattern_001": 1.0088733020451952,
+            "pattern_004": 1.574205137456301,
+            "pattern_003": 1.0,
+            "pattern_006": 1.0,
+            "pattern_005": 1.0416482548438843,
+            "pattern_002": 1.034237370621646
+        },
+        "penetrations": {
+            "pattern_001": 0.105,
+            "pattern_004": 0.105,
+            "pattern_003": 0.08003637784217832,
+            "pattern_006": 0.053028708701500005,
+            "pattern_005": 0.105,
+            "pattern_002": 0.105
+        }
+    },
+    "verification": {
+        "all_governed": true,
+        "all_scoped": true,
+        "lineage_continuous": true,
+        "final_compliant": true,
+        "protocol_enforced": true,
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

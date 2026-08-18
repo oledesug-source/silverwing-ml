@@ -1,0 +1,11 @@
+{
+    "lesson": "01R",
+    "memory_version": "01R.1",
+    "functions_trained": 5,
+    "outcome_classes": 11,
+    "evaluation_cases": 9,
+    "root_cases": 4,
+    "equation_cases": 5,
+    "system_cases": 3,
+    "promotion_passed": true
+}

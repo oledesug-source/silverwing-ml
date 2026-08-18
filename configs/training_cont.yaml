@@ -1,0 +1,35 @@
+# SILVERWING ML - Continued Pretraining (pretrain-0002, course adjustment)
+# Continues from the M10 best.pt (init_from) as a fresh run on corpus-v1 with a
+# conservative LR. Gives the base model more capability before re-doing SFT.
+# Keep the tree clean (require_clean_repo); NO TRAINING WITHOUT A COMMIT.
+
+training:
+  version: training-v1
+  model_config_path: configs/model.yaml
+  corpus_dir: experiments/corpus
+  tokenizer_dir: experiments/tokenizer
+  tokenizer_version: tokenizer-v1
+  checkpoint_dir: experiments/checkpoints/cont
+  init_from: experiments/checkpoints/best.pt
+  resume_from: null
+  batch_size: 1
+  grad_accum_steps: 1
+  block_size: 512
+  max_steps: 1000
+  warmup_steps: 25
+  lr: 1.0e-4
+  min_lr_ratio: 0.1
+  weight_decay: 0.1
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  grad_clip: 1.0
+  seed: 42
+  log_steps: 10
+  eval_steps: 100
+  eval_sequences: 8
+  save_steps: 250
+  verify_dataset: true
+  expected_dataset_hash: c049878033198f7197376e8de93ef94e41a3563e0a53ba4afe8db88efc936445
+  require_validation: true
+  require_clean_repo: true
+  device: cpu

@@ -1,0 +1,40 @@
+{
+    "dataset": "Silverwing-Instruction-v1",
+    "version": "77R",
+    "format": "supervised_instruction",
+    "fields": [
+        "example_id",
+        "task_type",
+        "stage_id",
+        "domain",
+        "instruction",
+        "context",
+        "response",
+        "difficulty",
+        "source",
+        "quality_score",
+        "token_count",
+        "content_hash",
+        "validated"
+    ],
+    "task_types": [
+        "question_answering",
+        "explanation",
+        "classification",
+        "transformation",
+        "summarization",
+        "constraint_following",
+        "reasoning",
+        "structured_output",
+        "tool_planning",
+        "error_analysis"
+    ],
+    "validation_ratio": 0.2,
+    "max_instruction_tokens": 192,
+    "special_tokens": {
+        "pad": 0,
+        "unknown": 1,
+        "bos": 2,
+        "eos": 3
+    }
+}

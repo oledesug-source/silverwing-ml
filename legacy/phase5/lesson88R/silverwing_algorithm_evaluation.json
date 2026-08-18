@@ -1,0 +1,53 @@
+{
+    "lesson": "88R",
+    "capability": "native_algorithms_and_data_structures",
+    "domains": [
+        "binary_search",
+        "binary_tree",
+        "graph_bfs",
+        "graph_shortest_path",
+        "linear_search",
+        "queue",
+        "sorting",
+        "stack"
+    ],
+    "algorithm_task_count": 8,
+    "training_examples": 5,
+    "validation_examples": 3,
+    "sequence_limit": 256,
+    "baseline": {
+        "loss": 4.96732759475708,
+        "perplexity": 143.64250300614867,
+        "accuracy": 0.01282051282051282,
+        "tokens": 390
+    },
+    "candidate": {
+        "loss": 4.955746650695801,
+        "perplexity": 141.9885826784466,
+        "accuracy": 0.01282051282051282,
+        "tokens": 390
+    },
+    "numerical_health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "parameter_change": {
+        "changed_tensors": 53,
+        "total_absolute_parameter_change": 25.91352747939527
+    },
+    "independent_validation": {
+        "passed": true
+    },
+    "complexity_contract": {
+        "linear_search": "O(n)",
+        "binary_search": "O(log n)",
+        "merge_sort": "O(n log n)",
+        "bubble_sort": "O(n^2)",
+        "bfs": "O(V+E)"
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Algorithmic validation loss improved."
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "lesson": "82R",
+    "capability": "native_tool_aware_learning",
+    "tool_count": 3,
+    "training_examples": 4,
+    "validation_examples": 2,
+    "sequence_limit": 256,
+    "external_llm": false,
+    "external_tool_model": false
+}

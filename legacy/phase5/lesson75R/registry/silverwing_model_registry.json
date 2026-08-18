@@ -1,0 +1,18 @@
+{
+    "active_version": "silverwing-v0.1.0",
+    "versions": [
+        {
+            "version": "silverwing-v0.1.0",
+            "model_family": "Silverwing-Decoder",
+            "checkpoint": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson73R\\checkpoints\\silverwing_best.pt",
+            "checkpoint_sha256": "2d7d760c7b864801708f1bc0818dd12abf0aec8bbb4dbad8377c17547600c3ed",
+            "validation_loss": 5.180940628051758,
+            "perplexity": 177.85002305955118,
+            "token_accuracy": 0.0625,
+            "dataset_version": "Silverwing-Corpus-v1",
+            "experiment_id": "lesson74R-baseline",
+            "created_at": 1786632159.4152381,
+            "status": "active"
+        }
+    ]
+}

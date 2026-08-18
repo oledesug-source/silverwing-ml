@@ -1,0 +1,34 @@
+corpus:
+  processing_version: corpus-v1
+  seed: 42
+  chunking:
+    max_tokens: 1024
+    overlap_tokens: 128
+  splits:
+    train: 0.96
+    validation: 0.02
+    test: 0.02
+  filtering:
+    allowed_languages: [en]
+    quality:
+      min_chars: 200
+      min_words: 40
+      min_alpha_ratio: 0.4
+      max_punct_ratio: 0.3
+      max_url_ratio: 0.05
+      max_email_count: 10
+      max_duplicate_line_ratio: 0.6
+  deduplication:
+    num_hashes: 128
+    bands: 16
+    similarity_threshold: 0.85
+    normalize: true
+  contamination:
+    ngram_n: 8
+    threshold: 0.6
+    fuzzy_normalize: true
+  integrity:
+    algorithm: sha256
+    dataset_hash: recomputed
+  output_dir: experiments/corpus
+  sources: []

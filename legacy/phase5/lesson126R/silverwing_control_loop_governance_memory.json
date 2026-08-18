@@ -1,0 +1,508 @@
+{
+    "memory_version": "126R.1",
+    "lesson": "126R",
+    "capability": "preventive_control_loop_governance_policy_rehearsal",
+    "created_at": "2026-08-15T11:13:30.941368",
+    "source_lesson": "125R",
+    "tuned_records": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "risk_score": 0.8048129425657967,
+            "risk_class": "HIGH",
+            "severity": 0.95,
+            "impact": 0.9,
+            "outcome_status": "prevented",
+            "priority": 1
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.7793000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.8,
+            "impact": 0.75,
+            "outcome_status": "not_prevented",
+            "priority": 2
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.7755,
+            "risk_class": "MEDIUM",
+            "severity": 0.82,
+            "impact": 0.62,
+            "outcome_status": "prevented",
+            "priority": 3
+        },
+        {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "origin": "122R_RUNTIME",
+            "risk_score": 0.7619000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.79,
+            "impact": 0.84,
+            "outcome_status": "prevented",
+            "priority": 4
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.75142,
+            "risk_class": "MEDIUM",
+            "severity": 0.85,
+            "impact": 0.8,
+            "outcome_status": "prevented",
+            "priority": 5
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.6184000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.78,
+            "impact": 0.88,
+            "outcome_status": "prevented",
+            "priority": 6
+        }
+    ],
+    "tuned_order": [
+        "pattern_001",
+        "pattern_004",
+        "pattern_003",
+        "pattern_006",
+        "pattern_005",
+        "pattern_002"
+    ],
+    "tuned_plan": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "dependency": null
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_005",
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 4,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY"
+        },
+        {
+            "step": 5,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        },
+        {
+            "step": 6,
+            "pattern_id": "pattern_006",
+            "action": "VALIDATE_ACTUATOR_RESPONSE",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        }
+    ],
+    "trend_map": {
+        "pattern_001": "FALLING",
+        "pattern_003": "FALLING",
+        "pattern_005": "FALLING",
+        "pattern_006": "STABLE",
+        "pattern_004": "RISING",
+        "pattern_002": "FALLING"
+    },
+    "extended_history": {
+        "pattern_001": {
+            "family": "evidence_integrity",
+            "pattern_id": "pattern_001",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.95,
+            "lifetime_effectiveness": 0.935,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.92
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.95
+                }
+            ]
+        },
+        "pattern_002": {
+            "family": "schema_integrity",
+            "pattern_id": "pattern_002",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.95,
+            "lifetime_effectiveness": 0.8999999999999999,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.85
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.95
+                }
+            ]
+        },
+        "pattern_003": {
+            "family": "sensor_alignment",
+            "pattern_id": "pattern_003",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.9,
+            "lifetime_effectiveness": 0.625,
+            "status_counts": {
+                "not_prevented": 1,
+                "prevented": 1
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "not_prevented",
+                    "effectiveness": 0.35
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                }
+            ]
+        },
+        "pattern_004": {
+            "family": "telemetry_fusion",
+            "pattern_id": "pattern_004",
+            "occurrences": 2,
+            "last_status": "not_prevented",
+            "last_effectiveness": 0.4,
+            "lifetime_effectiveness": 0.5,
+            "status_counts": {
+                "partial": 1,
+                "not_prevented": 1
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "partial",
+                    "effectiveness": 0.6
+                },
+                {
+                    "cycle": 2,
+                    "status": "not_prevented",
+                    "effectiveness": 0.4
+                }
+            ]
+        },
+        "pattern_005": {
+            "family": "timeline_integrity",
+            "pattern_id": "pattern_005",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.9,
+            "lifetime_effectiveness": 0.89,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.88
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                }
+            ]
+        },
+        "pattern_006": {
+            "family": "actuator_response",
+            "pattern_id": "pattern_006",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.7,
+            "lifetime_effectiveness": 0.8,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.7
+                }
+            ]
+        }
+    },
+    "policy_frame": [
+        {
+            "policy_id": "P1",
+            "name": "CRITICAL_COVERAGE",
+            "description": "Every HIGH or RISING pattern must be planned."
+        },
+        {
+            "policy_id": "P2",
+            "name": "DEPENDENCY_ORDER",
+            "description": "No step may run before its dependency."
+        },
+        {
+            "policy_id": "P3",
+            "name": "ANCHOR_IMMUTABILITY",
+            "description": "The priority-1 pattern must open the plan."
+        },
+        {
+            "policy_id": "P4",
+            "name": "ACTION_UNIQUENESS",
+            "description": "Every action may appear exactly once."
+        },
+        {
+            "policy_id": "P5",
+            "name": "MITIGATION_CAPACITY",
+            "description": "Rehearsed mean effectiveness must meet the floor."
+        },
+        {
+            "policy_id": "P6",
+            "name": "RESIDUAL_TOLERANCE",
+            "description": "Total residual risk must stay within budget."
+        }
+    ],
+    "critical_set": [
+        "pattern_001",
+        "pattern_004"
+    ],
+    "mitigation_floor": 0.75,
+    "residual_budget": 1.1,
+    "approved_rehearsal": {
+        "steps": [
+            {
+                "step": 1,
+                "pattern_id": "pattern_001",
+                "action": "VALIDATE_EVIDENCE_PROVENANCE",
+                "risk_score": 0.8048129425657967,
+                "predicted_effectiveness": 0.935,
+                "residual_risk": 0.052312841266776745
+            },
+            {
+                "step": 2,
+                "pattern_id": "pattern_005",
+                "action": "VALIDATE_TIMELINE_INTEGRITY",
+                "risk_score": 0.75142,
+                "predicted_effectiveness": 0.89,
+                "residual_risk": 0.08265619999999999
+            },
+            {
+                "step": 3,
+                "pattern_id": "pattern_002",
+                "action": "VALIDATE_SCHEMA_CONSISTENCY",
+                "risk_score": 0.6184000000000001,
+                "predicted_effectiveness": 0.8999999999999999,
+                "residual_risk": 0.06184000000000006
+            },
+            {
+                "step": 4,
+                "pattern_id": "pattern_003",
+                "action": "VALIDATE_SENSOR_ALIGNMENT",
+                "risk_score": 0.7755,
+                "predicted_effectiveness": 0.625,
+                "residual_risk": 0.2908125
+            },
+            {
+                "step": 5,
+                "pattern_id": "pattern_004",
+                "action": "VALIDATE_TELEMETRY_FUSION",
+                "risk_score": 0.7793000000000001,
+                "predicted_effectiveness": 0.5,
+                "residual_risk": 0.38965000000000005
+            },
+            {
+                "step": 6,
+                "pattern_id": "pattern_006",
+                "action": "VALIDATE_ACTUATOR_RESPONSE",
+                "risk_score": 0.7619000000000001,
+                "predicted_effectiveness": 0.8,
+                "residual_risk": 0.15238
+            }
+        ],
+        "total_residual": 1.0296515412667768,
+        "mean_effectiveness": 0.775,
+        "coverage_ratio": 1.0
+    },
+    "candidate_rehearsal": {
+        "steps": [
+            {
+                "step": 1,
+                "pattern_id": "pattern_002",
+                "action": "VALIDATE_SCHEMA_CONSISTENCY",
+                "risk_score": 0.6184000000000001,
+                "predicted_effectiveness": 0.8999999999999999,
+                "residual_risk": 0.06184000000000006
+            },
+            {
+                "step": 2,
+                "pattern_id": "pattern_001",
+                "action": "VALIDATE_EVIDENCE_PROVENANCE",
+                "risk_score": 0.8048129425657967,
+                "predicted_effectiveness": 0.935,
+                "residual_risk": 0.052312841266776745
+            },
+            {
+                "step": 3,
+                "pattern_id": "pattern_005",
+                "action": "VALIDATE_TIMELINE_INTEGRITY",
+                "risk_score": 0.75142,
+                "predicted_effectiveness": 0.89,
+                "residual_risk": 0.08265619999999999
+            },
+            {
+                "step": 4,
+                "pattern_id": "pattern_003",
+                "action": "VALIDATE_SENSOR_ALIGNMENT",
+                "risk_score": 0.7755,
+                "predicted_effectiveness": 0.625,
+                "residual_risk": 0.2908125
+            },
+            {
+                "step": 5,
+                "pattern_id": "pattern_006",
+                "action": "VALIDATE_ACTUATOR_RESPONSE",
+                "risk_score": 0.7619000000000001,
+                "predicted_effectiveness": 0.8,
+                "residual_risk": 0.15238
+            }
+        ],
+        "total_residual": 0.6400015412667768,
+        "mean_effectiveness": 0.8300000000000001,
+        "coverage_ratio": 0.5
+    },
+    "governance_verdicts": {
+        "approved_plan": "APPROVED",
+        "violating_candidate": "VETOED"
+    },
+    "audit_trail": [
+        {
+            "lesson": "126R",
+            "policy_id": "P1",
+            "name": "CRITICAL_COVERAGE",
+            "plan": "approved",
+            "verdict": true
+        },
+        {
+            "lesson": "126R",
+            "policy_id": "P2",
+            "name": "DEPENDENCY_ORDER",
+            "plan": "approved",
+            "verdict": true
+        },
+        {
+            "lesson": "126R",
+            "policy_id": "P3",
+            "name": "ANCHOR_IMMUTABILITY",
+            "plan": "approved",
+            "verdict": true
+        },
+        {
+            "lesson": "126R",
+            "policy_id": "P4",
+            "name": "ACTION_UNIQUENESS",
+            "plan": "approved",
+            "verdict": true
+        },
+        {
+            "lesson": "126R",
+            "policy_id": "P5",
+            "name": "MITIGATION_CAPACITY",
+            "plan": "approved",
+            "verdict": true
+        },
+        {
+            "lesson": "126R",
+            "policy_id": "P6",
+            "name": "RESIDUAL_TOLERANCE",
+            "plan": "approved",
+            "verdict": true
+        },
+        {
+            "lesson": "126R",
+            "policy_id": "P1",
+            "name": "CRITICAL_COVERAGE",
+            "plan": "candidate",
+            "verdict": false
+        },
+        {
+            "lesson": "126R",
+            "policy_id": "P2",
+            "name": "DEPENDENCY_ORDER",
+            "plan": "candidate",
+            "verdict": false
+        },
+        {
+            "lesson": "126R",
+            "policy_id": "P3",
+            "name": "ANCHOR_IMMUTABILITY",
+            "plan": "candidate",
+            "verdict": false
+        },
+        {
+            "lesson": "126R",
+            "policy_id": "P4",
+            "name": "ACTION_UNIQUENESS",
+            "plan": "candidate",
+            "verdict": true
+        },
+        {
+            "lesson": "126R",
+            "policy_id": "P5",
+            "name": "MITIGATION_CAPACITY",
+            "plan": "candidate",
+            "verdict": true
+        },
+        {
+            "lesson": "126R",
+            "policy_id": "P6",
+            "name": "RESIDUAL_TOLERANCE",
+            "plan": "candidate",
+            "verdict": true
+        }
+    ],
+    "verification": {
+        "approved": true,
+        "vetoed": true,
+        "discriminates": true,
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "stage2-intermediate",
+  "description": "Algebra, linear equations, functions, number theory",
+  "seed": 42,
+  "topics": [
+    "algebra",
+    "linear_equations",
+    "functions",
+    "number_theory"
+  ],
+  "examples_per_topic": 250,
+  "total_examples": 1000,
+  "output_path": "experiments\\curriculum\\stage2-intermediate.jsonl"
+}

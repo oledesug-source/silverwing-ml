@@ -1,0 +1,32 @@
+{
+    "lesson": "91R",
+    "capability": "native_machine_learning_foundations",
+    "domains": [
+        "classification",
+        "classification_metric",
+        "dataset",
+        "feature_target",
+        "generalization",
+        "loss",
+        "overfitting",
+        "regression",
+        "regression_metric",
+        "train_validation_test"
+    ],
+    "training_examples": 7,
+    "validation_examples": 3,
+    "external_llm": false,
+    "test_metrics": {
+        "regression": {
+            "validation_mse": 0.0,
+            "test_mse": 0.0,
+            "slope": 2.0,
+            "intercept": 1.0
+        },
+        "classification": {
+            "validation_accuracy": 1.0,
+            "test_accuracy": 1.0,
+            "threshold": 5.833333333333334
+        }
+    }
+}

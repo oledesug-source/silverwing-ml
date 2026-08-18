@@ -1,0 +1,31 @@
+# ============================================================
+# SILVERWING ML - Mathematical Training Corpus (M08)
+# ============================================================
+# Single authoritative configuration for generating the math
+# curriculum corpus. The generator is deterministic: the same
+# committed config + seed always yields byte-identical documents.
+#
+# Flow:
+#   scripts/generate_math_corpus.py   -> experiments/raw-math (staging)
+#   scripts/build_corpus.py --source math=experiments/raw-math \
+#     --output-dir experiments/corpus  -> corpus release (M02/M03 pipeline)
+
+math_corpus:
+  version: math-corpus-v1
+  seed: 42
+  curriculum:
+    arithmetic: 350
+    algebra: 350
+    linear_equations: 300
+    functions: 300
+    differentiation: 350
+    integration: 350
+    geometry: 300
+    probability: 300
+    number_theory: 300
+    trigonometry: 300
+  examples_per_document: 2
+  exercises_per_document: 6
+  staging_dir: experiments/raw-math
+  corpus_dir: experiments/corpus
+  corpus_config_path: configs/corpus.yaml

@@ -1,0 +1,13 @@
+{
+  "stage": "stage1-basic",
+  "description": "Basic arithmetic, geometry, probability",
+  "seed": 42,
+  "topics": [
+    "arithmetic",
+    "geometry",
+    "probability"
+  ],
+  "examples_per_topic": 334,
+  "total_examples": 1002,
+  "output_path": "experiments\\curriculum\\stage1-basic.jsonl"
+}

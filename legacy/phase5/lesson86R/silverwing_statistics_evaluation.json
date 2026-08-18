@@ -1,0 +1,44 @@
+{
+    "lesson": "86R",
+    "capability": "native_probability_and_statistical_reasoning",
+    "domains": [
+        "complement_probability",
+        "confidence_interval",
+        "expected_value",
+        "population_variance",
+        "sample_variability",
+        "sampling"
+    ],
+    "statistical_task_count": 6,
+    "training_examples": 4,
+    "validation_examples": 2,
+    "sequence_limit": 256,
+    "baseline": {
+        "loss": 4.885743618011475,
+        "perplexity": 132.3888754923119,
+        "accuracy": 0.019672131147540985,
+        "tokens": 305
+    },
+    "candidate": {
+        "loss": 4.873392581939697,
+        "perplexity": 130.7637921059284,
+        "accuracy": 0.019672131147540985,
+        "tokens": 305
+    },
+    "numerical_health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "parameter_change": {
+        "changed_tensors": 53,
+        "total_absolute_parameter_change": 23.855335731059313
+    },
+    "independent_validation": {
+        "passed": true
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Statistical validation loss improved."
+    }
+}

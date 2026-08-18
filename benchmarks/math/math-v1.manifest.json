@@ -1,0 +1,23 @@
+{
+  "benchmark": "math-benchmark-v1",
+  "task_type": "numeric",
+  "benchmark_hash": "69a093f5d382965ebcb1ea9d8424d544bd00f8b60a2a94617397a05954cb03fc",
+  "config_digest": "375a363265b04f29ec66eeabf9eb225fd9c0ca6683d1cfeef53882b9c672ec3f",
+  "seed": 20260816,
+  "items": 200,
+  "items_by_category": {
+    "algebra": 20,
+    "arithmetic": 20,
+    "differentiation": 20,
+    "functions": 20,
+    "geometry": 20,
+    "integration": 20,
+    "linear_equations": 20,
+    "number_theory": 20,
+    "probability": 20,
+    "trigonometry": 20
+  },
+  "data_file": "math-v1.jsonl",
+  "generated_at": "2026-08-16T09:38:19.740561+00:00",
+  "generator": "m09-independent-math-families-v1"
+}

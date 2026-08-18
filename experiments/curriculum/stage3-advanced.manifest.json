@@ -1,0 +1,13 @@
+{
+  "stage": "stage3-advanced",
+  "description": "Differentiation, integration, trigonometry",
+  "seed": 42,
+  "topics": [
+    "differentiation",
+    "integration",
+    "trigonometry"
+  ],
+  "examples_per_topic": 334,
+  "total_examples": 1002,
+  "output_path": "experiments\\curriculum\\stage3-advanced.jsonl"
+}

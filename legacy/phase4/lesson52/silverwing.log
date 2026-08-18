@@ -1,0 +1,36 @@
+2026-08-13 14:47:56,978 | INFO | silverwing | lesson52 | trace_started | Test observable calculator.
+2026-08-13 14:47:56,979 | INFO | silverwing | tool_executor | tool_started | Starting tool: calculator
+2026-08-13 14:47:56,980 | INFO | silverwing | tool_executor | tool_completed | Tool completed: calculator
+2026-08-13 14:47:56,981 | INFO | silverwing | tool_executor | tool_started | Starting tool: machine_analyzer
+2026-08-13 14:47:56,982 | INFO | silverwing | tool_executor | tool_completed | Tool completed: machine_analyzer
+2026-08-13 14:47:56,982 | INFO | silverwing | tool_executor | tool_started | Starting tool: failing_tool
+2026-08-13 14:47:56,983 | INFO | silverwing | tool_executor | tool_failed | Tool failed: failing_tool
+2026-08-13 14:47:56,984 | INFO | silverwing | verifier | verification | Machine result verified.
+2026-08-13 14:47:56,984 | INFO | silverwing | planner | trace_started | Start multi-step machine analysis.
+2026-08-13 14:47:56,985 | INFO | silverwing | planner | plan_created | Three-step analysis plan created.
+2026-08-13 14:47:56,986 | INFO | silverwing | planner | plan_step | Executing machine analysis.
+2026-08-13 14:47:56,986 | INFO | silverwing | tool_executor | tool_started | Starting tool: machine_analyzer
+2026-08-13 14:47:56,987 | INFO | silverwing | tool_executor | tool_completed | Tool completed: machine_analyzer
+2026-08-13 14:47:56,987 | INFO | silverwing | verifier | plan_step | Verifying machine analysis.
+2026-08-13 14:47:56,988 | INFO | silverwing | verifier | verification | Verification succeeded.
+2026-08-13 14:47:56,989 | INFO | silverwing | agent | response_ready | Final result ready.
+2026-08-13 14:47:56,991 | INFO | silverwing | planner | plan_completed | Plan completed successfully.
+2026-08-13 14:47:56,995 | INFO | silverwing | retry_manager | retry | Retry event recorded.
+2026-08-13 14:48:19,323 | INFO | silverwing | lesson52 | trace_started | Test observable calculator.
+2026-08-13 14:48:19,325 | INFO | silverwing | tool_executor | tool_started | Starting tool: calculator
+2026-08-13 14:48:19,326 | INFO | silverwing | tool_executor | tool_completed | Tool completed: calculator
+2026-08-13 14:48:19,328 | INFO | silverwing | tool_executor | tool_started | Starting tool: machine_analyzer
+2026-08-13 14:48:19,329 | INFO | silverwing | tool_executor | tool_completed | Tool completed: machine_analyzer
+2026-08-13 14:48:19,330 | INFO | silverwing | tool_executor | tool_started | Starting tool: failing_tool
+2026-08-13 14:48:19,331 | INFO | silverwing | tool_executor | tool_failed | Tool failed: failing_tool
+2026-08-13 14:48:19,332 | INFO | silverwing | verifier | verification | Machine result verified.
+2026-08-13 14:48:19,334 | INFO | silverwing | planner | trace_started | Start multi-step machine analysis.
+2026-08-13 14:48:19,335 | INFO | silverwing | planner | plan_created | Three-step analysis plan created.
+2026-08-13 14:48:19,336 | INFO | silverwing | planner | plan_step | Executing machine analysis.
+2026-08-13 14:48:19,336 | INFO | silverwing | tool_executor | tool_started | Starting tool: machine_analyzer
+2026-08-13 14:48:19,337 | INFO | silverwing | tool_executor | tool_completed | Tool completed: machine_analyzer
+2026-08-13 14:48:19,338 | INFO | silverwing | verifier | plan_step | Verifying machine analysis.
+2026-08-13 14:48:19,339 | INFO | silverwing | verifier | verification | Verification succeeded.
+2026-08-13 14:48:19,340 | INFO | silverwing | agent | response_ready | Final result ready.
+2026-08-13 14:48:19,341 | INFO | silverwing | planner | plan_completed | Plan completed successfully.
+2026-08-13 14:48:19,348 | INFO | silverwing | retry_manager | retry | Retry event recorded.

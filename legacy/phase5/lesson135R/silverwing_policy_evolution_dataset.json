@@ -1,0 +1,48 @@
+{
+    "lesson": "135R",
+    "capability": "autonomous_policy_evolution_zero_regression_learning_protocol",
+    "generation_targets": [
+        0.115,
+        0.11,
+        0.105
+    ],
+    "exposure_trajectory": [
+        0.09803453832864761,
+        0.09720037132501602,
+        0.0950278714299202,
+        0.09217751026153564
+    ],
+    "changed_per_generation": {
+        "1": [
+            "pattern_004"
+        ],
+        "2": [
+            "pattern_004",
+            "pattern_005",
+            "pattern_002"
+        ],
+        "3": [
+            "pattern_001",
+            "pattern_004",
+            "pattern_005",
+            "pattern_002"
+        ]
+    },
+    "evolved_boosts": {
+        "pattern_001": 1.0088733020451952,
+        "pattern_004": 1.574205137456301,
+        "pattern_003": 1.0,
+        "pattern_006": 1.0,
+        "pattern_005": 1.0416482548438843,
+        "pattern_002": 1.034237370621646
+    },
+    "evolved_penetrations": {
+        "pattern_001": 0.105,
+        "pattern_004": 0.105,
+        "pattern_003": 0.08003637784217832,
+        "pattern_006": 0.053028708701500005,
+        "pattern_005": 0.105,
+        "pattern_002": 0.105
+    },
+    "evolution_hash": "46e8964bf2f0f5eff44ff94ace7d284c549eda707a67a32ea89a66581b24b565"
+}

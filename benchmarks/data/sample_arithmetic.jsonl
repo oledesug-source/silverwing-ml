@@ -1,0 +1,10 @@
+{"id": "arith-1", "prompt": "What is 7 plus 5?", "reference": "12", "category": "arithmetic", "task_type": "numeric"}
+{"id": "arith-2", "prompt": "What is 100 minus 37?", "reference": "63", "category": "arithmetic", "task_type": "numeric"}
+{"id": "arith-3", "prompt": "What is 6 times 9?", "reference": "54", "category": "arithmetic", "task_type": "numeric"}
+{"id": "arith-4", "prompt": "What is 144 divided by 12?", "reference": "12", "category": "arithmetic", "task_type": "numeric"}
+{"id": "arith-5", "prompt": "What is 15 percent of 200?", "reference": "30", "category": "arithmetic", "task_type": "numeric"}
+{"id": "arith-6", "prompt": "What is 2 to the power of 10?", "reference": "1024", "category": "arithmetic", "task_type": "numeric"}
+{"id": "arith-7", "prompt": "What is the square root of 81?", "reference": "9", "category": "arithmetic", "task_type": "numeric"}
+{"id": "arith-8", "prompt": "What is 3/4 as a decimal?", "reference": "0.75", "category": "arithmetic", "task_type": "numeric"}
+{"id": "arith-9", "prompt": "What is 7 plus 5 multiplied by 2?", "reference": "17", "category": "arithmetic", "task_type": "numeric"}
+{"id": "arith-10", "prompt": "What is 1000 minus 456?", "reference": "544", "category": "arithmetic", "task_type": "numeric"}

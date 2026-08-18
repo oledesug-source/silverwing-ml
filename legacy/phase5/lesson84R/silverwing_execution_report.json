@@ -1,0 +1,7 @@
+{
+    "lesson": "84R",
+    "capability": "native_verified_execution_and_replanning",
+    "training_examples": 2,
+    "validation_examples": 2,
+    "external_llm": false
+}

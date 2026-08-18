@@ -1,0 +1,2 @@
+model,cross_validation_folds,best_cv_accuracy,test_accuracy,test_precision,test_recall,test_f1,training_accuracy,accuracy_gap
+RandomForestClassifier,4,0.9,1.0,1.0,1.0,1.0,1.0,0.0

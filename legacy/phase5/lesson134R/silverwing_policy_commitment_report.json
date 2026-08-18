@@ -1,0 +1,18 @@
+{
+    "lesson": "134R",
+    "memory_version": "134R.1",
+    "policy_hash": "1cc16f7bb2647d89d0fcc6594c1e8ed8866f8597dc73127f5d76a34b2733f796",
+    "matrix_hash": "ba607fc3f14126705b0b6bf2eb6a9ac9e3033c643405a28a700694579db8d8f5",
+    "lossless": true,
+    "mean_exposure": 0.09803453832864761,
+    "worst_pattern": "pattern_004",
+    "coverage": 1.0,
+    "commitment_genesis_hash": "2f073a8a1c1881b177052ff269b1958e89bbb6b5c583ea97a0296b91c2759d8c",
+    "commitment_hash": "7aedadeb67450decec7235cca23bcc9b5ffe1bfed5a9cb4a2ec7e77e6f4d9af4",
+    "commitment_entries": 4,
+    "no_regression": true,
+    "guardrail_enforced": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

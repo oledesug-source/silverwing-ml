@@ -1,0 +1,9 @@
+{
+    "lesson": "106R",
+    "capability": "native_predictive_memory_anomaly_detection",
+    "memory_version": "106R.1",
+    "forecast_class": "motor_warning",
+    "risk_state": "NORMAL",
+    "anomaly_score": 0.0,
+    "next": "107R Native Predictive Risk + Failure Reasoning"
+}

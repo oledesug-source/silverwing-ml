@@ -1,0 +1,18 @@
+{
+    "lesson": "123R",
+    "memory_version": "123R.1",
+    "pattern_count": 6,
+    "mean_effectiveness": 0.75,
+    "prevented": 4,
+    "not_prevented": 1,
+    "plan_learned": true,
+    "effective_actions": [
+        "VALIDATE_ACTUATOR_RESPONSE",
+        "VALIDATE_EVIDENCE_PROVENANCE",
+        "VALIDATE_SCHEMA_CONSISTENCY",
+        "VALIDATE_TIMELINE_INTEGRITY"
+    ],
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

@@ -1,0 +1,782 @@
+{
+    "memory_version": "125R.1",
+    "lesson": "125R",
+    "capability": "cross_cycle_risk_trending_adaptive_threshold_tuning",
+    "created_at": "2026-08-15T11:10:02.583803",
+    "source_lesson": "124R",
+    "cycle": 2,
+    "consolidated_memory": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "last_status": "prevented",
+            "last_effectiveness": 0.92,
+            "lifetime_effectiveness": 0.92,
+            "occurrences": 1,
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.92
+                }
+            ],
+            "confidence": 0.8525539273574859,
+            "persistent_confidence": 0.8660431418859889,
+            "severity": 0.95,
+            "impact": 0.9,
+            "cost": 0.3,
+            "consolidated_recurrence": 0.9,
+            "calibration_decay": 0.9
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "last_status": "prevented",
+            "last_effectiveness": 0.85,
+            "lifetime_effectiveness": 0.85,
+            "occurrences": 1,
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.85
+                }
+            ],
+            "confidence": 0.645,
+            "persistent_confidence": 0.686,
+            "severity": 0.78,
+            "impact": 0.88,
+            "cost": 0.2,
+            "consolidated_recurrence": 0.44550000000000006,
+            "calibration_decay": 0.9
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "last_status": "not_prevented",
+            "last_effectiveness": 0.35,
+            "lifetime_effectiveness": 0.35,
+            "occurrences": 1,
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "not_prevented",
+                    "effectiveness": 0.35
+                }
+            ],
+            "confidence": 1.0,
+            "persistent_confidence": 1.0,
+            "severity": 0.82,
+            "impact": 0.62,
+            "cost": 0.35,
+            "consolidated_recurrence": 1.0,
+            "calibration_decay": 1.0
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "last_status": "partial",
+            "last_effectiveness": 0.6,
+            "lifetime_effectiveness": 0.6,
+            "occurrences": 1,
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "partial",
+                    "effectiveness": 0.6
+                }
+            ],
+            "confidence": 0.82,
+            "persistent_confidence": 0.776,
+            "severity": 0.8,
+            "impact": 0.75,
+            "cost": 0.25,
+            "consolidated_recurrence": 0.95,
+            "calibration_decay": 0.95
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "origin": "121R_EVIDENCE",
+            "last_status": "prevented",
+            "last_effectiveness": 0.88,
+            "lifetime_effectiveness": 0.88,
+            "occurrences": 1,
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.88
+                }
+            ],
+            "confidence": 0.786,
+            "persistent_confidence": 0.8048000000000001,
+            "severity": 0.85,
+            "impact": 0.8,
+            "cost": 0.2,
+            "consolidated_recurrence": 0.8874,
+            "calibration_decay": 0.9
+        },
+        {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "origin": "122R_RUNTIME",
+            "last_status": "prevented",
+            "last_effectiveness": 0.9,
+            "lifetime_effectiveness": 0.9,
+            "occurrences": 1,
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                }
+            ],
+            "confidence": 0.76,
+            "persistent_confidence": 0.7880000000000001,
+            "severity": 0.79,
+            "impact": 0.84,
+            "cost": 0.22,
+            "consolidated_recurrence": 0.8550000000000001,
+            "calibration_decay": 0.9
+        }
+    ],
+    "calibrated_records": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "risk_score": 0.8423129425657967,
+            "risk_class": "HIGH",
+            "severity": 0.95,
+            "impact": 0.9,
+            "last_status": "prevented",
+            "priority": 1
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.8115,
+            "risk_class": "HIGH",
+            "severity": 0.82,
+            "impact": 0.62,
+            "last_status": "not_prevented",
+            "priority": 2
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.78142,
+            "risk_class": "HIGH",
+            "severity": 0.85,
+            "impact": 0.8,
+            "last_status": "prevented",
+            "priority": 3
+        },
+        {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "origin": "122R_RUNTIME",
+            "risk_score": 0.7619000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.79,
+            "impact": 0.84,
+            "last_status": "prevented",
+            "priority": 4
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.7603,
+            "risk_class": "MEDIUM",
+            "severity": 0.8,
+            "impact": 0.75,
+            "last_status": "partial",
+            "priority": 5
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.6559000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.78,
+            "impact": 0.88,
+            "last_status": "prevented",
+            "priority": 6
+        }
+    ],
+    "calibrated_order": [
+        "pattern_001",
+        "pattern_003",
+        "pattern_005",
+        "pattern_006",
+        "pattern_004",
+        "pattern_002"
+    ],
+    "calibrated_plan": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "dependency": null
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_005",
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 4,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY"
+        },
+        {
+            "step": 5,
+            "pattern_id": "pattern_006",
+            "action": "VALIDATE_ACTUATOR_RESPONSE",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        },
+        {
+            "step": 6,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        }
+    ],
+    "cycle_2_outcomes": [
+        {
+            "cycle": 2,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "status": "prevented",
+            "effectiveness": 0.95
+        },
+        {
+            "cycle": 2,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "status": "prevented",
+            "effectiveness": 0.95
+        },
+        {
+            "cycle": 2,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "status": "prevented",
+            "effectiveness": 0.9
+        },
+        {
+            "cycle": 2,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "status": "not_prevented",
+            "effectiveness": 0.4
+        },
+        {
+            "cycle": 2,
+            "pattern_id": "pattern_005",
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "status": "prevented",
+            "effectiveness": 0.9
+        },
+        {
+            "cycle": 2,
+            "pattern_id": "pattern_006",
+            "action": "VALIDATE_ACTUATOR_RESPONSE",
+            "status": "prevented",
+            "effectiveness": 0.7
+        }
+    ],
+    "cycle_2_patterns": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "severity": 0.95,
+            "impact": 0.9,
+            "cost": 0.3,
+            "confidence": 0.7310431418859888,
+            "recurrence": 0.915,
+            "outcome_status": "prevented",
+            "outcome_effectiveness": 0.95
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "severity": 0.78,
+            "impact": 0.88,
+            "cost": 0.2,
+            "confidence": 0.551,
+            "recurrence": 0.4605000000000001,
+            "outcome_status": "prevented",
+            "outcome_effectiveness": 0.95
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "severity": 0.82,
+            "impact": 0.62,
+            "cost": 0.35,
+            "confidence": 0.88,
+            "recurrence": 1.0,
+            "outcome_status": "prevented",
+            "outcome_effectiveness": 0.9
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "severity": 0.8,
+            "impact": 0.75,
+            "cost": 0.25,
+            "confidence": 0.806,
+            "recurrence": 1.0,
+            "outcome_status": "not_prevented",
+            "outcome_effectiveness": 0.4
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "origin": "121R_EVIDENCE",
+            "severity": 0.85,
+            "impact": 0.8,
+            "cost": 0.2,
+            "confidence": 0.6848000000000001,
+            "recurrence": 0.9174,
+            "outcome_status": "prevented",
+            "outcome_effectiveness": 0.9
+        },
+        {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "origin": "122R_RUNTIME",
+            "severity": 0.79,
+            "impact": 0.84,
+            "cost": 0.22,
+            "confidence": 0.7280000000000002,
+            "recurrence": 0.9450000000000001,
+            "outcome_status": "prevented",
+            "outcome_effectiveness": 0.7
+        }
+    ],
+    "cycle_2_records": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "risk_score": 0.8048129425657967,
+            "risk_class": "HIGH",
+            "severity": 0.95,
+            "impact": 0.9,
+            "outcome_status": "prevented",
+            "priority": 1
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.7793000000000001,
+            "risk_class": "HIGH",
+            "severity": 0.8,
+            "impact": 0.75,
+            "outcome_status": "not_prevented",
+            "priority": 2
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.7755,
+            "risk_class": "HIGH",
+            "severity": 0.82,
+            "impact": 0.62,
+            "outcome_status": "prevented",
+            "priority": 3
+        },
+        {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "origin": "122R_RUNTIME",
+            "risk_score": 0.7619000000000001,
+            "risk_class": "HIGH",
+            "severity": 0.79,
+            "impact": 0.84,
+            "outcome_status": "prevented",
+            "priority": 4
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.75142,
+            "risk_class": "HIGH",
+            "severity": 0.85,
+            "impact": 0.8,
+            "outcome_status": "prevented",
+            "priority": 5
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.6184000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.78,
+            "impact": 0.88,
+            "outcome_status": "prevented",
+            "priority": 6
+        }
+    ],
+    "cycle_2_risk": {
+        "pattern_001": 0.8048129425657967,
+        "pattern_004": 0.7793000000000001,
+        "pattern_003": 0.7755,
+        "pattern_006": 0.7619000000000001,
+        "pattern_005": 0.75142,
+        "pattern_002": 0.6184000000000001
+    },
+    "extended_history": {
+        "pattern_001": {
+            "family": "evidence_integrity",
+            "pattern_id": "pattern_001",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.95,
+            "lifetime_effectiveness": 0.935,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.92
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.95
+                }
+            ]
+        },
+        "pattern_002": {
+            "family": "schema_integrity",
+            "pattern_id": "pattern_002",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.95,
+            "lifetime_effectiveness": 0.8999999999999999,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.85
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.95
+                }
+            ]
+        },
+        "pattern_003": {
+            "family": "sensor_alignment",
+            "pattern_id": "pattern_003",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.9,
+            "lifetime_effectiveness": 0.625,
+            "status_counts": {
+                "not_prevented": 1,
+                "prevented": 1
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "not_prevented",
+                    "effectiveness": 0.35
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                }
+            ]
+        },
+        "pattern_004": {
+            "family": "telemetry_fusion",
+            "pattern_id": "pattern_004",
+            "occurrences": 2,
+            "last_status": "not_prevented",
+            "last_effectiveness": 0.4,
+            "lifetime_effectiveness": 0.5,
+            "status_counts": {
+                "partial": 1,
+                "not_prevented": 1
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "partial",
+                    "effectiveness": 0.6
+                },
+                {
+                    "cycle": 2,
+                    "status": "not_prevented",
+                    "effectiveness": 0.4
+                }
+            ]
+        },
+        "pattern_005": {
+            "family": "timeline_integrity",
+            "pattern_id": "pattern_005",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.9,
+            "lifetime_effectiveness": 0.89,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.88
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                }
+            ]
+        },
+        "pattern_006": {
+            "family": "actuator_response",
+            "pattern_id": "pattern_006",
+            "occurrences": 2,
+            "last_status": "prevented",
+            "last_effectiveness": 0.7,
+            "lifetime_effectiveness": 0.8,
+            "status_counts": {
+                "prevented": 2
+            },
+            "history_window": [
+                {
+                    "cycle": 1,
+                    "status": "prevented",
+                    "effectiveness": 0.9
+                },
+                {
+                    "cycle": 2,
+                    "status": "prevented",
+                    "effectiveness": 0.7
+                }
+            ]
+        }
+    },
+    "outcome_stats": {
+        "cycle_1_mean": 0.75,
+        "cycle_2_mean": 0.7999999999999999,
+        "effectiveness_delta": 0.04999999999999993
+    },
+    "trends": [
+        {
+            "pattern_id": "pattern_001",
+            "cycle_1_risk": 0.8423129425657967,
+            "cycle_2_risk": 0.8048129425657967,
+            "delta": -0.03749999999999998,
+            "trend": "FALLING"
+        },
+        {
+            "pattern_id": "pattern_003",
+            "cycle_1_risk": 0.8115,
+            "cycle_2_risk": 0.7755,
+            "delta": -0.03600000000000003,
+            "trend": "FALLING"
+        },
+        {
+            "pattern_id": "pattern_005",
+            "cycle_1_risk": 0.78142,
+            "cycle_2_risk": 0.75142,
+            "delta": -0.030000000000000027,
+            "trend": "FALLING"
+        },
+        {
+            "pattern_id": "pattern_006",
+            "cycle_1_risk": 0.7619000000000001,
+            "cycle_2_risk": 0.7619000000000001,
+            "delta": 0.0,
+            "trend": "STABLE"
+        },
+        {
+            "pattern_id": "pattern_004",
+            "cycle_1_risk": 0.7603,
+            "cycle_2_risk": 0.7793000000000001,
+            "delta": 0.019000000000000128,
+            "trend": "RISING"
+        },
+        {
+            "pattern_id": "pattern_002",
+            "cycle_1_risk": 0.6559000000000001,
+            "cycle_2_risk": 0.6184000000000001,
+            "delta": -0.03750000000000009,
+            "trend": "FALLING"
+        }
+    ],
+    "trend_counts": {
+        "rising": 1,
+        "falling": 4,
+        "stable": 1
+    },
+    "tuned_thresholds": {
+        "calibrated_high": 0.775,
+        "calibrated_medium": 0.42500000000000004,
+        "tuning_shift": 0.024999999999999967,
+        "tuned_high": 0.8,
+        "tuned_medium": 0.45
+    },
+    "tuned_records": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "risk_score": 0.8048129425657967,
+            "risk_class": "HIGH",
+            "severity": 0.95,
+            "impact": 0.9,
+            "outcome_status": "prevented",
+            "priority": 1
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.7793000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.8,
+            "impact": 0.75,
+            "outcome_status": "not_prevented",
+            "priority": 2
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.7755,
+            "risk_class": "MEDIUM",
+            "severity": 0.82,
+            "impact": 0.62,
+            "outcome_status": "prevented",
+            "priority": 3
+        },
+        {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "origin": "122R_RUNTIME",
+            "risk_score": 0.7619000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.79,
+            "impact": 0.84,
+            "outcome_status": "prevented",
+            "priority": 4
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.75142,
+            "risk_class": "MEDIUM",
+            "severity": 0.85,
+            "impact": 0.8,
+            "outcome_status": "prevented",
+            "priority": 5
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.6184000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.78,
+            "impact": 0.88,
+            "outcome_status": "prevented",
+            "priority": 6
+        }
+    ],
+    "tuned_order": [
+        "pattern_001",
+        "pattern_004",
+        "pattern_003",
+        "pattern_006",
+        "pattern_005",
+        "pattern_002"
+    ],
+    "tuned_plan": [
+        {
+            "step": 1,
+            "pattern_id": "pattern_001",
+            "action": "VALIDATE_EVIDENCE_PROVENANCE",
+            "dependency": null
+        },
+        {
+            "step": 2,
+            "pattern_id": "pattern_005",
+            "action": "VALIDATE_TIMELINE_INTEGRITY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 3,
+            "pattern_id": "pattern_002",
+            "action": "VALIDATE_SCHEMA_CONSISTENCY",
+            "dependency": "VALIDATE_EVIDENCE_PROVENANCE"
+        },
+        {
+            "step": 4,
+            "pattern_id": "pattern_003",
+            "action": "VALIDATE_SENSOR_ALIGNMENT",
+            "dependency": "VALIDATE_SCHEMA_CONSISTENCY"
+        },
+        {
+            "step": 5,
+            "pattern_id": "pattern_004",
+            "action": "VALIDATE_TELEMETRY_FUSION",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        },
+        {
+            "step": 6,
+            "pattern_id": "pattern_006",
+            "action": "VALIDATE_ACTUATOR_RESPONSE",
+            "dependency": "VALIDATE_SENSOR_ALIGNMENT"
+        }
+    ],
+    "verification": {
+        "cycle_2_covered": true,
+        "threshold_tuned": true,
+        "rising_moved_ahead": true,
+        "order_changed": true,
+        "plan_changed": true,
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

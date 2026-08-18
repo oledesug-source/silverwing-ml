@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Pump",
+        "temperature": 85,
+        "pressure": 120,
+        "rpm": 1500
+    },
+    {
+        "name": "Compressor",
+        "temperature": 72,
+        "pressure": 150,
+        "rpm": 2800
+    },
+    {
+        "name": "Generator",
+        "temperature": 105,
+        "pressure": 110,
+        "rpm": 3200
+    },
+    {
+        "name": "Turbine",
+        "temperature": 91,
+        "pressure": 135,
+        "rpm": 2900
+    }
+]

@@ -1,0 +1,65 @@
+{
+    "lesson": "129R",
+    "capability": "anomaly_first_adaptive_scheduling_critical_path_defense",
+    "anomaly_frame": {
+        "threshold": 0.7,
+        "risk_weight": 0.6,
+        "band_weight": 0.25,
+        "trend_weight": 0.15
+    },
+    "anomaly_scores": {
+        "pattern_001": 0.6872230570864468,
+        "pattern_004": 0.8675800000000001,
+        "pattern_003": 0.7045538541576759,
+        "pattern_006": 0.7528548352010486,
+        "pattern_005": 0.6608088028033707,
+        "pattern_002": 0.5797603153381193
+    },
+    "anomaly_set": [
+        "pattern_003",
+        "pattern_004",
+        "pattern_006"
+    ],
+    "critical_path": {
+        "length": 4,
+        "patterns": [
+            "pattern_001",
+            "pattern_002",
+            "pattern_003",
+            "pattern_004",
+            "pattern_006"
+        ]
+    },
+    "risk_first_schedule": [
+        "pattern_001",
+        "pattern_005",
+        "pattern_002",
+        "pattern_003",
+        "pattern_004",
+        "pattern_006"
+    ],
+    "anomaly_schedule": [
+        "pattern_001",
+        "pattern_002",
+        "pattern_003",
+        "pattern_004",
+        "pattern_006",
+        "pattern_005"
+    ],
+    "defense_tiers": {
+        "pattern_001": "CRITICAL",
+        "pattern_004": "ANOMALY",
+        "pattern_003": "ANOMALY",
+        "pattern_006": "ANOMALY",
+        "pattern_005": "SECONDARY",
+        "pattern_002": "CRITICAL"
+    },
+    "drifted_tiers": {
+        "pattern_001": "CRITICAL",
+        "pattern_004": "ANOMALY",
+        "pattern_003": "ANOMALY",
+        "pattern_006": "ANOMALY",
+        "pattern_005": "ANOMALY",
+        "pattern_002": "CRITICAL"
+    }
+}

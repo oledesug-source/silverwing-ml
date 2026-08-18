@@ -1,0 +1,4 @@
+{"example_id": "math_004", "domain": "probability", "formatted_text": "P:A bag has 3 red balls and 2 blue balls. What is the probability of a red ball?\nM:There are 3 favorable outcomes among 5 total outcomes.\nC:P(red) = 3 / 5 = 0.6\nV:3/5=0.6\nA:0.6", "token_count": 119}
+{"example_id": "math_002", "domain": "algebra", "formatted_text": "P:Solve 3x + 5 = 20.\nM:Subtract 5 from both sides, then divide by 3.\nC:3x = 15; x = 5\nV:3*5+5=20\nA:x = 5", "token_count": 71}
+{"example_id": "math_003", "domain": "geometry", "formatted_text": "P:Find the area and perimeter of a rectangle 12 m by 5 m.\nM:Area is length times width. Perimeter is twice their sum.\nC:A = 60 m2; P = 34 m\nV:A=12*5;P=2*(12+5)\nA:Area = 60 m2; perimeter = 34 m", "token_count": 124}
+{"example_id": "math_005", "domain": "statistics", "formatted_text": "P:Find the mean of 4, 6, 8, and 10.\nM:Add the values and divide by four.\nC:28 / 4 = 7\nV:mean=7\nA:7", "token_count": 63}

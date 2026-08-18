@@ -1,0 +1,9 @@
+{
+    "lesson": "103R",
+    "capability": "native_memory_consolidation_temporal_retrieval",
+    "memory_version": "103R.1",
+    "records": 6,
+    "duplicates_removed": 0,
+    "related_events": 0,
+    "next": "104R Native Multimodal Memory Reasoning"
+}

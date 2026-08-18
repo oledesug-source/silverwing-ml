@@ -1,0 +1,66 @@
+{
+    "lesson": "106R",
+    "capability": "native_predictive_memory_anomaly_detection",
+    "external_llm": false,
+    "device": "cpu",
+    "memory_version": "106R.1",
+    "forecast": {
+        "class": "motor_warning",
+        "mode": "small_history_residual_baseline",
+        "current_state": [
+            0.8799999952316284,
+            1.1799999475479126,
+            2.450000047683716,
+            0.3700000047683716,
+            0.12999999523162842
+        ],
+        "mean_trend": [
+            -1.1111100320704281e-05,
+            -1.111116671381751e-05,
+            -2.7777750801760703e-05,
+            3.333333370392211e-05,
+            1.1111108506156597e-05
+        ],
+        "predicted_state": [
+            0.8600000143051147,
+            1.1599998474121094,
+            2.4000000953674316,
+            0.4300000071525574,
+            0.14999999105930328
+        ],
+        "forecast_time": "2026-08-14T09:00:00"
+    },
+    "residual": {
+        "vector": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+        ],
+        "norm": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "baseline_scale": 1e-08
+    },
+    "anomaly": {
+        "score": 0.0,
+        "risk_state": "NORMAL",
+        "confidence": 1.0,
+        "alert": "NORMAL: predictive behavior remains within the native historical residual baseline."
+    },
+    "verification": {
+        "directional_accuracy": 1.0,
+        "forecast_difference": 0.0,
+        "anomaly_difference": 0.0
+    },
+    "health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "promotion": {
+        "passed": true,
+        "errors": []
+    }
+}

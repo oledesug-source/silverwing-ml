@@ -1,0 +1,85 @@
+{
+    "lesson": "119R",
+    "capability": "native_predictive_error_prevention_preemptive_validation",
+    "external_llm": false,
+    "device": "cpu",
+    "memory_version": "119R.2",
+    "pattern": {
+        "pattern_id": "error_pattern_001",
+        "source_error_type": "evidence_magnitude_mismatch",
+        "source_field": "magnitude",
+        "observable_signature": {
+            "field": "magnitude",
+            "expected_value": 0.4676795080304146,
+            "observed_value": 0.5144474588334561
+        },
+        "detection_method": "independent_recalculation",
+        "verified_correction": {
+            "strategy_id": "correction_001",
+            "strategy_type": "restore_source_evidence"
+        },
+        "source_lesson": "116R",
+        "generalization_scope": "evidence_representation_mismatch"
+    },
+    "prevention_rule": {
+        "rule_id": "prevention_rule_001",
+        "pattern_id": "error_pattern_001",
+        "trigger": {
+            "field": "magnitude",
+            "condition": "observed_value differs from provenance-backed value"
+        },
+        "action": "STOP_BEFORE_REASONING_COMPLETES",
+        "validation": "recalculate_using_provenance_value",
+        "promotion_requirement": "independent_verification",
+        "risk_level": "HIGH",
+        "description": "When an evidence representation differs from its provenance-backed value, prevent downstream reasoning until the evidence is restored and independently verified."
+    },
+    "recurrence": {
+        "count": 2,
+        "rate": 1.0
+    },
+    "risk": {
+        "pattern_strength": 0.957107854714972,
+        "recurrence_strength": 1.0,
+        "predictive_risk": 0.9785539273574859,
+        "risk_class": "HIGH"
+    },
+    "intervention": {
+        "triggered": true,
+        "decision": "BLOCK_REASONING_AND_VALIDATE",
+        "confidence": 0.989276963678743,
+        "protected_error": 0.0
+    },
+    "generalization": [
+        {
+            "case_id": "future_case_002",
+            "evaluation_type": "synthetic_future_case",
+            "field_match": true,
+            "mismatch": true,
+            "trigger": true
+        },
+        {
+            "case_id": "future_case_003",
+            "evaluation_type": "synthetic_future_case",
+            "field_match": true,
+            "mismatch": true,
+            "trigger": true
+        },
+        {
+            "case_id": "future_case_004",
+            "evaluation_type": "synthetic_negative_control",
+            "field_match": false,
+            "mismatch": true,
+            "trigger": false
+        }
+    ],
+    "verification": {
+        "false_positive_count": 0,
+        "deterministic": true,
+        "protected": true
+    },
+    "promotion": {
+        "passed": true,
+        "errors": []
+    }
+}

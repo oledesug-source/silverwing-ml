@@ -1,0 +1,17 @@
+{
+    "lesson": "90R",
+    "capability": "native_data_engineering",
+    "domains": [
+        "duplicate_detection",
+        "etl",
+        "ingestion",
+        "missing_data",
+        "normalization",
+        "partitioning",
+        "quality_metrics",
+        "schema_evolution",
+        "schema_validation"
+    ],
+    "sequence_limit": 256,
+    "example_count": 9
+}

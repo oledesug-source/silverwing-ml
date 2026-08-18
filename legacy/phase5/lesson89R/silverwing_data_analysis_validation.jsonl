@@ -1,0 +1,3 @@
+{"example_id": "data_006", "domain": "sorting", "formatted_text": "P:Sort sales from highest revenue to lowest.\nM:Order rows by revenue descending.\nQ:ORDER BY revenue DESC\nV:validated\nA:ids 1, 5, 2, 4, 3", "token_count": 87}
+{"example_id": "data_001", "domain": "filtering", "formatted_text": "P:From the sales table, select rows where revenue is greater than 850.\nM:Apply a WHERE condition to the revenue column.\nQ:WHERE revenue > 850\nV:validated\nA:rows with ids 1, 5", "token_count": 112}
+{"example_id": "data_002", "domain": "projection", "formatted_text": "P:Select product and revenue from the sales table.\nM:Projection keeps only the requested columns.\nQ:SELECT product, revenue\nV:validated\nA:five rows with product and revenue.", "token_count": 109}

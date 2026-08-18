@@ -1,0 +1,17 @@
+{
+    "lesson": "89R",
+    "capability": "native_data_analysis_and_sql_reasoning",
+    "domains": [
+        "aggregation",
+        "average",
+        "filtering",
+        "grouping",
+        "join",
+        "null_reasoning",
+        "projection",
+        "sorting"
+    ],
+    "training_examples": 5,
+    "validation_examples": 3,
+    "external_llm": false
+}

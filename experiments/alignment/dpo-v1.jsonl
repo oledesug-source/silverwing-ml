@@ -1,0 +1,500 @@
+{"id": "dpo-v1-arithmetic-0000", "instruction": "What is 19% of 50?", "chosen": "10", "rejected": "5"}
+{"id": "dpo-v1-arithmetic-0001", "instruction": "Compute 4/4 + 3/2 and give the answer in lowest terms.", "chosen": "5/2", "rejected": "3"}
+{"id": "dpo-v1-arithmetic-0002", "instruction": "What is 59% of 50?", "chosen": "30", "rejected": "31"}
+{"id": "dpo-v1-arithmetic-0003", "instruction": "Compute 31 + 66.", "chosen": "97", "rejected": "291"}
+{"id": "dpo-v1-arithmetic-0004", "instruction": "Compute 27 * 93.", "chosen": "2511", "rejected": "7533"}
+{"id": "dpo-v1-arithmetic-0005", "instruction": "Compute 4/8 + 5/1 and give the answer in lowest terms.", "chosen": "11/2", "rejected": "11/3"}
+{"id": "dpo-v1-arithmetic-0006", "instruction": "What is 59% of 200?", "chosen": "118", "rejected": "-118"}
+{"id": "dpo-v1-arithmetic-0007", "instruction": "Compute 99 + 45.", "chosen": "144", "rejected": "145"}
+{"id": "dpo-v1-arithmetic-0008", "instruction": "Compute 14 - 47.", "chosen": "-33", "rejected": "33"}
+{"id": "dpo-v1-arithmetic-0009", "instruction": "What is 38% of 50?", "chosen": "19", "rejected": "38"}
+{"id": "dpo-v1-arithmetic-0010", "instruction": "What is 20% of 400?", "chosen": "80", "rejected": "81"}
+{"id": "dpo-v1-arithmetic-0011", "instruction": "What is 42% of 1000?", "chosen": "420", "rejected": "1260"}
+{"id": "dpo-v1-arithmetic-0012", "instruction": "Compute 4/2 + 1/4 and give the answer in lowest terms.", "chosen": "9/4", "rejected": "4/9"}
+{"id": "dpo-v1-arithmetic-0013", "instruction": "Compute 14 + 50.", "chosen": "64", "rejected": "-64"}
+{"id": "dpo-v1-arithmetic-0014", "instruction": "Compute 6/3 + 6/6 and give the answer in lowest terms.", "chosen": "3", "rejected": "2"}
+{"id": "dpo-v1-arithmetic-0015", "instruction": "What is 39% of 1000?", "chosen": "390", "rejected": "195"}
+{"id": "dpo-v1-arithmetic-0016", "instruction": "What is 14% of 800?", "chosen": "112", "rejected": "56"}
+{"id": "dpo-v1-arithmetic-0017", "instruction": "Compute 95 * 33.", "chosen": "3135", "rejected": "3134"}
+{"id": "dpo-v1-arithmetic-0018", "instruction": "Compute 7/5 + 9/4 and give the answer in lowest terms.", "chosen": "73/20", "rejected": "20/73"}
+{"id": "dpo-v1-arithmetic-0019", "instruction": "Compute 6 + 42.", "chosen": "48", "rejected": "96"}
+{"id": "dpo-v1-arithmetic-0020", "instruction": "Compute 2/4 + 6/4 and give the answer in lowest terms.", "chosen": "2", "rejected": "1"}
+{"id": "dpo-v1-arithmetic-0021", "instruction": "Compute 7/8 + 3/5 and give the answer in lowest terms.", "chosen": "59/40", "rejected": "59/41"}
+{"id": "dpo-v1-arithmetic-0022", "instruction": "Compute 73 * 70.", "chosen": "5110", "rejected": "-5110"}
+{"id": "dpo-v1-arithmetic-0023", "instruction": "What is 59% of 800?", "chosen": "472", "rejected": "944"}
+{"id": "dpo-v1-arithmetic-0024", "instruction": "Compute 4/3 + 9/8 and give the answer in lowest terms.", "chosen": "59/24", "rejected": "5/2"}
+{"id": "dpo-v1-arithmetic-0025", "instruction": "Compute 21 + 82.", "chosen": "103", "rejected": "102"}
+{"id": "dpo-v1-arithmetic-0026", "instruction": "What is 59% of 800?", "chosen": "472", "rejected": "473"}
+{"id": "dpo-v1-arithmetic-0027", "instruction": "Compute 7/8 + 9/5 and give the answer in lowest terms.", "chosen": "107/40", "rejected": "27/10"}
+{"id": "dpo-v1-arithmetic-0028", "instruction": "What is 19% of 1000?", "chosen": "190", "rejected": "570"}
+{"id": "dpo-v1-arithmetic-0029", "instruction": "Compute 6/2 + 5/7 and give the answer in lowest terms.", "chosen": "26/7", "rejected": "13/4"}
+{"id": "dpo-v1-arithmetic-0030", "instruction": "Compute 1/5 + 9/3 and give the answer in lowest terms.", "chosen": "16/5", "rejected": "17/5"}
+{"id": "dpo-v1-arithmetic-0031", "instruction": "What is 43% of 1000?", "chosen": "430", "rejected": "1290"}
+{"id": "dpo-v1-arithmetic-0032", "instruction": "What is 30% of 100?", "chosen": "30", "rejected": "-30"}
+{"id": "dpo-v1-arithmetic-0033", "instruction": "Compute 69 * 2.", "chosen": "138", "rejected": "414"}
+{"id": "dpo-v1-arithmetic-0034", "instruction": "Compute 8/1 + 2/6 and give the answer in lowest terms.", "chosen": "25/3", "rejected": "3/25"}
+{"id": "dpo-v1-arithmetic-0035", "instruction": "Compute 32 + 74.", "chosen": "106", "rejected": "107"}
+{"id": "dpo-v1-arithmetic-0036", "instruction": "Compute 64 * 10.", "chosen": "640", "rejected": "1920"}
+{"id": "dpo-v1-arithmetic-0037", "instruction": "Compute 86 + 62.", "chosen": "148", "rejected": "444"}
+{"id": "dpo-v1-arithmetic-0038", "instruction": "Compute 69 - 79.", "chosen": "-10", "rejected": "-20"}
+{"id": "dpo-v1-arithmetic-0039", "instruction": "Compute 98 * 95.", "chosen": "9310", "rejected": "4655"}
+{"id": "dpo-v1-arithmetic-0040", "instruction": "Compute 41 * 53.", "chosen": "2173", "rejected": "-2173"}
+{"id": "dpo-v1-arithmetic-0041", "instruction": "Compute 9/8 + 2/4 and give the answer in lowest terms.", "chosen": "13/8", "rejected": "13/9"}
+{"id": "dpo-v1-arithmetic-0042", "instruction": "Compute 4 - 77.", "chosen": "-73", "rejected": "-219"}
+{"id": "dpo-v1-arithmetic-0043", "instruction": "Compute 30 * 2.", "chosen": "60", "rejected": "61"}
+{"id": "dpo-v1-arithmetic-0044", "instruction": "What is 12% of 100?", "chosen": "12", "rejected": "13"}
+{"id": "dpo-v1-arithmetic-0045", "instruction": "Compute 11 - 67.", "chosen": "-56", "rejected": "-57"}
+{"id": "dpo-v1-arithmetic-0046", "instruction": "Compute 8/4 + 9/3 and give the answer in lowest terms.", "chosen": "5", "rejected": "15"}
+{"id": "dpo-v1-arithmetic-0047", "instruction": "What is 65% of 100?", "chosen": "65", "rejected": "130"}
+{"id": "dpo-v1-arithmetic-0048", "instruction": "Compute 4/2 + 2/7 and give the answer in lowest terms.", "chosen": "16/7", "rejected": "7/16"}
+{"id": "dpo-v1-arithmetic-0049", "instruction": "Compute 7/8 + 1/2 and give the answer in lowest terms.", "chosen": "11/8", "rejected": "3/2"}
+{"id": "dpo-v1-algebra-0000", "instruction": "Factor x^2 + 3x - 10.", "chosen": "(x - 2)(x + 5)", "rejected": "42"}
+{"id": "dpo-v1-algebra-0001", "instruction": "Expand (2x + 5) * (5x - 5).", "chosen": "10x^2 + 15x - 25", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-algebra-0002", "instruction": "Expand (3x - 2) * (4x - 7).", "chosen": "12x^2 - 29x + 14", "rejected": "I'm not sure."}
+{"id": "dpo-v1-algebra-0003", "instruction": "Solve x^2 + 12x + 35 = 0.", "chosen": "x = -5 or x = -7", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0004", "instruction": "Expand (2x + 4) * (2x + 6).", "chosen": "4x^2 + 20x + 24", "rejected": "I'm not sure."}
+{"id": "dpo-v1-algebra-0005", "instruction": "Expand (4x - 4) * (1x + 3).", "chosen": "4x^2 + 8x - 12", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0006", "instruction": "Factor x^2 - 6x + 5.", "chosen": "(x - 1)(x - 5)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-algebra-0007", "instruction": "Expand (2x - 3) * (3x - 8).", "chosen": "6x^2 - 25x + 24", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0008", "instruction": "Solve x^2 + 5x - 14 = 0.", "chosen": "x = 2 or x = -7", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0009", "instruction": "Solve x^2 - 15x + 56 = 0.", "chosen": "x = 7 or x = 8", "rejected": "1"}
+{"id": "dpo-v1-algebra-0010", "instruction": "Expand (5x - 4) * (1x - 7).", "chosen": "5x^2 - 39x + 28", "rejected": "0"}
+{"id": "dpo-v1-algebra-0011", "instruction": "Solve x^2 - 3x - 4 = 0.", "chosen": "x = -1 or x = 4", "rejected": "0"}
+{"id": "dpo-v1-algebra-0012", "instruction": "Solve x^2 + 8x + 7 = 0.", "chosen": "x = -1 or x = -7", "rejected": "0"}
+{"id": "dpo-v1-algebra-0013", "instruction": "Factor x^2 - 10x + 16.", "chosen": "(x - 8)(x - 2)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0014", "instruction": "Expand (3x - 1) * (2x + 3).", "chosen": "6x^2 + 7x - 3", "rejected": "1"}
+{"id": "dpo-v1-algebra-0015", "instruction": "Solve x^2 - 7x + 6 = 0.", "chosen": "x = 1 or x = 6", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0016", "instruction": "Expand (1x + 9) * (4x - 6).", "chosen": "4x^2 + 30x - 54", "rejected": "0"}
+{"id": "dpo-v1-algebra-0017", "instruction": "Solve x^2 - 6x - 16 = 0.", "chosen": "x = -2 or x = 8", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0018", "instruction": "Expand (3x - 2) * (1x + 2).", "chosen": "3x^2 + 4x - 4", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0019", "instruction": "Expand (4x + 0) * (5x + 7).", "chosen": "20x^2 + 28x", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0020", "instruction": "Solve x^2 + 4x - 5 = 0.", "chosen": "x = 1 or x = -5", "rejected": "1"}
+{"id": "dpo-v1-algebra-0021", "instruction": "Factor x^2 + 10x + 25.", "chosen": "(x + 5)(x + 5)", "rejected": "1"}
+{"id": "dpo-v1-algebra-0022", "instruction": "Factor x^2 + 1x - 2.", "chosen": "(x - 1)(x + 2)", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0023", "instruction": "Expand (3x + 6) * (5x - 1).", "chosen": "15x^2 + 27x - 6", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0024", "instruction": "Expand (4x - 8) * (3x - 9).", "chosen": "12x^2 - 60x + 72", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0025", "instruction": "Expand (3x + 5) * (2x + 8).", "chosen": "6x^2 + 34x + 40", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-algebra-0026", "instruction": "Solve x^2 + 13x + 40 = 0.", "chosen": "x = -8 or x = -5", "rejected": "0"}
+{"id": "dpo-v1-algebra-0027", "instruction": "Solve x^2 + 11x + 28 = 0.", "chosen": "x = -4 or x = -7", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0028", "instruction": "Solve x^2 - 1x - 20 = 0.", "chosen": "x = -4 or x = 5", "rejected": "1"}
+{"id": "dpo-v1-algebra-0029", "instruction": "Expand (3x - 8) * (3x + 2).", "chosen": "9x^2 - 18x - 16", "rejected": "42"}
+{"id": "dpo-v1-algebra-0030", "instruction": "Solve x^2 + 6x + 5 = 0.", "chosen": "x = -1 or x = -5", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0031", "instruction": "Solve x^2 - 1x - 20 = 0.", "chosen": "x = 5 or x = -4", "rejected": "42"}
+{"id": "dpo-v1-algebra-0032", "instruction": "Expand (2x - 9) * (4x - 4).", "chosen": "8x^2 - 44x + 36", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0033", "instruction": "Factor x^2 + 8x + 15.", "chosen": "(x + 3)(x + 5)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-algebra-0034", "instruction": "Expand (4x - 3) * (2x + 5).", "chosen": "8x^2 + 14x - 15", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0035", "instruction": "Factor x^2 + 2x + 1.", "chosen": "(x + 1)(x + 1)", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0036", "instruction": "Solve x^2 - 2x - 8 = 0.", "chosen": "x = -2 or x = 4", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0037", "instruction": "Factor x^2 - 11x + 24.", "chosen": "(x - 3)(x - 8)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-algebra-0038", "instruction": "Solve x^2 + 6x - 16 = 0.", "chosen": "x = 2 or x = -8", "rejected": "0"}
+{"id": "dpo-v1-algebra-0039", "instruction": "Factor x^2 + 12x + 35.", "chosen": "(x + 7)(x + 5)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-algebra-0040", "instruction": "Factor x^2 - 7x + 10.", "chosen": "(x - 2)(x - 5)", "rejected": "0"}
+{"id": "dpo-v1-algebra-0041", "instruction": "Factor x^2 + 2x - 35.", "chosen": "(x + 7)(x - 5)", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0042", "instruction": "Solve x^2 - 1x - 6 = 0.", "chosen": "x = -2 or x = 3", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-algebra-0043", "instruction": "Expand (3x + 1) * (5x - 6).", "chosen": "15x^2 - 13x - 6", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0044", "instruction": "Solve x^2 - 6x + 5 = 0.", "chosen": "x = 1 or x = 5", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0045", "instruction": "Factor x^2 + 3x - 4.", "chosen": "(x - 1)(x + 4)", "rejected": "42"}
+{"id": "dpo-v1-algebra-0046", "instruction": "Factor x^2 - 1x - 12.", "chosen": "(x - 4)(x + 3)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0047", "instruction": "Factor x^2 + 7x - 8.", "chosen": "(x + 8)(x - 1)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0048", "instruction": "Expand (4x + 1) * (5x + 5).", "chosen": "20x^2 + 25x + 5", "rejected": "I'm not sure."}
+{"id": "dpo-v1-algebra-0049", "instruction": "Factor x^2 - 6x - 16.", "chosen": "(x + 2)(x - 8)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-linear_equations-0000", "instruction": "Solve for x: 3x + 12 = 2x + 11.", "chosen": "x = -1", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0001", "instruction": "Solve for x: 2x - 6 = 4x - 4.", "chosen": "x = -1", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0002", "instruction": "Solve for x: 3x - 5 = 1x - 23.", "chosen": "x = -9", "rejected": "I'm not sure."}
+{"id": "dpo-v1-linear_equations-0003", "instruction": "Solve for x: 2x + 20 = 8x + 2.", "chosen": "x = 3", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0004", "instruction": "Solve for x: 7x - 5 = 8x - 7.", "chosen": "x = 2", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0005", "instruction": "Solve for x: 1x - 6 = 2x - 9.", "chosen": "x = 3", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0006", "instruction": "Solve for x: 9x + 15 = 8x + 6.", "chosen": "x = -9", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0007", "instruction": "Solve for x: 2x + 9 = 8x + 45.", "chosen": "x = -6", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0008", "instruction": "Solve for x: 8x + 15 = 9x + 12.", "chosen": "x = 3", "rejected": "I'm not sure."}
+{"id": "dpo-v1-linear_equations-0009", "instruction": "Solve for x: 3x - 4 = 8x - 24.", "chosen": "x = 4", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0010", "instruction": "Solve for x: 5x + 20 = 9x + 0.", "chosen": "x = 5", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0011", "instruction": "Solve for x: 5x - 2 = 8x + 22.", "chosen": "x = -8", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0012", "instruction": "Solve for x: 5x + 14 = 6x + 14.", "chosen": "x = 0", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0013", "instruction": "Solve for x: 3x - 11 = 4x - 13.", "chosen": "x = 2", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0014", "instruction": "Solve for x: 2x + 1 = 7x - 14.", "chosen": "x = 3", "rejected": "I'm not sure."}
+{"id": "dpo-v1-linear_equations-0015", "instruction": "Solve for x: 7x + 6 = 1x - 18.", "chosen": "x = -4", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-linear_equations-0016", "instruction": "Solve for x: 1x - 20 = 7x - 50.", "chosen": "x = 5", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0017", "instruction": "Solve for x: 5x + 14 = 7x + 8.", "chosen": "x = 3", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0018", "instruction": "Solve for x: 8x + 7 = 4x - 1.", "chosen": "x = -2", "rejected": "I'm not sure."}
+{"id": "dpo-v1-linear_equations-0019", "instruction": "Solve for x: 1x + 5 = 7x + 5.", "chosen": "x = 0", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0020", "instruction": "Solve for x: 8x + 14 = 3x + 59.", "chosen": "x = 9", "rejected": "I don't know."}
+{"id": "dpo-v1-linear_equations-0021", "instruction": "Solve for x: 7x + 7 = 1x - 41.", "chosen": "x = -8", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0022", "instruction": "Solve for x: 8x - 4 = 3x - 49.", "chosen": "x = -9", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-linear_equations-0023", "instruction": "Solve for x: 6x + 0 = 4x + 8.", "chosen": "x = 4", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0024", "instruction": "Solve for x: 7x - 4 = 5x + 2.", "chosen": "x = 3", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0025", "instruction": "Solve for x: 8x - 17 = 1x + 32.", "chosen": "x = 7", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0026", "instruction": "Solve for x: 4x - 18 = 2x + 2.", "chosen": "x = 10", "rejected": "I don't know."}
+{"id": "dpo-v1-linear_equations-0027", "instruction": "Solve for x: 4x - 11 = 1x + 16.", "chosen": "x = 9", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0028", "instruction": "Solve for x: 3x + 16 = 8x + 51.", "chosen": "x = -7", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0029", "instruction": "Solve for x: 8x - 10 = 5x - 7.", "chosen": "x = 1", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0030", "instruction": "Solve for x: 3x + 17 = 5x + 31.", "chosen": "x = -7", "rejected": "I don't know."}
+{"id": "dpo-v1-linear_equations-0031", "instruction": "Solve for x: 5x - 8 = 7x - 12.", "chosen": "x = 2", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0032", "instruction": "Solve for x: 4x + 18 = 2x + 16.", "chosen": "x = -1", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0033", "instruction": "Solve for x: 1x + 7 = 6x - 28.", "chosen": "x = 7", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0034", "instruction": "Solve for x: 2x + 1 = 9x - 69.", "chosen": "x = 10", "rejected": "I don't know."}
+{"id": "dpo-v1-linear_equations-0035", "instruction": "Solve for x: 7x + 7 = 8x + 14.", "chosen": "x = -7", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0036", "instruction": "Solve for x: 8x - 9 = 3x + 6.", "chosen": "x = 3", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-linear_equations-0037", "instruction": "Solve for x: 9x + 7 = 8x + 11.", "chosen": "x = 4", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-linear_equations-0038", "instruction": "Solve for x: 6x - 3 = 4x - 19.", "chosen": "x = -8", "rejected": "I'm not sure."}
+{"id": "dpo-v1-linear_equations-0039", "instruction": "Solve for x: 4x + 19 = 8x - 13.", "chosen": "x = 8", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-linear_equations-0040", "instruction": "Solve for x: 6x + 0 = 1x + 25.", "chosen": "x = 5", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0041", "instruction": "Solve for x: 8x - 4 = 4x + 0.", "chosen": "x = 1", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0042", "instruction": "Solve for x: 5x + 13 = 9x + 53.", "chosen": "x = -10", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0043", "instruction": "Solve for x: 2x + 11 = 4x + 5.", "chosen": "x = 3", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0044", "instruction": "Solve for x: 8x - 2 = 1x - 58.", "chosen": "x = -8", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0045", "instruction": "Solve for x: 7x + 17 = 4x + 14.", "chosen": "x = -1", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0046", "instruction": "Solve for x: 8x + 2 = 9x - 4.", "chosen": "x = 6", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-linear_equations-0047", "instruction": "Solve for x: 9x + 9 = 6x + 12.", "chosen": "x = 1", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-linear_equations-0048", "instruction": "Solve for x: 5x - 8 = 4x - 15.", "chosen": "x = -7", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0049", "instruction": "Solve for x: 2x - 8 = 9x + 27.", "chosen": "x = -5", "rejected": "42"}
+{"id": "dpo-v1-functions-0000", "instruction": "Given f(x) = 5x + 17 and g(x) = 5x + 0, compute f(g(6)).", "chosen": "167", "rejected": "168"}
+{"id": "dpo-v1-functions-0001", "instruction": "Evaluate f(x) = 5x - 6 at x = 1.", "chosen": "-1", "rejected": "-2"}
+{"id": "dpo-v1-functions-0002", "instruction": "Given f(x) = 1x + 14 and g(x) = 3x - 8, compute f(g(-6)).", "chosen": "-12", "rejected": "-11"}
+{"id": "dpo-v1-functions-0003", "instruction": "Given f(x) = 3x + 20 and g(x) = 1x - 9, compute f(g(5)).", "chosen": "8", "rejected": "24"}
+{"id": "dpo-v1-functions-0004", "instruction": "Given f(x) = 8x + 10 and g(x) = 3x - 4, compute f(g(4)).", "chosen": "74", "rejected": "75"}
+{"id": "dpo-v1-functions-0005", "instruction": "Given f(x) = 8x - 13 and g(x) = 4x + 6, compute f(g(-8)).", "chosen": "-221", "rejected": "-220"}
+{"id": "dpo-v1-functions-0006", "instruction": "Evaluate f(x) = 3x - 11 at x = 8.", "chosen": "13", "rejected": "-13"}
+{"id": "dpo-v1-functions-0007", "instruction": "Evaluate f(x) = 4x - 13 at x = 7.", "chosen": "15", "rejected": "30"}
+{"id": "dpo-v1-functions-0008", "instruction": "Evaluate f(x) = 9x + 4 at x = 4.", "chosen": "40", "rejected": "80"}
+{"id": "dpo-v1-functions-0009", "instruction": "Given f(x) = 7x - 1 and g(x) = 5x - 8, compute f(g(8)).", "chosen": "223", "rejected": "669"}
+{"id": "dpo-v1-functions-0010", "instruction": "Evaluate f(x) = 4x + 20 at x = -4.", "chosen": "4", "rejected": "-4"}
+{"id": "dpo-v1-functions-0011", "instruction": "Evaluate f(x) = 3x - 5 at x = -5.", "chosen": "-20", "rejected": "-60"}
+{"id": "dpo-v1-functions-0012", "instruction": "Evaluate f(x) = 3x - 20 at x = 3.", "chosen": "-11", "rejected": "-22"}
+{"id": "dpo-v1-functions-0013", "instruction": "Given f(x) = 5x - 18 and g(x) = 3x + 0, compute f(g(-3)).", "chosen": "-63", "rejected": "-126"}
+{"id": "dpo-v1-functions-0014", "instruction": "Evaluate f(x) = 4x - 4 at x = 10.", "chosen": "36", "rejected": "108"}
+{"id": "dpo-v1-functions-0015", "instruction": "Evaluate f(x) = 7x - 13 at x = 7.", "chosen": "36", "rejected": "35"}
+{"id": "dpo-v1-functions-0016", "instruction": "Evaluate f(x) = 5x - 11 at x = -8.", "chosen": "-51", "rejected": "-50"}
+{"id": "dpo-v1-functions-0017", "instruction": "Evaluate f(x) = 5x + 18 at x = 8.", "chosen": "58", "rejected": "-58"}
+{"id": "dpo-v1-functions-0018", "instruction": "Given f(x) = 2x + 9 and g(x) = 4x - 1, compute f(g(-1)).", "chosen": "-1", "rejected": "-3"}
+{"id": "dpo-v1-functions-0019", "instruction": "Given f(x) = 8x - 15 and g(x) = 1x + 4, compute f(g(9)).", "chosen": "89", "rejected": "-89"}
+{"id": "dpo-v1-functions-0020", "instruction": "Given f(x) = 1x - 15 and g(x) = 5x + 9, compute f(g(-3)).", "chosen": "-21", "rejected": "-20"}
+{"id": "dpo-v1-functions-0021", "instruction": "Given f(x) = 1x - 9 and g(x) = 5x + 5, compute f(g(5)).", "chosen": "21", "rejected": "-21"}
+{"id": "dpo-v1-functions-0022", "instruction": "Evaluate f(x) = 7x + 20 at x = 5.", "chosen": "55", "rejected": "56"}
+{"id": "dpo-v1-functions-0023", "instruction": "Given f(x) = 6x + 6 and g(x) = 3x - 6, compute f(g(0)).", "chosen": "-30", "rejected": "-31"}
+{"id": "dpo-v1-functions-0024", "instruction": "Given f(x) = 7x + 11 and g(x) = 4x + 8, compute f(g(-1)).", "chosen": "39", "rejected": "40"}
+{"id": "dpo-v1-functions-0025", "instruction": "Given f(x) = 2x + 0 and g(x) = 3x - 6, compute f(g(-2)).", "chosen": "-24", "rejected": "-48"}
+{"id": "dpo-v1-functions-0026", "instruction": "Evaluate f(x) = 9x + 9 at x = 3.", "chosen": "36", "rejected": "37"}
+{"id": "dpo-v1-functions-0027", "instruction": "Evaluate f(x) = 9x + 3 at x = 9.", "chosen": "84", "rejected": "168"}
+{"id": "dpo-v1-functions-0028", "instruction": "Given f(x) = 1x - 7 and g(x) = 5x - 5, compute f(g(-2)).", "chosen": "-22", "rejected": "22"}
+{"id": "dpo-v1-functions-0029", "instruction": "Given f(x) = 8x - 13 and g(x) = 5x - 2, compute f(g(-10)).", "chosen": "-429", "rejected": "-430"}
+{"id": "dpo-v1-functions-0030", "instruction": "Given f(x) = 9x - 20 and g(x) = 4x - 7, compute f(g(7)).", "chosen": "169", "rejected": "168"}
+{"id": "dpo-v1-functions-0031", "instruction": "Evaluate f(x) = 8x - 13 at x = 10.", "chosen": "67", "rejected": "66"}
+{"id": "dpo-v1-functions-0032", "instruction": "Given f(x) = 5x + 12 and g(x) = 4x + 6, compute f(g(-2)).", "chosen": "2", "rejected": "4"}
+{"id": "dpo-v1-functions-0033", "instruction": "Evaluate f(x) = 8x + 15 at x = -6.", "chosen": "-33", "rejected": "-66"}
+{"id": "dpo-v1-functions-0034", "instruction": "Evaluate f(x) = 9x - 12 at x = -8.", "chosen": "-84", "rejected": "84"}
+{"id": "dpo-v1-functions-0035", "instruction": "Given f(x) = 6x + 12 and g(x) = 1x + 0, compute f(g(-2)).", "chosen": "0", "rejected": "-1"}
+{"id": "dpo-v1-functions-0036", "instruction": "Given f(x) = 9x + 10 and g(x) = 3x + 8, compute f(g(1)).", "chosen": "109", "rejected": "327"}
+{"id": "dpo-v1-functions-0037", "instruction": "Given f(x) = 8x + 0 and g(x) = 2x + 9, compute f(g(-4)).", "chosen": "8", "rejected": "16"}
+{"id": "dpo-v1-functions-0038", "instruction": "Evaluate f(x) = 7x - 18 at x = 0.", "chosen": "-18", "rejected": "-9"}
+{"id": "dpo-v1-functions-0039", "instruction": "Given f(x) = 7x + 4 and g(x) = 2x + 6, compute f(g(10)).", "chosen": "186", "rejected": "187"}
+{"id": "dpo-v1-functions-0040", "instruction": "Evaluate f(x) = 9x + 17 at x = 0.", "chosen": "17", "rejected": "18"}
+{"id": "dpo-v1-functions-0041", "instruction": "Given f(x) = 2x + 13 and g(x) = 1x - 5, compute f(g(4)).", "chosen": "11", "rejected": "22"}
+{"id": "dpo-v1-functions-0042", "instruction": "Evaluate f(x) = 2x + 10 at x = -2.", "chosen": "6", "rejected": "-6"}
+{"id": "dpo-v1-functions-0043", "instruction": "Given f(x) = 2x + 1 and g(x) = 4x + 1, compute f(g(7)).", "chosen": "59", "rejected": "118"}
+{"id": "dpo-v1-functions-0044", "instruction": "Evaluate f(x) = 2x - 5 at x = 10.", "chosen": "15", "rejected": "-15"}
+{"id": "dpo-v1-functions-0045", "instruction": "Evaluate f(x) = 2x + 7 at x = -7.", "chosen": "-7", "rejected": "-6"}
+{"id": "dpo-v1-functions-0046", "instruction": "Given f(x) = 3x - 1 and g(x) = 1x + 1, compute f(g(-10)).", "chosen": "-28", "rejected": "-27"}
+{"id": "dpo-v1-functions-0047", "instruction": "Given f(x) = 6x + 3 and g(x) = 2x - 2, compute f(g(3)).", "chosen": "27", "rejected": "81"}
+{"id": "dpo-v1-functions-0048", "instruction": "Given f(x) = 3x - 10 and g(x) = 1x + 3, compute f(g(-5)).", "chosen": "-16", "rejected": "-48"}
+{"id": "dpo-v1-functions-0049", "instruction": "Evaluate f(x) = 8x + 17 at x = -6.", "chosen": "-31", "rejected": "-32"}
+{"id": "dpo-v1-differentiation-0000", "instruction": "Find the derivative of f(x) = 5x^3 - 1x^2 + 2x - 1.", "chosen": "f'(x) = 15x^2 - 2x + 2", "rejected": "I don't know."}
+{"id": "dpo-v1-differentiation-0001", "instruction": "Find the derivative of f(x) = -1x^3 + 5x^2 + 3x - 3.", "chosen": "f'(x) = -3x^2 + 10x + 3", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0002", "instruction": "Find the derivative of f(x) = x^3 + 4x^2 - 1x + 5.", "chosen": "f'(x) = 3x^2 + 8x - 1", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0003", "instruction": "Find the derivative of f(x) = -1x^3 - 2x^2 + x + 2.", "chosen": "f'(x) = -3x^2 - 4x + 1", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0004", "instruction": "Find the derivative of f(x) = 4x^4.", "chosen": "f'(x) = 16x^3", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-differentiation-0005", "instruction": "Find the derivative of f(x) = 3*sin(3x).", "chosen": "f'(x) = 9*cos(3x)", "rejected": "I don't know."}
+{"id": "dpo-v1-differentiation-0006", "instruction": "Find the derivative of f(x) = 4*sin(3x).", "chosen": "f'(x) = 12*cos(3x)", "rejected": "I don't know."}
+{"id": "dpo-v1-differentiation-0007", "instruction": "Find the derivative of f(x) = 1*sin(4x).", "chosen": "f'(x) = 4*cos(4x)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0008", "instruction": "Find the derivative of f(x) = 5x^3.", "chosen": "f'(x) = 15x^2", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0009", "instruction": "Find the derivative of f(x) = 2*sin(3x).", "chosen": "f'(x) = 6*cos(3x)", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0010", "instruction": "Find the derivative of f(x) = 1*sin(1x).", "chosen": "f'(x) = 1*cos(1x)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0011", "instruction": "Find the derivative of f(x) = -5x^3 + 4x^2 - 4x - 3.", "chosen": "f'(x) = -15x^2 + 8x - 4", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0012", "instruction": "Find the derivative of f(x) = x^3 - 3x^2 - 2x - 3.", "chosen": "f'(x) = 3x^2 - 6x - 2", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-differentiation-0013", "instruction": "Find the derivative of f(x) = 5*sin(3x).", "chosen": "f'(x) = 15*cos(3x)", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0014", "instruction": "Find the derivative of f(x) = 2x^3 - 1x^2 + 2x - 4.", "chosen": "f'(x) = 6x^2 - 2x + 2", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0015", "instruction": "Find the derivative of f(x) = 2x^4.", "chosen": "f'(x) = 8x^3", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0016", "instruction": "Find the derivative of f(x) = 3*sin(1x).", "chosen": "f'(x) = 3*cos(1x)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0017", "instruction": "Find the derivative of f(x) = 3x^4.", "chosen": "f'(x) = 12x^3", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0018", "instruction": "Find the derivative of f(x) = 4x^3 + 5x^2 + 5x - 1.", "chosen": "f'(x) = 12x^2 + 10x + 5", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0019", "instruction": "Find the derivative of f(x) = 3*sin(1x).", "chosen": "f'(x) = 3*cos(1x)", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0020", "instruction": "Find the derivative of f(x) = -5x^3 + 4x^2 + 3x.", "chosen": "f'(x) = -15x^2 + 8x + 3", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0021", "instruction": "Find the derivative of f(x) = 1*sin(4x).", "chosen": "f'(x) = 4*cos(4x)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0022", "instruction": "Find the derivative of f(x) = 4*sin(1x).", "chosen": "f'(x) = 4*cos(1x)", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0023", "instruction": "Find the derivative of f(x) = 1x^3.", "chosen": "f'(x) = 3x^2", "rejected": "I'm not sure."}
+{"id": "dpo-v1-differentiation-0024", "instruction": "Find the derivative of f(x) = 1x^2.", "chosen": "f'(x) = 2x^1", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0025", "instruction": "Find the derivative of f(x) = 2x^3 + 5x + 3.", "chosen": "f'(x) = 6x^2 + 5", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0026", "instruction": "Find the derivative of f(x) = 2*sin(4x).", "chosen": "f'(x) = 8*cos(4x)", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0027", "instruction": "Find the derivative of f(x) = 4x^3 + x^2 - 1x - 5.", "chosen": "f'(x) = 12x^2 + 2x - 1", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-differentiation-0028", "instruction": "Find the derivative of f(x) = 4x^3.", "chosen": "f'(x) = 12x^2", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0029", "instruction": "Find the derivative of f(x) = -4x^3 + 5x^2 + 5x + 3.", "chosen": "f'(x) = -12x^2 + 10x + 5", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-differentiation-0030", "instruction": "Find the derivative of f(x) = 4x^3.", "chosen": "f'(x) = 12x^2", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0031", "instruction": "Find the derivative of f(x) = 4x^2.", "chosen": "f'(x) = 8x^1", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0032", "instruction": "Find the derivative of f(x) = 5*sin(1x).", "chosen": "f'(x) = 5*cos(1x)", "rejected": "I don't know."}
+{"id": "dpo-v1-differentiation-0033", "instruction": "Find the derivative of f(x) = -2x^3 - 3x^2 + 4x - 2.", "chosen": "f'(x) = -6x^2 - 6x + 4", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0034", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "chosen": "f'(x) = 4*cos(2x)", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0035", "instruction": "Find the derivative of f(x) = -3x^3 + 4x^2 - 5x - 1.", "chosen": "f'(x) = -9x^2 + 8x - 5", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0036", "instruction": "Find the derivative of f(x) = 5x^3.", "chosen": "f'(x) = 15x^2", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0037", "instruction": "Find the derivative of f(x) = 6x^2.", "chosen": "f'(x) = 12x^1", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0038", "instruction": "Find the derivative of f(x) = 3x^2.", "chosen": "f'(x) = 6x^1", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-differentiation-0039", "instruction": "Find the derivative of f(x) = 2x^3.", "chosen": "f'(x) = 6x^2", "rejected": "I don't know."}
+{"id": "dpo-v1-differentiation-0040", "instruction": "Find the derivative of f(x) = 6x^3.", "chosen": "f'(x) = 18x^2", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0041", "instruction": "Find the derivative of f(x) = 1*sin(4x).", "chosen": "f'(x) = 4*cos(4x)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-differentiation-0042", "instruction": "Find the derivative of f(x) = 3x^3 + 4x^2 - 4x + 2.", "chosen": "f'(x) = 9x^2 + 8x - 4", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0043", "instruction": "Find the derivative of f(x) = 1*sin(3x).", "chosen": "f'(x) = 3*cos(3x)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-differentiation-0044", "instruction": "Find the derivative of f(x) = 1*sin(1x).", "chosen": "f'(x) = 1*cos(1x)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-differentiation-0045", "instruction": "Find the derivative of f(x) = x^3 + 5x^2 - 4x + 2.", "chosen": "f'(x) = 3x^2 + 10x - 4", "rejected": "I'm not sure."}
+{"id": "dpo-v1-differentiation-0046", "instruction": "Find the derivative of f(x) = 1x^3.", "chosen": "f'(x) = 3x^2", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0047", "instruction": "Find the derivative of f(x) = 2x^3.", "chosen": "f'(x) = 6x^2", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-differentiation-0048", "instruction": "Find the derivative of f(x) = 4x^3 + 3x^2 - 1x + 2.", "chosen": "f'(x) = 12x^2 + 6x - 1", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0049", "instruction": "Find the derivative of f(x) = 6x^2.", "chosen": "f'(x) = 12x^1", "rejected": "42"}
+{"id": "dpo-v1-integration-0000", "instruction": "Evaluate the definite integral ∫ from 2 to 3 of 4x^2 dx.", "chosen": "76/3", "rejected": "3/76"}
+{"id": "dpo-v1-integration-0001", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 1x^2 dx.", "chosen": "37/3", "rejected": "3/37"}
+{"id": "dpo-v1-integration-0002", "instruction": "Evaluate the definite integral ∫ from 2 to 6 of 3x^2 dx.", "chosen": "208", "rejected": "-208"}
+{"id": "dpo-v1-integration-0003", "instruction": "Evaluate the indefinite integral ∫ 6x^4 dx.", "chosen": "6/5x^5 + C", "rejected": "0"}
+{"id": "dpo-v1-integration-0004", "instruction": "Evaluate the indefinite integral ∫ 1x^1 dx.", "chosen": "1/2x^2 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0005", "instruction": "Evaluate the indefinite integral ∫ 6x^3 dx.", "chosen": "3/2x^4 + C", "rejected": "1"}
+{"id": "dpo-v1-integration-0006", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 + 4x + 4) dx.", "chosen": "-4/3x^3 + 2x^2 + 4 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-integration-0007", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 + 2x + 1) dx.", "chosen": "-1x^3 + 1x^2 + 1 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0008", "instruction": "Evaluate the indefinite integral ∫ (-4x^2) dx.", "chosen": "-4/3x^3 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-integration-0009", "instruction": "Evaluate the indefinite integral ∫ 5x^2 dx.", "chosen": "5/3x^3 + C", "rejected": "1"}
+{"id": "dpo-v1-integration-0010", "instruction": "Evaluate the indefinite integral ∫ (3x^2 - 1x - 3) dx.", "chosen": "1x^3 - 1/2x^2 - 3 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-integration-0011", "instruction": "Evaluate the indefinite integral ∫ (x^2 - 3x) dx.", "chosen": "1/3x^3 - 3/2x^2 + C", "rejected": "42"}
+{"id": "dpo-v1-integration-0012", "instruction": "Evaluate the definite integral ∫ from 4 to 5 of 1x^2 dx.", "chosen": "61/3", "rejected": "3/61"}
+{"id": "dpo-v1-integration-0013", "instruction": "Evaluate the indefinite integral ∫ 2x^3 dx.", "chosen": "1/2x^4 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-integration-0014", "instruction": "Evaluate the definite integral ∫ from 1 to 2 of 2x^2 dx.", "chosen": "14/3", "rejected": "7/2"}
+{"id": "dpo-v1-integration-0015", "instruction": "Evaluate the indefinite integral ∫ (2x^2 - 3x - 2) dx.", "chosen": "2/3x^3 - 3/2x^2 - 2 + C", "rejected": "I don't know."}
+{"id": "dpo-v1-integration-0016", "instruction": "Evaluate the indefinite integral ∫ 6x^2 dx.", "chosen": "2x^3 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0017", "instruction": "Evaluate the definite integral ∫ from 3 to 3 of 2x^2 dx.", "chosen": "0", "rejected": "1"}
+{"id": "dpo-v1-integration-0018", "instruction": "Evaluate the indefinite integral ∫ 2x^2 dx.", "chosen": "2/3x^3 + C", "rejected": "I don't know."}
+{"id": "dpo-v1-integration-0019", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 + 3) dx.", "chosen": "-1x^3 + 3 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0020", "instruction": "Evaluate the definite integral ∫ from 4 to 4 of 4x^2 dx.", "chosen": "0", "rejected": "-1"}
+{"id": "dpo-v1-integration-0021", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 + x + 2) dx.", "chosen": "-1x^3 + 1/2x^2 + 2 + C", "rejected": "0"}
+{"id": "dpo-v1-integration-0022", "instruction": "Evaluate the definite integral ∫ from 4 to 4 of 3x^2 dx.", "chosen": "0", "rejected": "1"}
+{"id": "dpo-v1-integration-0023", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "chosen": "2x^2 + C", "rejected": "I don't know."}
+{"id": "dpo-v1-integration-0024", "instruction": "Evaluate the indefinite integral ∫ 3x^2 dx.", "chosen": "1x^3 + C", "rejected": "1"}
+{"id": "dpo-v1-integration-0025", "instruction": "Evaluate the definite integral ∫ from 2 to 3 of 1x^2 dx.", "chosen": "19/3", "rejected": "20/3"}
+{"id": "dpo-v1-integration-0026", "instruction": "Evaluate the definite integral ∫ from 2 to 3 of 2x^2 dx.", "chosen": "38/3", "rejected": "39/4"}
+{"id": "dpo-v1-integration-0027", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 + 4x + 4) dx.", "chosen": "-1/3x^3 + 2x^2 + 4 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-integration-0028", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "chosen": "2x^2 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0029", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "chosen": "2x^2 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-integration-0030", "instruction": "Evaluate the indefinite integral ∫ (2x^2 + 2x + 2) dx.", "chosen": "2/3x^3 + 1x^2 + 2 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-integration-0031", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "chosen": "2x^2 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-integration-0032", "instruction": "Evaluate the indefinite integral ∫ 5x^4 dx.", "chosen": "1x^5 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-integration-0033", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "chosen": "2x^2 + C", "rejected": "42"}
+{"id": "dpo-v1-integration-0034", "instruction": "Evaluate the definite integral ∫ from 4 to 4 of 1x^2 dx.", "chosen": "0", "rejected": "-1"}
+{"id": "dpo-v1-integration-0035", "instruction": "Evaluate the definite integral ∫ from 1 to 1 of 1x^2 dx.", "chosen": "0", "rejected": "-1"}
+{"id": "dpo-v1-integration-0036", "instruction": "Evaluate the definite integral ∫ from 2 to 6 of 2x^2 dx.", "chosen": "416/3", "rejected": "104"}
+{"id": "dpo-v1-integration-0037", "instruction": "Evaluate the indefinite integral ∫ 2x^3 dx.", "chosen": "1/2x^4 + C", "rejected": "42"}
+{"id": "dpo-v1-integration-0038", "instruction": "Evaluate the indefinite integral ∫ 5x^2 dx.", "chosen": "5/3x^3 + C", "rejected": "0"}
+{"id": "dpo-v1-integration-0039", "instruction": "Evaluate the indefinite integral ∫ 6x^4 dx.", "chosen": "6/5x^5 + C", "rejected": "I'm not sure."}
+{"id": "dpo-v1-integration-0040", "instruction": "Evaluate the indefinite integral ∫ (3x^2 + x + 1) dx.", "chosen": "1x^3 + 1/2x^2 + 1 + C", "rejected": "1"}
+{"id": "dpo-v1-integration-0041", "instruction": "Evaluate the definite integral ∫ from 0 to 4 of 4x^2 dx.", "chosen": "256/3", "rejected": "3/256"}
+{"id": "dpo-v1-integration-0042", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 3x^2 dx.", "chosen": "63", "rejected": "189"}
+{"id": "dpo-v1-integration-0043", "instruction": "Evaluate the indefinite integral ∫ 3x^4 dx.", "chosen": "3/5x^5 + C", "rejected": "I'm not sure."}
+{"id": "dpo-v1-integration-0044", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "chosen": "1/4x^4 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-integration-0045", "instruction": "Evaluate the indefinite integral ∫ 6x^1 dx.", "chosen": "3x^2 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0046", "instruction": "Evaluate the definite integral ∫ from 4 to 5 of 1x^2 dx.", "chosen": "61/3", "rejected": "31/2"}
+{"id": "dpo-v1-integration-0047", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 + x + 3) dx.", "chosen": "-1/3x^3 + 1/2x^2 + 3 + C", "rejected": "1"}
+{"id": "dpo-v1-integration-0048", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "chosen": "2x^2 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-integration-0049", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 + 4x - 2) dx.", "chosen": "-1x^3 + 2x^2 - 2 + C", "rejected": "I don't know."}
+{"id": "dpo-v1-geometry-0000", "instruction": "A rectangle has width 13 and height 9.  Find its area and perimeter.", "chosen": "area = 117, perimeter = 44", "rejected": "I'm not sure."}
+{"id": "dpo-v1-geometry-0001", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 81π, circumference = 18π", "rejected": "1"}
+{"id": "dpo-v1-geometry-0002", "instruction": "A triangle has base 7 and height 6.  Find its area.", "chosen": "21", "rejected": "42"}
+{"id": "dpo-v1-geometry-0003", "instruction": "A triangle has base 14 and height 7.  Find its area.", "chosen": "49", "rejected": "147"}
+{"id": "dpo-v1-geometry-0004", "instruction": "A rectangle has width 14 and height 12.  Find its area and perimeter.", "chosen": "area = 168, perimeter = 52", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-geometry-0005", "instruction": "A rectangle has width 7 and height 3.  Find its area and perimeter.", "chosen": "area = 21, perimeter = 20", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-geometry-0006", "instruction": "A triangle has base 6 and height 13.  Find its area.", "chosen": "39", "rejected": "117"}
+{"id": "dpo-v1-geometry-0007", "instruction": "A rectangle has width 7 and height 3.  Find its area and perimeter.", "chosen": "area = 21, perimeter = 20", "rejected": "1"}
+{"id": "dpo-v1-geometry-0008", "instruction": "A triangle has base 6 and height 12.  Find its area.", "chosen": "36", "rejected": "18"}
+{"id": "dpo-v1-geometry-0009", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 49π, circumference = 14π", "rejected": "1"}
+{"id": "dpo-v1-geometry-0010", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 4π, circumference = 4π", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-geometry-0011", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 49π, circumference = 14π", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-geometry-0012", "instruction": "A rectangle has width 12 and height 13.  Find its area and perimeter.", "chosen": "area = 156, perimeter = 50", "rejected": "0"}
+{"id": "dpo-v1-geometry-0013", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 49π, circumference = 14π", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-geometry-0014", "instruction": "A rectangle has width 7 and height 6.  Find its area and perimeter.", "chosen": "area = 42, perimeter = 26", "rejected": "1"}
+{"id": "dpo-v1-geometry-0015", "instruction": "A rectangle has width 7 and height 14.  Find its area and perimeter.", "chosen": "area = 98, perimeter = 42", "rejected": "I'm not sure."}
+{"id": "dpo-v1-geometry-0016", "instruction": "A rectangle has width 5 and height 4.  Find its area and perimeter.", "chosen": "area = 20, perimeter = 18", "rejected": "1"}
+{"id": "dpo-v1-geometry-0017", "instruction": "A rectangle has width 6 and height 15.  Find its area and perimeter.", "chosen": "area = 90, perimeter = 42", "rejected": "0"}
+{"id": "dpo-v1-geometry-0018", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 81π, circumference = 18π", "rejected": "I don't know."}
+{"id": "dpo-v1-geometry-0019", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 36π, circumference = 12π", "rejected": "1"}
+{"id": "dpo-v1-geometry-0020", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 49π, circumference = 14π", "rejected": "1"}
+{"id": "dpo-v1-geometry-0021", "instruction": "A rectangle has width 4 and height 15.  Find its area and perimeter.", "chosen": "area = 60, perimeter = 38", "rejected": "1"}
+{"id": "dpo-v1-geometry-0022", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 64π, circumference = 16π", "rejected": "I don't know."}
+{"id": "dpo-v1-geometry-0023", "instruction": "A triangle has base 7 and height 12.  Find its area.", "chosen": "42", "rejected": "21"}
+{"id": "dpo-v1-geometry-0024", "instruction": "A rectangle has width 9 and height 11.  Find its area and perimeter.", "chosen": "area = 99, perimeter = 40", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-geometry-0025", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 64π, circumference = 16π", "rejected": "42"}
+{"id": "dpo-v1-geometry-0026", "instruction": "A circle has radius 4.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 16π, circumference = 8π", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-geometry-0027", "instruction": "A triangle has base 5 and height 12.  Find its area.", "chosen": "30", "rejected": "90"}
+{"id": "dpo-v1-geometry-0028", "instruction": "A triangle has base 9 and height 14.  Find its area.", "chosen": "63", "rejected": "-63"}
+{"id": "dpo-v1-geometry-0029", "instruction": "A triangle has base 10 and height 10.  Find its area.", "chosen": "50", "rejected": "100"}
+{"id": "dpo-v1-geometry-0030", "instruction": "A rectangle has width 15 and height 5.  Find its area and perimeter.", "chosen": "area = 75, perimeter = 40", "rejected": "1"}
+{"id": "dpo-v1-geometry-0031", "instruction": "A triangle has base 2 and height 12.  Find its area.", "chosen": "12", "rejected": "24"}
+{"id": "dpo-v1-geometry-0032", "instruction": "A triangle has base 10 and height 3.  Find its area.", "chosen": "15", "rejected": "45"}
+{"id": "dpo-v1-geometry-0033", "instruction": "A rectangle has width 6 and height 3.  Find its area and perimeter.", "chosen": "area = 18, perimeter = 18", "rejected": "1"}
+{"id": "dpo-v1-geometry-0034", "instruction": "A triangle has base 9 and height 10.  Find its area.", "chosen": "45", "rejected": "44"}
+{"id": "dpo-v1-geometry-0035", "instruction": "A triangle has base 3 and height 2.  Find its area.", "chosen": "3", "rejected": "6"}
+{"id": "dpo-v1-geometry-0036", "instruction": "A rectangle has width 8 and height 10.  Find its area and perimeter.", "chosen": "area = 80, perimeter = 36", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-geometry-0037", "instruction": "A rectangle has width 8 and height 3.  Find its area and perimeter.", "chosen": "area = 24, perimeter = 22", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-geometry-0038", "instruction": "A rectangle has width 2 and height 7.  Find its area and perimeter.", "chosen": "area = 14, perimeter = 18", "rejected": "0"}
+{"id": "dpo-v1-geometry-0039", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 36π, circumference = 12π", "rejected": "1"}
+{"id": "dpo-v1-geometry-0040", "instruction": "A rectangle has width 2 and height 6.  Find its area and perimeter.", "chosen": "area = 12, perimeter = 16", "rejected": "I'm not sure."}
+{"id": "dpo-v1-geometry-0041", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 9π, circumference = 6π", "rejected": "I'm not sure."}
+{"id": "dpo-v1-geometry-0042", "instruction": "A triangle has base 11 and height 2.  Find its area.", "chosen": "11", "rejected": "12"}
+{"id": "dpo-v1-geometry-0043", "instruction": "A rectangle has width 6 and height 5.  Find its area and perimeter.", "chosen": "area = 30, perimeter = 22", "rejected": "1"}
+{"id": "dpo-v1-geometry-0044", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 81π, circumference = 18π", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-geometry-0045", "instruction": "A rectangle has width 14 and height 6.  Find its area and perimeter.", "chosen": "area = 84, perimeter = 40", "rejected": "42"}
+{"id": "dpo-v1-geometry-0046", "instruction": "A triangle has base 3 and height 2.  Find its area.", "chosen": "3", "rejected": "2"}
+{"id": "dpo-v1-geometry-0047", "instruction": "A triangle has base 12 and height 14.  Find its area.", "chosen": "84", "rejected": "252"}
+{"id": "dpo-v1-geometry-0048", "instruction": "A triangle has base 3 and height 10.  Find its area.", "chosen": "15", "rejected": "16"}
+{"id": "dpo-v1-geometry-0049", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 81π, circumference = 18π", "rejected": "42"}
+{"id": "dpo-v1-probability-0000", "instruction": "From 4 distinct items, how many subsets of size 2 exist?", "chosen": "6", "rejected": "12"}
+{"id": "dpo-v1-probability-0001", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-probability-0002", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-probability-0003", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-probability-0004", "instruction": "From 7 distinct items, how many subsets of size 1 exist?", "chosen": "7", "rejected": "21"}
+{"id": "dpo-v1-probability-0005", "instruction": "From 10 distinct items, how many subsets of size 1 exist?", "chosen": "10", "rejected": "20"}
+{"id": "dpo-v1-probability-0006", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "2/3"}
+{"id": "dpo-v1-probability-0007", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "1/2"}
+{"id": "dpo-v1-probability-0008", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "2"}
+{"id": "dpo-v1-probability-0009", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-probability-0010", "instruction": "From 7 distinct items, how many subsets of size 1 exist?", "chosen": "7", "rejected": "8"}
+{"id": "dpo-v1-probability-0011", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "8"}
+{"id": "dpo-v1-probability-0012", "instruction": "From 4 distinct items, how many subsets of size 2 exist?", "chosen": "6", "rejected": "3"}
+{"id": "dpo-v1-probability-0013", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "1/9"}
+{"id": "dpo-v1-probability-0014", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-probability-0015", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-v1-probability-0016", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-probability-0017", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "2/5"}
+{"id": "dpo-v1-probability-0018", "instruction": "From 9 distinct items, how many subsets of size 2 exist?", "chosen": "36", "rejected": "37"}
+{"id": "dpo-v1-probability-0019", "instruction": "From 5 distinct items, how many subsets of size 2 exist?", "chosen": "10", "rejected": "-10"}
+{"id": "dpo-v1-probability-0020", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-probability-0021", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "2"}
+{"id": "dpo-v1-probability-0022", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "2/5"}
+{"id": "dpo-v1-probability-0023", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "1/5"}
+{"id": "dpo-v1-probability-0024", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "2/9"}
+{"id": "dpo-v1-probability-0025", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "8"}
+{"id": "dpo-v1-probability-0026", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-probability-0027", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-v1-probability-0028", "instruction": "From 6 distinct items, how many subsets of size 2 exist?", "chosen": "15", "rejected": "16"}
+{"id": "dpo-v1-probability-0029", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-probability-0030", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "2/5"}
+{"id": "dpo-v1-probability-0031", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-probability-0032", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "1/2"}
+{"id": "dpo-v1-probability-0033", "instruction": "From 7 distinct items, how many subsets of size 2 exist?", "chosen": "21", "rejected": "-21"}
+{"id": "dpo-v1-probability-0034", "instruction": "From 2 distinct items, how many subsets of size 1 exist?", "chosen": "2", "rejected": "1"}
+{"id": "dpo-v1-probability-0035", "instruction": "From 8 distinct items, how many subsets of size 2 exist?", "chosen": "28", "rejected": "84"}
+{"id": "dpo-v1-probability-0036", "instruction": "From 4 distinct items, how many subsets of size 1 exist?", "chosen": "4", "rejected": "3"}
+{"id": "dpo-v1-probability-0037", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "chosen": "9", "rejected": "8"}
+{"id": "dpo-v1-probability-0038", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-probability-0039", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "1/2"}
+{"id": "dpo-v1-probability-0040", "instruction": "From 4 distinct items, how many subsets of size 2 exist?", "chosen": "6", "rejected": "-6"}
+{"id": "dpo-v1-probability-0041", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "1/2"}
+{"id": "dpo-v1-probability-0042", "instruction": "From 4 distinct items, how many subsets of size 2 exist?", "chosen": "6", "rejected": "12"}
+{"id": "dpo-v1-probability-0043", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "8"}
+{"id": "dpo-v1-probability-0044", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-probability-0045", "instruction": "From 4 distinct items, how many subsets of size 2 exist?", "chosen": "6", "rejected": "18"}
+{"id": "dpo-v1-probability-0046", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "1/4"}
+{"id": "dpo-v1-probability-0047", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "2/5"}
+{"id": "dpo-v1-probability-0048", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-probability-0049", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "chosen": "9", "rejected": "10"}
+{"id": "dpo-v1-number_theory-0000", "instruction": "Find lcm(21, 69).", "chosen": "483", "rejected": "482"}
+{"id": "dpo-v1-number_theory-0001", "instruction": "Is 23 a prime number?", "chosen": "yes", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-number_theory-0002", "instruction": "Compute 20 mod 13.", "chosen": "7", "rejected": "-7"}
+{"id": "dpo-v1-number_theory-0003", "instruction": "Compute 32 mod 7.", "chosen": "4", "rejected": "-4"}
+{"id": "dpo-v1-number_theory-0004", "instruction": "Find lcm(27, 37).", "chosen": "999", "rejected": "998"}
+{"id": "dpo-v1-number_theory-0005", "instruction": "Find lcm(75, 15).", "chosen": "75", "rejected": "-75"}
+{"id": "dpo-v1-number_theory-0006", "instruction": "Compute 71 mod 7.", "chosen": "1", "rejected": "3"}
+{"id": "dpo-v1-number_theory-0007", "instruction": "Find gcd(20, 51).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-number_theory-0008", "instruction": "Is 79 a prime number?", "chosen": "yes", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-number_theory-0009", "instruction": "Find gcd(28, 52).", "chosen": "4", "rejected": "2"}
+{"id": "dpo-v1-number_theory-0010", "instruction": "Find gcd(69, 71).", "chosen": "1", "rejected": "3"}
+{"id": "dpo-v1-number_theory-0011", "instruction": "Compute 28 mod 15.", "chosen": "13", "rejected": "39"}
+{"id": "dpo-v1-number_theory-0012", "instruction": "Find lcm(28, 67).", "chosen": "1876", "rejected": "5628"}
+{"id": "dpo-v1-number_theory-0013", "instruction": "Find gcd(27, 78).", "chosen": "3", "rejected": "2"}
+{"id": "dpo-v1-number_theory-0014", "instruction": "Compute 33 mod 10.", "chosen": "3", "rejected": "2"}
+{"id": "dpo-v1-number_theory-0015", "instruction": "Compute 78 mod 6.", "chosen": "0", "rejected": "-1"}
+{"id": "dpo-v1-number_theory-0016", "instruction": "Compute 28 mod 9.", "chosen": "1", "rejected": "3"}
+{"id": "dpo-v1-number_theory-0017", "instruction": "Find gcd(76, 94).", "chosen": "2", "rejected": "1"}
+{"id": "dpo-v1-number_theory-0018", "instruction": "Find lcm(33, 96).", "chosen": "1056", "rejected": "3168"}
+{"id": "dpo-v1-number_theory-0019", "instruction": "Compute 84 mod 5.", "chosen": "4", "rejected": "5"}
+{"id": "dpo-v1-number_theory-0020", "instruction": "Find gcd(94, 85).", "chosen": "1", "rejected": "-1"}
+{"id": "dpo-v1-number_theory-0021", "instruction": "Find lcm(85, 65).", "chosen": "1105", "rejected": "3315"}
+{"id": "dpo-v1-number_theory-0022", "instruction": "Find gcd(75, 92).", "chosen": "1", "rejected": "3"}
+{"id": "dpo-v1-number_theory-0023", "instruction": "Compute 94 mod 12.", "chosen": "10", "rejected": "9"}
+{"id": "dpo-v1-number_theory-0024", "instruction": "Is 50 a prime number?", "chosen": "no", "rejected": "0"}
+{"id": "dpo-v1-number_theory-0025", "instruction": "Find gcd(32, 68).", "chosen": "4", "rejected": "8"}
+{"id": "dpo-v1-number_theory-0026", "instruction": "Is 71 a prime number?", "chosen": "yes", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-number_theory-0027", "instruction": "Find lcm(52, 52).", "chosen": "52", "rejected": "26"}
+{"id": "dpo-v1-number_theory-0028", "instruction": "Compute 63 mod 10.", "chosen": "3", "rejected": "9"}
+{"id": "dpo-v1-number_theory-0029", "instruction": "Find gcd(52, 42).", "chosen": "2", "rejected": "4"}
+{"id": "dpo-v1-number_theory-0030", "instruction": "Find gcd(46, 69).", "chosen": "23", "rejected": "22"}
+{"id": "dpo-v1-number_theory-0031", "instruction": "Find lcm(24, 18).", "chosen": "72", "rejected": "-72"}
+{"id": "dpo-v1-number_theory-0032", "instruction": "Is 90 a prime number?", "chosen": "no", "rejected": "42"}
+{"id": "dpo-v1-number_theory-0033", "instruction": "Find lcm(53, 85).", "chosen": "4505", "rejected": "-4505"}
+{"id": "dpo-v1-number_theory-0034", "instruction": "Find lcm(32, 75).", "chosen": "2400", "rejected": "7200"}
+{"id": "dpo-v1-number_theory-0035", "instruction": "Is 75 a prime number?", "chosen": "no", "rejected": "I'm not sure."}
+{"id": "dpo-v1-number_theory-0036", "instruction": "Find gcd(23, 62).", "chosen": "1", "rejected": "3"}
+{"id": "dpo-v1-number_theory-0037", "instruction": "Is 42 a prime number?", "chosen": "no", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-number_theory-0038", "instruction": "Find gcd(18, 48).", "chosen": "6", "rejected": "12"}
+{"id": "dpo-v1-number_theory-0039", "instruction": "Is 48 a prime number?", "chosen": "no", "rejected": "I don't know."}
+{"id": "dpo-v1-number_theory-0040", "instruction": "Find gcd(67, 29).", "chosen": "1", "rejected": "-1"}
+{"id": "dpo-v1-number_theory-0041", "instruction": "Compute 63 mod 5.", "chosen": "3", "rejected": "6"}
+{"id": "dpo-v1-number_theory-0042", "instruction": "Find gcd(84, 83).", "chosen": "1", "rejected": "0"}
+{"id": "dpo-v1-number_theory-0043", "instruction": "Compute 82 mod 6.", "chosen": "4", "rejected": "8"}
+{"id": "dpo-v1-number_theory-0044", "instruction": "Is 82 a prime number?", "chosen": "no", "rejected": "0"}
+{"id": "dpo-v1-number_theory-0045", "instruction": "Find lcm(24, 62).", "chosen": "744", "rejected": "-744"}
+{"id": "dpo-v1-number_theory-0046", "instruction": "Compute 83 mod 7.", "chosen": "6", "rejected": "5"}
+{"id": "dpo-v1-number_theory-0047", "instruction": "Is 76 a prime number?", "chosen": "no", "rejected": "I don't know."}
+{"id": "dpo-v1-number_theory-0048", "instruction": "Find gcd(29, 54).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-number_theory-0049", "instruction": "Is 31 a prime number?", "chosen": "yes", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0000", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0001", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-trigonometry-0002", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0003", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-trigonometry-0004", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0005", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0006", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0007", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0008", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0009", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0010", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0011", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "42"}
+{"id": "dpo-v1-trigonometry-0012", "instruction": "Find the exact value of cos(90°).", "chosen": "0", "rejected": "-1"}
+{"id": "dpo-v1-trigonometry-0013", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0014", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0015", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "42"}
+{"id": "dpo-v1-trigonometry-0016", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-trigonometry-0017", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-trigonometry-0018", "instruction": "Find the exact value of tan(90°).", "chosen": "undefined", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-trigonometry-0019", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0020", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "42"}
+{"id": "dpo-v1-trigonometry-0021", "instruction": "Find the exact value of tan(60°).", "chosen": "√3", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0022", "instruction": "Find the exact value of cos(60°).", "chosen": "1/2", "rejected": "1/3"}
+{"id": "dpo-v1-trigonometry-0023", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-trigonometry-0024", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0025", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0026", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0027", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0028", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-trigonometry-0029", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-trigonometry-0030", "instruction": "Find the exact value of tan(45°).", "chosen": "1", "rejected": "-1"}
+{"id": "dpo-v1-trigonometry-0031", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0032", "instruction": "Find the exact value of sin(45°).", "chosen": "√2/2", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0033", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "42"}
+{"id": "dpo-v1-trigonometry-0034", "instruction": "Find the exact value of cos(30°).", "chosen": "√3/2", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-trigonometry-0035", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "0"}
+{"id": "dpo-v1-trigonometry-0036", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0037", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0038", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-trigonometry-0039", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0040", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0041", "instruction": "Find the exact value of tan(45°).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-trigonometry-0042", "instruction": "Find the exact value of sin(90°).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-trigonometry-0043", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0044", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0045", "instruction": "Find the exact value of tan(60°).", "chosen": "√3", "rejected": "0"}
+{"id": "dpo-v1-trigonometry-0046", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-trigonometry-0047", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0048", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0049", "instruction": "Find the exact value of cos(30°).", "chosen": "√3/2", "rejected": "1"}

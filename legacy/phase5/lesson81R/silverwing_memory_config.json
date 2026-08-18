@@ -1,0 +1,10 @@
+{
+    "lesson": "81R",
+    "system": "native_memory_aware_training",
+    "base_checkpoint": "C:\\Users\\Administrator\\IdeaProjects\\Silverwing-ML\\phase5\\lesson80R\\checkpoints\\silverwing_reasoning_best.pt",
+    "maximum_memory_items": 1,
+    "minimum_memory_score": 0.18,
+    "memory_count": 8,
+    "training_examples": 6,
+    "validation_examples": 2
+}

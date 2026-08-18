@@ -1,0 +1,23 @@
+{
+    "lesson": "125R",
+    "memory_version": "125R.1",
+    "cycle": 2,
+    "cycle_1_mean": 0.75,
+    "cycle_2_mean": 0.7999999999999999,
+    "effectiveness_delta": 0.04999999999999993,
+    "trend_counts": {
+        "rising": 1,
+        "falling": 4,
+        "stable": 1
+    },
+    "tuning_shift": 0.024999999999999967,
+    "tuned_high": 0.8,
+    "tuned_medium": 0.45,
+    "rising_pattern": "pattern_004",
+    "high_count": 1,
+    "order_changed": true,
+    "plan_changed": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

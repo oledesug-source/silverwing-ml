@@ -1,0 +1,9 @@
+{
+    "lesson": "116R",
+    "capability": "native_independent_reasoning_validator_error_detection",
+    "memory_version": "116R.1",
+    "reasoning_id": "reasoning_114_001",
+    "validator_agreement_score": 1.0,
+    "validated": true,
+    "next": "117R Native Reasoning Error Memory + Self-Correction"
+}

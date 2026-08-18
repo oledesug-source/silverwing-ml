@@ -1,0 +1,10 @@
+{
+    "lesson": "111R",
+    "capability": "native_novel_failure_discovery_prototype_birth",
+    "memory_version": "111R.1",
+    "pattern_vector_dimension": 14,
+    "novelty_decision": "AMBIGUOUS_PATTERN",
+    "novelty_score": 0.23507604002952576,
+    "expanded_prototype_count": 3,
+    "next": "112R Native Failure Prototype Validation + Cross-Case Reasoning"
+}

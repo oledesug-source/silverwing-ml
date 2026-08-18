@@ -1,0 +1,11 @@
+{
+    "lesson": "122R",
+    "memory_version": "122R.1",
+    "trace_steps": 6,
+    "replanned": true,
+    "committed_immutable": true,
+    "unique_actions": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

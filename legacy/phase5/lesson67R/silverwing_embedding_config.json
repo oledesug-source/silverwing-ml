@@ -1,0 +1,11 @@
+{
+    "model": "Silverwing-Embedding-v1",
+    "vocabulary_size": 300,
+    "embedding_dimension": 128,
+    "maximum_sequence_length": 256,
+    "device": "cpu",
+    "padding_token_id": 0,
+    "unknown_token_id": 1,
+    "bos_token_id": 2,
+    "eos_token_id": 3
+}

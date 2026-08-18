@@ -1,0 +1,41 @@
+{
+    "dataset": "Silverwing-Reasoning-v1",
+    "version": "79R",
+    "examples": 10,
+    "training_examples": 8,
+    "validation_examples": 2,
+    "total_reasoning_tokens": 1779,
+    "average_quality": 0.96,
+    "reasoning_distribution": {
+        "deduction": 2,
+        "numerical_reasoning": 1,
+        "diagnosis": 1,
+        "comparison": 1,
+        "causal_reasoning": 1,
+        "constraint_reasoning": 1,
+        "multi_step": 1,
+        "error_analysis": 1,
+        "decision_reasoning": 1
+    },
+    "domain_distribution": {
+        "logic": 1,
+        "mathematics": 2,
+        "machine_diagnostics": 1,
+        "machine_learning": 1,
+        "engineering": 1,
+        "instruction": 1,
+        "continual_learning": 1,
+        "ai_systems": 1,
+        "science": 1
+    },
+    "complexity": {
+        "average_reasoning_steps": 3.1,
+        "minimum_reasoning_steps": 3,
+        "maximum_reasoning_steps": 4,
+        "average_difficulty": 0.666,
+        "average_quality": 0.96
+    },
+    "vocabulary_size": 300,
+    "max_reasoning_tokens": 256,
+    "created_at": 1786637929.2905724
+}

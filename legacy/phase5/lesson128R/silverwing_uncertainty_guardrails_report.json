@@ -1,0 +1,27 @@
+{
+    "lesson": "128R",
+    "memory_version": "128R.1",
+    "uncertainty": 0.1,
+    "guardrail_threshold": 0.18,
+    "trip_probability_threshold": 0.25,
+    "monte_carlo_trials": 5000,
+    "baseline_trip_set": [
+        "pattern_003",
+        "pattern_004"
+    ],
+    "controlled_blocked": [],
+    "controlled_executed": [
+        "pattern_001",
+        "pattern_002",
+        "pattern_003",
+        "pattern_004",
+        "pattern_005",
+        "pattern_006"
+    ],
+    "widest_baseline_band": "pattern_004",
+    "baseline_pattern_004_trip_probability": 0.840399980545044,
+    "controlled_pattern_004_trip_probability": 0.00019999999494757503,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

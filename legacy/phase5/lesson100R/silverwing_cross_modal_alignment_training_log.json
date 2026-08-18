@@ -1,0 +1,168 @@
+{
+    "lesson": "100R",
+    "alignment_history": [
+        {
+            "epoch": 1,
+            "total": 2.855958938598633,
+            "contrastive": 1.6357448101043701,
+            "hard_negative": 0.8126863837242126,
+            "instance_margin": 0.5261825919151306,
+            "class_margin": 0.33569788932800293
+        },
+        {
+            "epoch": 100,
+            "total": 0.0005157506675459445,
+            "contrastive": 0.0005157506675459445,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 200,
+            "total": 0.00027958955615758896,
+            "contrastive": 0.00027958955615758896,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 300,
+            "total": 0.0002162987075280398,
+            "contrastive": 0.0002162987075280398,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 400,
+            "total": 0.00018382178677711636,
+            "contrastive": 0.00018382178677711636,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 500,
+            "total": 0.00016307359328493476,
+            "contrastive": 0.00016307359328493476,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 600,
+            "total": 0.00014798634219914675,
+            "contrastive": 0.00014798634219914675,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 700,
+            "total": 0.00013571968884207308,
+            "contrastive": 0.00013571968884207308,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 800,
+            "total": 0.00012496262206695974,
+            "contrastive": 0.00012496262206695974,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 900,
+            "total": 0.00011506957525853068,
+            "contrastive": 0.00011506957525853068,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 1000,
+            "total": 0.00010573265899438411,
+            "contrastive": 0.00010573265899438411,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 1100,
+            "total": 9.679295180831105e-05,
+            "contrastive": 9.679295180831105e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        },
+        {
+            "epoch": 1200,
+            "total": 8.834981417749077e-05,
+            "contrastive": 8.834981417749077e-05,
+            "hard_negative": 0.0,
+            "instance_margin": 0.0,
+            "class_margin": 0.0
+        }
+    ],
+    "decoder_history": [
+        {
+            "epoch": 1,
+            "training_loss": 4.312657515207927
+        },
+        {
+            "epoch": 2,
+            "training_loss": 4.238950888315837
+        },
+        {
+            "epoch": 3,
+            "training_loss": 4.211714267730713
+        }
+    ],
+    "final_report": {
+        "lesson": "100R",
+        "capability": "native_cross_modal_alignment_retrieval",
+        "external_llm": false,
+        "device": "cpu",
+        "sequence_limit": 256,
+        "shared_dimension": 16,
+        "dataset_instances": 6,
+        "dataset_classes": [
+            0,
+            1,
+            2
+        ],
+        "alignment": {
+            "initial_loss": 2.855958938598633,
+            "final_loss": 8.834981417749077e-05,
+            "positive_similarity": 0.9941379825274149,
+            "hard_negative_similarity": 0.18725865334272385,
+            "instance_margin": 0.8068793291846911,
+            "text_to_numeric_exact": 1.0,
+            "numeric_to_text_exact": 1.0,
+            "text_to_numeric_class": 1.0,
+            "numeric_to_text_class": 1.0
+        },
+        "decoder": {
+            "baseline": {
+                "loss": 4.29158353805542,
+                "perplexity": 73.08210521267527,
+                "accuracy": 0.0970464135021097
+            },
+            "candidate": {
+                "loss": 4.199179172515869,
+                "perplexity": 66.63161552666195,
+                "accuracy": 0.0970464135021097
+            },
+            "changed_tensors": 53,
+            "total_parameter_change": 1520.48285959661,
+            "nan_tensors": 0,
+            "inf_tensors": 0
+        },
+        "promotion": {
+            "decision": "PROMOTE_CANDIDATE",
+            "reason": "Cross-modal curriculum improved decoder validation loss."
+        }
+    }
+}

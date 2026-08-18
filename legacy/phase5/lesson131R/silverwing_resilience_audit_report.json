@@ -1,0 +1,17 @@
+{
+    "lesson": "131R",
+    "memory_version": "131R.1",
+    "collective_exposure": 0.7087968107644436,
+    "critical_exposure": 0.7183944123566581,
+    "critical_coverage": 1.0,
+    "closed_loop_gain": 0.04408381177336007,
+    "absorption_margin": 0.6341452925491335,
+    "resilience_score": 1.0,
+    "resilience_grade": "RESILIENT",
+    "checks_passed": 8,
+    "checks_total": 8,
+    "chain_integrity": true,
+    "deterministic": true,
+    "numerically_healthy": true,
+    "promotion_passed": true
+}

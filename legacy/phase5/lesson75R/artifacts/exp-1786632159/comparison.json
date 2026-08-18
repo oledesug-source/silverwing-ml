@@ -1,0 +1,10 @@
+{
+    "experiment_id": "exp-1786632159",
+    "baseline_version": "silverwing-v0.1.0",
+    "baseline_validation_loss": 5.180940628051758,
+    "candidate_validation_loss": 5.180940628051758,
+    "loss_difference": 0.0,
+    "candidate_accuracy": 0.0625,
+    "candidate_perplexity": 177.85002305955118,
+    "improved": false
+}

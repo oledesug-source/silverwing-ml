@@ -1,0 +1,12 @@
+{
+    "model": "Silverwing-Transformer-v1",
+    "model_dimension": 128,
+    "number_of_heads": 8,
+    "head_dimension": 16,
+    "feed_forward_dimension": 512,
+    "dropout": 0.0,
+    "maximum_sequence_length": 256,
+    "default_layers": 4,
+    "causal": true,
+    "device": "cpu"
+}

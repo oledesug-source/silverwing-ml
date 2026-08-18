@@ -1,0 +1,128 @@
+{
+    "lesson": "119R",
+    "capability": "native_predictive_error_prevention_preemptive_validation",
+    "pattern": {
+        "pattern_id": "error_pattern_001",
+        "source_error_type": "evidence_magnitude_mismatch",
+        "source_field": "magnitude",
+        "observable_signature": {
+            "field": "magnitude",
+            "expected_value": 0.4676795080304146,
+            "observed_value": 0.5144474588334561
+        },
+        "detection_method": "independent_recalculation",
+        "verified_correction": {
+            "strategy_id": "correction_001",
+            "strategy_type": "restore_source_evidence"
+        },
+        "source_lesson": "116R",
+        "generalization_scope": "evidence_representation_mismatch"
+    },
+    "prevention_rule": {
+        "rule_id": "prevention_rule_001",
+        "pattern_id": "error_pattern_001",
+        "trigger": {
+            "field": "magnitude",
+            "condition": "observed_value differs from provenance-backed value"
+        },
+        "action": "STOP_BEFORE_REASONING_COMPLETES",
+        "validation": "recalculate_using_provenance_value",
+        "promotion_requirement": "independent_verification",
+        "risk_level": "HIGH",
+        "description": "When an evidence representation differs from its provenance-backed value, prevent downstream reasoning until the evidence is restored and independently verified."
+    },
+    "historical_cases": [
+        {
+            "case_id": "preventive_case_001",
+            "field": "magnitude",
+            "expected_value": 0.4676795080304146,
+            "observed_value": 0.5144474588334561,
+            "pattern_ref": "prevention_rule_001"
+        },
+        {
+            "case_id": "preventive_case_002",
+            "field": "magnitude",
+            "expected_value": 0.25,
+            "observed_value": 0.0,
+            "pattern_ref": "prevention_rule_001"
+        }
+    ],
+    "historical_results": [
+        {
+            "field_match": true,
+            "mismatch": true,
+            "match": true,
+            "case_id": "preventive_case_001"
+        },
+        {
+            "field_match": true,
+            "mismatch": true,
+            "match": true,
+            "case_id": "preventive_case_002"
+        }
+    ],
+    "recurrence_count": 2,
+    "recurrence_rate": 1.0,
+    "predictive_risk": 0.9785539273574859,
+    "risk_class": "HIGH",
+    "future_case": {
+        "case_id": "future_case_001",
+        "evaluation_type": "synthetic_future_case",
+        "field": "magnitude",
+        "expected_value": 0.8,
+        "observed_value": 0.0,
+        "pattern_candidate": "error_pattern_001",
+        "rule_candidate": "prevention_rule_001"
+    },
+    "generalization_cases": [
+        {
+            "case_id": "future_case_002",
+            "evaluation_type": "synthetic_future_case",
+            "field": "magnitude",
+            "expected_value": 0.5,
+            "observed_value": 0.0
+        },
+        {
+            "case_id": "future_case_003",
+            "evaluation_type": "synthetic_future_case",
+            "field": "magnitude",
+            "expected_value": 1.25,
+            "observed_value": 0.0
+        },
+        {
+            "case_id": "future_case_004",
+            "evaluation_type": "synthetic_negative_control",
+            "field": "unrelated_field",
+            "expected_value": 1.0,
+            "observed_value": 0.0
+        }
+    ],
+    "generalization_results": [
+        {
+            "case_id": "future_case_002",
+            "evaluation_type": "synthetic_future_case",
+            "field_match": true,
+            "mismatch": true,
+            "trigger": true
+        },
+        {
+            "case_id": "future_case_003",
+            "evaluation_type": "synthetic_future_case",
+            "field_match": true,
+            "mismatch": true,
+            "trigger": true
+        },
+        {
+            "case_id": "future_case_004",
+            "evaluation_type": "synthetic_negative_control",
+            "field_match": false,
+            "mismatch": true,
+            "trigger": false
+        }
+    ],
+    "preemptive_trigger": true,
+    "intervention": "BLOCK_REASONING_AND_VALIDATE",
+    "protected_value": 0.8,
+    "protected_error": 0.0,
+    "intervention_confidence": 0.989276963678743
+}

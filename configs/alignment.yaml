@@ -1,0 +1,33 @@
+# SILVERWING ML - DPO Alignment (M12)
+# Trains a policy model from the M10/M11 checkpoint using Direct Preference
+# Optimization on human preference pairs. A frozen reference model (the init
+# checkpoint) provides the implicit KL penalty.
+# Keep the tree clean (require_clean_repo); NO TRAINING WITHOUT A COMMIT.
+
+alignment:
+  version: alignment-v1
+  model_config_path: configs/model.yaml
+  tokenizer_dir: experiments/tokenizer
+  init_from: experiments/checkpoints/best.pt
+  dataset_path: experiments/alignment/dpo-v1.jsonl
+  checkpoint_dir: experiments/checkpoints/alignment
+  batch_size: 1
+  block_size: 512
+  max_steps: 500
+  warmup_steps: 25
+  lr: 1.0e-5
+  min_lr_ratio: 0.1
+  weight_decay: 0.0
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  grad_clip: 1.0
+  dpo_beta: 0.1
+  label_smoothing: 0.0
+  seed: 42
+  log_steps: 10
+  eval_steps: 50
+  eval_examples: 8
+  save_steps: 100
+  eval_fraction: 0.1
+  require_clean_repo: true
+  device: cpu

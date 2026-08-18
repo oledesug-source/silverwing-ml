@@ -1,0 +1,64 @@
+{
+    "lesson": "91R",
+    "capability": "native_machine_learning_foundations",
+    "domains": [
+        "classification",
+        "classification_metric",
+        "dataset",
+        "feature_target",
+        "generalization",
+        "loss",
+        "overfitting",
+        "regression",
+        "regression_metric",
+        "train_validation_test"
+    ],
+    "ml_task_count": 10,
+    "training_examples": 7,
+    "validation_examples": 3,
+    "sequence_limit": 256,
+    "baseline": {
+        "loss": 5.080348968505859,
+        "perplexity": 160.83017080127783,
+        "accuracy": 0.02313624678663239,
+        "tokens": 389
+    },
+    "candidate": {
+        "loss": 5.075499057769775,
+        "perplexity": 160.05204726928588,
+        "accuracy": 0.02313624678663239,
+        "tokens": 389
+    },
+    "numerical_health": {
+        "nan_tensors": 0,
+        "inf_tensors": 0,
+        "healthy": true
+    },
+    "parameter_change": {
+        "changed_tensors": 53,
+        "total_absolute_parameter_change": 19.07975986832753
+    },
+    "classical_ml": {
+        "regression": {
+            "validation_mse": 0.0,
+            "test_mse": 0.0,
+            "slope": 2.0,
+            "intercept": 1.0,
+            "generalization_gap": 0.0
+        },
+        "classification": {
+            "validation_accuracy": 1.0,
+            "test_accuracy": 1.0,
+            "threshold": 5.833333333333334,
+            "generalization_gap": 0.0
+        }
+    },
+    "independent_validation": {
+        "passed": true,
+        "errors": []
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Machine-learning validation loss improved."
+    }
+}

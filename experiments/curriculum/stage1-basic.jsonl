@@ -1,0 +1,1002 @@
+{"id": "stage1-basic-arithmetic-0000", "instruction": "What is 19% of 50?", "response": "10"}
+{"id": "stage1-basic-arithmetic-0001", "instruction": "What is 40% of 100?", "response": "40"}
+{"id": "stage1-basic-arithmetic-0002", "instruction": "Compute 96 + 15.", "response": "111"}
+{"id": "stage1-basic-arithmetic-0003", "instruction": "What is 74% of 50?", "response": "37"}
+{"id": "stage1-basic-arithmetic-0004", "instruction": "What is 59% of 50?", "response": "30"}
+{"id": "stage1-basic-arithmetic-0005", "instruction": "Compute 29 + 31.", "response": "60"}
+{"id": "stage1-basic-arithmetic-0006", "instruction": "What is 8% of 800?", "response": "64"}
+{"id": "stage1-basic-arithmetic-0007", "instruction": "Compute 85 * 91.", "response": "7735"}
+{"id": "stage1-basic-arithmetic-0008", "instruction": "What is 58% of 100?", "response": "58"}
+{"id": "stage1-basic-arithmetic-0009", "instruction": "Compute 5/1 + 3/7 and give the answer in lowest terms.", "response": "38/7"}
+{"id": "stage1-basic-arithmetic-0010", "instruction": "Compute 5/3 + 4/6 and give the answer in lowest terms.", "response": "7/3"}
+{"id": "stage1-basic-arithmetic-0011", "instruction": "Compute 50 + 14.", "response": "64"}
+{"id": "stage1-basic-arithmetic-0012", "instruction": "Compute 6/5 + 1/8 and give the answer in lowest terms.", "response": "53/40"}
+{"id": "stage1-basic-arithmetic-0013", "instruction": "What is 20% of 400?", "response": "80"}
+{"id": "stage1-basic-arithmetic-0014", "instruction": "Compute 39 * 82.", "response": "3198"}
+{"id": "stage1-basic-arithmetic-0015", "instruction": "What is 51% of 800?", "response": "408"}
+{"id": "stage1-basic-arithmetic-0016", "instruction": "Compute 10 * 7.", "response": "70"}
+{"id": "stage1-basic-arithmetic-0017", "instruction": "What is 34% of 200?", "response": "68"}
+{"id": "stage1-basic-arithmetic-0018", "instruction": "Compute 14 + 50.", "response": "64"}
+{"id": "stage1-basic-arithmetic-0019", "instruction": "Compute 8/6 + 3/6 and give the answer in lowest terms.", "response": "11/6"}
+{"id": "stage1-basic-arithmetic-0020", "instruction": "Compute 4/5 + 2/3 and give the answer in lowest terms.", "response": "22/15"}
+{"id": "stage1-basic-arithmetic-0021", "instruction": "What is 36% of 100?", "response": "36"}
+{"id": "stage1-basic-arithmetic-0022", "instruction": "Compute 7/5 + 9/4 and give the answer in lowest terms.", "response": "73/20"}
+{"id": "stage1-basic-arithmetic-0023", "instruction": "What is 46% of 50?", "response": "23"}
+{"id": "stage1-basic-arithmetic-0024", "instruction": "Compute 42 + 53.", "response": "95"}
+{"id": "stage1-basic-arithmetic-0025", "instruction": "Compute 2/4 + 6/4 and give the answer in lowest terms.", "response": "2"}
+{"id": "stage1-basic-arithmetic-0026", "instruction": "What is 68% of 400?", "response": "272"}
+{"id": "stage1-basic-arithmetic-0027", "instruction": "What is 63% of 100?", "response": "63"}
+{"id": "stage1-basic-arithmetic-0028", "instruction": "Compute 3/4 + 9/9 and give the answer in lowest terms.", "response": "7/4"}
+{"id": "stage1-basic-arithmetic-0029", "instruction": "Compute 7/7 + 6/4 and give the answer in lowest terms.", "response": "5/2"}
+{"id": "stage1-basic-arithmetic-0030", "instruction": "Compute 65 * 13.", "response": "845"}
+{"id": "stage1-basic-arithmetic-0031", "instruction": "Compute 21 + 82.", "response": "103"}
+{"id": "stage1-basic-arithmetic-0032", "instruction": "Compute 56 * 78.", "response": "4368"}
+{"id": "stage1-basic-arithmetic-0033", "instruction": "Compute 50 - 78.", "response": "-28"}
+{"id": "stage1-basic-arithmetic-0034", "instruction": "Compute 9/5 + 9/1 and give the answer in lowest terms.", "response": "54/5"}
+{"id": "stage1-basic-arithmetic-0035", "instruction": "What is 19% of 1000?", "response": "190"}
+{"id": "stage1-basic-arithmetic-0036", "instruction": "What is 39% of 1000?", "response": "390"}
+{"id": "stage1-basic-arithmetic-0037", "instruction": "Compute 2/5 + 7/3 and give the answer in lowest terms.", "response": "41/15"}
+{"id": "stage1-basic-arithmetic-0038", "instruction": "Compute 1/5 + 9/3 and give the answer in lowest terms.", "response": "16/5"}
+{"id": "stage1-basic-arithmetic-0039", "instruction": "What is 18% of 1000?", "response": "180"}
+{"id": "stage1-basic-arithmetic-0040", "instruction": "Compute 9/4 + 3/6 and give the answer in lowest terms.", "response": "11/4"}
+{"id": "stage1-basic-arithmetic-0041", "instruction": "Compute 69 * 2.", "response": "138"}
+{"id": "stage1-basic-arithmetic-0042", "instruction": "What is 46% of 400?", "response": "184"}
+{"id": "stage1-basic-arithmetic-0043", "instruction": "Compute 48 + 41.", "response": "89"}
+{"id": "stage1-basic-arithmetic-0044", "instruction": "Compute 32 + 74.", "response": "106"}
+{"id": "stage1-basic-arithmetic-0045", "instruction": "Compute 95 + 64.", "response": "159"}
+{"id": "stage1-basic-arithmetic-0046", "instruction": "Compute 18 * 18.", "response": "324"}
+{"id": "stage1-basic-arithmetic-0047", "instruction": "What is 65% of 800?", "response": "520"}
+{"id": "stage1-basic-arithmetic-0048", "instruction": "Compute 69 - 79.", "response": "-10"}
+{"id": "stage1-basic-arithmetic-0049", "instruction": "Compute 4/9 + 4/5 and give the answer in lowest terms.", "response": "56/45"}
+{"id": "stage1-basic-arithmetic-0050", "instruction": "Compute 6/8 + 9/8 and give the answer in lowest terms.", "response": "15/8"}
+{"id": "stage1-basic-arithmetic-0051", "instruction": "Compute 30 + 10.", "response": "40"}
+{"id": "stage1-basic-arithmetic-0052", "instruction": "Compute 1/9 + 4/4 and give the answer in lowest terms.", "response": "10/9"}
+{"id": "stage1-basic-arithmetic-0053", "instruction": "Compute 92 + 82.", "response": "174"}
+{"id": "stage1-basic-arithmetic-0054", "instruction": "Compute 10 + 6.", "response": "16"}
+{"id": "stage1-basic-arithmetic-0055", "instruction": "Compute 2/9 + 4/5 and give the answer in lowest terms.", "response": "46/45"}
+{"id": "stage1-basic-arithmetic-0056", "instruction": "What is 67% of 100?", "response": "67"}
+{"id": "stage1-basic-arithmetic-0057", "instruction": "What is 21% of 1000?", "response": "210"}
+{"id": "stage1-basic-arithmetic-0058", "instruction": "What is 65% of 100?", "response": "65"}
+{"id": "stage1-basic-arithmetic-0059", "instruction": "Compute 7/4 + 2/2 and give the answer in lowest terms.", "response": "11/4"}
+{"id": "stage1-basic-arithmetic-0060", "instruction": "What is 60% of 200?", "response": "120"}
+{"id": "stage1-basic-arithmetic-0061", "instruction": "Compute 7/8 + 1/2 and give the answer in lowest terms.", "response": "11/8"}
+{"id": "stage1-basic-arithmetic-0062", "instruction": "Compute 95 - 45.", "response": "50"}
+{"id": "stage1-basic-arithmetic-0063", "instruction": "Compute 26 + 26.", "response": "52"}
+{"id": "stage1-basic-arithmetic-0064", "instruction": "What is 62% of 100?", "response": "62"}
+{"id": "stage1-basic-arithmetic-0065", "instruction": "Compute 3/5 + 8/4 and give the answer in lowest terms.", "response": "13/5"}
+{"id": "stage1-basic-arithmetic-0066", "instruction": "Compute 72 - 14.", "response": "58"}
+{"id": "stage1-basic-arithmetic-0067", "instruction": "Compute 71 * 3.", "response": "213"}
+{"id": "stage1-basic-arithmetic-0068", "instruction": "Compute 23 + 54.", "response": "77"}
+{"id": "stage1-basic-arithmetic-0069", "instruction": "Compute 8/4 + 7/1 and give the answer in lowest terms.", "response": "9"}
+{"id": "stage1-basic-arithmetic-0070", "instruction": "Compute 2 - 51.", "response": "-49"}
+{"id": "stage1-basic-arithmetic-0071", "instruction": "Compute 8/5 + 7/9 and give the answer in lowest terms.", "response": "107/45"}
+{"id": "stage1-basic-arithmetic-0072", "instruction": "What is 67% of 100?", "response": "67"}
+{"id": "stage1-basic-arithmetic-0073", "instruction": "Compute 29 - 9.", "response": "20"}
+{"id": "stage1-basic-arithmetic-0074", "instruction": "What is 74% of 50?", "response": "37"}
+{"id": "stage1-basic-arithmetic-0075", "instruction": "What is 45% of 50?", "response": "22"}
+{"id": "stage1-basic-arithmetic-0076", "instruction": "Compute 63 * 66.", "response": "4158"}
+{"id": "stage1-basic-arithmetic-0077", "instruction": "What is 25% of 50?", "response": "12"}
+{"id": "stage1-basic-arithmetic-0078", "instruction": "What is 15% of 100?", "response": "15"}
+{"id": "stage1-basic-arithmetic-0079", "instruction": "Compute 10 * 88.", "response": "880"}
+{"id": "stage1-basic-arithmetic-0080", "instruction": "Compute 17 - 74.", "response": "-57"}
+{"id": "stage1-basic-arithmetic-0081", "instruction": "Compute 78 * 7.", "response": "546"}
+{"id": "stage1-basic-arithmetic-0082", "instruction": "What is 15% of 400?", "response": "60"}
+{"id": "stage1-basic-arithmetic-0083", "instruction": "What is 71% of 200?", "response": "142"}
+{"id": "stage1-basic-arithmetic-0084", "instruction": "Compute 4/6 + 4/5 and give the answer in lowest terms.", "response": "22/15"}
+{"id": "stage1-basic-arithmetic-0085", "instruction": "Compute 3/5 + 8/6 and give the answer in lowest terms.", "response": "29/15"}
+{"id": "stage1-basic-arithmetic-0086", "instruction": "Compute 60 + 81.", "response": "141"}
+{"id": "stage1-basic-arithmetic-0087", "instruction": "What is 17% of 50?", "response": "8"}
+{"id": "stage1-basic-arithmetic-0088", "instruction": "What is 32% of 800?", "response": "256"}
+{"id": "stage1-basic-arithmetic-0089", "instruction": "Compute 3/6 + 2/4 and give the answer in lowest terms.", "response": "1"}
+{"id": "stage1-basic-arithmetic-0090", "instruction": "Compute 5/3 + 8/9 and give the answer in lowest terms.", "response": "23/9"}
+{"id": "stage1-basic-arithmetic-0091", "instruction": "What is 43% of 800?", "response": "344"}
+{"id": "stage1-basic-arithmetic-0092", "instruction": "What is 72% of 50?", "response": "36"}
+{"id": "stage1-basic-arithmetic-0093", "instruction": "What is 75% of 200?", "response": "150"}
+{"id": "stage1-basic-arithmetic-0094", "instruction": "What is 18% of 100?", "response": "18"}
+{"id": "stage1-basic-arithmetic-0095", "instruction": "Compute 2/2 + 9/3 and give the answer in lowest terms.", "response": "4"}
+{"id": "stage1-basic-arithmetic-0096", "instruction": "Compute 5/4 + 6/4 and give the answer in lowest terms.", "response": "11/4"}
+{"id": "stage1-basic-arithmetic-0097", "instruction": "What is 38% of 800?", "response": "304"}
+{"id": "stage1-basic-arithmetic-0098", "instruction": "Compute 5/1 + 2/7 and give the answer in lowest terms.", "response": "37/7"}
+{"id": "stage1-basic-arithmetic-0099", "instruction": "Compute 1/1 + 6/3 and give the answer in lowest terms.", "response": "3"}
+{"id": "stage1-basic-arithmetic-0100", "instruction": "What is 38% of 100?", "response": "38"}
+{"id": "stage1-basic-arithmetic-0101", "instruction": "What is 61% of 800?", "response": "488"}
+{"id": "stage1-basic-arithmetic-0102", "instruction": "What is 59% of 800?", "response": "472"}
+{"id": "stage1-basic-arithmetic-0103", "instruction": "Compute 11 + 90.", "response": "101"}
+{"id": "stage1-basic-arithmetic-0104", "instruction": "Compute 6 * 49.", "response": "294"}
+{"id": "stage1-basic-arithmetic-0105", "instruction": "What is 75% of 100?", "response": "75"}
+{"id": "stage1-basic-arithmetic-0106", "instruction": "Compute 3/1 + 5/6 and give the answer in lowest terms.", "response": "23/6"}
+{"id": "stage1-basic-arithmetic-0107", "instruction": "Compute 28 - 89.", "response": "-61"}
+{"id": "stage1-basic-arithmetic-0108", "instruction": "Compute 15 * 47.", "response": "705"}
+{"id": "stage1-basic-arithmetic-0109", "instruction": "What is 57% of 800?", "response": "456"}
+{"id": "stage1-basic-arithmetic-0110", "instruction": "What is 24% of 100?", "response": "24"}
+{"id": "stage1-basic-arithmetic-0111", "instruction": "Compute 54 + 5.", "response": "59"}
+{"id": "stage1-basic-arithmetic-0112", "instruction": "Compute 44 * 54.", "response": "2376"}
+{"id": "stage1-basic-arithmetic-0113", "instruction": "What is 36% of 200?", "response": "72"}
+{"id": "stage1-basic-arithmetic-0114", "instruction": "Compute 15 * 50.", "response": "750"}
+{"id": "stage1-basic-arithmetic-0115", "instruction": "Compute 30 - 27.", "response": "3"}
+{"id": "stage1-basic-arithmetic-0116", "instruction": "Compute 6/5 + 4/4 and give the answer in lowest terms.", "response": "11/5"}
+{"id": "stage1-basic-arithmetic-0117", "instruction": "Compute 26 * 53.", "response": "1378"}
+{"id": "stage1-basic-arithmetic-0118", "instruction": "Compute 5/2 + 5/6 and give the answer in lowest terms.", "response": "10/3"}
+{"id": "stage1-basic-arithmetic-0119", "instruction": "What is 70% of 400?", "response": "280"}
+{"id": "stage1-basic-arithmetic-0120", "instruction": "What is 73% of 200?", "response": "146"}
+{"id": "stage1-basic-arithmetic-0121", "instruction": "Compute 35 + 24.", "response": "59"}
+{"id": "stage1-basic-arithmetic-0122", "instruction": "What is 38% of 50?", "response": "19"}
+{"id": "stage1-basic-arithmetic-0123", "instruction": "Compute 57 * 46.", "response": "2622"}
+{"id": "stage1-basic-arithmetic-0124", "instruction": "What is 45% of 400?", "response": "180"}
+{"id": "stage1-basic-arithmetic-0125", "instruction": "What is 70% of 50?", "response": "35"}
+{"id": "stage1-basic-arithmetic-0126", "instruction": "Compute 4/5 + 1/7 and give the answer in lowest terms.", "response": "33/35"}
+{"id": "stage1-basic-arithmetic-0127", "instruction": "Compute 70 * 89.", "response": "6230"}
+{"id": "stage1-basic-arithmetic-0128", "instruction": "What is 30% of 200?", "response": "60"}
+{"id": "stage1-basic-arithmetic-0129", "instruction": "Compute 2/6 + 6/2 and give the answer in lowest terms.", "response": "10/3"}
+{"id": "stage1-basic-arithmetic-0130", "instruction": "What is 43% of 800?", "response": "344"}
+{"id": "stage1-basic-arithmetic-0131", "instruction": "Compute 7/6 + 7/5 and give the answer in lowest terms.", "response": "77/30"}
+{"id": "stage1-basic-arithmetic-0132", "instruction": "What is 21% of 100?", "response": "21"}
+{"id": "stage1-basic-arithmetic-0133", "instruction": "Compute 7/3 + 5/7 and give the answer in lowest terms.", "response": "64/21"}
+{"id": "stage1-basic-arithmetic-0134", "instruction": "What is 5% of 200?", "response": "10"}
+{"id": "stage1-basic-arithmetic-0135", "instruction": "Compute 4/7 + 6/8 and give the answer in lowest terms.", "response": "37/28"}
+{"id": "stage1-basic-arithmetic-0136", "instruction": "Compute 8/4 + 9/8 and give the answer in lowest terms.", "response": "25/8"}
+{"id": "stage1-basic-arithmetic-0137", "instruction": "What is 26% of 1000?", "response": "260"}
+{"id": "stage1-basic-arithmetic-0138", "instruction": "Compute 67 - 86.", "response": "-19"}
+{"id": "stage1-basic-arithmetic-0139", "instruction": "What is 47% of 50?", "response": "24"}
+{"id": "stage1-basic-arithmetic-0140", "instruction": "Compute 41 * 30.", "response": "1230"}
+{"id": "stage1-basic-arithmetic-0141", "instruction": "Compute 5 + 7.", "response": "12"}
+{"id": "stage1-basic-arithmetic-0142", "instruction": "Compute 80 - 11.", "response": "69"}
+{"id": "stage1-basic-arithmetic-0143", "instruction": "Compute 7/4 + 7/8 and give the answer in lowest terms.", "response": "21/8"}
+{"id": "stage1-basic-arithmetic-0144", "instruction": "Compute 4/3 + 1/2 and give the answer in lowest terms.", "response": "11/6"}
+{"id": "stage1-basic-arithmetic-0145", "instruction": "Compute 4/3 + 9/8 and give the answer in lowest terms.", "response": "59/24"}
+{"id": "stage1-basic-arithmetic-0146", "instruction": "Compute 33 * 17.", "response": "561"}
+{"id": "stage1-basic-arithmetic-0147", "instruction": "Compute 3/8 + 9/9 and give the answer in lowest terms.", "response": "11/8"}
+{"id": "stage1-basic-arithmetic-0148", "instruction": "What is 45% of 400?", "response": "180"}
+{"id": "stage1-basic-arithmetic-0149", "instruction": "What is 69% of 400?", "response": "276"}
+{"id": "stage1-basic-arithmetic-0150", "instruction": "What is 62% of 100?", "response": "62"}
+{"id": "stage1-basic-arithmetic-0151", "instruction": "What is 65% of 400?", "response": "260"}
+{"id": "stage1-basic-arithmetic-0152", "instruction": "Compute 4/5 + 9/8 and give the answer in lowest terms.", "response": "77/40"}
+{"id": "stage1-basic-arithmetic-0153", "instruction": "What is 35% of 200?", "response": "70"}
+{"id": "stage1-basic-arithmetic-0154", "instruction": "Compute 2/5 + 4/5 and give the answer in lowest terms.", "response": "6/5"}
+{"id": "stage1-basic-arithmetic-0155", "instruction": "Compute 6/9 + 2/3 and give the answer in lowest terms.", "response": "4/3"}
+{"id": "stage1-basic-arithmetic-0156", "instruction": "Compute 51 + 90.", "response": "141"}
+{"id": "stage1-basic-arithmetic-0157", "instruction": "Compute 29 * 10.", "response": "290"}
+{"id": "stage1-basic-arithmetic-0158", "instruction": "Compute 7/6 + 9/8 and give the answer in lowest terms.", "response": "55/24"}
+{"id": "stage1-basic-arithmetic-0159", "instruction": "Compute 1/4 + 7/7 and give the answer in lowest terms.", "response": "5/4"}
+{"id": "stage1-basic-arithmetic-0160", "instruction": "What is 7% of 800?", "response": "56"}
+{"id": "stage1-basic-arithmetic-0161", "instruction": "Compute 8/1 + 6/5 and give the answer in lowest terms.", "response": "46/5"}
+{"id": "stage1-basic-arithmetic-0162", "instruction": "Compute 7/9 + 9/4 and give the answer in lowest terms.", "response": "109/36"}
+{"id": "stage1-basic-arithmetic-0163", "instruction": "Compute 4/5 + 7/8 and give the answer in lowest terms.", "response": "67/40"}
+{"id": "stage1-basic-arithmetic-0164", "instruction": "Compute 45 - 87.", "response": "-42"}
+{"id": "stage1-basic-arithmetic-0165", "instruction": "What is 56% of 1000?", "response": "560"}
+{"id": "stage1-basic-arithmetic-0166", "instruction": "Compute 18 - 81.", "response": "-63"}
+{"id": "stage1-basic-arithmetic-0167", "instruction": "What is 8% of 400?", "response": "32"}
+{"id": "stage1-basic-arithmetic-0168", "instruction": "What is 8% of 50?", "response": "4"}
+{"id": "stage1-basic-arithmetic-0169", "instruction": "What is 59% of 100?", "response": "59"}
+{"id": "stage1-basic-arithmetic-0170", "instruction": "Compute 3/1 + 5/7 and give the answer in lowest terms.", "response": "26/7"}
+{"id": "stage1-basic-arithmetic-0171", "instruction": "Compute 4/8 + 6/6 and give the answer in lowest terms.", "response": "3/2"}
+{"id": "stage1-basic-arithmetic-0172", "instruction": "Compute 5/7 + 5/2 and give the answer in lowest terms.", "response": "45/14"}
+{"id": "stage1-basic-arithmetic-0173", "instruction": "Compute 1/9 + 1/6 and give the answer in lowest terms.", "response": "5/18"}
+{"id": "stage1-basic-arithmetic-0174", "instruction": "Compute 10 * 85.", "response": "850"}
+{"id": "stage1-basic-arithmetic-0175", "instruction": "Compute 33 + 27.", "response": "60"}
+{"id": "stage1-basic-arithmetic-0176", "instruction": "Compute 21 * 32.", "response": "672"}
+{"id": "stage1-basic-arithmetic-0177", "instruction": "Compute 87 - 16.", "response": "71"}
+{"id": "stage1-basic-arithmetic-0178", "instruction": "What is 32% of 400?", "response": "128"}
+{"id": "stage1-basic-arithmetic-0179", "instruction": "What is 37% of 200?", "response": "74"}
+{"id": "stage1-basic-arithmetic-0180", "instruction": "Compute 79 * 97.", "response": "7663"}
+{"id": "stage1-basic-arithmetic-0181", "instruction": "What is 19% of 100?", "response": "19"}
+{"id": "stage1-basic-arithmetic-0182", "instruction": "Compute 2/1 + 5/7 and give the answer in lowest terms.", "response": "19/7"}
+{"id": "stage1-basic-arithmetic-0183", "instruction": "Compute 4/2 + 4/2 and give the answer in lowest terms.", "response": "4"}
+{"id": "stage1-basic-arithmetic-0184", "instruction": "What is 43% of 1000?", "response": "430"}
+{"id": "stage1-basic-arithmetic-0185", "instruction": "What is 20% of 800?", "response": "160"}
+{"id": "stage1-basic-arithmetic-0186", "instruction": "Compute 70 - 56.", "response": "14"}
+{"id": "stage1-basic-arithmetic-0187", "instruction": "What is 52% of 50?", "response": "26"}
+{"id": "stage1-basic-arithmetic-0188", "instruction": "What is 48% of 50?", "response": "24"}
+{"id": "stage1-basic-arithmetic-0189", "instruction": "Compute 8/2 + 7/6 and give the answer in lowest terms.", "response": "31/6"}
+{"id": "stage1-basic-arithmetic-0190", "instruction": "What is 63% of 1000?", "response": "630"}
+{"id": "stage1-basic-arithmetic-0191", "instruction": "Compute 24 - 95.", "response": "-71"}
+{"id": "stage1-basic-arithmetic-0192", "instruction": "What is 39% of 800?", "response": "312"}
+{"id": "stage1-basic-arithmetic-0193", "instruction": "What is 66% of 400?", "response": "264"}
+{"id": "stage1-basic-arithmetic-0194", "instruction": "Compute 5/6 + 4/2 and give the answer in lowest terms.", "response": "17/6"}
+{"id": "stage1-basic-arithmetic-0195", "instruction": "Compute 8/4 + 8/7 and give the answer in lowest terms.", "response": "22/7"}
+{"id": "stage1-basic-arithmetic-0196", "instruction": "Compute 1/8 + 6/3 and give the answer in lowest terms.", "response": "17/8"}
+{"id": "stage1-basic-arithmetic-0197", "instruction": "Compute 4/6 + 5/6 and give the answer in lowest terms.", "response": "3/2"}
+{"id": "stage1-basic-arithmetic-0198", "instruction": "Compute 5/9 + 1/9 and give the answer in lowest terms.", "response": "2/3"}
+{"id": "stage1-basic-arithmetic-0199", "instruction": "Compute 32 + 94.", "response": "126"}
+{"id": "stage1-basic-arithmetic-0200", "instruction": "Compute 8/9 + 4/8 and give the answer in lowest terms.", "response": "25/18"}
+{"id": "stage1-basic-arithmetic-0201", "instruction": "What is 67% of 400?", "response": "268"}
+{"id": "stage1-basic-arithmetic-0202", "instruction": "Compute 39 + 30.", "response": "69"}
+{"id": "stage1-basic-arithmetic-0203", "instruction": "Compute 4/5 + 6/8 and give the answer in lowest terms.", "response": "31/20"}
+{"id": "stage1-basic-arithmetic-0204", "instruction": "What is 72% of 200?", "response": "144"}
+{"id": "stage1-basic-arithmetic-0205", "instruction": "Compute 9/6 + 6/8 and give the answer in lowest terms.", "response": "9/4"}
+{"id": "stage1-basic-arithmetic-0206", "instruction": "Compute 5/5 + 4/2 and give the answer in lowest terms.", "response": "3"}
+{"id": "stage1-basic-arithmetic-0207", "instruction": "What is 29% of 200?", "response": "58"}
+{"id": "stage1-basic-arithmetic-0208", "instruction": "Compute 70 * 99.", "response": "6930"}
+{"id": "stage1-basic-arithmetic-0209", "instruction": "What is 28% of 100?", "response": "28"}
+{"id": "stage1-basic-arithmetic-0210", "instruction": "Compute 63 * 37.", "response": "2331"}
+{"id": "stage1-basic-arithmetic-0211", "instruction": "What is 72% of 800?", "response": "576"}
+{"id": "stage1-basic-arithmetic-0212", "instruction": "Compute 2/4 + 5/4 and give the answer in lowest terms.", "response": "7/4"}
+{"id": "stage1-basic-arithmetic-0213", "instruction": "Compute 3/5 + 1/9 and give the answer in lowest terms.", "response": "32/45"}
+{"id": "stage1-basic-arithmetic-0214", "instruction": "Compute 7 - 8.", "response": "-1"}
+{"id": "stage1-basic-arithmetic-0215", "instruction": "What is 42% of 1000?", "response": "420"}
+{"id": "stage1-basic-arithmetic-0216", "instruction": "Compute 98 * 64.", "response": "6272"}
+{"id": "stage1-basic-arithmetic-0217", "instruction": "Compute 75 + 38.", "response": "113"}
+{"id": "stage1-basic-arithmetic-0218", "instruction": "Compute 8/8 + 6/3 and give the answer in lowest terms.", "response": "3"}
+{"id": "stage1-basic-arithmetic-0219", "instruction": "Compute 63 - 16.", "response": "47"}
+{"id": "stage1-basic-arithmetic-0220", "instruction": "Compute 64 - 11.", "response": "53"}
+{"id": "stage1-basic-arithmetic-0221", "instruction": "What is 11% of 100?", "response": "11"}
+{"id": "stage1-basic-arithmetic-0222", "instruction": "Compute 40 * 12.", "response": "480"}
+{"id": "stage1-basic-arithmetic-0223", "instruction": "Compute 73 + 99.", "response": "172"}
+{"id": "stage1-basic-arithmetic-0224", "instruction": "Compute 4/9 + 7/8 and give the answer in lowest terms.", "response": "95/72"}
+{"id": "stage1-basic-arithmetic-0225", "instruction": "Compute 5/7 + 5/1 and give the answer in lowest terms.", "response": "40/7"}
+{"id": "stage1-basic-arithmetic-0226", "instruction": "What is 17% of 100?", "response": "17"}
+{"id": "stage1-basic-arithmetic-0227", "instruction": "What is 32% of 200?", "response": "64"}
+{"id": "stage1-basic-arithmetic-0228", "instruction": "What is 15% of 100?", "response": "15"}
+{"id": "stage1-basic-arithmetic-0229", "instruction": "Compute 72 + 11.", "response": "83"}
+{"id": "stage1-basic-arithmetic-0230", "instruction": "Compute 54 + 59.", "response": "113"}
+{"id": "stage1-basic-arithmetic-0231", "instruction": "What is 65% of 200?", "response": "130"}
+{"id": "stage1-basic-arithmetic-0232", "instruction": "Compute 38 + 92.", "response": "130"}
+{"id": "stage1-basic-arithmetic-0233", "instruction": "Compute 8/2 + 4/5 and give the answer in lowest terms.", "response": "24/5"}
+{"id": "stage1-basic-arithmetic-0234", "instruction": "What is 30% of 400?", "response": "120"}
+{"id": "stage1-basic-arithmetic-0235", "instruction": "Compute 30 * 84.", "response": "2520"}
+{"id": "stage1-basic-arithmetic-0236", "instruction": "Compute 20 - 11.", "response": "9"}
+{"id": "stage1-basic-arithmetic-0237", "instruction": "Compute 41 + 78.", "response": "119"}
+{"id": "stage1-basic-arithmetic-0238", "instruction": "What is 41% of 400?", "response": "164"}
+{"id": "stage1-basic-arithmetic-0239", "instruction": "Compute 90 - 40.", "response": "50"}
+{"id": "stage1-basic-arithmetic-0240", "instruction": "What is 56% of 200?", "response": "112"}
+{"id": "stage1-basic-arithmetic-0241", "instruction": "What is 74% of 400?", "response": "296"}
+{"id": "stage1-basic-arithmetic-0242", "instruction": "Compute 2/1 + 7/6 and give the answer in lowest terms.", "response": "19/6"}
+{"id": "stage1-basic-arithmetic-0243", "instruction": "What is 37% of 50?", "response": "18"}
+{"id": "stage1-basic-arithmetic-0244", "instruction": "Compute 88 + 75.", "response": "163"}
+{"id": "stage1-basic-arithmetic-0245", "instruction": "What is 7% of 1000?", "response": "70"}
+{"id": "stage1-basic-arithmetic-0246", "instruction": "Compute 1/3 + 8/9 and give the answer in lowest terms.", "response": "11/9"}
+{"id": "stage1-basic-arithmetic-0247", "instruction": "What is 61% of 200?", "response": "122"}
+{"id": "stage1-basic-arithmetic-0248", "instruction": "Compute 57 * 83.", "response": "4731"}
+{"id": "stage1-basic-arithmetic-0249", "instruction": "Compute 2/8 + 6/7 and give the answer in lowest terms.", "response": "31/28"}
+{"id": "stage1-basic-arithmetic-0250", "instruction": "Compute 6/2 + 3/6 and give the answer in lowest terms.", "response": "7/2"}
+{"id": "stage1-basic-arithmetic-0251", "instruction": "Compute 8/5 + 7/9 and give the answer in lowest terms.", "response": "107/45"}
+{"id": "stage1-basic-arithmetic-0252", "instruction": "Compute 13 - 42.", "response": "-29"}
+{"id": "stage1-basic-arithmetic-0253", "instruction": "Compute 6/2 + 7/9 and give the answer in lowest terms.", "response": "34/9"}
+{"id": "stage1-basic-arithmetic-0254", "instruction": "Compute 71 * 61.", "response": "4331"}
+{"id": "stage1-basic-arithmetic-0255", "instruction": "Compute 1/4 + 9/6 and give the answer in lowest terms.", "response": "7/4"}
+{"id": "stage1-basic-arithmetic-0256", "instruction": "What is 68% of 1000?", "response": "680"}
+{"id": "stage1-basic-arithmetic-0257", "instruction": "Compute 1/4 + 5/9 and give the answer in lowest terms.", "response": "29/36"}
+{"id": "stage1-basic-arithmetic-0258", "instruction": "Compute 58 - 91.", "response": "-33"}
+{"id": "stage1-basic-arithmetic-0259", "instruction": "Compute 2/1 + 4/3 and give the answer in lowest terms.", "response": "10/3"}
+{"id": "stage1-basic-arithmetic-0260", "instruction": "Compute 9/1 + 9/7 and give the answer in lowest terms.", "response": "72/7"}
+{"id": "stage1-basic-arithmetic-0261", "instruction": "Compute 16 + 61.", "response": "77"}
+{"id": "stage1-basic-arithmetic-0262", "instruction": "Compute 21 * 65.", "response": "1365"}
+{"id": "stage1-basic-arithmetic-0263", "instruction": "What is 42% of 800?", "response": "336"}
+{"id": "stage1-basic-arithmetic-0264", "instruction": "What is 39% of 400?", "response": "156"}
+{"id": "stage1-basic-arithmetic-0265", "instruction": "Compute 8/4 + 8/9 and give the answer in lowest terms.", "response": "26/9"}
+{"id": "stage1-basic-arithmetic-0266", "instruction": "Compute 26 - 78.", "response": "-52"}
+{"id": "stage1-basic-arithmetic-0267", "instruction": "What is 22% of 50?", "response": "11"}
+{"id": "stage1-basic-arithmetic-0268", "instruction": "Compute 7/6 + 9/5 and give the answer in lowest terms.", "response": "89/30"}
+{"id": "stage1-basic-arithmetic-0269", "instruction": "Compute 94 - 40.", "response": "54"}
+{"id": "stage1-basic-arithmetic-0270", "instruction": "What is 67% of 100?", "response": "67"}
+{"id": "stage1-basic-arithmetic-0271", "instruction": "Compute 9/8 + 6/6 and give the answer in lowest terms.", "response": "17/8"}
+{"id": "stage1-basic-arithmetic-0272", "instruction": "What is 74% of 400?", "response": "296"}
+{"id": "stage1-basic-arithmetic-0273", "instruction": "Compute 6/4 + 4/7 and give the answer in lowest terms.", "response": "29/14"}
+{"id": "stage1-basic-arithmetic-0274", "instruction": "Compute 7 - 42.", "response": "-35"}
+{"id": "stage1-basic-arithmetic-0275", "instruction": "What is 65% of 1000?", "response": "650"}
+{"id": "stage1-basic-arithmetic-0276", "instruction": "Compute 7/3 + 8/1 and give the answer in lowest terms.", "response": "31/3"}
+{"id": "stage1-basic-arithmetic-0277", "instruction": "Compute 77 * 44.", "response": "3388"}
+{"id": "stage1-basic-arithmetic-0278", "instruction": "Compute 14 - 69.", "response": "-55"}
+{"id": "stage1-basic-arithmetic-0279", "instruction": "Compute 1/3 + 7/3 and give the answer in lowest terms.", "response": "8/3"}
+{"id": "stage1-basic-arithmetic-0280", "instruction": "Compute 35 - 45.", "response": "-10"}
+{"id": "stage1-basic-arithmetic-0281", "instruction": "What is 55% of 1000?", "response": "550"}
+{"id": "stage1-basic-arithmetic-0282", "instruction": "Compute 88 - 70.", "response": "18"}
+{"id": "stage1-basic-arithmetic-0283", "instruction": "Compute 6/8 + 9/1 and give the answer in lowest terms.", "response": "39/4"}
+{"id": "stage1-basic-arithmetic-0284", "instruction": "What is 13% of 100?", "response": "13"}
+{"id": "stage1-basic-arithmetic-0285", "instruction": "What is 41% of 100?", "response": "41"}
+{"id": "stage1-basic-arithmetic-0286", "instruction": "What is 16% of 400?", "response": "64"}
+{"id": "stage1-basic-arithmetic-0287", "instruction": "Compute 92 * 14.", "response": "1288"}
+{"id": "stage1-basic-arithmetic-0288", "instruction": "Compute 3/5 + 1/1 and give the answer in lowest terms.", "response": "8/5"}
+{"id": "stage1-basic-arithmetic-0289", "instruction": "Compute 1/5 + 6/6 and give the answer in lowest terms.", "response": "6/5"}
+{"id": "stage1-basic-arithmetic-0290", "instruction": "Compute 3/4 + 9/7 and give the answer in lowest terms.", "response": "57/28"}
+{"id": "stage1-basic-arithmetic-0291", "instruction": "What is 28% of 100?", "response": "28"}
+{"id": "stage1-basic-arithmetic-0292", "instruction": "Compute 80 + 50.", "response": "130"}
+{"id": "stage1-basic-arithmetic-0293", "instruction": "What is 35% of 400?", "response": "140"}
+{"id": "stage1-basic-arithmetic-0294", "instruction": "What is 23% of 100?", "response": "23"}
+{"id": "stage1-basic-arithmetic-0295", "instruction": "Compute 5/8 + 5/1 and give the answer in lowest terms.", "response": "45/8"}
+{"id": "stage1-basic-arithmetic-0296", "instruction": "Compute 5/9 + 3/2 and give the answer in lowest terms.", "response": "37/18"}
+{"id": "stage1-basic-arithmetic-0297", "instruction": "Compute 6/5 + 7/5 and give the answer in lowest terms.", "response": "13/5"}
+{"id": "stage1-basic-arithmetic-0298", "instruction": "Compute 5/4 + 7/8 and give the answer in lowest terms.", "response": "17/8"}
+{"id": "stage1-basic-arithmetic-0299", "instruction": "Compute 50 + 75.", "response": "125"}
+{"id": "stage1-basic-arithmetic-0300", "instruction": "Compute 5/5 + 1/7 and give the answer in lowest terms.", "response": "8/7"}
+{"id": "stage1-basic-arithmetic-0301", "instruction": "Compute 1/1 + 8/5 and give the answer in lowest terms.", "response": "13/5"}
+{"id": "stage1-basic-arithmetic-0302", "instruction": "Compute 47 * 30.", "response": "1410"}
+{"id": "stage1-basic-arithmetic-0303", "instruction": "What is 29% of 800?", "response": "232"}
+{"id": "stage1-basic-arithmetic-0304", "instruction": "Compute 3/2 + 1/5 and give the answer in lowest terms.", "response": "17/10"}
+{"id": "stage1-basic-arithmetic-0305", "instruction": "Compute 1/6 + 3/2 and give the answer in lowest terms.", "response": "5/3"}
+{"id": "stage1-basic-arithmetic-0306", "instruction": "Compute 6/7 + 3/4 and give the answer in lowest terms.", "response": "45/28"}
+{"id": "stage1-basic-arithmetic-0307", "instruction": "Compute 48 * 69.", "response": "3312"}
+{"id": "stage1-basic-arithmetic-0308", "instruction": "What is 39% of 100?", "response": "39"}
+{"id": "stage1-basic-arithmetic-0309", "instruction": "Compute 8/5 + 6/2 and give the answer in lowest terms.", "response": "23/5"}
+{"id": "stage1-basic-arithmetic-0310", "instruction": "Compute 2/3 + 4/7 and give the answer in lowest terms.", "response": "26/21"}
+{"id": "stage1-basic-arithmetic-0311", "instruction": "What is 51% of 50?", "response": "26"}
+{"id": "stage1-basic-arithmetic-0312", "instruction": "Compute 1/5 + 9/2 and give the answer in lowest terms.", "response": "47/10"}
+{"id": "stage1-basic-arithmetic-0313", "instruction": "Compute 6/5 + 7/6 and give the answer in lowest terms.", "response": "71/30"}
+{"id": "stage1-basic-arithmetic-0314", "instruction": "Compute 31 * 62.", "response": "1922"}
+{"id": "stage1-basic-arithmetic-0315", "instruction": "Compute 73 * 43.", "response": "3139"}
+{"id": "stage1-basic-arithmetic-0316", "instruction": "What is 33% of 1000?", "response": "330"}
+{"id": "stage1-basic-arithmetic-0317", "instruction": "Compute 61 * 91.", "response": "5551"}
+{"id": "stage1-basic-arithmetic-0318", "instruction": "Compute 7/2 + 3/1 and give the answer in lowest terms.", "response": "13/2"}
+{"id": "stage1-basic-arithmetic-0319", "instruction": "Compute 65 - 16.", "response": "49"}
+{"id": "stage1-basic-arithmetic-0320", "instruction": "Compute 70 + 19.", "response": "89"}
+{"id": "stage1-basic-arithmetic-0321", "instruction": "Compute 8/6 + 9/7 and give the answer in lowest terms.", "response": "55/21"}
+{"id": "stage1-basic-arithmetic-0322", "instruction": "What is 24% of 400?", "response": "96"}
+{"id": "stage1-basic-arithmetic-0323", "instruction": "What is 17% of 400?", "response": "68"}
+{"id": "stage1-basic-arithmetic-0324", "instruction": "What is 57% of 200?", "response": "114"}
+{"id": "stage1-basic-arithmetic-0325", "instruction": "Compute 49 * 29.", "response": "1421"}
+{"id": "stage1-basic-arithmetic-0326", "instruction": "Compute 8/4 + 6/2 and give the answer in lowest terms.", "response": "5"}
+{"id": "stage1-basic-arithmetic-0327", "instruction": "What is 52% of 800?", "response": "416"}
+{"id": "stage1-basic-arithmetic-0328", "instruction": "What is 50% of 50?", "response": "25"}
+{"id": "stage1-basic-arithmetic-0329", "instruction": "Compute 5/4 + 2/8 and give the answer in lowest terms.", "response": "3/2"}
+{"id": "stage1-basic-arithmetic-0330", "instruction": "Compute 29 * 84.", "response": "2436"}
+{"id": "stage1-basic-arithmetic-0331", "instruction": "What is 7% of 50?", "response": "4"}
+{"id": "stage1-basic-arithmetic-0332", "instruction": "Compute 4/3 + 4/2 and give the answer in lowest terms.", "response": "10/3"}
+{"id": "stage1-basic-arithmetic-0333", "instruction": "What is 31% of 800?", "response": "248"}
+{"id": "stage1-basic-geometry-0000", "instruction": "A rectangle has width 15 and height 15.  Find its area and perimeter.", "response": "area = 225, perimeter = 60"}
+{"id": "stage1-basic-geometry-0001", "instruction": "A rectangle has width 7 and height 14.  Find its area and perimeter.", "response": "area = 98, perimeter = 42"}
+{"id": "stage1-basic-geometry-0002", "instruction": "A rectangle has width 14 and height 11.  Find its area and perimeter.", "response": "area = 154, perimeter = 50"}
+{"id": "stage1-basic-geometry-0003", "instruction": "A rectangle has width 6 and height 15.  Find its area and perimeter.", "response": "area = 90, perimeter = 42"}
+{"id": "stage1-basic-geometry-0004", "instruction": "A rectangle has width 4 and height 10.  Find its area and perimeter.", "response": "area = 40, perimeter = 28"}
+{"id": "stage1-basic-geometry-0005", "instruction": "A triangle has base 14 and height 4.  Find its area.", "response": "28"}
+{"id": "stage1-basic-geometry-0006", "instruction": "A rectangle has width 12 and height 15.  Find its area and perimeter.", "response": "area = 180, perimeter = 54"}
+{"id": "stage1-basic-geometry-0007", "instruction": "A rectangle has width 4 and height 2.  Find its area and perimeter.", "response": "area = 8, perimeter = 12"}
+{"id": "stage1-basic-geometry-0008", "instruction": "A triangle has base 14 and height 14.  Find its area.", "response": "98"}
+{"id": "stage1-basic-geometry-0009", "instruction": "A rectangle has width 11 and height 7.  Find its area and perimeter.", "response": "area = 77, perimeter = 36"}
+{"id": "stage1-basic-geometry-0010", "instruction": "A rectangle has width 4 and height 6.  Find its area and perimeter.", "response": "area = 24, perimeter = 20"}
+{"id": "stage1-basic-geometry-0011", "instruction": "A rectangle has width 4 and height 13.  Find its area and perimeter.", "response": "area = 52, perimeter = 34"}
+{"id": "stage1-basic-geometry-0012", "instruction": "A triangle has base 10 and height 3.  Find its area.", "response": "15"}
+{"id": "stage1-basic-geometry-0013", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "response": "area = 4π, circumference = 4π"}
+{"id": "stage1-basic-geometry-0014", "instruction": "A triangle has base 9 and height 14.  Find its area.", "response": "63"}
+{"id": "stage1-basic-geometry-0015", "instruction": "A triangle has base 10 and height 11.  Find its area.", "response": "55"}
+{"id": "stage1-basic-geometry-0016", "instruction": "A rectangle has width 9 and height 10.  Find its area and perimeter.", "response": "area = 90, perimeter = 38"}
+{"id": "stage1-basic-geometry-0017", "instruction": "A rectangle has width 11 and height 2.  Find its area and perimeter.", "response": "area = 22, perimeter = 26"}
+{"id": "stage1-basic-geometry-0018", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "response": "area = 81π, circumference = 18π"}
+{"id": "stage1-basic-geometry-0019", "instruction": "A triangle has base 9 and height 12.  Find its area.", "response": "54"}
+{"id": "stage1-basic-geometry-0020", "instruction": "A rectangle has width 2 and height 9.  Find its area and perimeter.", "response": "area = 18, perimeter = 22"}
+{"id": "stage1-basic-geometry-0021", "instruction": "A triangle has base 8 and height 12.  Find its area.", "response": "48"}
+{"id": "stage1-basic-geometry-0022", "instruction": "A rectangle has width 9 and height 13.  Find its area and perimeter.", "response": "area = 117, perimeter = 44"}
+{"id": "stage1-basic-geometry-0023", "instruction": "A triangle has base 3 and height 4.  Find its area.", "response": "6"}
+{"id": "stage1-basic-geometry-0024", "instruction": "A rectangle has width 4 and height 6.  Find its area and perimeter.", "response": "area = 24, perimeter = 20"}
+{"id": "stage1-basic-geometry-0025", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "response": "area = 81π, circumference = 18π"}
+{"id": "stage1-basic-geometry-0026", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0027", "instruction": "A triangle has base 11 and height 10.  Find its area.", "response": "55"}
+{"id": "stage1-basic-geometry-0028", "instruction": "A triangle has base 9 and height 10.  Find its area.", "response": "45"}
+{"id": "stage1-basic-geometry-0029", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0030", "instruction": "A rectangle has width 14 and height 13.  Find its area and perimeter.", "response": "area = 182, perimeter = 54"}
+{"id": "stage1-basic-geometry-0031", "instruction": "A rectangle has width 15 and height 12.  Find its area and perimeter.", "response": "area = 180, perimeter = 54"}
+{"id": "stage1-basic-geometry-0032", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "response": "area = 81π, circumference = 18π"}
+{"id": "stage1-basic-geometry-0033", "instruction": "A circle has radius 4.  Find its area and circumference (leave answers in terms of π).", "response": "area = 16π, circumference = 8π"}
+{"id": "stage1-basic-geometry-0034", "instruction": "A triangle has base 9 and height 8.  Find its area.", "response": "36"}
+{"id": "stage1-basic-geometry-0035", "instruction": "A triangle has base 9 and height 8.  Find its area.", "response": "36"}
+{"id": "stage1-basic-geometry-0036", "instruction": "A triangle has base 13 and height 8.  Find its area.", "response": "52"}
+{"id": "stage1-basic-geometry-0037", "instruction": "A triangle has base 12 and height 6.  Find its area.", "response": "36"}
+{"id": "stage1-basic-geometry-0038", "instruction": "A triangle has base 4 and height 12.  Find its area.", "response": "24"}
+{"id": "stage1-basic-geometry-0039", "instruction": "A triangle has base 3 and height 8.  Find its area.", "response": "12"}
+{"id": "stage1-basic-geometry-0040", "instruction": "A rectangle has width 13 and height 13.  Find its area and perimeter.", "response": "area = 169, perimeter = 52"}
+{"id": "stage1-basic-geometry-0041", "instruction": "A triangle has base 14 and height 4.  Find its area.", "response": "28"}
+{"id": "stage1-basic-geometry-0042", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "response": "area = 1π, circumference = 2π"}
+{"id": "stage1-basic-geometry-0043", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "response": "area = 81π, circumference = 18π"}
+{"id": "stage1-basic-geometry-0044", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0045", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "response": "area = 4π, circumference = 4π"}
+{"id": "stage1-basic-geometry-0046", "instruction": "A triangle has base 7 and height 12.  Find its area.", "response": "42"}
+{"id": "stage1-basic-geometry-0047", "instruction": "A triangle has base 13 and height 2.  Find its area.", "response": "13"}
+{"id": "stage1-basic-geometry-0048", "instruction": "A triangle has base 11 and height 6.  Find its area.", "response": "33"}
+{"id": "stage1-basic-geometry-0049", "instruction": "A triangle has base 3 and height 10.  Find its area.", "response": "15"}
+{"id": "stage1-basic-geometry-0050", "instruction": "A rectangle has width 4 and height 12.  Find its area and perimeter.", "response": "area = 48, perimeter = 32"}
+{"id": "stage1-basic-geometry-0051", "instruction": "A triangle has base 5 and height 10.  Find its area.", "response": "25"}
+{"id": "stage1-basic-geometry-0052", "instruction": "A triangle has base 3 and height 14.  Find its area.", "response": "21"}
+{"id": "stage1-basic-geometry-0053", "instruction": "A triangle has base 11 and height 14.  Find its area.", "response": "77"}
+{"id": "stage1-basic-geometry-0054", "instruction": "A triangle has base 10 and height 14.  Find its area.", "response": "70"}
+{"id": "stage1-basic-geometry-0055", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "response": "area = 81π, circumference = 18π"}
+{"id": "stage1-basic-geometry-0056", "instruction": "A rectangle has width 11 and height 12.  Find its area and perimeter.", "response": "area = 132, perimeter = 46"}
+{"id": "stage1-basic-geometry-0057", "instruction": "A circle has radius 5.  Find its area and circumference (leave answers in terms of π).", "response": "area = 25π, circumference = 10π"}
+{"id": "stage1-basic-geometry-0058", "instruction": "A rectangle has width 4 and height 6.  Find its area and perimeter.", "response": "area = 24, perimeter = 20"}
+{"id": "stage1-basic-geometry-0059", "instruction": "A circle has radius 5.  Find its area and circumference (leave answers in terms of π).", "response": "area = 25π, circumference = 10π"}
+{"id": "stage1-basic-geometry-0060", "instruction": "A triangle has base 7 and height 2.  Find its area.", "response": "7"}
+{"id": "stage1-basic-geometry-0061", "instruction": "A rectangle has width 15 and height 4.  Find its area and perimeter.", "response": "area = 60, perimeter = 38"}
+{"id": "stage1-basic-geometry-0062", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0063", "instruction": "A rectangle has width 4 and height 13.  Find its area and perimeter.", "response": "area = 52, perimeter = 34"}
+{"id": "stage1-basic-geometry-0064", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "response": "area = 1π, circumference = 2π"}
+{"id": "stage1-basic-geometry-0065", "instruction": "A rectangle has width 13 and height 10.  Find its area and perimeter.", "response": "area = 130, perimeter = 46"}
+{"id": "stage1-basic-geometry-0066", "instruction": "A rectangle has width 8 and height 8.  Find its area and perimeter.", "response": "area = 64, perimeter = 32"}
+{"id": "stage1-basic-geometry-0067", "instruction": "A triangle has base 7 and height 4.  Find its area.", "response": "14"}
+{"id": "stage1-basic-geometry-0068", "instruction": "A triangle has base 6 and height 13.  Find its area.", "response": "39"}
+{"id": "stage1-basic-geometry-0069", "instruction": "A triangle has base 14 and height 11.  Find its area.", "response": "77"}
+{"id": "stage1-basic-geometry-0070", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "response": "area = 4π, circumference = 4π"}
+{"id": "stage1-basic-geometry-0071", "instruction": "A rectangle has width 4 and height 4.  Find its area and perimeter.", "response": "area = 16, perimeter = 16"}
+{"id": "stage1-basic-geometry-0072", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "response": "area = 1π, circumference = 2π"}
+{"id": "stage1-basic-geometry-0073", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "response": "area = 4π, circumference = 4π"}
+{"id": "stage1-basic-geometry-0074", "instruction": "A triangle has base 9 and height 12.  Find its area.", "response": "54"}
+{"id": "stage1-basic-geometry-0075", "instruction": "A triangle has base 9 and height 8.  Find its area.", "response": "36"}
+{"id": "stage1-basic-geometry-0076", "instruction": "A triangle has base 5 and height 14.  Find its area.", "response": "35"}
+{"id": "stage1-basic-geometry-0077", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "response": "area = 4π, circumference = 4π"}
+{"id": "stage1-basic-geometry-0078", "instruction": "A triangle has base 8 and height 3.  Find its area.", "response": "12"}
+{"id": "stage1-basic-geometry-0079", "instruction": "A triangle has base 12 and height 12.  Find its area.", "response": "72"}
+{"id": "stage1-basic-geometry-0080", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0081", "instruction": "A circle has radius 5.  Find its area and circumference (leave answers in terms of π).", "response": "area = 25π, circumference = 10π"}
+{"id": "stage1-basic-geometry-0082", "instruction": "A rectangle has width 5 and height 8.  Find its area and perimeter.", "response": "area = 40, perimeter = 26"}
+{"id": "stage1-basic-geometry-0083", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "response": "area = 1π, circumference = 2π"}
+{"id": "stage1-basic-geometry-0084", "instruction": "A rectangle has width 5 and height 6.  Find its area and perimeter.", "response": "area = 30, perimeter = 22"}
+{"id": "stage1-basic-geometry-0085", "instruction": "A rectangle has width 14 and height 4.  Find its area and perimeter.", "response": "area = 56, perimeter = 36"}
+{"id": "stage1-basic-geometry-0086", "instruction": "A triangle has base 6 and height 7.  Find its area.", "response": "21"}
+{"id": "stage1-basic-geometry-0087", "instruction": "A rectangle has width 2 and height 9.  Find its area and perimeter.", "response": "area = 18, perimeter = 22"}
+{"id": "stage1-basic-geometry-0088", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0089", "instruction": "A rectangle has width 4 and height 8.  Find its area and perimeter.", "response": "area = 32, perimeter = 24"}
+{"id": "stage1-basic-geometry-0090", "instruction": "A circle has radius 4.  Find its area and circumference (leave answers in terms of π).", "response": "area = 16π, circumference = 8π"}
+{"id": "stage1-basic-geometry-0091", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "response": "area = 81π, circumference = 18π"}
+{"id": "stage1-basic-geometry-0092", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0093", "instruction": "A rectangle has width 8 and height 15.  Find its area and perimeter.", "response": "area = 120, perimeter = 46"}
+{"id": "stage1-basic-geometry-0094", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "response": "area = 1π, circumference = 2π"}
+{"id": "stage1-basic-geometry-0095", "instruction": "A triangle has base 2 and height 9.  Find its area.", "response": "9"}
+{"id": "stage1-basic-geometry-0096", "instruction": "A rectangle has width 15 and height 7.  Find its area and perimeter.", "response": "area = 105, perimeter = 44"}
+{"id": "stage1-basic-geometry-0097", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0098", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0099", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0100", "instruction": "A triangle has base 3 and height 8.  Find its area.", "response": "12"}
+{"id": "stage1-basic-geometry-0101", "instruction": "A rectangle has width 7 and height 4.  Find its area and perimeter.", "response": "area = 28, perimeter = 22"}
+{"id": "stage1-basic-geometry-0102", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0103", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0104", "instruction": "A rectangle has width 8 and height 15.  Find its area and perimeter.", "response": "area = 120, perimeter = 46"}
+{"id": "stage1-basic-geometry-0105", "instruction": "A rectangle has width 5 and height 8.  Find its area and perimeter.", "response": "area = 40, perimeter = 26"}
+{"id": "stage1-basic-geometry-0106", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0107", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "response": "area = 4π, circumference = 4π"}
+{"id": "stage1-basic-geometry-0108", "instruction": "A triangle has base 6 and height 13.  Find its area.", "response": "39"}
+{"id": "stage1-basic-geometry-0109", "instruction": "A triangle has base 5 and height 14.  Find its area.", "response": "35"}
+{"id": "stage1-basic-geometry-0110", "instruction": "A rectangle has width 3 and height 10.  Find its area and perimeter.", "response": "area = 30, perimeter = 26"}
+{"id": "stage1-basic-geometry-0111", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "response": "area = 4π, circumference = 4π"}
+{"id": "stage1-basic-geometry-0112", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "response": "area = 81π, circumference = 18π"}
+{"id": "stage1-basic-geometry-0113", "instruction": "A rectangle has width 14 and height 7.  Find its area and perimeter.", "response": "area = 98, perimeter = 42"}
+{"id": "stage1-basic-geometry-0114", "instruction": "A triangle has base 13 and height 12.  Find its area.", "response": "78"}
+{"id": "stage1-basic-geometry-0115", "instruction": "A rectangle has width 5 and height 3.  Find its area and perimeter.", "response": "area = 15, perimeter = 16"}
+{"id": "stage1-basic-geometry-0116", "instruction": "A rectangle has width 6 and height 5.  Find its area and perimeter.", "response": "area = 30, perimeter = 22"}
+{"id": "stage1-basic-geometry-0117", "instruction": "A rectangle has width 11 and height 4.  Find its area and perimeter.", "response": "area = 44, perimeter = 30"}
+{"id": "stage1-basic-geometry-0118", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "response": "area = 4π, circumference = 4π"}
+{"id": "stage1-basic-geometry-0119", "instruction": "A rectangle has width 14 and height 12.  Find its area and perimeter.", "response": "area = 168, perimeter = 52"}
+{"id": "stage1-basic-geometry-0120", "instruction": "A triangle has base 9 and height 14.  Find its area.", "response": "63"}
+{"id": "stage1-basic-geometry-0121", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0122", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0123", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0124", "instruction": "A rectangle has width 9 and height 3.  Find its area and perimeter.", "response": "area = 27, perimeter = 24"}
+{"id": "stage1-basic-geometry-0125", "instruction": "A triangle has base 9 and height 12.  Find its area.", "response": "54"}
+{"id": "stage1-basic-geometry-0126", "instruction": "A triangle has base 14 and height 6.  Find its area.", "response": "42"}
+{"id": "stage1-basic-geometry-0127", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "response": "area = 1π, circumference = 2π"}
+{"id": "stage1-basic-geometry-0128", "instruction": "A triangle has base 10 and height 3.  Find its area.", "response": "15"}
+{"id": "stage1-basic-geometry-0129", "instruction": "A triangle has base 9 and height 2.  Find its area.", "response": "9"}
+{"id": "stage1-basic-geometry-0130", "instruction": "A rectangle has width 7 and height 15.  Find its area and perimeter.", "response": "area = 105, perimeter = 44"}
+{"id": "stage1-basic-geometry-0131", "instruction": "A triangle has base 3 and height 12.  Find its area.", "response": "18"}
+{"id": "stage1-basic-geometry-0132", "instruction": "A rectangle has width 11 and height 11.  Find its area and perimeter.", "response": "area = 121, perimeter = 44"}
+{"id": "stage1-basic-geometry-0133", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0134", "instruction": "A triangle has base 11 and height 10.  Find its area.", "response": "55"}
+{"id": "stage1-basic-geometry-0135", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "response": "area = 1π, circumference = 2π"}
+{"id": "stage1-basic-geometry-0136", "instruction": "A triangle has base 14 and height 11.  Find its area.", "response": "77"}
+{"id": "stage1-basic-geometry-0137", "instruction": "A circle has radius 4.  Find its area and circumference (leave answers in terms of π).", "response": "area = 16π, circumference = 8π"}
+{"id": "stage1-basic-geometry-0138", "instruction": "A triangle has base 11 and height 10.  Find its area.", "response": "55"}
+{"id": "stage1-basic-geometry-0139", "instruction": "A rectangle has width 2 and height 9.  Find its area and perimeter.", "response": "area = 18, perimeter = 22"}
+{"id": "stage1-basic-geometry-0140", "instruction": "A rectangle has width 14 and height 15.  Find its area and perimeter.", "response": "area = 210, perimeter = 58"}
+{"id": "stage1-basic-geometry-0141", "instruction": "A triangle has base 13 and height 10.  Find its area.", "response": "65"}
+{"id": "stage1-basic-geometry-0142", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0143", "instruction": "A rectangle has width 5 and height 13.  Find its area and perimeter.", "response": "area = 65, perimeter = 36"}
+{"id": "stage1-basic-geometry-0144", "instruction": "A triangle has base 9 and height 10.  Find its area.", "response": "45"}
+{"id": "stage1-basic-geometry-0145", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0146", "instruction": "A triangle has base 7 and height 6.  Find its area.", "response": "21"}
+{"id": "stage1-basic-geometry-0147", "instruction": "A triangle has base 8 and height 14.  Find its area.", "response": "56"}
+{"id": "stage1-basic-geometry-0148", "instruction": "A triangle has base 12 and height 11.  Find its area.", "response": "66"}
+{"id": "stage1-basic-geometry-0149", "instruction": "A rectangle has width 14 and height 12.  Find its area and perimeter.", "response": "area = 168, perimeter = 52"}
+{"id": "stage1-basic-geometry-0150", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0151", "instruction": "A rectangle has width 7 and height 3.  Find its area and perimeter.", "response": "area = 21, perimeter = 20"}
+{"id": "stage1-basic-geometry-0152", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0153", "instruction": "A triangle has base 6 and height 13.  Find its area.", "response": "39"}
+{"id": "stage1-basic-geometry-0154", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0155", "instruction": "A triangle has base 3 and height 12.  Find its area.", "response": "18"}
+{"id": "stage1-basic-geometry-0156", "instruction": "A rectangle has width 7 and height 6.  Find its area and perimeter.", "response": "area = 42, perimeter = 26"}
+{"id": "stage1-basic-geometry-0157", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0158", "instruction": "A rectangle has width 11 and height 13.  Find its area and perimeter.", "response": "area = 143, perimeter = 48"}
+{"id": "stage1-basic-geometry-0159", "instruction": "A rectangle has width 6 and height 10.  Find its area and perimeter.", "response": "area = 60, perimeter = 32"}
+{"id": "stage1-basic-geometry-0160", "instruction": "A triangle has base 12 and height 14.  Find its area.", "response": "84"}
+{"id": "stage1-basic-geometry-0161", "instruction": "A triangle has base 4 and height 12.  Find its area.", "response": "24"}
+{"id": "stage1-basic-geometry-0162", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "response": "area = 81π, circumference = 18π"}
+{"id": "stage1-basic-geometry-0163", "instruction": "A rectangle has width 12 and height 12.  Find its area and perimeter.", "response": "area = 144, perimeter = 48"}
+{"id": "stage1-basic-geometry-0164", "instruction": "A triangle has base 10 and height 7.  Find its area.", "response": "35"}
+{"id": "stage1-basic-geometry-0165", "instruction": "A rectangle has width 7 and height 6.  Find its area and perimeter.", "response": "area = 42, perimeter = 26"}
+{"id": "stage1-basic-geometry-0166", "instruction": "A rectangle has width 5 and height 7.  Find its area and perimeter.", "response": "area = 35, perimeter = 24"}
+{"id": "stage1-basic-geometry-0167", "instruction": "A triangle has base 5 and height 4.  Find its area.", "response": "10"}
+{"id": "stage1-basic-geometry-0168", "instruction": "A rectangle has width 3 and height 6.  Find its area and perimeter.", "response": "area = 18, perimeter = 18"}
+{"id": "stage1-basic-geometry-0169", "instruction": "A rectangle has width 10 and height 14.  Find its area and perimeter.", "response": "area = 140, perimeter = 48"}
+{"id": "stage1-basic-geometry-0170", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "response": "area = 81π, circumference = 18π"}
+{"id": "stage1-basic-geometry-0171", "instruction": "A rectangle has width 12 and height 7.  Find its area and perimeter.", "response": "area = 84, perimeter = 38"}
+{"id": "stage1-basic-geometry-0172", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0173", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0174", "instruction": "A rectangle has width 4 and height 4.  Find its area and perimeter.", "response": "area = 16, perimeter = 16"}
+{"id": "stage1-basic-geometry-0175", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0176", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0177", "instruction": "A rectangle has width 8 and height 7.  Find its area and perimeter.", "response": "area = 56, perimeter = 30"}
+{"id": "stage1-basic-geometry-0178", "instruction": "A circle has radius 4.  Find its area and circumference (leave answers in terms of π).", "response": "area = 16π, circumference = 8π"}
+{"id": "stage1-basic-geometry-0179", "instruction": "A triangle has base 11 and height 6.  Find its area.", "response": "33"}
+{"id": "stage1-basic-geometry-0180", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0181", "instruction": "A rectangle has width 10 and height 5.  Find its area and perimeter.", "response": "area = 50, perimeter = 30"}
+{"id": "stage1-basic-geometry-0182", "instruction": "A triangle has base 14 and height 14.  Find its area.", "response": "98"}
+{"id": "stage1-basic-geometry-0183", "instruction": "A triangle has base 5 and height 12.  Find its area.", "response": "30"}
+{"id": "stage1-basic-geometry-0184", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0185", "instruction": "A triangle has base 14 and height 6.  Find its area.", "response": "42"}
+{"id": "stage1-basic-geometry-0186", "instruction": "A triangle has base 10 and height 10.  Find its area.", "response": "50"}
+{"id": "stage1-basic-geometry-0187", "instruction": "A triangle has base 4 and height 5.  Find its area.", "response": "10"}
+{"id": "stage1-basic-geometry-0188", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0189", "instruction": "A triangle has base 2 and height 12.  Find its area.", "response": "12"}
+{"id": "stage1-basic-geometry-0190", "instruction": "A triangle has base 7 and height 10.  Find its area.", "response": "35"}
+{"id": "stage1-basic-geometry-0191", "instruction": "A rectangle has width 13 and height 15.  Find its area and perimeter.", "response": "area = 195, perimeter = 56"}
+{"id": "stage1-basic-geometry-0192", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "response": "area = 4π, circumference = 4π"}
+{"id": "stage1-basic-geometry-0193", "instruction": "A triangle has base 3 and height 14.  Find its area.", "response": "21"}
+{"id": "stage1-basic-geometry-0194", "instruction": "A rectangle has width 6 and height 9.  Find its area and perimeter.", "response": "area = 54, perimeter = 30"}
+{"id": "stage1-basic-geometry-0195", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0196", "instruction": "A triangle has base 3 and height 2.  Find its area.", "response": "3"}
+{"id": "stage1-basic-geometry-0197", "instruction": "A triangle has base 2 and height 8.  Find its area.", "response": "8"}
+{"id": "stage1-basic-geometry-0198", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0199", "instruction": "A rectangle has width 8 and height 3.  Find its area and perimeter.", "response": "area = 24, perimeter = 22"}
+{"id": "stage1-basic-geometry-0200", "instruction": "A triangle has base 5 and height 2.  Find its area.", "response": "5"}
+{"id": "stage1-basic-geometry-0201", "instruction": "A triangle has base 3 and height 12.  Find its area.", "response": "18"}
+{"id": "stage1-basic-geometry-0202", "instruction": "A triangle has base 14 and height 4.  Find its area.", "response": "28"}
+{"id": "stage1-basic-geometry-0203", "instruction": "A rectangle has width 2 and height 6.  Find its area and perimeter.", "response": "area = 12, perimeter = 16"}
+{"id": "stage1-basic-geometry-0204", "instruction": "A triangle has base 13 and height 4.  Find its area.", "response": "26"}
+{"id": "stage1-basic-geometry-0205", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0206", "instruction": "A triangle has base 11 and height 2.  Find its area.", "response": "11"}
+{"id": "stage1-basic-geometry-0207", "instruction": "A rectangle has width 2 and height 6.  Find its area and perimeter.", "response": "area = 12, perimeter = 16"}
+{"id": "stage1-basic-geometry-0208", "instruction": "A rectangle has width 15 and height 4.  Find its area and perimeter.", "response": "area = 60, perimeter = 38"}
+{"id": "stage1-basic-geometry-0209", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "response": "area = 81π, circumference = 18π"}
+{"id": "stage1-basic-geometry-0210", "instruction": "A triangle has base 3 and height 14.  Find its area.", "response": "21"}
+{"id": "stage1-basic-geometry-0211", "instruction": "A triangle has base 5 and height 6.  Find its area.", "response": "15"}
+{"id": "stage1-basic-geometry-0212", "instruction": "A rectangle has width 2 and height 5.  Find its area and perimeter.", "response": "area = 10, perimeter = 14"}
+{"id": "stage1-basic-geometry-0213", "instruction": "A triangle has base 12 and height 14.  Find its area.", "response": "84"}
+{"id": "stage1-basic-geometry-0214", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0215", "instruction": "A rectangle has width 3 and height 15.  Find its area and perimeter.", "response": "area = 45, perimeter = 36"}
+{"id": "stage1-basic-geometry-0216", "instruction": "A triangle has base 11 and height 10.  Find its area.", "response": "55"}
+{"id": "stage1-basic-geometry-0217", "instruction": "A rectangle has width 12 and height 10.  Find its area and perimeter.", "response": "area = 120, perimeter = 44"}
+{"id": "stage1-basic-geometry-0218", "instruction": "A circle has radius 4.  Find its area and circumference (leave answers in terms of π).", "response": "area = 16π, circumference = 8π"}
+{"id": "stage1-basic-geometry-0219", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0220", "instruction": "A triangle has base 8 and height 2.  Find its area.", "response": "8"}
+{"id": "stage1-basic-geometry-0221", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0222", "instruction": "A rectangle has width 11 and height 8.  Find its area and perimeter.", "response": "area = 88, perimeter = 38"}
+{"id": "stage1-basic-geometry-0223", "instruction": "A rectangle has width 12 and height 12.  Find its area and perimeter.", "response": "area = 144, perimeter = 48"}
+{"id": "stage1-basic-geometry-0224", "instruction": "A rectangle has width 10 and height 7.  Find its area and perimeter.", "response": "area = 70, perimeter = 34"}
+{"id": "stage1-basic-geometry-0225", "instruction": "A rectangle has width 10 and height 10.  Find its area and perimeter.", "response": "area = 100, perimeter = 40"}
+{"id": "stage1-basic-geometry-0226", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "response": "area = 81π, circumference = 18π"}
+{"id": "stage1-basic-geometry-0227", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "response": "area = 1π, circumference = 2π"}
+{"id": "stage1-basic-geometry-0228", "instruction": "A triangle has base 9 and height 2.  Find its area.", "response": "9"}
+{"id": "stage1-basic-geometry-0229", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0230", "instruction": "A triangle has base 6 and height 13.  Find its area.", "response": "39"}
+{"id": "stage1-basic-geometry-0231", "instruction": "A rectangle has width 7 and height 14.  Find its area and perimeter.", "response": "area = 98, perimeter = 42"}
+{"id": "stage1-basic-geometry-0232", "instruction": "A rectangle has width 7 and height 5.  Find its area and perimeter.", "response": "area = 35, perimeter = 24"}
+{"id": "stage1-basic-geometry-0233", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "response": "area = 4π, circumference = 4π"}
+{"id": "stage1-basic-geometry-0234", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0235", "instruction": "A rectangle has width 2 and height 7.  Find its area and perimeter.", "response": "area = 14, perimeter = 18"}
+{"id": "stage1-basic-geometry-0236", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0237", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0238", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0239", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0240", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0241", "instruction": "A rectangle has width 3 and height 13.  Find its area and perimeter.", "response": "area = 39, perimeter = 32"}
+{"id": "stage1-basic-geometry-0242", "instruction": "A triangle has base 2 and height 6.  Find its area.", "response": "6"}
+{"id": "stage1-basic-geometry-0243", "instruction": "A rectangle has width 2 and height 14.  Find its area and perimeter.", "response": "area = 28, perimeter = 32"}
+{"id": "stage1-basic-geometry-0244", "instruction": "A rectangle has width 2 and height 7.  Find its area and perimeter.", "response": "area = 14, perimeter = 18"}
+{"id": "stage1-basic-geometry-0245", "instruction": "A triangle has base 10 and height 8.  Find its area.", "response": "40"}
+{"id": "stage1-basic-geometry-0246", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0247", "instruction": "A triangle has base 2 and height 14.  Find its area.", "response": "14"}
+{"id": "stage1-basic-geometry-0248", "instruction": "A circle has radius 4.  Find its area and circumference (leave answers in terms of π).", "response": "area = 16π, circumference = 8π"}
+{"id": "stage1-basic-geometry-0249", "instruction": "A triangle has base 7 and height 14.  Find its area.", "response": "49"}
+{"id": "stage1-basic-geometry-0250", "instruction": "A rectangle has width 15 and height 12.  Find its area and perimeter.", "response": "area = 180, perimeter = 54"}
+{"id": "stage1-basic-geometry-0251", "instruction": "A triangle has base 6 and height 3.  Find its area.", "response": "9"}
+{"id": "stage1-basic-geometry-0252", "instruction": "A triangle has base 8 and height 8.  Find its area.", "response": "32"}
+{"id": "stage1-basic-geometry-0253", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0254", "instruction": "A triangle has base 7 and height 4.  Find its area.", "response": "14"}
+{"id": "stage1-basic-geometry-0255", "instruction": "A triangle has base 13 and height 14.  Find its area.", "response": "91"}
+{"id": "stage1-basic-geometry-0256", "instruction": "A circle has radius 5.  Find its area and circumference (leave answers in terms of π).", "response": "area = 25π, circumference = 10π"}
+{"id": "stage1-basic-geometry-0257", "instruction": "A rectangle has width 13 and height 8.  Find its area and perimeter.", "response": "area = 104, perimeter = 42"}
+{"id": "stage1-basic-geometry-0258", "instruction": "A rectangle has width 8 and height 11.  Find its area and perimeter.", "response": "area = 88, perimeter = 38"}
+{"id": "stage1-basic-geometry-0259", "instruction": "A rectangle has width 10 and height 6.  Find its area and perimeter.", "response": "area = 60, perimeter = 32"}
+{"id": "stage1-basic-geometry-0260", "instruction": "A triangle has base 3 and height 12.  Find its area.", "response": "18"}
+{"id": "stage1-basic-geometry-0261", "instruction": "A triangle has base 6 and height 9.  Find its area.", "response": "27"}
+{"id": "stage1-basic-geometry-0262", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0263", "instruction": "A rectangle has width 13 and height 9.  Find its area and perimeter.", "response": "area = 117, perimeter = 44"}
+{"id": "stage1-basic-geometry-0264", "instruction": "A triangle has base 9 and height 2.  Find its area.", "response": "9"}
+{"id": "stage1-basic-geometry-0265", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0266", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0267", "instruction": "A triangle has base 12 and height 14.  Find its area.", "response": "84"}
+{"id": "stage1-basic-geometry-0268", "instruction": "A rectangle has width 3 and height 12.  Find its area and perimeter.", "response": "area = 36, perimeter = 30"}
+{"id": "stage1-basic-geometry-0269", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0270", "instruction": "A triangle has base 10 and height 14.  Find its area.", "response": "70"}
+{"id": "stage1-basic-geometry-0271", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0272", "instruction": "A rectangle has width 4 and height 15.  Find its area and perimeter.", "response": "area = 60, perimeter = 38"}
+{"id": "stage1-basic-geometry-0273", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0274", "instruction": "A rectangle has width 4 and height 3.  Find its area and perimeter.", "response": "area = 12, perimeter = 14"}
+{"id": "stage1-basic-geometry-0275", "instruction": "A rectangle has width 14 and height 12.  Find its area and perimeter.", "response": "area = 168, perimeter = 52"}
+{"id": "stage1-basic-geometry-0276", "instruction": "A triangle has base 7 and height 8.  Find its area.", "response": "28"}
+{"id": "stage1-basic-geometry-0277", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "response": "area = 1π, circumference = 2π"}
+{"id": "stage1-basic-geometry-0278", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0279", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0280", "instruction": "A triangle has base 7 and height 14.  Find its area.", "response": "49"}
+{"id": "stage1-basic-geometry-0281", "instruction": "A rectangle has width 11 and height 4.  Find its area and perimeter.", "response": "area = 44, perimeter = 30"}
+{"id": "stage1-basic-geometry-0282", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0283", "instruction": "A triangle has base 7 and height 12.  Find its area.", "response": "42"}
+{"id": "stage1-basic-geometry-0284", "instruction": "A triangle has base 5 and height 2.  Find its area.", "response": "5"}
+{"id": "stage1-basic-geometry-0285", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0286", "instruction": "A triangle has base 10 and height 8.  Find its area.", "response": "40"}
+{"id": "stage1-basic-geometry-0287", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "response": "area = 4π, circumference = 4π"}
+{"id": "stage1-basic-geometry-0288", "instruction": "A triangle has base 14 and height 6.  Find its area.", "response": "42"}
+{"id": "stage1-basic-geometry-0289", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0290", "instruction": "A rectangle has width 11 and height 6.  Find its area and perimeter.", "response": "area = 66, perimeter = 34"}
+{"id": "stage1-basic-geometry-0291", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0292", "instruction": "A rectangle has width 3 and height 4.  Find its area and perimeter.", "response": "area = 12, perimeter = 14"}
+{"id": "stage1-basic-geometry-0293", "instruction": "A rectangle has width 9 and height 4.  Find its area and perimeter.", "response": "area = 36, perimeter = 26"}
+{"id": "stage1-basic-geometry-0294", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0295", "instruction": "A rectangle has width 14 and height 12.  Find its area and perimeter.", "response": "area = 168, perimeter = 52"}
+{"id": "stage1-basic-geometry-0296", "instruction": "A triangle has base 12 and height 7.  Find its area.", "response": "42"}
+{"id": "stage1-basic-geometry-0297", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "response": "area = 4π, circumference = 4π"}
+{"id": "stage1-basic-geometry-0298", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "response": "area = 81π, circumference = 18π"}
+{"id": "stage1-basic-geometry-0299", "instruction": "A triangle has base 6 and height 4.  Find its area.", "response": "12"}
+{"id": "stage1-basic-geometry-0300", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0301", "instruction": "A triangle has base 10 and height 5.  Find its area.", "response": "25"}
+{"id": "stage1-basic-geometry-0302", "instruction": "A rectangle has width 5 and height 14.  Find its area and perimeter.", "response": "area = 70, perimeter = 38"}
+{"id": "stage1-basic-geometry-0303", "instruction": "A rectangle has width 5 and height 14.  Find its area and perimeter.", "response": "area = 70, perimeter = 38"}
+{"id": "stage1-basic-geometry-0304", "instruction": "A triangle has base 2 and height 7.  Find its area.", "response": "7"}
+{"id": "stage1-basic-geometry-0305", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0306", "instruction": "A triangle has base 14 and height 10.  Find its area.", "response": "70"}
+{"id": "stage1-basic-geometry-0307", "instruction": "A rectangle has width 11 and height 3.  Find its area and perimeter.", "response": "area = 33, perimeter = 28"}
+{"id": "stage1-basic-geometry-0308", "instruction": "A rectangle has width 6 and height 8.  Find its area and perimeter.", "response": "area = 48, perimeter = 28"}
+{"id": "stage1-basic-geometry-0309", "instruction": "A circle has radius 8.  Find its area and circumference (leave answers in terms of π).", "response": "area = 64π, circumference = 16π"}
+{"id": "stage1-basic-geometry-0310", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "response": "area = 49π, circumference = 14π"}
+{"id": "stage1-basic-geometry-0311", "instruction": "A triangle has base 11 and height 4.  Find its area.", "response": "22"}
+{"id": "stage1-basic-geometry-0312", "instruction": "A triangle has base 12 and height 3.  Find its area.", "response": "18"}
+{"id": "stage1-basic-geometry-0313", "instruction": "A triangle has base 9 and height 12.  Find its area.", "response": "54"}
+{"id": "stage1-basic-geometry-0314", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0315", "instruction": "A rectangle has width 15 and height 14.  Find its area and perimeter.", "response": "area = 210, perimeter = 58"}
+{"id": "stage1-basic-geometry-0316", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0317", "instruction": "A rectangle has width 8 and height 10.  Find its area and perimeter.", "response": "area = 80, perimeter = 36"}
+{"id": "stage1-basic-geometry-0318", "instruction": "A rectangle has width 15 and height 3.  Find its area and perimeter.", "response": "area = 45, perimeter = 36"}
+{"id": "stage1-basic-geometry-0319", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "response": "area = 9π, circumference = 6π"}
+{"id": "stage1-basic-geometry-0320", "instruction": "A triangle has base 4 and height 4.  Find its area.", "response": "8"}
+{"id": "stage1-basic-geometry-0321", "instruction": "A triangle has base 13 and height 10.  Find its area.", "response": "65"}
+{"id": "stage1-basic-geometry-0322", "instruction": "A triangle has base 3 and height 6.  Find its area.", "response": "9"}
+{"id": "stage1-basic-geometry-0323", "instruction": "A rectangle has width 12 and height 10.  Find its area and perimeter.", "response": "area = 120, perimeter = 44"}
+{"id": "stage1-basic-geometry-0324", "instruction": "A triangle has base 4 and height 12.  Find its area.", "response": "24"}
+{"id": "stage1-basic-geometry-0325", "instruction": "A triangle has base 11 and height 10.  Find its area.", "response": "55"}
+{"id": "stage1-basic-geometry-0326", "instruction": "A rectangle has width 10 and height 12.  Find its area and perimeter.", "response": "area = 120, perimeter = 44"}
+{"id": "stage1-basic-geometry-0327", "instruction": "A rectangle has width 11 and height 11.  Find its area and perimeter.", "response": "area = 121, perimeter = 44"}
+{"id": "stage1-basic-geometry-0328", "instruction": "A rectangle has width 4 and height 12.  Find its area and perimeter.", "response": "area = 48, perimeter = 32"}
+{"id": "stage1-basic-geometry-0329", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "response": "area = 36π, circumference = 12π"}
+{"id": "stage1-basic-geometry-0330", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "response": "area = 1π, circumference = 2π"}
+{"id": "stage1-basic-geometry-0331", "instruction": "A rectangle has width 3 and height 2.  Find its area and perimeter.", "response": "area = 6, perimeter = 10"}
+{"id": "stage1-basic-geometry-0332", "instruction": "A circle has radius 5.  Find its area and circumference (leave answers in terms of π).", "response": "area = 25π, circumference = 10π"}
+{"id": "stage1-basic-geometry-0333", "instruction": "A circle has radius 4.  Find its area and circumference (leave answers in terms of π).", "response": "area = 16π, circumference = 8π"}
+{"id": "stage1-basic-probability-0000", "instruction": "From 8 distinct items, how many subsets of size 1 exist?", "response": "8"}
+{"id": "stage1-basic-probability-0001", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0002", "instruction": "From 6 distinct items, how many subsets of size 2 exist?", "response": "15"}
+{"id": "stage1-basic-probability-0003", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0004", "instruction": "From 8 distinct items, how many subsets of size 2 exist?", "response": "28"}
+{"id": "stage1-basic-probability-0005", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0006", "instruction": "From 2 distinct items, how many subsets of size 1 exist?", "response": "2"}
+{"id": "stage1-basic-probability-0007", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0008", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0009", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0010", "instruction": "From 4 distinct items, how many subsets of size 2 exist?", "response": "6"}
+{"id": "stage1-basic-probability-0011", "instruction": "From 7 distinct items, how many subsets of size 2 exist?", "response": "21"}
+{"id": "stage1-basic-probability-0012", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0013", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0014", "instruction": "From 3 distinct items, how many subsets of size 2 exist?", "response": "3"}
+{"id": "stage1-basic-probability-0015", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0016", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0017", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0018", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0019", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0020", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0021", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0022", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0023", "instruction": "From 7 distinct items, how many subsets of size 1 exist?", "response": "7"}
+{"id": "stage1-basic-probability-0024", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0025", "instruction": "From 9 distinct items, how many subsets of size 2 exist?", "response": "36"}
+{"id": "stage1-basic-probability-0026", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0027", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0028", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0029", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0030", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0031", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0032", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0033", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0034", "instruction": "From 9 distinct items, how many subsets of size 2 exist?", "response": "36"}
+{"id": "stage1-basic-probability-0035", "instruction": "From 2 distinct items, how many subsets of size 1 exist?", "response": "2"}
+{"id": "stage1-basic-probability-0036", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0037", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0038", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0039", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0040", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0041", "instruction": "From 10 distinct items, how many subsets of size 1 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0042", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0043", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0044", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0045", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0046", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0047", "instruction": "From 3 distinct items, how many subsets of size 1 exist?", "response": "3"}
+{"id": "stage1-basic-probability-0048", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0049", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0050", "instruction": "From 7 distinct items, how many subsets of size 1 exist?", "response": "7"}
+{"id": "stage1-basic-probability-0051", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0052", "instruction": "From 8 distinct items, how many subsets of size 1 exist?", "response": "8"}
+{"id": "stage1-basic-probability-0053", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0054", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0055", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0056", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "response": "9"}
+{"id": "stage1-basic-probability-0057", "instruction": "From 10 distinct items, how many subsets of size 1 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0058", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0059", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0060", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0061", "instruction": "From 6 distinct items, how many subsets of size 2 exist?", "response": "15"}
+{"id": "stage1-basic-probability-0062", "instruction": "From 10 distinct items, how many subsets of size 2 exist?", "response": "45"}
+{"id": "stage1-basic-probability-0063", "instruction": "From 6 distinct items, how many subsets of size 2 exist?", "response": "15"}
+{"id": "stage1-basic-probability-0064", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0065", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0066", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0067", "instruction": "From 6 distinct items, how many subsets of size 1 exist?", "response": "6"}
+{"id": "stage1-basic-probability-0068", "instruction": "From 9 distinct items, how many subsets of size 2 exist?", "response": "36"}
+{"id": "stage1-basic-probability-0069", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "response": "5"}
+{"id": "stage1-basic-probability-0070", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "response": "9"}
+{"id": "stage1-basic-probability-0071", "instruction": "From 8 distinct items, how many subsets of size 1 exist?", "response": "8"}
+{"id": "stage1-basic-probability-0072", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "response": "5"}
+{"id": "stage1-basic-probability-0073", "instruction": "From 3 distinct items, how many subsets of size 1 exist?", "response": "3"}
+{"id": "stage1-basic-probability-0074", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0075", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0076", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0077", "instruction": "From 5 distinct items, how many subsets of size 2 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0078", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "response": "9"}
+{"id": "stage1-basic-probability-0079", "instruction": "From 4 distinct items, how many subsets of size 1 exist?", "response": "4"}
+{"id": "stage1-basic-probability-0080", "instruction": "From 7 distinct items, how many subsets of size 2 exist?", "response": "21"}
+{"id": "stage1-basic-probability-0081", "instruction": "From 8 distinct items, how many subsets of size 2 exist?", "response": "28"}
+{"id": "stage1-basic-probability-0082", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0083", "instruction": "From 7 distinct items, how many subsets of size 2 exist?", "response": "21"}
+{"id": "stage1-basic-probability-0084", "instruction": "From 6 distinct items, how many subsets of size 2 exist?", "response": "15"}
+{"id": "stage1-basic-probability-0085", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "response": "1/6"}
+{"id": "stage1-basic-probability-0086", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0087", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0088", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0089", "instruction": "From 5 distinct items, how many subsets of size 2 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0090", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0091", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0092", "instruction": "From 6 distinct items, how many subsets of size 2 exist?", "response": "15"}
+{"id": "stage1-basic-probability-0093", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0094", "instruction": "From 10 distinct items, how many subsets of size 2 exist?", "response": "45"}
+{"id": "stage1-basic-probability-0095", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0096", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0097", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0098", "instruction": "From 3 distinct items, how many subsets of size 2 exist?", "response": "3"}
+{"id": "stage1-basic-probability-0099", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0100", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0101", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0102", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0103", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0104", "instruction": "From 6 distinct items, how many subsets of size 1 exist?", "response": "6"}
+{"id": "stage1-basic-probability-0105", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0106", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "response": "5"}
+{"id": "stage1-basic-probability-0107", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0108", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "response": "5"}
+{"id": "stage1-basic-probability-0109", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0110", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0111", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "response": "9"}
+{"id": "stage1-basic-probability-0112", "instruction": "From 4 distinct items, how many subsets of size 1 exist?", "response": "4"}
+{"id": "stage1-basic-probability-0113", "instruction": "From 4 distinct items, how many subsets of size 2 exist?", "response": "6"}
+{"id": "stage1-basic-probability-0114", "instruction": "From 9 distinct items, how many subsets of size 2 exist?", "response": "36"}
+{"id": "stage1-basic-probability-0115", "instruction": "From 5 distinct items, how many subsets of size 2 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0116", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0117", "instruction": "From 2 distinct items, how many subsets of size 1 exist?", "response": "2"}
+{"id": "stage1-basic-probability-0118", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "response": "5"}
+{"id": "stage1-basic-probability-0119", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0120", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0121", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0122", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0123", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0124", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0125", "instruction": "From 3 distinct items, how many subsets of size 2 exist?", "response": "3"}
+{"id": "stage1-basic-probability-0126", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0127", "instruction": "From 10 distinct items, how many subsets of size 2 exist?", "response": "45"}
+{"id": "stage1-basic-probability-0128", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0129", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0130", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0131", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0132", "instruction": "From 9 distinct items, how many subsets of size 2 exist?", "response": "36"}
+{"id": "stage1-basic-probability-0133", "instruction": "From 4 distinct items, how many subsets of size 1 exist?", "response": "4"}
+{"id": "stage1-basic-probability-0134", "instruction": "From 7 distinct items, how many subsets of size 2 exist?", "response": "21"}
+{"id": "stage1-basic-probability-0135", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "response": "5"}
+{"id": "stage1-basic-probability-0136", "instruction": "From 8 distinct items, how many subsets of size 2 exist?", "response": "28"}
+{"id": "stage1-basic-probability-0137", "instruction": "From 7 distinct items, how many subsets of size 1 exist?", "response": "7"}
+{"id": "stage1-basic-probability-0138", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0139", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "response": "1/6"}
+{"id": "stage1-basic-probability-0140", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0141", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0142", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0143", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0144", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0145", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0146", "instruction": "From 2 distinct items, how many subsets of size 2 exist?", "response": "1"}
+{"id": "stage1-basic-probability-0147", "instruction": "From 7 distinct items, how many subsets of size 1 exist?", "response": "7"}
+{"id": "stage1-basic-probability-0148", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0149", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0150", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0151", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0152", "instruction": "From 6 distinct items, how many subsets of size 1 exist?", "response": "6"}
+{"id": "stage1-basic-probability-0153", "instruction": "From 6 distinct items, how many subsets of size 2 exist?", "response": "15"}
+{"id": "stage1-basic-probability-0154", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "response": "5"}
+{"id": "stage1-basic-probability-0155", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0156", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0157", "instruction": "From 7 distinct items, how many subsets of size 2 exist?", "response": "21"}
+{"id": "stage1-basic-probability-0158", "instruction": "From 10 distinct items, how many subsets of size 2 exist?", "response": "45"}
+{"id": "stage1-basic-probability-0159", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "response": "5"}
+{"id": "stage1-basic-probability-0160", "instruction": "From 3 distinct items, how many subsets of size 2 exist?", "response": "3"}
+{"id": "stage1-basic-probability-0161", "instruction": "From 7 distinct items, how many subsets of size 1 exist?", "response": "7"}
+{"id": "stage1-basic-probability-0162", "instruction": "From 3 distinct items, how many subsets of size 1 exist?", "response": "3"}
+{"id": "stage1-basic-probability-0163", "instruction": "From 10 distinct items, how many subsets of size 1 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0164", "instruction": "From 10 distinct items, how many subsets of size 1 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0165", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0166", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "response": "9"}
+{"id": "stage1-basic-probability-0167", "instruction": "From 5 distinct items, how many subsets of size 2 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0168", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0169", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0170", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0171", "instruction": "From 8 distinct items, how many subsets of size 2 exist?", "response": "28"}
+{"id": "stage1-basic-probability-0172", "instruction": "From 2 distinct items, how many subsets of size 2 exist?", "response": "1"}
+{"id": "stage1-basic-probability-0173", "instruction": "From 6 distinct items, how many subsets of size 1 exist?", "response": "6"}
+{"id": "stage1-basic-probability-0174", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0175", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0176", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0177", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0178", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0179", "instruction": "From 3 distinct items, how many subsets of size 1 exist?", "response": "3"}
+{"id": "stage1-basic-probability-0180", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0181", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0182", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0183", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0184", "instruction": "From 8 distinct items, how many subsets of size 2 exist?", "response": "28"}
+{"id": "stage1-basic-probability-0185", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0186", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0187", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0188", "instruction": "From 10 distinct items, how many subsets of size 1 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0189", "instruction": "From 7 distinct items, how many subsets of size 1 exist?", "response": "7"}
+{"id": "stage1-basic-probability-0190", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0191", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0192", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0193", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0194", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0195", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0196", "instruction": "From 10 distinct items, how many subsets of size 2 exist?", "response": "45"}
+{"id": "stage1-basic-probability-0197", "instruction": "From 8 distinct items, how many subsets of size 1 exist?", "response": "8"}
+{"id": "stage1-basic-probability-0198", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0199", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0200", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0201", "instruction": "From 3 distinct items, how many subsets of size 1 exist?", "response": "3"}
+{"id": "stage1-basic-probability-0202", "instruction": "From 8 distinct items, how many subsets of size 1 exist?", "response": "8"}
+{"id": "stage1-basic-probability-0203", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "response": "1/6"}
+{"id": "stage1-basic-probability-0204", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0205", "instruction": "From 2 distinct items, how many subsets of size 2 exist?", "response": "1"}
+{"id": "stage1-basic-probability-0206", "instruction": "From 2 distinct items, how many subsets of size 1 exist?", "response": "2"}
+{"id": "stage1-basic-probability-0207", "instruction": "From 2 distinct items, how many subsets of size 2 exist?", "response": "1"}
+{"id": "stage1-basic-probability-0208", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0209", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "response": "5"}
+{"id": "stage1-basic-probability-0210", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0211", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0212", "instruction": "From 7 distinct items, how many subsets of size 2 exist?", "response": "21"}
+{"id": "stage1-basic-probability-0213", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0214", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0215", "instruction": "From 5 distinct items, how many subsets of size 2 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0216", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0217", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0218", "instruction": "From 4 distinct items, how many subsets of size 2 exist?", "response": "6"}
+{"id": "stage1-basic-probability-0219", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "response": "9"}
+{"id": "stage1-basic-probability-0220", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0221", "instruction": "From 8 distinct items, how many subsets of size 2 exist?", "response": "28"}
+{"id": "stage1-basic-probability-0222", "instruction": "From 8 distinct items, how many subsets of size 2 exist?", "response": "28"}
+{"id": "stage1-basic-probability-0223", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0224", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0225", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "response": "9"}
+{"id": "stage1-basic-probability-0226", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0227", "instruction": "From 4 distinct items, how many subsets of size 2 exist?", "response": "6"}
+{"id": "stage1-basic-probability-0228", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0229", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0230", "instruction": "From 10 distinct items, how many subsets of size 1 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0231", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0232", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0233", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0234", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0235", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0236", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "response": "5"}
+{"id": "stage1-basic-probability-0237", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0238", "instruction": "From 2 distinct items, how many subsets of size 1 exist?", "response": "2"}
+{"id": "stage1-basic-probability-0239", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0240", "instruction": "From 10 distinct items, how many subsets of size 1 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0241", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0242", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0243", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "response": "1/6"}
+{"id": "stage1-basic-probability-0244", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0245", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0246", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0247", "instruction": "From 5 distinct items, how many subsets of size 2 exist?", "response": "10"}
+{"id": "stage1-basic-probability-0248", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0249", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0250", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0251", "instruction": "From 7 distinct items, how many subsets of size 2 exist?", "response": "21"}
+{"id": "stage1-basic-probability-0252", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0253", "instruction": "From 9 distinct items, how many subsets of size 2 exist?", "response": "36"}
+{"id": "stage1-basic-probability-0254", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0255", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0256", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0257", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0258", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0259", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0260", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0261", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0262", "instruction": "From 8 distinct items, how many subsets of size 2 exist?", "response": "28"}
+{"id": "stage1-basic-probability-0263", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "response": "1/6"}
+{"id": "stage1-basic-probability-0264", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0265", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0266", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0267", "instruction": "From 7 distinct items, how many subsets of size 2 exist?", "response": "21"}
+{"id": "stage1-basic-probability-0268", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0269", "instruction": "From 9 distinct items, how many subsets of size 2 exist?", "response": "36"}
+{"id": "stage1-basic-probability-0270", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0271", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0272", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0273", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "response": "9"}
+{"id": "stage1-basic-probability-0274", "instruction": "From 2 distinct items, how many subsets of size 1 exist?", "response": "2"}
+{"id": "stage1-basic-probability-0275", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0276", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0277", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0278", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "response": "5"}
+{"id": "stage1-basic-probability-0279", "instruction": "From 4 distinct items, how many subsets of size 1 exist?", "response": "4"}
+{"id": "stage1-basic-probability-0280", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0281", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0282", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0283", "instruction": "From 9 distinct items, how many subsets of size 2 exist?", "response": "36"}
+{"id": "stage1-basic-probability-0284", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0285", "instruction": "From 10 distinct items, how many subsets of size 2 exist?", "response": "45"}
+{"id": "stage1-basic-probability-0286", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0287", "instruction": "From 6 distinct items, how many subsets of size 2 exist?", "response": "15"}
+{"id": "stage1-basic-probability-0288", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0289", "instruction": "From 8 distinct items, how many subsets of size 1 exist?", "response": "8"}
+{"id": "stage1-basic-probability-0290", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0291", "instruction": "From 4 distinct items, how many subsets of size 1 exist?", "response": "4"}
+{"id": "stage1-basic-probability-0292", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0293", "instruction": "From 6 distinct items, how many subsets of size 2 exist?", "response": "15"}
+{"id": "stage1-basic-probability-0294", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0295", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0296", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0297", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "response": "5"}
+{"id": "stage1-basic-probability-0298", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0299", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0300", "instruction": "From 2 distinct items, how many subsets of size 1 exist?", "response": "2"}
+{"id": "stage1-basic-probability-0301", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0302", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0303", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0304", "instruction": "From 2 distinct items, how many subsets of size 1 exist?", "response": "2"}
+{"id": "stage1-basic-probability-0305", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0306", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0307", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0308", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0309", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "response": "1/6"}
+{"id": "stage1-basic-probability-0310", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0311", "instruction": "From 9 distinct items, how many subsets of size 2 exist?", "response": "36"}
+{"id": "stage1-basic-probability-0312", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0313", "instruction": "From 6 distinct items, how many subsets of size 1 exist?", "response": "6"}
+{"id": "stage1-basic-probability-0314", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0315", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "response": "1/6"}
+{"id": "stage1-basic-probability-0316", "instruction": "From 4 distinct items, how many subsets of size 2 exist?", "response": "6"}
+{"id": "stage1-basic-probability-0317", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "response": "1/6"}
+{"id": "stage1-basic-probability-0318", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0319", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "response": "1/6"}
+{"id": "stage1-basic-probability-0320", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0321", "instruction": "From 7 distinct items, how many subsets of size 2 exist?", "response": "21"}
+{"id": "stage1-basic-probability-0322", "instruction": "From 4 distinct items, how many subsets of size 1 exist?", "response": "4"}
+{"id": "stage1-basic-probability-0323", "instruction": "From 7 distinct items, how many subsets of size 1 exist?", "response": "7"}
+{"id": "stage1-basic-probability-0324", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "response": "1/6"}
+{"id": "stage1-basic-probability-0325", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "response": "1/6"}
+{"id": "stage1-basic-probability-0326", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0327", "instruction": "From 8 distinct items, how many subsets of size 2 exist?", "response": "28"}
+{"id": "stage1-basic-probability-0328", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}
+{"id": "stage1-basic-probability-0329", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0330", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "response": "1/2"}
+{"id": "stage1-basic-probability-0331", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "response": "1/8"}
+{"id": "stage1-basic-probability-0332", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "response": "1/4"}
+{"id": "stage1-basic-probability-0333", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "response": "1/6"}

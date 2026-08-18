@@ -1,0 +1,1000 @@
+{"id": "stage2-intermediate-algebra-0000", "instruction": "Solve x^2 + 2x - 24 = 0.", "response": "x = 4 or x = -6"}
+{"id": "stage2-intermediate-algebra-0001", "instruction": "Solve x^2 + 0x - 1 = 0.", "response": "x = 1 or x = -1"}
+{"id": "stage2-intermediate-algebra-0002", "instruction": "Solve x^2 + 4x + 0 = 0.", "response": "x = 0 or x = -4"}
+{"id": "stage2-intermediate-algebra-0003", "instruction": "Factor x^2 + 0x - 16.", "response": "(x + 4)(x - 4)"}
+{"id": "stage2-intermediate-algebra-0004", "instruction": "Factor x^2 + 2x - 15.", "response": "(x - 3)(x + 5)"}
+{"id": "stage2-intermediate-algebra-0005", "instruction": "Expand (1x + 5) * (3x + 2).", "response": "3x^2 + 17x + 10"}
+{"id": "stage2-intermediate-algebra-0006", "instruction": "Factor x^2 + 9x + 20.", "response": "(x + 5)(x + 4)"}
+{"id": "stage2-intermediate-algebra-0007", "instruction": "Expand (2x + 5) * (4x + 8).", "response": "8x^2 + 36x + 40"}
+{"id": "stage2-intermediate-algebra-0008", "instruction": "Solve x^2 - 13x + 40 = 0.", "response": "x = 8 or x = 5"}
+{"id": "stage2-intermediate-algebra-0009", "instruction": "Expand (1x + 2) * (1x + 8).", "response": "x^2 + 10x + 16"}
+{"id": "stage2-intermediate-algebra-0010", "instruction": "Expand (5x + 1) * (5x + 3).", "response": "25x^2 + 20x + 3"}
+{"id": "stage2-intermediate-algebra-0011", "instruction": "Expand (3x + 3) * (4x - 7).", "response": "12x^2 - 9x - 21"}
+{"id": "stage2-intermediate-algebra-0012", "instruction": "Solve x^2 - 7x - 8 = 0.", "response": "x = -1 or x = 8"}
+{"id": "stage2-intermediate-algebra-0013", "instruction": "Expand (4x - 5) * (2x - 1).", "response": "8x^2 - 14x + 5"}
+{"id": "stage2-intermediate-algebra-0014", "instruction": "Factor x^2 + 10x + 24.", "response": "(x + 4)(x + 6)"}
+{"id": "stage2-intermediate-algebra-0015", "instruction": "Expand (4x + 4) * (3x + 0).", "response": "12x^2 + 12x"}
+{"id": "stage2-intermediate-algebra-0016", "instruction": "Factor x^2 + 3x - 18.", "response": "(x + 6)(x - 3)"}
+{"id": "stage2-intermediate-algebra-0017", "instruction": "Factor x^2 - 6x - 7.", "response": "(x + 1)(x - 7)"}
+{"id": "stage2-intermediate-algebra-0018", "instruction": "Solve x^2 - 4x - 12 = 0.", "response": "x = -2 or x = 6"}
+{"id": "stage2-intermediate-algebra-0019", "instruction": "Expand (2x - 9) * (3x + 3).", "response": "6x^2 - 21x - 27"}
+{"id": "stage2-intermediate-algebra-0020", "instruction": "Factor x^2 - 6x + 8.", "response": "(x - 4)(x - 2)"}
+{"id": "stage2-intermediate-algebra-0021", "instruction": "Factor x^2 - 7x + 10.", "response": "(x - 2)(x - 5)"}
+{"id": "stage2-intermediate-algebra-0022", "instruction": "Solve x^2 + 3x - 4 = 0.", "response": "x = -4 or x = 1"}
+{"id": "stage2-intermediate-algebra-0023", "instruction": "Factor x^2 - 5x - 14.", "response": "(x + 2)(x - 7)"}
+{"id": "stage2-intermediate-algebra-0024", "instruction": "Factor x^2 - 1x - 12.", "response": "(x + 3)(x - 4)"}
+{"id": "stage2-intermediate-algebra-0025", "instruction": "Factor x^2 - 8x + 7.", "response": "(x - 1)(x - 7)"}
+{"id": "stage2-intermediate-algebra-0026", "instruction": "Solve x^2 - 1x - 2 = 0.", "response": "x = -1 or x = 2"}
+{"id": "stage2-intermediate-algebra-0027", "instruction": "Factor x^2 + 2x - 15.", "response": "(x - 3)(x + 5)"}
+{"id": "stage2-intermediate-algebra-0028", "instruction": "Solve x^2 + 5x + 6 = 0.", "response": "x = -2 or x = -3"}
+{"id": "stage2-intermediate-algebra-0029", "instruction": "Solve x^2 + 2x - 48 = 0.", "response": "x = -8 or x = 6"}
+{"id": "stage2-intermediate-algebra-0030", "instruction": "Solve x^2 - 4x - 12 = 0.", "response": "x = -2 or x = 6"}
+{"id": "stage2-intermediate-algebra-0031", "instruction": "Factor x^2 + 1x - 30.", "response": "(x + 6)(x - 5)"}
+{"id": "stage2-intermediate-algebra-0032", "instruction": "Solve x^2 - 3x - 28 = 0.", "response": "x = 7 or x = -4"}
+{"id": "stage2-intermediate-algebra-0033", "instruction": "Solve x^2 + 0x - 1 = 0.", "response": "x = 1 or x = -1"}
+{"id": "stage2-intermediate-algebra-0034", "instruction": "Factor x^2 - 1x - 20.", "response": "(x + 4)(x - 5)"}
+{"id": "stage2-intermediate-algebra-0035", "instruction": "Factor x^2 + 0x - 36.", "response": "(x + 6)(x - 6)"}
+{"id": "stage2-intermediate-algebra-0036", "instruction": "Solve x^2 - 11x + 28 = 0.", "response": "x = 7 or x = 4"}
+{"id": "stage2-intermediate-algebra-0037", "instruction": "Solve x^2 - 13x + 40 = 0.", "response": "x = 8 or x = 5"}
+{"id": "stage2-intermediate-algebra-0038", "instruction": "Solve x^2 + 4x - 21 = 0.", "response": "x = -7 or x = 3"}
+{"id": "stage2-intermediate-algebra-0039", "instruction": "Solve x^2 + 11x + 30 = 0.", "response": "x = -6 or x = -5"}
+{"id": "stage2-intermediate-algebra-0040", "instruction": "Expand (3x - 8) * (2x + 9).", "response": "6x^2 + 11x - 72"}
+{"id": "stage2-intermediate-algebra-0041", "instruction": "Solve x^2 - 6x + 8 = 0.", "response": "x = 4 or x = 2"}
+{"id": "stage2-intermediate-algebra-0042", "instruction": "Factor x^2 + 13x + 40.", "response": "(x + 5)(x + 8)"}
+{"id": "stage2-intermediate-algebra-0043", "instruction": "Expand (3x + 7) * (2x + 7).", "response": "6x^2 + 35x + 49"}
+{"id": "stage2-intermediate-algebra-0044", "instruction": "Solve x^2 - 5x - 6 = 0.", "response": "x = -1 or x = 6"}
+{"id": "stage2-intermediate-algebra-0045", "instruction": "Factor x^2 - 10x + 24.", "response": "(x - 4)(x - 6)"}
+{"id": "stage2-intermediate-algebra-0046", "instruction": "Solve x^2 - 4x - 32 = 0.", "response": "x = 8 or x = -4"}
+{"id": "stage2-intermediate-algebra-0047", "instruction": "Factor x^2 + 1x - 56.", "response": "(x + 8)(x - 7)"}
+{"id": "stage2-intermediate-algebra-0048", "instruction": "Expand (3x - 7) * (4x - 6).", "response": "12x^2 - 46x + 42"}
+{"id": "stage2-intermediate-algebra-0049", "instruction": "Solve x^2 + 1x - 12 = 0.", "response": "x = -4 or x = 3"}
+{"id": "stage2-intermediate-algebra-0050", "instruction": "Factor x^2 - 8x + 12.", "response": "(x - 2)(x - 6)"}
+{"id": "stage2-intermediate-algebra-0051", "instruction": "Expand (5x + 2) * (4x + 6).", "response": "20x^2 + 38x + 12"}
+{"id": "stage2-intermediate-algebra-0052", "instruction": "Expand (4x + 1) * (4x - 7).", "response": "16x^2 - 24x - 7"}
+{"id": "stage2-intermediate-algebra-0053", "instruction": "Factor x^2 + 12x + 35.", "response": "(x + 7)(x + 5)"}
+{"id": "stage2-intermediate-algebra-0054", "instruction": "Expand (3x - 4) * (1x - 2).", "response": "3x^2 - 10x + 8"}
+{"id": "stage2-intermediate-algebra-0055", "instruction": "Solve x^2 - 7x + 10 = 0.", "response": "x = 2 or x = 5"}
+{"id": "stage2-intermediate-algebra-0056", "instruction": "Factor x^2 - 3x - 4.", "response": "(x + 1)(x - 4)"}
+{"id": "stage2-intermediate-algebra-0057", "instruction": "Solve x^2 - 9x + 20 = 0.", "response": "x = 5 or x = 4"}
+{"id": "stage2-intermediate-algebra-0058", "instruction": "Expand (5x + 5) * (2x + 9).", "response": "10x^2 + 55x + 45"}
+{"id": "stage2-intermediate-algebra-0059", "instruction": "Factor x^2 + 4x - 32.", "response": "(x - 4)(x + 8)"}
+{"id": "stage2-intermediate-algebra-0060", "instruction": "Solve x^2 + 6x + 0 = 0.", "response": "x = 0 or x = -6"}
+{"id": "stage2-intermediate-algebra-0061", "instruction": "Solve x^2 + 8x + 15 = 0.", "response": "x = -5 or x = -3"}
+{"id": "stage2-intermediate-algebra-0062", "instruction": "Factor x^2 + 0x - 4.", "response": "(x - 2)(x + 2)"}
+{"id": "stage2-intermediate-algebra-0063", "instruction": "Factor x^2 - 15x + 56.", "response": "(x - 7)(x - 8)"}
+{"id": "stage2-intermediate-algebra-0064", "instruction": "Solve x^2 - 6x + 8 = 0.", "response": "x = 2 or x = 4"}
+{"id": "stage2-intermediate-algebra-0065", "instruction": "Solve x^2 + 1x - 20 = 0.", "response": "x = 4 or x = -5"}
+{"id": "stage2-intermediate-algebra-0066", "instruction": "Factor x^2 - 9x + 18.", "response": "(x - 3)(x - 6)"}
+{"id": "stage2-intermediate-algebra-0067", "instruction": "Solve x^2 + 2x - 3 = 0.", "response": "x = -3 or x = 1"}
+{"id": "stage2-intermediate-algebra-0068", "instruction": "Solve x^2 + 10x + 24 = 0.", "response": "x = -6 or x = -4"}
+{"id": "stage2-intermediate-algebra-0069", "instruction": "Factor x^2 + 6x + 5.", "response": "(x + 5)(x + 1)"}
+{"id": "stage2-intermediate-algebra-0070", "instruction": "Factor x^2 + 8x + 15.", "response": "(x + 5)(x + 3)"}
+{"id": "stage2-intermediate-algebra-0071", "instruction": "Factor x^2 - 4x - 32.", "response": "(x + 4)(x - 8)"}
+{"id": "stage2-intermediate-algebra-0072", "instruction": "Factor x^2 - 1x - 20.", "response": "(x - 5)(x + 4)"}
+{"id": "stage2-intermediate-algebra-0073", "instruction": "Solve x^2 - 9x + 20 = 0.", "response": "x = 4 or x = 5"}
+{"id": "stage2-intermediate-algebra-0074", "instruction": "Expand (4x - 4) * (5x + 8).", "response": "20x^2 + 12x - 32"}
+{"id": "stage2-intermediate-algebra-0075", "instruction": "Expand (4x - 5) * (3x - 4).", "response": "12x^2 - 31x + 20"}
+{"id": "stage2-intermediate-algebra-0076", "instruction": "Factor x^2 + 1x - 42.", "response": "(x - 6)(x + 7)"}
+{"id": "stage2-intermediate-algebra-0077", "instruction": "Factor x^2 + 1x - 56.", "response": "(x + 8)(x - 7)"}
+{"id": "stage2-intermediate-algebra-0078", "instruction": "Expand (2x + 8) * (4x + 7).", "response": "8x^2 + 46x + 56"}
+{"id": "stage2-intermediate-algebra-0079", "instruction": "Solve x^2 - 12x + 35 = 0.", "response": "x = 7 or x = 5"}
+{"id": "stage2-intermediate-algebra-0080", "instruction": "Solve x^2 - 12x + 35 = 0.", "response": "x = 7 or x = 5"}
+{"id": "stage2-intermediate-algebra-0081", "instruction": "Solve x^2 - 13x + 42 = 0.", "response": "x = 6 or x = 7"}
+{"id": "stage2-intermediate-algebra-0082", "instruction": "Expand (1x - 9) * (5x - 2).", "response": "5x^2 - 47x + 18"}
+{"id": "stage2-intermediate-algebra-0083", "instruction": "Factor x^2 + 0x - 1.", "response": "(x + 1)(x - 1)"}
+{"id": "stage2-intermediate-algebra-0084", "instruction": "Expand (4x + 6) * (5x + 8).", "response": "20x^2 + 62x + 48"}
+{"id": "stage2-intermediate-algebra-0085", "instruction": "Solve x^2 - 3x + 0 = 0.", "response": "x = 0 or x = 3"}
+{"id": "stage2-intermediate-algebra-0086", "instruction": "Solve x^2 + 1x - 42 = 0.", "response": "x = -7 or x = 6"}
+{"id": "stage2-intermediate-algebra-0087", "instruction": "Solve x^2 - 3x - 10 = 0.", "response": "x = -2 or x = 5"}
+{"id": "stage2-intermediate-algebra-0088", "instruction": "Expand (2x - 8) * (3x + 5).", "response": "6x^2 - 14x - 40"}
+{"id": "stage2-intermediate-algebra-0089", "instruction": "Factor x^2 + 3x - 18.", "response": "(x - 3)(x + 6)"}
+{"id": "stage2-intermediate-algebra-0090", "instruction": "Factor x^2 + 6x + 5.", "response": "(x + 5)(x + 1)"}
+{"id": "stage2-intermediate-algebra-0091", "instruction": "Expand (5x + 4) * (3x - 4).", "response": "15x^2 - 8x - 16"}
+{"id": "stage2-intermediate-algebra-0092", "instruction": "Solve x^2 + 6x + 8 = 0.", "response": "x = -4 or x = -2"}
+{"id": "stage2-intermediate-algebra-0093", "instruction": "Expand (1x + 2) * (5x + 8).", "response": "5x^2 + 18x + 16"}
+{"id": "stage2-intermediate-algebra-0094", "instruction": "Factor x^2 + 1x - 6.", "response": "(x + 3)(x - 2)"}
+{"id": "stage2-intermediate-algebra-0095", "instruction": "Solve x^2 - 8x + 0 = 0.", "response": "x = 0 or x = 8"}
+{"id": "stage2-intermediate-algebra-0096", "instruction": "Solve x^2 + 9x + 20 = 0.", "response": "x = -5 or x = -4"}
+{"id": "stage2-intermediate-algebra-0097", "instruction": "Factor x^2 + 8x + 16.", "response": "(x + 4)(x + 4)"}
+{"id": "stage2-intermediate-algebra-0098", "instruction": "Expand (2x - 2) * (3x + 3).", "response": "6x^2 - 6"}
+{"id": "stage2-intermediate-algebra-0099", "instruction": "Factor x^2 - 9x + 20.", "response": "(x - 5)(x - 4)"}
+{"id": "stage2-intermediate-algebra-0100", "instruction": "Factor x^2 + 12x + 36.", "response": "(x + 6)(x + 6)"}
+{"id": "stage2-intermediate-algebra-0101", "instruction": "Factor x^2 - 9x + 18.", "response": "(x - 3)(x - 6)"}
+{"id": "stage2-intermediate-algebra-0102", "instruction": "Factor x^2 + 6x - 16.", "response": "(x - 2)(x + 8)"}
+{"id": "stage2-intermediate-algebra-0103", "instruction": "Solve x^2 + 0x - 36 = 0.", "response": "x = -6 or x = 6"}
+{"id": "stage2-intermediate-algebra-0104", "instruction": "Solve x^2 + 3x - 18 = 0.", "response": "x = 3 or x = -6"}
+{"id": "stage2-intermediate-algebra-0105", "instruction": "Solve x^2 - 2x - 8 = 0.", "response": "x = 4 or x = -2"}
+{"id": "stage2-intermediate-algebra-0106", "instruction": "Factor x^2 - 5x - 14.", "response": "(x + 2)(x - 7)"}
+{"id": "stage2-intermediate-algebra-0107", "instruction": "Factor x^2 - 3x + 2.", "response": "(x - 2)(x - 1)"}
+{"id": "stage2-intermediate-algebra-0108", "instruction": "Factor x^2 - 3x - 28.", "response": "(x + 4)(x - 7)"}
+{"id": "stage2-intermediate-algebra-0109", "instruction": "Factor x^2 + 14x + 49.", "response": "(x + 7)(x + 7)"}
+{"id": "stage2-intermediate-algebra-0110", "instruction": "Expand (4x - 6) * (1x - 4).", "response": "4x^2 - 22x + 24"}
+{"id": "stage2-intermediate-algebra-0111", "instruction": "Factor x^2 + 2x - 48.", "response": "(x - 6)(x + 8)"}
+{"id": "stage2-intermediate-algebra-0112", "instruction": "Factor x^2 + 6x + 8.", "response": "(x + 2)(x + 4)"}
+{"id": "stage2-intermediate-algebra-0113", "instruction": "Solve x^2 + 2x - 3 = 0.", "response": "x = 1 or x = -3"}
+{"id": "stage2-intermediate-algebra-0114", "instruction": "Factor x^2 + 3x - 18.", "response": "(x + 6)(x - 3)"}
+{"id": "stage2-intermediate-algebra-0115", "instruction": "Factor x^2 + 3x - 18.", "response": "(x + 6)(x - 3)"}
+{"id": "stage2-intermediate-algebra-0116", "instruction": "Solve x^2 + 10x + 21 = 0.", "response": "x = -3 or x = -7"}
+{"id": "stage2-intermediate-algebra-0117", "instruction": "Factor x^2 + 0x - 1.", "response": "(x - 1)(x + 1)"}
+{"id": "stage2-intermediate-algebra-0118", "instruction": "Factor x^2 + 11x + 30.", "response": "(x + 6)(x + 5)"}
+{"id": "stage2-intermediate-algebra-0119", "instruction": "Expand (2x - 7) * (4x - 5).", "response": "8x^2 - 38x + 35"}
+{"id": "stage2-intermediate-algebra-0120", "instruction": "Solve x^2 - 7x - 8 = 0.", "response": "x = -1 or x = 8"}
+{"id": "stage2-intermediate-algebra-0121", "instruction": "Solve x^2 + 2x - 48 = 0.", "response": "x = 6 or x = -8"}
+{"id": "stage2-intermediate-algebra-0122", "instruction": "Expand (3x + 4) * (1x - 5).", "response": "3x^2 - 11x - 20"}
+{"id": "stage2-intermediate-algebra-0123", "instruction": "Factor x^2 + 7x + 6.", "response": "(x + 6)(x + 1)"}
+{"id": "stage2-intermediate-algebra-0124", "instruction": "Factor x^2 + 11x + 30.", "response": "(x + 6)(x + 5)"}
+{"id": "stage2-intermediate-algebra-0125", "instruction": "Expand (3x + 0) * (3x - 5).", "response": "9x^2 - 15x"}
+{"id": "stage2-intermediate-algebra-0126", "instruction": "Factor x^2 + 8x + 16.", "response": "(x + 4)(x + 4)"}
+{"id": "stage2-intermediate-algebra-0127", "instruction": "Expand (5x - 9) * (5x - 4).", "response": "25x^2 - 65x + 36"}
+{"id": "stage2-intermediate-algebra-0128", "instruction": "Factor x^2 - 1x - 6.", "response": "(x - 3)(x + 2)"}
+{"id": "stage2-intermediate-algebra-0129", "instruction": "Solve x^2 - 1x - 20 = 0.", "response": "x = -4 or x = 5"}
+{"id": "stage2-intermediate-algebra-0130", "instruction": "Solve x^2 - 4x - 12 = 0.", "response": "x = 6 or x = -2"}
+{"id": "stage2-intermediate-algebra-0131", "instruction": "Expand (1x - 6) * (2x + 9).", "response": "2x^2 - 3x - 54"}
+{"id": "stage2-intermediate-algebra-0132", "instruction": "Solve x^2 - 7x + 12 = 0.", "response": "x = 4 or x = 3"}
+{"id": "stage2-intermediate-algebra-0133", "instruction": "Factor x^2 + 2x - 8.", "response": "(x - 2)(x + 4)"}
+{"id": "stage2-intermediate-algebra-0134", "instruction": "Expand (3x - 2) * (1x + 8).", "response": "3x^2 + 22x - 16"}
+{"id": "stage2-intermediate-algebra-0135", "instruction": "Solve x^2 + 7x - 8 = 0.", "response": "x = 1 or x = -8"}
+{"id": "stage2-intermediate-algebra-0136", "instruction": "Solve x^2 + 1x - 2 = 0.", "response": "x = 1 or x = -2"}
+{"id": "stage2-intermediate-algebra-0137", "instruction": "Solve x^2 - 6x - 16 = 0.", "response": "x = 8 or x = -2"}
+{"id": "stage2-intermediate-algebra-0138", "instruction": "Solve x^2 - 5x + 4 = 0.", "response": "x = 4 or x = 1"}
+{"id": "stage2-intermediate-algebra-0139", "instruction": "Solve x^2 + 8x + 7 = 0.", "response": "x = -7 or x = -1"}
+{"id": "stage2-intermediate-algebra-0140", "instruction": "Factor x^2 + 1x - 20.", "response": "(x - 4)(x + 5)"}
+{"id": "stage2-intermediate-algebra-0141", "instruction": "Expand (4x - 7) * (5x + 7).", "response": "20x^2 - 7x - 49"}
+{"id": "stage2-intermediate-algebra-0142", "instruction": "Expand (3x - 5) * (3x + 3).", "response": "9x^2 - 6x - 15"}
+{"id": "stage2-intermediate-algebra-0143", "instruction": "Solve x^2 - 8x + 15 = 0.", "response": "x = 5 or x = 3"}
+{"id": "stage2-intermediate-algebra-0144", "instruction": "Solve x^2 - 4x - 21 = 0.", "response": "x = -3 or x = 7"}
+{"id": "stage2-intermediate-algebra-0145", "instruction": "Expand (1x - 7) * (5x - 9).", "response": "5x^2 - 44x + 63"}
+{"id": "stage2-intermediate-algebra-0146", "instruction": "Factor x^2 + 9x + 14.", "response": "(x + 2)(x + 7)"}
+{"id": "stage2-intermediate-algebra-0147", "instruction": "Expand (4x + 0) * (5x + 7).", "response": "20x^2 + 28x"}
+{"id": "stage2-intermediate-algebra-0148", "instruction": "Factor x^2 - 9x + 20.", "response": "(x - 5)(x - 4)"}
+{"id": "stage2-intermediate-algebra-0149", "instruction": "Expand (5x - 5) * (5x - 1).", "response": "25x^2 - 30x + 5"}
+{"id": "stage2-intermediate-algebra-0150", "instruction": "Expand (3x + 7) * (1x - 3).", "response": "3x^2 - 2x - 21"}
+{"id": "stage2-intermediate-algebra-0151", "instruction": "Expand (5x + 3) * (3x + 9).", "response": "15x^2 + 54x + 27"}
+{"id": "stage2-intermediate-algebra-0152", "instruction": "Solve x^2 + 5x - 6 = 0.", "response": "x = -6 or x = 1"}
+{"id": "stage2-intermediate-algebra-0153", "instruction": "Solve x^2 - 4x - 5 = 0.", "response": "x = 5 or x = -1"}
+{"id": "stage2-intermediate-algebra-0154", "instruction": "Expand (2x + 4) * (1x - 6).", "response": "2x^2 - 8x - 24"}
+{"id": "stage2-intermediate-algebra-0155", "instruction": "Factor x^2 + 6x - 7.", "response": "(x + 7)(x - 1)"}
+{"id": "stage2-intermediate-algebra-0156", "instruction": "Solve x^2 + 8x + 15 = 0.", "response": "x = -3 or x = -5"}
+{"id": "stage2-intermediate-algebra-0157", "instruction": "Expand (2x - 4) * (1x + 6).", "response": "2x^2 + 8x - 24"}
+{"id": "stage2-intermediate-algebra-0158", "instruction": "Factor x^2 - 16x + 64.", "response": "(x - 8)(x - 8)"}
+{"id": "stage2-intermediate-algebra-0159", "instruction": "Solve x^2 + 3x + 0 = 0.", "response": "x = 0 or x = -3"}
+{"id": "stage2-intermediate-algebra-0160", "instruction": "Factor x^2 + 13x + 40.", "response": "(x + 5)(x + 8)"}
+{"id": "stage2-intermediate-algebra-0161", "instruction": "Factor x^2 - 2x - 48.", "response": "(x - 8)(x + 6)"}
+{"id": "stage2-intermediate-algebra-0162", "instruction": "Factor x^2 - 1x - 42.", "response": "(x + 6)(x - 7)"}
+{"id": "stage2-intermediate-algebra-0163", "instruction": "Factor x^2 - 11x + 24.", "response": "(x - 8)(x - 3)"}
+{"id": "stage2-intermediate-algebra-0164", "instruction": "Expand (4x - 4) * (5x + 2).", "response": "20x^2 - 12x - 8"}
+{"id": "stage2-intermediate-algebra-0165", "instruction": "Expand (3x + 9) * (1x - 6).", "response": "3x^2 - 9x - 54"}
+{"id": "stage2-intermediate-algebra-0166", "instruction": "Expand (5x - 8) * (1x - 9).", "response": "5x^2 - 53x + 72"}
+{"id": "stage2-intermediate-algebra-0167", "instruction": "Expand (1x + 2) * (4x + 3).", "response": "4x^2 + 11x + 6"}
+{"id": "stage2-intermediate-algebra-0168", "instruction": "Expand (2x + 8) * (1x + 4).", "response": "2x^2 + 16x + 32"}
+{"id": "stage2-intermediate-algebra-0169", "instruction": "Expand (3x + 4) * (2x + 1).", "response": "6x^2 + 11x + 4"}
+{"id": "stage2-intermediate-algebra-0170", "instruction": "Factor x^2 + 3x - 18.", "response": "(x + 6)(x - 3)"}
+{"id": "stage2-intermediate-algebra-0171", "instruction": "Expand (5x - 4) * (1x - 2).", "response": "5x^2 - 14x + 8"}
+{"id": "stage2-intermediate-algebra-0172", "instruction": "Solve x^2 + 3x - 28 = 0.", "response": "x = -7 or x = 4"}
+{"id": "stage2-intermediate-algebra-0173", "instruction": "Expand (4x + 0) * (3x + 1).", "response": "12x^2 + 4x"}
+{"id": "stage2-intermediate-algebra-0174", "instruction": "Expand (5x - 9) * (4x + 2).", "response": "20x^2 - 26x - 18"}
+{"id": "stage2-intermediate-algebra-0175", "instruction": "Expand (3x + 0) * (5x - 2).", "response": "15x^2 - 6x"}
+{"id": "stage2-intermediate-algebra-0176", "instruction": "Factor x^2 - 10x + 21.", "response": "(x - 3)(x - 7)"}
+{"id": "stage2-intermediate-algebra-0177", "instruction": "Expand (5x - 5) * (2x - 9).", "response": "10x^2 - 55x + 45"}
+{"id": "stage2-intermediate-algebra-0178", "instruction": "Factor x^2 + 9x + 8.", "response": "(x + 8)(x + 1)"}
+{"id": "stage2-intermediate-algebra-0179", "instruction": "Solve x^2 + 5x - 24 = 0.", "response": "x = 3 or x = -8"}
+{"id": "stage2-intermediate-algebra-0180", "instruction": "Factor x^2 + 4x - 32.", "response": "(x + 8)(x - 4)"}
+{"id": "stage2-intermediate-algebra-0181", "instruction": "Solve x^2 + 4x - 5 = 0.", "response": "x = 1 or x = -5"}
+{"id": "stage2-intermediate-algebra-0182", "instruction": "Expand (5x + 4) * (2x + 6).", "response": "10x^2 + 38x + 24"}
+{"id": "stage2-intermediate-algebra-0183", "instruction": "Expand (2x - 7) * (3x - 8).", "response": "6x^2 - 37x + 56"}
+{"id": "stage2-intermediate-algebra-0184", "instruction": "Expand (5x + 2) * (4x + 5).", "response": "20x^2 + 33x + 10"}
+{"id": "stage2-intermediate-algebra-0185", "instruction": "Solve x^2 + 11x + 30 = 0.", "response": "x = -6 or x = -5"}
+{"id": "stage2-intermediate-algebra-0186", "instruction": "Solve x^2 + 0x - 16 = 0.", "response": "x = -4 or x = 4"}
+{"id": "stage2-intermediate-algebra-0187", "instruction": "Expand (5x - 8) * (5x + 4).", "response": "25x^2 - 20x - 32"}
+{"id": "stage2-intermediate-algebra-0188", "instruction": "Solve x^2 + 5x + 4 = 0.", "response": "x = -4 or x = -1"}
+{"id": "stage2-intermediate-algebra-0189", "instruction": "Factor x^2 - 6x + 8.", "response": "(x - 4)(x - 2)"}
+{"id": "stage2-intermediate-algebra-0190", "instruction": "Factor x^2 + 7x + 6.", "response": "(x + 1)(x + 6)"}
+{"id": "stage2-intermediate-algebra-0191", "instruction": "Expand (2x - 6) * (5x - 5).", "response": "10x^2 - 40x + 30"}
+{"id": "stage2-intermediate-algebra-0192", "instruction": "Expand (2x + 5) * (4x + 1).", "response": "8x^2 + 22x + 5"}
+{"id": "stage2-intermediate-algebra-0193", "instruction": "Factor x^2 + 2x - 15.", "response": "(x + 5)(x - 3)"}
+{"id": "stage2-intermediate-algebra-0194", "instruction": "Expand (4x + 5) * (3x - 1).", "response": "12x^2 + 11x - 5"}
+{"id": "stage2-intermediate-algebra-0195", "instruction": "Expand (1x + 0) * (2x - 8).", "response": "2x^2 - 8x"}
+{"id": "stage2-intermediate-algebra-0196", "instruction": "Expand (3x - 7) * (2x - 2).", "response": "6x^2 - 20x + 14"}
+{"id": "stage2-intermediate-algebra-0197", "instruction": "Factor x^2 - 12x + 32.", "response": "(x - 4)(x - 8)"}
+{"id": "stage2-intermediate-algebra-0198", "instruction": "Expand (3x - 4) * (3x - 9).", "response": "9x^2 - 39x + 36"}
+{"id": "stage2-intermediate-algebra-0199", "instruction": "Factor x^2 - 5x - 6.", "response": "(x - 6)(x + 1)"}
+{"id": "stage2-intermediate-algebra-0200", "instruction": "Expand (4x - 5) * (1x - 6).", "response": "4x^2 - 29x + 30"}
+{"id": "stage2-intermediate-algebra-0201", "instruction": "Expand (1x - 5) * (2x - 3).", "response": "2x^2 - 13x + 15"}
+{"id": "stage2-intermediate-algebra-0202", "instruction": "Factor x^2 + 3x - 18.", "response": "(x - 3)(x + 6)"}
+{"id": "stage2-intermediate-algebra-0203", "instruction": "Solve x^2 + 6x + 0 = 0.", "response": "x = 0 or x = -6"}
+{"id": "stage2-intermediate-algebra-0204", "instruction": "Expand (1x + 5) * (2x - 5).", "response": "2x^2 + 5x - 25"}
+{"id": "stage2-intermediate-algebra-0205", "instruction": "Expand (3x - 8) * (1x + 5).", "response": "3x^2 + 7x - 40"}
+{"id": "stage2-intermediate-algebra-0206", "instruction": "Expand (2x + 4) * (5x + 3).", "response": "10x^2 + 26x + 12"}
+{"id": "stage2-intermediate-algebra-0207", "instruction": "Factor x^2 + 4x - 32.", "response": "(x + 8)(x - 4)"}
+{"id": "stage2-intermediate-algebra-0208", "instruction": "Solve x^2 - 2x - 15 = 0.", "response": "x = 5 or x = -3"}
+{"id": "stage2-intermediate-algebra-0209", "instruction": "Factor x^2 + 5x + 6.", "response": "(x + 2)(x + 3)"}
+{"id": "stage2-intermediate-algebra-0210", "instruction": "Factor x^2 + 11x + 28.", "response": "(x + 4)(x + 7)"}
+{"id": "stage2-intermediate-algebra-0211", "instruction": "Solve x^2 + 0x - 1 = 0.", "response": "x = -1 or x = 1"}
+{"id": "stage2-intermediate-algebra-0212", "instruction": "Factor x^2 - 12x + 35.", "response": "(x - 5)(x - 7)"}
+{"id": "stage2-intermediate-algebra-0213", "instruction": "Expand (1x + 3) * (3x - 5).", "response": "3x^2 + 4x - 15"}
+{"id": "stage2-intermediate-algebra-0214", "instruction": "Factor x^2 - 6x - 16.", "response": "(x + 2)(x - 8)"}
+{"id": "stage2-intermediate-algebra-0215", "instruction": "Expand (5x + 3) * (1x + 2).", "response": "5x^2 + 13x + 6"}
+{"id": "stage2-intermediate-algebra-0216", "instruction": "Factor x^2 - 10x + 21.", "response": "(x - 7)(x - 3)"}
+{"id": "stage2-intermediate-algebra-0217", "instruction": "Solve x^2 - 10x + 16 = 0.", "response": "x = 8 or x = 2"}
+{"id": "stage2-intermediate-algebra-0218", "instruction": "Factor x^2 + 6x - 16.", "response": "(x + 8)(x - 2)"}
+{"id": "stage2-intermediate-algebra-0219", "instruction": "Solve x^2 + 9x + 8 = 0.", "response": "x = -1 or x = -8"}
+{"id": "stage2-intermediate-algebra-0220", "instruction": "Factor x^2 + 0x - 49.", "response": "(x + 7)(x - 7)"}
+{"id": "stage2-intermediate-algebra-0221", "instruction": "Solve x^2 - 2x - 3 = 0.", "response": "x = 3 or x = -1"}
+{"id": "stage2-intermediate-algebra-0222", "instruction": "Expand (1x - 2) * (2x - 1).", "response": "2x^2 - 5x + 2"}
+{"id": "stage2-intermediate-algebra-0223", "instruction": "Solve x^2 + 8x + 7 = 0.", "response": "x = -7 or x = -1"}
+{"id": "stage2-intermediate-algebra-0224", "instruction": "Solve x^2 - 7x + 12 = 0.", "response": "x = 4 or x = 3"}
+{"id": "stage2-intermediate-algebra-0225", "instruction": "Expand (2x + 9) * (2x + 1).", "response": "4x^2 + 20x + 9"}
+{"id": "stage2-intermediate-algebra-0226", "instruction": "Solve x^2 + 5x - 24 = 0.", "response": "x = 3 or x = -8"}
+{"id": "stage2-intermediate-algebra-0227", "instruction": "Solve x^2 + 1x - 12 = 0.", "response": "x = 3 or x = -4"}
+{"id": "stage2-intermediate-algebra-0228", "instruction": "Solve x^2 - 5x - 14 = 0.", "response": "x = -2 or x = 7"}
+{"id": "stage2-intermediate-algebra-0229", "instruction": "Solve x^2 + 2x - 3 = 0.", "response": "x = 1 or x = -3"}
+{"id": "stage2-intermediate-algebra-0230", "instruction": "Factor x^2 + 13x + 42.", "response": "(x + 7)(x + 6)"}
+{"id": "stage2-intermediate-algebra-0231", "instruction": "Expand (2x - 2) * (5x - 9).", "response": "10x^2 - 28x + 18"}
+{"id": "stage2-intermediate-algebra-0232", "instruction": "Solve x^2 + 1x - 56 = 0.", "response": "x = 7 or x = -8"}
+{"id": "stage2-intermediate-algebra-0233", "instruction": "Factor x^2 + 6x + 8.", "response": "(x + 2)(x + 4)"}
+{"id": "stage2-intermediate-algebra-0234", "instruction": "Factor x^2 + 1x - 6.", "response": "(x + 3)(x - 2)"}
+{"id": "stage2-intermediate-algebra-0235", "instruction": "Expand (1x + 9) * (2x - 5).", "response": "2x^2 + 13x - 45"}
+{"id": "stage2-intermediate-algebra-0236", "instruction": "Expand (5x - 7) * (3x + 2).", "response": "15x^2 - 11x - 14"}
+{"id": "stage2-intermediate-algebra-0237", "instruction": "Solve x^2 + 1x - 20 = 0.", "response": "x = 4 or x = -5"}
+{"id": "stage2-intermediate-algebra-0238", "instruction": "Factor x^2 - 3x + 2.", "response": "(x - 1)(x - 2)"}
+{"id": "stage2-intermediate-algebra-0239", "instruction": "Expand (2x + 6) * (4x + 1).", "response": "8x^2 + 26x + 6"}
+{"id": "stage2-intermediate-algebra-0240", "instruction": "Expand (5x + 2) * (5x - 2).", "response": "25x^2 - 4"}
+{"id": "stage2-intermediate-algebra-0241", "instruction": "Solve x^2 - 1x - 12 = 0.", "response": "x = -3 or x = 4"}
+{"id": "stage2-intermediate-algebra-0242", "instruction": "Factor x^2 + 3x - 4.", "response": "(x - 1)(x + 4)"}
+{"id": "stage2-intermediate-algebra-0243", "instruction": "Expand (1x + 3) * (5x + 9).", "response": "5x^2 + 24x + 27"}
+{"id": "stage2-intermediate-algebra-0244", "instruction": "Expand (2x + 1) * (5x - 2).", "response": "10x^2 + x - 2"}
+{"id": "stage2-intermediate-algebra-0245", "instruction": "Solve x^2 - 2x - 35 = 0.", "response": "x = -5 or x = 7"}
+{"id": "stage2-intermediate-algebra-0246", "instruction": "Expand (3x - 2) * (1x + 2).", "response": "3x^2 + 4x - 4"}
+{"id": "stage2-intermediate-algebra-0247", "instruction": "Factor x^2 + 9x + 18.", "response": "(x + 3)(x + 6)"}
+{"id": "stage2-intermediate-algebra-0248", "instruction": "Solve x^2 - 8x + 12 = 0.", "response": "x = 2 or x = 6"}
+{"id": "stage2-intermediate-algebra-0249", "instruction": "Expand (3x - 2) * (2x - 7).", "response": "6x^2 - 25x + 14"}
+{"id": "stage2-intermediate-linear_equations-0000", "instruction": "Solve for x: 6x - 20 = 5x - 27.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0001", "instruction": "Solve for x: 1x + 6 = 7x - 18.", "response": "x = 4"}
+{"id": "stage2-intermediate-linear_equations-0002", "instruction": "Solve for x: 3x + 4 = 7x - 16.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0003", "instruction": "Solve for x: 6x - 14 = 9x - 20.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0004", "instruction": "Solve for x: 8x + 8 = 4x - 12.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0005", "instruction": "Solve for x: 2x - 19 = 1x - 20.", "response": "x = -1"}
+{"id": "stage2-intermediate-linear_equations-0006", "instruction": "Solve for x: 6x - 16 = 5x - 23.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0007", "instruction": "Solve for x: 6x - 10 = 3x - 4.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0008", "instruction": "Solve for x: 2x + 1 = 9x + 57.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0009", "instruction": "Solve for x: 8x - 10 = 1x + 11.", "response": "x = 3"}
+{"id": "stage2-intermediate-linear_equations-0010", "instruction": "Solve for x: 7x - 14 = 3x - 50.", "response": "x = -9"}
+{"id": "stage2-intermediate-linear_equations-0011", "instruction": "Solve for x: 6x + 6 = 4x - 2.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0012", "instruction": "Solve for x: 9x - 1 = 5x - 5.", "response": "x = -1"}
+{"id": "stage2-intermediate-linear_equations-0013", "instruction": "Solve for x: 4x + 5 = 2x - 13.", "response": "x = -9"}
+{"id": "stage2-intermediate-linear_equations-0014", "instruction": "Solve for x: 9x - 17 = 8x - 23.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0015", "instruction": "Solve for x: 6x - 15 = 1x + 0.", "response": "x = 3"}
+{"id": "stage2-intermediate-linear_equations-0016", "instruction": "Solve for x: 5x - 14 = 8x - 2.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0017", "instruction": "Solve for x: 1x + 20 = 4x + 35.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0018", "instruction": "Solve for x: 5x - 13 = 2x + 2.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0019", "instruction": "Solve for x: 5x + 11 = 7x + 1.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0020", "instruction": "Solve for x: 5x + 14 = 2x + 44.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0021", "instruction": "Solve for x: 7x + 4 = 3x + 8.", "response": "x = 1"}
+{"id": "stage2-intermediate-linear_equations-0022", "instruction": "Solve for x: 6x - 18 = 3x - 6.", "response": "x = 4"}
+{"id": "stage2-intermediate-linear_equations-0023", "instruction": "Solve for x: 5x - 4 = 8x - 16.", "response": "x = 4"}
+{"id": "stage2-intermediate-linear_equations-0024", "instruction": "Solve for x: 4x - 17 = 5x - 25.", "response": "x = 8"}
+{"id": "stage2-intermediate-linear_equations-0025", "instruction": "Solve for x: 3x + 2 = 2x - 6.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0026", "instruction": "Solve for x: 9x - 6 = 7x + 10.", "response": "x = 8"}
+{"id": "stage2-intermediate-linear_equations-0027", "instruction": "Solve for x: 9x + 13 = 1x + 29.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0028", "instruction": "Solve for x: 7x + 16 = 9x + 6.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0029", "instruction": "Solve for x: 4x - 15 = 8x - 11.", "response": "x = -1"}
+{"id": "stage2-intermediate-linear_equations-0030", "instruction": "Solve for x: 7x + 16 = 1x + 52.", "response": "x = 6"}
+{"id": "stage2-intermediate-linear_equations-0031", "instruction": "Solve for x: 9x + 8 = 3x - 34.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0032", "instruction": "Solve for x: 3x - 12 = 4x - 8.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0033", "instruction": "Solve for x: 1x + 7 = 7x + 55.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0034", "instruction": "Solve for x: 4x - 4 = 3x + 5.", "response": "x = 9"}
+{"id": "stage2-intermediate-linear_equations-0035", "instruction": "Solve for x: 6x + 4 = 2x - 28.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0036", "instruction": "Solve for x: 9x + 0 = 7x + 14.", "response": "x = 7"}
+{"id": "stage2-intermediate-linear_equations-0037", "instruction": "Solve for x: 5x - 20 = 9x - 36.", "response": "x = 4"}
+{"id": "stage2-intermediate-linear_equations-0038", "instruction": "Solve for x: 9x + 6 = 7x - 8.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0039", "instruction": "Solve for x: 3x + 16 = 2x + 9.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0040", "instruction": "Solve for x: 2x + 2 = 5x - 19.", "response": "x = 7"}
+{"id": "stage2-intermediate-linear_equations-0041", "instruction": "Solve for x: 7x + 11 = 5x + 15.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0042", "instruction": "Solve for x: 8x - 3 = 1x - 38.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0043", "instruction": "Solve for x: 7x + 18 = 3x + 54.", "response": "x = 9"}
+{"id": "stage2-intermediate-linear_equations-0044", "instruction": "Solve for x: 7x + 1 = 1x + 13.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0045", "instruction": "Solve for x: 4x - 3 = 1x + 12.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0046", "instruction": "Solve for x: 6x - 1 = 1x - 1.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0047", "instruction": "Solve for x: 5x - 6 = 8x + 15.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0048", "instruction": "Solve for x: 3x + 0 = 5x - 8.", "response": "x = 4"}
+{"id": "stage2-intermediate-linear_equations-0049", "instruction": "Solve for x: 5x - 15 = 7x - 33.", "response": "x = 9"}
+{"id": "stage2-intermediate-linear_equations-0050", "instruction": "Solve for x: 4x + 6 = 8x + 22.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0051", "instruction": "Solve for x: 8x - 17 = 9x - 18.", "response": "x = 1"}
+{"id": "stage2-intermediate-linear_equations-0052", "instruction": "Solve for x: 9x - 1 = 3x - 49.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0053", "instruction": "Solve for x: 9x + 13 = 7x + 1.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0054", "instruction": "Solve for x: 1x - 8 = 3x + 0.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0055", "instruction": "Solve for x: 1x + 9 = 4x + 36.", "response": "x = -9"}
+{"id": "stage2-intermediate-linear_equations-0056", "instruction": "Solve for x: 1x - 3 = 6x + 17.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0057", "instruction": "Solve for x: 6x + 5 = 8x - 7.", "response": "x = 6"}
+{"id": "stage2-intermediate-linear_equations-0058", "instruction": "Solve for x: 2x + 3 = 1x + 0.", "response": "x = -3"}
+{"id": "stage2-intermediate-linear_equations-0059", "instruction": "Solve for x: 8x + 17 = 3x + 42.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0060", "instruction": "Solve for x: 9x - 10 = 6x - 7.", "response": "x = 1"}
+{"id": "stage2-intermediate-linear_equations-0061", "instruction": "Solve for x: 5x - 19 = 2x - 22.", "response": "x = -1"}
+{"id": "stage2-intermediate-linear_equations-0062", "instruction": "Solve for x: 7x + 16 = 1x - 14.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0063", "instruction": "Solve for x: 4x + 6 = 5x - 4.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0064", "instruction": "Solve for x: 9x + 10 = 1x - 70.", "response": "x = -10"}
+{"id": "stage2-intermediate-linear_equations-0065", "instruction": "Solve for x: 3x - 4 = 1x - 10.", "response": "x = -3"}
+{"id": "stage2-intermediate-linear_equations-0066", "instruction": "Solve for x: 5x + 2 = 7x - 2.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0067", "instruction": "Solve for x: 8x + 9 = 5x - 3.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0068", "instruction": "Solve for x: 5x + 5 = 9x - 31.", "response": "x = 9"}
+{"id": "stage2-intermediate-linear_equations-0069", "instruction": "Solve for x: 2x + 3 = 1x + 9.", "response": "x = 6"}
+{"id": "stage2-intermediate-linear_equations-0070", "instruction": "Solve for x: 9x - 14 = 5x - 18.", "response": "x = -1"}
+{"id": "stage2-intermediate-linear_equations-0071", "instruction": "Solve for x: 8x - 3 = 2x - 3.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0072", "instruction": "Solve for x: 6x - 1 = 5x - 3.", "response": "x = -2"}
+{"id": "stage2-intermediate-linear_equations-0073", "instruction": "Solve for x: 4x - 5 = 3x + 1.", "response": "x = 6"}
+{"id": "stage2-intermediate-linear_equations-0074", "instruction": "Solve for x: 1x - 12 = 7x - 12.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0075", "instruction": "Solve for x: 1x - 4 = 8x + 3.", "response": "x = -1"}
+{"id": "stage2-intermediate-linear_equations-0076", "instruction": "Solve for x: 7x + 16 = 1x + 64.", "response": "x = 8"}
+{"id": "stage2-intermediate-linear_equations-0077", "instruction": "Solve for x: 4x + 14 = 6x + 20.", "response": "x = -3"}
+{"id": "stage2-intermediate-linear_equations-0078", "instruction": "Solve for x: 8x - 1 = 6x + 11.", "response": "x = 6"}
+{"id": "stage2-intermediate-linear_equations-0079", "instruction": "Solve for x: 3x - 2 = 9x + 28.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0080", "instruction": "Solve for x: 2x - 4 = 8x + 32.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0081", "instruction": "Solve for x: 9x - 15 = 3x - 15.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0082", "instruction": "Solve for x: 4x - 1 = 6x + 5.", "response": "x = -3"}
+{"id": "stage2-intermediate-linear_equations-0083", "instruction": "Solve for x: 7x - 4 = 6x - 3.", "response": "x = 1"}
+{"id": "stage2-intermediate-linear_equations-0084", "instruction": "Solve for x: 5x + 10 = 8x + 31.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0085", "instruction": "Solve for x: 1x - 8 = 2x - 13.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0086", "instruction": "Solve for x: 9x + 13 = 2x + 27.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0087", "instruction": "Solve for x: 5x - 11 = 7x + 7.", "response": "x = -9"}
+{"id": "stage2-intermediate-linear_equations-0088", "instruction": "Solve for x: 3x + 6 = 4x + 6.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0089", "instruction": "Solve for x: 8x - 9 = 3x - 9.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0090", "instruction": "Solve for x: 2x + 20 = 8x + 20.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0091", "instruction": "Solve for x: 3x - 17 = 6x - 47.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0092", "instruction": "Solve for x: 1x - 7 = 8x + 7.", "response": "x = -2"}
+{"id": "stage2-intermediate-linear_equations-0093", "instruction": "Solve for x: 3x - 12 = 8x + 28.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0094", "instruction": "Solve for x: 7x - 20 = 8x - 22.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0095", "instruction": "Solve for x: 1x + 3 = 9x + 35.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0096", "instruction": "Solve for x: 1x - 8 = 6x - 38.", "response": "x = 6"}
+{"id": "stage2-intermediate-linear_equations-0097", "instruction": "Solve for x: 1x + 2 = 4x + 11.", "response": "x = -3"}
+{"id": "stage2-intermediate-linear_equations-0098", "instruction": "Solve for x: 5x + 4 = 3x - 10.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0099", "instruction": "Solve for x: 9x - 16 = 5x - 36.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0100", "instruction": "Solve for x: 1x + 9 = 5x + 13.", "response": "x = -1"}
+{"id": "stage2-intermediate-linear_equations-0101", "instruction": "Solve for x: 9x - 12 = 6x - 3.", "response": "x = 3"}
+{"id": "stage2-intermediate-linear_equations-0102", "instruction": "Solve for x: 6x - 8 = 8x - 10.", "response": "x = 1"}
+{"id": "stage2-intermediate-linear_equations-0103", "instruction": "Solve for x: 3x - 6 = 7x + 34.", "response": "x = -10"}
+{"id": "stage2-intermediate-linear_equations-0104", "instruction": "Solve for x: 4x - 19 = 3x - 23.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0105", "instruction": "Solve for x: 9x + 3 = 3x - 39.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0106", "instruction": "Solve for x: 1x - 4 = 7x - 64.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0107", "instruction": "Solve for x: 9x - 17 = 1x + 55.", "response": "x = 9"}
+{"id": "stage2-intermediate-linear_equations-0108", "instruction": "Solve for x: 2x - 13 = 1x - 22.", "response": "x = -9"}
+{"id": "stage2-intermediate-linear_equations-0109", "instruction": "Solve for x: 7x - 13 = 8x - 15.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0110", "instruction": "Solve for x: 9x - 11 = 5x + 9.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0111", "instruction": "Solve for x: 4x + 6 = 1x + 3.", "response": "x = -1"}
+{"id": "stage2-intermediate-linear_equations-0112", "instruction": "Solve for x: 2x + 19 = 9x + 33.", "response": "x = -2"}
+{"id": "stage2-intermediate-linear_equations-0113", "instruction": "Solve for x: 3x + 12 = 7x + 40.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0114", "instruction": "Solve for x: 2x - 14 = 5x + 7.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0115", "instruction": "Solve for x: 8x - 8 = 4x + 28.", "response": "x = 9"}
+{"id": "stage2-intermediate-linear_equations-0116", "instruction": "Solve for x: 5x + 2 = 9x + 18.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0117", "instruction": "Solve for x: 7x - 18 = 5x - 28.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0118", "instruction": "Solve for x: 9x + 10 = 8x + 6.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0119", "instruction": "Solve for x: 6x - 20 = 4x - 40.", "response": "x = -10"}
+{"id": "stage2-intermediate-linear_equations-0120", "instruction": "Solve for x: 2x - 15 = 8x + 21.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0121", "instruction": "Solve for x: 9x - 4 = 2x - 53.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0122", "instruction": "Solve for x: 4x - 4 = 8x + 0.", "response": "x = -1"}
+{"id": "stage2-intermediate-linear_equations-0123", "instruction": "Solve for x: 8x - 9 = 1x - 58.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0124", "instruction": "Solve for x: 1x + 0 = 5x - 4.", "response": "x = 1"}
+{"id": "stage2-intermediate-linear_equations-0125", "instruction": "Solve for x: 7x - 18 = 2x - 53.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0126", "instruction": "Solve for x: 1x - 10 = 3x - 30.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0127", "instruction": "Solve for x: 6x - 3 = 8x - 21.", "response": "x = 9"}
+{"id": "stage2-intermediate-linear_equations-0128", "instruction": "Solve for x: 2x - 9 = 6x - 9.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0129", "instruction": "Solve for x: 2x + 9 = 7x - 1.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0130", "instruction": "Solve for x: 5x + 6 = 7x - 4.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0131", "instruction": "Solve for x: 3x - 17 = 2x - 23.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0132", "instruction": "Solve for x: 3x + 17 = 2x + 20.", "response": "x = 3"}
+{"id": "stage2-intermediate-linear_equations-0133", "instruction": "Solve for x: 8x + 4 = 3x + 49.", "response": "x = 9"}
+{"id": "stage2-intermediate-linear_equations-0134", "instruction": "Solve for x: 6x + 10 = 1x - 20.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0135", "instruction": "Solve for x: 8x + 8 = 2x + 26.", "response": "x = 3"}
+{"id": "stage2-intermediate-linear_equations-0136", "instruction": "Solve for x: 1x + 0 = 2x + 2.", "response": "x = -2"}
+{"id": "stage2-intermediate-linear_equations-0137", "instruction": "Solve for x: 1x + 16 = 9x - 48.", "response": "x = 8"}
+{"id": "stage2-intermediate-linear_equations-0138", "instruction": "Solve for x: 4x + 13 = 6x + 1.", "response": "x = 6"}
+{"id": "stage2-intermediate-linear_equations-0139", "instruction": "Solve for x: 2x + 10 = 7x + 25.", "response": "x = -3"}
+{"id": "stage2-intermediate-linear_equations-0140", "instruction": "Solve for x: 6x + 15 = 7x + 21.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0141", "instruction": "Solve for x: 1x + 10 = 3x - 2.", "response": "x = 6"}
+{"id": "stage2-intermediate-linear_equations-0142", "instruction": "Solve for x: 8x + 11 = 3x - 29.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0143", "instruction": "Solve for x: 6x - 3 = 4x - 3.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0144", "instruction": "Solve for x: 1x + 15 = 9x + 39.", "response": "x = -3"}
+{"id": "stage2-intermediate-linear_equations-0145", "instruction": "Solve for x: 7x + 9 = 4x - 15.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0146", "instruction": "Solve for x: 8x + 8 = 2x + 38.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0147", "instruction": "Solve for x: 6x - 19 = 2x + 1.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0148", "instruction": "Solve for x: 2x - 18 = 7x - 33.", "response": "x = 3"}
+{"id": "stage2-intermediate-linear_equations-0149", "instruction": "Solve for x: 9x + 18 = 1x - 46.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0150", "instruction": "Solve for x: 5x - 7 = 9x - 35.", "response": "x = 7"}
+{"id": "stage2-intermediate-linear_equations-0151", "instruction": "Solve for x: 8x - 17 = 6x - 15.", "response": "x = 1"}
+{"id": "stage2-intermediate-linear_equations-0152", "instruction": "Solve for x: 4x + 15 = 8x + 15.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0153", "instruction": "Solve for x: 8x - 13 = 6x - 5.", "response": "x = 4"}
+{"id": "stage2-intermediate-linear_equations-0154", "instruction": "Solve for x: 2x + 1 = 4x + 21.", "response": "x = -10"}
+{"id": "stage2-intermediate-linear_equations-0155", "instruction": "Solve for x: 6x + 13 = 5x + 20.", "response": "x = 7"}
+{"id": "stage2-intermediate-linear_equations-0156", "instruction": "Solve for x: 6x - 10 = 2x - 46.", "response": "x = -9"}
+{"id": "stage2-intermediate-linear_equations-0157", "instruction": "Solve for x: 8x - 14 = 3x + 1.", "response": "x = 3"}
+{"id": "stage2-intermediate-linear_equations-0158", "instruction": "Solve for x: 5x - 13 = 4x - 17.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0159", "instruction": "Solve for x: 7x - 8 = 4x + 4.", "response": "x = 4"}
+{"id": "stage2-intermediate-linear_equations-0160", "instruction": "Solve for x: 6x - 18 = 2x - 6.", "response": "x = 3"}
+{"id": "stage2-intermediate-linear_equations-0161", "instruction": "Solve for x: 2x + 17 = 8x - 7.", "response": "x = 4"}
+{"id": "stage2-intermediate-linear_equations-0162", "instruction": "Solve for x: 9x - 20 = 3x + 10.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0163", "instruction": "Solve for x: 9x + 7 = 1x + 63.", "response": "x = 7"}
+{"id": "stage2-intermediate-linear_equations-0164", "instruction": "Solve for x: 8x + 17 = 9x + 22.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0165", "instruction": "Solve for x: 3x + 18 = 2x + 20.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0166", "instruction": "Solve for x: 6x + 6 = 9x + 0.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0167", "instruction": "Solve for x: 4x + 1 = 5x - 1.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0168", "instruction": "Solve for x: 5x - 12 = 8x + 6.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0169", "instruction": "Solve for x: 7x + 15 = 9x + 17.", "response": "x = -1"}
+{"id": "stage2-intermediate-linear_equations-0170", "instruction": "Solve for x: 6x - 7 = 9x - 37.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0171", "instruction": "Solve for x: 4x - 12 = 5x - 13.", "response": "x = 1"}
+{"id": "stage2-intermediate-linear_equations-0172", "instruction": "Solve for x: 3x + 20 = 9x - 22.", "response": "x = 7"}
+{"id": "stage2-intermediate-linear_equations-0173", "instruction": "Solve for x: 6x + 15 = 2x + 19.", "response": "x = 1"}
+{"id": "stage2-intermediate-linear_equations-0174", "instruction": "Solve for x: 8x - 2 = 7x + 5.", "response": "x = 7"}
+{"id": "stage2-intermediate-linear_equations-0175", "instruction": "Solve for x: 7x - 14 = 1x + 22.", "response": "x = 6"}
+{"id": "stage2-intermediate-linear_equations-0176", "instruction": "Solve for x: 1x - 17 = 7x + 19.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0177", "instruction": "Solve for x: 1x - 10 = 4x - 4.", "response": "x = -2"}
+{"id": "stage2-intermediate-linear_equations-0178", "instruction": "Solve for x: 5x - 2 = 3x - 20.", "response": "x = -9"}
+{"id": "stage2-intermediate-linear_equations-0179", "instruction": "Solve for x: 4x + 2 = 9x + 47.", "response": "x = -9"}
+{"id": "stage2-intermediate-linear_equations-0180", "instruction": "Solve for x: 8x + 15 = 2x + 69.", "response": "x = 9"}
+{"id": "stage2-intermediate-linear_equations-0181", "instruction": "Solve for x: 4x - 5 = 9x - 15.", "response": "x = 2"}
+{"id": "stage2-intermediate-linear_equations-0182", "instruction": "Solve for x: 9x + 4 = 5x - 32.", "response": "x = -9"}
+{"id": "stage2-intermediate-linear_equations-0183", "instruction": "Solve for x: 7x - 17 = 6x - 10.", "response": "x = 7"}
+{"id": "stage2-intermediate-linear_equations-0184", "instruction": "Solve for x: 1x + 19 = 5x + 35.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0185", "instruction": "Solve for x: 8x + 3 = 4x + 43.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0186", "instruction": "Solve for x: 9x - 2 = 4x - 22.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0187", "instruction": "Solve for x: 8x - 9 = 3x - 49.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0188", "instruction": "Solve for x: 3x + 4 = 9x + 46.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0189", "instruction": "Solve for x: 1x + 15 = 7x + 27.", "response": "x = -2"}
+{"id": "stage2-intermediate-linear_equations-0190", "instruction": "Solve for x: 5x + 17 = 3x + 7.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0191", "instruction": "Solve for x: 5x + 9 = 1x + 9.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0192", "instruction": "Solve for x: 3x + 0 = 1x - 12.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0193", "instruction": "Solve for x: 1x + 16 = 5x - 4.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0194", "instruction": "Solve for x: 9x + 0 = 6x - 24.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0195", "instruction": "Solve for x: 9x + 13 = 4x - 12.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0196", "instruction": "Solve for x: 2x + 6 = 9x + 41.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0197", "instruction": "Solve for x: 9x + 2 = 7x - 14.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0198", "instruction": "Solve for x: 4x + 3 = 6x + 3.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0199", "instruction": "Solve for x: 5x + 13 = 4x + 22.", "response": "x = 9"}
+{"id": "stage2-intermediate-linear_equations-0200", "instruction": "Solve for x: 8x - 20 = 9x - 30.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0201", "instruction": "Solve for x: 2x - 5 = 6x - 21.", "response": "x = 4"}
+{"id": "stage2-intermediate-linear_equations-0202", "instruction": "Solve for x: 4x + 4 = 1x + 4.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0203", "instruction": "Solve for x: 2x + 14 = 7x + 24.", "response": "x = -2"}
+{"id": "stage2-intermediate-linear_equations-0204", "instruction": "Solve for x: 5x + 3 = 1x + 27.", "response": "x = 6"}
+{"id": "stage2-intermediate-linear_equations-0205", "instruction": "Solve for x: 9x - 18 = 8x - 13.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0206", "instruction": "Solve for x: 5x + 12 = 4x + 12.", "response": "x = 0"}
+{"id": "stage2-intermediate-linear_equations-0207", "instruction": "Solve for x: 2x + 14 = 3x + 7.", "response": "x = 7"}
+{"id": "stage2-intermediate-linear_equations-0208", "instruction": "Solve for x: 1x + 20 = 2x + 24.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0209", "instruction": "Solve for x: 4x - 7 = 7x + 14.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0210", "instruction": "Solve for x: 9x - 16 = 7x + 4.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0211", "instruction": "Solve for x: 3x + 1 = 1x + 9.", "response": "x = 4"}
+{"id": "stage2-intermediate-linear_equations-0212", "instruction": "Solve for x: 1x - 17 = 2x - 9.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0213", "instruction": "Solve for x: 3x - 16 = 5x - 30.", "response": "x = 7"}
+{"id": "stage2-intermediate-linear_equations-0214", "instruction": "Solve for x: 4x + 4 = 5x + 1.", "response": "x = 3"}
+{"id": "stage2-intermediate-linear_equations-0215", "instruction": "Solve for x: 8x + 0 = 7x + 3.", "response": "x = 3"}
+{"id": "stage2-intermediate-linear_equations-0216", "instruction": "Solve for x: 1x + 14 = 7x + 56.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0217", "instruction": "Solve for x: 1x - 18 = 2x - 26.", "response": "x = 8"}
+{"id": "stage2-intermediate-linear_equations-0218", "instruction": "Solve for x: 2x - 14 = 6x - 38.", "response": "x = 6"}
+{"id": "stage2-intermediate-linear_equations-0219", "instruction": "Solve for x: 5x + 8 = 2x + 5.", "response": "x = -1"}
+{"id": "stage2-intermediate-linear_equations-0220", "instruction": "Solve for x: 7x - 10 = 1x + 20.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0221", "instruction": "Solve for x: 9x + 5 = 4x - 25.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0222", "instruction": "Solve for x: 9x - 11 = 5x + 29.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0223", "instruction": "Solve for x: 5x + 15 = 6x + 25.", "response": "x = -10"}
+{"id": "stage2-intermediate-linear_equations-0224", "instruction": "Solve for x: 9x - 18 = 3x - 60.", "response": "x = -7"}
+{"id": "stage2-intermediate-linear_equations-0225", "instruction": "Solve for x: 1x + 15 = 7x - 27.", "response": "x = 7"}
+{"id": "stage2-intermediate-linear_equations-0226", "instruction": "Solve for x: 2x + 2 = 5x + 14.", "response": "x = -4"}
+{"id": "stage2-intermediate-linear_equations-0227", "instruction": "Solve for x: 4x + 12 = 7x - 18.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0228", "instruction": "Solve for x: 3x - 4 = 4x - 13.", "response": "x = 9"}
+{"id": "stage2-intermediate-linear_equations-0229", "instruction": "Solve for x: 4x + 16 = 2x + 6.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0230", "instruction": "Solve for x: 1x + 15 = 9x - 17.", "response": "x = 4"}
+{"id": "stage2-intermediate-linear_equations-0231", "instruction": "Solve for x: 2x - 4 = 5x + 20.", "response": "x = -8"}
+{"id": "stage2-intermediate-linear_equations-0232", "instruction": "Solve for x: 2x + 11 = 4x - 5.", "response": "x = 8"}
+{"id": "stage2-intermediate-linear_equations-0233", "instruction": "Solve for x: 6x - 5 = 3x + 25.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0234", "instruction": "Solve for x: 2x - 16 = 5x - 43.", "response": "x = 9"}
+{"id": "stage2-intermediate-linear_equations-0235", "instruction": "Solve for x: 4x + 8 = 6x - 2.", "response": "x = 5"}
+{"id": "stage2-intermediate-linear_equations-0236", "instruction": "Solve for x: 6x - 11 = 5x - 3.", "response": "x = 8"}
+{"id": "stage2-intermediate-linear_equations-0237", "instruction": "Solve for x: 6x - 20 = 7x - 15.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0238", "instruction": "Solve for x: 6x + 7 = 4x + 1.", "response": "x = -3"}
+{"id": "stage2-intermediate-linear_equations-0239", "instruction": "Solve for x: 5x + 1 = 6x + 7.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0240", "instruction": "Solve for x: 8x + 11 = 6x + 9.", "response": "x = -1"}
+{"id": "stage2-intermediate-linear_equations-0241", "instruction": "Solve for x: 9x + 18 = 2x - 17.", "response": "x = -5"}
+{"id": "stage2-intermediate-linear_equations-0242", "instruction": "Solve for x: 2x + 14 = 5x + 32.", "response": "x = -6"}
+{"id": "stage2-intermediate-linear_equations-0243", "instruction": "Solve for x: 4x - 16 = 5x - 26.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0244", "instruction": "Solve for x: 2x + 20 = 1x + 26.", "response": "x = 6"}
+{"id": "stage2-intermediate-linear_equations-0245", "instruction": "Solve for x: 1x - 7 = 7x - 55.", "response": "x = 8"}
+{"id": "stage2-intermediate-linear_equations-0246", "instruction": "Solve for x: 1x + 14 = 9x + 30.", "response": "x = -2"}
+{"id": "stage2-intermediate-linear_equations-0247", "instruction": "Solve for x: 9x - 11 = 8x - 1.", "response": "x = 10"}
+{"id": "stage2-intermediate-linear_equations-0248", "instruction": "Solve for x: 6x + 17 = 7x + 20.", "response": "x = -3"}
+{"id": "stage2-intermediate-linear_equations-0249", "instruction": "Solve for x: 5x + 12 = 3x + 20.", "response": "x = 4"}
+{"id": "stage2-intermediate-functions-0000", "instruction": "Evaluate f(x) = 7x + 3 at x = 6.", "response": "45"}
+{"id": "stage2-intermediate-functions-0001", "instruction": "Evaluate f(x) = 4x + 19 at x = -5.", "response": "-1"}
+{"id": "stage2-intermediate-functions-0002", "instruction": "Evaluate f(x) = 8x - 10 at x = -5.", "response": "-50"}
+{"id": "stage2-intermediate-functions-0003", "instruction": "Evaluate f(x) = 8x + 2 at x = -9.", "response": "-70"}
+{"id": "stage2-intermediate-functions-0004", "instruction": "Evaluate f(x) = 8x - 6 at x = -8.", "response": "-70"}
+{"id": "stage2-intermediate-functions-0005", "instruction": "Given f(x) = 6x - 6 and g(x) = 2x + 7, compute f(g(-9)).", "response": "-72"}
+{"id": "stage2-intermediate-functions-0006", "instruction": "Given f(x) = 7x + 10 and g(x) = 1x - 8, compute f(g(4)).", "response": "-18"}
+{"id": "stage2-intermediate-functions-0007", "instruction": "Given f(x) = 2x + 13 and g(x) = 3x - 1, compute f(g(10)).", "response": "71"}
+{"id": "stage2-intermediate-functions-0008", "instruction": "Evaluate f(x) = 7x + 4 at x = 1.", "response": "11"}
+{"id": "stage2-intermediate-functions-0009", "instruction": "Evaluate f(x) = 9x - 4 at x = 2.", "response": "14"}
+{"id": "stage2-intermediate-functions-0010", "instruction": "Evaluate f(x) = 9x + 5 at x = 1.", "response": "14"}
+{"id": "stage2-intermediate-functions-0011", "instruction": "Given f(x) = 8x + 10 and g(x) = 1x + 7, compute f(g(9)).", "response": "138"}
+{"id": "stage2-intermediate-functions-0012", "instruction": "Evaluate f(x) = 8x - 10 at x = -3.", "response": "-34"}
+{"id": "stage2-intermediate-functions-0013", "instruction": "Evaluate f(x) = 9x - 3 at x = -4.", "response": "-39"}
+{"id": "stage2-intermediate-functions-0014", "instruction": "Evaluate f(x) = 3x - 10 at x = 1.", "response": "-7"}
+{"id": "stage2-intermediate-functions-0015", "instruction": "Evaluate f(x) = 4x + 6 at x = 0.", "response": "6"}
+{"id": "stage2-intermediate-functions-0016", "instruction": "Evaluate f(x) = 8x + 10 at x = 5.", "response": "50"}
+{"id": "stage2-intermediate-functions-0017", "instruction": "Evaluate f(x) = 3x + 6 at x = -10.", "response": "-24"}
+{"id": "stage2-intermediate-functions-0018", "instruction": "Evaluate f(x) = 1x - 12 at x = 8.", "response": "-4"}
+{"id": "stage2-intermediate-functions-0019", "instruction": "Evaluate f(x) = 3x + 20 at x = 6.", "response": "38"}
+{"id": "stage2-intermediate-functions-0020", "instruction": "Evaluate f(x) = 3x - 17 at x = -5.", "response": "-32"}
+{"id": "stage2-intermediate-functions-0021", "instruction": "Given f(x) = 3x + 13 and g(x) = 5x + 9, compute f(g(2)).", "response": "70"}
+{"id": "stage2-intermediate-functions-0022", "instruction": "Evaluate f(x) = 5x - 15 at x = -4.", "response": "-35"}
+{"id": "stage2-intermediate-functions-0023", "instruction": "Given f(x) = 8x + 10 and g(x) = 2x + 4, compute f(g(-5)).", "response": "-38"}
+{"id": "stage2-intermediate-functions-0024", "instruction": "Evaluate f(x) = 3x + 19 at x = 6.", "response": "37"}
+{"id": "stage2-intermediate-functions-0025", "instruction": "Given f(x) = 3x + 1 and g(x) = 5x + 9, compute f(g(4)).", "response": "88"}
+{"id": "stage2-intermediate-functions-0026", "instruction": "Evaluate f(x) = 4x + 4 at x = 2.", "response": "12"}
+{"id": "stage2-intermediate-functions-0027", "instruction": "Evaluate f(x) = 2x - 19 at x = -4.", "response": "-27"}
+{"id": "stage2-intermediate-functions-0028", "instruction": "Given f(x) = 3x + 18 and g(x) = 2x + 6, compute f(g(-7)).", "response": "-6"}
+{"id": "stage2-intermediate-functions-0029", "instruction": "Evaluate f(x) = 9x + 12 at x = -7.", "response": "-51"}
+{"id": "stage2-intermediate-functions-0030", "instruction": "Evaluate f(x) = 8x - 12 at x = 9.", "response": "60"}
+{"id": "stage2-intermediate-functions-0031", "instruction": "Evaluate f(x) = 7x + 13 at x = 3.", "response": "34"}
+{"id": "stage2-intermediate-functions-0032", "instruction": "Given f(x) = 1x + 13 and g(x) = 2x + 6, compute f(g(3)).", "response": "25"}
+{"id": "stage2-intermediate-functions-0033", "instruction": "Given f(x) = 6x + 17 and g(x) = 1x + 4, compute f(g(8)).", "response": "89"}
+{"id": "stage2-intermediate-functions-0034", "instruction": "Evaluate f(x) = 5x + 10 at x = -3.", "response": "-5"}
+{"id": "stage2-intermediate-functions-0035", "instruction": "Evaluate f(x) = 5x + 18 at x = 7.", "response": "53"}
+{"id": "stage2-intermediate-functions-0036", "instruction": "Given f(x) = 5x - 8 and g(x) = 1x + 9, compute f(g(-10)).", "response": "-13"}
+{"id": "stage2-intermediate-functions-0037", "instruction": "Evaluate f(x) = 9x - 20 at x = 2.", "response": "-2"}
+{"id": "stage2-intermediate-functions-0038", "instruction": "Evaluate f(x) = 6x + 6 at x = 1.", "response": "12"}
+{"id": "stage2-intermediate-functions-0039", "instruction": "Evaluate f(x) = 3x + 7 at x = 10.", "response": "37"}
+{"id": "stage2-intermediate-functions-0040", "instruction": "Given f(x) = 5x + 14 and g(x) = 5x + 2, compute f(g(3)).", "response": "99"}
+{"id": "stage2-intermediate-functions-0041", "instruction": "Given f(x) = 7x - 7 and g(x) = 5x + 8, compute f(g(3)).", "response": "154"}
+{"id": "stage2-intermediate-functions-0042", "instruction": "Given f(x) = 3x + 3 and g(x) = 5x + 6, compute f(g(7)).", "response": "126"}
+{"id": "stage2-intermediate-functions-0043", "instruction": "Given f(x) = 5x + 16 and g(x) = 4x - 5, compute f(g(1)).", "response": "11"}
+{"id": "stage2-intermediate-functions-0044", "instruction": "Evaluate f(x) = 4x + 8 at x = -5.", "response": "-12"}
+{"id": "stage2-intermediate-functions-0045", "instruction": "Evaluate f(x) = 4x + 12 at x = 2.", "response": "20"}
+{"id": "stage2-intermediate-functions-0046", "instruction": "Given f(x) = 9x + 19 and g(x) = 2x + 3, compute f(g(-9)).", "response": "-116"}
+{"id": "stage2-intermediate-functions-0047", "instruction": "Evaluate f(x) = 2x - 11 at x = 5.", "response": "-1"}
+{"id": "stage2-intermediate-functions-0048", "instruction": "Given f(x) = 2x - 16 and g(x) = 2x + 2, compute f(g(-2)).", "response": "-20"}
+{"id": "stage2-intermediate-functions-0049", "instruction": "Evaluate f(x) = 1x + 4 at x = 2.", "response": "6"}
+{"id": "stage2-intermediate-functions-0050", "instruction": "Given f(x) = 1x - 9 and g(x) = 4x + 5, compute f(g(10)).", "response": "36"}
+{"id": "stage2-intermediate-functions-0051", "instruction": "Evaluate f(x) = 4x + 13 at x = -1.", "response": "9"}
+{"id": "stage2-intermediate-functions-0052", "instruction": "Evaluate f(x) = 1x + 18 at x = 6.", "response": "24"}
+{"id": "stage2-intermediate-functions-0053", "instruction": "Evaluate f(x) = 3x - 18 at x = 1.", "response": "-15"}
+{"id": "stage2-intermediate-functions-0054", "instruction": "Evaluate f(x) = 1x - 10 at x = -8.", "response": "-18"}
+{"id": "stage2-intermediate-functions-0055", "instruction": "Given f(x) = 7x + 2 and g(x) = 4x + 9, compute f(g(2)).", "response": "121"}
+{"id": "stage2-intermediate-functions-0056", "instruction": "Evaluate f(x) = 9x - 20 at x = -8.", "response": "-92"}
+{"id": "stage2-intermediate-functions-0057", "instruction": "Evaluate f(x) = 9x - 2 at x = 7.", "response": "61"}
+{"id": "stage2-intermediate-functions-0058", "instruction": "Given f(x) = 6x - 3 and g(x) = 5x - 3, compute f(g(-3)).", "response": "-111"}
+{"id": "stage2-intermediate-functions-0059", "instruction": "Given f(x) = 7x + 16 and g(x) = 3x - 4, compute f(g(-10)).", "response": "-222"}
+{"id": "stage2-intermediate-functions-0060", "instruction": "Given f(x) = 9x - 14 and g(x) = 1x + 7, compute f(g(7)).", "response": "112"}
+{"id": "stage2-intermediate-functions-0061", "instruction": "Given f(x) = 6x - 13 and g(x) = 3x + 8, compute f(g(6)).", "response": "143"}
+{"id": "stage2-intermediate-functions-0062", "instruction": "Given f(x) = 8x + 4 and g(x) = 4x - 2, compute f(g(8)).", "response": "244"}
+{"id": "stage2-intermediate-functions-0063", "instruction": "Given f(x) = 8x + 9 and g(x) = 1x + 6, compute f(g(8)).", "response": "121"}
+{"id": "stage2-intermediate-functions-0064", "instruction": "Evaluate f(x) = 5x - 16 at x = 2.", "response": "-6"}
+{"id": "stage2-intermediate-functions-0065", "instruction": "Evaluate f(x) = 4x + 0 at x = 3.", "response": "12"}
+{"id": "stage2-intermediate-functions-0066", "instruction": "Given f(x) = 9x + 14 and g(x) = 3x - 2, compute f(g(-10)).", "response": "-274"}
+{"id": "stage2-intermediate-functions-0067", "instruction": "Given f(x) = 2x + 5 and g(x) = 1x + 8, compute f(g(0)).", "response": "21"}
+{"id": "stage2-intermediate-functions-0068", "instruction": "Evaluate f(x) = 8x + 0 at x = 1.", "response": "8"}
+{"id": "stage2-intermediate-functions-0069", "instruction": "Evaluate f(x) = 5x - 9 at x = -4.", "response": "-29"}
+{"id": "stage2-intermediate-functions-0070", "instruction": "Given f(x) = 4x - 5 and g(x) = 3x - 3, compute f(g(-3)).", "response": "-53"}
+{"id": "stage2-intermediate-functions-0071", "instruction": "Evaluate f(x) = 4x - 5 at x = 9.", "response": "31"}
+{"id": "stage2-intermediate-functions-0072", "instruction": "Given f(x) = 3x - 14 and g(x) = 1x + 6, compute f(g(-7)).", "response": "-17"}
+{"id": "stage2-intermediate-functions-0073", "instruction": "Evaluate f(x) = 9x - 18 at x = 5.", "response": "27"}
+{"id": "stage2-intermediate-functions-0074", "instruction": "Given f(x) = 6x + 11 and g(x) = 3x + 6, compute f(g(8)).", "response": "191"}
+{"id": "stage2-intermediate-functions-0075", "instruction": "Evaluate f(x) = 9x - 3 at x = 2.", "response": "15"}
+{"id": "stage2-intermediate-functions-0076", "instruction": "Evaluate f(x) = 3x - 17 at x = 6.", "response": "1"}
+{"id": "stage2-intermediate-functions-0077", "instruction": "Given f(x) = 8x + 14 and g(x) = 5x + 2, compute f(g(-9)).", "response": "-330"}
+{"id": "stage2-intermediate-functions-0078", "instruction": "Given f(x) = 3x + 9 and g(x) = 5x + 5, compute f(g(-7)).", "response": "-81"}
+{"id": "stage2-intermediate-functions-0079", "instruction": "Given f(x) = 1x - 20 and g(x) = 4x + 9, compute f(g(-4)).", "response": "-27"}
+{"id": "stage2-intermediate-functions-0080", "instruction": "Evaluate f(x) = 6x + 3 at x = 9.", "response": "57"}
+{"id": "stage2-intermediate-functions-0081", "instruction": "Given f(x) = 3x + 15 and g(x) = 2x - 1, compute f(g(-2)).", "response": "0"}
+{"id": "stage2-intermediate-functions-0082", "instruction": "Given f(x) = 6x + 3 and g(x) = 4x + 4, compute f(g(-5)).", "response": "-93"}
+{"id": "stage2-intermediate-functions-0083", "instruction": "Evaluate f(x) = 7x + 3 at x = 1.", "response": "10"}
+{"id": "stage2-intermediate-functions-0084", "instruction": "Given f(x) = 5x + 8 and g(x) = 5x - 5, compute f(g(-5)).", "response": "-142"}
+{"id": "stage2-intermediate-functions-0085", "instruction": "Evaluate f(x) = 2x - 3 at x = -3.", "response": "-9"}
+{"id": "stage2-intermediate-functions-0086", "instruction": "Given f(x) = 7x - 8 and g(x) = 2x + 6, compute f(g(-6)).", "response": "-50"}
+{"id": "stage2-intermediate-functions-0087", "instruction": "Evaluate f(x) = 3x + 6 at x = 5.", "response": "21"}
+{"id": "stage2-intermediate-functions-0088", "instruction": "Evaluate f(x) = 9x + 14 at x = 0.", "response": "14"}
+{"id": "stage2-intermediate-functions-0089", "instruction": "Given f(x) = 5x - 4 and g(x) = 5x - 8, compute f(g(7)).", "response": "131"}
+{"id": "stage2-intermediate-functions-0090", "instruction": "Given f(x) = 2x - 10 and g(x) = 2x - 1, compute f(g(-9)).", "response": "-48"}
+{"id": "stage2-intermediate-functions-0091", "instruction": "Given f(x) = 2x + 8 and g(x) = 3x + 2, compute f(g(0)).", "response": "12"}
+{"id": "stage2-intermediate-functions-0092", "instruction": "Given f(x) = 9x + 15 and g(x) = 3x - 9, compute f(g(-2)).", "response": "-120"}
+{"id": "stage2-intermediate-functions-0093", "instruction": "Given f(x) = 2x + 2 and g(x) = 2x + 9, compute f(g(9)).", "response": "56"}
+{"id": "stage2-intermediate-functions-0094", "instruction": "Evaluate f(x) = 5x + 2 at x = 0.", "response": "2"}
+{"id": "stage2-intermediate-functions-0095", "instruction": "Given f(x) = 8x - 15 and g(x) = 5x + 0, compute f(g(2)).", "response": "65"}
+{"id": "stage2-intermediate-functions-0096", "instruction": "Given f(x) = 3x - 10 and g(x) = 3x + 4, compute f(g(10)).", "response": "92"}
+{"id": "stage2-intermediate-functions-0097", "instruction": "Given f(x) = 2x - 15 and g(x) = 3x - 2, compute f(g(-5)).", "response": "-49"}
+{"id": "stage2-intermediate-functions-0098", "instruction": "Given f(x) = 6x - 2 and g(x) = 5x + 3, compute f(g(-2)).", "response": "-44"}
+{"id": "stage2-intermediate-functions-0099", "instruction": "Given f(x) = 8x + 3 and g(x) = 5x + 5, compute f(g(8)).", "response": "363"}
+{"id": "stage2-intermediate-functions-0100", "instruction": "Given f(x) = 3x - 9 and g(x) = 2x - 2, compute f(g(-10)).", "response": "-75"}
+{"id": "stage2-intermediate-functions-0101", "instruction": "Given f(x) = 2x - 7 and g(x) = 4x - 6, compute f(g(-5)).", "response": "-59"}
+{"id": "stage2-intermediate-functions-0102", "instruction": "Evaluate f(x) = 2x + 10 at x = 7.", "response": "24"}
+{"id": "stage2-intermediate-functions-0103", "instruction": "Evaluate f(x) = 1x + 5 at x = 6.", "response": "11"}
+{"id": "stage2-intermediate-functions-0104", "instruction": "Evaluate f(x) = 2x - 4 at x = 9.", "response": "14"}
+{"id": "stage2-intermediate-functions-0105", "instruction": "Evaluate f(x) = 2x + 4 at x = -1.", "response": "2"}
+{"id": "stage2-intermediate-functions-0106", "instruction": "Evaluate f(x) = 4x - 2 at x = 4.", "response": "14"}
+{"id": "stage2-intermediate-functions-0107", "instruction": "Evaluate f(x) = 3x + 13 at x = -5.", "response": "-2"}
+{"id": "stage2-intermediate-functions-0108", "instruction": "Evaluate f(x) = 1x + 2 at x = 0.", "response": "2"}
+{"id": "stage2-intermediate-functions-0109", "instruction": "Given f(x) = 8x + 14 and g(x) = 5x + 5, compute f(g(-2)).", "response": "-26"}
+{"id": "stage2-intermediate-functions-0110", "instruction": "Evaluate f(x) = 9x - 9 at x = 8.", "response": "63"}
+{"id": "stage2-intermediate-functions-0111", "instruction": "Given f(x) = 7x + 13 and g(x) = 5x + 0, compute f(g(10)).", "response": "363"}
+{"id": "stage2-intermediate-functions-0112", "instruction": "Given f(x) = 8x + 14 and g(x) = 1x + 5, compute f(g(-3)).", "response": "30"}
+{"id": "stage2-intermediate-functions-0113", "instruction": "Given f(x) = 6x + 6 and g(x) = 2x + 0, compute f(g(-2)).", "response": "-18"}
+{"id": "stage2-intermediate-functions-0114", "instruction": "Evaluate f(x) = 1x + 13 at x = -6.", "response": "7"}
+{"id": "stage2-intermediate-functions-0115", "instruction": "Given f(x) = 5x + 10 and g(x) = 1x + 6, compute f(g(7)).", "response": "75"}
+{"id": "stage2-intermediate-functions-0116", "instruction": "Given f(x) = 5x - 20 and g(x) = 3x - 2, compute f(g(3)).", "response": "15"}
+{"id": "stage2-intermediate-functions-0117", "instruction": "Evaluate f(x) = 9x + 3 at x = -4.", "response": "-33"}
+{"id": "stage2-intermediate-functions-0118", "instruction": "Given f(x) = 9x + 7 and g(x) = 2x - 4, compute f(g(2)).", "response": "7"}
+{"id": "stage2-intermediate-functions-0119", "instruction": "Given f(x) = 7x - 6 and g(x) = 1x + 4, compute f(g(-2)).", "response": "8"}
+{"id": "stage2-intermediate-functions-0120", "instruction": "Evaluate f(x) = 9x + 19 at x = -2.", "response": "1"}
+{"id": "stage2-intermediate-functions-0121", "instruction": "Given f(x) = 9x - 3 and g(x) = 2x - 7, compute f(g(3)).", "response": "-12"}
+{"id": "stage2-intermediate-functions-0122", "instruction": "Evaluate f(x) = 3x - 2 at x = -7.", "response": "-23"}
+{"id": "stage2-intermediate-functions-0123", "instruction": "Given f(x) = 8x - 3 and g(x) = 4x - 3, compute f(g(9)).", "response": "261"}
+{"id": "stage2-intermediate-functions-0124", "instruction": "Given f(x) = 1x - 11 and g(x) = 5x - 9, compute f(g(-9)).", "response": "-65"}
+{"id": "stage2-intermediate-functions-0125", "instruction": "Evaluate f(x) = 2x - 2 at x = -2.", "response": "-6"}
+{"id": "stage2-intermediate-functions-0126", "instruction": "Evaluate f(x) = 8x - 20 at x = -3.", "response": "-44"}
+{"id": "stage2-intermediate-functions-0127", "instruction": "Evaluate f(x) = 3x - 20 at x = 5.", "response": "-5"}
+{"id": "stage2-intermediate-functions-0128", "instruction": "Evaluate f(x) = 6x + 6 at x = -1.", "response": "0"}
+{"id": "stage2-intermediate-functions-0129", "instruction": "Given f(x) = 6x + 9 and g(x) = 3x - 7, compute f(g(-9)).", "response": "-195"}
+{"id": "stage2-intermediate-functions-0130", "instruction": "Evaluate f(x) = 1x - 3 at x = 2.", "response": "-1"}
+{"id": "stage2-intermediate-functions-0131", "instruction": "Evaluate f(x) = 9x + 10 at x = -5.", "response": "-35"}
+{"id": "stage2-intermediate-functions-0132", "instruction": "Evaluate f(x) = 5x + 4 at x = -10.", "response": "-46"}
+{"id": "stage2-intermediate-functions-0133", "instruction": "Evaluate f(x) = 4x + 4 at x = 4.", "response": "20"}
+{"id": "stage2-intermediate-functions-0134", "instruction": "Evaluate f(x) = 1x - 8 at x = 4.", "response": "-4"}
+{"id": "stage2-intermediate-functions-0135", "instruction": "Evaluate f(x) = 9x - 7 at x = 5.", "response": "38"}
+{"id": "stage2-intermediate-functions-0136", "instruction": "Given f(x) = 5x + 0 and g(x) = 1x + 8, compute f(g(-5)).", "response": "15"}
+{"id": "stage2-intermediate-functions-0137", "instruction": "Evaluate f(x) = 5x + 10 at x = 10.", "response": "60"}
+{"id": "stage2-intermediate-functions-0138", "instruction": "Given f(x) = 4x + 3 and g(x) = 2x - 6, compute f(g(-9)).", "response": "-93"}
+{"id": "stage2-intermediate-functions-0139", "instruction": "Evaluate f(x) = 7x + 0 at x = -10.", "response": "-70"}
+{"id": "stage2-intermediate-functions-0140", "instruction": "Evaluate f(x) = 5x + 17 at x = -7.", "response": "-18"}
+{"id": "stage2-intermediate-functions-0141", "instruction": "Given f(x) = 4x - 20 and g(x) = 5x + 6, compute f(g(-9)).", "response": "-176"}
+{"id": "stage2-intermediate-functions-0142", "instruction": "Evaluate f(x) = 6x - 15 at x = -3.", "response": "-33"}
+{"id": "stage2-intermediate-functions-0143", "instruction": "Evaluate f(x) = 8x - 15 at x = 9.", "response": "57"}
+{"id": "stage2-intermediate-functions-0144", "instruction": "Given f(x) = 1x - 17 and g(x) = 2x + 8, compute f(g(1)).", "response": "-7"}
+{"id": "stage2-intermediate-functions-0145", "instruction": "Evaluate f(x) = 3x + 11 at x = -3.", "response": "2"}
+{"id": "stage2-intermediate-functions-0146", "instruction": "Given f(x) = 9x + 2 and g(x) = 2x - 9, compute f(g(4)).", "response": "-7"}
+{"id": "stage2-intermediate-functions-0147", "instruction": "Given f(x) = 6x - 12 and g(x) = 1x + 6, compute f(g(-2)).", "response": "12"}
+{"id": "stage2-intermediate-functions-0148", "instruction": "Given f(x) = 9x - 2 and g(x) = 4x - 3, compute f(g(7)).", "response": "223"}
+{"id": "stage2-intermediate-functions-0149", "instruction": "Evaluate f(x) = 9x + 2 at x = 0.", "response": "2"}
+{"id": "stage2-intermediate-functions-0150", "instruction": "Given f(x) = 5x + 18 and g(x) = 2x - 7, compute f(g(7)).", "response": "53"}
+{"id": "stage2-intermediate-functions-0151", "instruction": "Evaluate f(x) = 8x - 2 at x = -2.", "response": "-18"}
+{"id": "stage2-intermediate-functions-0152", "instruction": "Given f(x) = 8x - 20 and g(x) = 5x + 3, compute f(g(10)).", "response": "404"}
+{"id": "stage2-intermediate-functions-0153", "instruction": "Evaluate f(x) = 1x + 19 at x = 1.", "response": "20"}
+{"id": "stage2-intermediate-functions-0154", "instruction": "Evaluate f(x) = 6x - 16 at x = 7.", "response": "26"}
+{"id": "stage2-intermediate-functions-0155", "instruction": "Given f(x) = 4x + 13 and g(x) = 5x - 5, compute f(g(5)).", "response": "93"}
+{"id": "stage2-intermediate-functions-0156", "instruction": "Given f(x) = 6x + 6 and g(x) = 3x - 6, compute f(g(10)).", "response": "150"}
+{"id": "stage2-intermediate-functions-0157", "instruction": "Evaluate f(x) = 9x - 16 at x = -9.", "response": "-97"}
+{"id": "stage2-intermediate-functions-0158", "instruction": "Evaluate f(x) = 3x - 18 at x = -4.", "response": "-30"}
+{"id": "stage2-intermediate-functions-0159", "instruction": "Evaluate f(x) = 8x - 8 at x = -7.", "response": "-64"}
+{"id": "stage2-intermediate-functions-0160", "instruction": "Evaluate f(x) = 7x + 11 at x = 6.", "response": "53"}
+{"id": "stage2-intermediate-functions-0161", "instruction": "Given f(x) = 1x + 3 and g(x) = 5x - 7, compute f(g(-3)).", "response": "-19"}
+{"id": "stage2-intermediate-functions-0162", "instruction": "Evaluate f(x) = 4x + 11 at x = -8.", "response": "-21"}
+{"id": "stage2-intermediate-functions-0163", "instruction": "Given f(x) = 1x + 3 and g(x) = 4x + 2, compute f(g(7)).", "response": "33"}
+{"id": "stage2-intermediate-functions-0164", "instruction": "Evaluate f(x) = 5x + 13 at x = -9.", "response": "-32"}
+{"id": "stage2-intermediate-functions-0165", "instruction": "Evaluate f(x) = 5x - 16 at x = -4.", "response": "-36"}
+{"id": "stage2-intermediate-functions-0166", "instruction": "Evaluate f(x) = 2x - 6 at x = 7.", "response": "8"}
+{"id": "stage2-intermediate-functions-0167", "instruction": "Given f(x) = 4x - 8 and g(x) = 2x + 9, compute f(g(6)).", "response": "76"}
+{"id": "stage2-intermediate-functions-0168", "instruction": "Evaluate f(x) = 9x + 15 at x = 3.", "response": "42"}
+{"id": "stage2-intermediate-functions-0169", "instruction": "Evaluate f(x) = 6x + 9 at x = 3.", "response": "27"}
+{"id": "stage2-intermediate-functions-0170", "instruction": "Evaluate f(x) = 3x - 9 at x = 7.", "response": "12"}
+{"id": "stage2-intermediate-functions-0171", "instruction": "Given f(x) = 9x + 1 and g(x) = 5x + 5, compute f(g(-5)).", "response": "-179"}
+{"id": "stage2-intermediate-functions-0172", "instruction": "Given f(x) = 6x + 15 and g(x) = 3x + 4, compute f(g(0)).", "response": "39"}
+{"id": "stage2-intermediate-functions-0173", "instruction": "Given f(x) = 6x + 18 and g(x) = 5x + 8, compute f(g(-3)).", "response": "-24"}
+{"id": "stage2-intermediate-functions-0174", "instruction": "Evaluate f(x) = 7x + 15 at x = -2.", "response": "1"}
+{"id": "stage2-intermediate-functions-0175", "instruction": "Given f(x) = 8x + 8 and g(x) = 1x - 8, compute f(g(2)).", "response": "-40"}
+{"id": "stage2-intermediate-functions-0176", "instruction": "Given f(x) = 1x + 13 and g(x) = 3x - 9, compute f(g(-6)).", "response": "-14"}
+{"id": "stage2-intermediate-functions-0177", "instruction": "Given f(x) = 4x - 7 and g(x) = 1x - 1, compute f(g(0)).", "response": "-11"}
+{"id": "stage2-intermediate-functions-0178", "instruction": "Evaluate f(x) = 2x - 18 at x = 4.", "response": "-10"}
+{"id": "stage2-intermediate-functions-0179", "instruction": "Given f(x) = 3x - 12 and g(x) = 3x + 9, compute f(g(-2)).", "response": "-3"}
+{"id": "stage2-intermediate-functions-0180", "instruction": "Evaluate f(x) = 4x - 4 at x = -1.", "response": "-8"}
+{"id": "stage2-intermediate-functions-0181", "instruction": "Evaluate f(x) = 7x + 16 at x = -4.", "response": "-12"}
+{"id": "stage2-intermediate-functions-0182", "instruction": "Evaluate f(x) = 6x + 10 at x = -5.", "response": "-20"}
+{"id": "stage2-intermediate-functions-0183", "instruction": "Given f(x) = 2x + 18 and g(x) = 3x - 8, compute f(g(10)).", "response": "62"}
+{"id": "stage2-intermediate-functions-0184", "instruction": "Given f(x) = 2x - 17 and g(x) = 3x + 4, compute f(g(0)).", "response": "-9"}
+{"id": "stage2-intermediate-functions-0185", "instruction": "Given f(x) = 2x - 6 and g(x) = 5x - 9, compute f(g(10)).", "response": "76"}
+{"id": "stage2-intermediate-functions-0186", "instruction": "Given f(x) = 1x - 1 and g(x) = 1x + 1, compute f(g(6)).", "response": "6"}
+{"id": "stage2-intermediate-functions-0187", "instruction": "Evaluate f(x) = 6x + 12 at x = -3.", "response": "-6"}
+{"id": "stage2-intermediate-functions-0188", "instruction": "Evaluate f(x) = 1x + 5 at x = 4.", "response": "9"}
+{"id": "stage2-intermediate-functions-0189", "instruction": "Evaluate f(x) = 4x + 7 at x = -1.", "response": "3"}
+{"id": "stage2-intermediate-functions-0190", "instruction": "Given f(x) = 3x - 12 and g(x) = 1x + 6, compute f(g(0)).", "response": "6"}
+{"id": "stage2-intermediate-functions-0191", "instruction": "Evaluate f(x) = 9x + 5 at x = -2.", "response": "-13"}
+{"id": "stage2-intermediate-functions-0192", "instruction": "Evaluate f(x) = 7x + 12 at x = 3.", "response": "33"}
+{"id": "stage2-intermediate-functions-0193", "instruction": "Evaluate f(x) = 3x + 10 at x = 7.", "response": "31"}
+{"id": "stage2-intermediate-functions-0194", "instruction": "Evaluate f(x) = 8x + 5 at x = 10.", "response": "85"}
+{"id": "stage2-intermediate-functions-0195", "instruction": "Evaluate f(x) = 9x + 19 at x = 6.", "response": "73"}
+{"id": "stage2-intermediate-functions-0196", "instruction": "Evaluate f(x) = 4x - 16 at x = -2.", "response": "-24"}
+{"id": "stage2-intermediate-functions-0197", "instruction": "Given f(x) = 6x + 16 and g(x) = 1x + 4, compute f(g(-8)).", "response": "-8"}
+{"id": "stage2-intermediate-functions-0198", "instruction": "Given f(x) = 6x + 2 and g(x) = 3x + 2, compute f(g(-4)).", "response": "-58"}
+{"id": "stage2-intermediate-functions-0199", "instruction": "Evaluate f(x) = 5x - 10 at x = 1.", "response": "-5"}
+{"id": "stage2-intermediate-functions-0200", "instruction": "Given f(x) = 3x + 8 and g(x) = 2x - 3, compute f(g(-9)).", "response": "-55"}
+{"id": "stage2-intermediate-functions-0201", "instruction": "Given f(x) = 3x - 15 and g(x) = 1x - 2, compute f(g(-7)).", "response": "-42"}
+{"id": "stage2-intermediate-functions-0202", "instruction": "Evaluate f(x) = 5x - 20 at x = 0.", "response": "-20"}
+{"id": "stage2-intermediate-functions-0203", "instruction": "Evaluate f(x) = 5x + 8 at x = 5.", "response": "33"}
+{"id": "stage2-intermediate-functions-0204", "instruction": "Evaluate f(x) = 6x - 7 at x = 7.", "response": "35"}
+{"id": "stage2-intermediate-functions-0205", "instruction": "Evaluate f(x) = 4x + 14 at x = 6.", "response": "38"}
+{"id": "stage2-intermediate-functions-0206", "instruction": "Given f(x) = 9x + 10 and g(x) = 2x - 9, compute f(g(9)).", "response": "91"}
+{"id": "stage2-intermediate-functions-0207", "instruction": "Given f(x) = 9x - 18 and g(x) = 2x - 8, compute f(g(-2)).", "response": "-126"}
+{"id": "stage2-intermediate-functions-0208", "instruction": "Given f(x) = 4x + 19 and g(x) = 1x + 5, compute f(g(-2)).", "response": "31"}
+{"id": "stage2-intermediate-functions-0209", "instruction": "Evaluate f(x) = 2x + 4 at x = -2.", "response": "0"}
+{"id": "stage2-intermediate-functions-0210", "instruction": "Given f(x) = 2x - 19 and g(x) = 4x - 2, compute f(g(-1)).", "response": "-31"}
+{"id": "stage2-intermediate-functions-0211", "instruction": "Given f(x) = 9x - 14 and g(x) = 4x + 8, compute f(g(0)).", "response": "58"}
+{"id": "stage2-intermediate-functions-0212", "instruction": "Evaluate f(x) = 3x - 8 at x = 6.", "response": "10"}
+{"id": "stage2-intermediate-functions-0213", "instruction": "Given f(x) = 9x - 19 and g(x) = 2x + 7, compute f(g(-9)).", "response": "-118"}
+{"id": "stage2-intermediate-functions-0214", "instruction": "Given f(x) = 6x + 11 and g(x) = 2x - 9, compute f(g(2)).", "response": "-19"}
+{"id": "stage2-intermediate-functions-0215", "instruction": "Given f(x) = 6x + 2 and g(x) = 3x - 2, compute f(g(10)).", "response": "170"}
+{"id": "stage2-intermediate-functions-0216", "instruction": "Given f(x) = 1x + 20 and g(x) = 4x - 9, compute f(g(-2)).", "response": "3"}
+{"id": "stage2-intermediate-functions-0217", "instruction": "Given f(x) = 4x - 11 and g(x) = 4x - 5, compute f(g(0)).", "response": "-31"}
+{"id": "stage2-intermediate-functions-0218", "instruction": "Evaluate f(x) = 7x + 13 at x = 9.", "response": "76"}
+{"id": "stage2-intermediate-functions-0219", "instruction": "Evaluate f(x) = 7x - 5 at x = 8.", "response": "51"}
+{"id": "stage2-intermediate-functions-0220", "instruction": "Evaluate f(x) = 7x - 1 at x = 9.", "response": "62"}
+{"id": "stage2-intermediate-functions-0221", "instruction": "Given f(x) = 8x + 14 and g(x) = 2x - 5, compute f(g(-6)).", "response": "-122"}
+{"id": "stage2-intermediate-functions-0222", "instruction": "Evaluate f(x) = 3x - 1 at x = 6.", "response": "17"}
+{"id": "stage2-intermediate-functions-0223", "instruction": "Evaluate f(x) = 7x - 11 at x = 10.", "response": "59"}
+{"id": "stage2-intermediate-functions-0224", "instruction": "Evaluate f(x) = 6x - 16 at x = 7.", "response": "26"}
+{"id": "stage2-intermediate-functions-0225", "instruction": "Evaluate f(x) = 3x + 0 at x = -6.", "response": "-18"}
+{"id": "stage2-intermediate-functions-0226", "instruction": "Evaluate f(x) = 6x + 6 at x = 3.", "response": "24"}
+{"id": "stage2-intermediate-functions-0227", "instruction": "Given f(x) = 8x + 20 and g(x) = 2x - 3, compute f(g(-2)).", "response": "-36"}
+{"id": "stage2-intermediate-functions-0228", "instruction": "Evaluate f(x) = 3x - 9 at x = -10.", "response": "-39"}
+{"id": "stage2-intermediate-functions-0229", "instruction": "Given f(x) = 4x + 18 and g(x) = 2x - 9, compute f(g(-3)).", "response": "-42"}
+{"id": "stage2-intermediate-functions-0230", "instruction": "Given f(x) = 2x + 10 and g(x) = 5x + 6, compute f(g(-6)).", "response": "-38"}
+{"id": "stage2-intermediate-functions-0231", "instruction": "Given f(x) = 3x + 4 and g(x) = 4x - 5, compute f(g(5)).", "response": "49"}
+{"id": "stage2-intermediate-functions-0232", "instruction": "Evaluate f(x) = 4x - 6 at x = -9.", "response": "-42"}
+{"id": "stage2-intermediate-functions-0233", "instruction": "Given f(x) = 1x - 3 and g(x) = 2x - 3, compute f(g(3)).", "response": "0"}
+{"id": "stage2-intermediate-functions-0234", "instruction": "Evaluate f(x) = 2x - 9 at x = 4.", "response": "-1"}
+{"id": "stage2-intermediate-functions-0235", "instruction": "Given f(x) = 6x + 9 and g(x) = 4x + 3, compute f(g(-3)).", "response": "-45"}
+{"id": "stage2-intermediate-functions-0236", "instruction": "Evaluate f(x) = 7x + 0 at x = 2.", "response": "14"}
+{"id": "stage2-intermediate-functions-0237", "instruction": "Evaluate f(x) = 9x - 14 at x = 4.", "response": "22"}
+{"id": "stage2-intermediate-functions-0238", "instruction": "Given f(x) = 1x - 5 and g(x) = 5x + 3, compute f(g(6)).", "response": "28"}
+{"id": "stage2-intermediate-functions-0239", "instruction": "Evaluate f(x) = 9x + 4 at x = 6.", "response": "58"}
+{"id": "stage2-intermediate-functions-0240", "instruction": "Evaluate f(x) = 4x - 2 at x = 4.", "response": "14"}
+{"id": "stage2-intermediate-functions-0241", "instruction": "Given f(x) = 5x - 2 and g(x) = 2x + 4, compute f(g(4)).", "response": "58"}
+{"id": "stage2-intermediate-functions-0242", "instruction": "Given f(x) = 1x + 13 and g(x) = 4x + 5, compute f(g(-6)).", "response": "-6"}
+{"id": "stage2-intermediate-functions-0243", "instruction": "Evaluate f(x) = 9x - 13 at x = -5.", "response": "-58"}
+{"id": "stage2-intermediate-functions-0244", "instruction": "Evaluate f(x) = 7x + 6 at x = 0.", "response": "6"}
+{"id": "stage2-intermediate-functions-0245", "instruction": "Given f(x) = 1x - 9 and g(x) = 5x - 3, compute f(g(4)).", "response": "8"}
+{"id": "stage2-intermediate-functions-0246", "instruction": "Given f(x) = 2x - 4 and g(x) = 2x - 6, compute f(g(0)).", "response": "-16"}
+{"id": "stage2-intermediate-functions-0247", "instruction": "Evaluate f(x) = 2x + 8 at x = 10.", "response": "28"}
+{"id": "stage2-intermediate-functions-0248", "instruction": "Given f(x) = 2x + 13 and g(x) = 5x - 4, compute f(g(2)).", "response": "25"}
+{"id": "stage2-intermediate-functions-0249", "instruction": "Given f(x) = 9x + 4 and g(x) = 2x + 1, compute f(g(-9)).", "response": "-149"}
+{"id": "stage2-intermediate-number_theory-0000", "instruction": "Find lcm(32, 30).", "response": "480"}
+{"id": "stage2-intermediate-number_theory-0001", "instruction": "Find lcm(18, 65).", "response": "1170"}
+{"id": "stage2-intermediate-number_theory-0002", "instruction": "Compute 51 mod 9.", "response": "6"}
+{"id": "stage2-intermediate-number_theory-0003", "instruction": "Find lcm(27, 28).", "response": "756"}
+{"id": "stage2-intermediate-number_theory-0004", "instruction": "Find lcm(12, 91).", "response": "1092"}
+{"id": "stage2-intermediate-number_theory-0005", "instruction": "Compute 13 mod 12.", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0006", "instruction": "Is 81 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0007", "instruction": "Is 42 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0008", "instruction": "Is 70 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0009", "instruction": "Is 22 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0010", "instruction": "Find gcd(43, 82).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0011", "instruction": "Compute 91 mod 13.", "response": "0"}
+{"id": "stage2-intermediate-number_theory-0012", "instruction": "Find lcm(18, 35).", "response": "630"}
+{"id": "stage2-intermediate-number_theory-0013", "instruction": "Find lcm(19, 95).", "response": "95"}
+{"id": "stage2-intermediate-number_theory-0014", "instruction": "Compute 16 mod 5.", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0015", "instruction": "Compute 54 mod 5.", "response": "4"}
+{"id": "stage2-intermediate-number_theory-0016", "instruction": "Find gcd(65, 34).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0017", "instruction": "Find lcm(98, 48).", "response": "2352"}
+{"id": "stage2-intermediate-number_theory-0018", "instruction": "Find lcm(70, 86).", "response": "3010"}
+{"id": "stage2-intermediate-number_theory-0019", "instruction": "Compute 16 mod 9.", "response": "7"}
+{"id": "stage2-intermediate-number_theory-0020", "instruction": "Compute 59 mod 6.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0021", "instruction": "Is 82 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0022", "instruction": "Compute 72 mod 6.", "response": "0"}
+{"id": "stage2-intermediate-number_theory-0023", "instruction": "Compute 54 mod 11.", "response": "10"}
+{"id": "stage2-intermediate-number_theory-0024", "instruction": "Find lcm(38, 90).", "response": "1710"}
+{"id": "stage2-intermediate-number_theory-0025", "instruction": "Find gcd(25, 85).", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0026", "instruction": "Find gcd(73, 89).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0027", "instruction": "Compute 66 mod 10.", "response": "6"}
+{"id": "stage2-intermediate-number_theory-0028", "instruction": "Compute 79 mod 14.", "response": "9"}
+{"id": "stage2-intermediate-number_theory-0029", "instruction": "Compute 28 mod 14.", "response": "0"}
+{"id": "stage2-intermediate-number_theory-0030", "instruction": "Is 78 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0031", "instruction": "Is 75 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0032", "instruction": "Find lcm(49, 36).", "response": "1764"}
+{"id": "stage2-intermediate-number_theory-0033", "instruction": "Find gcd(27, 15).", "response": "3"}
+{"id": "stage2-intermediate-number_theory-0034", "instruction": "Is 92 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0035", "instruction": "Find lcm(90, 65).", "response": "1170"}
+{"id": "stage2-intermediate-number_theory-0036", "instruction": "Is 17 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0037", "instruction": "Compute 83 mod 8.", "response": "3"}
+{"id": "stage2-intermediate-number_theory-0038", "instruction": "Find gcd(93, 37).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0039", "instruction": "Compute 44 mod 9.", "response": "8"}
+{"id": "stage2-intermediate-number_theory-0040", "instruction": "Compute 76 mod 10.", "response": "6"}
+{"id": "stage2-intermediate-number_theory-0041", "instruction": "Find gcd(26, 99).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0042", "instruction": "Compute 55 mod 14.", "response": "13"}
+{"id": "stage2-intermediate-number_theory-0043", "instruction": "Find gcd(34, 36).", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0044", "instruction": "Compute 55 mod 12.", "response": "7"}
+{"id": "stage2-intermediate-number_theory-0045", "instruction": "Is 16 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0046", "instruction": "Find lcm(73, 31).", "response": "2263"}
+{"id": "stage2-intermediate-number_theory-0047", "instruction": "Is 80 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0048", "instruction": "Is 64 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0049", "instruction": "Compute 84 mod 10.", "response": "4"}
+{"id": "stage2-intermediate-number_theory-0050", "instruction": "Find gcd(38, 85).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0051", "instruction": "Compute 57 mod 7.", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0052", "instruction": "Compute 15 mod 11.", "response": "4"}
+{"id": "stage2-intermediate-number_theory-0053", "instruction": "Find lcm(85, 89).", "response": "7565"}
+{"id": "stage2-intermediate-number_theory-0054", "instruction": "Is 35 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0055", "instruction": "Find gcd(51, 52).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0056", "instruction": "Find gcd(46, 64).", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0057", "instruction": "Find gcd(75, 42).", "response": "3"}
+{"id": "stage2-intermediate-number_theory-0058", "instruction": "Compute 69 mod 8.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0059", "instruction": "Compute 34 mod 10.", "response": "4"}
+{"id": "stage2-intermediate-number_theory-0060", "instruction": "Find gcd(37, 23).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0061", "instruction": "Is 76 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0062", "instruction": "Is 76 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0063", "instruction": "Find lcm(55, 73).", "response": "4015"}
+{"id": "stage2-intermediate-number_theory-0064", "instruction": "Compute 53 mod 6.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0065", "instruction": "Find lcm(38, 16).", "response": "304"}
+{"id": "stage2-intermediate-number_theory-0066", "instruction": "Is 61 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0067", "instruction": "Find gcd(12, 51).", "response": "3"}
+{"id": "stage2-intermediate-number_theory-0068", "instruction": "Find gcd(99, 88).", "response": "11"}
+{"id": "stage2-intermediate-number_theory-0069", "instruction": "Find gcd(54, 71).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0070", "instruction": "Find gcd(25, 78).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0071", "instruction": "Compute 14 mod 9.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0072", "instruction": "Find lcm(53, 37).", "response": "1961"}
+{"id": "stage2-intermediate-number_theory-0073", "instruction": "Find lcm(48, 47).", "response": "2256"}
+{"id": "stage2-intermediate-number_theory-0074", "instruction": "Compute 68 mod 6.", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0075", "instruction": "Compute 31 mod 9.", "response": "4"}
+{"id": "stage2-intermediate-number_theory-0076", "instruction": "Find gcd(13, 91).", "response": "13"}
+{"id": "stage2-intermediate-number_theory-0077", "instruction": "Find gcd(38, 81).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0078", "instruction": "Compute 82 mod 9.", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0079", "instruction": "Find lcm(48, 85).", "response": "4080"}
+{"id": "stage2-intermediate-number_theory-0080", "instruction": "Find lcm(33, 21).", "response": "231"}
+{"id": "stage2-intermediate-number_theory-0081", "instruction": "Compute 90 mod 13.", "response": "12"}
+{"id": "stage2-intermediate-number_theory-0082", "instruction": "Is 18 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0083", "instruction": "Find gcd(72, 98).", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0084", "instruction": "Find gcd(25, 61).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0085", "instruction": "Find gcd(23, 66).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0086", "instruction": "Is 34 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0087", "instruction": "Is 90 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0088", "instruction": "Compute 54 mod 15.", "response": "9"}
+{"id": "stage2-intermediate-number_theory-0089", "instruction": "Find gcd(71, 84).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0090", "instruction": "Find lcm(23, 71).", "response": "1633"}
+{"id": "stage2-intermediate-number_theory-0091", "instruction": "Find gcd(70, 51).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0092", "instruction": "Is 72 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0093", "instruction": "Find lcm(30, 90).", "response": "90"}
+{"id": "stage2-intermediate-number_theory-0094", "instruction": "Compute 58 mod 7.", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0095", "instruction": "Compute 53 mod 12.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0096", "instruction": "Find gcd(20, 72).", "response": "4"}
+{"id": "stage2-intermediate-number_theory-0097", "instruction": "Find gcd(56, 73).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0098", "instruction": "Is 33 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0099", "instruction": "Compute 89 mod 7.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0100", "instruction": "Find gcd(63, 25).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0101", "instruction": "Compute 83 mod 6.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0102", "instruction": "Compute 80 mod 11.", "response": "3"}
+{"id": "stage2-intermediate-number_theory-0103", "instruction": "Is 42 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0104", "instruction": "Find lcm(82, 32).", "response": "1312"}
+{"id": "stage2-intermediate-number_theory-0105", "instruction": "Is 61 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0106", "instruction": "Compute 38 mod 11.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0107", "instruction": "Is 84 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0108", "instruction": "Find lcm(34, 96).", "response": "1632"}
+{"id": "stage2-intermediate-number_theory-0109", "instruction": "Find gcd(85, 74).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0110", "instruction": "Find gcd(87, 88).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0111", "instruction": "Is 53 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0112", "instruction": "Find gcd(68, 34).", "response": "34"}
+{"id": "stage2-intermediate-number_theory-0113", "instruction": "Compute 63 mod 14.", "response": "7"}
+{"id": "stage2-intermediate-number_theory-0114", "instruction": "Find gcd(99, 88).", "response": "11"}
+{"id": "stage2-intermediate-number_theory-0115", "instruction": "Is 53 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0116", "instruction": "Find gcd(23, 39).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0117", "instruction": "Find lcm(86, 93).", "response": "7998"}
+{"id": "stage2-intermediate-number_theory-0118", "instruction": "Find gcd(30, 96).", "response": "6"}
+{"id": "stage2-intermediate-number_theory-0119", "instruction": "Find lcm(69, 80).", "response": "5520"}
+{"id": "stage2-intermediate-number_theory-0120", "instruction": "Compute 61 mod 14.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0121", "instruction": "Is 37 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0122", "instruction": "Compute 50 mod 15.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0123", "instruction": "Compute 67 mod 6.", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0124", "instruction": "Find gcd(90, 77).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0125", "instruction": "Is 28 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0126", "instruction": "Find gcd(59, 82).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0127", "instruction": "Find gcd(12, 83).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0128", "instruction": "Compute 26 mod 5.", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0129", "instruction": "Find lcm(67, 87).", "response": "5829"}
+{"id": "stage2-intermediate-number_theory-0130", "instruction": "Is 92 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0131", "instruction": "Is 63 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0132", "instruction": "Is 81 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0133", "instruction": "Find lcm(72, 29).", "response": "2088"}
+{"id": "stage2-intermediate-number_theory-0134", "instruction": "Find lcm(83, 61).", "response": "5063"}
+{"id": "stage2-intermediate-number_theory-0135", "instruction": "Compute 65 mod 9.", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0136", "instruction": "Find lcm(29, 13).", "response": "377"}
+{"id": "stage2-intermediate-number_theory-0137", "instruction": "Find gcd(94, 14).", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0138", "instruction": "Find lcm(74, 96).", "response": "3552"}
+{"id": "stage2-intermediate-number_theory-0139", "instruction": "Is 29 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0140", "instruction": "Find lcm(94, 65).", "response": "6110"}
+{"id": "stage2-intermediate-number_theory-0141", "instruction": "Is 89 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0142", "instruction": "Find lcm(70, 77).", "response": "770"}
+{"id": "stage2-intermediate-number_theory-0143", "instruction": "Is 82 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0144", "instruction": "Is 57 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0145", "instruction": "Find lcm(66, 89).", "response": "5874"}
+{"id": "stage2-intermediate-number_theory-0146", "instruction": "Find gcd(85, 75).", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0147", "instruction": "Find lcm(76, 46).", "response": "1748"}
+{"id": "stage2-intermediate-number_theory-0148", "instruction": "Is 81 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0149", "instruction": "Compute 16 mod 14.", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0150", "instruction": "Is 59 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0151", "instruction": "Is 22 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0152", "instruction": "Compute 71 mod 6.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0153", "instruction": "Find gcd(43, 72).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0154", "instruction": "Find gcd(99, 93).", "response": "3"}
+{"id": "stage2-intermediate-number_theory-0155", "instruction": "Compute 90 mod 10.", "response": "0"}
+{"id": "stage2-intermediate-number_theory-0156", "instruction": "Find gcd(72, 70).", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0157", "instruction": "Is 85 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0158", "instruction": "Is 57 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0159", "instruction": "Compute 33 mod 14.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0160", "instruction": "Compute 84 mod 5.", "response": "4"}
+{"id": "stage2-intermediate-number_theory-0161", "instruction": "Is 86 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0162", "instruction": "Find gcd(96, 49).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0163", "instruction": "Find gcd(48, 74).", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0164", "instruction": "Find gcd(28, 76).", "response": "4"}
+{"id": "stage2-intermediate-number_theory-0165", "instruction": "Find gcd(47, 44).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0166", "instruction": "Find lcm(90, 47).", "response": "4230"}
+{"id": "stage2-intermediate-number_theory-0167", "instruction": "Compute 44 mod 6.", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0168", "instruction": "Find lcm(87, 31).", "response": "2697"}
+{"id": "stage2-intermediate-number_theory-0169", "instruction": "Is 59 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0170", "instruction": "Compute 42 mod 7.", "response": "0"}
+{"id": "stage2-intermediate-number_theory-0171", "instruction": "Find gcd(55, 22).", "response": "11"}
+{"id": "stage2-intermediate-number_theory-0172", "instruction": "Find lcm(88, 31).", "response": "2728"}
+{"id": "stage2-intermediate-number_theory-0173", "instruction": "Is 64 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0174", "instruction": "Find lcm(96, 68).", "response": "1632"}
+{"id": "stage2-intermediate-number_theory-0175", "instruction": "Find lcm(38, 85).", "response": "3230"}
+{"id": "stage2-intermediate-number_theory-0176", "instruction": "Compute 18 mod 9.", "response": "0"}
+{"id": "stage2-intermediate-number_theory-0177", "instruction": "Find gcd(18, 33).", "response": "3"}
+{"id": "stage2-intermediate-number_theory-0178", "instruction": "Is 63 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0179", "instruction": "Compute 72 mod 8.", "response": "0"}
+{"id": "stage2-intermediate-number_theory-0180", "instruction": "Is 99 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0181", "instruction": "Is 45 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0182", "instruction": "Is 13 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0183", "instruction": "Is 60 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0184", "instruction": "Compute 79 mod 5.", "response": "4"}
+{"id": "stage2-intermediate-number_theory-0185", "instruction": "Find gcd(80, 93).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0186", "instruction": "Compute 67 mod 15.", "response": "7"}
+{"id": "stage2-intermediate-number_theory-0187", "instruction": "Compute 54 mod 9.", "response": "0"}
+{"id": "stage2-intermediate-number_theory-0188", "instruction": "Find gcd(44, 95).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0189", "instruction": "Is 71 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0190", "instruction": "Find lcm(98, 87).", "response": "8526"}
+{"id": "stage2-intermediate-number_theory-0191", "instruction": "Find lcm(78, 55).", "response": "4290"}
+{"id": "stage2-intermediate-number_theory-0192", "instruction": "Find lcm(52, 82).", "response": "2132"}
+{"id": "stage2-intermediate-number_theory-0193", "instruction": "Find gcd(98, 13).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0194", "instruction": "Find gcd(13, 64).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0195", "instruction": "Find gcd(79, 25).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0196", "instruction": "Is 56 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0197", "instruction": "Compute 44 mod 5.", "response": "4"}
+{"id": "stage2-intermediate-number_theory-0198", "instruction": "Find gcd(91, 23).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0199", "instruction": "Find gcd(88, 96).", "response": "8"}
+{"id": "stage2-intermediate-number_theory-0200", "instruction": "Find lcm(88, 93).", "response": "8184"}
+{"id": "stage2-intermediate-number_theory-0201", "instruction": "Find gcd(27, 23).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0202", "instruction": "Find lcm(60, 96).", "response": "480"}
+{"id": "stage2-intermediate-number_theory-0203", "instruction": "Find lcm(26, 35).", "response": "910"}
+{"id": "stage2-intermediate-number_theory-0204", "instruction": "Compute 49 mod 15.", "response": "4"}
+{"id": "stage2-intermediate-number_theory-0205", "instruction": "Find gcd(93, 70).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0206", "instruction": "Compute 66 mod 10.", "response": "6"}
+{"id": "stage2-intermediate-number_theory-0207", "instruction": "Compute 32 mod 9.", "response": "5"}
+{"id": "stage2-intermediate-number_theory-0208", "instruction": "Find gcd(60, 61).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0209", "instruction": "Compute 19 mod 9.", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0210", "instruction": "Find lcm(68, 20).", "response": "340"}
+{"id": "stage2-intermediate-number_theory-0211", "instruction": "Is 37 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0212", "instruction": "Is 34 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0213", "instruction": "Is 25 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0214", "instruction": "Is 39 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0215", "instruction": "Find gcd(68, 45).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0216", "instruction": "Find gcd(16, 21).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0217", "instruction": "Find gcd(85, 44).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0218", "instruction": "Is 14 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0219", "instruction": "Find lcm(95, 93).", "response": "8835"}
+{"id": "stage2-intermediate-number_theory-0220", "instruction": "Find gcd(16, 97).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0221", "instruction": "Is 46 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0222", "instruction": "Compute 62 mod 5.", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0223", "instruction": "Is 73 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0224", "instruction": "Is 20 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0225", "instruction": "Find lcm(12, 61).", "response": "732"}
+{"id": "stage2-intermediate-number_theory-0226", "instruction": "Is 27 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0227", "instruction": "Compute 54 mod 9.", "response": "0"}
+{"id": "stage2-intermediate-number_theory-0228", "instruction": "Is 19 a prime number?", "response": "yes"}
+{"id": "stage2-intermediate-number_theory-0229", "instruction": "Find gcd(58, 80).", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0230", "instruction": "Compute 22 mod 9.", "response": "4"}
+{"id": "stage2-intermediate-number_theory-0231", "instruction": "Find lcm(34, 82).", "response": "1394"}
+{"id": "stage2-intermediate-number_theory-0232", "instruction": "Find gcd(61, 96).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0233", "instruction": "Find lcm(50, 61).", "response": "3050"}
+{"id": "stage2-intermediate-number_theory-0234", "instruction": "Find gcd(92, 57).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0235", "instruction": "Is 22 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0236", "instruction": "Is 36 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0237", "instruction": "Find gcd(36, 15).", "response": "3"}
+{"id": "stage2-intermediate-number_theory-0238", "instruction": "Find lcm(74, 61).", "response": "4514"}
+{"id": "stage2-intermediate-number_theory-0239", "instruction": "Find gcd(81, 94).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0240", "instruction": "Compute 75 mod 12.", "response": "3"}
+{"id": "stage2-intermediate-number_theory-0241", "instruction": "Find gcd(16, 55).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0242", "instruction": "Find gcd(55, 17).", "response": "1"}
+{"id": "stage2-intermediate-number_theory-0243", "instruction": "Is 27 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0244", "instruction": "Is 98 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0245", "instruction": "Find lcm(86, 41).", "response": "3526"}
+{"id": "stage2-intermediate-number_theory-0246", "instruction": "Find gcd(16, 30).", "response": "2"}
+{"id": "stage2-intermediate-number_theory-0247", "instruction": "Is 95 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0248", "instruction": "Is 91 a prime number?", "response": "no"}
+{"id": "stage2-intermediate-number_theory-0249", "instruction": "Find lcm(95, 28).", "response": "2660"}

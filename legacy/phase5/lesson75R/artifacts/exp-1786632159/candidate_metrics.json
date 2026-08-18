@@ -1,0 +1,6 @@
+{
+    "validation_loss": 5.180940628051758,
+    "perplexity": 177.85002305955118,
+    "token_accuracy": 0.0625,
+    "numerically_healthy": true
+}

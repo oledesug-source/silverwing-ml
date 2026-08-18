@@ -1,0 +1,28 @@
+{
+    "lesson": "81R",
+    "memory_system": "native_retrieval_context",
+    "memory_count": 8,
+    "training_examples": 6,
+    "validation_examples": 2,
+    "retrieval_limit": 1,
+    "minimum_score": 0.18,
+    "memory_types": [
+        "architecture",
+        "continual_learning",
+        "data_quality",
+        "diagnostic",
+        "reasoning_principle",
+        "system_principle",
+        "training_principle",
+        "workflow"
+    ],
+    "domains": [
+        "ai_systems",
+        "data",
+        "engineering",
+        "machine_learning",
+        "memory",
+        "reasoning",
+        "software_engineering"
+    ]
+}

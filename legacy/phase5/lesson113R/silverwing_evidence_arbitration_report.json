@@ -1,0 +1,172 @@
+{
+    "lesson": "113R",
+    "capability": "native_contradiction_resolution_evidence_arbitration",
+    "external_llm": false,
+    "device": "cpu",
+    "memory_version": "113R.2",
+    "representation_dimension": 14,
+    "contradiction": {
+        "state": "CONTRADICTIONS_PRESENT",
+        "count": 1,
+        "pairs": [
+            {
+                "case_a": "case_001",
+                "case_b": "case_003",
+                "similarity": 0.06464098393917084,
+                "agreement": false,
+                "contradiction": true
+            }
+        ]
+    },
+    "evidence": {
+        "source_count": 6,
+        "sources": [
+            {
+                "evidence_id": "evidence_001",
+                "source_type": "cross_case_similarity",
+                "case_a": "case_001",
+                "case_b": "case_002",
+                "similarity": 0.6746165752410889,
+                "direction": "neutral",
+                "reliability": 0.4,
+                "magnitude": 0.0,
+                "weight": 0.0,
+                "contribution": 0.0
+            },
+            {
+                "evidence_id": "evidence_002",
+                "source_type": "cross_case_similarity",
+                "case_a": "case_001",
+                "case_b": "case_003",
+                "similarity": 0.06464098393917084,
+                "direction": "conflict",
+                "reliability": 0.7,
+                "magnitude": 0.4676795080304146,
+                "weight": 0.3273756556212902,
+                "contribution": -0.3273756556212902
+            },
+            {
+                "evidence_id": "evidence_003",
+                "source_type": "cross_case_similarity",
+                "case_a": "case_002",
+                "case_b": "case_003",
+                "similarity": 0.496437132358551,
+                "direction": "neutral",
+                "reliability": 0.4,
+                "magnitude": 0.0,
+                "weight": 0.0,
+                "contribution": 0.0
+            },
+            {
+                "evidence_id": "prototype_prototype_001",
+                "source_type": "prototype_consistency",
+                "prototype_id": "prototype_001",
+                "consistency": 0.6666666666666666,
+                "direction": "support",
+                "reliability": 0.7,
+                "magnitude": 0.6666666666666666,
+                "weight": 0.4666666666666666,
+                "contribution": 0.4666666666666666
+            },
+            {
+                "evidence_id": "prototype_prototype_002",
+                "source_type": "prototype_consistency",
+                "prototype_id": "prototype_002",
+                "consistency": 0.6666666666666666,
+                "direction": "support",
+                "reliability": 0.7,
+                "magnitude": 0.6666666666666666,
+                "weight": 0.4666666666666666,
+                "contribution": 0.4666666666666666
+            },
+            {
+                "evidence_id": "prototype_prototype_003",
+                "source_type": "prototype_consistency",
+                "prototype_id": "prototype_003",
+                "consistency": 0.6666666666666666,
+                "direction": "support",
+                "reliability": 0.7,
+                "magnitude": 0.6666666666666666,
+                "weight": 0.4666666666666666,
+                "contribution": 0.4666666666666666
+            }
+        ],
+        "support_score": 1.4,
+        "conflict_score": 0.3273756556212902
+    },
+    "arbitration": {
+        "net_evidence": 1.0726243443787098,
+        "strength": 0.6209560386521228,
+        "direction": "SUPPORT"
+    },
+    "resolution": {
+        "confidence": 0.6139706924347484,
+        "state": "RESOLVED_WITH_CONFIDENCE",
+        "conclusion": "Primary hypothesis remains the best-supported interpretation after evidence arbitration.",
+        "diagnostic_note": "Contradictory cases were detected and retained. The result is evidence arbitration rather than simple majority voting."
+    },
+    "audit": [
+        {
+            "evidence_id": "evidence_001",
+            "source_type": "cross_case_similarity",
+            "direction": "neutral",
+            "reliability": 0.4,
+            "magnitude": 0.0,
+            "weight": 0.0,
+            "contribution": 0.0
+        },
+        {
+            "evidence_id": "evidence_002",
+            "source_type": "cross_case_similarity",
+            "direction": "conflict",
+            "reliability": 0.7,
+            "magnitude": 0.4676795080304146,
+            "weight": 0.3273756556212902,
+            "contribution": -0.3273756556212902
+        },
+        {
+            "evidence_id": "evidence_003",
+            "source_type": "cross_case_similarity",
+            "direction": "neutral",
+            "reliability": 0.4,
+            "magnitude": 0.0,
+            "weight": 0.0,
+            "contribution": 0.0
+        },
+        {
+            "evidence_id": "prototype_prototype_001",
+            "source_type": "prototype_consistency",
+            "direction": "support",
+            "reliability": 0.7,
+            "magnitude": 0.6666666666666666,
+            "weight": 0.4666666666666666,
+            "contribution": 0.4666666666666666
+        },
+        {
+            "evidence_id": "prototype_prototype_002",
+            "source_type": "prototype_consistency",
+            "direction": "support",
+            "reliability": 0.7,
+            "magnitude": 0.6666666666666666,
+            "weight": 0.4666666666666666,
+            "contribution": 0.4666666666666666
+        },
+        {
+            "evidence_id": "prototype_prototype_003",
+            "source_type": "prototype_consistency",
+            "direction": "support",
+            "reliability": 0.7,
+            "magnitude": 0.6666666666666666,
+            "weight": 0.4666666666666666,
+            "contribution": 0.4666666666666666
+        }
+    ],
+    "verification": {
+        "deterministic": true,
+        "contradictions_preserved": true
+    },
+    "promotion": {
+        "passed": true,
+        "errors": []
+    }
+}

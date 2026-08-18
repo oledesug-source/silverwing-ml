@@ -1,0 +1,189 @@
+{
+    "lesson": "128R",
+    "capability": "uncertainty_aware_preventive_execution_probabilistic_guardrails",
+    "guardrail_frame": {
+        "uncertainty": 0.1,
+        "guardrail_threshold": 0.18,
+        "trip_probability_threshold": 0.25,
+        "monte_carlo_trials": 5000
+    },
+    "baseline_profiles": {
+        "pattern_001": {
+            "mean_penetration": 0.10697651654481888,
+            "std_penetration": 0.017156073823571205,
+            "p95_penetration": 0.13627295196056366,
+            "trip_probability": 0.00019999999494757503
+        },
+        "pattern_004": {
+            "mean_penetration": 0.20077161490917206,
+            "std_penetration": 0.02075781300663948,
+            "p95_penetration": 0.2359035611152649,
+            "trip_probability": 0.840399980545044
+        },
+        "pattern_003": {
+            "mean_penetration": 0.16934245824813843,
+            "std_penetration": 0.0199179258197546,
+            "p95_penetration": 0.2032286822795868,
+            "trip_probability": 0.2849999964237213
+        },
+        "pattern_006": {
+            "mean_penetration": 0.13159005343914032,
+            "std_penetration": 0.018455423414707184,
+            "p95_penetration": 0.16319790482521057,
+            "trip_probability": 0.00800000037997961
+        },
+        "pattern_005": {
+            "mean_penetration": 0.11477148532867432,
+            "std_penetration": 0.017602551728487015,
+            "p95_penetration": 0.14491595327854156,
+            "trip_probability": 0.0006000000284984708
+        },
+        "pattern_002": {
+            "mean_penetration": 0.11300472170114517,
+            "std_penetration": 0.017504388466477394,
+            "p95_penetration": 0.14294929802417755,
+            "trip_probability": 0.0006000000284984708
+        }
+    },
+    "controlled_profiles": {
+        "pattern_001": {
+            "mean_penetration": 0.10697651654481888,
+            "std_penetration": 0.017156073823571205,
+            "p95_penetration": 0.13627295196056366,
+            "trip_probability": 0.00019999999494757503
+        },
+        "pattern_004": {
+            "mean_penetration": 0.10446593910455704,
+            "std_penetration": 0.01700466312468052,
+            "p95_penetration": 0.13352446258068085,
+            "trip_probability": 0.00019999999494757503
+        },
+        "pattern_003": {
+            "mean_penetration": 0.07992774993181229,
+            "std_penetration": 0.015298889949917793,
+            "p95_penetration": 0.10616172850131989,
+            "trip_probability": 0.00019999999494757503
+        },
+        "pattern_006": {
+            "mean_penetration": 0.05294150486588478,
+            "std_penetration": 0.012799710035324097,
+            "p95_penetration": 0.07519827783107758,
+            "trip_probability": 0.0
+        },
+        "pattern_005": {
+            "mean_penetration": 0.11477148532867432,
+            "std_penetration": 0.017602551728487015,
+            "p95_penetration": 0.14491595327854156,
+            "trip_probability": 0.0006000000284984708
+        },
+        "pattern_002": {
+            "mean_penetration": 0.11300472170114517,
+            "std_penetration": 0.017504388466477394,
+            "p95_penetration": 0.14294929802417755,
+            "trip_probability": 0.0006000000284984708
+        }
+    },
+    "baseline_guardrails": {
+        "pattern_001": "CLEAR",
+        "pattern_004": "TRIP",
+        "pattern_003": "TRIP",
+        "pattern_006": "CLEAR",
+        "pattern_005": "CLEAR",
+        "pattern_002": "CLEAR"
+    },
+    "controlled_guardrails": {
+        "pattern_001": "CLEAR",
+        "pattern_004": "CLEAR",
+        "pattern_003": "CLEAR",
+        "pattern_006": "CLEAR",
+        "pattern_005": "CLEAR",
+        "pattern_002": "CLEAR"
+    },
+    "baseline_gate": {
+        "blocked": [
+            "pattern_003",
+            "pattern_004"
+        ],
+        "executed": [
+            "pattern_001",
+            "pattern_002",
+            "pattern_005",
+            "pattern_006"
+        ]
+    },
+    "controlled_gate": {
+        "blocked": [],
+        "executed": [
+            "pattern_001",
+            "pattern_002",
+            "pattern_003",
+            "pattern_004",
+            "pattern_005",
+            "pattern_006"
+        ]
+    },
+    "baseline_bands": {
+        "pattern_001": {
+            "conservative": 0.14358570439650464,
+            "optimistic": 0.07786936168037531,
+            "band_width": 0.06571634271612933
+        },
+        "pattern_004": {
+            "conservative": 0.24407162330078122,
+            "optimistic": 0.1636690381445312,
+            "band_width": 0.08040258515625001
+        },
+        "pattern_003": {
+            "conservative": 0.21114602948402408,
+            "optimistic": 0.13419951595252985,
+            "band_width": 0.07694651353149423
+        },
+        "pattern_006": {
+            "conservative": 0.17067896320149994,
+            "optimistic": 0.09969478987149996,
+            "band_width": 0.07098417332999998
+        },
+        "pattern_005": {
+            "conservative": 0.15223846552127526,
+            "optimistic": 0.08471418665514721,
+            "band_width": 0.06752427886612805
+        },
+        "pattern_002": {
+            "conservative": 0.15028359926978122,
+            "optimistic": 0.08315698755853124,
+            "band_width": 0.06712661171124998
+        }
+    },
+    "controlled_bands": {
+        "pattern_001": {
+            "conservative": 0.14358570439650464,
+            "optimistic": 0.07786936168037531,
+            "band_width": 0.06571634271612933
+        },
+        "pattern_004": {
+            "conservative": 0.1407829701579941,
+            "optimistic": 0.0756793082108066,
+            "band_width": 0.0651036619471875
+        },
+        "pattern_003": {
+            "conservative": 0.11291409506144205,
+            "optimistic": 0.05470074866279272,
+            "band_width": 0.058213346398649335
+        },
+        "pattern_006": {
+            "conservative": 0.08092904140924162,
+            "optimistic": 0.032783946063803616,
+            "band_width": 0.048145095345438
+        },
+        "pattern_005": {
+            "conservative": 0.15223846552127526,
+            "optimistic": 0.08471418665514721,
+            "band_width": 0.06752427886612805
+        },
+        "pattern_002": {
+            "conservative": 0.15028359926978122,
+            "optimistic": 0.08315698755853124,
+            "band_width": 0.06712661171124998
+        }
+    }
+}

@@ -1,0 +1,2 @@
+{"example_id": "align_001", "domain": "positive_pairs", "formatted_text": "P:What is an exact positive cross-modal pair?\nM:The text and numeric observations refer to the same exact instance.\nQ:TEXT A -> NUMERIC A\nV:validated\nA:Both modalities refer to the same instance.", "token_count": 118}
+{"example_id": "align_002", "domain": "hard_negatives", "formatted_text": "P:What is a hard negative?\nM:It is an incorrect instance that has a high similarity to the query.\nQ:HIGH SIMILARITY + WRONG INSTANCE\nV:validated\nA:A similar but incorrect instance.", "token_count": 121}

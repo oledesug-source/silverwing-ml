@@ -1,0 +1,274 @@
+{
+    "memory_version": "130R.1",
+    "lesson": "130R",
+    "capability": "self_healing_recovery_orchestration_failure_absorption",
+    "created_at": "2026-08-15T11:30:09.950984",
+    "source_lesson": "129R",
+    "anomaly_scores": {
+        "pattern_001": 0.6872230570864468,
+        "pattern_004": 0.8675800000000001,
+        "pattern_003": 0.7045538541576759,
+        "pattern_006": 0.7528548352010486,
+        "pattern_005": 0.6608088028033707,
+        "pattern_002": 0.5797603153381193
+    },
+    "anomaly_schedule": [
+        "pattern_001",
+        "pattern_002",
+        "pattern_003",
+        "pattern_004",
+        "pattern_006",
+        "pattern_005"
+    ],
+    "dependencies": {
+        "pattern_001": null,
+        "pattern_005": "VALIDATE_EVIDENCE_PROVENANCE",
+        "pattern_002": "VALIDATE_EVIDENCE_PROVENANCE",
+        "pattern_003": "VALIDATE_SCHEMA_CONSISTENCY",
+        "pattern_004": "VALIDATE_SENSOR_ALIGNMENT",
+        "pattern_006": "VALIDATE_SENSOR_ALIGNMENT"
+    },
+    "action_map": {
+        "VALIDATE_EVIDENCE_PROVENANCE": "pattern_001",
+        "VALIDATE_TIMELINE_INTEGRITY": "pattern_005",
+        "VALIDATE_SCHEMA_CONSISTENCY": "pattern_002",
+        "VALIDATE_SENSOR_ALIGNMENT": "pattern_003",
+        "VALIDATE_TELEMETRY_FUSION": "pattern_004",
+        "VALIDATE_ACTUATOR_RESPONSE": "pattern_006"
+    },
+    "children": {
+        "pattern_001": [
+            "pattern_005",
+            "pattern_002"
+        ],
+        "pattern_002": [
+            "pattern_003"
+        ],
+        "pattern_003": [
+            "pattern_004",
+            "pattern_006"
+        ]
+    },
+    "anomaly_set": [
+        "pattern_003",
+        "pattern_004",
+        "pattern_006"
+    ],
+    "critical_path": {
+        "length": 4,
+        "patterns": [
+            "pattern_001",
+            "pattern_002",
+            "pattern_003",
+            "pattern_004",
+            "pattern_006"
+        ]
+    },
+    "tuned_records": [
+        {
+            "pattern_id": "pattern_001",
+            "family": "evidence_integrity",
+            "origin": "119R",
+            "risk_score": 0.8048129425657967,
+            "risk_class": "HIGH",
+            "severity": 0.95,
+            "impact": 0.9,
+            "outcome_status": "prevented",
+            "priority": 1
+        },
+        {
+            "pattern_id": "pattern_004",
+            "family": "telemetry_fusion",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.7793000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.8,
+            "impact": 0.75,
+            "outcome_status": "not_prevented",
+            "priority": 2
+        },
+        {
+            "pattern_id": "pattern_003",
+            "family": "sensor_alignment",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.7755,
+            "risk_class": "MEDIUM",
+            "severity": 0.82,
+            "impact": 0.62,
+            "outcome_status": "prevented",
+            "priority": 3
+        },
+        {
+            "pattern_id": "pattern_006",
+            "family": "actuator_response",
+            "origin": "122R_RUNTIME",
+            "risk_score": 0.7619000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.79,
+            "impact": 0.84,
+            "outcome_status": "prevented",
+            "priority": 4
+        },
+        {
+            "pattern_id": "pattern_005",
+            "family": "timeline_integrity",
+            "origin": "121R_EVIDENCE",
+            "risk_score": 0.75142,
+            "risk_class": "MEDIUM",
+            "severity": 0.85,
+            "impact": 0.8,
+            "outcome_status": "prevented",
+            "priority": 5
+        },
+        {
+            "pattern_id": "pattern_002",
+            "family": "schema_integrity",
+            "origin": "120R_EVALUATION",
+            "risk_score": 0.6184000000000001,
+            "risk_class": "MEDIUM",
+            "severity": 0.78,
+            "impact": 0.88,
+            "outcome_status": "prevented",
+            "priority": 6
+        }
+    ],
+    "tuned_order": [
+        "pattern_001",
+        "pattern_004",
+        "pattern_003",
+        "pattern_006",
+        "pattern_005",
+        "pattern_002"
+    ],
+    "recovery_frame": {
+        "spillover_ratio": 0.35,
+        "failure_threshold": 0.8,
+        "safe_ceiling": 0.7,
+        "playbook": [
+            {
+                "action": "RETRY",
+                "cost": 1.0,
+                "success": 0.6,
+                "recovery": 0.3
+            },
+            {
+                "action": "REDUNDANT_CHANNEL",
+                "cost": 2.0,
+                "success": 0.75,
+                "recovery": 0.45
+            },
+            {
+                "action": "ISOLATE",
+                "cost": 3.0,
+                "success": 0.85,
+                "recovery": 0.55
+            },
+            {
+                "action": "REBUILD",
+                "cost": 4.0,
+                "success": 0.95,
+                "recovery": 0.7
+            },
+            {
+                "action": "QUARANTINE",
+                "cost": 5.0,
+                "success": 1.0,
+                "recovery": 0.9
+            }
+        ]
+    },
+    "base_penetration": {
+        "pattern_001": 0.6872230570864468,
+        "pattern_004": 0.8675800000000001,
+        "pattern_003": 0.7045538541576759,
+        "pattern_006": 0.7528548352010486,
+        "pattern_005": 0.6608088028033707,
+        "pattern_002": 0.5797603153381193
+    },
+    "absorption_capacity": 1.7472191354133386,
+    "breach_scenario": {
+        "breach_pattern": "pattern_003",
+        "pre_recovery": {
+            "pattern_001": 0.6872230570864468,
+            "pattern_004": 0.913927,
+            "pattern_003": 1.0,
+            "pattern_006": 0.8393556428806815,
+            "pattern_005": 0.6608088028033707,
+            "pattern_002": 0.5797603153381193
+        },
+        "failed_set": [
+            "pattern_003",
+            "pattern_004",
+            "pattern_006"
+        ],
+        "recovery": {
+            "pattern_003": {
+                "pattern": "pattern_003",
+                "action": "REDUNDANT_CHANNEL",
+                "cost": 2.0,
+                "roll": 0.5607,
+                "residual": 0.55
+            },
+            "pattern_004": {
+                "pattern": "pattern_004",
+                "action": "REDUNDANT_CHANNEL",
+                "cost": 2.0,
+                "roll": 0.4226,
+                "residual": 0.50265985
+            },
+            "pattern_006": {
+                "pattern": "pattern_006",
+                "action": "RETRY",
+                "cost": 1.0,
+                "roll": 0.435,
+                "residual": 0.587548950016477
+            }
+        },
+        "post_recovery": {
+            "pattern_001": 0.6872230570864468,
+            "pattern_004": 0.50265985,
+            "pattern_003": 0.55,
+            "pattern_006": 0.587548950016477,
+            "pattern_005": 0.6608088028033707,
+            "pattern_002": 0.5797603153381193
+        },
+        "absorbed": 1.113073842864205,
+        "absorption_rate": 0.2377816817963061,
+        "pre_recovery_total": 4.681074818108619,
+        "post_recovery_total": 3.5680009752444137
+    },
+    "root_cascade_scenario": {
+        "root_pattern": "pattern_001",
+        "baseline_failed_set": [
+            "pattern_004"
+        ],
+        "pre_recovery": {
+            "pattern_001": 1.0,
+            "pattern_004": 0.8675800000000001,
+            "pattern_003": 0.7045538541576759,
+            "pattern_006": 0.7528548352010486,
+            "pattern_005": 0.7795257218221909,
+            "pattern_002": 0.7268442049697775
+        },
+        "failed_set": [
+            "pattern_001",
+            "pattern_004"
+        ],
+        "induced_failures": [
+            "pattern_001"
+        ],
+        "recovery": {
+            "pattern": "pattern_001",
+            "action": "ISOLATE",
+            "cost": 3.0,
+            "roll": 0.3829,
+            "residual": 0.44999999999999996
+        }
+    },
+    "verification": {
+        "all_residuals_safe": true,
+        "cascade_contained": true,
+        "deterministic": true,
+        "numerically_healthy": true
+    }
+}

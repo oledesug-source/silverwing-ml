@@ -1,0 +1,45 @@
+{
+    "lesson": "100R",
+    "capability": "native_cross_modal_alignment_retrieval",
+    "external_llm": false,
+    "device": "cpu",
+    "sequence_limit": 256,
+    "shared_dimension": 16,
+    "dataset_instances": 6,
+    "dataset_classes": [
+        0,
+        1,
+        2
+    ],
+    "alignment": {
+        "initial_loss": 2.855958938598633,
+        "final_loss": 8.834981417749077e-05,
+        "positive_similarity": 0.9941379825274149,
+        "hard_negative_similarity": 0.18725865334272385,
+        "instance_margin": 0.8068793291846911,
+        "text_to_numeric_exact": 1.0,
+        "numeric_to_text_exact": 1.0,
+        "text_to_numeric_class": 1.0,
+        "numeric_to_text_class": 1.0
+    },
+    "decoder": {
+        "baseline": {
+            "loss": 4.29158353805542,
+            "perplexity": 73.08210521267527,
+            "accuracy": 0.0970464135021097
+        },
+        "candidate": {
+            "loss": 4.199179172515869,
+            "perplexity": 66.63161552666195,
+            "accuracy": 0.0970464135021097
+        },
+        "changed_tensors": 53,
+        "total_parameter_change": 1520.48285959661,
+        "nan_tensors": 0,
+        "inf_tensors": 0
+    },
+    "promotion": {
+        "decision": "PROMOTE_CANDIDATE",
+        "reason": "Cross-modal curriculum improved decoder validation loss."
+    }
+}
