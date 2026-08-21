@@ -76,9 +76,17 @@ class AgentResponse:
 
 
 class HarnessConfig(BaseModel):
-    """Configuration for the agent harness."""
+    """Configuration for the agent harness.
 
-    model: str = "openai:gpt-4o"
+    ``model`` accepts any pydantic_ai model identifier.  To target the
+    locally served Silverwing LLM (OpenAI-compatible endpoint), set::
+
+        SILVERWING_AGENT_MODEL=openai:silverwing-v2
+        OPENAI_BASE_URL=http://localhost:8000/v1
+        OPENAI_API_KEY=local
+    """
+
+    model: str = os.environ.get("SILVERWING_AGENT_MODEL", "openai:gpt-4o")
     system_prompt: str = (
         "You are Silverwing, an advanced autonomous agent with system tool "
         "execution capabilities. You manage long-term memory, context windows, "
@@ -98,7 +106,7 @@ class HarnessConfig(BaseModel):
 
 
 def create_harness_agent(
-    model: str = "openai:gpt-4o",
+    model: str | None = None,
     system_prompt: str | None = None,
     max_rounds: int = 5,
     tool_timeout: float = 30.0,
@@ -123,7 +131,7 @@ def create_harness_agent(
         A configured PydanticAgentHarness instance.
     """
     config = HarnessConfig(
-        model=model,
+        model=model or HarnessConfig().model,
         system_prompt=system_prompt or HarnessConfig().system_prompt,
         max_rounds=max_rounds,
         tool_timeout_seconds=tool_timeout,

@@ -8,17 +8,40 @@ are preserved.
 from __future__ import annotations
 
 import json
+import time
+import uuid
 
 from serving.api.server import ApiResponse, SilverwingHandler
+
+
+def _messages_to_prompt(messages: list[dict]) -> str:
+    """Flatten an OpenAI-style message list into a single prompt.
+
+    The Silverwing decoder is a small SFT model without native chat
+    templating, so we use a simple speaker-labelled transcript.
+    """
+    parts: list[str] = []
+    for msg in messages:
+        role = str(msg.get("role", "user"))
+        content = str(msg.get("content", ""))
+        if role == "system":
+            parts.append(content)
+        elif role == "assistant":
+            parts.append(f"Assistant: {content}")
+        else:
+            parts.append(f"User: {content}")
+    parts.append("Assistant:")
+    return "\n".join(parts)
 
 
 class PlatformHandler(SilverwingHandler):
     """HTTP request handler adding platform intelligence endpoints.
 
     New endpoints:
-        POST /v1/chat          — orchestration loop (tool-use aware)
-        POST /v1/tools/execute — direct single tool execution
-        GET  /v1/capabilities  — list registered capabilities
+        POST /v1/chat              — orchestration loop (tool-use aware)
+        POST /v1/chat/completions  — OpenAI-compatible chat completions
+        POST /v1/tools/execute     — direct single tool execution
+        GET  /v1/capabilities      — list registered capabilities
 
     Preserved endpoints:
         POST /generate      — raw text generation (legacy)
@@ -32,6 +55,8 @@ class PlatformHandler(SilverwingHandler):
     def do_POST(self) -> None:
         if self.path == "/v1/chat":
             self._handle_chat()
+        elif self.path == "/v1/chat/completions":
+            self._handle_chat_completions()
         elif self.path == "/v1/tools/execute":
             self._handle_tool_execute()
         elif self.path == "/generate":
@@ -75,6 +100,85 @@ class PlatformHandler(SilverwingHandler):
             chat_request = ChatRequest(message=message, max_rounds=max_rounds)
             response = self.server_orchestrator.handle_request(chat_request)
             self._send_json(ApiResponse(success=True, data=response.to_dict()))
+
+        except json.JSONDecodeError as exc:
+            self._send_json(
+                ApiResponse(success=False, error=f"Invalid JSON: {exc}"), 400,
+            )
+        except Exception as exc:
+            self._send_json(
+                ApiResponse(success=False, error=str(exc)), 500,
+            )
+
+    def _handle_chat_completions(self) -> None:
+        """POST /v1/chat/completions — OpenAI-compatible chat completions.
+
+        Backed directly by the Layer 4 ModelProvider (no orchestration loop),
+        so any OpenAI-SDK-compatible client (pydantic_ai, openai python
+        package, curl) can use the served Silverwing model.
+        """
+        try:
+            content_length = int(self.headers.get("Content-Length", 0))
+            body = self.rfile.read(content_length).decode("utf-8")
+            request = json.loads(body) if body else {}
+
+            messages = request.get("messages") or []
+            if not messages:
+                self._send_json(
+                    ApiResponse(success=False,
+                                error="'messages' must be a non-empty list"), 400,
+                )
+                return
+            if request.get("stream"):
+                self._send_json(
+                    ApiResponse(success=False,
+                                error="stream=true is not supported yet"), 400,
+                )
+                return
+
+            orch = self.server_orchestrator
+            if orch is None or getattr(orch, "generator", None) is None:
+                self._send_json(
+                    ApiResponse(success=False, error="No model provider loaded"), 503,
+                )
+                return
+
+            from silverwing_platform.models import GenerationConfig, InferenceRequest
+
+            config = GenerationConfig(
+                max_new_tokens=int(request.get("max_tokens", 128)),
+                temperature=float(request.get("temperature", 0.7)),
+                top_p=float(request.get("top_p", 0.9)),
+            )
+            prompt = _messages_to_prompt(messages)
+            response = orch.generator.infer(InferenceRequest(prompt=prompt, config=config))
+
+            model_name = request.get("model") or response.model_id or "silverwing-v2"
+            usage = response.usage
+            payload = {
+                "id": f"chatcmpl-{uuid.uuid4().hex[:12]}",
+                "object": "chat.completion",
+                "created": int(time.time()),
+                "model": model_name,
+                "choices": [
+                    {
+                        "index": 0,
+                        "message": {"role": "assistant", "content": response.text},
+                        "finish_reason": "stop",
+                    }
+                ],
+                "usage": {
+                    "prompt_tokens": usage["prompt_tokens"],
+                    "completion_tokens": usage["generated_tokens"],
+                    "total_tokens": usage["total_tokens"],
+                },
+            }
+            body_bytes = json.dumps(payload).encode("utf-8")
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Content-Length", str(len(body_bytes)))
+            self.end_headers()
+            self.wfile.write(body_bytes)
 
         except json.JSONDecodeError as exc:
             self._send_json(

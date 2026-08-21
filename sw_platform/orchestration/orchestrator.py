@@ -148,6 +148,11 @@ class Orchestrator:
         return self._registry
 
     @property
+    def generator(self) -> Any:
+        """The Layer 4 model provider (ModelProvider or legacy generator)."""
+        return self._generator
+
+    @property
     def audit(self) -> AuditLog:
         return self._audit
 

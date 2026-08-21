@@ -238,7 +238,7 @@ class PlatformServerHandler(PlatformHandler):
 
     def do_POST(self):
         path = urlparse(self.path).path
-        if path in ("/v1/chat", "/v1/tools/execute", "/generate"):
+        if path in ("/v1/chat", "/v1/chat/completions", "/v1/tools/execute", "/generate"):
             super().do_POST()
         else:
             body = json.dumps({"success": False, "error": "Not found"}).encode()
