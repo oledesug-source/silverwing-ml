@@ -3,165 +3,370 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SilverWing Platform</title>
+<title>SILVERWING // TACTICAL COMMAND</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0a0e17;--surface:#111827;--surface2:#1a2332;--border:#1e293b;--accent:#3b82f6;--accent2:#8b5cf6;--green:#22c55e;--red:#ef4444;--yellow:#eab308;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;--radius:8px;--mono:'Cascadia Code','Fira Code',monospace}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);height:100vh;overflow:hidden}
-.header{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:16px}
-.header h1{font-size:18px;font-weight:600;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.header .status{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text2)}
-.header .dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
-.main{display:grid;grid-template-columns:280px 1fr 320px;height:calc(100vh - 53px)}
-.panel{border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden}
-.panel:last-child{border-right:none;border-left:1px solid var(--border)}
-.panel-header{padding:12px 16px;border-bottom:1px solid var(--border);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text2);display:flex;align-items:center;justify-content:space-between}
+:root{
+  --void:#050505;
+  --gunmetal:#111111;
+  --panel:#0b0b0b;
+  --panel2:#141414;
+  --line:#1e1e1e;
+  --line2:#2a2a2a;
+  --crimson:#FF003C;
+  --crimson-dim:rgba(255,0,60,.14);
+  --volt:#CCFF00;
+  --volt-dim:rgba(204,255,0,.12);
+  --amber:#FFB000;
+  --steel:#5F7A8C;
+  --text:#E8E6E3;
+  --text2:#B0AFA6;
+  --text3:#8F8E85;
+  --mono:'Share Tech Mono','Cascadia Code',monospace;
+  --ui:'Rajdhani','Segoe UI',sans-serif;
+  --display:'Orbitron','Rajdhani',sans-serif;
+}
+::selection{background:var(--crimson);color:#000}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+}
+html,body{height:100%}
+body{
+  font-family:var(--ui);background:var(--void);color:var(--text);
+  height:100vh;overflow:hidden;font-size:14px;letter-spacing:.02em;
+}
+/* ---- reactive grid ---- */
+body::before{
+  content:'';position:fixed;inset:-50%;
+  background-image:
+    linear-gradient(rgba(255,0,60,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,0,60,.04) 1px,transparent 1px);
+  background-size:44px 44px;
+  transform:perspective(600px) rotateX(0deg);
+  animation:gridDrift 24s linear infinite;
+  pointer-events:none;z-index:0;
+}
+@keyframes gridDrift{0%{transform:translate(0,0)}100%{transform:translate(44px,44px)}}
+/* ---- CRT scanlines + vignette ---- */
+body::after{
+  content:'';position:fixed;inset:0;z-index:9990;pointer-events:none;
+  background:
+    repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px),
+    radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55) 100%);
+}
+/* ---- boot overlay ---- */
+#boot{
+  position:fixed;inset:0;background:var(--void);z-index:9999;
+  display:flex;align-items:center;justify-content:center;
+  transition:opacity .45s ease;font-family:var(--mono);
+}
+#boot.done{opacity:0;pointer-events:none}
+#bootInner{width:min(560px,90vw);font-size:13px;color:var(--volt);line-height:1.9}
+#bootInner .bt{color:var(--crimson);font-family:var(--display);font-weight:900;font-size:20px;letter-spacing:.35em;margin-bottom:14px}
+#bootInner .ok{color:var(--volt)}
+#bootInner .dim{color:var(--text3)}
+/* ---- layout ---- */
+.header{
+  position:relative;z-index:2;height:58px;display:flex;align-items:center;gap:18px;
+  padding:0 22px;background:linear-gradient(180deg,#0d0d0d,#070707);
+  border-bottom:1px solid var(--line);
+}
+.logo-wing{width:30px;height:30px;filter:drop-shadow(0 0 6px rgba(255,0,60,.7));animation:wingPulse 2.6s ease-in-out infinite}
+@keyframes wingPulse{0%,100%{opacity:.85}50%{opacity:1}}
+.brand{display:flex;flex-direction:column;line-height:1.05}
+.brand h1{
+  font-family:var(--display);font-weight:900;font-size:19px;letter-spacing:.32em;
+  color:var(--text);position:relative;
+}
+.brand h1 span{color:var(--crimson)}
+.brand h1.glitching{animation:glitch .28s steps(2,end)}
+@keyframes glitch{
+  0%{transform:translate(0);text-shadow:none}
+  25%{transform:translate(-2px,1px);text-shadow:2px 0 var(--crimson),-2px 0 var(--volt)}
+  50%{transform:translate(2px,-1px);text-shadow:-2px 0 var(--crimson),2px 0 var(--volt)}
+  75%{transform:translate(-1px,0);text-shadow:1px 0 var(--volt)}
+  100%{transform:translate(0);text-shadow:none}
+}
+.brand .sub{font-family:var(--mono);font-size:10px;color:var(--text3);letter-spacing:.42em;margin-top:3px}
+.hud-right{margin-left:auto;display:flex;align-items:center;gap:20px;font-family:var(--mono)}
+.hud-clock{font-size:16px;color:var(--volt);letter-spacing:.18em;text-shadow:0 0 8px rgba(204,255,0,.35)}
+.hud-chip{
+  font-size:10px;letter-spacing:.22em;padding:4px 10px;color:var(--text2);
+  border:1px solid var(--line2);background:var(--panel);
+  clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px);
+}
+.hud-status{display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.2em;color:var(--text2)}
+.dot{width:8px;height:8px;background:var(--amber);box-shadow:0 0 8px currentColor}
+.dot.on{background:var(--volt);animation:blinkDot 1.6s ease-in-out infinite}
+.dot.off{background:var(--crimson);animation:blinkDot .7s steps(2,end) infinite}
+@keyframes blinkDot{0%,100%{opacity:1}50%{opacity:.25}}
+
+.main{position:relative;z-index:1;display:grid;grid-template-columns:300px 1fr 340px;height:calc(100vh - 58px)}
+
+/* ---- armored panels ---- */
+.panel{
+  position:relative;display:flex;flex-direction:column;overflow:hidden;
+  background:var(--panel);border:1px solid var(--line);margin:8px;
+}
+.panel::before,.panel::after{
+  content:'';position:absolute;width:16px;height:16px;z-index:3;pointer-events:none;
+}
+.panel::before{top:-1px;left:-1px;border-top:2px solid var(--crimson);border-left:2px solid var(--crimson)}
+.panel::after{bottom:-1px;right:-1px;border-bottom:2px solid var(--crimson);border-right:2px solid var(--crimson)}
+.panel-header{
+  padding:11px 16px;border-bottom:1px solid var(--line);
+  font-family:var(--display);font-size:11px;font-weight:700;letter-spacing:.34em;
+  color:var(--text2);display:flex;align-items:center;justify-content:space-between;
+  background:linear-gradient(180deg,var(--panel2),transparent);
+  text-transform:uppercase;
+}
+.panel-header .ph-accent{color:var(--crimson)}
 .panel-body{flex:1;overflow-y:auto;padding:12px}
-.panel-body::-webkit-scrollbar{width:6px}
-.panel-body::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.panel-body::-webkit-scrollbar{width:5px}
+.panel-body::-webkit-scrollbar-track{background:var(--void)}
+.panel-body::-webkit-scrollbar-thumb{background:var(--line2)}
+.panel-body::-webkit-scrollbar-thumb:hover{background:var(--crimson)}
+.hud-btn{
+  background:none;border:1px solid var(--line2);color:var(--text2);
+  font-family:var(--mono);font-size:10px;letter-spacing:.18em;padding:3px 10px;cursor:pointer;
+  clip-path:polygon(5px 0,100% 0,100% calc(100% - 5px),calc(100% - 5px) 100%,0 100%,0 5px);
+  transition:all .12s;text-transform:uppercase;
+}
+.hud-btn:hover{border-color:var(--crimson);color:var(--crimson);background:var(--crimson-dim)}
 
-/* Capabilities panel */
-.cap-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
-.cap-card:hover{border-color:var(--accent)}
-.cap-card.active{border-color:var(--accent);background:var(--surface2)}
-.cap-name{font-size:13px;font-weight:600;color:var(--text);display:flex;align-items:center;gap:6px}
-.cap-name .badge{font-size:10px;padding:1px 6px;border-radius:10px;font-weight:500}
-.badge-low{background:#166534;color:#86efac}
-.badge-medium{background:#854d0e;color:#fde047}
-.badge-high{background:#991b1b;color:#fca5a5}
-.badge-critical{background:#7f1d1d;color:#fecaca}
-.cap-desc{font-size:12px;color:var(--text3);margin-top:4px}
-.cap-meta{display:flex;gap:8px;margin-top:6px;font-size:11px;color:var(--text3)}
-.cap-tag{background:var(--surface2);border:1px solid var(--border);padding:1px 6px;border-radius:4px;font-size:10px;color:var(--text2)}
+/* ---- arsenal (capabilities) ---- */
+.cap-card{
+  position:relative;background:var(--panel2);padding:10px 12px 10px 16px;margin-bottom:8px;
+  cursor:pointer;transition:transform .12s,background .12s;
+  clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));
+  border-left:3px solid var(--steel);
+}
+.cap-card:hover{transform:translateX(4px);background:#181818}
+.cap-card.active{background:#1a1214;border-left-color:var(--crimson)}
+.cap-card.risk-medium{border-left-color:var(--amber)}
+.cap-card.risk-high,.cap-card.risk-critical{border-left-color:var(--crimson)}
+.cap-card.risk-high::after,.cap-card.risk-critical::after{
+  content:'SYSTEM ARMED';position:absolute;top:8px;right:18px;
+  font-family:var(--mono);font-size:8px;letter-spacing:.3em;color:var(--crimson);
+  animation:armedPulse 1.1s ease-in-out infinite;
+}
+@keyframes armedPulse{0%,100%{opacity:1}50%{opacity:.3}}
+.cap-name{font-family:var(--ui);font-weight:700;font-size:14px;letter-spacing:.06em;display:flex;align-items:center;gap:8px}
+.badge{font-family:var(--mono);font-size:10px;padding:1px 7px;letter-spacing:.14em}
+.badge-low{color:var(--steel);border:1px solid var(--steel)}
+.badge-medium{color:var(--amber);border:1px solid var(--amber)}
+.badge-high{color:var(--crimson);border:1px solid var(--crimson)}
+.badge-critical{color:#fff;background:var(--crimson);border:1px solid var(--crimson)}
+.cap-desc{font-size:12px;color:var(--text3);margin-top:4px;line-height:1.4}
+.cap-meta{display:flex;gap:8px;margin-top:6px;font-family:var(--mono);font-size:10px;color:var(--text3);flex-wrap:wrap}
+.cap-tag{border:1px solid var(--line2);padding:0 6px;color:var(--text2)}
+.perm-line{margin-top:5px;font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--text3);opacity:0;max-height:0;overflow:hidden;transition:all .15s}
+.cap-card:hover .perm-line{opacity:1;max-height:20px}
+.cap-card.risk-high .perm-line,.cap-card.risk-critical .perm-line{color:var(--crimson)}
 
-/* Chat panel */
-.chat-panel{display:flex;flex-direction:column}
-.chat-messages{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:12px}
-.msg{max-width:85%;padding:10px 14px;border-radius:12px;font-size:13px;line-height:1.5;word-wrap:break-word}
-.msg-user{align-self:flex-end;background:var(--accent);color:#fff;border-bottom-right-radius:4px}
-.msg-assistant{align-self:flex-start;background:var(--surface);border:1px solid var(--border);border-bottom-left-radius:4px}
-.msg-system{align-self:center;background:transparent;color:var(--text3);font-size:11px;padding:4px 8px}
-.msg-tool{align-self:flex-start;background:var(--surface2);border:1px solid var(--border);font-family:var(--mono);font-size:12px;border-bottom-left-radius:4px}
-.msg-tool .tool-header{color:var(--accent2);font-weight:600;margin-bottom:4px}
-.msg-tool .tool-output{color:var(--green)}
-.msg-tool .tool-error{color:var(--red)}
-.msg-time{font-size:10px;color:var(--text3);margin-top:4px}
-.chat-input{padding:12px 16px;border-top:1px solid var(--border);display:flex;gap:8px}
-.chat-input input{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:10px 14px;color:var(--text);font-size:13px;outline:none}
-.chat-input input:focus{border-color:var(--accent)}
-.chat-input button{background:var(--accent);color:#fff;border:none;border-radius:var(--radius);padding:10px 20px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}
-.chat-input button:hover{opacity:.9}
-.chat-input button:disabled{opacity:.4;cursor:not-allowed}
-.chat-meta{padding:4px 16px 8px;font-size:11px;color:var(--text3);display:flex;gap:16px;border-top:1px solid var(--border)}
+/* ---- comms (chat) ---- */
+.chat-messages{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;font-family:var(--mono)}
+.chat-messages::-webkit-scrollbar{width:5px}
+.chat-messages::-webkit-scrollbar-thumb{background:var(--line2)}
+.msg{max-width:88%;font-size:13px;line-height:1.55;word-wrap:break-word;white-space:pre-wrap;animation:msgIn .18s ease-out}
+@keyframes msgIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.msg-user{align-self:flex-end;color:var(--volt);border-right:2px solid var(--volt);padding:6px 12px;background:var(--volt-dim)}
+.msg-user::before{content:'>> ';color:var(--volt);opacity:.7}
+.msg-assistant{align-self:flex-start;color:var(--text);border-left:2px solid var(--crimson);padding:6px 12px;background:var(--panel2)}
+.msg-system{align-self:center;color:var(--text3);font-size:11px;letter-spacing:.14em}
+.msg-tool{align-self:flex-start;width:88%;background:#0e0e0e;border:1px solid var(--line2);border-left:3px solid var(--amber);padding:8px 12px;font-size:12px}
+.tool-header{color:var(--amber);letter-spacing:.1em;margin-bottom:4px}
+.tool-output{color:var(--volt)}
+.tool-error{color:var(--crimson)}
+/* command input */
+.chat-input{padding:12px 16px;border-top:1px solid var(--line);display:flex;gap:10px;align-items:center;background:var(--panel2)}
+.chat-input .prompt-glyph{font-family:var(--mono);color:var(--crimson);font-size:15px;text-shadow:0 0 8px rgba(255,0,60,.5)}
+.chat-input input{
+  flex:1;background:transparent;border:none;border-bottom:1px solid var(--line2);
+  color:var(--text);font-family:var(--mono);font-size:13px;outline:none;padding:8px 4px;
+  caret-color:var(--crimson);letter-spacing:.04em;transition:border-color .15s;
+}
+.chat-input input:focus{border-bottom-color:var(--crimson)}
+.chat-input input::placeholder{color:var(--text3)}
+.trigger-btn{
+  font-family:var(--display);font-weight:700;font-size:11px;letter-spacing:.3em;
+  color:#000;background:var(--crimson);border:none;padding:11px 26px;cursor:pointer;
+  clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);
+  position:relative;overflow:hidden;transition:filter .12s;text-transform:uppercase;
+}
+.trigger-btn:hover{filter:brightness(1.25) drop-shadow(0 0 10px rgba(255,0,60,.6))}
+.trigger-btn:active{filter:brightness(1.6)}
+.trigger-btn:disabled{opacity:.35;cursor:not-allowed}
+.trigger-btn.volt{background:var(--volt)}
+/* command center readouts */
+.chat-meta{
+  display:flex;gap:0;border-top:1px solid var(--line);background:#080808;
+}
+.stat-cell{flex:1;padding:8px 16px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:1px}
+.stat-cell:last-child{border-right:none}
+.stat-label{font-family:var(--mono);font-size:10px;letter-spacing:.3em;color:var(--text3)}
+.stat-value{font-family:var(--display);font-weight:700;font-size:17px;color:var(--text);letter-spacing:.08em}
+.stat-value.alert{color:var(--crimson);animation:alertPulse .8s ease-in-out infinite}
+@keyframes alertPulse{0%,100%{text-shadow:0 0 4px rgba(255,0,60,.4)}50%{text-shadow:0 0 14px rgba(255,0,60,.9)}}
+/* perm bar */
+.perm-bar{
+  padding:8px 16px;background:#080808;border-bottom:1px solid var(--line);
+  display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:11px;
+}
+.perm-bar label{color:var(--text3);letter-spacing:.2em}
+.perm-bar select,.perm-bar input[type=number]{
+  background:var(--panel2);border:1px solid var(--line2);color:var(--volt);
+  font-family:var(--mono);font-size:11px;padding:4px 8px;outline:none;
+}
+.perm-bar select:focus,.perm-bar input:focus{border-color:var(--volt)}
+.perm-bar .rounds{margin-left:auto;display:flex;align-items:center;gap:8px}
+.perm-bar input[type=number]{width:54px;text-align:center}
 
-/* Tool execute panel */
-.tool-form{padding:12px}
-.tool-form label{font-size:12px;color:var(--text2);display:block;margin-bottom:4px}
-.tool-form select,.tool-form input,.tool-form textarea{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:8px 10px;color:var(--text);font-size:13px;outline:none;margin-bottom:12px;font-family:inherit}
-.tool-form textarea{min-height:80px;resize:vertical;font-family:var(--mono);font-size:12px}
-.tool-form select:focus,.tool-form input:focus,.tool-form textarea:focus{border-color:var(--accent)}
-.tool-form button{width:100%;background:var(--accent2);color:#fff;border:none;border-radius:var(--radius);padding:10px;font-size:13px;font-weight:600;cursor:pointer}
-.tool-form button:hover{opacity:.9}
-.tool-result{margin-top:12px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:10px;font-family:var(--mono);font-size:12px;white-space:pre-wrap;max-height:200px;overflow-y:auto}
-.tool-result.success{border-color:var(--green)}
-.tool-result.error{border-color:var(--red)}
+/* ---- tool execution ---- */
+.tool-form{padding:14px}
+.tool-form label{font-family:var(--mono);font-size:10px;letter-spacing:.26em;color:var(--text3);display:block;margin-bottom:5px;text-transform:uppercase}
+.tool-form select,.tool-form textarea{
+  width:100%;background:#0e0e0e;border:1px solid var(--line2);color:var(--text);
+  padding:8px 10px;font-size:13px;outline:none;margin-bottom:12px;font-family:var(--mono);
+}
+.tool-form textarea{min-height:84px;resize:vertical;font-size:12px;line-height:1.6}
+.tool-form select:focus,.tool-form textarea:focus{border-color:var(--amber)}
+.tool-result{
+  margin-top:12px;background:#0e0e0e;border:1px solid var(--line2);border-left:3px solid var(--steel);
+  padding:10px;font-family:var(--mono);font-size:12px;white-space:pre-wrap;
+  max-height:220px;overflow-y:auto;line-height:1.6;
+}
+.tool-result.success{border-left-color:var(--volt)}
+.tool-result.error{border-left-color:var(--crimson);color:var(--crimson)}
 
-/* Audit panel */
-.audit-entry{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:8px 10px;margin-bottom:6px;font-size:12px}
-.audit-entry .ae-action{font-weight:600;color:var(--accent2)}
-.audit-entry .ae-status{padding:1px 6px;border-radius:4px;font-size:10px;font-weight:600;margin-left:6px}
-.ae-status-success{background:#166534;color:#86efac}
-.ae-status-error{background:#991b1b;color:#fca5a5}
-.ae-status-denied{background:#854d0e;color:#fde047}
-.ae-status-pending{background:#1e3a5f;color:#93c5fd}
-.audit-entry .ae-detail{color:var(--text3);margin-top:4px;font-family:var(--mono);font-size:11px}
-.audit-entry .ae-meta{color:var(--text3);font-size:10px;margin-top:4px;display:flex;gap:12px}
+/* ---- black box (audit) ---- */
+.audit-entry{
+  font-family:var(--mono);font-size:11px;padding:6px 8px;margin-bottom:2px;
+  border-left:2px solid var(--line2);background:transparent;line-height:1.5;
+  animation:logIn .15s ease-out;
+}
+@keyframes logIn{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
+.audit-entry.st-success{border-left-color:var(--volt)}
+.audit-entry.st-error{border-left-color:var(--crimson)}
+.audit-entry.st-denied{border-left-color:var(--amber)}
+.audit-entry.st-pending{border-left-color:var(--steel)}
+.ae-line1{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.ae-time{color:var(--text3)}
+.ae-action{color:var(--text)}
+.ae-status-success{color:var(--volt)}
+.ae-status-error{color:var(--crimson)}
+.ae-status-denied{color:var(--amber)}
+.ae-status-pending{color:var(--steel)}
+.ae-detail{color:var(--text3);margin-top:2px;word-break:break-all}
 
-/* Permission bar */
-.perm-bar{padding:8px 16px;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;font-size:12px}
-.perm-bar label{color:var(--text2)}
-.perm-bar select{background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:4px 8px;color:var(--text);font-size:12px}
-.perm-bar .rounds{margin-left:auto;display:flex;align-items:center;gap:6px}
-.perm-bar input[type=number]{width:50px;background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:4px;color:var(--text);font-size:12px;text-align:center}
+/* ---- empty states ---- */
+.empty{text-align:center;color:var(--text3);font-family:var(--mono);font-size:12px;padding:40px 20px;letter-spacing:.14em}
+.empty .icon{font-size:26px;margin-bottom:10px;opacity:.4}
+.blink{animation:cursorBlink 1s steps(2,end) infinite}
+@keyframes cursorBlink{0%,100%{opacity:1}50%{opacity:0}}
 
-/* Empty state */
-.empty{text-align:center;color:var(--text3);font-size:13px;padding:40px 20px}
-.empty .icon{font-size:32px;margin-bottom:8px}
+/* ---- execute flash ---- */
+#flash{
+  position:fixed;inset:0;background:var(--crimson);opacity:0;pointer-events:none;
+  z-index:9995;transition:opacity .3s ease-out;
+}
+#flash.firing{opacity:.14;transition:none}
 </style>
 </head>
 <body>
+
+<div id="boot"><div id="bootInner">
+  <div class="bt">SILVERWING</div>
+  <div id="bootLines"></div>
+</div></div>
+<div id="flash"></div>
+
 <div class="header">
-  <h1>SilverWing Platform</h1>
-  <div class="status">
-    <span class="dot" id="statusDot"></span>
-    <span id="statusText">Connecting...</span>
+  <svg class="logo-wing" viewBox="0 0 32 32" fill="none">
+    <path d="M2 22 L14 4 L16 12 L18 4 L30 22 L20 18 L16 28 L12 18 Z" fill="#FF003C"/>
+  </svg>
+  <div class="brand">
+    <h1 id="brandTitle">SILVER<span>WING</span></h1>
+    <div class="sub">TACTICAL COMMAND INTERFACE</div>
+  </div>
+  <div class="hud-right">
+    <span class="hud-clock" id="hudClock">--:--:--</span>
+    <span class="hud-chip" id="modelChip">MODEL: ---</span>
+    <div class="hud-status">
+      <span class="dot" id="statusDot"></span>
+      <span id="statusText">LINKING...</span>
+    </div>
   </div>
 </div>
 
 <div class="main">
-  <!-- Left: Capabilities -->
+  <!-- Left: Arsenal -->
   <div class="panel">
     <div class="panel-header">
-      <span>Capabilities</span>
-      <span id="capCount" style="color:var(--accent)">0</span>
+      <span><span class="ph-accent">&#9670;</span> Arsenal // Capabilities</span>
+      <span id="capCount" style="color:var(--crimson)">0</span>
     </div>
     <div class="panel-body" id="capList">
-      <div class="empty"><div class="icon">&#9881;</div>Loading...</div>
+      <div class="empty"><div class="icon">&#9881;</div>SCANNING REGISTRY<span class="blink">_</span></div>
     </div>
   </div>
 
-  <!-- Center: Chat -->
+  <!-- Center: Comms -->
   <div class="panel chat-panel">
     <div class="panel-header">
-      <span>Chat</span>
-      <button onclick="clearChat()" style="background:none;border:1px solid var(--border);color:var(--text2);border-radius:4px;padding:2px 8px;font-size:11px;cursor:pointer">Clear</button>
+      <span><span class="ph-accent">&#9670;</span> Orchestration Uplink</span>
+      <button class="hud-btn" onclick="clearChat()">Purge</button>
     </div>
     <div class="perm-bar">
-      <label>Permission:</label>
+      <label>CLEARANCE:</label>
       <select id="permLevel" onchange="onPermChange()">
-        <option value="L0">L0 — Read</option>
-        <option value="L1">L1 — Write</option>
-        <option value="L2">L2 — Execute</option>
-        <option value="L3">L3 — Network</option>
-        <option value="L4">L4 — Admin</option>
-        <option value="L5">L5 — System</option>
+        <option value="L0">L0 &mdash; OBSERVE</option>
+        <option value="L1">L1 &mdash; WRITE</option>
+        <option value="L2">L2 &mdash; EXECUTE</option>
+        <option value="L3">L3 &mdash; NETWORK</option>
+        <option value="L4">L4 &mdash; ADMIN</option>
+        <option value="L5">L5 &mdash; SYSTEM</option>
       </select>
       <div class="rounds">
-        <label>Max rounds:</label>
+        <label>MAX ROUNDS</label>
         <input type="number" id="maxRounds" value="5" min="1" max="20">
       </div>
     </div>
-    <div class="chat-messages" id="chatMessages">
-      <div class="msg msg-system">Send a message to start the orchestration loop.</div>
+    <div class="chat-messages" id="chatMessages" role="log" aria-live="polite">
+      <div class="msg msg-system">// AWAITING DIRECTIVE &mdash; TYPE TO ENGAGE ORCHESTRATION LOOP //</div>
     </div>
-    <div class="chat-meta" id="chatMeta">
-      <span>Rounds: <strong id="metaRounds">0</strong></span>
-      <span>Time: <strong id="metaTime">0ms</strong></span>
-      <span>Calls: <strong id="metaCalls">0</strong></span>
+    <div class="chat-meta">
+      <div class="stat-cell"><span class="stat-label">ROUNDS</span><span class="stat-value" id="metaRounds">0</span></div>
+      <div class="stat-cell"><span class="stat-label">LATENCY</span><span class="stat-value" id="metaTime">0MS</span></div>
+      <div class="stat-cell"><span class="stat-label">TOOL CALLS</span><span class="stat-value" id="metaCalls">0</span></div>
     </div>
     <div class="chat-input">
-      <input type="text" id="chatInput" placeholder="Type a message... (e.g. calculate 2 + 2)" onkeydown="if(event.key==='Enter')sendChat()">
-      <button id="sendBtn" onclick="sendChat()">Send</button>
+      <span class="prompt-glyph">&gt;_</span>
+      <input type="text" id="chatInput" aria-label="Command input" placeholder="transmit directive..." onkeydown="if(event.key==='Enter')sendChat()" autocomplete="off">
+      <button class="trigger-btn" id="sendBtn" onclick="sendChat()">Transmit</button>
     </div>
   </div>
 
-  <!-- Right: Tool Execute + Audit -->
+  <!-- Right: Execution + Black Box -->
   <div class="panel" style="display:flex;flex-direction:column">
-    <div class="panel-header">Tool Execute</div>
+    <div class="panel-header"><span><span class="ph-accent">&#9670;</span> Manual Override</span></div>
     <div class="tool-form">
-      <label>Capability</label>
-      <select id="toolSelect"><option value="">Select a tool...</option></select>
-      <label>Arguments (key=value, comma-separated)</label>
-      <textarea id="toolArgs" placeholder="expression=2+2&#10;or&#10;path=/path/to/file"></textarea>
-      <button onclick="executeTool()">Execute</button>
+      <label>Capability Node</label>
+      <select id="toolSelect"><option value="">-- SELECT NODE --</option></select>
+      <label>Arguments // key=value, comma-separated</label>
+      <textarea id="toolArgs" placeholder="expression=2+2&#10;or&#10;path=/target/file"></textarea>
+      <button class="trigger-btn volt" style="width:100%" onclick="executeTool()">Execute</button>
       <div id="toolResult" style="display:none" class="tool-result"></div>
     </div>
-    <div class="panel-header" style="border-top:1px solid var(--border)">
-      <span>Audit Trail</span>
-      <button onclick="clearAudit()" style="background:none;border:1px solid var(--border);color:var(--text2);border-radius:4px;padding:2px 8px;font-size:11px;cursor:pointer">Clear</button>
+    <div class="panel-header" style="border-top:1px solid var(--line)">
+      <span><span class="ph-accent">&#9670;</span> Black Box // Audit</span>
+      <button class="hud-btn" onclick="clearAudit()">Scrub</button>
     </div>
-    <div class="panel-body" id="auditList">
-      <div class="empty"><div class="icon">&#128269;</div>No events yet</div>
+    <div class="panel-body" id="auditList" role="log" aria-label="Audit trail">
+      <div class="empty">NO EVENTS LOGGED<span class="blink">_</span></div>
     </div>
   </div>
 </div>
@@ -171,20 +376,66 @@ const API = '';
 let capabilities = [];
 let auditEvents = [];
 
-// --- Health check ---
+// --- boot sequence ---
+(function boot(){
+  const lines = [
+    '> initializing core systems ............ <span class="ok">ONLINE</span>',
+    '> arming capability registry ........... <span class="ok">ARMED</span>',
+    '> establishing platform uplink ......... <span class="ok">LINKED</span>',
+    '> <span class="dim">all systems nominal</span>',
+  ];
+  const el = document.getElementById('bootLines');
+  let i = 0;
+  const iv = setInterval(() => {
+    if (i >= lines.length) {
+      clearInterval(iv);
+      setTimeout(() => document.getElementById('boot').classList.add('done'), 320);
+      return;
+    }
+    el.innerHTML += lines[i++] + '<br>';
+  }, 210);
+})();
+
+// --- occasional brand glitch ---
+setInterval(() => {
+  const t = document.getElementById('brandTitle');
+  t.classList.add('glitching');
+  setTimeout(() => t.classList.remove('glitching'), 300);
+}, 7000);
+
+// --- HUD clock ---
+setInterval(() => {
+  document.getElementById('hudClock').textContent =
+    new Date().toTimeString().slice(0, 8);
+}, 1000);
+
+// --- screen flash ---
+function fireFlash() {
+  const f = document.getElementById('flash');
+  f.classList.add('firing');
+  requestAnimationFrame(() => requestAnimationFrame(() => f.classList.remove('firing')));
+}
+
+// --- health check ---
 async function checkHealth() {
   try {
     const r = await fetch(`${API}/health`);
     const d = await r.json();
-    document.getElementById('statusDot').style.background = d.success ? 'var(--green)' : 'var(--red)';
-    document.getElementById('statusText').textContent = d.success ? 'Connected' : 'Error';
+    document.getElementById('statusDot').className = 'dot ' + (d.success ? 'on' : 'off');
+    document.getElementById('statusText').textContent = d.success ? 'UPLINK ACTIVE' : 'FAULT';
   } catch(e) {
-    document.getElementById('statusDot').style.background = 'var(--red)';
-    document.getElementById('statusText').textContent = 'Offline';
+    document.getElementById('statusDot').className = 'dot off';
+    document.getElementById('statusText').textContent = 'OFFLINE';
   }
+  try {
+    const r2 = await fetch(`${API}/info`);
+    const d2 = await r2.json();
+    const mid = (d2.success && d2.data && (d2.data.model_id || d2.data.model)) || null;
+    document.getElementById('modelChip').textContent = 'MODEL: ' + (mid ? String(mid).toUpperCase().slice(0, 18) : 'STANDBY');
+  } catch(e) {}
 }
 
-// --- Load capabilities ---
+// --- load capabilities ---
 async function loadCapabilities() {
   try {
     const r = await fetch(`${API}/v1/capabilities`);
@@ -201,23 +452,24 @@ function renderCapabilities() {
   const el = document.getElementById('capList');
   document.getElementById('capCount').textContent = capabilities.length;
   if (!capabilities.length) {
-    el.innerHTML = '<div class="empty"><div class="icon">&#9881;</div>No capabilities registered</div>';
+    el.innerHTML = '<div class="empty">REGISTRY EMPTY<span class="blink">_</span></div>';
     return;
   }
+  const PERM = {low:'L0 // OBSERVE', medium:'L1 // WRITE', high:'L2 // EXECUTE', critical:'L4 // ADMIN'};
   el.innerHTML = capabilities.map(c => {
-    const riskClass = {low:'badge-low',medium:'badge-medium',high:'badge-high',critical:'badge-critical'}[c.risk_level]||'badge-low';
     const tags = (c.tags||[]).map(t=>`<span class="cap-tag">${t}</span>`).join('');
-    return `<div class="cap-card" onclick="selectCap('${c.name}')">
-      <div class="cap-name">${c.name} <span class="badge ${riskClass}">${c.risk_level}</span></div>
+    return `<div class="cap-card risk-${c.risk_level||'low'}" onclick="selectCap('${c.name}', this)">
+      <div class="cap-name">${c.name} <span class="badge badge-${c.risk_level||'low'}">${(c.risk_level||'low').toUpperCase()}</span></div>
       <div class="cap-desc">${c.description||''}</div>
       <div class="cap-meta"><span>v${c.version||'1.0.0'}</span><span>${c.timeout_seconds||30}s</span>${tags}</div>
+      <div class="perm-line">&#9654; PERMISSION: ${PERM[c.risk_level||'low'] || 'L0 // OBSERVE'}</div>
     </div>`;
   }).join('');
 }
 
-function selectCap(name) {
+function selectCap(name, cardEl) {
   document.querySelectorAll('.cap-card').forEach(el => el.classList.remove('active'));
-  event.currentTarget.classList.add('active');
+  if (cardEl) cardEl.classList.add('active');
   const cap = capabilities.find(c=>c.name===name);
   if (cap) {
     document.getElementById('toolSelect').value = name;
@@ -228,17 +480,18 @@ function selectCap(name) {
 
 function renderToolSelect() {
   const sel = document.getElementById('toolSelect');
-  sel.innerHTML = '<option value="">Select a tool...</option>' +
+  sel.innerHTML = '<option value="">-- SELECT NODE --</option>' +
     capabilities.map(c=>`<option value="${c.name}">${c.name}</option>`).join('');
 }
 
-// --- Chat ---
+// --- chat ---
 async function sendChat() {
   const input = document.getElementById('chatInput');
   const msg = input.value.trim();
   if (!msg) return;
   input.value = '';
   addMessage('user', msg);
+  fireFlash();
   document.getElementById('sendBtn').disabled = true;
 
   try {
@@ -253,61 +506,89 @@ async function sendChat() {
     const d = await r.json();
     if (d.success && d.data) {
       const data = d.data;
-      // Show tool calls/results
       for (let i = 0; i < (data.tool_calls||[]).length; i++) {
         const tc = data.tool_calls[i];
         const tr = (data.tool_results||[])[i];
         addToolMessage(tc, tr);
       }
-      // Show assistant response
       if (data.text) addMessage('assistant', data.text);
-      // Update meta
-      document.getElementById('metaRounds').textContent = data.rounds || 0;
-      document.getElementById('metaTime').textContent = Math.round((data.elapsed_seconds||0)*1000) + 'ms';
-      document.getElementById('metaCalls').textContent = (data.tool_calls||[]).length;
-      // Audit events
+      setStat('metaRounds', data.rounds || 0);
+      setStat('metaTime', Math.round((data.elapsed_seconds||0)*1000) + 'MS');
+      setStat('metaCalls', (data.tool_calls||[]).length);
       if (data.audit_events) {
         data.audit_events.forEach(e => addAuditEvent(e));
       }
     } else {
-      addMessage('system', `Error: ${d.error || 'Unknown error'}`);
+      addMessage('system', `ERROR: ${d.error || 'UNKNOWN FAULT'}`);
     }
   } catch(e) {
-    addMessage('system', `Network error: ${e.message}`);
+    addMessage('system', `UPLINK FAILURE: ${e.message}`);
   }
   document.getElementById('sendBtn').disabled = false;
   input.focus();
+}
+
+function setStat(id, val) {
+  const el = document.getElementById(id);
+  el.textContent = val;
+  if (id === 'metaTime') {
+    const ms = parseInt(String(val)) || 0;
+    el.classList.toggle('alert', ms > 2000);
+  }
 }
 
 function addMessage(role, text) {
   const el = document.getElementById('chatMessages');
   const div = document.createElement('div');
   div.className = `msg msg-${role}`;
-  div.textContent = text;
   el.appendChild(div);
+  if (role === 'assistant') {
+    decryptType(div, text);
+  } else {
+    div.textContent = text;
+  }
   el.scrollTop = el.scrollHeight;
+}
+
+// decrypt-style reveal for assistant transmissions
+function decryptType(el, text) {
+  const glyphs = '!<>-_\\/[]{}=+*^?#@%&';
+  let shown = 0;
+  const step = Math.max(1, Math.ceil(text.length / 36));
+  const iv = setInterval(() => {
+    shown = Math.min(shown + step, text.length);
+    let out = text.slice(0, shown);
+    if (shown < text.length) {
+      for (let i = 0; i < 6; i++) out += glyphs[Math.floor(Math.random()*glyphs.length)];
+    }
+    el.textContent = out;
+    const box = document.getElementById('chatMessages');
+    box.scrollTop = box.scrollHeight;
+    if (shown >= text.length) { el.textContent = text; clearInterval(iv); }
+  }, 24);
 }
 
 function addToolMessage(call, result) {
   const el = document.getElementById('chatMessages');
   const div = document.createElement('div');
   div.className = 'msg msg-tool';
-  const status = result ? (result.success ? 'OK' : 'ERROR') : 'PENDING';
+  const status = result ? (result.success ? 'OK' : 'FAULT') : 'PENDING';
   const output = result ? (result.success ? result.output : result.error) : '';
-  div.innerHTML = `<div class="tool-header">&lt;tool:${call.tool}&gt; ${status}</div>` +
+  div.innerHTML = `<div class="tool-header">&lt;tool:${call.tool}&gt; [${status}]</div>` +
     `<div class="${result&&result.success?'tool-output':'tool-error'}">${escHtml(output||'')}</div>`;
   el.appendChild(div);
   el.scrollTop = el.scrollHeight;
 }
 
 function clearChat() {
-  document.getElementById('chatMessages').innerHTML = '<div class="msg msg-system">Chat cleared.</div>';
-  document.getElementById('metaRounds').textContent = '0';
-  document.getElementById('metaTime').textContent = '0ms';
-  document.getElementById('metaCalls').textContent = '0';
+  document.getElementById('chatMessages').innerHTML =
+    '<div class="msg msg-system">// CHANNEL PURGED //</div>';
+  setStat('metaRounds', '0');
+  setStat('metaTime', '0MS');
+  setStat('metaCalls', '0');
 }
 
-// --- Tool execute ---
+// --- tool execute ---
 async function executeTool() {
   const tool = document.getElementById('toolSelect').value;
   if (!tool) return;
@@ -322,7 +603,8 @@ async function executeTool() {
   const resultEl = document.getElementById('toolResult');
   resultEl.style.display = 'block';
   resultEl.className = 'tool-result';
-  resultEl.textContent = 'Executing...';
+  resultEl.textContent = '> EXECUTING...';
+  fireFlash();
 
   try {
     const r = await fetch(`${API}/v1/tools/execute`, {
@@ -333,7 +615,7 @@ async function executeTool() {
     const d = await r.json();
     if (d.success && d.data) {
       resultEl.className = `tool-result ${d.data.success?'success':'error'}`;
-      resultEl.textContent = d.data.success ? d.data.output : `Error: ${d.data.error}`;
+      resultEl.textContent = d.data.success ? d.data.output : `ERROR: ${d.data.error}`;
       addAuditEvent({
         action: 'tool_execute',
         capability_id: tool,
@@ -343,15 +625,15 @@ async function executeTool() {
       });
     } else {
       resultEl.className = 'tool-result error';
-      resultEl.textContent = `Error: ${d.error}`;
+      resultEl.textContent = `ERROR: ${d.error}`;
     }
   } catch(e) {
     resultEl.className = 'tool-result error';
-    resultEl.textContent = `Network error: ${e.message}`;
+    resultEl.textContent = `UPLINK FAILURE: ${e.message}`;
   }
 }
 
-// --- Audit ---
+// --- audit ---
 function addAuditEvent(e) {
   auditEvents.unshift(e);
   if (auditEvents.length > 100) auditEvents.pop();
@@ -361,18 +643,22 @@ function addAuditEvent(e) {
 function renderAudit() {
   const el = document.getElementById('auditList');
   if (!auditEvents.length) {
-    el.innerHTML = '<div class="empty"><div class="icon">&#128269;</div>No events yet</div>';
+    el.innerHTML = '<div class="empty">NO EVENTS LOGGED<span class="blink">_</span></div>';
     return;
   }
   el.innerHTML = auditEvents.slice(0, 50).map(e => {
     const status = e.status || 'pending';
-    const time = e.timestamp ? new Date(e.timestamp*1000).toLocaleTimeString() : '';
+    const time = e.timestamp ? new Date(e.timestamp*1000).toTimeString().slice(0,8) : '--:--:--';
     const elapsed = e.elapsed_ms ? `${Math.round(e.elapsed_ms)}ms` : '';
-    return `<div class="audit-entry">
-      <div><span class="ae-action">${e.action||''}</span><span class="ae-status ae-status-${status}">${status}</span></div>
-      ${e.capability_id?`<div style="color:var(--text2);margin-top:2px">Tool: ${e.capability_id}</div>`:''}
-      ${e.detail?`<div class="ae-detail">${escHtml(e.detail.substring(0,200))}</div>`:''}
-      <div class="ae-meta"><span>${time}</span><span>${elapsed}</span><span>${e.request_id||''}</span></div>
+    return `<div class="audit-entry st-${status}">
+      <div class="ae-line1">
+        <span class="ae-time">[${time}]</span>
+        <span class="ae-status-${status}">[${String(status).toUpperCase()}]</span>
+        <span class="ae-action">${escHtml(e.action||'')}</span>
+        ${e.capability_id?`<span style="color:var(--text3)">:: ${escHtml(e.capability_id)}</span>`:''}
+      </div>
+      ${e.detail?`<div class="ae-detail">&#9492; ${escHtml(e.detail.substring(0,180))}</div>`:''}
+      ${elapsed||e.request_id?`<div class="ae-detail">${elapsed} ${e.request_id||''}</div>`:''}
     </div>`;
   }).join('');
 }
@@ -382,21 +668,21 @@ function clearAudit() {
   renderAudit();
 }
 
-// --- Permission change ---
+// --- permission change ---
 function onPermChange() {
   const level = document.getElementById('permLevel').value;
-  addMessage('system', `Permission level set to ${level}`);
+  addMessage('system', `// CLEARANCE LEVEL SET: ${level} //`);
 }
 
-// --- Helpers ---
+// --- helpers ---
 function escHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
-// --- Init ---
+// --- init ---
 checkHealth();
 loadCapabilities();
 setInterval(checkHealth, 10000);
 setInterval(loadCapabilities, 15000);
-document.getElementById('chatInput').focus();
+setTimeout(() => document.getElementById('chatInput').focus(), 1600);
 </script>
 </body>
 </html>
