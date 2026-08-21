@@ -58,3 +58,6 @@ datasets/processed/
 
 # Curriculum training lesson directories (generated, not tracked)
 phase5/
+
+# Platform runtime data
+platform_data/
