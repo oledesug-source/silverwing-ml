@@ -180,6 +180,16 @@ body::after{
   transition:filter .12s;
 }
 .qa-btn:hover{filter:brightness(1.4) drop-shadow(0 0 6px rgba(255,0,60,.5))}
+.qa-dismiss{
+  font-family:var(--mono);font-size:11px;color:var(--text2);
+  background:transparent;border:1px solid var(--line2);
+  padding:4px 9px;cursor:pointer;margin-left:6px;transition:all .12s;
+}
+.qa-dismiss:hover{color:var(--crimson);border-color:var(--crimson)}
+.next-why{font-size:10px;letter-spacing:.14em;color:var(--text3)}
+.hud-toggle{cursor:pointer;transition:all .12s;user-select:none}
+.hud-toggle:hover{border-color:var(--volt);color:var(--volt)}
+.hud-toggle.off{color:var(--crimson);border-color:var(--crimson)}
 
 /* ---- device-context adaptation (narrow viewports) ---- */
 @media (max-width:1100px){
@@ -319,6 +329,7 @@ body::after{
   </div>
   <div class="hud-right">
     <span class="hud-clock" id="hudClock">--:--:--</span>
+    <span class="hud-chip hud-toggle" id="adaptChip" onclick="toggleAdapt()" role="button" tabindex="0" title="Enable/disable adaptive ranking and prediction">ADAPT: ON</span>
     <span class="hud-chip" id="modelChip">MODEL: ---</span>
     <div class="hud-status">
       <span class="dot" id="statusDot"></span>
@@ -337,6 +348,7 @@ body::after{
     <div class="next-action-bar">
       <span>NEXT ACTION</span>
       <span id="nextActionSlot">STANDBY<span class="blink">_</span></span>
+      <span class="next-why" id="nextWhy" style="margin-left:auto"></span>
     </div>
     <div class="panel-body" id="capList">
       <div class="empty"><div class="icon">&#9881;</div>SCANNING REGISTRY<span class="blink">_</span></div>
@@ -413,8 +425,24 @@ let auditEvents = [];
 //      the NX-style "likely next command" pattern (bigram model).
 let capUsage = {};
 let capTransitions = {};
+let adaptEnabled = true;
 try { capUsage = JSON.parse(localStorage.getItem('sw_cap_usage') || '{}'); } catch(e) { capUsage = {}; }
 try { capTransitions = JSON.parse(localStorage.getItem('sw_cap_transitions') || '{}'); } catch(e) { capTransitions = {}; }
+try { adaptEnabled = localStorage.getItem('sw_adapt') !== 'off'; } catch(e) {}
+
+function toggleAdapt() {
+  adaptEnabled = !adaptEnabled;
+  try { localStorage.setItem('sw_adapt', adaptEnabled ? 'on' : 'off'); } catch(e) {}
+  updateAdaptChip();
+  renderCapabilities();
+}
+
+function updateAdaptChip() {
+  const chip = document.getElementById('adaptChip');
+  if (!chip) return;
+  chip.textContent = 'ADAPT: ' + (adaptEnabled ? 'ON' : 'OFF');
+  chip.classList.toggle('off', !adaptEnabled);
+}
 
 function sessionLastTool() {
   try { return sessionStorage.getItem('sw_last_tool'); } catch(e) { return null; }
@@ -445,6 +473,7 @@ function usageScore(name) {
 
 // P(next=name | last tool in this session), 0..1
 function nextProbability(name) {
+  if (!adaptEnabled) return 0;
   const prev = sessionLastTool();
   if (!prev || prev === name) return 0;
   let total = 0;
@@ -457,6 +486,7 @@ function nextProbability(name) {
 }
 
 function predictedNext() {
+  if (!adaptEnabled) return null;
   let best = null, bestP = 0;
   for (const c of capabilities) {
     const p = nextProbability(c.name);
@@ -466,6 +496,7 @@ function predictedNext() {
 }
 
 function sortedByUsage(caps) {
+  if (!adaptEnabled) return caps.slice();
   const prev = sessionLastTool();
   return caps.map((c, i) => ({
     c, i,
@@ -558,8 +589,8 @@ function renderCapabilities() {
   const nextCap = predictedNext();
   el.innerHTML = sortedByUsage(capabilities).map(c => {
     const tags = (c.tags||[]).map(t=>`<span class="cap-tag">${t}</span>`).join('');
-    const freq = usageScore(c.name) >= 2 ? '<span class="cap-tag freq-tag">&#9733; FREQUENT</span>' : '';
-    const next = c.name === nextCap ? '<span class="cap-tag next-tag">&#9654; NEXT</span>' : '';
+    const freq = adaptEnabled && usageScore(c.name) >= 2 ? '<span class="cap-tag freq-tag">&#9733; FREQUENT</span>' : '';
+    const next = adaptEnabled && c.name === nextCap ? '<span class="cap-tag next-tag">&#9654; NEXT</span>' : '';
     return `<div class="cap-card risk-${c.risk_level||'low'}" data-name="${c.name}" onclick="selectCap('${c.name}', this)">
       <div class="cap-name">${c.name} <span class="badge badge-${c.risk_level||'low'}">${(c.risk_level||'low').toUpperCase()}</span></div>
       <div class="cap-desc">${c.description||''}</div>
@@ -570,13 +601,22 @@ function renderCapabilities() {
   renderNextAction();
 }
 
-// one-click shortcut for the predicted next action
+// one-click shortcut for the predicted next action, with explainability
+// (why: the inputs that produced it) and a correction control (dismiss
+// penalizes the transition so the model learns from being wrong).
 function renderNextAction() {
   const slot = document.getElementById('nextActionSlot');
+  const whyEl = document.getElementById('nextWhy');
   if (!slot) return;
+  if (!adaptEnabled) {
+    slot.innerHTML = 'ADAPTIVE LAYER OFF';
+    whyEl.textContent = '';
+    return;
+  }
   const cap = predictedNext();
   if (!cap) {
     slot.innerHTML = 'STANDBY<span class="blink">_</span>';
+    whyEl.textContent = '';
     return;
   }
   slot.innerHTML = '';
@@ -585,6 +625,29 @@ function renderNextAction() {
   b.textContent = '\u25B8 ' + cap;
   b.onclick = () => quickLaunch(cap);
   slot.appendChild(b);
+  const x = document.createElement('button');
+  x.className = 'qa-dismiss';
+  x.textContent = '\u2715';
+  x.title = 'Wrong prediction? Dismiss to penalize this suggestion';
+  x.setAttribute('aria-label', 'Dismiss prediction for ' + cap);
+  x.onclick = () => penalizePrediction(cap);
+  slot.appendChild(x);
+  const prev = sessionLastTool();
+  const p = nextProbability(cap);
+  const n = capTransitions[prev + '>' + cap] || 0;
+  whyEl.textContent = `P=${p.toFixed(2)} \u00B7 ${n}\u00D7 after ${prev}`;
+}
+
+function penalizePrediction(cap) {
+  const prev = sessionLastTool();
+  if (!prev) return;
+  const key = prev + '>' + cap;
+  if (capTransitions[key]) {
+    capTransitions[key] -= 1;
+    if (capTransitions[key] <= 0) delete capTransitions[key];
+    try { localStorage.setItem('sw_cap_transitions', JSON.stringify(capTransitions)); } catch(e) {}
+  }
+  renderCapabilities();
 }
 
 function quickLaunch(name) {
@@ -807,6 +870,7 @@ function onPermChange() {
 function escHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 // --- init ---
+updateAdaptChip();
 checkHealth();
 loadCapabilities();
 setInterval(checkHealth, 10000);
