@@ -1,19 +1,22 @@
 """Two-phase corpus build: ingest external data to disk, then process.
 
-Phase 1 (ingest): Stream from HuggingFace datasets to a local JSONL file.
-Phase 2 (process): Run the JSONL through the full corpus pipeline.
+Phase 1 (ingest): Stream from HuggingFace datasets to per-source JSONL files.
+Phase 2 (process): Run the JSONL files through the full corpus pipeline.
 
 This separation means:
 - Ingestion is fast (just streaming + writing JSONL)
 - Processing can be re-run with different filter settings without re-downloading
 - Large datasets don't need to fit entirely in memory during processing
+- Downloads are resumable: each source writes to ``<source>.jsonl.part`` and
+  appends on re-run (``--skip-existing`` keeps finished sources), so a network
+  drop costs minutes, not hours.
 
 Usage:
     # Phase 1: Download
     python scripts/ingest_external_v2.py download --preset quickstart
 
-    # Phase 2: Process
-    python scripts/ingest_external_v2.py process --input experiments/ingested/quickstart.jsonl
+    # Phase 2: Process (input may be a JSONL file or a directory of them)
+    python scripts/ingest_external_v2.py process --input experiments/ingested/quickstart
 
     # Or combined (default):
     python scripts/ingest_external_v2.py --preset quickstart
@@ -22,6 +25,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import itertools
 import json
 import logging
 import subprocess
@@ -82,10 +86,63 @@ def _source_config_from_dict(d: dict) -> SourceConfig:
     )
 
 
-def cmd_download(args: argparse.Namespace) -> Path:
-    """Phase 1: Stream from HuggingFace to local JSONL."""
+def _count_lines(path: Path) -> int:
+    with path.open(encoding="utf-8") as fh:
+        return sum(1 for _ in fh)
+
+
+def _download_source(source: SourceConfig, out_path: Path, skip_existing: bool) -> tuple[Path, int]:
+    """Download one source to ``out_path`` with .part append-resume.
+
+    Finished files (non-empty) are kept when ``skip_existing`` is set.  A
+    partial ``.part`` file is counted and the stream fast-forwards past the
+    records already saved, so re-runs only fetch the remainder.
+    """
     from foundation.corpus.ingestion import _iter_huggingface
 
+    if skip_existing and out_path.exists() and out_path.stat().st_size > 0:
+        done = _count_lines(out_path)
+        logger.info("  %s: already complete (%d documents), skipping", source.source_id, done)
+        return out_path, done
+
+    part_path = out_path.with_suffix(out_path.suffix + ".part")
+    resume_from = 0
+    if part_path.exists():
+        resume_from = _count_lines(part_path)
+        if resume_from:
+            logger.info("  %s: resuming from document %d", source.source_id, resume_from)
+
+    logger.info("  Streaming from %s (max_samples=%d)", source.hf_dataset, source.hf_max_samples or -1)
+    t0 = time.monotonic()
+    written = 0
+    mode = "a" if resume_from else "w"
+    with part_path.open(mode, encoding="utf-8") as fh:
+        stream = itertools.islice(_iter_huggingface(source), resume_from, None)
+        for doc_id, text in stream:
+            record = {
+                "id": doc_id,
+                "text": text,
+                "source_id": source.source_id,
+                "source_type": source.source_type,
+                "domain": source.domain,
+                "language": source.language,
+            }
+            fh.write(json.dumps(record, ensure_ascii=False) + "\n")
+            written += 1
+            total = resume_from + written
+            if total % 10000 == 0:
+                rate = written / max(time.monotonic() - t0, 1e-6)
+                logger.info("    ... %d documents (%.0f docs/s)", total, rate)
+
+    part_path.replace(out_path)
+    elapsed = time.monotonic() - t0
+    total = resume_from + written
+    logger.info("  %s: %d documents -> %s (%.1fs)", source.source_id, total, out_path.name, elapsed)
+    return out_path, total
+
+
+def cmd_download(args: argparse.Namespace) -> list[Path]:
+    """Phase 1: Stream from HuggingFace to per-source JSONL files."""
     if args.preset:
         preset_sources = _load_preset(args.config, args.preset)
         sources = [_source_config_from_dict(s) for s in preset_sources]
@@ -108,58 +165,66 @@ def cmd_download(args: argparse.Namespace) -> Path:
     else:
         raise SystemExit("Provide --preset or --hf-dataset")
 
-    INGEST_DIR.mkdir(parents=True, exist_ok=True)
     name = args.preset or args.source_id
-    out_path = INGEST_DIR / f"{name}.jsonl"
+    if getattr(args, "output", None):
+        out_dir = Path(args.output).parent
+        single = True
+    else:
+        out_dir = INGEST_DIR / name
+        single = False
+    out_dir.mkdir(parents=True, exist_ok=True)
 
-    if args.skip_existing and out_path.exists() and out_path.stat().st_size > 0:
-        count = sum(1 for _ in out_path.open(encoding="utf-8"))
-        logger.info("Phase 1 skipped (--skip-existing): %d documents already in %s", count, out_path)
-        return out_path
-
-    tmp_path = out_path.with_suffix(".jsonl.tmp")
-
-    logger.info("Phase 1: Downloading %d source(s) to %s", len(sources), out_path)
+    logger.info("Phase 1: Downloading %d source(s) to %s", len(sources), out_dir)
 
     t0 = time.monotonic()
-    count = 0
-    with tmp_path.open("w", encoding="utf-8") as fh:
-        for source in sources:
-            logger.info("  Streaming from %s (max_samples=%d)", source.hf_dataset, source.hf_max_samples or -1)
-            for doc_id, text in _iter_huggingface(source):
-                record = {"id": doc_id, "text": text, "source_id": source.source_id, "source_type": source.source_type, "domain": source.domain, "language": source.language}
-                fh.write(json.dumps(record, ensure_ascii=False) + "\n")
-                count += 1
-                if count % 10000 == 0:
-                    logger.info("    ... %d documents downloaded", count)
+    out_paths: list[Path] = []
+    for i, source in enumerate(sources):
+        if single and len(sources) == 1:
+            out_path = Path(args.output)
+        else:
+            out_path = out_dir / f"{source.source_id}.jsonl"
+        _, _ = _download_source(source, out_path, args.skip_existing)
+        out_paths.append(out_path)
 
-    tmp_path.replace(out_path)
-    elapsed = time.monotonic() - t0
-    logger.info("Phase 1 complete: %d documents -> %s (%.1fs)", count, out_path, elapsed)
-    return out_path
+    total_docs = sum(_count_lines(p) for p in out_paths)
+    logger.info(
+        "Phase 1 complete: %d documents across %d file(s) in %s (%.1fs)",
+        total_docs, len(out_paths), out_dir, time.monotonic() - t0,
+    )
+    return out_paths
 
 
 def cmd_process(args: argparse.Namespace) -> dict:
-    """Phase 2: Process a JSONL file through the full corpus pipeline."""
+    """Phase 2: Process JSONL file(s) through the full corpus pipeline."""
     input_path = Path(args.input)
-    if not input_path.exists():
-        raise FileNotFoundError(f"Input file not found: {input_path}")
+    if input_path.is_dir():
+        files = sorted(input_path.glob("*.jsonl"))
+        if not files:
+            raise FileNotFoundError(f"No .jsonl files found in {input_path}")
+    elif input_path.exists():
+        files = [input_path]
+    else:
+        raise FileNotFoundError(f"Input not found: {input_path}")
 
     corpus_config = load_corpus_config(args.config)
-    output_dir = args.output_dir or corpus_config.get("output_dir", f"experiments/corpus-{input_path.stem}")
+    default_name = input_path.stem if input_path.is_file() else input_path.name
+    output_dir = args.output_dir or corpus_config.get("output_dir", f"experiments/corpus-{default_name}")
 
-    source = SourceConfig(
-        source_id=input_path.stem,
-        path=str(input_path),
-        kind="jsonl",
-        source_type="web",
-        domain="web",
-        language="en",
-    )
+    sources = [
+        SourceConfig(
+            source_id=f.stem,
+            path=str(f),
+            kind="jsonl",
+            source_type="web",
+            domain="web",
+            language="en",
+        )
+        for f in files
+    ]
 
-    pipeline = build_pipeline_from_config(corpus_config, sources=[source], output_dir=output_dir)
+    pipeline = build_pipeline_from_config(corpus_config, sources=sources, output_dir=output_dir)
 
-    logger.info("Phase 2: Processing %s -> %s", input_path, output_dir)
+    logger.info("Phase 2: Processing %d file(s) from %s -> %s", len(files), input_path, output_dir)
     t0 = time.monotonic()
     report = pipeline.run()
     elapsed = time.monotonic() - t0
@@ -168,7 +233,7 @@ def cmd_process(args: argparse.Namespace) -> dict:
         "config_path": args.config,
         "config_digest": pipeline_config_digest(corpus_config),
         "git_commit": _git_commit(),
-        "input_file": str(input_path),
+        "input_files": [str(f) for f in files],
         "output_dir": output_dir,
         "report": report.to_dict(),
     }
@@ -247,8 +312,8 @@ def main() -> None:
         # Combined: download then process
         if not args.preset and not args.hf_dataset:
             raise SystemExit("Provide --preset or --hf-dataset (or use download/process subcommands)")
-        jsonl_path = cmd_download(args)
-        args.input = str(jsonl_path)
+        out_paths = cmd_download(args)
+        args.input = str(out_paths[0].parent)
         cmd_process(args)
 
 
