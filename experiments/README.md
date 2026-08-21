@@ -8,6 +8,24 @@ recorded manifest is not a real experiment.
 Derived corpus artifacts are not committed (reproducible from committed
 config + seed); each release's provenance is pinned here.
 
+### corpus-quickstart (OpenWebText sample) — M14
+
+| Field             | Value                                                            |
+|-------------------|------------------------------------------------------------------|
+| `version`         | `corpus-quickstart`                                              |
+| `source`          | Skylion007/openwebtext (5000 docs, streaming)                    |
+| `git_commit`      | `984b70ba675fc6fa64f9e138a908f72f707a12e`                        |
+| `config_digest`   | `3f7815f679d444f301ef93025ed6ca40236d68ba28db3eb413853b3f179d7cdb` |
+| `seed`            | `42`                                                             |
+| `documents`       | `5000` ingested, `4919` after filter (81 dropped)                |
+| `chunks`          | `23,947` (0 near-duplicate, 0 contaminated)                      |
+| `splits`          | train `23,474` / validation `237` / test `236`                   |
+| `train tokens`    | `~5,246,277` (~6.4x corpus-v1)                                   |
+| `dataset_hash`    | `8eec3e37fc454bf3c0880614a724afa7fae3869d97aef529f07ba0be60d4b796` |
+| `pipeline time`   | `208.4s` (filter 37s, dedup 132s, chunk 37s)                     |
+
+Regenerate: `python scripts/ingest_external_v2.py --preset quickstart` (requires internet for HF download).
+
 ### corpus-v1 (math) — M08
 
 | Field          | Value                                                                  |

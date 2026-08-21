@@ -8,7 +8,13 @@ from pathlib import Path
 import pytest
 import torch
 
-from foundation.model import ModelConfig, SilverwingDecoder, apply_rope, build_model, precompute_rope_cache
+from foundation.model import (
+    ModelConfig,
+    SilverwingDecoder,
+    apply_rope,
+    build_model,
+    precompute_rope_cache,
+)
 from foundation.model.layers import RMSNorm
 from foundation.model.rope import apply_rope as rope_apply
 
@@ -16,15 +22,15 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def small_config(**overrides) -> ModelConfig:
-    base = dict(
-        vocab_size=128,
-        block_size=32,
-        n_layer=2,
-        n_head=4,
-        n_kv_head=2,
-        n_embd=64,
-        mlp_hidden_size=128,
-    )
+    base = {
+        "vocab_size": 128,
+        "block_size": 32,
+        "n_layer": 2,
+        "n_head": 4,
+        "n_kv_head": 2,
+        "n_embd": 64,
+        "mlp_hidden_size": 128,
+    }
     base.update(overrides)
     return ModelConfig.from_dict(base)
 

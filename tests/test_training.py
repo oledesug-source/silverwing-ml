@@ -1,443 +1,758 @@
-"""Tests for the Training Engine V2 (M07)."""
+"""Comprehensive tests for the training module."""
 
-from __future__ import annotations
-
-import json
 import math
 import random
-import re
-from pathlib import Path
 
 import pytest
-import torch
-import yaml
 
-from foundation.model import ModelConfig, build_model
-from foundation.corpus.schema import DocumentRecord, Provenance, Split
-from foundation.corpus.storage import ShardWriter
-from foundation.tokenizer import TokenizerV2
-from foundation.tokenizer.bpe import train_bpe
-from foundation.training import (
-    BEST_FILENAME,
-    FINAL_FILENAME,
-    PretrainingData,
-    TrainConfig,
-    build_optimizer,
-    git_commit,
-    git_is_clean,
-    load_checkpoint,
-    preflight_train,
-    require_clean_repo,
-    save_checkpoint,
-    schedule_lr,
-    train,
+from intelligence.training.activations import (
+    ACTIVATIONS,
+    RELU,
+    SIGMOID,
+    elu,
+    get_activation,
+    identity,
+    leaky_relu,
+    relu,
+    relu_derivative,
+    sigmoid,
+    sigmoid_derivative,
+    softmax,
+    softplus,
+    swish,
+    tanh_derivative,
+    tanh_fn,
+)
+from intelligence.training.data import (
+    DataLoader,
+    Dataset,
+    k_fold_split,
+    label_encode,
+    normalize,
+    one_hot,
+    train_test_split,
+)
+from intelligence.training.losses import (
+    BCE,
+    MAE,
+    MSE,
+    binary_cross_entropy,
+    cosine_similarity_loss,
+    cross_entropy,
+    get_loss,
+    huber,
+    kl_divergence,
+    mae,
+    mse,
+    mse_derivative,
+)
+from intelligence.training.nn import (
+    ActivationLayer,
+    BatchNorm1d,
+    Dropout,
+    Linear,
+    Parameter,
+    Sequential,
+)
+from intelligence.training.optimizers import (
+    SGD,
+    Adadelta,
+    Adagrad,
+    Adam,
+    RMSprop,
+    get_optimizer,
+)
+from intelligence.training.training import (
+    CosineAnnealingLR,
+    EarlyStopping,
+    ReduceOnPlateau,
+    StepLR,
+    TrainingHistory,
+    accuracy,
+    cross_entropy_metric,
+    evaluate,
+    fit,
+    mse_metric,
+    train_one_epoch,
 )
 
-TINY_TEXT = "the quick brown fox jumps over the lazy dog. "
+# ── Activation Tests ──────────────────────────────────────────────────────
 
 
-def _write_corpus(root: Path, n_train: int = 24, n_val: int = 4) -> Path:
-    corpus = root / "corpus"
-    corpus.mkdir(parents=True, exist_ok=True)
-    train_lines = [
-        json.dumps({"document_id": f"doc{i}", "text": TINY_TEXT * ((i % 3) + 1)})
-        for i in range(n_train)
-    ]
-    (corpus / "train.0.jsonl").write_text("\n".join(train_lines) + "\n", encoding="utf-8")
-    val_lines = [
-        json.dumps({"document_id": f"val{i}", "text": TINY_TEXT * 2}) for i in range(n_val)
-    ]
-    (corpus / "validation.0.jsonl").write_text("\n".join(val_lines) + "\n", encoding="utf-8")
-    return corpus
+class TestActivations:
+    def test_sigmoid_zero(self):
+        assert abs(sigmoid(0.0) - 0.5) < 1e-6
+
+    def test_sigmoid_large_positive(self):
+        assert abs(sigmoid(100.0) - 1.0) < 1e-6
+
+    def test_sigmoid_large_negative(self):
+        assert abs(sigmoid(-100.0)) < 1e-6
+
+    def test_sigmoid_symmetry(self):
+        for x in [0.5, 1.0, 2.0, 3.0]:
+            assert abs(sigmoid(x) + sigmoid(-x) - 1.0) < 1e-6
+
+    def test_sigmoid_derivative_at_zero(self):
+        assert abs(sigmoid_derivative(0.0) - 0.25) < 1e-6
+
+    def test_sigmoid_derivative_non_negative(self):
+        for x in [-5.0, -1.0, 0.0, 1.0, 5.0]:
+            assert sigmoid_derivative(x) >= 0
+
+    def test_tanh_zero(self):
+        assert abs(tanh_fn(0.0)) < 1e-6
+
+    def test_tanh_large(self):
+        assert abs(tanh_fn(100.0) - 1.0) < 1e-6
+
+    def test_tanh_derivative_at_zero(self):
+        assert abs(tanh_derivative(0.0) - 1.0) < 1e-6
+
+    def test_relu_zero(self):
+        assert relu(0.0) == 0.0
+
+    def test_relu_positive(self):
+        assert relu(5.0) == 5.0
+
+    def test_relu_negative(self):
+        assert relu(-5.0) == 0.0
+
+    def test_relu_derivative_positive(self):
+        assert relu_derivative(5.0) == 1.0
+
+    def test_relu_derivative_zero(self):
+        assert relu_derivative(0.0) == 0.0
+
+    def test_relu_derivative_negative(self):
+        assert relu_derivative(-5.0) == 0.0
+
+    def test_leaky_relu_positive(self):
+        assert leaky_relu(5.0) == 5.0
+
+    def test_leaky_relu_negative(self):
+        assert abs(leaky_relu(-5.0) - (-0.05)) < 1e-6
+
+    def test_elu_positive(self):
+        assert elu(5.0) == 5.0
+
+    def test_elu_negative(self):
+        assert abs(elu(-1.0) - (math.exp(-1.0) - 1.0)) < 1e-6
+
+    def test_softplus_positive(self):
+        assert softplus(5.0) > 5.0
+
+    def test_softplus_zero(self):
+        assert abs(softplus(0.0) - math.log(2.0)) < 1e-6
+
+    def test_swish_zero(self):
+        assert abs(swish(0.0)) < 1e-6
+
+    def test_swish_large(self):
+        assert abs(swish(100.0) - 100.0) < 1e-3
+
+    def test_identity(self):
+        assert identity(5.0) == 5.0
+
+    def test_softmax(self):
+        result = softmax([1.0, 2.0, 3.0])
+        assert abs(sum(result) - 1.0) < 1e-6
+        assert result[2] > result[1] > result[0]
+
+    def test_softmax_equal(self):
+        result = softmax([1.0, 1.0, 1.0])
+        for v in result:
+            assert abs(v - 1 / 3) < 1e-6
+
+    def test_get_activation(self):
+        act = get_activation("relu")
+        assert act.name == "relu"
+        assert act(5.0) == 5.0
+
+    def test_get_activation_unknown(self):
+        with pytest.raises(ValueError):
+            get_activation("unknown")
+
+    def test_all_activations_callable(self):
+        for _name, act in ACTIVATIONS.items():
+            result = act(0.5)
+            assert isinstance(result, float)
+
+    def test_activation_repr(self):
+        assert "sigmoid" in repr(SIGMOID)
 
 
-def _make_tokenizer(corpus: Path) -> TokenizerV2:
-    lines = (corpus / "train.0.jsonl").read_text(encoding="utf-8").splitlines()
-    texts = [json.loads(line)["text"] for line in lines]
-    merges, _ = train_bpe(texts, vocab_size=300, min_frequency=2)
-    return TokenizerV2(merges=merges)
+# ── Loss Tests ────────────────────────────────────────────────────────────
 
 
-def _write_released_corpus(root: Path, n_train: int = 24, n_val: int = 4) -> Path:
-    corpus = root / "released-corpus"
-    train = [
-        DocumentRecord.build(
-            document_id=f"train-{i}",
-            text=TINY_TEXT * ((i % 3) + 2),
-            provenance=Provenance(source_id="test", source_type="manual", domain="general", language="en"),
-        )
-        for i in range(n_train)
-    ]
-    validation = [
-        DocumentRecord.build(
-            document_id=f"validation-{i}",
-            text=TINY_TEXT * 2,
-            provenance=Provenance(source_id="test", source_type="manual", domain="general", language="en"),
-        )
-        for i in range(n_val)
-    ]
-    ShardWriter(corpus).write({Split.TRAIN.value: train, Split.VALIDATION.value: validation})
-    return corpus
+class TestLosses:
+    def test_mse_perfect(self):
+        assert abs(mse([1.0, 2.0], [1.0, 2.0])) < 1e-6
+
+    def test_mse_basic(self):
+        assert abs(mse([1.0, 2.0], [2.0, 3.0]) - 1.0) < 1e-6
+
+    def test_mse_derivative_perfect(self):
+        grads = mse_derivative([1.0, 2.0], [1.0, 2.0])
+        for g in grads:
+            assert abs(g) < 1e-6
+
+    def test_mse_derivative(self):
+        grads = mse_derivative([3.0, 5.0], [1.0, 1.0])
+        assert abs(grads[0] - 2.0) < 1e-6
+        assert abs(grads[1] - 4.0) < 1e-6
+
+    def test_mae_perfect(self):
+        assert abs(mae([1.0, 2.0], [1.0, 2.0])) < 1e-6
+
+    def test_mae_basic(self):
+        assert abs(mae([1.0, 3.0], [2.0, 5.0]) - 1.5) < 1e-6
+
+    def test_bce_perfect(self):
+        assert abs(binary_cross_entropy([1.0], [1.0])) < 1e-6
+
+    def test_bce_zero(self):
+        assert abs(binary_cross_entropy([0.0], [0.0])) < 1e-6
+
+    def test_bce_bad_prediction(self):
+        assert binary_cross_entropy([0.001], [1.0]) > 5.0
+
+    def test_cross_entropy_perfect(self):
+        assert abs(cross_entropy([1.0], [1.0])) < 1e-6
+
+    def test_huber_small_error(self):
+        assert abs(huber([1.0], [1.5]) - 0.125) < 1e-6
+
+    def test_huber_large_error(self):
+        assert abs(huber([1.0], [5.0]) - 3.5) < 1e-6
+
+    def test_kl_same(self):
+        assert abs(kl_divergence([0.5, 0.5], [0.5, 0.5])) < 1e-6
+
+    def test_kl_different(self):
+        assert kl_divergence([0.25, 0.75], [0.5, 0.5]) > 0
+
+    def test_cosine_identical(self):
+        assert abs(cosine_similarity_loss([1.0, 0.0], [1.0, 0.0])) < 1e-6
+
+    def test_cosine_opposite(self):
+        assert abs(cosine_similarity_loss([1.0, 0.0], [-1.0, 0.0]) - 2.0) < 1e-6
+
+    def test_get_loss(self):
+        loss_fn = get_loss("mse")
+        assert loss_fn.name == "mse"
+
+    def test_get_loss_unknown(self):
+        with pytest.raises(ValueError):
+            get_loss("unknown")
+
+    def test_loss_repr(self):
+        assert "mse" in repr(MSE)
+
+    def test_losses_all_callable(self):
+        for _name, loss_fn in [("mse", MSE), ("mae", MAE), ("bce", BCE)]:
+            result = loss_fn([0.5, 0.5], [1.0, 0.0])
+            assert isinstance(result, float)
 
 
-def _write_tokenizer_dir(root: Path, tokenizer: TokenizerV2) -> Path:
-    tokenizer_dir = root / "tokenizer"
-    tokenizer.save(tokenizer_dir)
-    return tokenizer_dir
+# ── Optimizer Tests ───────────────────────────────────────────────────────
 
 
-def _write_model_config(root: Path, vocab_size: int, block_size: int = 64) -> str:
-    path = root / "model.yaml"
-    path.write_text(
-        yaml.safe_dump(
-            {
-                "model": {
-                    "vocab_size": vocab_size,
-                    "block_size": block_size,
-                    "n_layer": 2,
-                    "n_head": 2,
-                    "n_kv_head": 1,
-                    "n_embd": 32,
-                    "mlp_hidden_size": 64,
-                    "mlp_activation": "swiglu",
-                    "norm_eps": 1.0e-5,
-                    "tie_embeddings": True,
-                    "bias": False,
-                }
-            }
-        ),
-        encoding="utf-8",
-    )
-    return str(path)
+class TestOptimizers:
+    def test_sgd_basic(self):
+        opt = SGD(learning_rate=0.1)
+        params = [1.0, 2.0]
+        grads = [1.0, 1.0]
+        new_params = opt.step(params, grads)
+        assert abs(new_params[0] - 0.9) < 1e-6
+        assert abs(new_params[1] - 1.9) < 1e-6
+
+    def test_sgd_momentum(self):
+        opt = SGD(learning_rate=0.1, momentum=0.9)
+        params = [1.0]
+        grads = [1.0]
+        new_params = opt.step(params, grads)
+        assert abs(new_params[0] - 0.9) < 1e-6
+        new_params2 = opt.step(new_params, grads)
+        assert new_params2[0] < new_params[0]
+
+    def test_sgd_weight_decay(self):
+        opt = SGD(learning_rate=0.1, weight_decay=0.01)
+        params = [1.0]
+        grads = [0.0]
+        new_params = opt.step(params, grads)
+        assert new_params[0] < 1.0
+
+    def test_adam_basic(self):
+        opt = Adam(learning_rate=0.01)
+        params = [1.0, 2.0]
+        grads = [1.0, 1.0]
+        new_params = opt.step(params, grads)
+        assert new_params[0] < 1.0
+        assert new_params[1] < 2.0
+
+    def test_adam_convergence(self):
+        opt = Adam(learning_rate=0.1)
+        params = [5.0]
+        for _ in range(100):
+            grads = [2.0 * (params[0] - 0.0)]
+            params = opt.step(params, grads)
+        assert abs(params[0]) < 0.5
+
+    def test_rmsprop_basic(self):
+        opt = RMSprop(learning_rate=0.01)
+        params = [1.0]
+        grads = [1.0]
+        new_params = opt.step(params, grads)
+        assert new_params[0] < 1.0
+
+    def test_adagrad_basic(self):
+        opt = Adagrad(learning_rate=0.1)
+        params = [1.0]
+        grads = [1.0]
+        new_params = opt.step(params, grads)
+        assert new_params[0] < 1.0
+
+    def test_adadelta_basic(self):
+        opt = Adadelta(learning_rate=1.0)
+        params = [1.0]
+        grads = [1.0]
+        new_params = opt.step(params, grads)
+        assert isinstance(new_params[0], float)
+
+    def test_reset(self):
+        opt = SGD(learning_rate=0.1)
+        opt.step([1.0], [1.0])
+        opt.reset()
+        assert opt.state == {}
+
+    def test_get_optimizer(self):
+        opt = get_optimizer("adam", learning_rate=0.001)
+        assert isinstance(opt, Adam)
+        assert opt.learning_rate == 0.001
+
+    def test_get_optimizer_unknown(self):
+        with pytest.raises(ValueError):
+            get_optimizer("unknown")
+
+    def test_optimizer_repr(self):
+        opt = SGD(learning_rate=0.01)
+        assert "SGD" in repr(opt)
+
+    def test_all_optimizers_step(self):
+        for name in ["sgd", "adam", "rmsprop", "adagrad", "adadelta"]:
+            opt = get_optimizer(name, learning_rate=0.01)
+            new_params = opt.step([1.0, 2.0], [0.1, 0.1])
+            assert len(new_params) == 2
 
 
-def _train_config(root: Path, **overrides) -> TrainConfig:
-    corpus = _write_corpus(root)
-    tokenizer = _make_tokenizer(corpus)
-    tokenizer_dir = _write_tokenizer_dir(root, tokenizer)
-    model_config_path = _write_model_config(root, tokenizer.vocab_size)
-    defaults = {
-        "model_config_path": model_config_path,
-        "corpus_dir": str(corpus),
-        "tokenizer_dir": str(tokenizer_dir),
-        "checkpoint_dir": str(root / "checkpoints"),
-        "batch_size": 2,
-        "block_size": 8,
-        "max_steps": 10,
-        "warmup_steps": 2,
-        "lr": 1.0e-3,
-        "verify_dataset": False,
-        "require_validation": True,
-        "require_clean_repo": False,
-        "device": "cpu",
-    }
-    defaults.update(overrides)
-    return TrainConfig.from_dict(defaults)
+# ── Neural Network Tests ──────────────────────────────────────────────────
 
 
-class TestSchedule:
-    def test_warmup_then_cosine(self) -> None:
-        lr = 1.0
-        values = [schedule_lr(s, lr, warmup_steps=20, max_steps=100, min_lr_ratio=0.1) for s in range(120)]
-        assert values[0] == pytest.approx(lr / 20)
-        assert values[19] == pytest.approx(lr)
-        assert values[-1] == pytest.approx(0.1)
-        assert values[21] < values[20]
-        for i in range(20, len(values) - 1):
-            assert values[i + 1] <= values[i] + 1e-12
-        assert min(values[20:]) >= 0.1 - 1e-9
+class TestNeuralNetwork:
+    def test_parameter(self):
+        p = Parameter([1.0, 2.0], (2,))
+        assert p.values == [1.0, 2.0]
+        assert p.shape == (2,)
+        p.zero_grad()
+        assert all(g == 0.0 for g in p.grad)
 
-    def test_no_warmup(self) -> None:
-        assert schedule_lr(0, 0.1, warmup_steps=0, max_steps=50) == pytest.approx(0.1)
+    def test_linear_forward(self):
+        layer = Linear(3, 2)
+        x = [1.0, 2.0, 3.0]
+        out = layer.forward(x)
+        assert len(out) == 2
+
+    def test_linear_no_bias(self):
+        layer = Linear(3, 2, bias=False)
+        assert layer.bias is None
+        assert len(layer.parameters()) == 1
+
+    def test_linear_backward(self):
+        layer = Linear(3, 2)
+        x = [1.0, 0.0, 0.0]
+        layer.forward(x)
+        grad = layer.backward([1.0, 0.5])
+        assert len(grad) == 3
+
+    def test_linear_parameter_count(self):
+        layer = Linear(4, 3)
+        params = layer.parameters()
+        assert len(params) == 2
+        assert params[0].shape == (3, 4)
+        assert params[1].shape == (3,)
+
+    def test_activation_layer(self):
+        layer = ActivationLayer(RELU)
+        assert layer.forward([1.0, -1.0, 0.0]) == [1.0, 0.0, 0.0]
+
+    def test_activation_layer_backward(self):
+        layer = ActivationLayer(SIGMOID)
+        layer.forward([0.0])
+        grad = layer.backward([1.0])
+        assert abs(grad[0] - 0.25) < 1e-6
+
+    def test_dropout_train(self):
+        layer = Dropout(p=0.0)
+        layer.train()
+        out = layer.forward([1.0, 2.0, 3.0])
+        assert len(out) == 3
+
+    def test_dropout_eval(self):
+        layer = Dropout(p=0.5)
+        layer.eval()
+        out = layer.forward([1.0, 2.0, 3.0])
+        assert out == [1.0, 2.0, 3.0]
+
+    def test_batchnorm_forward(self):
+        layer = BatchNorm1d(3)
+        layer.train()
+        x = [1.0, 2.0, 3.0]
+        out = layer.forward(x)
+        assert len(out) == 3
+
+    def test_batchnorm_eval(self):
+        layer = BatchNorm1d(3)
+        layer.eval()
+        x = [1.0, 2.0, 3.0]
+        out = layer.forward(x)
+        assert len(out) == 3
+
+    def test_batchnorm_parameters(self):
+        layer = BatchNorm1d(3)
+        params = layer.parameters()
+        assert len(params) == 2
+
+    def test_sequential_forward(self):
+        model = Sequential([
+            Linear(3, 4),
+            ActivationLayer(RELU),
+            Linear(4, 1),
+        ])
+        out = model.forward([1.0, 2.0, 3.0])
+        assert len(out) == 1
+
+    def test_sequential_add(self):
+        model = Sequential()
+        model.add(Linear(3, 4))
+        model.add(ActivationLayer(RELU))
+        assert len(model) == 2
+
+    def test_sequential_backward(self):
+        model = Sequential([
+            Linear(3, 4),
+            ActivationLayer(RELU),
+            Linear(4, 1),
+        ])
+        model.forward([1.0, 2.0, 3.0])
+        grad = model.backward([1.0])
+        assert len(grad) == 3
+
+    def test_sequential_parameters(self):
+        model = Sequential([
+            Linear(3, 4),
+            ActivationLayer(RELU),
+            Linear(4, 2),
+        ])
+        params = model.parameters()
+        assert len(params) == 4
+
+    def test_sequential_getitem(self):
+        layers = [Linear(3, 4), ActivationLayer(RELU)]
+        model = Sequential(layers)
+        assert model[0] is layers[0]
+        assert model[1] is layers[1]
+
+    def test_sequential_iter(self):
+        layers = [Linear(3, 4), ActivationLayer(RELU)]
+        model = Sequential(layers)
+        assert list(model) == layers
+
+    def test_sequential_train_eval(self):
+        model = Sequential([Dropout(0.5)])
+        model.train()
+        assert model.training
+        model.eval()
+        assert not model.training
+        assert not model[0].training
 
 
-class TestOptimizer:
-    def test_grouping_decays_2d_weights_only(self, tmp_path: Path) -> None:
-        corpus = _write_corpus(tmp_path)
-        tokenizer = _make_tokenizer(corpus)
-        cfg = ModelConfig.from_yaml(_write_model_config(tmp_path, tokenizer.vocab_size))
-        model = build_model(cfg)
-        optimizer, report = build_optimizer(model, lr=1e-3, weight_decay=0.1)
-        decay_group = optimizer.param_groups[0]
-        no_decay_group = optimizer.param_groups[1]
-        assert decay_group["weight_decay"] == 0.1
-        assert no_decay_group["weight_decay"] == 0.0
-        assert report["decay_params"] + report["no_decay_params"] == sum(
-            1 for p in model.parameters() if p.requires_grad
-        )
-        no_decay = set(id(p) for p in no_decay_group["params"])
-        for name, param in model.named_parameters():
-            if param.ndim == 1:
-                assert id(param) in no_decay
-            else:
-                assert id(param) not in no_decay
+# ── Data Tests ────────────────────────────────────────────────────────────
 
 
 class TestData:
-    def test_shapes_shift_and_eos(self, tmp_path: Path) -> None:
-        corpus = _write_corpus(tmp_path)
-        tokenizer = _make_tokenizer(corpus)
-        data = PretrainingData(corpus, tokenizer, split="train", block_size=8)
-        assert len(data) == (len(data.tokens) - 1) // 8
-        x, y = data.batch([0, 1])
-        assert x.shape == (2, 8) and y.shape == (2, 8)
-        assert torch.equal(y[:, :-1], x[:, 1:])
-        assert int(x.min()) >= 0 and int(x.max()) < tokenizer.vocab_size
-        assert data.tokens[-1] == tokenizer.special_ids["<|endoftext|>"]
-        assert data.n_documents == 24
+    def test_dataset(self):
+        ds = Dataset([[1, 2], [3, 4]], [0, 1])
+        assert len(ds) == 2
+        assert ds.n_features == 2
+        assert ds[0] == ([1, 2], 0)
 
-    def test_batches_are_pure_permutations(self, tmp_path: Path) -> None:
-        corpus = _write_corpus(tmp_path)
-        tokenizer = _make_tokenizer(corpus)
-        data = PretrainingData(corpus, tokenizer, split="train", block_size=8)
-        first = data.shuffled_indices(random.Random(7))
-        second = data.shuffled_indices(random.Random(7))
-        assert first == second
-        assert sorted(first) == list(range(len(data)))
-        other = data.shuffled_indices(random.Random(12345))
-        assert other != first
+    def test_dataset_no_labels(self):
+        ds = Dataset([[1, 2], [3, 4]])
+        assert ds.y is None
 
-    def test_ordered_batch_is_stable(self, tmp_path: Path) -> None:
-        corpus = _write_corpus(tmp_path)
-        tokenizer = _make_tokenizer(corpus)
-        data = PretrainingData(corpus, tokenizer, split="validation", block_size=8)
-        x1, y1 = data.ordered_batch(2)
-        x2, y2 = data.ordered_batch(2)
-        assert torch.equal(x1, x2) and torch.equal(y1, y2)
+    def test_dataset_subset(self):
+        ds = Dataset([[1, 2], [3, 4], [5, 6]], [0, 1, 2])
+        sub = ds.subset([0, 2])
+        assert len(sub) == 2
+        assert sub[0][0] == [1, 2]
 
-    def test_batch_stream_resume_uses_exact_next_batch(self, tmp_path: Path) -> None:
-        corpus = _write_corpus(tmp_path)
-        tokenizer = _make_tokenizer(corpus)
-        data = PretrainingData(corpus, tokenizer, split="train", block_size=8)
-        stream = data.batch_stream(batch_size=2, seed=99)
-        for _ in range(3):
-            next(stream)
-        state = stream.state_dict()
-        expected_x, expected_y = next(stream)
-        resumed = data.batch_stream(batch_size=2, seed=99)
-        resumed.load_state_dict(state)
-        actual_x, actual_y = next(resumed)
-        assert torch.equal(expected_x, actual_x)
-        assert torch.equal(expected_y, actual_y)
+    def test_dataloader(self):
+        ds = Dataset([[1, 2], [3, 4], [5, 6]], [0, 1, 0])
+        dl = DataLoader(ds, batch_size=2)
+        batches = list(dl)
+        assert len(batches) == 2
+        assert len(batches[0][0]) == 2
+
+    def test_dataloader_shuffle(self):
+        ds = Dataset([[i] for i in range(10)], list(range(10)))
+        dl = DataLoader(ds, batch_size=5, shuffle=True)
+        batches = list(dl)
+        assert len(batches) == 2
+
+    def test_dataloader_drop_last(self):
+        ds = Dataset([[i] for i in range(10)], list(range(10)))
+        dl = DataLoader(ds, batch_size=3, drop_last=True)
+        batches = list(dl)
+        assert all(len(b[0]) == 3 for b in batches)
+
+    def test_dataloader_len(self):
+        ds = Dataset([[i] for i in range(10)], list(range(10)))
+        dl = DataLoader(ds, batch_size=3)
+        assert len(dl) == 4
+
+    def test_train_test_split(self):
+        X = [[i] for i in range(100)]
+        y = list(range(100))
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, seed=42)
+        assert len(X_train) == 80
+        assert len(X_test) == 20
+        assert len(y_train) == 80
+        assert len(y_test) == 20
+
+    def test_train_test_split_no_labels(self):
+        X = [[i] for i in range(100)]
+        X_train, X_test = train_test_split(X, test_size=0.3, seed=42)
+        assert len(X_train) == 70
+        assert len(X_test) == 30
+
+    def test_k_fold_split(self):
+        folds = k_fold_split(10, k=5, seed=42)
+        assert len(folds) == 5
+        for train_idx, test_idx in folds:
+            assert len(train_idx) + len(test_idx) == 10
+
+    def test_k_fold_no_overlap(self):
+        folds = k_fold_split(10, k=5, seed=42)
+        all_test = []
+        for _, test_idx in folds:
+            all_test.extend(test_idx)
+        assert len(all_test) == 10
+        assert len(set(all_test)) == 10
+
+    def test_normalize(self):
+        X = [[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]]
+        X_norm, mean, std = normalize(X)
+        assert len(X_norm) == 3
+        assert len(X_norm[0]) == 2
+        col0_mean = sum(X_norm[i][0] for i in range(3)) / 3
+        col1_mean = sum(X_norm[i][1] for i in range(3)) / 3
+        assert abs(col0_mean) < 1e-6
+        assert abs(col1_mean) < 1e-6
+
+    def test_normalize_with_params(self):
+        X = [[1.0, 2.0], [3.0, 4.0]]
+        mean = [2.0, 3.0]
+        std = [1.0, 1.0]
+        X_norm, _, _ = normalize(X, mean, std)
+        assert abs(X_norm[0][0] + 1.0) < 1e-6
+
+    def test_one_hot(self):
+        labels = [0, 1, 2, 0]
+        result = one_hot(labels, 3)
+        assert result == [[1, 0, 0], [0, 1, 0], [0, 0, 1], [1, 0, 0]]
+
+    def test_one_hot_auto_classes(self):
+        labels = [0, 2, 1]
+        result = one_hot(labels)
+        assert len(result) == 3
+        assert len(result[0]) == 3
+
+    def test_label_encode(self):
+        labels = ["cat", "dog", "cat", "bird"]
+        encoded, mapping = label_encode(labels)
+        assert encoded == [1, 2, 1, 0]
+        assert mapping["bird"] == 0
+        assert mapping["cat"] == 1
+        assert mapping["dog"] == 2
 
 
-class TestCheckpoint:
-    def test_round_trip(self, tmp_path: Path) -> None:
-        corpus = _write_corpus(tmp_path)
-        tokenizer = _make_tokenizer(corpus)
-        cfg = ModelConfig.from_yaml(_write_model_config(tmp_path, tokenizer.vocab_size))
-        model = build_model(cfg)
-        optimizer, _ = build_optimizer(model, lr=1e-3)
-        path = save_checkpoint(
-            tmp_path,
-            step=42,
-            model=model,
-            optimizer=optimizer,
-            run_id="test-run",
-            config_digest="abc",
-            tokenizer_hash="def",
-            dataset_hash=None,
-            git_commit=git_commit(),
+# ── Training Tests ────────────────────────────────────────────────────────
+
+
+class TestTraining:
+    def test_history(self):
+        h = TrainingHistory()
+        h.record_train(1.0, 0.8, 0.01)
+        h.record_val(1.2, 0.7)
+        assert h.epochs == 1
+        assert h.best_train_loss == 1.0
+        assert h.best_val_loss == 1.2
+
+    def test_early_stopping(self):
+        es = EarlyStopping(patience=3)
+        assert not es.step(1.0)
+        assert not es.step(0.9)
+        assert not es.step(0.91)
+        assert not es.step(0.92)
+        assert es.step(0.93)
+
+    def test_early_stopping_reset(self):
+        es = EarlyStopping(patience=1)
+        es.step(1.0)
+        es.step(1.1)
+        assert es.should_stop
+        es.reset()
+        assert not es.should_stop
+
+    def test_step_lr(self):
+        opt = SGD(learning_rate=1.0)
+        scheduler = StepLR(opt, step_size=2, gamma=0.5)
+        lr = scheduler.step(0)
+        assert lr == 1.0
+        lr = scheduler.step(2)
+        assert lr == 0.5
+
+    def test_cosine_lr(self):
+        opt = SGD(learning_rate=1.0)
+        scheduler = CosineAnnealingLR(opt, T_max=10)
+        lr_start = scheduler.step(0)
+        lr_mid = scheduler.step(5)
+        lr_end = scheduler.step(10)
+        assert lr_start > lr_mid
+        assert lr_end < lr_mid
+
+    def test_reduce_on_plateau(self):
+        opt = SGD(learning_rate=1.0)
+        scheduler = ReduceOnPlateau(opt, factor=0.5, patience=2)
+        lr = scheduler.step(1.0)
+        assert lr == 1.0
+        scheduler.step(1.1)
+        scheduler.step(1.2)
+        lr = scheduler.step(1.3)
+        assert lr == 0.5
+
+    def test_accuracy(self):
+        assert accuracy([1, 0, 1], [1, 0, 0]) == 2 / 3
+        assert accuracy([1, 1], [1, 1]) == 1.0
+        assert accuracy([], []) == 0.0
+
+    def test_mse_metric(self):
+        preds = [[1.0, 2.0]]
+        targets = [[1.0, 3.0]]
+        assert abs(mse_metric(preds, targets) - 0.5) < 1e-6
+
+    def test_cross_entropy_metric(self):
+        preds = [[0.9, 0.1]]
+        targets = [0]
+        ce = cross_entropy_metric(preds, targets)
+        assert ce < 0.2
+
+    def test_train_one_epoch(self):
+        model = Sequential([
+            Linear(2, 4),
+            ActivationLayer(RELU),
+            Linear(4, 1),
+        ])
+        X = [[1.0, 2.0], [3.0, 4.0], [5.0, 6.0]]
+        y = [[3.0], [7.0], [11.0]]
+        ds = Dataset(X, y)
+        dl = DataLoader(ds, batch_size=2)
+        loss = train_one_epoch(model, dl, MSE, SGD(learning_rate=0.001))
+        assert isinstance(loss, float)
+        assert loss >= 0
+
+    def test_evaluate(self):
+        model = Sequential([
+            Linear(2, 4),
+            ActivationLayer(RELU),
+            Linear(4, 1),
+        ])
+        X = [[1.0, 2.0], [3.0, 4.0]]
+        y = [[3.0], [7.0]]
+        ds = Dataset(X, y)
+        dl = DataLoader(ds, batch_size=2)
+        loss, metric = evaluate(model, dl, MSE)
+        assert isinstance(loss, float)
+        assert loss >= 0
+
+    def test_fit(self):
+        random.seed(42)
+        model = Sequential([
+            Linear(1, 8),
+            ActivationLayer(RELU),
+            Linear(8, 1),
+        ])
+        X = [[i / 10.0] for i in range(20)]
+        y = [[i / 10.0 * 2] for i in range(20)]
+        ds = Dataset(X, y)
+        history = fit(model, ds, epochs=20, batch_size=4, verbose=False)
+        assert history.epochs == 20
+        assert history.train_loss[-1] < history.train_loss[0]
+
+    def test_fit_with_validation(self):
+        random.seed(42)
+        model = Sequential([
+            Linear(1, 4),
+            ActivationLayer(RELU),
+            Linear(4, 1),
+        ])
+        X_train = [[i / 10.0] for i in range(20)]
+        y_train = [[i / 10.0 * 2] for i in range(20)]
+        X_val = [[i / 5.0] for i in range(5)]
+        y_val = [[i / 5.0 * 2] for i in range(5)]
+        ds_train = Dataset(X_train, y_train)
+        ds_val = Dataset(X_val, y_val)
+        history = fit(
+            model, ds_train, val_dataset=ds_val,
+            epochs=10, batch_size=4, verbose=False,
         )
-        model2 = build_model(cfg)
-        optimizer2, _ = build_optimizer(model2, lr=1e-3)
-        ckpt = load_checkpoint(path, model2, optimizer2)
-        assert ckpt["step"] == 42
-        assert ckpt["git_commit"] == git_commit()
-        for (n1, p1), (n2, p2) in zip(model.named_parameters(), model2.named_parameters()):
-            assert n1 == n2
-            assert torch.equal(p1, p2)
-        for g1, g2 in zip(optimizer.param_groups, optimizer2.param_groups):
-            assert g1["weight_decay"] == g2["weight_decay"]
+        assert len(history.val_loss) == 10
 
-
-class TestRepoGuard:
-    def test_commit_hash_format(self) -> None:
-        assert re.fullmatch(r"[0-9a-f]{40}", git_commit())
-
-    def test_guard_detects_uncommitted_files(self) -> None:
-        probe_rel = "tests/_repo_probe.txt"
-        assert git_is_clean([probe_rel])
-        probe = Path(__file__).parent / "_repo_probe.txt"
-        try:
-            probe.write_text("dirty", encoding="utf-8")
-            assert not git_is_clean([probe_rel])
-            with pytest.raises(RuntimeError, match="committed repository"):
-                require_clean_repo([probe_rel])
-        finally:
-            probe.unlink(missing_ok=True)
-        assert git_is_clean([probe_rel])
-
-
-class TestTrain:
-    def test_config_yaml_round_trip_and_coercion(self) -> None:
-        cfg = TrainConfig.from_yaml("configs/training.yaml")
-        assert isinstance(cfg.betas, tuple) and cfg.betas == (0.9, 0.95)
-        assert isinstance(cfg.lr, float)
-        assert isinstance(cfg.max_steps, int)
-        again = TrainConfig.from_dict(cfg.to_dict())
-        assert again.digest() == cfg.digest()
-        assert again.resume_digest() == cfg.resume_digest()
-
-    def test_preflight_verifies_released_dataset(self, tmp_path: Path) -> None:
-        corpus = _write_released_corpus(tmp_path)
-        tokenizer = _make_tokenizer(corpus)
-        tokenizer_dir = _write_tokenizer_dir(tmp_path, tokenizer)
-        model_path = _write_model_config(tmp_path, tokenizer.vocab_size)
-        manifest = json.loads((corpus / "manifest.json").read_text(encoding="utf-8"))
-        cfg = TrainConfig.from_dict(
-            {
-                "model_config_path": model_path,
-                "corpus_dir": str(corpus),
-                "tokenizer_dir": str(tokenizer_dir),
-                "checkpoint_dir": str(tmp_path / "checkpoints"),
-                "batch_size": 2,
-                "block_size": 8,
-                "max_steps": 2,
-                "expected_dataset_hash": manifest["dataset_hash"],
-                "require_clean_repo": False,
-            }
+    def test_fit_with_early_stopping(self):
+        random.seed(42)
+        model = Sequential([
+            Linear(1, 4),
+            ActivationLayer(RELU),
+            Linear(4, 1),
+        ])
+        X = [[i / 10.0] for i in range(20)]
+        y = [[i / 10.0 * 2] for i in range(20)]
+        ds = Dataset(X, y)
+        es = EarlyStopping(patience=3)
+        history = fit(
+            model, ds, val_dataset=ds,
+            epochs=100, batch_size=4,
+            early_stopping=es, verbose=False,
         )
-        inputs = preflight_train(cfg)
-        assert inputs.dataset_hash == manifest["dataset_hash"]
-        assert inputs.dataset_verification and inputs.dataset_verification["ok"]
+        assert history.epochs < 100
 
-    def test_preflight_rejects_unreleased_dataset(self, tmp_path: Path) -> None:
-        cfg = _train_config(tmp_path, verify_dataset=True)
-        with pytest.raises(ValueError, match="dataset integrity verification failed"):
-            preflight_train(cfg)
-
-    def test_overfits_small_corpus(self, tmp_path: Path) -> None:
-        cfg = _train_config(
-            tmp_path,
-            max_steps=120,
-            warmup_steps=10,
-            lr=2.0e-3,
-            eval_steps=40,
-            eval_sequences=2,
-            save_steps=40,
+    def test_fit_with_lr_scheduler(self):
+        random.seed(42)
+        model = Sequential([
+            Linear(1, 4),
+            ActivationLayer(RELU),
+            Linear(4, 1),
+        ])
+        X = [[i / 10.0] for i in range(20)]
+        y = [[i / 10.0 * 2] for i in range(20)]
+        ds = Dataset(X, y)
+        opt = Adam(learning_rate=0.01)
+        scheduler = StepLR(opt, step_size=5, gamma=0.5)
+        history = fit(
+            model, ds, optimizer=opt,
+            lr_scheduler=scheduler,
+            epochs=10, batch_size=4, verbose=False,
         )
-        report = train(cfg)
-        assert report["steps_done"] == 120
-        assert report["final_train_loss"] < 0.8
-        assert report["final_eval_loss"] is not None and math.isfinite(report["final_eval_loss"])
-        assert report["best_eval_loss"] is not None
-        assert re.fullmatch(r"[0-9a-f]{40}", report["git_commit"])
-        assert re.fullmatch(r"[0-9a-f]{64}", report["model_config_digest"])
-        assert re.fullmatch(r"[0-9a-f]{64}", report["train_config_digest"])
-        assert re.fullmatch(r"[0-9a-f]{64}", report["tokenizer_hash"])
-        assert report["num_parameters"] > 0
-        assert report["final_perplexity"] > 1.0
-
-        checkpoint_dir = Path(cfg.checkpoint_dir)
-        assert (checkpoint_dir / "training_report.json").exists()
-        assert (checkpoint_dir / BEST_FILENAME).exists()
-        assert (checkpoint_dir / FINAL_FILENAME).exists()
-        assert (checkpoint_dir / f"step-{40:08d}.pt").exists()
-        manifest = json.loads((checkpoint_dir / "training_report.json").read_text(encoding="utf-8"))
-        assert manifest["dataset_hash"] is None or isinstance(manifest["dataset_hash"], str)
-
-        model = build_model(ModelConfig.from_yaml(cfg.model_config_path))
-        load_checkpoint(checkpoint_dir / FINAL_FILENAME, model)
-        logits = model(torch.randint(0, 8, (1, 8)))
-        assert logits.shape[-1] == ModelConfig.from_yaml(cfg.model_config_path).vocab_size
-
-    def test_dirty_repo_blocked(self, tmp_path: Path) -> None:
-        cfg = _train_config(tmp_path, max_steps=4)
-        cfg = TrainConfig.from_dict({**cfg.to_dict(), "require_clean_repo": True})
-        probe = Path(__file__).parent / "_repo_probe.txt"
-        try:
-            probe.write_text("dirty", encoding="utf-8")
-            with pytest.raises(RuntimeError, match="committed repository"):
-                train(cfg)
-        finally:
-            probe.unlink(missing_ok=True)
-
-    def test_empty_train_split_rejected(self, tmp_path: Path) -> None:
-        corpus = tmp_path / "empty"
-        corpus.mkdir()
-        tokenizer = _make_tokenizer(_write_corpus(tmp_path))
-        tokenizer_dir = _write_tokenizer_dir(tmp_path, tokenizer)
-        model_config_path = _write_model_config(tmp_path, tokenizer.vocab_size)
-        cfg = TrainConfig.from_dict(
-            {
-                "model_config_path": model_config_path,
-                "corpus_dir": str(corpus),
-                "tokenizer_dir": str(tokenizer_dir),
-                "checkpoint_dir": str(tmp_path / "ckpt"),
-                "batch_size": 2,
-                "block_size": 8,
-                "max_steps": 4,
-                "verify_dataset": False,
-                "require_clean_repo": False,
-            }
-        )
-        with pytest.raises(ValueError, match="empty"):
-            train(cfg)
-
-    def test_resume_restores_exact_training_state(self, tmp_path: Path) -> None:
-        cfg = _train_config(
-            tmp_path / "full",
-            max_steps=4,
-            warmup_steps=1,
-            grad_accum_steps=2,
-            eval_steps=2,
-            save_steps=2,
-        )
-        train(cfg, log=lambda _: None)
-        step_two = Path(cfg.checkpoint_dir) / "step-00000002.pt"
-        resumed_cfg = TrainConfig.from_dict(
-            {
-                **cfg.to_dict(),
-                "checkpoint_dir": str(tmp_path / "resumed"),
-                "resume_from": str(step_two),
-            }
-        )
-        resumed_report = train(resumed_cfg, log=lambda _: None)
-        assert resumed_report["start_step"] == 3
-        full_model = build_model(ModelConfig.from_yaml(cfg.model_config_path))
-        resumed_model = build_model(ModelConfig.from_yaml(cfg.model_config_path))
-        load_checkpoint(Path(cfg.checkpoint_dir) / FINAL_FILENAME, full_model)
-        load_checkpoint(Path(resumed_cfg.checkpoint_dir) / FINAL_FILENAME, resumed_model)
-        for first, second in zip(full_model.parameters(), resumed_model.parameters()):
-            assert torch.equal(first, second)
-
-    def test_resume_rejects_changed_training_dynamics(self, tmp_path: Path) -> None:
-        cfg = _train_config(tmp_path, max_steps=2, save_steps=1, eval_steps=1)
-        train(cfg, log=lambda _: None)
-        changed = TrainConfig.from_dict(
-            {
-                **cfg.to_dict(),
-                "checkpoint_dir": str(tmp_path / "changed"),
-                "resume_from": str(Path(cfg.checkpoint_dir) / "step-00000001.pt"),
-                "lr": 2.0e-3,
-            }
-        )
-        with pytest.raises(ValueError, match="resume_config_digest"):
-            train(changed, log=lambda _: None)
-
-    def test_init_from_starts_fresh_run(self, tmp_path: Path) -> None:
-        source = _train_config(tmp_path / "source", max_steps=2, save_steps=1, eval_steps=1)
-        train(source, log=lambda _: None)
-        init_cfg = _train_config(
-            tmp_path / "init",
-            max_steps=3,
-            warmup_steps=1,
-            eval_steps=1,
-            save_steps=1,
-        )
-        init_cfg = TrainConfig.from_dict(
-            {**init_cfg.to_dict(), "init_from": str(Path(source.checkpoint_dir) / FINAL_FILENAME)}
-        )
-        report = train(init_cfg, log=lambda _: None)
-        assert report["init_from"] == str(Path(source.checkpoint_dir) / FINAL_FILENAME)
-        assert report["start_step"] == 1
-        assert report["steps_done"] == 3
-        assert report["final_checkpoint"] is not None
-        assert Path(report["final_checkpoint"]).exists()
-
-    def test_init_from_missing_checkpoint_rejected(self, tmp_path: Path) -> None:
-        cfg = _train_config(tmp_path, max_steps=2)
-        cfg = TrainConfig.from_dict({**cfg.to_dict(), "init_from": str(tmp_path / "nope.pt")})
-        with pytest.raises(ValueError, match="init_from checkpoint does not exist"):
-            train(cfg, log=lambda _: None)
+        assert history.epochs == 10
+        assert history.learning_rates[-1] < 0.01

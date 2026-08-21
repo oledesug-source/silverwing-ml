@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silverwing ML • Enterprise Workspace</title>
+    <link rel="stylesheet" href="design-system.css" />
+    <link rel="stylesheet" href="workspace.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <!-- ===== Status Bar (top) ===== -->
+    <header class="sw-header">
+        <div class="sw-header-brand">
+            <span class="sw-logo">🌙</span>
+            <span class="sw-title">Silverwing</span>
+            <span class="sw-pill sw-pill--muted">v0.1.0</span>
+        </div>
+
+        <nav class="sw-header-nav">
+            <button class="sw-btn sw-btn--icon" id="btn-home" title="Home">
+                <span>🏠</span>
+            </button>
+            <button class="sw-btn sw-btn--icon" id="btn-agents" title="Agents">
+                <span>🤖</span>
+            </button>
+            <button class="sw-btn sw-btn--icon" id="btn-terminal" title="Terminal">
+                <span>📟</span>
+            </button>
+            <button class="sw-btn sw-btn--icon" id="btn-canvas" title="Workflow Canvas">
+                <span>🎨</span>
+            </button>
+            <button class="sw-btn sw-btn--icon" id="btn-settings" title="Settings">
+                <span>⚙️</span>
+            </button>
+        </nav>
+
+        <div class="sw-status-chips">
+            <span class="sw-chip sw-chip--connected" id="chip-connection">
+                <span class="sw-dot sw-dot--green"></span> Connected
+            </span>
+            <span class="sw-chip sw-chip--warning" id="chip-model">
+                <span class="sw-dot sw-dot--yellow"></span> gpt-4o
+            </span>
+            <span class="sw-chip" id="chip-perms">
+                L1 Read
+            </span>
+        </div>
+    </header>
+
+    <!-- ===== Left Sidebar (collapsible) ===== -->
+    <aside class="sw-sidebar" id="sidebar-left">
+        <div class="sw-sidebar-header">
+            <span class="sw-sidebar-title">Explorer</span>
+            <button class="sw-btn sw-btn--icon sw-btn--small" id="btn-toggle-left">
+                <span>›</span>
+            </button>
+        </div>
+
+        <div class="sw-tabs">
+            <button class="sw-tab sw-tab--active" data-tab="files">📁 Files</button>
+            <button class="sw-tab" data-tab="tools">🔧 Tools</button>
+            <button class="sw-tab" data-tab="agents">🤖 Agents</button>
+        </div>
+
+        <div class="sw-tab-content">
+            <div class="sw-tab-pane sw-tab-pane--active" id="tab-files">
+                <div class="sw-tree" id="file-tree">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+            <div class="sw-tab-pane" id="tab-tools">
+                <div class="sw-tool-list" id="tool-list">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+            <div class="sw-tab-pane" id="tab-agents">
+                <div class="sw-agent-list">
+                    <div class="sw-agent-item sw-agent-item--active">
+                        <span class="sw-agent-name">Silverwing</span>
+                        <span class="sw-chip sw-chip--sm sw-chip--green">Online</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- ===== Main Workspace ===== -->
+    <main class="sw-main">
+        <!-- Chat + Terminal viewport -->
+        <section class="sw-chat-area">
+            <div class="sw-chat-header">
+                <span>Chat</span>
+                <span class="sw-chip sw-chip--sm">Session active</span>
+            </div>
+
+            <div class="sw-chat-messages" id="chat-messages">
+                <div class="sw-message sw-message--welcome">
+                    <div class="sw-avatar">🤖</div>
+                    <div class="sw-bubble sw-bubble--agent">
+                        Hello! I'm Silverwing, your autonomous coding agent.
+                        I have access to code execution, web automation, database
+                        queries, filesystem operations, and git commands.
+                        How can I help you today?
+                    </div>
+                </div>
+            </div>
+
+            <div class="sw-chat-input">
+                <textarea
+                    class="sw-textarea"
+                    id="message-input"
+                    placeholder="Type a message or command..."
+                    rows="1"
+                ></textarea>
+                <button class="sw-btn sw-btn--primary" id="btn-send">
+                    <span>Send</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Multi-terminal viewport -->
+        <section class="sw-terminal-area">
+            <div class="sw-terminal-header">
+                <span>Output Panels</span>
+                <div class="sw-terminal-tabs" id="terminal-tabs">
+                    <button class="sw-terminal-tab sw-terminal-tab--active" data-terminal="console">
+                        Console <span class="sw-chip sw-chip--sm sw-chip--muted">1</span>
+                    </button>
+                    <button class="sw-terminal-tab" data-terminal="tools">
+                        Tools <span class="sw-chip sw-chip--sm sw-chip--muted">0</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="sw-terminal-panels">
+                <pre class="sw-terminal sw-terminal--active" id="terminal-console">
+<span class="sw-terminal-output">Connected to Silverwing Agent Bridge</span>
+<span class="sw-terminal-output">Session: new</span>
+<span class="sw-terminal-output">Tools available: 14</span>
+<span class="sw-terminal-output">Type a message to begin…</span>
+                </pre>
+                <pre class="sw-terminal" id="terminal-tools">
+<span class="sw-terminal-output">No tool executions yet.</span>
+                </pre>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Right Sidebar (3D Viewport) ===== -->
+    <aside class="sw-sidebar sw-sidebar--right" id="sidebar-right">
+        <div class="sw-sidebar-header">
+            <span class="sw-sidebar-title">3D Workspace</span>
+        </div>
+
+        <div class="sw-viewport-3d" id="viewport-3d">
+            <!-- 3D canvas via three.js CDN (loaded dynamically) -->
+            <canvas id="canvas-3d" width="300" height="300"></canvas>
+            <div class="sw-3d-overlay">
+                <div class="sw-3d-controls">
+                    <button class="sw-btn sw-btn--sm" id="btn-3d-rotate">Rotate</button>
+                    <button class="sw-btn sw-btn--sm" id="btn-3d-zoom">Zoom</button>
+                    <button class="sw-btn sw-btn--sm" id="btn-3d-reset">Reset</button>
+                </div>
+                <div class="sw-3d-status">
+                    <span>Mode: Interaction</span>
+                    <span>Gestures: Enabled</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sw-voice-panel">
+            <button class="sw-btn sw-btn--sm sw-btn--outline" id="btn-voice">
+                <span>🎤</span> Voice Input
+            </button>
+            <div class="sw-voice-status" id="voice-status">Not listening</div>
+        </div>
+    </aside>
+
+    <!-- ===== Drag-and-Drop Workflow Canvas ===== -->
+    <div class="sw-canvas-overlay" id="canvas-overlay">
+        <div class="sw-canvas-header">
+            <span>Workflow Canvas</span>
+            <button class="sw-btn sw-btn--sm" id="btn-canvas-close">✕</button>
+        </div>
+        <svg class="sw-canvas-svg" id="canvas-svg" width="100%" height="100%">
+            <!-- Workflow nodes and edges -->
+        </svg>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="workspace.js"></script>
+</body>
+</html>

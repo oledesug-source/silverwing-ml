@@ -1,0 +1,128 @@
+/* =========================================================================
+   Silverwing Workspace Layout
+   Enterprise-grade workspace: collapsible sidebars, multi-terminal viewports,
+   status chips, and 3D interaction canvas.
+   ========================================================================= */
+
+.sw-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: calc(100vh - 48px);
+  overflow: hidden;
+  background: var(--sw-color-bg);
+}
+
+/* ===== Workspace Grid ===== */
+.sw-workspace {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  height: calc(100vh - 48px);
+}
+
+/* ===== Collapsible Sidebars ===== */
+.sw-sidebar-collapsed {
+  width: 48px !important;
+  min-width: 44px !important;
+}
+
+.sw-sidebar-collapsed .sw-sidebar-header > *:not(.sw-btn--icon) {
+  display: none;
+}
+
+.sw-sidebar-collapsed .sw-tabs { display: none; }
+
+.sw-sidebar--right.sw-sidebar-collapsed {
+  width: 280px;
+}
+
+/* ===== Terminal Viewport Splitter ===== */
+.sw-splitter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sw-splitter-handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--sw-color-border);
+  cursor: ns-resize;
+  z-index: 10;
+}
+
+.sw-splitter-handle:hover { background: var(--sw-color-accent); }
+
+/* ===== Drag-&-Drop Drop Zones ===== */
+.sw-drop-zone {
+  border: 2px dashed var(--sw-color-border);
+  border-radius: var(--sw-radius-md);
+  padding: var(--sw-space-lg);
+  text-align: center;
+  color: var(--sw-color-text-muted);
+  transition: all 0.15s ease;
+}
+
+.sw-drop-zone--active {
+  border-color: var(--sw-color-accent);
+  background: rgba(56, 189, 248, 0.05);
+}
+
+/* ===== Floating Action Button ===== */
+.sw-fab {
+  position: fixed;
+  bottom: var(--sw-space-lg);
+  right: var(--sw-space-lg);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--sw-color-accent);
+  color: var(--sw-color-bg);
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: var(--sw-shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  z-index: 100;
+}
+
+.sw-fab:hover {
+  background: var(--sw-color-accent-hover);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--sw-color-accent);
+}
+
+/* ===== Notification Toast ===== */
+.sw-toast {
+  position: fixed;
+  bottom: 80px;
+  right: var(--sw-space-lg);
+  padding: var(--sw-space-md) var(--sw-space-lg);
+  border-radius: var(--sw-radius-md);
+  background: var(--sw-color-bg-elevated);
+  border: 1px solid var(--sw-color-border);
+  box-shadow: var(--sw-shadow-lg);
+  font-size: var(--sw-font-size-sm);
+  opacity: 0;
+  transform: translateX(120%);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  max-width: 320px;
+}
+
+.sw-toast--show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sw-toast--success { border-color: var(--sw-color-green); }
+.sw-toast--error { border-color: var(--sw-color-red); }

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from unittest.mock import MagicMock
 
-from intelligence.planning import Plan, PlanStep, PlanStatus, Planner
+from intelligence.planning import Plan, Planner, PlanStatus, PlanStep
 
 
 def _mock_generator(output: str = "1. Step one\n2. Step two\n3. Step three") -> MagicMock:

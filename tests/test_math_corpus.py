@@ -12,7 +12,13 @@ from pathlib import Path
 import pytest
 import yaml
 
-from foundation.math_corpus import MathCorpusConfig, PROBLEM_GENERATORS, REFERENCES, build_document, generate_math_corpus
+from foundation.math_corpus import (
+    PROBLEM_GENERATORS,
+    REFERENCES,
+    MathCorpusConfig,
+    build_document,
+    generate_math_corpus,
+)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 PYTHON = sys.executable
@@ -122,7 +128,6 @@ class TestCorrectness:
 
     def test_fraction_answer_in_lowest_terms(self) -> None:
         import random
-
         from fractions import Fraction
 
         rng = random.Random(13)

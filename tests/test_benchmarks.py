@@ -230,7 +230,7 @@ def _tiny_model_and_checkpoint(tmp_path: Path) -> Path:
     )
     tokenizer.save(tmp_path / "tokenizer")
     cfg_path = tmp_path / "model.yaml"
-    cfg_path.write_text("model:\n  vocab_size: %d\n  block_size: 64\n  n_layer: 1\n  n_head: 2\n  n_kv_head: 2\n  n_embd: 16\n  mlp_hidden_size: 32\n  tie_embeddings: true\n  bias: false\n" % tokenizer.vocab_size, encoding="utf-8")
+    cfg_path.write_text(f"model:\n  vocab_size: {tokenizer.vocab_size}\n  block_size: 64\n  n_layer: 1\n  n_head: 2\n  n_kv_head: 2\n  n_embd: 16\n  mlp_hidden_size: 32\n  tie_embeddings: true\n  bias: false\n", encoding="utf-8")
     return path
 
 

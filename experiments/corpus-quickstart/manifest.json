@@ -1,0 +1,37 @@
+{
+  "dataset_name": "silverwing",
+  "created_at": "2026-08-19T12:16:22.542159+00:00",
+  "splits": {
+    "train": {
+      "records": 23474,
+      "tokens": 5246277,
+      "first_content_hash": "dd5986454702b7cff300fc371a2c67abf86a85de27180b809c1482103f38ff07",
+      "last_content_hash": "bd87916dbb5729adb270d1ae38b6949e35c6793d2d44742111ca6af33f55fe40",
+      "shards": [
+        "train.0.jsonl",
+        "train.1.jsonl",
+        "train.2.jsonl"
+      ]
+    },
+    "validation": {
+      "records": 237,
+      "tokens": 58233,
+      "first_content_hash": "925a18ef720b9ee43c28375d71fe386d8087a06fe98b73e8860b1a9d41af74f8",
+      "last_content_hash": "10c22bcf4c768b515be4e94bcafc71bf3e8fb5f70b2584bcc8c7533217f2e7f9",
+      "shards": [
+        "validation.0.jsonl"
+      ]
+    },
+    "test": {
+      "records": 236,
+      "tokens": 40598,
+      "first_content_hash": "764a8c04ad4520a7e1319b4e4e483017b4baf95f7e90e3ee11611f10bc15b6fd",
+      "last_content_hash": "535b2f00510b8d89e37398e806f9623fc6688fd65b78468571592e7500c114e3",
+      "shards": [
+        "test.0.jsonl"
+      ]
+    }
+  },
+  "shards": [],
+  "dataset_hash": "8eec3e37fc454bf3c0880614a724afa7fae3869d97aef529f07ba0be60d4b796"
+}

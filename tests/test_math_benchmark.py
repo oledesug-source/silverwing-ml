@@ -8,11 +8,15 @@ import sys
 from pathlib import Path
 
 from benchmarks import BenchmarkRunner, DummyModel
-from benchmarks.math import MathBenchmarkConfig, flag_corpus_overlap, generate_math_benchmark, write_math_benchmark
+from benchmarks.math import (
+    MathBenchmarkConfig,
+    flag_corpus_overlap,
+    generate_math_benchmark,
+    write_math_benchmark,
+)
 from benchmarks.registry import BenchmarkRegistry
 from foundation.corpus.schema import DocumentRecord, Provenance, Split
 from foundation.corpus.storage import ShardWriter
-
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -48,7 +52,7 @@ def test_release_writes_hash_manifest_and_category_metrics(tmp_path: Path) -> No
     assert manifest["items"] == cfg.total_items
     assert len(manifest["benchmark_hash"]) == 64
     assert manifest["config_digest"] == cfg.digest()
-    assert manifest["items_by_category"] == {topic: 3 for topic in cfg.topics}
+    assert manifest["items_by_category"] == dict.fromkeys(cfg.topics, 3)
 
     registry = BenchmarkRegistry()
     registry.register("math-test", data_path, "numeric")

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SilverWing Platform</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0e17;--surface:#111827;--surface2:#1a2332;--border:#1e293b;--accent:#3b82f6;--accent2:#8b5cf6;--green:#22c55e;--red:#ef4444;--yellow:#eab308;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;--radius:8px;--mono:'Cascadia Code','Fira Code',monospace}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);height:100vh;overflow:hidden}
+.header{background:var(--surface);border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:16px}
+.header h1{font-size:18px;font-weight:600;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.header .status{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text2)}
+.header .dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
+.main{display:grid;grid-template-columns:280px 1fr 320px;height:calc(100vh - 53px)}
+.panel{border-right:1px solid var(--border);display:flex;flex-direction:column;overflow:hidden}
+.panel:last-child{border-right:none;border-left:1px solid var(--border)}
+.panel-header{padding:12px 16px;border-bottom:1px solid var(--border);font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text2);display:flex;align-items:center;justify-content:space-between}
+.panel-body{flex:1;overflow-y:auto;padding:12px}
+.panel-body::-webkit-scrollbar{width:6px}
+.panel-body::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+
+/* Capabilities panel */
+.cap-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:10px 12px;margin-bottom:8px;cursor:pointer;transition:border-color .15s}
+.cap-card:hover{border-color:var(--accent)}
+.cap-card.active{border-color:var(--accent);background:var(--surface2)}
+.cap-name{font-size:13px;font-weight:600;color:var(--text);display:flex;align-items:center;gap:6px}
+.cap-name .badge{font-size:10px;padding:1px 6px;border-radius:10px;font-weight:500}
+.badge-low{background:#166534;color:#86efac}
+.badge-medium{background:#854d0e;color:#fde047}
+.badge-high{background:#991b1b;color:#fca5a5}
+.badge-critical{background:#7f1d1d;color:#fecaca}
+.cap-desc{font-size:12px;color:var(--text3);margin-top:4px}
+.cap-meta{display:flex;gap:8px;margin-top:6px;font-size:11px;color:var(--text3)}
+.cap-tag{background:var(--surface2);border:1px solid var(--border);padding:1px 6px;border-radius:4px;font-size:10px;color:var(--text2)}
+
+/* Chat panel */
+.chat-panel{display:flex;flex-direction:column}
+.chat-messages{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:12px}
+.msg{max-width:85%;padding:10px 14px;border-radius:12px;font-size:13px;line-height:1.5;word-wrap:break-word}
+.msg-user{align-self:flex-end;background:var(--accent);color:#fff;border-bottom-right-radius:4px}
+.msg-assistant{align-self:flex-start;background:var(--surface);border:1px solid var(--border);border-bottom-left-radius:4px}
+.msg-system{align-self:center;background:transparent;color:var(--text3);font-size:11px;padding:4px 8px}
+.msg-tool{align-self:flex-start;background:var(--surface2);border:1px solid var(--border);font-family:var(--mono);font-size:12px;border-bottom-left-radius:4px}
+.msg-tool .tool-header{color:var(--accent2);font-weight:600;margin-bottom:4px}
+.msg-tool .tool-output{color:var(--green)}
+.msg-tool .tool-error{color:var(--red)}
+.msg-time{font-size:10px;color:var(--text3);margin-top:4px}
+.chat-input{padding:12px 16px;border-top:1px solid var(--border);display:flex;gap:8px}
+.chat-input input{flex:1;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:10px 14px;color:var(--text);font-size:13px;outline:none}
+.chat-input input:focus{border-color:var(--accent)}
+.chat-input button{background:var(--accent);color:#fff;border:none;border-radius:var(--radius);padding:10px 20px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}
+.chat-input button:hover{opacity:.9}
+.chat-input button:disabled{opacity:.4;cursor:not-allowed}
+.chat-meta{padding:4px 16px 8px;font-size:11px;color:var(--text3);display:flex;gap:16px;border-top:1px solid var(--border)}
+
+/* Tool execute panel */
+.tool-form{padding:12px}
+.tool-form label{font-size:12px;color:var(--text2);display:block;margin-bottom:4px}
+.tool-form select,.tool-form input,.tool-form textarea{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:8px 10px;color:var(--text);font-size:13px;outline:none;margin-bottom:12px;font-family:inherit}
+.tool-form textarea{min-height:80px;resize:vertical;font-family:var(--mono);font-size:12px}
+.tool-form select:focus,.tool-form input:focus,.tool-form textarea:focus{border-color:var(--accent)}
+.tool-form button{width:100%;background:var(--accent2);color:#fff;border:none;border-radius:var(--radius);padding:10px;font-size:13px;font-weight:600;cursor:pointer}
+.tool-form button:hover{opacity:.9}
+.tool-result{margin-top:12px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:10px;font-family:var(--mono);font-size:12px;white-space:pre-wrap;max-height:200px;overflow-y:auto}
+.tool-result.success{border-color:var(--green)}
+.tool-result.error{border-color:var(--red)}
+
+/* Audit panel */
+.audit-entry{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:8px 10px;margin-bottom:6px;font-size:12px}
+.audit-entry .ae-action{font-weight:600;color:var(--accent2)}
+.audit-entry .ae-status{padding:1px 6px;border-radius:4px;font-size:10px;font-weight:600;margin-left:6px}
+.ae-status-success{background:#166534;color:#86efac}
+.ae-status-error{background:#991b1b;color:#fca5a5}
+.ae-status-denied{background:#854d0e;color:#fde047}
+.ae-status-pending{background:#1e3a5f;color:#93c5fd}
+.audit-entry .ae-detail{color:var(--text3);margin-top:4px;font-family:var(--mono);font-size:11px}
+.audit-entry .ae-meta{color:var(--text3);font-size:10px;margin-top:4px;display:flex;gap:12px}
+
+/* Permission bar */
+.perm-bar{padding:8px 16px;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:12px;font-size:12px}
+.perm-bar label{color:var(--text2)}
+.perm-bar select{background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:4px 8px;color:var(--text);font-size:12px}
+.perm-bar .rounds{margin-left:auto;display:flex;align-items:center;gap:6px}
+.perm-bar input[type=number]{width:50px;background:var(--surface2);border:1px solid var(--border);border-radius:4px;padding:4px;color:var(--text);font-size:12px;text-align:center}
+
+/* Empty state */
+.empty{text-align:center;color:var(--text3);font-size:13px;padding:40px 20px}
+.empty .icon{font-size:32px;margin-bottom:8px}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>SilverWing Platform</h1>
+  <div class="status">
+    <span class="dot" id="statusDot"></span>
+    <span id="statusText">Connecting...</span>
+  </div>
+</div>
+
+<div class="main">
+  <!-- Left: Capabilities -->
+  <div class="panel">
+    <div class="panel-header">
+      <span>Capabilities</span>
+      <span id="capCount" style="color:var(--accent)">0</span>
+    </div>
+    <div class="panel-body" id="capList">
+      <div class="empty"><div class="icon">&#9881;</div>Loading...</div>
+    </div>
+  </div>
+
+  <!-- Center: Chat -->
+  <div class="panel chat-panel">
+    <div class="panel-header">
+      <span>Chat</span>
+      <button onclick="clearChat()" style="background:none;border:1px solid var(--border);color:var(--text2);border-radius:4px;padding:2px 8px;font-size:11px;cursor:pointer">Clear</button>
+    </div>
+    <div class="perm-bar">
+      <label>Permission:</label>
+      <select id="permLevel" onchange="onPermChange()">
+        <option value="L0">L0 — Read</option>
+        <option value="L1">L1 — Write</option>
+        <option value="L2">L2 — Execute</option>
+        <option value="L3">L3 — Network</option>
+        <option value="L4">L4 — Admin</option>
+        <option value="L5">L5 — System</option>
+      </select>
+      <div class="rounds">
+        <label>Max rounds:</label>
+        <input type="number" id="maxRounds" value="5" min="1" max="20">
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="msg msg-system">Send a message to start the orchestration loop.</div>
+    </div>
+    <div class="chat-meta" id="chatMeta">
+      <span>Rounds: <strong id="metaRounds">0</strong></span>
+      <span>Time: <strong id="metaTime">0ms</strong></span>
+      <span>Calls: <strong id="metaCalls">0</strong></span>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type a message... (e.g. calculate 2 + 2)" onkeydown="if(event.key==='Enter')sendChat()">
+      <button id="sendBtn" onclick="sendChat()">Send</button>
+    </div>
+  </div>
+
+  <!-- Right: Tool Execute + Audit -->
+  <div class="panel" style="display:flex;flex-direction:column">
+    <div class="panel-header">Tool Execute</div>
+    <div class="tool-form">
+      <label>Capability</label>
+      <select id="toolSelect"><option value="">Select a tool...</option></select>
+      <label>Arguments (key=value, comma-separated)</label>
+      <textarea id="toolArgs" placeholder="expression=2+2&#10;or&#10;path=/path/to/file"></textarea>
+      <button onclick="executeTool()">Execute</button>
+      <div id="toolResult" style="display:none" class="tool-result"></div>
+    </div>
+    <div class="panel-header" style="border-top:1px solid var(--border)">
+      <span>Audit Trail</span>
+      <button onclick="clearAudit()" style="background:none;border:1px solid var(--border);color:var(--text2);border-radius:4px;padding:2px 8px;font-size:11px;cursor:pointer">Clear</button>
+    </div>
+    <div class="panel-body" id="auditList">
+      <div class="empty"><div class="icon">&#128269;</div>No events yet</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = '';
+let capabilities = [];
+let auditEvents = [];
+
+// --- Health check ---
+async function checkHealth() {
+  try {
+    const r = await fetch(`${API}/health`);
+    const d = await r.json();
+    document.getElementById('statusDot').style.background = d.success ? 'var(--green)' : 'var(--red)';
+    document.getElementById('statusText').textContent = d.success ? 'Connected' : 'Error';
+  } catch(e) {
+    document.getElementById('statusDot').style.background = 'var(--red)';
+    document.getElementById('statusText').textContent = 'Offline';
+  }
+}
+
+// --- Load capabilities ---
+async function loadCapabilities() {
+  try {
+    const r = await fetch(`${API}/v1/capabilities`);
+    const d = await r.json();
+    if (d.success) {
+      capabilities = d.data;
+      renderCapabilities();
+      renderToolSelect();
+    }
+  } catch(e) {}
+}
+
+function renderCapabilities() {
+  const el = document.getElementById('capList');
+  document.getElementById('capCount').textContent = capabilities.length;
+  if (!capabilities.length) {
+    el.innerHTML = '<div class="empty"><div class="icon">&#9881;</div>No capabilities registered</div>';
+    return;
+  }
+  el.innerHTML = capabilities.map(c => {
+    const riskClass = {low:'badge-low',medium:'badge-medium',high:'badge-high',critical:'badge-critical'}[c.risk_level]||'badge-low';
+    const tags = (c.tags||[]).map(t=>`<span class="cap-tag">${t}</span>`).join('');
+    return `<div class="cap-card" onclick="selectCap('${c.name}')">
+      <div class="cap-name">${c.name} <span class="badge ${riskClass}">${c.risk_level}</span></div>
+      <div class="cap-desc">${c.description||''}</div>
+      <div class="cap-meta"><span>v${c.version||'1.0.0'}</span><span>${c.timeout_seconds||30}s</span>${tags}</div>
+    </div>`;
+  }).join('');
+}
+
+function selectCap(name) {
+  document.querySelectorAll('.cap-card').forEach(el => el.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  const cap = capabilities.find(c=>c.name===name);
+  if (cap) {
+    document.getElementById('toolSelect').value = name;
+    const params = Object.keys(cap.input_schema||{});
+    document.getElementById('toolArgs').placeholder = params.length ? params.map(p=>`${p}=`).join('\n') : 'key=value';
+  }
+}
+
+function renderToolSelect() {
+  const sel = document.getElementById('toolSelect');
+  sel.innerHTML = '<option value="">Select a tool...</option>' +
+    capabilities.map(c=>`<option value="${c.name}">${c.name}</option>`).join('');
+}
+
+// --- Chat ---
+async function sendChat() {
+  const input = document.getElementById('chatInput');
+  const msg = input.value.trim();
+  if (!msg) return;
+  input.value = '';
+  addMessage('user', msg);
+  document.getElementById('sendBtn').disabled = true;
+
+  try {
+    const r = await fetch(`${API}/v1/chat`, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        message: msg,
+        max_rounds: parseInt(document.getElementById('maxRounds').value) || 5
+      })
+    });
+    const d = await r.json();
+    if (d.success && d.data) {
+      const data = d.data;
+      // Show tool calls/results
+      for (let i = 0; i < (data.tool_calls||[]).length; i++) {
+        const tc = data.tool_calls[i];
+        const tr = (data.tool_results||[])[i];
+        addToolMessage(tc, tr);
+      }
+      // Show assistant response
+      if (data.text) addMessage('assistant', data.text);
+      // Update meta
+      document.getElementById('metaRounds').textContent = data.rounds || 0;
+      document.getElementById('metaTime').textContent = Math.round((data.elapsed_seconds||0)*1000) + 'ms';
+      document.getElementById('metaCalls').textContent = (data.tool_calls||[]).length;
+      // Audit events
+      if (data.audit_events) {
+        data.audit_events.forEach(e => addAuditEvent(e));
+      }
+    } else {
+      addMessage('system', `Error: ${d.error || 'Unknown error'}`);
+    }
+  } catch(e) {
+    addMessage('system', `Network error: ${e.message}`);
+  }
+  document.getElementById('sendBtn').disabled = false;
+  input.focus();
+}
+
+function addMessage(role, text) {
+  const el = document.getElementById('chatMessages');
+  const div = document.createElement('div');
+  div.className = `msg msg-${role}`;
+  div.textContent = text;
+  el.appendChild(div);
+  el.scrollTop = el.scrollHeight;
+}
+
+function addToolMessage(call, result) {
+  const el = document.getElementById('chatMessages');
+  const div = document.createElement('div');
+  div.className = 'msg msg-tool';
+  const status = result ? (result.success ? 'OK' : 'ERROR') : 'PENDING';
+  const output = result ? (result.success ? result.output : result.error) : '';
+  div.innerHTML = `<div class="tool-header">&lt;tool:${call.tool}&gt; ${status}</div>` +
+    `<div class="${result&&result.success?'tool-output':'tool-error'}">${escHtml(output||'')}</div>`;
+  el.appendChild(div);
+  el.scrollTop = el.scrollHeight;
+}
+
+function clearChat() {
+  document.getElementById('chatMessages').innerHTML = '<div class="msg msg-system">Chat cleared.</div>';
+  document.getElementById('metaRounds').textContent = '0';
+  document.getElementById('metaTime').textContent = '0ms';
+  document.getElementById('metaCalls').textContent = '0';
+}
+
+// --- Tool execute ---
+async function executeTool() {
+  const tool = document.getElementById('toolSelect').value;
+  if (!tool) return;
+  const argsStr = document.getElementById('toolArgs').value.trim();
+  const args = {};
+  if (argsStr) {
+    argsStr.split(',').forEach(p => {
+      const [k,...v] = p.split('=');
+      if (k) args[k.trim()] = v.join('=').trim();
+    });
+  }
+  const resultEl = document.getElementById('toolResult');
+  resultEl.style.display = 'block';
+  resultEl.className = 'tool-result';
+  resultEl.textContent = 'Executing...';
+
+  try {
+    const r = await fetch(`${API}/v1/tools/execute`, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ tool, arguments: args })
+    });
+    const d = await r.json();
+    if (d.success && d.data) {
+      resultEl.className = `tool-result ${d.data.success?'success':'error'}`;
+      resultEl.textContent = d.data.success ? d.data.output : `Error: ${d.data.error}`;
+      addAuditEvent({
+        action: 'tool_execute',
+        capability_id: tool,
+        status: d.data.success ? 'success' : 'error',
+        detail: d.data.success ? d.data.output : d.data.error,
+        timestamp: Date.now()/1000
+      });
+    } else {
+      resultEl.className = 'tool-result error';
+      resultEl.textContent = `Error: ${d.error}`;
+    }
+  } catch(e) {
+    resultEl.className = 'tool-result error';
+    resultEl.textContent = `Network error: ${e.message}`;
+  }
+}
+
+// --- Audit ---
+function addAuditEvent(e) {
+  auditEvents.unshift(e);
+  if (auditEvents.length > 100) auditEvents.pop();
+  renderAudit();
+}
+
+function renderAudit() {
+  const el = document.getElementById('auditList');
+  if (!auditEvents.length) {
+    el.innerHTML = '<div class="empty"><div class="icon">&#128269;</div>No events yet</div>';
+    return;
+  }
+  el.innerHTML = auditEvents.slice(0, 50).map(e => {
+    const status = e.status || 'pending';
+    const time = e.timestamp ? new Date(e.timestamp*1000).toLocaleTimeString() : '';
+    const elapsed = e.elapsed_ms ? `${Math.round(e.elapsed_ms)}ms` : '';
+    return `<div class="audit-entry">
+      <div><span class="ae-action">${e.action||''}</span><span class="ae-status ae-status-${status}">${status}</span></div>
+      ${e.capability_id?`<div style="color:var(--text2);margin-top:2px">Tool: ${e.capability_id}</div>`:''}
+      ${e.detail?`<div class="ae-detail">${escHtml(e.detail.substring(0,200))}</div>`:''}
+      <div class="ae-meta"><span>${time}</span><span>${elapsed}</span><span>${e.request_id||''}</span></div>
+    </div>`;
+  }).join('');
+}
+
+function clearAudit() {
+  auditEvents = [];
+  renderAudit();
+}
+
+// --- Permission change ---
+function onPermChange() {
+  const level = document.getElementById('permLevel').value;
+  addMessage('system', `Permission level set to ${level}`);
+}
+
+// --- Helpers ---
+function escHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+// --- Init ---
+checkHealth();
+loadCapabilities();
+setInterval(checkHealth, 10000);
+setInterval(loadCapabilities, 15000);
+document.getElementById('chatInput').focus();
+</script>
+</body>
+</html>
