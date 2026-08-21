@@ -267,6 +267,11 @@ body::after{
   width:100%;background:#0e0e0e;border:1px solid var(--line2);color:var(--text);
   padding:8px 10px;font-size:13px;outline:none;margin-bottom:12px;font-family:var(--mono);
 }
+.tool-form .tf-input{
+  width:100%;background:#0e0e0e;border:1px solid var(--line2);color:var(--text);
+  padding:8px 10px;font-size:13px;outline:none;margin-bottom:12px;font-family:var(--mono);
+}
+.tool-form .tf-input:focus{border-color:var(--amber)}
 .tool-form textarea{min-height:84px;resize:vertical;font-size:12px;line-height:1.6}
 .tool-form select:focus,.tool-form textarea:focus{border-color:var(--amber)}
 .tool-result{
@@ -396,9 +401,9 @@ body::after{
     <div class="panel-header"><span><span class="ph-accent">&#9670;</span> Manual Override</span></div>
     <div class="tool-form">
       <label>Capability Node</label>
-      <select id="toolSelect"><option value="">-- SELECT NODE --</option></select>
-      <label>Arguments // key=value, comma-separated</label>
-      <textarea id="toolArgs" placeholder="expression=2+2&#10;or&#10;path=/target/file"></textarea>
+      <select id="toolSelect" onchange="renderToolFields(this.value)"><option value="">-- SELECT NODE --</option></select>
+      <div id="toolFields"></div>
+      <textarea id="toolArgs" style="display:none" placeholder="key=value, comma-separated"></textarea>
       <button class="trigger-btn volt" style="width:100%" onclick="executeTool()">Execute</button>
       <div id="toolResult" style="display:none" class="tool-result"></div>
     </div>
@@ -663,9 +668,32 @@ function selectCap(name, cardEl) {
   const cap = capabilities.find(c=>c.name===name);
   if (cap) {
     document.getElementById('toolSelect').value = name;
-    const params = Object.keys(cap.input_schema||{});
-    document.getElementById('toolArgs').placeholder = params.length ? params.map(p=>`${p}=`).join('\n') : 'key=value';
+    renderToolFields(name);
   }
+}
+
+// generate labeled input fields from the capability's parameter schema,
+// so users never have to guess key=value syntax
+function renderToolFields(name) {
+  const wrap = document.getElementById('toolFields');
+  const ta = document.getElementById('toolArgs');
+  const cap = capabilities.find(c=>c.name===name);
+  const schema = (cap && cap.input_schema) || {};
+  const params = Object.keys(schema);
+  if (!params.length) {
+    wrap.innerHTML = '';
+    wrap.style.display = 'none';
+    ta.style.display = 'block';
+    return;
+  }
+  ta.style.display = 'none';
+  wrap.style.display = 'block';
+  wrap.innerHTML = params.map(p => {
+    const info = schema[p] || {};
+    const desc = typeof info === 'string' ? info : (info.description || '');
+    return `<label>${escHtml(p)}${desc ? ' // ' + escHtml(desc) : ''}</label>` +
+      `<input class="tf-input" data-param="${escHtml(p)}" placeholder="${escHtml(desc || p)}">`;
+  }).join('');
 }
 
 function renderToolSelect() {
@@ -783,13 +811,21 @@ function clearChat() {
 async function executeTool() {
   const tool = document.getElementById('toolSelect').value;
   if (!tool) return;
-  const argsStr = document.getElementById('toolArgs').value.trim();
   const args = {};
-  if (argsStr) {
-    argsStr.split(',').forEach(p => {
-      const [k,...v] = p.split('=');
-      if (k) args[k.trim()] = v.join('=').trim();
+  const fields = document.querySelectorAll('#toolFields .tf-input');
+  if (fields.length) {
+    fields.forEach(f => {
+      const v = f.value.trim();
+      if (v) args[f.dataset.param] = v;
     });
+  } else {
+    const argsStr = document.getElementById('toolArgs').value.trim();
+    if (argsStr) {
+      argsStr.split(',').forEach(p => {
+        const [k,...v] = p.split('=');
+        if (k && k.trim()) args[k.trim()] = v.join('=').trim();
+      });
+    }
   }
   const resultEl = document.getElementById('toolResult');
   resultEl.style.display = 'block';
