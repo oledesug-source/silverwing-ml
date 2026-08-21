@@ -167,11 +167,11 @@ def setup_platform(force_mock: bool = False):
       - Layer 4 PlatformDatabase (SQLite persistence)
       - Layer 4 ModelProvider (lazy-loaded foundation.Generator)
     """
-    from sw_platform.capabilities.schema import CapabilitySchema
-    from sw_platform.permissions.policy import PermissionLevel
     from silverwing_platform.approvals import ApprovalManager
     from silverwing_platform.database import PlatformDatabase
     from silverwing_platform.policies import PolicyEngine
+    from sw_platform.capabilities.schema import CapabilitySchema
+    from sw_platform.permissions.policy import PermissionLevel
 
     registry = CapabilityRegistry()
 

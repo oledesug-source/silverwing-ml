@@ -184,7 +184,6 @@ class Orchestrator:
         if self._database is not None:
             try:
                 from silverwing_platform.database import (
-                    ConversationRecord,
                     SessionRecord,
                 )
                 self._database.create_session(
@@ -317,7 +316,7 @@ class Orchestrator:
         try:
             from silverwing_platform.models import ModelProvider
             if isinstance(self._generator, ModelProvider):
-                from silverwing_platform.models import InferenceRequest, GenerationConfig
+                from silverwing_platform.models import GenerationConfig, InferenceRequest
                 req = InferenceRequest(
                     prompt=prompt,
                     config=GenerationConfig(
