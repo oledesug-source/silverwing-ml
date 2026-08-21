@@ -13,8 +13,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 
-from foundation.inference import Generator, GenerationResult
-
+from foundation.inference import Generator
 
 SOLVE_TEMPLATE = (
     "Problem: {problem}\n"

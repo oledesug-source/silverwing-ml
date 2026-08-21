@@ -5,10 +5,12 @@ Raw sources -> ingestion -> normalization -> quality/language/domain filtering
 -> sharded dataset, with full provenance recorded per document.
 """
 
-from .schema import DocumentRecord, Provenance, Split, SplitOptions
-from .pipeline import CorpusPipeline, PipelineReport
-from .verify import VerificationResult, verify_dataset
 from .config import build_pipeline_from_config, load_corpus_config, pipeline_config_digest
+from .filtering import PerplexityFilter, QualityFilter
+from .ingestion import SourceConfig
+from .pipeline import CorpusPipeline, PipelineReport
+from .schema import DocumentRecord, Provenance, Split, SplitOptions
+from .verify import VerificationResult, verify_dataset
 
 __all__ = [
     "DocumentRecord",
@@ -22,4 +24,7 @@ __all__ = [
     "load_corpus_config",
     "build_pipeline_from_config",
     "pipeline_config_digest",
+    "SourceConfig",
+    "QualityFilter",
+    "PerplexityFilter",
 ]

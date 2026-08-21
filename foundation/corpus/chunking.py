@@ -2,8 +2,8 @@
 
 Chunks are produced per-document with a hard token budget and optional overlap,
 and inherit the parent's provenance. Token counts use a lightweight heuristic
-(words for latin scripts, characters / 1.5 for CJK) until the real tokenizer
-(M05) is wired in.
+(~1.3 tokens per word for Latin scripts, characters / 2 for CJK) until the
+real tokenizer (M05) is wired in.
 """
 
 from __future__ import annotations
@@ -21,14 +21,21 @@ _CJK_RANGES = (
 )
 
 
-def _is_cjk(char: str) -> bool:
-    return any(lo <= char <= hi for lo, hi in _CJK_RANGES)
+def _has_cjk(text: str) -> bool:
+    for ch in text:
+        for lo, hi in _CJK_RANGES:
+            if lo <= ch <= hi:
+                return True
+    return False
 
 
 def estimate_tokens(text: str) -> int:
-    cjk_count = sum(1 for c in text if _is_cjk(c))
-    non_cjk = len(text) - cjk_count
-    return cjk_count // 2 + non_cjk // 4
+    """Fast token estimate: word count * 1.3 for Latin, len/2 for CJK."""
+    if not text:
+        return 0
+    if _has_cjk(text):
+        return len(text) // 2
+    return max(1, int(len(text.split()) * 1.3))
 
 
 def _split_into_sentences(text: str) -> list[str]:
@@ -42,14 +49,27 @@ def _split_into_sentences(text: str) -> list[str]:
 
 
 def _word_budget_pieces(text: str, max_tokens: int) -> list[str]:
-    """Split text into pieces each within max_tokens by word budget."""
+    """Split text into pieces each within max_tokens by word budget.
+
+    Uses incremental word-count estimation to avoid O(n²) string joins.
+    """
     words = text.split()
-    pieces, group = [], []
+    if not words:
+        return []
+    pieces: list[str] = []
+    group: list[str] = []
+    group_words = 0
     for word in words:
-        candidate = estimate_tokens(" ".join(group + [word]))
-        if group and candidate > max_tokens:
+        group_words += 1
+        # Incremental estimate: (total_chars + spaces) / ~3.08 ≈ words * 1.3
+        # We use word count directly since we're in Latin-dominant mode.
+        est = int(group_words * 1.3)
+        if group and est > max_tokens:
+            # Emit current group minus this word
+            group_words -= 1
             pieces.append(" ".join(group))
             group = []
+            est = 0
         group.append(word)
     if group:
         pieces.append(" ".join(group))

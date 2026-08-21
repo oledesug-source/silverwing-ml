@@ -7,9 +7,9 @@ calculator, code execution, web search, file operations, etc.
 from .protocol import (
     Tool,
     ToolCall,
-    ToolResult,
-    ToolRegistry,
     ToolExecutor,
+    ToolRegistry,
+    ToolResult,
 )
 
 __all__ = ["Tool", "ToolCall", "ToolExecutor", "ToolRegistry", "ToolResult"]

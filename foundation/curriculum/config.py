@@ -67,7 +67,7 @@ class CurriculumConfig:
         return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
     @classmethod
-    def from_yaml(cls, path: str | Path) -> "CurriculumConfig":
+    def from_yaml(cls, path: str | Path) -> CurriculumConfig:
         import yaml
 
         raw = yaml.safe_load(Path(path).read_text(encoding="utf-8"))

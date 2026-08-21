@@ -10,7 +10,6 @@ from __future__ import annotations
 import json
 import os
 from pathlib import Path
-from typing import Optional
 
 import yaml
 
@@ -45,26 +44,51 @@ def source_configs_from_env(config: dict) -> list[SourceConfig]:
     raw_sources = config.get("sources") or []
     sources = []
     for i, source in enumerate(raw_sources):
-        path = os.environ.get(f"CORPUS_SOURCE_{i}", source.get("path"))
-        if not path:
-            raise ValueError(f"Source {i} ({source.get('source_id')}) has no path; set CORPUS_SOURCE_{i}")
-        sources.append(
-            SourceConfig(
-                source_id=source["source_id"],
-                path=str(path),
-                source_type=source.get("source_type", "other"),
-                domain=source.get("domain", "unknown"),
-                language=source.get("language", "unknown"),
-                kind=source.get("kind", "text"),
+        kind = source.get("kind", "text")
+
+        if kind == "huggingface":
+            hf_dataset = source.get("hf_dataset", "")
+            if not hf_dataset:
+                raise ValueError(f"Source {i} ({source.get('source_id')}) has no hf_dataset")
+            sources.append(
+                SourceConfig(
+                    source_id=source["source_id"],
+                    path="",
+                    source_type=source.get("source_type", "web"),
+                    domain=source.get("domain", "web"),
+                    language=source.get("language", "en"),
+                    kind="huggingface",
+                    hf_dataset=hf_dataset,
+                    hf_split=source.get("hf_split", "train"),
+                    hf_text_column=source.get("hf_text_column", "text"),
+                    hf_name_column=source.get("hf_name_column", ""),
+                    hf_subset=source.get("hf_subset", ""),
+                    hf_streaming=source.get("hf_streaming", True),
+                    hf_max_samples=source.get("hf_max_samples", 0),
+                    hf_seed=source.get("hf_seed", 42),
+                )
             )
-        )
+        else:
+            path = os.environ.get(f"CORPUS_SOURCE_{i}", source.get("path"))
+            if not path:
+                raise ValueError(f"Source {i} ({source.get('source_id')}) has no path; set CORPUS_SOURCE_{i}")
+            sources.append(
+                SourceConfig(
+                    source_id=source["source_id"],
+                    path=str(path),
+                    source_type=source.get("source_type", "other"),
+                    domain=source.get("domain", "unknown"),
+                    language=source.get("language", "unknown"),
+                    kind=kind,
+                )
+            )
     return sources
 
 
 def build_pipeline_from_config(
     config: dict,
-    sources: Optional[list[SourceConfig]] = None,
-    output_dir: Optional[str] = None,
+    sources: list[SourceConfig] | None = None,
+    output_dir: str | None = None,
 ) -> CorpusPipeline:
     chunk_cfg = config.get("chunking", {})
     split_cfg = config.get("splits", {})

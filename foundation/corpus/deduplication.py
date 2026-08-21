@@ -3,15 +3,22 @@
 Exact duplicates are removed by content hash. Near-duplicates are found with a
 dependency-free MinHash (random-hash ensemble) plus LSH banding. All hashing is
 seeded so results are reproducible.
+
+Performance note: MinHash complexity is O(num_hashes * num_ngrams) per document
+and LSH lookups are O(bands * candidates). For large corpora (>100K docs)
+reduce num_hashes and bands to trade slight accuracy for major speed gains.
 """
 
 from __future__ import annotations
 
 import hashlib
+import logging
 import random
 from dataclasses import dataclass, field
 
 from .schema import DocumentRecord
+
+logger = logging.getLogger(__name__)
 
 _PRIME = 2**61 - 1
 
@@ -81,7 +88,7 @@ class LSHBands:
 @dataclass
 class Deduplicator:
     seed: int = 42
-    num_hashes: int = 128
+    num_hashes: int = 64
     bands: int = 16
     similarity_threshold: float = 0.85
 
@@ -90,6 +97,7 @@ class Deduplicator:
         self._lsh = LSHBands(self._minhash, bands=self.bands)
         self._exact: set[str] = set()
         self._lsh_sigs: dict[str, list[int]] = {}
+        self._count = 0
     def _keep(self, record: DocumentRecord) -> bool:
         if record.content_hash in self._exact:
             return False
@@ -109,4 +117,7 @@ class Deduplicator:
                 kept.append(record)
             else:
                 dropped += 1
+            self._count += 1
+            if self._count % 5000 == 0:
+                logger.info("  dedup progress: %d processed, %d kept, %d dropped", self._count, len(kept), dropped)
         return kept, dropped

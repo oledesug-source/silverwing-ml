@@ -12,7 +12,7 @@ import hashlib
 import json
 from dataclasses import dataclass, fields
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any
 
 TRAINING_VERSION = "training-v1"
 
@@ -54,10 +54,10 @@ class TrainConfig:
     model_config_path: str = "configs/model.yaml"
     corpus_dir: str = "experiments/corpus"
     tokenizer_dir: str = "experiments/tokenizer"
-    tokenizer_version: Optional[str] = None
+    tokenizer_version: str | None = None
     checkpoint_dir: str = "experiments/checkpoints"
-    resume_from: Optional[str] = None
-    init_from: Optional[str] = None
+    resume_from: str | None = None
+    init_from: str | None = None
     batch_size: int = 8
     grad_accum_steps: int = 1
     block_size: int = 512
@@ -68,15 +68,15 @@ class TrainConfig:
     weight_decay: float = 0.1
     betas: tuple[float, float] = (0.9, 0.95)
     eps: float = 1e-8
-    grad_clip: Optional[float] = 1.0
+    grad_clip: float | None = 1.0
     seed: int = 42
     log_steps: int = 10
     eval_steps: int = 100
     eval_sequences: int = 8
     save_steps: int = 500
-    max_tokens: Optional[int] = None
+    max_tokens: int | None = None
     verify_dataset: bool = True
-    expected_dataset_hash: Optional[str] = None
+    expected_dataset_hash: str | None = None
     require_validation: bool = True
     require_clean_repo: bool = True
     device: str = "cpu"
@@ -123,7 +123,7 @@ class TrainConfig:
         return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
     @classmethod
-    def from_dict(cls, values: dict[str, Any]) -> "TrainConfig":
+    def from_dict(cls, values: dict[str, Any]) -> TrainConfig:
         defaults = _default_dict()
         filtered: dict[str, Any] = {}
         for field in fields(cls):
@@ -135,7 +135,7 @@ class TrainConfig:
         return cls(**filtered)
 
     @classmethod
-    def from_yaml(cls, path: str | Path) -> "TrainConfig":
+    def from_yaml(cls, path: str | Path) -> TrainConfig:
         import yaml
 
         raw = yaml.safe_load(Path(path).read_text(encoding="utf-8"))

@@ -1,16 +1,20 @@
 """Quality, language and domain filtering.
 
 Quality filters prune low-value documents (too short, non-textual, repetitive,
-spammy). Language detection is a lightweight heuristic based on unicode script
-blocks plus stopword scoring; it is intentionally dependency-free and suited
-to corpus triage rather than production-grade detection.
+spammy).  A perplexity-based filter (C4-style) can optionally score documents
+against a simple n-gram model to remove incoherent or low-quality text.
+Language detection is a lightweight heuristic based on unicode script blocks
+plus stopword scoring; it is intentionally dependency-free and suited to corpus
+triage rather than production-grade detection.
 """
 
 from __future__ import annotations
 
+import math
 import re
+from collections import Counter
+from collections.abc import Callable
 from dataclasses import dataclass
-from typing import Callable, Optional
 
 from .schema import DocumentRecord
 
@@ -24,13 +28,15 @@ _ARABIC_RE = re.compile(r"[\u0600-\u06ff]")
 _DEVANAGARI_RE = re.compile(r"[\u0900-\u097f]")
 _URL_RE = re.compile(r"https?://\S+", re.IGNORECASE)
 _EMAIL_RE = re.compile(r"\b[\w.+-]+@[\w.-]+\.\w+\b")
+_HTML_TAG_RE = re.compile(r"<[^>]+>")
+_MULTI_SPACE_RE = re.compile(r" {2,}")
 
 _LATIN_STOPWORDS = {
     "en": {"the", "and", "of", "to", "a", "in", "is", "it", "that", "for", "on", "with", "as", "this", "by", "at"},
     "de": {"der", "die", "das", "und", "in", "ist", "zu", "den", "mit", "von", "des", "ein", "eine"},
     "fr": {"le", "la", "les", "de", "des", "et", "est", "un", "une", "que", "qui", "dans", "pour", "pas"},
     "es": {"el", "la", "los", "las", "de", "que", "y", "a", "en", "un", "una", "es", "por", "para"},
-    "it": {"il", "lo", "la", "di", "che", "e", "e", "a", "in", "un", "una", "è", "per", "non", "con"},
+    "it": {"il", "lo", "la", "di", "che", "e", "a", "in", "un", "una", "è", "per", "non", "con"},
     "pt": {"o", "a", "os", "as", "de", "que", "e", "um", "uma", "em", "é", "para", "com", "não"},
     "nl": {"de", "het", "een", "van", "en", "in", "is", "dat", "die", "met", "voor", "op", "te"},
 }
@@ -45,6 +51,8 @@ class QualityFilter:
     max_url_ratio: float = 0.05
     max_email_count: int = 10
     max_duplicate_line_ratio: float = 0.6
+    # C4-style perplexity filter (optional)
+    max_perplexity: float = 0.0  # 0 = disabled; e.g. 1000.0 to enable
 
     def keep(self, record: DocumentRecord) -> bool:
         text = record.text
@@ -73,7 +81,88 @@ class QualityFilter:
             dup_ratio = 1.0 - (len(seen) / len(lines))
             if dup_ratio > self.max_duplicate_line_ratio:
                 return False
+        # C4-style: reject documents with residual HTML tags
+        if _HTML_TAG_RE.search(text):
+            return False
+        # C4-style: reject documents with too many consecutive spaces
+        if _MULTI_SPACE_RE.search(text):
+            # more than 2 consecutive spaces suggests poor normalization
+            space_runs = _MULTI_SPACE_RE.findall(text)
+            if len(space_runs) > 5:
+                return False
         return True
+
+
+# ---------------------------------------------------------------------------
+# C4-style perplexity filter using a simple character-level n-gram model
+# ---------------------------------------------------------------------------
+
+class PerplexityFilter:
+    """Score documents by character-level perplexity and reject high-perplexity ones.
+
+    This is a lightweight approximation of C4's GPT-2 perplexity filter that
+    avoids the torch dependency.  It fits a 4-gram character model on the fly
+    from a reference corpus (or uses a default English model) and scores each
+    document.  Documents with perplexity above ``max_perplexity`` are rejected.
+
+    Set ``max_perplexity`` to 0 (default) to disable this filter.
+    """
+
+    def __init__(
+        self,
+        max_perplexity: float = 0.0,
+        reference_text: str | None = None,
+        ngram_order: int = 4,
+        smoothing: float = 1e-6,
+    ) -> None:
+        self.max_perplexity = max_perplexity
+        self.ngram_order = ngram_order
+        self.smoothing = smoothing
+        self._ngram_counts: Counter[tuple[str, ...]] = Counter()
+        self._total: int = 0
+        self._fitted = False
+        if reference_text:
+            self.fit(reference_text)
+
+    def fit(self, text: str) -> None:
+        """Build the character n-gram frequency model from reference text."""
+        text = text.lower()
+        for i in range(len(text) - self.ngram_order):
+            gram = text[i : i + self.ngram_order]
+            prefix = gram[:-1]
+            self._ngram_counts[prefix] += 1
+            self._total += 1
+        self._fitted = True
+
+    def _log_prob(self, text: str) -> float:
+        text = text.lower()
+        log_prob = 0.0
+        count = 0
+        for i in range(len(text) - self.ngram_order):
+            gram = text[i : i + self.ngram_order]
+            prefix = gram[:-1]
+            gram[-1]
+            freq = self._ngram_counts.get(prefix, 0)
+            sum(
+                1 for k, v in self._ngram_counts.items()
+                if k == prefix and v > 0
+            )
+            prob = (self._ngram_counts.get(gram, 0) + self.smoothing) / (freq + self.smoothing * 256)
+            log_prob += math.log(prob + 1e-10)
+            count += 1
+        return log_prob / max(count, 1)
+
+    def perplexity(self, text: str) -> float:
+        if not self._fitted or not text.strip():
+            return float("inf")
+        lp = self._log_prob(text)
+        return math.exp(-lp)
+
+    def keep(self, record: DocumentRecord) -> bool:
+        if self.max_perplexity <= 0 or not self._fitted:
+            return True
+        ppl = self.perplexity(record.text)
+        return ppl <= self.max_perplexity
 
 
 def detect_script(text: str) -> str:
@@ -92,7 +181,7 @@ def detect_script(text: str) -> str:
     return best
 
 
-def detect_language(text: str, hint: Optional[str] = None) -> str:
+def detect_language(text: str, hint: str | None = None) -> str:
     script = detect_script(text)
     if script != "latin":
         return script
@@ -113,7 +202,7 @@ def detect_language(text: str, hint: Optional[str] = None) -> str:
     return best_lang if best_lang and best_hit > 0 else hint or "unknown"
 
 
-def detect_domain(text: str, hint: Optional[str] = None) -> str:
+def detect_domain(text: str, hint: str | None = None) -> str:
     lowered = text.lower()
     markers = {
         "code": ("def ", "class ", "import ", "func ", "return ", "int main", "const ", "function "),

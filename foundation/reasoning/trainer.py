@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import json
 import math
-import platform
+import sys
 import time
 from collections.abc import Callable
 from datetime import UTC, datetime
@@ -234,7 +234,7 @@ def train_reasoning(cfg: ReasoningConfig, log: Callable[[str], None] = print) ->
         else 0.0,
         "started_at": started_at,
         "finished_at": finished_at,
-        "python": platform.python_version(),
+        "python": f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}",
         "torch": torch.__version__,
         "checkpoint_dir": str(Path(cfg.checkpoint_dir)),
     }

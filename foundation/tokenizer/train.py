@@ -9,9 +9,9 @@ from __future__ import annotations
 
 import json
 import subprocess
-from datetime import datetime, timezone
+from collections.abc import Iterable
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Iterable, Optional
 
 from .bpe import train_bpe
 from .tokenizer import TokenizerV2
@@ -47,7 +47,7 @@ def iter_corpus_texts(
             yield text
 
 
-def _git_commit() -> Optional[str]:
+def _git_commit() -> str | None:
     try:
         out = subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text=True, timeout=10)
         return out.stdout.strip() or None
@@ -88,7 +88,7 @@ def train_tokenizer_from_corpus(
         "corpus_stats": stats,
         "tokenizer_hash": tokenizer.digest(),
         "git_commit": _git_commit(),
-        "trained_at": datetime.now(timezone.utc).isoformat(),
+        "trained_at": datetime.now(UTC).isoformat(),
     }
     report_path = Path(output_dir) / "tokenizer_training_report.json"
     report_path.parent.mkdir(parents=True, exist_ok=True)

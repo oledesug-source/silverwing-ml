@@ -9,11 +9,11 @@ from __future__ import annotations
 
 import json
 import math
-import platform
+import sys
 import time
-from datetime import datetime, timezone
+from collections.abc import Callable
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Callable
 
 import torch
 import torch.nn.functional as F
@@ -88,8 +88,8 @@ def train_sft(cfg: SftConfig, log: Callable[[str], None] = print) -> dict:
 
     optimizer, opt_report = build_optimizer(model, cfg.lr, cfg.weight_decay, cfg.betas, cfg.eps)
 
-    run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    started_at = datetime.now(timezone.utc).isoformat()
+    run_id = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
+    started_at = datetime.now(UTC).isoformat()
     start_time = time.perf_counter()
 
     batch_iter = data_train.shuffled_batches(cfg.batch_size, cfg.seed)
@@ -159,7 +159,7 @@ def train_sft(cfg: SftConfig, log: Callable[[str], None] = print) -> dict:
     final_eval = _evaluate(model, data_eval, cfg.eval_examples, device)
     final_path = persist(cfg.max_steps, eval_loss=final_eval[0], filename=FINAL_FILENAME)
 
-    finished_at = datetime.now(timezone.utc).isoformat()
+    finished_at = datetime.now(UTC).isoformat()
     report = {
         "run_id": run_id,
         "stage": "sft",
@@ -194,7 +194,7 @@ def train_sft(cfg: SftConfig, log: Callable[[str], None] = print) -> dict:
         "throughput_tokens_per_sec": round(tokens_per_step * cfg.max_steps / elapsed, 1) if elapsed > 0 else 0.0,
         "started_at": started_at,
         "finished_at": finished_at,
-        "python": platform.python_version(),
+        "python": f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}",
         "torch": torch.__version__,
         "checkpoint_dir": str(Path(cfg.checkpoint_dir)),
     }

@@ -11,9 +11,9 @@ from __future__ import annotations
 
 import math
 import random
+from collections.abc import Callable, Mapping
 from dataclasses import dataclass
 from fractions import Fraction
-from typing import Callable, Mapping
 
 
 @dataclass(frozen=True)
@@ -274,7 +274,7 @@ def _gen_probability(rng: random.Random) -> Problem:
     if kind == 0:
         k = rng.randint(1, 6)
         q = f"A fair six-sided die is rolled once.  What is the probability of rolling exactly {k}?"
-        return Problem(q, "1/6", f"There is 1 favourable outcome out of 6 equally likely outcomes, so P = 1/6.")
+        return Problem(q, "1/6", "There is 1 favourable outcome out of 6 equally likely outcomes, so P = 1/6.")
     if kind == 1:
         k = rng.randint(1, 3)
         q = f"A fair coin is flipped {k} times.  What is the probability of {k} heads in a row?"
@@ -347,15 +347,15 @@ def _gen_trigonometry(rng: random.Random) -> Problem:
         q = f"Find the exact value of {func}({angle}°)."
         return Problem(q, _TRIG_VALUES[angle][func], f"The standard exact value is {func}({angle}°) = {_TRIG_VALUES[angle][func]}.")
     angle = rng.choice(["30", "60"])
-    k = int(angle) // 30
+    int(angle) // 30
     # solve sin(x) = 1/2 or cos(x) = 1/2 within [0°, 360°]
     if angle == "30":
         sols = "x = 30° or x = 150°"
-        steps = f"sin(x) = 1/2 in [0°, 360°].  sin is positive in quadrants I and II: x = 30° and x = 180° - 30° = 150°."
+        steps = "sin(x) = 1/2 in [0°, 360°].  sin is positive in quadrants I and II: x = 30° and x = 180° - 30° = 150°."
     else:
         sols = "x = 60° or x = 300°"
-        steps = f"cos(x) = 1/2 in [0°, 360°].  cos is positive in quadrants I and IV: x = 60° and x = 360° - 60° = 300°."
-    q = f"Solve sin(x) = 1/2 for x in [0°, 360°]." if angle == "30" else f"Solve cos(x) = 1/2 for x in [0°, 360°]."
+        steps = "cos(x) = 1/2 in [0°, 360°].  cos is positive in quadrants I and IV: x = 60° and x = 360° - 60° = 300°."
+    q = "Solve sin(x) = 1/2 for x in [0°, 360°]." if angle == "30" else "Solve cos(x) = 1/2 for x in [0°, 360°]."
     return Problem(q, sols, steps)
 
 

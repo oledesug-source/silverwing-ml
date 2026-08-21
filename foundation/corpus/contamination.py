@@ -11,9 +11,9 @@ from __future__ import annotations
 
 import json
 import re
+from collections.abc import Iterable
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Iterable
 
 from .schema import DocumentRecord
 
@@ -66,7 +66,7 @@ class ContaminationDetector:
     def per_benchmark_ratios(self, text: str) -> dict[str, float]:
         grams = ngrams(normalize_tokens(text), self.n)
         if not grams:
-            return {name: 0.0 for name in self._benchmarks}
+            return dict.fromkeys(self._benchmarks, 0.0)
         sampled = grams[: self.max_document_ngrams]
         return {
             name: sum(1 for gram in sampled if gram in grams) / len(sampled)

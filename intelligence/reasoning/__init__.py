@@ -6,10 +6,10 @@ causal reasoning, and counterfactual analysis.
 
 from .engine import (
     ReasoningChain,
+    ReasoningEngine,
     ReasoningMode,
     ReasoningResult,
     ReasoningStep,
-    ReasoningEngine,
 )
 
 __all__ = [

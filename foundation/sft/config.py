@@ -12,7 +12,7 @@ import hashlib
 import json
 from dataclasses import dataclass, fields
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any
 
 SFT_VERSION = "sft-v1"
 
@@ -55,7 +55,7 @@ class SftConfig:
     weight_decay: float = 0.1
     betas: tuple[float, float] = (0.9, 0.95)
     eps: float = 1e-8
-    grad_clip: Optional[float] = 1.0
+    grad_clip: float | None = 1.0
     seed: int = 42
     log_steps: int = 10
     eval_steps: int = 50
@@ -97,7 +97,7 @@ class SftConfig:
         return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
     @classmethod
-    def from_yaml(cls, path: str | Path) -> "SftConfig":
+    def from_yaml(cls, path: str | Path) -> SftConfig:
         import yaml
 
         raw = yaml.safe_load(Path(path).read_text(encoding="utf-8"))
@@ -118,7 +118,7 @@ class SftDatasetConfig:
     version: str = "sft-dataset-v1"
     per_topic: int = 50
     seed: int = 42
-    topics: Optional[list[str]] = None
+    topics: list[str] | None = None
     output_path: str = "experiments/sft/sft-v1.jsonl"
 
     def to_dict(self) -> dict[str, Any]:
@@ -135,7 +135,7 @@ class SftDatasetConfig:
         return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
     @classmethod
-    def from_yaml(cls, path: str | Path) -> "SftDatasetConfig":
+    def from_yaml(cls, path: str | Path) -> SftDatasetConfig:
         import yaml
 
         raw = yaml.safe_load(Path(path).read_text(encoding="utf-8"))

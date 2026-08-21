@@ -5,8 +5,8 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Optional
 
 from .bpe import (
     MERGE_BASE,
@@ -94,7 +94,7 @@ class TokenizerV2:
         return output_dir
 
     @classmethod
-    def load(cls, input_dir: str | Path, version: Optional[str] = None) -> "TokenizerV2":
+    def load(cls, input_dir: str | Path, version: str | None = None) -> TokenizerV2:
         input_dir = Path(input_dir)
         config_path = input_dir / "config.json"
         if not config_path.exists():

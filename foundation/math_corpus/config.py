@@ -62,7 +62,7 @@ class MathCorpusConfig:
         return _sha256(asdict(self))
 
     @classmethod
-    def from_yaml(cls, path: str | Path | None = None) -> "MathCorpusConfig":
+    def from_yaml(cls, path: str | Path | None = None) -> MathCorpusConfig:
         config_path = Path(path) if path else DEFAULT_CONFIG_PATH
         if not config_path.exists():
             raise FileNotFoundError(f"Math corpus config not found: {config_path}")

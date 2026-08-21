@@ -15,7 +15,7 @@ def build_optimizer(
 ) -> tuple[torch.optim.Optimizer, dict]:
     decay: list[torch.nn.Parameter] = []
     no_decay: list[torch.nn.Parameter] = []
-    for name, param in model.named_parameters():
+    for _name, param in model.named_parameters():
         if not param.requires_grad:
             continue
         if param.ndim >= 2:

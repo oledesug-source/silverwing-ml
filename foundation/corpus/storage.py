@@ -8,9 +8,9 @@ digest so dataset releases are auditable and their integrity verifiable.
 from __future__ import annotations
 
 import json
-from datetime import datetime, timezone
+from collections.abc import Iterable
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Iterable
 
 from .hashing import dataset_root_digest, split_digest
 from .schema import DocumentRecord, Split
@@ -27,7 +27,7 @@ class ShardWriter:
         self.output_dir.mkdir(parents=True, exist_ok=True)
         manifest: dict = {
             "dataset_name": self.dataset_name,
-            "created_at": datetime.now(timezone.utc).isoformat(),
+            "created_at": datetime.now(UTC).isoformat(),
             "splits": {},
             "shards": [],
         }

@@ -9,20 +9,19 @@ from __future__ import annotations
 
 import hashlib
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
-from enum import Enum
-from typing import Optional
+from datetime import UTC, datetime
+from enum import StrEnum
 
 PROCESSING_VERSION = "corpus-v1"
 
 
-class Split(str, Enum):
+class Split(StrEnum):
     TRAIN = "train"
     VALIDATION = "validation"
     TEST = "test"
 
 
-class SourceType(str, Enum):
+class SourceType(StrEnum):
     BOOK = "book"
     ARTICLE = "article"
     WEB = "web"
@@ -54,8 +53,8 @@ class Provenance:
     source_type: str = SourceType.OTHER.value
     domain: str = "unknown"
     language: str = "unknown"
-    collection_timestamp: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
-    parent_document: Optional[str] = None
+    collection_timestamp: str = field(default_factory=lambda: datetime.now(UTC).isoformat())
+    parent_document: str | None = None
     processing_version: str = PROCESSING_VERSION
 
 
@@ -65,13 +64,13 @@ class DocumentRecord:
     text: str
     provenance: Provenance
     content_hash: str
-    split: Optional[str] = None
+    split: str | None = None
     token_count: int = 0
     quality_score: float = 1.0
     flags: dict = field(default_factory=dict)
 
     @classmethod
-    def build(cls, document_id: str, text: str, provenance: Provenance, normalized_text: Optional[str] = None) -> "DocumentRecord":
+    def build(cls, document_id: str, text: str, provenance: Provenance, normalized_text: str | None = None) -> DocumentRecord:
         payload = (normalized_text or text).strip()
         content_hash = hashlib.sha256(payload.encode("utf-8")).hexdigest()
         return cls(document_id=document_id, text=payload, provenance=provenance, content_hash=content_hash)
@@ -97,7 +96,7 @@ class DocumentRecord:
         }
 
     @classmethod
-    def from_dict(cls, data: dict) -> "DocumentRecord":
+    def from_dict(cls, data: dict) -> DocumentRecord:
         prov = data["provenance"]
         return cls(
             document_id=data["document_id"],

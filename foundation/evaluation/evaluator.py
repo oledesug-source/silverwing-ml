@@ -14,12 +14,13 @@ from __future__ import annotations
 
 import json
 import math
-import platform
+import sys
 import time
+from collections.abc import Callable
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 
 import torch
 import torch.nn.functional as F
@@ -215,7 +216,7 @@ class Evaluator:
             config=self._config,
             num_parameters=num_params,
             started_at=started_at,
-            python=platform.python_version(),
+            python=f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}",
             torch_version=torch.__version__,
         )
 

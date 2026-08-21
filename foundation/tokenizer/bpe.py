@@ -17,7 +17,7 @@ latin-1 strings (one JSON-safe character per byte) and converted back with
 from __future__ import annotations
 
 import heapq
-from typing import Iterable
+from collections.abc import Iterable
 
 SPECIAL_TOKENS = ("<|endoftext|>", "<|pad|>", "<|unk|>", "<|bos|>")
 NUM_SPECIALS = len(SPECIAL_TOKENS)

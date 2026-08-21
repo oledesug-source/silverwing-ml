@@ -9,11 +9,11 @@ from __future__ import annotations
 
 import json
 import math
-import platform
+import sys
 import time
-from datetime import datetime, timezone
+from collections.abc import Callable
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Callable
 
 import torch
 import torch.nn.functional as F
@@ -25,7 +25,7 @@ from ..training.checkpoint import load_checkpoint, save_checkpoint
 from ..training.optimizer import build_optimizer
 from ..training.repo import git_commit, require_clean_repo
 from ..training.scheduler import schedule_lr
-from .config import CurriculumConfig
+from .config import CurriculumConfig, StageConfig
 
 BEST_FILENAME = "best.pt"
 FINAL_FILENAME = "final.pt"
@@ -86,7 +86,6 @@ def _train_stage(
         raise ValueError(f"Stage '{stage.name}': eval split empty")
 
     optimizer, _ = build_optimizer(model, stage.lr, weight_decay, betas, eps)
-    tokens_per_step = model_cfg.block_size
     start_time = time.perf_counter()
     best_stage_eval = float("inf")
     best_path: Path | None = None
@@ -113,7 +112,7 @@ def _train_stage(
         train_loss = float(loss.item())
 
         if stage.log_steps and step % stage.log_steps == 0:
-            elapsed = time.perf_counter() - start_time
+            time.perf_counter() - start_time
             log(f"  [{stage.name}] step {step}/{stage.max_steps} lr {lr:.2e} loss {train_loss:.4f}")
 
         if stage.eval_steps and (step % stage.eval_steps == 0 or step == stage.max_steps):
@@ -168,7 +167,7 @@ def train_curriculum(
     tokenizer_hash = tokenizer.digest()
     commit_str = commit or "no-git"
 
-    started_at = datetime.now(timezone.utc).isoformat()
+    started_at = datetime.now(UTC).isoformat()
     start_time = time.perf_counter()
     global_step = 0
     best_eval = float("inf")
@@ -223,7 +222,7 @@ def train_curriculum(
     )
 
     report = {
-        "run_id": f"curriculum-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}",
+        "run_id": f"curriculum-{datetime.now(UTC).strftime('%Y%m%dT%H%M%SZ')}",
         "version": cfg.version,
         "config_digest": cfg.digest(),
         "git_commit": commit_str,
@@ -239,8 +238,8 @@ def train_curriculum(
         "device": cfg.device,
         "elapsed_seconds": round(elapsed, 3),
         "started_at": started_at,
-        "finished_at": datetime.now(timezone.utc).isoformat(),
-        "python": platform.python_version(),
+        "finished_at": datetime.now(UTC).isoformat(),
+        "python": f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}",
         "torch": torch.__version__,
     }
 

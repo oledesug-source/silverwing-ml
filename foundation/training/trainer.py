@@ -4,11 +4,11 @@ from __future__ import annotations
 
 import json
 import math
-import platform
+import sys as _stdlib_sys
 import time
-from datetime import datetime, timezone
+from collections.abc import Callable
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Callable
 
 import torch
 import torch.nn.functional as F
@@ -102,8 +102,42 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
 
     optimizer, opt_report = build_optimizer(model, cfg.lr, cfg.weight_decay, cfg.betas, cfg.eps)
 
-    run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    started_at = datetime.now(timezone.utc).isoformat()
+    # Initialize experiment trackers (MLflow local file backend + offline W&B).
+    # All trackers are optional: training proceeds without them when absent.
+    mlflow_tracker = None
+    wandb_run = None
+    try:
+        from foundation.ops.mlflow_tracker import MLflowTracker
+
+        mlflow_tracker = MLflowTracker(
+            experiment="silverwing-training", tracking_uri="experiments/mlruns"
+        )
+    except Exception:
+        mlflow_tracker = None
+
+    run_id = datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
+    try:
+        import wandb
+
+        wandb_run = wandb.init(
+            project="silverwing-training",
+            name=f"{model_cfg.model_name}-{run_id}",
+            config=cfg.to_dict(),
+            dir=str(Path("experiments/wandb").resolve()),
+            mode="offline",
+            anonymous="never",
+            force=False,
+        )
+        use_wandb = True
+    except ImportError:
+        use_wandb = False
+        wandb_run = None
+
+    if mlflow_tracker is not None:
+        _mlflow_run = mlflow_tracker.start_run(run_name=f"{model_cfg.model_name}-{run_id}", config=cfg.to_dict())
+        _mlflow_run.__enter__()
+
+    started_at = datetime.now(UTC).isoformat()
     start_time = time.perf_counter()
 
     start_step = 1
@@ -180,6 +214,23 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
                 f"step {step}/{cfg.max_steps} lr {lr:.2e} loss {train_loss:.4f} "
                 f"grad_norm {grad_norm_str} ({throughput:.0f} tok/s)"
             )
+            # Log to W&B
+            if use_wandb:
+                wandb.log({
+                    "step": step,
+                    "train_loss": train_loss,
+                    "lr": lr,
+                    "grad_norm": grad_norm,
+                    "throughput": throughput,
+                })
+            if mlflow_tracker is not None:
+                mlflow_tracker.log_metrics({
+                    "step": step,
+                    "train_loss": train_loss,
+                    "lr": lr,
+                    "grad_norm": grad_norm,
+                    "throughput": throughput,
+                }, step=step)
 
         if cfg.eval_steps and (step % cfg.eval_steps == 0 or step == cfg.max_steps):
             result = evaluate(model, tokenizer, data_val, cfg.eval_sequences, device)
@@ -190,6 +241,18 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
                     best_eval = eval_loss
                     best_path = persist(step, eval_loss=eval_loss, filename=BEST_FILENAME)
                     log(f"step {step} new best eval_loss {eval_loss:.4f} -> {str(best_path)}")
+                # Log eval to W&B
+                if use_wandb:
+                    wandb.log({
+                        "step": step,
+                        "eval_loss": eval_loss,
+                        "eval_perplexity": ppl,
+                    })
+                if mlflow_tracker is not None:
+                    mlflow_tracker.log_metrics({
+                        "eval_loss": eval_loss,
+                        "eval_perplexity": ppl,
+                    }, step=step)
 
         if cfg.save_steps and step % cfg.save_steps == 0:
             persist(step)
@@ -202,7 +265,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
         filename=FINAL_FILENAME,
     )
 
-    finished_at = datetime.now(timezone.utc).isoformat()
+    finished_at = datetime.now(UTC).isoformat()
     report = {
         "run_id": run_id,
         "model_name": model_cfg.model_name,
@@ -237,7 +300,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
         "throughput_tokens_per_sec": round(tokens_per_step * cfg.max_steps / elapsed, 1) if elapsed > 0 else 0.0,
         "started_at": started_at,
         "finished_at": finished_at,
-        "python": platform.python_version(),
+        "python": f"{_stdlib_sys.version_info.major}.{_stdlib_sys.version_info.minor}.{_stdlib_sys.version_info.micro}",
         "torch": torch.__version__,
         "checkpoint_dir": str(Path(cfg.checkpoint_dir)),
         "resumed_from": cfg.resume_from,
@@ -248,4 +311,25 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
     report_path = Path(cfg.checkpoint_dir) / "training_report.json"
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    
+     # Finish trackers
+    if use_wandb:
+        try:
+            wandb.run.summary["final_train_loss"] = train_loss
+            wandb.run.summary["final_eval_loss"] = final_result[0] if final_result else None
+            wandb.run.summary["best_eval_loss"] = best_eval
+            wandb.finish()
+        except Exception:
+            pass
+    if mlflow_tracker is not None:
+        try:
+            mlflow_tracker.log_metric("final_train_loss", train_loss)
+            mlflow_tracker.log_metric("final_eval_loss", final_result[0] if final_result else 0.0)
+            mlflow_tracker.log_metric("best_eval_loss", best_eval)
+            mlflow_tracker.log_artifact(report_path)
+            mlflow_tracker.end_run()
+            _mlflow_run.__exit__(None, None, None)
+        except Exception:
+            pass
+
     return report

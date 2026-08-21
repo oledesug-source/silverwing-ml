@@ -25,7 +25,7 @@ class ShuffledBatchStream:
     the exact next batch rather than merely restarting a seeded shuffle.
     """
 
-    def __init__(self, data: "PretrainingData", batch_size: int, seed: int) -> None:
+    def __init__(self, data: PretrainingData, batch_size: int, seed: int) -> None:
         if batch_size <= 0:
             raise ValueError("batch_size must be positive")
         self.data = data
@@ -34,7 +34,7 @@ class ShuffledBatchStream:
         self.indices: list[int] = []
         self.position = 0
 
-    def __iter__(self) -> "ShuffledBatchStream":
+    def __iter__(self) -> ShuffledBatchStream:
         return self
 
     def __next__(self) -> tuple[torch.Tensor, torch.Tensor]:

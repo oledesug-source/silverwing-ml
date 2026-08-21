@@ -4,9 +4,9 @@ Code generation, explanation, review, and transformation.
 """
 
 from .engineer import (
-    CodeTask,
-    CodeResult,
     CodeEngineer,
+    CodeResult,
+    CodeTask,
 )
 
 __all__ = ["CodeEngineer", "CodeResult", "CodeTask"]

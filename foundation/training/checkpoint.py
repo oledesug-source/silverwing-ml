@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
-from pathlib import Path
 import tempfile
+from datetime import UTC, datetime
+from pathlib import Path
 from typing import Any
 
 import torch
@@ -66,7 +66,7 @@ def save_checkpoint(
         "eval_loss": eval_loss,
         "model_state": model.state_dict(),
         "optimizer_state": optimizer.state_dict() if optimizer is not None else None,
-        "saved_at": datetime.now(timezone.utc).isoformat(),
+        "saved_at": datetime.now(UTC).isoformat(),
     }
     # A checkpoint is either fully visible or not visible at all; this avoids
     # a power interruption leaving a valid-looking, truncated checkpoint.
