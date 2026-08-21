@@ -401,7 +401,7 @@ body::after{
     <div class="panel-header"><span><span class="ph-accent">&#9670;</span> Manual Override</span></div>
     <div class="tool-form">
       <label>Capability Node</label>
-      <select id="toolSelect" onchange="renderToolFields(this.value)"><option value="">-- SELECT NODE --</option></select>
+      <select id="toolSelect" onchange="onToolSelectChange(this.value)"><option value="">-- SELECT NODE --</option></select>
       <div id="toolFields"></div>
       <textarea id="toolArgs" style="display:none" placeholder="key=value, comma-separated"></textarea>
       <button class="trigger-btn volt" style="width:100%" onclick="executeTool()">Execute</button>
@@ -421,6 +421,7 @@ body::after{
 const API = '';
 let capabilities = [];
 let auditEvents = [];
+let selectedCapName = '';
 
 // --- adaptive layer: usage telemetry (local, transparent) ---
 // Two signals reorder capability nodes, both surfaced in the UI
@@ -596,7 +597,7 @@ function renderCapabilities() {
     const tags = (c.tags||[]).map(t=>`<span class="cap-tag">${t}</span>`).join('');
     const freq = adaptEnabled && usageScore(c.name) >= 2 ? '<span class="cap-tag freq-tag">&#9733; FREQUENT</span>' : '';
     const next = adaptEnabled && c.name === nextCap ? '<span class="cap-tag next-tag">&#9654; NEXT</span>' : '';
-    return `<div class="cap-card risk-${c.risk_level||'low'}" data-name="${c.name}" onclick="selectCap('${c.name}', this)">
+    return `<div class="cap-card risk-${c.risk_level||'low'}${c.name===selectedCapName?' active':''}" data-name="${c.name}" onclick="selectCap('${c.name}', this)">
       <div class="cap-name">${c.name} <span class="badge badge-${c.risk_level||'low'}">${(c.risk_level||'low').toUpperCase()}</span></div>
       <div class="cap-desc">${c.description||''}</div>
       <div class="cap-meta"><span>v${c.version||'1.0.0'}</span><span>${c.timeout_seconds||30}s</span>${next}${freq}${tags}</div>
@@ -663,6 +664,7 @@ function quickLaunch(name) {
 }
 
 function selectCap(name, cardEl) {
+  selectedCapName = name;
   document.querySelectorAll('.cap-card').forEach(el => el.classList.remove('active'));
   if (cardEl) cardEl.classList.add('active');
   const cap = capabilities.find(c=>c.name===name);
@@ -700,6 +702,16 @@ function renderToolSelect() {
   const sel = document.getElementById('toolSelect');
   sel.innerHTML = '<option value="">-- SELECT NODE --</option>' +
     sortedByUsage(capabilities).map(c=>`<option value="${c.name}">${c.name}</option>`).join('');
+  // preserve the operator's selection across background re-renders
+  if (selectedCapName && capabilities.some(c=>c.name===selectedCapName)) {
+    sel.value = selectedCapName;
+  }
+}
+
+// dropdown change handler: remember selection, then rebuild parameter fields
+function onToolSelectChange(v) {
+  selectedCapName = v;
+  renderToolFields(v);
 }
 
 // --- chat ---
