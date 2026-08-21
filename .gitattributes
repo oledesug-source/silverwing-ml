@@ -1,0 +1,31 @@
+# Normalize line endings for all text files
+* text=auto
+
+# Python
+*.py text eol=lf
+
+# YAML
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Markdown
+*.md text eol=lf
+
+# JSON
+*.json text eol=lf
+
+# Jupyter
+*.ipynb text eol=lf
+
+# Binary files
+*.pt binary
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.svg text eol=lf
+
+# Git attributes
+.gitattributes export-ignore
+.gitignore export-ignore
+.github export-ignore

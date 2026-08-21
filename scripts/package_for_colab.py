@@ -109,7 +109,7 @@ def main() -> int:
         nb = ROOT / "colab_train.ipynb"
         if nb.exists():
             shutil.copy2(nb, tmp / "colab_train.ipynb")
-            print(f"  copied colab_train.ipynb")
+            print("  copied colab_train.ipynb")
 
         # Create zip
         shutil.make_archive(str(OUT.with_suffix("")), "zip", ROOT.parent, "Silverwing-ML")

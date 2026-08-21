@@ -40,14 +40,12 @@ def main() -> int:
         cfg = replace(cfg, **overrides)
 
     if args.checkpoint_dir:
-        from foundation.curriculum.config import StageConfig
         cfg = replace(
             cfg,
             stages=[replace(s, checkpoint_dir=args.checkpoint_dir) for s in cfg.stages],
         )
 
     if args.max_steps_per_stage:
-        from foundation.curriculum.config import StageConfig
         cfg = replace(
             cfg,
             stages=[replace(s, max_steps=args.max_steps_per_stage) for s in cfg.stages],

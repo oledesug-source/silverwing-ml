@@ -1,0 +1,193 @@
+# External data sources for Silverwing corpus expansion.
+#
+# Each entry is a HuggingFace dataset that can be ingested via:
+#   python scripts/ingest_external.py --config configs/external_sources.yaml --preset openwebtext
+#   python scripts/ingest_external.py --config configs/external_sources.yaml --preset all
+#
+# The pipeline downloads data in streaming mode (no full dataset in memory),
+# applies quality/language/dedup filtering, chunks, and writes sharded JSONL.
+#
+# Install datasets: pip install datasets
+
+corpus:
+  processing_version: corpus-v2
+  seed: 42
+  chunking:
+    max_tokens: 1024
+    overlap_tokens: 128
+  splits:
+    train: 0.98
+    validation: 0.01
+    test: 0.01
+  filtering:
+    allowed_languages: [en]
+    quality:
+      min_chars: 500
+      min_words: 50
+      min_alpha_ratio: 0.3
+      max_punct_ratio: 0.4
+      max_url_ratio: 0.1
+      max_email_count: 5
+      max_duplicate_line_ratio: 0.5
+  deduplication:
+    num_hashes: 64
+    bands: 16
+    similarity_threshold: 0.85
+    normalize: true
+  contamination:
+    ngram_n: 8
+    threshold: 0.6
+  output_dir: experiments/corpus-external
+  sources: []
+
+# ---------------------------------------------------------------------------
+# Preset datasets — choose a subset via --preset <name>
+# ---------------------------------------------------------------------------
+# Each source follows the HuggingFace dataset schema:
+#   hf_dataset:    dataset ID on huggingface.co/datasets
+#   hf_split:      split to download (usually "train")
+#   hf_text_column: which column holds the text
+#   hf_subset:     dataset config/subset name (optional)
+#   hf_streaming:  true = stream without full download
+#   hf_max_samples: cap on documents (0 = unlimited)
+#
+# Recommended datasets (ordered by impact):
+#   openwebtext  — general web text (~8M docs, ~38B tokens) — BEST single source
+#   c4-en        — Cleaned web text (~365M docs, ~180B tokens)
+#   wikipedia-en — Wikipedia articles (~6M docs, ~4B tokens) — high quality
+#   books3       — Books corpus (~196K books) — literary / narrative
+#   arxiv        — Scientific papers (~2M docs) — technical / STEM
+#   stack        — Code (~15M files, ~100B tokens) — programming
+#   openmath-instruct — Math instruction data (~2M examples)
+#   gsm8k        — Grade-school math (8.5K examples) — small but high quality
+#
+# For first expansion, I recommend:
+#   1. openwebtext (500K samples) — broad language
+#   2. wikipedia-en (100K samples) — factual knowledge
+#   3. arxiv (100K samples) — technical reasoning
+#   4. openmath-instruct (200K samples) — math instruction following
+#
+# Total: ~900K docs, ~500M+ tokens (vs current 850K tokens)
+
+external_sources:
+  presets:
+    quickstart:
+      description: "Small test set to validate the pipeline (~5K docs)"
+      sources:
+        - source_id: openwebtext-sample
+          kind: huggingface
+          hf_dataset: Skylion007/openwebtext
+          hf_split: train
+          hf_text_column: text
+          hf_streaming: true
+          hf_max_samples: 5000
+          source_type: web
+          domain: web
+          language: en
+
+    openwebtext:
+      description: "OpenWebText — broad web text (500K sample)"
+      sources:
+        - source_id: openwebtext-500k
+          kind: huggingface
+          hf_dataset: Skylion007/openwebtext
+          hf_split: train
+          hf_text_column: text
+          hf_streaming: true
+          hf_max_samples: 500000
+          source_type: web
+          domain: web
+          language: en
+
+    wikipedia:
+      description: "English Wikipedia (100K sample)"
+      sources:
+        - source_id: wikipedia-en-100k
+          kind: huggingface
+          hf_dataset: wikipedia
+          hf_split: train
+          hf_text_column: text
+          hf_subset: 20220301.en
+          hf_streaming: true
+          hf_max_samples: 100000
+          source_type: wiki
+          domain: encyclopedia
+          language: en
+
+    arxiv:
+      description: "ArXiv papers (100K sample)"
+      sources:
+        - source_id: arxiv-100k
+          kind: huggingface
+          hf_dataset: cc100
+          hf_split: train
+          hf_text_column: text
+          hf_subset: en
+          hf_streaming: true
+          hf_max_samples: 100000
+          source_type: article
+          domain: science
+          language: en
+
+    math:
+      description: "OpenMathInstruct math instruction data (200K sample)"
+      sources:
+        - source_id: openmath-instruct-200k
+          kind: huggingface
+          hf_dataset: TIGER-Lab/OpenMathInstruct-2
+          hf_split: train
+          hf_text_column: problem
+          hf_streaming: true
+          hf_max_samples: 200000
+          source_type: math
+          domain: math
+          language: en
+
+    all:
+      description: "All recommended sources combined"
+      sources:
+        - source_id: openwebtext-500k
+          kind: huggingface
+          hf_dataset: Skylion007/openwebtext
+          hf_split: train
+          hf_text_column: text
+          hf_streaming: true
+          hf_max_samples: 500000
+          source_type: web
+          domain: web
+          language: en
+
+        - source_id: wikipedia-en-100k
+          kind: huggingface
+          hf_dataset: wikipedia
+          hf_split: train
+          hf_text_column: text
+          hf_subset: 20220301.en
+          hf_streaming: true
+          hf_max_samples: 100000
+          source_type: wiki
+          domain: encyclopedia
+          language: en
+
+        - source_id: cc100-en-100k
+          kind: huggingface
+          hf_dataset: cc100
+          hf_split: train
+          hf_text_column: text
+          hf_subset: en
+          hf_streaming: true
+          hf_max_samples: 100000
+          source_type: web
+          domain: web
+          language: en
+
+        - source_id: openmath-instruct-200k
+          kind: huggingface
+          hf_dataset: TIGER-Lab/OpenMathInstruct-2
+          hf_split: train
+          hf_text_column: problem
+          hf_streaming: true
+          hf_max_samples: 200000
+          source_type: math
+          domain: math
+          language: en

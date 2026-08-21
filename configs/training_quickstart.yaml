@@ -1,0 +1,35 @@
+# Silverwing ML - Quickstart Corpus Pretrain (102M params, 5.25M tokens)
+# Trains the full 102M-param model on the openwebtext quickstart corpus.
+# CPU-friendly: batch_size=1, block_size=512.
+
+training:
+  version: training-quickstart-v1
+  model_config_path: configs/model.yaml
+  corpus_dir: experiments/corpus-quickstart
+  tokenizer_dir: experiments/tokenizer
+  tokenizer_version: null
+  checkpoint_dir: experiments/checkpoints/quickstart
+  resume_from: null
+  init_from: null
+  batch_size: 1
+  grad_accum_steps: 1
+  block_size: 512
+  max_steps: 5000
+  warmup_steps: 200
+  lr: 3.0e-4
+  min_lr_ratio: 0.1
+  weight_decay: 0.1
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  grad_clip: 1.0
+  seed: 42
+  log_steps: 25
+  eval_steps: 250
+  eval_sequences: 8
+  save_steps: 1000
+  max_tokens: null
+  verify_dataset: true
+  expected_dataset_hash: 8eec3e37fc454bf3c0880614a724afa7fae3869d97aef529f07ba0be60d4b796
+  require_validation: true
+  require_clean_repo: false
+  device: cpu

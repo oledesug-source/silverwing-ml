@@ -16,7 +16,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from benchmarks.math import MathBenchmarkConfig, flag_corpus_overlap, generate_math_benchmark, write_math_benchmark  # noqa: E402
+from benchmarks.math import (  # noqa: E402
+    MathBenchmarkConfig,
+    flag_corpus_overlap,
+    generate_math_benchmark,
+    write_math_benchmark,
+)
 from foundation.corpus import verify_dataset  # noqa: E402
 
 

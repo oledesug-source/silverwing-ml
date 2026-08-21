@@ -1,0 +1,28 @@
+# SILVERWING ML - Small Model SFT (~10M params)
+# SFT with chain-of-thought data.
+
+sft:
+  version: sft-small-v1
+  model_config_path: configs/model_small.yaml
+  tokenizer_dir: experiments/tokenizer
+  init_from: experiments/checkpoints/small/best.pt
+  dataset_path: experiments/sft/sft-v2-all.jsonl
+  checkpoint_dir: experiments/checkpoints/small/sft
+  batch_size: 4
+  block_size: 512
+  max_steps: 500
+  warmup_steps: 25
+  lr: 1.0e-4
+  min_lr_ratio: 0.1
+  weight_decay: 0.1
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  grad_clip: 1.0
+  seed: 42
+  log_steps: 10
+  eval_steps: 100
+  eval_examples: 32
+  save_steps: 250
+  eval_fraction: 0.1
+  require_clean_repo: true
+  device: cpu

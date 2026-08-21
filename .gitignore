@@ -9,6 +9,7 @@ __pycache__/
 venv/
 env/
 .env
+!.env.example
 
 # Caches
 .pytest_cache/
@@ -32,11 +33,28 @@ Thumbs.db
 # Archives
 *.zip
 
-# Runtime logs
+# Runtime logs (root-level + anywhere)
+*.log
 experiments/*/logs/
 
-# Raw math
+# Raw math data
 experiments/raw-math/
+
+# Raw ingested external corpora (re-downloadable via scripts/ingest_external_v2.py)
+experiments/ingested/
+
+# Local experiment tracking DB
+mlflow.db
 
 # Evaluation reports
 experiments/eval/
+
+# Datasets processed output
+datasets/processed/
+
+# Frontend build artifacts
+platform/
+static/
+
+# Curriculum training lesson directories (generated, not tracked)
+phase5/

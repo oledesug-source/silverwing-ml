@@ -19,7 +19,7 @@ corpus:
       max_email_count: 10
       max_duplicate_line_ratio: 0.6
   deduplication:
-    num_hashes: 128
+    num_hashes: 64
     bands: 16
     similarity_threshold: 0.85
     normalize: true

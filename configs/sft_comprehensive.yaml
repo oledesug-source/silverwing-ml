@@ -1,0 +1,29 @@
+# SilverWing Comprehensive SFT — All Fields Training
+# Trains on 714+ examples covering ALL fields of knowledge.
+# Uses the quickstart pretrained checkpoint at step 1000.
+
+sft:
+  version: comprehensive-v1
+  model_config_path: configs/model.yaml
+  tokenizer_dir: experiments/tokenizer
+  init_from: experiments/checkpoints/quickstart/best.pt
+  dataset_path: datasets/processed/silverwing-comprehensive-v1.jsonl
+  checkpoint_dir: experiments/checkpoints/comprehensive-sft
+  batch_size: 1
+  block_size: 512
+  max_steps: 500
+  warmup_steps: 25
+  lr: 1.0e-4
+  min_lr_ratio: 0.1
+  weight_decay: 0.1
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  grad_clip: 1.0
+  seed: 42
+  log_steps: 10
+  eval_steps: 50
+  eval_examples: 32
+  save_steps: 100
+  eval_fraction: 0.1
+  require_clean_repo: false
+  device: cpu
