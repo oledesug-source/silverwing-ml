@@ -80,6 +80,9 @@ def train_sft(cfg: SftConfig, log: Callable[[str], None] = print) -> dict:
 
     torch.manual_seed(cfg.seed)
     device = torch.device(cfg.device)
+    amp_dtype = {"float16": torch.float16, "bfloat16": torch.bfloat16}[cfg.amp_dtype]
+    use_amp = bool(cfg.amp and device.type == "cuda")
+    scaler = torch.amp.GradScaler("cuda", enabled=use_amp and amp_dtype == torch.float16)
     model = build_model(model_cfg).to(device)
 
     load_checkpoint(cfg.init_from, model, None, cfg.device)
@@ -119,20 +122,23 @@ def train_sft(cfg: SftConfig, log: Callable[[str], None] = print) -> dict:
     for step in range(1, cfg.max_steps + 1):
         x, y = next(batch_iter)
         x, y = x.to(device), y.to(device)
-        logits = model(x)
-        loss = F.cross_entropy(
-            logits.reshape(-1, logits.size(-1)),
-            y.reshape(-1),
-            ignore_index=IGNORE_INDEX,
-        )
         optimizer.zero_grad(set_to_none=True)
-        loss.backward()
+        with torch.autocast(device_type="cuda", dtype=amp_dtype, enabled=use_amp):
+            logits = model(x)
+            loss = F.cross_entropy(
+                logits.reshape(-1, logits.size(-1)),
+                y.reshape(-1),
+                ignore_index=IGNORE_INDEX,
+            )
+        scaler.scale(loss).backward()
         if cfg.grad_clip is not None:
+            scaler.unscale_(optimizer)
             grad_norm = float(torch.nn.utils.clip_grad_norm_(model.parameters(), cfg.grad_clip).item())
         lr = schedule_lr(step - 1, cfg.lr, cfg.warmup_steps, cfg.max_steps, cfg.min_lr_ratio)
         for group in optimizer.param_groups:
             group["lr"] = lr
-        optimizer.step()
+        scaler.step(optimizer)
+        scaler.update()
         train_loss = float(loss.item())
 
         if cfg.log_steps and step % cfg.log_steps == 0:
@@ -190,6 +196,7 @@ def train_sft(cfg: SftConfig, log: Callable[[str], None] = print) -> dict:
         "final_checkpoint": str(final_path),
         "optimizer": opt_report,
         "device": cfg.device,
+        "amp": {"enabled": use_amp, "dtype": cfg.amp_dtype if use_amp else None},
         "elapsed_seconds": round(elapsed, 3),
         "throughput_tokens_per_sec": round(tokens_per_step * cfg.max_steps / elapsed, 1) if elapsed > 0 else 0.0,
         "started_at": started_at,

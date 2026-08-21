@@ -64,6 +64,8 @@ class SftConfig:
     eval_fraction: float = 0.1
     require_clean_repo: bool = True
     device: str = "cpu"
+    amp: bool = False
+    amp_dtype: str = "float16"
 
     def __post_init__(self) -> None:
         if self.batch_size <= 0 or self.block_size <= 0:
@@ -86,6 +88,10 @@ class SftConfig:
             raise ValueError("eval_examples must be positive")
         if not 0.0 <= self.eval_fraction < 1.0:
             raise ValueError("eval_fraction must be in [0, 1)")
+        if self.amp_dtype not in ("float16", "bfloat16"):
+            raise ValueError("amp_dtype must be 'float16' or 'bfloat16'")
+        if self.amp and not self.device.startswith("cuda"):
+            raise ValueError("amp requires a cuda device")
 
     def to_dict(self) -> dict[str, Any]:
         values = {f.name: getattr(self, f.name) for f in fields(self)}

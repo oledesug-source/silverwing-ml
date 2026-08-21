@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- **fp16/bf16 mixed-precision training (`amp`, `amp_dtype`)** in `TrainConfig`/`SftConfig` and both trainers — `torch.autocast` + `GradScaler`, opt-in, CUDA-only (validated in `__post_init__`); CLI flags `--amp` on `scripts/train.py` and `scripts/train_sft.py`; recorded in run reports
+- `colab_production.ipynb` — production manufacturing pipeline for free-tier GPUs: real-data corpus (FineWeb-Edu 400K + Wikipedia 100K), tokenizer v2 retraining, Drive-backed checkpoints with auto-resume across Colab disconnects, SFT, generation test, benchmark gate
+- `--skip-existing` flag on `scripts/ingest_external_v2.py` download phase — resumes interrupted corpus builds without re-downloading
+- `fineweb` preset in `configs/external_sources.yaml` (`HuggingFaceFW/fineweb-edu`, parquet streaming)
 - `.env.example` — template for environment variables used by the corpus pipeline and serving API
 - `requirements-dev.txt` — development dependencies (pytest-cov, ruff, mypy, pdoc3, pydantic-ai, fastapi, uvicorn, httpx)
 - `CONTRIBUTING.md` — developer workflow, coding standards, and directory structure guide
@@ -28,19 +32,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   - `intelligence.rag/` — Chunker, Retriever, RAGPromptBuilder, RAGPipeline (15 tests)
   - `intelligence.peft/` — LoRALayer, LoRAAdapter, LoRATrainer, LoRAConfig, parameter estimation (17 tests)
   - `intelligence.multimodal/` — Image, Audio encoders, MultimodalEncoder (17 tests)
-  - `intelligence.observability/` — TraceProvider, MetricRegistry, Guardrail, RedTeam (18 tests)
-
-### Fixed
-- 8 remaining ruff lint errors resolved:
-  - **B904** — `raise ImportError(...)` in `foundation/corpus/ingestion.py` now uses `from None`
-  - **B024** (×2) — `Flyer(ABC)` and `Swimmer(ABC)` in `intelligence/oop/inheritance.py` no longer inherit `ABC` (they are concrete mixins)
-  - **B007** (×3) — Unused loop variables renamed with `_` prefix in `charts.py` (RadarChart) and `svg.py` (PieChartSVG)
-  - **UP031** — `%` formatting in `tests/test_benchmarks.py` converted to f-string
-  - **F811** — Removed duplicate `mse` import in `tests/test_ml_basics.py` (was shadowing `metrics.mse`)
+  - `intelligence.observability/` — TraceProvider, MetricRegistry, Guardrail, RedTeam, Span (18 tests)
 
 ### Changed
+- `wikipedia` and `all` presets migrated to reliable streaming sources: `wikimedia/wikipedia` (parquet) replaces the deprecated script-based loader; `all` preset now = FineWeb-Edu + Wikipedia production mix
 - Updated `README.md`, `docs/architecture.md`, `docs/milestones.md`, and `CHANGELOG.md` to reflect 1766 total test count, 9 new Gen AI roadmap intelligence modules (198 tests), and updated package layout
-- `.gitignore` updated with `!.env.example` negation and `.env` exclusion
+- `.gitignore` updated with `!.env.example` negation and `.env` exclusion; raw ingested corpora (`experiments/ingested/`) and `mlflow.db` now ignored; root-level `platform/`/`static/` ignore rules scoped so `serving/frontend/static/` stays tracked
 - `pyproject.toml` mypy config: added `follow_imports`, `ignore_missing_imports` overrides for `torch.*`, `datasets.*`, `yaml.*`, `psutil.*`, `transformers.*`, `numpy.*`
 - `pyproject.toml` mypy `python_version` bumped from `3.11` to `3.12` (numpy 2.x bundled stubs use PEP 695 `type` statement syntax requiring Python 3.12+)
 - `.github/workflows/ci.yml` updated: both `test` and `lint` jobs now install from `requirements-dev.txt`
@@ -48,6 +45,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Fixed
 - Broken relative import in `serving/runtime/runtime.py` — `from .api.server` → `from ..api.server` (SilverwingHandler lives in `serving/api/server.py`)
 - Added `serving/gateway/__init__.py` and `.gitkeep` to preserve the gateway module
+- 8 remaining ruff lint errors resolved:
+  - **B904** — `raise ImportError(...)` in `foundation/corpus/ingestion.py` now uses `from None`
+  - **B024** (×2) — `Flyer(ABC)` and `Swimmer(ABC)` in `intelligence/oop/inheritance.py` no longer inherit `ABC` (they are concrete mixins)
+  - **B007** (×3) — Unused loop variables renamed with `_` prefix in `charts.py` (RadarChart) and `svg.py` (PieChartSVG)
+  - **UP031** — `%` formatting in `tests/test_benchmarks.py` converted to f-string
+  - **F811** — Removed duplicate `mse` import in `tests/test_ml_basics.py` (was shadowing `metrics.mse`)
 
 ### Lint Rule Decisions
 - **B905** (`zip` without `strict=`): Permanently disabled project-wide. The rule is too pervasive across the codebase to address without a behavior-changing migration. Adding `strict=True` to every `zip()` call risks runtime `ValueError` exceptions if iterable lengths diverge. Deferred until a deliberate, tested audit can be performed. Decision documented in `docs/milestones.md` and `CHANGELOG.md`.

@@ -28,6 +28,7 @@ def main() -> None:
     parser.add_argument("--lr", type=float, default=None)
     parser.add_argument("--seed", type=int, default=None)
     parser.add_argument("--device", default=None)
+    parser.add_argument("--amp", action="store_true")
     parser.add_argument("--no-clean-repo-check", action="store_true")
     args = parser.parse_args()
 
@@ -50,6 +51,8 @@ def main() -> None:
     cfg = TrainConfig.from_dict({**cfg.to_dict(), **{k: v for k, v in overrides.items() if v is not None}})
     if args.no_clean_repo_check:
         cfg = TrainConfig.from_dict({**cfg.to_dict(), "require_clean_repo": False})
+    if args.amp:
+        cfg = TrainConfig.from_dict({**cfg.to_dict(), "amp": True})
 
     report = train(cfg)
     print(json.dumps(report, indent=2, default=str))

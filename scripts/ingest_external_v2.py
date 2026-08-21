@@ -112,6 +112,11 @@ def cmd_download(args: argparse.Namespace) -> Path:
     name = args.preset or args.source_id
     out_path = INGEST_DIR / f"{name}.jsonl"
 
+    if args.skip_existing and out_path.exists() and out_path.stat().st_size > 0:
+        count = sum(1 for _ in out_path.open(encoding="utf-8"))
+        logger.info("Phase 1 skipped (--skip-existing): %d documents already in %s", count, out_path)
+        return out_path
+
     logger.info("Phase 1: Downloading %d source(s) to %s", len(sources), out_path)
 
     t0 = time.monotonic()
@@ -205,6 +210,7 @@ def main() -> None:
     # Download subcommand
     dl = sub.add_parser("download", parents=[common], help="Phase 1: Download from HuggingFace to JSONL")
     dl.add_argument("--output", default=None, help="Output JSONL path")
+    dl.add_argument("--skip-existing", action="store_true", help="Skip download if output JSONL already has content")
 
     # Process subcommand
     pr = sub.add_parser("process", parents=[common], help="Phase 2: Process JSONL through pipeline")
@@ -222,6 +228,7 @@ def main() -> None:
     parser.add_argument("--hf-streaming", action="store_true", default=True)
     parser.add_argument("--source-id", default="external")
     parser.add_argument("--output-dir", default=None)
+    parser.add_argument("--skip-existing", action="store_true", help="Skip download if output JSONL already has content")
     parser.add_argument("-v", "--verbose", action="store_true")
 
     args = parser.parse_args()

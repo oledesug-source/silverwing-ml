@@ -99,15 +99,30 @@ external_sources:
           domain: web
           language: en
 
+    fineweb:
+      description: "FineWeb-Edu sample-10BT — modern curated web text (parquet, streams reliably)"
+      sources:
+        - source_id: fineweb-edu-400k
+          kind: huggingface
+          hf_dataset: HuggingFaceFW/fineweb-edu
+          hf_split: train
+          hf_text_column: text
+          hf_subset: sample-10BT
+          hf_streaming: true
+          hf_max_samples: 400000
+          source_type: web
+          domain: web
+          language: en
+
     wikipedia:
-      description: "English Wikipedia (100K sample)"
+      description: "English Wikipedia via wikimedia parquet mirror (100K sample)"
       sources:
         - source_id: wikipedia-en-100k
           kind: huggingface
-          hf_dataset: wikipedia
+          hf_dataset: wikimedia/wikipedia
           hf_split: train
           hf_text_column: text
-          hf_subset: 20220301.en
+          hf_subset: 20231101.en
           hf_streaming: true
           hf_max_samples: 100000
           source_type: wiki
@@ -144,50 +159,28 @@ external_sources:
           language: en
 
     all:
-      description: "All recommended sources combined"
+      description: "Production pretraining mix: FineWeb-Edu + Wikipedia (reliable parquet streaming)"
       sources:
-        - source_id: openwebtext-500k
+        - source_id: fineweb-edu-400k
           kind: huggingface
-          hf_dataset: Skylion007/openwebtext
+          hf_dataset: HuggingFaceFW/fineweb-edu
           hf_split: train
           hf_text_column: text
+          hf_subset: sample-10BT
           hf_streaming: true
-          hf_max_samples: 500000
+          hf_max_samples: 400000
           source_type: web
           domain: web
           language: en
 
         - source_id: wikipedia-en-100k
           kind: huggingface
-          hf_dataset: wikipedia
+          hf_dataset: wikimedia/wikipedia
           hf_split: train
           hf_text_column: text
-          hf_subset: 20220301.en
+          hf_subset: 20231101.en
           hf_streaming: true
           hf_max_samples: 100000
           source_type: wiki
           domain: encyclopedia
-          language: en
-
-        - source_id: cc100-en-100k
-          kind: huggingface
-          hf_dataset: cc100
-          hf_split: train
-          hf_text_column: text
-          hf_subset: en
-          hf_streaming: true
-          hf_max_samples: 100000
-          source_type: web
-          domain: web
-          language: en
-
-        - source_id: openmath-instruct-200k
-          kind: huggingface
-          hf_dataset: TIGER-Lab/OpenMathInstruct-2
-          hf_split: train
-          hf_text_column: problem
-          hf_streaming: true
-          hf_max_samples: 200000
-          source_type: math
-          domain: math
           language: en

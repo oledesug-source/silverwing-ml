@@ -37,6 +37,8 @@ def evaluate(
     data_val: PretrainingData,
     n_sequences: int,
     device: torch.device | str,
+    *,
+    amp_dtype: torch.dtype | None = None,
 ) -> tuple[float, float] | None:
     batch = data_val.ordered_batch(n_sequences)
     if batch is None:
@@ -44,7 +46,10 @@ def evaluate(
     x, y = batch
     model.eval()
     with torch.no_grad():
-        logits = model(x.to(device))
+        with torch.autocast(
+            device_type="cuda", dtype=amp_dtype or torch.float16, enabled=amp_dtype is not None
+        ):
+            logits = model(x.to(device))
         loss = F.cross_entropy(
             logits.reshape(-1, logits.size(-1)),
             y.to(device).reshape(-1),
@@ -93,6 +98,9 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
 
     torch.manual_seed(cfg.seed)
     device = torch.device(cfg.device)
+    amp_dtype = {"float16": torch.float16, "bfloat16": torch.bfloat16}[cfg.amp_dtype]
+    use_amp = bool(cfg.amp and device.type == "cuda")
+    scaler = torch.amp.GradScaler("cuda", enabled=use_amp and amp_dtype == torch.float16)
     model = build_model(model_cfg).to(device)
     tokenizer_hash = tokenizer.digest()
     if cfg.init_from:
@@ -190,20 +198,23 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
             x, y = next(batch_stream)
             x = x.to(device)
             y = y.to(device)
-            logits = model(x)
-            loss = F.cross_entropy(
-                logits.reshape(-1, logits.size(-1)),
-                y.reshape(-1),
-                ignore_index=_pad_id(tokenizer),
-            )
-            (loss / cfg.grad_accum_steps).backward()
+            with torch.autocast(device_type="cuda", dtype=amp_dtype, enabled=use_amp):
+                logits = model(x)
+                loss = F.cross_entropy(
+                    logits.reshape(-1, logits.size(-1)),
+                    y.reshape(-1),
+                    ignore_index=_pad_id(tokenizer),
+                )
+            scaler.scale(loss / cfg.grad_accum_steps).backward()
             micro_losses.append(float(loss.item()))
         if cfg.grad_clip is not None:
+            scaler.unscale_(optimizer)
             grad_norm = float(torch.nn.utils.clip_grad_norm_(model.parameters(), cfg.grad_clip).item())
         lr = schedule_lr(step - 1, cfg.lr, cfg.warmup_steps, cfg.max_steps, cfg.min_lr_ratio)
         for group in optimizer.param_groups:
             group["lr"] = lr
-        optimizer.step()
+        scaler.step(optimizer)
+        scaler.update()
         train_loss = sum(micro_losses) / len(micro_losses)
 
         if cfg.log_steps and step % cfg.log_steps == 0:
@@ -233,7 +244,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
                 }, step=step)
 
         if cfg.eval_steps and (step % cfg.eval_steps == 0 or step == cfg.max_steps):
-            result = evaluate(model, tokenizer, data_val, cfg.eval_sequences, device)
+            result = evaluate(model, tokenizer, data_val, cfg.eval_sequences, device, amp_dtype=amp_dtype if use_amp else None)
             if result is not None:
                 eval_loss, ppl = result
                 log(f"step {step} eval_loss {eval_loss:.4f} ppl {ppl:.2f}")
@@ -258,7 +269,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
             persist(step)
 
     elapsed = time.perf_counter() - start_time
-    final_result = evaluate(model, tokenizer, data_val, cfg.eval_sequences, device)
+    final_result = evaluate(model, tokenizer, data_val, cfg.eval_sequences, device, amp_dtype=amp_dtype if use_amp else None)
     final_path = persist(
         cfg.max_steps,
         eval_loss=final_result[0] if final_result else None,
@@ -296,6 +307,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
         "final_checkpoint": str(final_path),
         "optimizer": opt_report,
         "device": cfg.device,
+        "amp": {"enabled": use_amp, "dtype": cfg.amp_dtype if use_amp else None},
         "elapsed_seconds": round(elapsed, 3),
         "throughput_tokens_per_sec": round(tokens_per_step * cfg.max_steps / elapsed, 1) if elapsed > 0 else 0.0,
         "started_at": started_at,

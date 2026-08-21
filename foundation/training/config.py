@@ -80,6 +80,8 @@ class TrainConfig:
     require_validation: bool = True
     require_clean_repo: bool = True
     device: str = "cpu"
+    amp: bool = False
+    amp_dtype: str = "float16"
 
     def __post_init__(self) -> None:
         if self.batch_size <= 0 or self.grad_accum_steps <= 0 or self.block_size <= 0:
@@ -100,6 +102,10 @@ class TrainConfig:
             raise ValueError("log_steps, eval_steps and save_steps must be >= 0")
         if self.eval_sequences <= 0:
             raise ValueError("eval_sequences must be positive")
+        if self.amp_dtype not in ("float16", "bfloat16"):
+            raise ValueError("amp_dtype must be 'float16' or 'bfloat16'")
+        if self.amp and not self.device.startswith("cuda"):
+            raise ValueError("amp requires a cuda device")
 
     def to_dict(self) -> dict[str, Any]:
         values = {f.name: getattr(self, f.name) for f in fields(self)}
