@@ -17,7 +17,7 @@ import argparse
 import json
 import sys
 import webbrowser
-from http.server import HTTPServer
+from http.server import ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -313,7 +313,8 @@ def main():
     handler_class.server_orchestrator = orchestrator
     handler_class.server_frontend_dir = FRONTEND_DIR
 
-    server = HTTPServer((args.host, args.port), handler_class)
+    server = ThreadingHTTPServer((args.host, args.port), handler_class)
+    server.daemon_threads = True
     url = f"http://{args.host}:{args.port}"
 
     print(f"\n  Serving at: \033[1m{url}\033[0m")
