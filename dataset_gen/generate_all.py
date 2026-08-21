@@ -5,7 +5,7 @@ training data across ALL fields of human knowledge.
 
 Usage::
 
-    python datasets/generate_all.py --output datasets/processed --samples-per-field 50
+    python dataset_gen/generate_all.py --output datasets/processed --samples-per-field 50
 """
 
 from __future__ import annotations
@@ -22,7 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 # Ensure datasets/ has __init__.py for import
 (Path(__file__).resolve().parent / "__init__.py").touch(exist_ok=True)
 
-from datasets.fields import (
+from dataset_gen.fields import (
     TOOL_USE,
 )
 

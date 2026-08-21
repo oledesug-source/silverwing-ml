@@ -117,11 +117,13 @@ def cmd_download(args: argparse.Namespace) -> Path:
         logger.info("Phase 1 skipped (--skip-existing): %d documents already in %s", count, out_path)
         return out_path
 
+    tmp_path = out_path.with_suffix(".jsonl.tmp")
+
     logger.info("Phase 1: Downloading %d source(s) to %s", len(sources), out_path)
 
     t0 = time.monotonic()
     count = 0
-    with out_path.open("w", encoding="utf-8") as fh:
+    with tmp_path.open("w", encoding="utf-8") as fh:
         for source in sources:
             logger.info("  Streaming from %s (max_samples=%d)", source.hf_dataset, source.hf_max_samples or -1)
             for doc_id, text in _iter_huggingface(source):
@@ -131,6 +133,7 @@ def cmd_download(args: argparse.Namespace) -> Path:
                 if count % 10000 == 0:
                     logger.info("    ... %d documents downloaded", count)
 
+    tmp_path.replace(out_path)
     elapsed = time.monotonic() - t0
     logger.info("Phase 1 complete: %d documents -> %s (%.1fs)", count, out_path, elapsed)
     return out_path

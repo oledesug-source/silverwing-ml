@@ -80,7 +80,7 @@ python -m pytest tests/ -q
 | `experiments/` | Run manifests and logs |
 | `scripts/` | Operational CLI scripts |
 | `tests/` | Full test suite (1476 tests) |
-| `datasets/` | Dataset generation utilities |
+| `dataset_gen/` | Dataset generation utilities |
 | `docs/` | Design and process documentation |
 | `legacy/` | Frozen prototype curriculum |
 

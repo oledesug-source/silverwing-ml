@@ -84,7 +84,8 @@ uvicorn serving.api.fastapi_bridge:app --reload --host 0.0.0.0 --port 8080
 | `scripts/`      | operational scripts                                   |
 | `tests/`        | 1766 tests across all modules                         |
 | `docs/`         | design and process documentation                      |
-| `datasets/`     | dataset generation utilities and processed data       |
+| `datasets/`     | dataset storage (raw downloads, processed corpora)    |
+| `dataset_gen/`  | programmatic dataset generation utilities             |
 | `legacy/`       | frozen prototype curriculum (phase1–phase5, math_training) |
 
 ## Intelligence modules
