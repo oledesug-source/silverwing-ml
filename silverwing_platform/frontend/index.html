@@ -163,6 +163,7 @@ body::after{
 .cap-desc{font-size:12px;color:var(--text3);margin-top:4px;line-height:1.4}
 .cap-meta{display:flex;gap:8px;margin-top:6px;font-family:var(--mono);font-size:10px;color:var(--text3);flex-wrap:wrap}
 .cap-tag{border:1px solid var(--line2);padding:0 6px;color:var(--text2)}
+.freq-tag{color:var(--volt);border-color:var(--volt)}
 .perm-line{margin-top:5px;font-family:var(--mono);font-size:10px;letter-spacing:.22em;color:var(--text3);opacity:0;max-height:0;overflow:hidden;transition:all .15s}
 .cap-card:hover .perm-line{opacity:1;max-height:20px}
 .cap-card.risk-high .perm-line,.cap-card.risk-critical .perm-line{color:var(--crimson)}
@@ -376,6 +377,33 @@ const API = '';
 let capabilities = [];
 let auditEvents = [];
 
+// --- adaptive layer: usage telemetry (local, transparent) ---
+// Frequency/recency scoring reorders capability nodes. Every reorder reason
+// is surfaced in the UI ('FREQUENT') — no hidden adaptation.
+let capUsage = {};
+try { capUsage = JSON.parse(localStorage.getItem('sw_cap_usage') || '{}'); } catch(e) { capUsage = {}; }
+
+function recordUsage(name) {
+  const u = capUsage[name] || { count: 0, last: 0 };
+  u.count += 1;
+  u.last = Date.now();
+  capUsage[name] = u;
+  try { localStorage.setItem('sw_cap_usage', JSON.stringify(capUsage)); } catch(e) {}
+}
+
+function usageScore(name) {
+  const u = capUsage[name];
+  if (!u) return 0;
+  const recentHours = (Date.now() - u.last) / 3600000;
+  return u.count + (recentHours < 24 ? 3 : 0);
+}
+
+function sortedByUsage(caps) {
+  return caps.map((c, i) => ({ c, i, s: usageScore(c.name) }))
+    .sort((a, b) => (b.s - a.s) || (a.i - b.i))
+    .map(x => x.c);
+}
+
 // --- boot sequence ---
 (function boot(){
   const lines = [
@@ -456,12 +484,13 @@ function renderCapabilities() {
     return;
   }
   const PERM = {low:'L0 // OBSERVE', medium:'L1 // WRITE', high:'L2 // EXECUTE', critical:'L4 // ADMIN'};
-  el.innerHTML = capabilities.map(c => {
+  el.innerHTML = sortedByUsage(capabilities).map(c => {
     const tags = (c.tags||[]).map(t=>`<span class="cap-tag">${t}</span>`).join('');
+    const freq = usageScore(c.name) >= 2 ? '<span class="cap-tag freq-tag">&#9733; FREQUENT</span>' : '';
     return `<div class="cap-card risk-${c.risk_level||'low'}" onclick="selectCap('${c.name}', this)">
       <div class="cap-name">${c.name} <span class="badge badge-${c.risk_level||'low'}">${(c.risk_level||'low').toUpperCase()}</span></div>
       <div class="cap-desc">${c.description||''}</div>
-      <div class="cap-meta"><span>v${c.version||'1.0.0'}</span><span>${c.timeout_seconds||30}s</span>${tags}</div>
+      <div class="cap-meta"><span>v${c.version||'1.0.0'}</span><span>${c.timeout_seconds||30}s</span>${freq}${tags}</div>
       <div class="perm-line">&#9654; PERMISSION: ${PERM[c.risk_level||'low'] || 'L0 // OBSERVE'}</div>
     </div>`;
   }).join('');
@@ -481,7 +510,7 @@ function selectCap(name, cardEl) {
 function renderToolSelect() {
   const sel = document.getElementById('toolSelect');
   sel.innerHTML = '<option value="">-- SELECT NODE --</option>' +
-    capabilities.map(c=>`<option value="${c.name}">${c.name}</option>`).join('');
+    sortedByUsage(capabilities).map(c=>`<option value="${c.name}">${c.name}</option>`).join('');
 }
 
 // --- chat ---
@@ -509,6 +538,7 @@ async function sendChat() {
       for (let i = 0; i < (data.tool_calls||[]).length; i++) {
         const tc = data.tool_calls[i];
         const tr = (data.tool_results||[])[i];
+        recordUsage(tc.tool);
         addToolMessage(tc, tr);
       }
       if (data.text) addMessage('assistant', data.text);
@@ -614,6 +644,7 @@ async function executeTool() {
     });
     const d = await r.json();
     if (d.success && d.data) {
+      recordUsage(tool);
       resultEl.className = `tool-result ${d.data.success?'success':'error'}`;
       resultEl.textContent = d.data.success ? d.data.output : `ERROR: ${d.data.error}`;
       addAuditEvent({
