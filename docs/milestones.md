@@ -11,6 +11,9 @@
 | M11 | `configs/sft.yaml` | Supervised fine-tuning (SFT) | ✅ Done |
 | M13 | `configs/sft_combined.yaml` | Combined SFT (basic + reasoning CoT) | ✅ Done |
 | M14 | `configs/corpus.yaml` | Corpus expansion (OpenWebText quickstart) | ✅ Done |
+| M12 | `configs/alignment.yaml` | DPO preference alignment — code complete (`foundation/alignment/`, `scripts/train_alignment.py`, `scripts/build_preference_dataset.py`), never run on a checkpoint | 🔧 Implemented, pending run |
+| M15 | `intelligence/` | Cognitive modules 15.1–15.6 (math, reasoning, engineering, memory, planning, tools) + `sw_platform` orchestration | ✅ Done (code+tests; model quality depends on production training) |
+| M16 | `serving/`, `foundation/evaluation/` | Evaluation framework + serving layer; platform server wired to own checkpoints (`scripts/serve_platform.py`) | 🚧 In progress — production pretrain/SFT running on Colab |
 
 ## Promotion Criteria (M01 Rule)
 
