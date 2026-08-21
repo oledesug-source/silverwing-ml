@@ -12,10 +12,10 @@ import json
 import math
 import random
 from collections import Counter
+from collections.abc import Callable
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
-from typing import Callable
 
 from benchmarks.dataset import BenchmarkItem
 from benchmarks.guard import flag_contaminated
@@ -247,7 +247,7 @@ def write_math_benchmark(
         "items": len(records),
         "items_by_category": counts,
         "data_file": output_path.name,
-        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "generated_at": datetime.now(UTC).isoformat(),
         "generator": "m09-independent-math-families-v1",
     }
     manifest_path = output_path.with_suffix(".manifest.json")

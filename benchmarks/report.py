@@ -8,9 +8,8 @@ decision requires (foundation.yaml evaluation requirements).
 from __future__ import annotations
 
 import json
-import platform
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 from .runner import EvalResult
@@ -27,7 +26,7 @@ def _environment() -> dict:
         pass
     return {
         "python": sys.version.split()[0],
-        "platform": platform.platform(),
+        "platform": f"{sys.platform}",
         "torch": torch_version,
     }
 
@@ -44,7 +43,7 @@ def write_evaluation_report(
     payload = result.to_dict()
     payload["environment"] = _environment()
     payload["config_digest"] = config_digest
-    payload["written_at"] = datetime.now(timezone.utc).isoformat()
+    payload["written_at"] = datetime.now(UTC).isoformat()
     if extra:
         payload["extra"] = extra
     path = output_dir / "evaluation_report.json"

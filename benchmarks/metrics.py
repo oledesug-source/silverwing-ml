@@ -12,7 +12,7 @@ from __future__ import annotations
 
 import math
 import re
-from typing import Iterable, Sequence
+from collections.abc import Iterable, Sequence
 
 _STRIP_RE = re.compile(r"[^\w\s]")
 _SPACE_RE = re.compile(r"\s+")

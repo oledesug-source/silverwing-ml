@@ -9,7 +9,7 @@ Silverwing releases all plug in the same way.
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Optional, Protocol, runtime_checkable
+from typing import Protocol, runtime_checkable
 
 
 @runtime_checkable

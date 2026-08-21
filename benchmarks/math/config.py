@@ -7,7 +7,6 @@ import json
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
-
 DEFAULT_CONFIG_PATH = Path(__file__).resolve().parents[2] / "configs" / "math_benchmark.yaml"
 DEFAULT_TOPICS = (
     "arithmetic",
@@ -62,7 +61,7 @@ class MathBenchmarkConfig:
         return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
     @classmethod
-    def from_yaml(cls, path: str | Path | None = None) -> "MathBenchmarkConfig":
+    def from_yaml(cls, path: str | Path | None = None) -> MathBenchmarkConfig:
         import yaml
 
         config_path = Path(path) if path else DEFAULT_CONFIG_PATH

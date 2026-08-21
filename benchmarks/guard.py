@@ -10,8 +10,9 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from .dataset import BenchmarkItem
 from foundation.corpus.contamination import ngrams, normalize_tokens
+
+from .dataset import BenchmarkItem
 
 
 def build_corpus_fingerprint(corpus_dir: str | Path, split: str = "train", n: int = 8, max_items: int | None = None) -> set:

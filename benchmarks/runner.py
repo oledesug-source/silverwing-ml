@@ -8,8 +8,7 @@ from __future__ import annotations
 
 import subprocess
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
-from typing import Optional
+from datetime import UTC, datetime
 
 from .dataset import BenchmarkItem, load_items
 from .metrics import compute_metrics, exact_match, parse_number, relative_error
@@ -17,7 +16,7 @@ from .models import ModelAdapter
 from .registry import BenchmarkRegistry
 
 
-def current_git_commit() -> Optional[str]:
+def current_git_commit() -> str | None:
     try:
         out = subprocess.run(
             ["git", "rev-parse", "HEAD"],
@@ -39,9 +38,9 @@ class EvalResult:
     item_scores: dict[str, float]
     n_items: int
     category_metrics: dict[str, dict] = field(default_factory=dict)
-    git_commit: Optional[str] = None
-    started_at: str = field(default_factory=lambda: datetime.now(timezone.utc).isoformat())
-    completed_at: Optional[str] = None
+    git_commit: str | None = None
+    started_at: str = field(default_factory=lambda: datetime.now(UTC).isoformat())
+    completed_at: str | None = None
     notes: str = ""
 
     def to_dict(self) -> dict:
@@ -104,7 +103,7 @@ class BenchmarkRunner:
             n_items=len(items),
             category_metrics=category_metrics,
             git_commit=self.git_commit,
-            completed_at=datetime.now(timezone.utc).isoformat(),
+            completed_at=datetime.now(UTC).isoformat(),
             notes=spec.description,
         )
 
