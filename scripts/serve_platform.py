@@ -122,7 +122,41 @@ _builtin_tools["list_dir"] = {
 }
 
 
-def setup_platform():
+def _select_model_provider(force_mock: bool = False):
+    """Pick the Layer 4 model provider.
+
+    Uses the real Silverwing Generator when the configured checkpoint exists,
+    otherwise falls back to a deterministic MockProvider so the platform still
+    boots (with a loud warning) for UI/tool development.
+    """
+    from silverwing_platform.models import GeneratorProvider, MockProvider
+
+    if force_mock:
+        print("  Model provider: MockProvider (--mock)")
+        return MockProvider()
+
+    try:
+        checkpoint = None
+        cfg_path = PROJECT_ROOT / "configs" / "inference.yaml"
+        if cfg_path.exists():
+            import yaml
+
+            raw = yaml.safe_load(cfg_path.read_text(encoding="utf-8")) or {}
+            checkpoint = (raw.get("inference") or {}).get("checkpoint_path")
+        ckpt = Path(checkpoint) if checkpoint else PROJECT_ROOT / "experiments/checkpoints/best.pt"
+        if not ckpt.is_absolute():
+            ckpt = PROJECT_ROOT / ckpt
+        if ckpt.exists():
+            print(f"  Model provider: GeneratorProvider ({ckpt})")
+            return GeneratorProvider()
+        print(f"  [warn] No checkpoint at {ckpt} - using MockProvider fallback")
+        return MockProvider()
+    except Exception as exc:
+        print(f"  [warn] Provider selection failed ({exc}) - using MockProvider")
+        return MockProvider()
+
+
+def setup_platform(force_mock: bool = False):
     """Create and configure the platform with full Layer 1–4 integration.
 
     Wires together:
@@ -171,7 +205,7 @@ def setup_platform():
     approval_mgr = ApprovalManager(db=db)
 
     # Layer 4: model provider (lazy — no torch needed to start)
-    generator = None  # Set to MockProvider() for testing, GeneratorProvider() for real
+    generator = _select_model_provider(force_mock=force_mock)
 
     orchestrator = Orchestrator(
         registry=registry,
@@ -259,13 +293,14 @@ def main():
     parser.add_argument("--port", type=int, default=8000, help="Port (default: 8000)")
     parser.add_argument("--host", default="127.0.0.1", help="Host (default: 127.0.0.1)")
     parser.add_argument("--no-browser", action="store_true", help="Don't open browser")
+    parser.add_argument("--mock", action="store_true", help="Force MockProvider (skip model load)")
     args = parser.parse_args()
 
     print("\n  SilverWing Platform")
     print("  ===================\n")
 
     print("  Setting up platform...")
-    registry, orchestrator = setup_platform()
+    registry, orchestrator = setup_platform(force_mock=args.mock)
     caps = registry.list(enabled_only=True)
     print(f"  {len(caps)} capabilities registered: {', '.join(c.name for c in caps)}")
     print(f"  Policy engine: {'active' if orchestrator.policies else 'inactive'}")
