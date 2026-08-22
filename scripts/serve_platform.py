@@ -197,6 +197,15 @@ def setup_platform(force_mock: bool = False):
     except Exception as exc:
         print(f"  [warn] MLOps capabilities not registered: {exc}")
 
+    # Register Gesture OS capabilities (MediaPipe hand tracking, YOLOv8
+    # object detection, HUD overlay, system control, IoT bridge)
+    try:
+        from sw_platform.tools.gesture import register_gesture_capabilities
+        register_gesture_capabilities(registry)
+        print("  Gesture OS capabilities registered")
+    except Exception as exc:
+        print(f"  [warn] Gesture capabilities not registered: {exc}")
+
     # Layer 4: database for persistence
     db = PlatformDatabase()
 
@@ -230,6 +239,11 @@ class PlatformServerHandler(PlatformHandler):
 
         # API routes
         if path in ("/health", "/info", "/v1/capabilities"):
+            super().do_GET()
+            return
+
+        # Gesture OS REST endpoints
+        if path in ("/v1/gestures", "/v1/gestures/status", "/v1/gestures/stats"):
             super().do_GET()
             return
 
@@ -272,6 +286,9 @@ class PlatformServerHandler(PlatformHandler):
             self.send_response(200)
             self.send_header("Content-Type", ct)
             self.send_header("Content-Length", str(len(content)))
+            # Prevent browser cache so UI updates are always served fresh
+            self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+            self.send_header("Pragma", "no-cache")
             self.end_headers()
             self.wfile.write(content)
         except Exception:
@@ -307,6 +324,7 @@ def main():
     print(f"  Approval manager: {'active' if orchestrator.approvals else 'inactive'}")
     print(f"  Database: {'connected' if orchestrator.database else 'offline'}")
     print(f"  MLOps: {len([c for c in caps if 'mlops' in c.tags or 'pipeline' in c.tags])} tracking capabilities")
+    print(f"  Gesture OS: {len([c for c in caps if 'gesture' in c.tags])} gesture capabilities wired")
 
     handler_class = type("Handler", (PlatformServerHandler,), {})
     handler_class.server_registry = registry

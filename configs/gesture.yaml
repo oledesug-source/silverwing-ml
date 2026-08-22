@@ -1,0 +1,60 @@
+# SilverWing Gesture OS — configuration
+# Loaded via GestureConfig.from_dict() in scripts/gesture_os.py
+#
+# All keys map to fields in the GestureConfig dataclass.
+# Any key you omit falls back to its default.
+
+# ── Camera ──────────────────────────────────────────────────────────
+camera_index: 0          # 0 = default webcam, 1 = external, etc.
+frame_width: 1280
+frame_height: 720
+
+# ── Hand tracking (MediaPipe) ───────────────────────────────────────
+min_detection_confidence: 0.8
+min_tracking_confidence: 0.5
+max_hands: 2
+
+# ── Gesture thresholds ──────────────────────────────────────────────
+pinch_distance_threshold: 0.04    # normalised distance thumb↔index to trigger pinch
+swipe_min_distance: 0.15        # fraction of frame width to register a swipe
+swipe_max_duration: 1.5         # seconds — max window for swipe motion
+gesture_cooldown: 0.8           # seconds between recognised gestures
+
+# ── Mouse / cursor control ──────────────────────────────────────────
+enable_mouse_control: true
+mouse_sensitivity: 1.0          # 1.0 = 1:1 mapping to screen
+click_on_pinch: true            # pinch gesture triggers a left-click
+smooth_factor: 0.3              # EMA smoothing (0 = no smoothing, 1 = no movement)
+
+# ── Object detection (YOLOv8) ───────────────────────────────────────
+enable_detection: true
+yolo_model: yolov8n.pt          # nano model — auto-downloaded by Ultralytics
+detection_interval: 0.5         # seconds between inference runs
+detection_confidence: 0.45
+
+# ── HUD / AR overlay ────────────────────────────────────────────────
+enable_hud: true
+hud_alpha: 0.55                 # overlay transparency (0.55 = 55% overlay)
+hud_show_stats: true            # show CPU/mem/battery/IP in top bar
+hud_show_objects: true          # list detected objects in left sidebar
+hud_show_gesture: true          # show active gesture indicator
+
+# ── System control ──────────────────────────────────────────────────
+enable_system_control: true
+maps_url: https://g.co/maps     # opened on swipe_right
+live_data_url: https://www.google.com/finance   # opened on swipe_left
+
+# ── Gadgets (floating tkinter windows) ────────────────────────────
+enable_gadgets: true
+gadget_refresh_interval: 2.0    # seconds between stats updates in gadget
+
+# ── IoT bridge (WebSocket / MQTT) ───────────────────────────────────
+enable_iot: true
+iot_protocol: websocket         # or "mqtt"
+iot_host: 127.0.0.1
+iot_port: 8765
+iot_reconnect_delay: 5.0
+
+# ── Display / misc ──────────────────────────────────────────────────
+show_video_feed: true           # show cv2 window (set false for headless)
+debug_landmarks: false          # draw raw MediaPipe hand landmarks

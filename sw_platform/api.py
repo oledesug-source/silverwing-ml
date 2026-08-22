@@ -1,8 +1,8 @@
 """Extended HTTP API for the Controlled Intelligence Platform.
 
 ``PlatformHandler`` extends ``SilverwingHandler`` with new endpoints for
-chat, tool execution, and capability discovery.  The legacy endpoints
-are preserved.
+chat, tool execution, capability discovery, and gesture control.  The
+legacy endpoints are preserved.
 """
 
 from __future__ import annotations
@@ -10,6 +10,7 @@ from __future__ import annotations
 import json
 import time
 import uuid
+from urllib.parse import urlparse
 
 from serving.api.server import ApiResponse, SilverwingHandler
 
@@ -42,6 +43,9 @@ class PlatformHandler(SilverwingHandler):
         POST /v1/chat/completions  — OpenAI-compatible chat completions
         POST /v1/tools/execute     — direct single tool execution
         GET  /v1/capabilities      — list registered capabilities
+        GET  /v1/gestures          — static gesture → action mapping table
+        GET  /v1/gestures/status   — subsystem availability + config snapshot
+        GET  /v1/gestures/stats    — live system metrics (CPU, mem, battery)
 
     Preserved endpoints:
         POST /generate      — raw text generation (legacy)
@@ -53,24 +57,32 @@ class PlatformHandler(SilverwingHandler):
     server_registry = None  # Set by serve()
 
     def do_POST(self) -> None:
-        if self.path == "/v1/chat":
+        path = urlparse(self.path).path
+        if path == "/v1/chat":
             self._handle_chat()
-        elif self.path == "/v1/chat/completions":
+        elif path == "/v1/chat/completions":
             self._handle_chat_completions()
-        elif self.path == "/v1/tools/execute":
+        elif path == "/v1/tools/execute":
             self._handle_tool_execute()
-        elif self.path == "/generate":
+        elif path == "/generate":
             super()._handle_generate()
         else:
             self._send_json(ApiResponse(success=False, error="Not found"), 404)
 
     def do_GET(self) -> None:
-        if self.path == "/v1/capabilities":
+        path = urlparse(self.path).path
+        if path == "/v1/capabilities":
             self._handle_capabilities()
-        elif self.path == "/health":
+        elif path == "/health":
             self._send_json(ApiResponse(success=True, data={"status": "ok"}))
-        elif self.path == "/info":
+        elif path == "/info":
             self._handle_info()
+        elif path == "/v1/gestures":
+            self._handle_gestures()
+        elif path == "/v1/gestures/status":
+            self._handle_gestures_status()
+        elif path == "/v1/gestures/stats":
+            self._handle_gestures_stats()
         else:
             self._send_json(ApiResponse(success=False, error="Not found"), 404)
 
@@ -257,3 +269,55 @@ class PlatformHandler(SilverwingHandler):
             for cap in self.server_registry.list(enabled_only=False)
         ]
         self._send_json(ApiResponse(success=True, data=caps))
+
+    # ------------------------------------------------------------------
+    # Gesture OS endpoints
+    # ------------------------------------------------------------------
+
+    def _handle_gestures(self) -> None:
+        """GET /v1/gestures — static gesture → action mapping table."""
+        try:
+            from sw_platform.tools.gesture import get_gesture_registry
+            data = get_gesture_registry()
+        except Exception as exc:
+            self._send_json(
+                ApiResponse(success=False, error=str(exc)), 500,
+            )
+            return
+
+        self._send_json(ApiResponse(
+            success=True,
+            data={
+                "gestures": data["gestures"],
+            },
+        ))
+
+    def _handle_gestures_status(self) -> None:
+        """GET /v1/gestures/status — subsystem availability + config."""
+        try:
+            from sw_platform.tools.gesture import get_gesture_registry
+            data = get_gesture_registry()
+        except Exception as exc:
+            self._send_json(
+                ApiResponse(success=False, error=str(exc)), 500,
+            )
+            return
+
+        self._send_json(ApiResponse(
+            success=True,
+            data=data["status"],
+        ))
+
+    def _handle_gestures_stats(self) -> None:
+        """GET /v1/gestures/stats — live system metrics."""
+        try:
+            from sw_platform.tools.gesture import GestureCapabilityProvider
+            provider = GestureCapabilityProvider()
+            stats = provider.get_system_stats()
+        except Exception as exc:
+            self._send_json(
+                ApiResponse(success=False, error=str(exc)), 500,
+            )
+            return
+
+        self._send_json(ApiResponse(success=True, data=stats))

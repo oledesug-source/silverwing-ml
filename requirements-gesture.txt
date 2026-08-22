@@ -1,0 +1,26 @@
+# SilverWing Gesture OS — Python dependencies
+# Install everything at once:
+#   pip install -r requirements-gesture.txt
+
+# Computer vision & hand tracking
+opencv-python-headless>=4.8
+# Pin to <1.0 because mediapipe 1.0 removed the solutions API.
+# The code falls back to the tasks API (>=1.0) with a model download,
+# but the solutions API is simpler and doesn't require a .task file.
+mediapipe>=0.10,<1.0
+
+# System control
+pyautogui>=0.9.54
+
+# Object detection (YOLOv8)
+ultralytics>=8.0
+
+# IoT bridge transports
+python-socketio>=5.0    # WebSocket transport
+paho-mqtt>=2.0          # MQTT transport
+
+# System stats for the HUD
+psutil>=5.9
+
+# Optional: advanced display
+pynput>=1.7             # keyboard/mouse listeners (for hotkeys)

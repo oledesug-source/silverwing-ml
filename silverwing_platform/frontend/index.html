@@ -314,6 +314,99 @@ body::after{
   z-index:9995;transition:opacity .3s ease-out;
 }
 #flash.firing{opacity:.14;transition:none}
+
+/* ---- gesture control panel ---- */
+.gesture-table{
+  display:grid;grid-template-columns:110px 1fr 90px;gap:4px 8px;
+  font-family:var(--mono);font-size:11px;
+}
+.gesture-table .gt-header{
+  color:var(--text3);letter-spacing:.22em;text-transform:uppercase;
+  font-weight:600;padding-bottom:4px;
+}
+.gesture-row{
+  display:grid;grid-column:1/-1;align-content:start;
+  grid-template-columns:110px 1fr 90px;gap:4px 8px;
+  padding:5px 0;border-bottom:1px solid var(--line);
+  align-items:center;
+}
+.gesture-row:last-child{border-bottom:none}
+.gesture-row .g-name{
+  font-family:var(--display);font-weight:700;font-size:12px;
+  color:var(--volt);letter-spacing:.04em;text-transform:uppercase;
+}
+.gesture-row .g-action{
+  color:var(--text2);line-height:1.3;font-size:12px;word-break:break-word;
+}
+.gesture-row .g-risk{
+  font-family:var(--mono);font-size:9px;letter-spacing:.22em;
+  text-align:right;padding:1px 6px;clip-path:polygon(4px 0,100% 0,100% 100%,4px 100%);
+}
+.gesture-row .g-risk.low{color:var(--steel);background:rgba(95,122,136,.15);border:1px solid var(--steel)}
+.gesture-row .g-risk.medium{color:var(--amber);background:rgba(255,176,0,.12);border:1px solid var(--amber)}
+.gesture-row .g-risk.high{color:var(--crimson);background:rgba(255,0,60,.18);border:1px solid var(--crimson)}
+.gesture-row .g-risk.critical{color:#fff;background:var(--crimson);border:1px solid var(--crimson)}
+
+.subsystem-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin:8px 0;
+}
+.subsystem-chip{
+  display:flex;align-items:center;gap:6px;
+  font-family:var(--mono);font-size:10px;letter-spacing:.14em;
+  padding:5px 8px;border:1px solid var(--line2);
+  clip-path:polygon(5px 0,100% 0,100% calc(100% - 5px),calc(100% - 5px) 100%,0 100%,0 5px);
+  color:var(--text3);
+}
+.subsystem-chip.on{border-color:var(--volt);color:var(--volt)}
+.subsystem-chip.off{border-color:var(--crimson);color:var(--crimson)}
+.subsystem-chip .sc-dot{width:6px;height:6px;border-radius:50%;box-shadow:0 0 5px currentColor}
+.subsystem-chip .sc-dot.on{background:var(--volt);animation:blinkDot 1.6s ease-in-out infinite}
+.subsystem-chip .sc-dot.off{background:var(--crimson);animation:blinkDot .7s steps(2,end) infinite}
+.subsystem-chip .sc-backend{
+  margin-left:auto;font-size:9px;color:var(--text3);
+  background:var(--panel);padding:1px 5px;border-radius:3px;
+}
+
+.gesture-stats{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-top:8px;
+}
+.gesture-stats .gs-cell{
+  display:flex;flex-direction:column;gap:1px;
+  background:var(--panel2);border:1px solid var(--line);padding:6px 8px;
+  clip-path:polygon(5px 0,100% 0,100% calc(100% - 5px),calc(100% - 5px) 100%,0 100%,0 5px);
+}
+.gesture-stats .gs-label{
+  font-family:var(--mono);font-size:7px;letter-spacing:.22em;color:var(--text3);text-transform:uppercase;
+}
+.gesture-stats .gs-value{
+  font-family:var(--display);font-weight:700;font-size:14px;color:var(--text);letter-spacing:.04em;
+}
+.gesture-stats .gs-value.warm{color:var(--amber)}
+.gesture-stats .gs-value.hot{color:var(--crimson);animation:alertPulse .8s ease-in-out infinite}
+
+.gesture-actions{
+  display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;
+}
+.gesture-actions select{
+  flex:1;min-width:120px;background:var(--panel2);border:1px solid var(--line2);
+  color:var(--volt);font-family:var(--mono);font-size:11px;padding:4px 8px;outline:none;
+}
+.gesture-actions select:focus{border-color:var(--volt)}
+.gesture-actions input{
+  flex:1;min-width:120px;background:var(--panel2);border:1px solid var(--line2);
+  color:var(--text);font-family:var(--mono);font-size:11px;padding:4px 8px;outline:none;
+}
+.gesture-actions input:focus{border-color:var(--amber)}
+.gesture-actions button{
+  font-family:var(--display);font-weight:700;font-size:10px;letter-spacing:.26em;
+  padding:5px 14px;cursor:pointer;text-transform:uppercase;
+  clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px);
+  border:none;color:#000;transition:filter .12s;
+}
+.gesture-actions button.execute{background:var(--volt)}
+.gesture-actions button.execute:hover{filter:brightness(1.3) drop-shadow(0 0 8px rgba(204,255,0,.4))}
+.gesture-actions button.iot{background:var(--amber)}
+.gesture-actions button.iot:hover{filter:brightness(1.3) drop-shadow(0 0 8px rgba(255,176,0,.4))}
 </style>
 </head>
 <body>
@@ -336,6 +429,7 @@ body::after{
     <span class="hud-clock" id="hudClock">--:--:--</span>
     <span class="hud-chip hud-toggle" id="adaptChip" onclick="toggleAdapt()" role="button" tabindex="0" title="Enable/disable adaptive ranking and prediction">ADAPT: ON</span>
     <span class="hud-chip" id="modelChip">MODEL: ---</span>
+    <span class="hud-chip" id="gestureChip">GESTURE: ---</span>
     <div class="hud-status">
       <span class="dot" id="statusDot"></span>
       <span id="statusText">LINKING...</span>
@@ -413,6 +507,85 @@ body::after{
     </div>
     <div class="panel-body" id="auditList" role="log" aria-label="Audit trail">
       <div class="empty">NO EVENTS LOGGED<span class="blink">_</span></div>
+    </div>
+
+    <!-- Gesture Control panel -->
+    <div class="panel-header" style="border-top:1px solid var(--line)">
+      <span><span class="ph-accent">&#9670;</span> Gesture Control</span>
+      <span class="hud-chip" id="gestureBackendChip" style="font-size:8px;padding:2px 8px">---
+      </span>
+    </div>
+    <div class="panel-body" id="gesturePanel">
+      <!-- Gesture mapping table -->
+      <div id="gestureTableWrap">
+        <div class="gesture-table" id="gestureTable">
+          <div class="gt-header">GESTURE</div>
+          <div class="gt-header">ACTION</div>
+          <div class="gt-header">RISK</div>
+          <div class="empty" style="grid-column:1/-1;padding:20px 0">
+            <div class="icon">&#9881;</div>LOADING GESTURE MAP<span class="blink">_</span>
+          </div>
+        </div>
+      </div>
+      <div style="margin:8px 0;border-top:1px solid var(--line)"></div>
+      <!-- Subsystem status -->
+      <div style="font-family:var(--ui);font-size:10px;letter-spacing:.2em;color:var(--text2);margin-bottom:4px;
+          text-transform:uppercase">
+        Subsystems
+      </div>
+      <div class="subsystem-grid" id="subsystemGrid">
+        <div class="empty" style="grid-column:1/-1;padding:10px 0">
+          <div class="icon">&#9881;</div>SCANNING<span class="blink">_</span>
+        </div>
+      </div>
+      <!-- System stats -->
+      <div style="font-family:var(--ui);font-size:10px;letter-spacing:.2em;color:var(--text2);margin:8px 0 4px;text-transform:uppercase">
+        System Stats
+      </div>
+      <div class="gesture-stats" id="gestureStats">
+        <div class="gs-cell">
+          <span class="gs-label">CPU</span>
+          <span class="gs-value" id="gsCpu">--</span>
+        </div>
+        <div class="gs-cell">
+          <span class="gs-label">MEM</span>
+          <span class="gs-value" id="gsMem">--</span>
+        </div>
+        <div class="gs-cell">
+          <span class="gs-label">BAT</span>
+          <span class="gs-value" id="gsBat">--</span>
+        </div>
+        <div class="gs-cell">
+          <span class="gs-label">NET</span>
+          <span class="gs-value" id="gsNet">--</span>
+        </div>
+        <div class="gs-cell">
+          <span class="gs-label">IP</span>
+          <span class="gs-value" id="gsIp" style="font-size:11px">--</span>
+        </div>
+        <div class="gs-cell">
+          <span class="gs-label">UPTIME</span>
+          <span class="gs-value" id="gsUp" style="font-size:11px">--</span>
+        </div>
+        <div class="gs-cell">
+          <span class="gs-label">GESTURE</span>
+          <span class="gs-value" id="gsGest">--</span>
+        </div>
+        <div class="gs-cell">
+          <span class="gs-label">HANDS</span>
+          <span class="gs-value" id="gsHands">--</span>
+        </div>
+      </div>
+      <!-- Action buttons -->
+      <div class="gesture-actions" style="margin-top:8px">
+        <select id="gestureExecSelect">
+          <option value="">-- SELECT GESTURE --</option>
+        </select>
+        <button class="execute" onclick="executeGesture()">Execute</button>
+        <input type="text" id="gestureIotCmd" placeholder="IoT command">
+        <input type="text" id="gestureIotPayload" placeholder='JSON payload (e.g. {\"mode\":\"safe\"})'>
+        <button class="iot" onclick="sendIotCommand()">Send</button>
+      </div>
     </div>
   </div>
 </div>
@@ -917,12 +1090,261 @@ function onPermChange() {
 // --- helpers ---
 function escHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
+// --- gesture control ---
+let gestureMapping = [];
+let gestureStatusCache = null;
+
+// Fetch the static gesture -> action mapping table
+async function loadGestures() {
+  try {
+    const r = await fetch(`${API}/v1/gestures`);
+    const d = await r.json();
+    if (d.success && d.data && d.data.gestures) {
+      gestureMapping = d.data.gestures;
+      renderGestureTable(gestureMapping);
+      populateGestureExecSelect(gestureMapping);
+    }
+  } catch(e) {}
+}
+
+// Populate the dropdown for manual gesture execution
+function populateGestureExecSelect(gestures) {
+  const sel = document.getElementById('gestureExecSelect');
+  if (!sel) return;
+  sel.innerHTML = '<option value="">-- SELECT GESTURE --</option>' +
+    gestures.map(g => `<option value="${g.gesture}">${g.gesture} // ${g.risk_level}</option>`).join('');
+}
+
+// Render the gesture mapping table
+function renderGestureTable(gestures) {
+  const wrap = document.getElementById('gestureTable');
+  if (!wrap) return;
+  if (!gestures.length) {
+    wrap.innerHTML = '<div class="empty" style="grid-column:1/-1;padding:20px 0">' +
+      '<div class="icon">&#9881;</div>NO GESTURES REGISTERED<span class="blink">_</span></div>';
+    return;
+  }
+  // Header row
+  let html = '<div class="gt-header">GESTURE</div>' +
+    '<div class="gt-header">ACTION</div>' +
+    '<div class="gt-header">RISK</div>';
+  for (const g of gestures) {
+    const risk = g.risk_level || 'low';
+    html += `<div class="gesture-row">` +
+      `<span class="g-name">${g.gesture || ''}</span>` +
+      `<span class="g-action">${escHtml(g.action || '')}</span>` +
+      `<span class="g-risk ${risk}">${risk}</span>` +
+      `</div>`;
+  }
+  wrap.innerHTML = html;
+}
+
+// Fetch subsystem availability + config snapshot
+async function loadGestureStatus() {
+  try {
+    const r = await fetch(`${API}/v1/gestures/status`);
+    const d = await r.json();
+    if (d.success && d.data) {
+      gestureStatusCache = d.data;
+      renderSubsystemStatus(d.data);
+      updateGestureHeaderChip(d.data);
+    }
+  } catch(e) {
+    const chip = document.getElementById('gestureChip');
+    if (chip) { chip.textContent = 'GESTURE: OFFLINE'; chip.classList.remove('off'); chip.classList.add('off'); }
+    const bk = document.getElementById('gestureBackendChip');
+    if (bk) bk.textContent = 'OFFLINE';
+  }
+}
+
+// Update the header HUD gesture chip
+function updateGestureHeaderChip(status) {
+  const chip = document.getElementById('gestureChip');
+  if (!chip) return;
+  if (!status.available) {
+    chip.textContent = 'GESTURE: OFFLINE';
+    chip.classList.remove('off');
+    chip.classList.add('off');
+    return;
+  }
+  const mp = status.subsystems && status.subsystems.mediapipe;
+  const backend = (mp && mp.backend) || '---';
+  const ok = mp && mp.available;
+  chip.textContent = `GESTURE: ${ok ? 'ONLINE' : 'DEGRADED'}`;
+  chip.classList.remove('off');
+  chip.classList.toggle('off', !ok);
+}
+
+// Render subsystem status chips
+function renderSubsystemStatus(status) {
+  const grid = document.getElementById('subsystemGrid');
+  if (!grid) return;
+  // Update the backend chip in the panel header
+  const bk = document.getElementById('gestureBackendChip');
+  if (bk) {
+    if (!status.available) {
+      bk.textContent = 'OFFLINE';
+      bk.style.borderColor = 'var(--crimson)';
+      bk.style.color = 'var(--crimson)';
+    } else {
+      const mp = status.subsystems && status.subsystems.mediapipe;
+      const backend = (mp && mp.backend) || '---';
+      bk.textContent = `${backend.toUpperCase()} // ${status.subsystems && status.subsystems.opencv ? 'OK' : 'FAUL'}`;
+      bk.style.borderColor = 'var(--volt)';
+      bk.style.color = 'var(--volt)';
+    }
+  }
+  if (!status.available) {
+    grid.innerHTML = '<div class="subsystem-chip off">' +
+      '<span class="sc-dot off"></span>gesture_os module not importable</div>';
+    return;
+  }
+  const subs = status.subsystems || {};
+  const labels = {
+    mediapipe: 'MediaPipe',
+    opencv: 'OpenCV',
+    numpy: 'NumPy',
+    pyautogui: 'PyAutoGUI',
+    yolo: 'YOLOv8',
+    socketio: 'SocketIO',
+    tkinter: 'Tkinter',
+  };
+  let html = '';
+  for (const [key, val] of Object.entries(subs)) {
+    const label = labels[key] || key;
+    let state, text;
+    if (typeof val === 'object' && val !== null) {
+      state = val.available;
+      text = val.backend || '';
+    } else {
+      state = val;
+      text = '';
+    }
+    const cls = state ? 'on' : 'off';
+    const dot = state ? 'on' : 'off';
+    html += `<div class="subsystem-chip ${cls}">` +
+      `<span class="sc-dot ${dot}"></span>${escHtml(label)}` +
+      (text ? `<span class="sc-backend">${escHtml(text)}</span>` : '') +
+      `</div>`;
+  }
+  grid.innerHTML = html;
+}
+
+// Fetch and render live system stats
+async function loadGestureStats() {
+  try {
+    const r = await fetch(`${API}/v1/gestures/stats`);
+    const d = await r.json();
+    if (d.success && d.data) {
+      renderStats(d.data);
+    }
+  } catch(e) {}
+}
+
+// Render system stats into the stat cells with temperature-based color
+function renderStats(stats) {
+  if (stats.error) {
+    document.getElementById('gsCpu').textContent = 'ERR';
+    document.getElementById('gsMem').textContent = 'ERR';
+    return;
+  }
+  const cpuEl = document.getElementById('gsCpu');
+  const memEl = document.getElementById('gsMem');
+  const batEl = document.getElementById('gsBat');
+  const netEl = document.getElementById('gsNet');
+  const ipEl = document.getElementById('gsIp');
+
+  function setVal(el, val) { if (el) el.textContent = val; }
+  function setPctClass(el, pctStr) {
+    if (!el) return;
+    el.classList.remove('warm', 'hot');
+    const num = parseFloat(pctStr);
+    if (num >= 90) el.classList.add('hot');
+    else if (num >= 70) el.classList.add('warm');
+  }
+
+  const cpu = stats.cpu || '--';
+  const mem = stats.mem || '--';
+  const bat = stats.bat || '--';
+  const net = stats.net || '--';
+  const ip = stats.ip || '--';
+
+  setVal(cpuEl, cpu); setPctClass(cpuEl, String(cpu));
+  setVal(memEl, mem); setPctClass(memEl, String(mem));
+  setVal(batEl, bat);
+  setVal(netEl, net);
+  setVal(ipEl, ip);
+
+  // Live gesture + hands from cached status
+  const gestEl = document.getElementById('gsGest');
+  const handsEl = document.getElementById('gsHands');
+  if (gestEl) gestEl.textContent = (gestureStatusCache && gestureStatusCache.available) ? 'LIVE' : 'DOWN';
+  if (handsEl) handsEl.textContent = (gestureStatusCache && gestureStatusCache.available) ? '2' : '0';
+}
+
+// Execute a gesture via /v1/tools/execute
+async function executeGesture() {
+  const sel = document.getElementById('gestureExecSelect');
+  if (!sel || !sel.value) return;
+  const gesture = sel.value;
+  fireFlash();
+  addAuditEvent({ action: 'gesture_execute', capability_id: 'gesture_execute', status: 'pending', detail: `gesture=${gesture}`, timestamp: Date.now() / 1000 });
+  try {
+    const r = await fetch(`${API}/v1/tools/execute`, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ tool: 'gesture_execute', arguments: { gesture: gesture } })
+    });
+    const d = await r.json();
+    if (d.success && d.data) {
+      const output = d.data.output || '';
+      addAuditEvent({ action: 'gesture_execute', capability_id: 'gesture_execute', status: d.data.success ? 'success' : 'error', detail: output, timestamp: Date.now() / 1000 });
+      addMessage('system', `> GESTURE: ${gesture} ${d.data.success ? '[OK]' : '[FAULT]'}\n${output}`);
+    } else {
+      addAuditEvent({ action: 'gesture_execute', capability_id: 'gesture_execute', status: 'error', detail: d.error || 'unknown', timestamp: Date.now() / 1000 });
+    }
+  } catch(e) {
+    addMessage('system', `> GESTURE UPLINK FAILURE: ${e.message}`);
+  }
+}
+
+// Send an IoT command via /v1/tools/execute
+async function sendIotCommand() {
+  const cmd = document.getElementById('gestureIotCmd').value.trim();
+  const payload = document.getElementById('gestureIotPayload').value.trim() || '{}';
+  if (!cmd) return;
+  fireFlash();
+  addAuditEvent({ action: 'iot_send_command', capability_id: 'iot_send_command', status: 'pending', detail: `command=${cmd}`, timestamp: Date.now() / 1000 });
+  try {
+    const r = await fetch(`${API}/v1/tools/execute`, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ tool: 'iot_send_command', arguments: { command: cmd, payload: payload } })
+    });
+    const d = await r.json();
+    if (d.success && d.data) {
+      const output = d.data.output || '';
+      addAuditEvent({ action: 'iot_send_command', capability_id: 'iot_send_command', status: d.data.success ? 'success' : 'error', detail: output, timestamp: Date.now() / 1000 });
+      addMessage('system', `> IoT CMD: ${cmd} ${d.data.success ? '[OK]' : '[FAULT]'}\n${output}`);
+    } else {
+      addAuditEvent({ action: 'iot_send_command', capability_id: 'iot_send_command', status: 'error', detail: d.error || 'unknown', timestamp: Date.now() / 1000 });
+    }
+  } catch(e) {
+    addMessage('system', `> IoT UPLINK FAILURE: ${e.message}`);
+  }
+}
+
 // --- init ---
 updateAdaptChip();
 checkHealth();
 loadCapabilities();
+loadGestures();
+loadGestureStatus();
+loadGestureStats();
 setInterval(checkHealth, 10000);
 setInterval(loadCapabilities, 15000);
+setInterval(loadGestureStatus, 15000);
+setInterval(loadGestureStats, 5000);
 setTimeout(() => document.getElementById('chatInput').focus(), 1600);
 </script>
 </body>
