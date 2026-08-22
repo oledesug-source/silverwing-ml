@@ -11,6 +11,8 @@ the orchestrator so that every capability action passes through
 policy → permission → approval → sandbox → audit before execution.
 """
 
+from silverwing_platform.approvals import ApprovalManager
+from silverwing_platform.policies import PolicyDecision, PolicyEngine
 from sw_platform.audit.events import AuditEvent, AuditLog
 from sw_platform.capabilities.registry import CapabilityRegistry
 from sw_platform.capabilities.schema import CapabilitySchema
@@ -23,10 +25,6 @@ from sw_platform.permissions.policy import (
     PermissionPolicy,
 )
 from sw_platform.sandbox.executor import ResourceLimits, SandboxExecutor
-
-from silverwing_platform.approvals import ApprovalManager
-from silverwing_platform.policies import PolicyDecision, PolicyEngine
-
 from sw_platform.tools.mlops import register_mlops_capabilities
 
 __all__ = [

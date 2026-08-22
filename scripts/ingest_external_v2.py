@@ -178,7 +178,7 @@ def cmd_download(args: argparse.Namespace) -> list[Path]:
 
     t0 = time.monotonic()
     out_paths: list[Path] = []
-    for i, source in enumerate(sources):
+    for source in sources:
         if single and len(sources) == 1:
             out_path = Path(args.output)
         else:

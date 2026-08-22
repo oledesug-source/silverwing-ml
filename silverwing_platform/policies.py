@@ -19,11 +19,9 @@ be explicitly relaxed by an operator.
 from __future__ import annotations
 
 import logging
-import time
-import uuid
 from collections.abc import Callable
 from dataclasses import dataclass, field
-from enum import Enum
+from enum import StrEnum
 from typing import Any
 
 from sw_platform.audit.events import AuditEvent, AuditLog
@@ -51,7 +49,7 @@ RESOURCE_CATEGORIES = [
 ]
 
 
-class PolicyDecision(str, Enum):
+class PolicyDecision(StrEnum):
     ALLOW = "allow"
     DENY = "deny"
     REQUIRE_APPROVAL = "require_approval"

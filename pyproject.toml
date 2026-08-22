@@ -6,14 +6,22 @@ requires-python = ">=3.11"
 dependencies = [
     "numpy>=2.0",
     "pyyaml>=6.0",
+    "pydantic>=2.7",
 ]
 
- [project.optional-dependencies]
+[project.optional-dependencies]
     core = [
         "torch>=2.1",
     ]
     hf = [
         "datasets>=2.18",
+    ]
+    serving = [
+        "pydantic-ai>=2.0",
+        "fastapi>=0.139",
+        "uvicorn>=0.52",
+        "httpx>=0.27",
+        "websockets>=12.0",
     ]
     all = [
         "torch>=2.1",
@@ -32,6 +40,15 @@ dependencies = [
     tensorflow = [
         "tensorflow-cpu>=2.16",
     ]
+    gesture = [
+        "opencv-python-headless>=4.8",
+        "mediapipe>=0.10,<1.0",
+        "pyautogui>=0.9.54",
+        "ultralytics>=8.0",
+        "python-socketio>=5.0",
+        "paho-mqtt>=2.0",
+        "psutil>=5.9",
+    ]
     ml = [
         "scikit-learn>=1.4",
         "scipy>=1.13",
@@ -41,21 +58,45 @@ dependencies = [
     dev = [
         "pytest>=8.0",
         "pytest-cov>=4.0",
+        "pytest-xdist>=3.6",
+        "pytest-timeout>=2.3",
         "ruff>=0.6.0",
         "mypy>=1.11.0",
         "pdoc3>=0.10.0",
-        "pydantic-ai>=2.0",
-        "fastapi>=0.139",
-        "uvicorn>=0.52",
-        "httpx>=0.27",
     ]
 
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
+[project.scripts]
+silverwing-train = "scripts.train:main"
+silverwing-generate = "scripts.generate:main"
+silverwing-benchmark = "scripts.run_benchmark:main"
+silverwing-eval-gate = "scripts.eval_gate:main"
+silverwing-preflight = "scripts.preflight_train:main"
+silverwing-serve-platform = "scripts.serve_platform:main"
+silverwing-validate-configs = "scripts.validate_configs:main"
+
+[tool.setuptools.packages.find]
+include = [
+    "foundation*",
+    "intelligence*",
+    "serving*",
+    "sw_platform*",
+    "silverwing_platform*",
+    "benchmarks*",
+    "runtime*",
+    "scripts*",
+]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+timeout = 300
+markers = [
+    "slow: long-running tests (deselect with '-m \"not slow\"')",
+    "gpu: tests requiring a CUDA device",
+]
 
 [tool.ruff]
 line-length = 100
@@ -86,6 +127,9 @@ ignore = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
+"*.ipynb" = [
+    "B904",  # exception chaining noise inside notebook cells
+]
 "tests/*" = [
     "B011",  # assert-false is idiomatic in tests
     "E731",  # lambda-assignment tolerated in tests
@@ -107,7 +151,7 @@ check_untyped_defs = true
 exclude = ["legacy/", "experiments/", ".venv/"]
 
 [[tool.mypy.overrides]]
-module = ["torch.*", "datasets.*", "yaml.*", "psutil.*", "transformers.*", "numpy.*"]
+module = ["torch.*", "datasets.*", "yaml.*", "psutil.*", "transformers.*", "numpy.*", "cv2.*", "mediapipe.*", "pyautogui.*", "ultralytics.*", "socketio.*", "paho.*"]
 follow_imports = "skip"
 ignore_missing_imports = true
 

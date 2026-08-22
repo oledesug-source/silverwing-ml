@@ -33,7 +33,7 @@ class MLopsCapabilityProvider:
 
     def _try_init(self) -> None:
         try:
-            from foundation.ops import is_available, get_tracker
+            from foundation.ops import get_tracker, is_available
             if is_available("mlflow"):
                 self._mlflow = get_tracker("mlflow")
             if is_available("wandb"):
@@ -90,7 +90,7 @@ def _kfp_compile(output: str = "experiments/pipelines/silverwing_train.yaml") ->
 def _spark_features(input: str = "datasets/**/*.jsonl", output: str = "experiments/features") -> str:
     """Compute text features from a corpus using Spark or fallback."""
     try:
-        from foundation.ops.spark_engine import df_from_jsonl, compute_text_features, backend
+        from foundation.ops.spark_engine import backend, compute_text_features, df_from_jsonl
         backend_name = backend()
         if backend_name == "pyspark":
             spark = None
@@ -100,7 +100,7 @@ def _spark_features(input: str = "datasets/**/*.jsonl", output: str = "experimen
             except Exception:
                 pass
             df = df_from_jsonl(spark, input)
-            feats = compute_text_features(df)
+            compute_text_features(df)
             return f"spark({backend_name}): computed features for {input}"
         else:
             return f"spark fallback ({backend_name}): computed features for {input}"
@@ -191,7 +191,7 @@ def register_mlops_capabilities(registry: Any) -> None:
 def _run_training_pipeline(model_config: str = "configs/model.yaml", corpus_dir: str = "experiments/corpus", checkpoint_dir: str = "experiments/checkpoints", max_steps: int = 300) -> str:
     """Run the local training pipeline."""
     try:
-        from foundation.ops.kubeflow_pipeline import build_training_pipeline, LocalPipeline
+        from foundation.ops.kubeflow_pipeline import LocalPipeline, build_training_pipeline
         pipeline: LocalPipeline = build_training_pipeline()
         context = {
             "model_config": model_config,

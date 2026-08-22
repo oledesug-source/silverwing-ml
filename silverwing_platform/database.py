@@ -433,7 +433,7 @@ class PlatformDatabase:
     def close(self) -> None:
         self._db.close()
 
-    def __enter__(self) -> "PlatformDatabase":
+    def __enter__(self) -> PlatformDatabase:
         return self
 
     def __exit__(self, *args: Any) -> None:

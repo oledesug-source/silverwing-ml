@@ -17,16 +17,39 @@ import logging
 import os
 import time
 import uuid
+from concurrent.futures import ThreadPoolExecutor
 from typing import Any
 
-from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi import FastAPI, HTTPException, Request, WebSocket, WebSocketDisconnect
+from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from sw_platform.harness.agent import AgentResponse, HarnessConfig, PydanticAgentHarness
+from sw_platform.harness.agent import HarnessConfig, PydanticAgentHarness
 
 logger = logging.getLogger(__name__)
+
+# ---------------------------------------------------------------------------
+# Runtime tuning (environment-configurable)
+# ---------------------------------------------------------------------------
+
+# Bounded executor for blocking harness calls.  Using the default loop
+# executor lets concurrent agent sessions starve each other; a dedicated
+# bounded pool isolates them and caps resource usage.
+_EXECUTOR_WORKERS = int(os.environ.get("SILVERWING_BRIDGE_WORKERS", "4"))
+_executor = ThreadPoolExecutor(
+    max_workers=_EXECUTOR_WORKERS, thread_name_prefix="sw-harness"
+)
+
+# Maximum inbound WebSocket message size, in bytes.
+_MAX_WS_MESSAGE_BYTES = int(os.environ.get("SILVERWING_BRIDGE_MAX_MESSAGE", "65536"))
+
+# Maximum chat message length accepted over REST/SSE, in characters.
+_MAX_CHAT_MESSAGE_CHARS = int(os.environ.get("SILVERWING_BRIDGE_MAX_CHARS", "32000"))
+
+# Agent sessions idle longer than this (with no live connection) are evicted
+# to bound memory usage on long-running servers.
+_SESSION_TTL_SECONDS = float(os.environ.get("SILVERWING_BRIDGE_SESSION_TTL", "3600"))
 
 app = FastAPI(
     title="Silverwing Agent Bridge",
@@ -39,22 +62,60 @@ app = FastAPI(
 # ---------------------------------------------------------------------------
 
 class ConnectionManager:
-    """Manages active WebSocket connections per session."""
+    """Manages active WebSocket connections per session.
+
+    Session harnesses are cleaned up on disconnect and idle sessions are
+    evicted after ``_SESSION_TTL_SECONDS`` to avoid unbounded memory growth.
+    """
 
     def __init__(self) -> None:
         self._active_connections: dict[str, WebSocket] = {}
         self._session_harnesses: dict[str, PydanticAgentHarness] = {}
+        self._last_activity: dict[str, float] = {}
 
     async def connect(self, ws: WebSocket, session_id: str) -> None:
         await ws.accept()
+        old = self._active_connections.get(session_id)
+        if old is not None and old is not ws:
+            # A stale connection exists for this session — close it so the
+            # new client takes over cleanly.
+            self._active_connections.pop(session_id, None)
+            try:
+                await old.close(code=4000, reason="Replaced by new connection")
+            except Exception:
+                pass
         self._active_connections[session_id] = ws
+        self.touch(session_id)
+
+    def touch(self, session_id: str) -> None:
+        """Record activity for TTL-based session eviction."""
+        self._last_activity[session_id] = time.monotonic()
 
     def disconnect(self, session_id: str) -> None:
         self._active_connections.pop(session_id, None)
+        self._last_activity.pop(session_id, None)
         harness = self._session_harnesses.pop(session_id, None)
-        if harness:
-            # Clean up session resources
-            pass
+        if harness is not None:
+            harness.reset()
+            logger.info(
+                "Cleaned up session %s (%d session(s) remaining)",
+                session_id,
+                len(self._session_harnesses),
+            )
+
+    def evict_idle_sessions(self) -> int:
+        """Drop harnesses for sessions with no live connection past the TTL."""
+        now = time.monotonic()
+        idle = [
+            sid
+            for sid, harness in self._session_harnesses.items()
+            if sid not in self._active_connections
+            and now - self._last_activity.get(sid, now) > _SESSION_TTL_SECONDS
+        ]
+        for sid in idle:
+            logger.info("Evicting idle session %s", sid)
+            self.disconnect(sid)
+        return len(idle)
 
     def get_connection(self, session_id: str) -> WebSocket | None:
         return self._active_connections.get(session_id)
@@ -63,11 +124,14 @@ class ConnectionManager:
         self, session_id: str, config: HarnessConfig | None = None
     ) -> PydanticAgentHarness:
         """Create a new agent session with its own harness."""
+        self.evict_idle_sessions()
         harness = PydanticAgentHarness(config or HarnessConfig())
         self._session_harnesses[session_id] = harness
+        self._last_activity[session_id] = time.monotonic()
         return harness
 
     def get_session(self, session_id: str) -> PydanticAgentHarness | None:
+        self.touch(session_id)
         return self._session_harnesses.get(session_id)
 
     async def broadcast(self, message: dict[str, Any]) -> None:
@@ -186,9 +250,13 @@ async def chat(
     harness = PydanticAgentHarness(config)
 
     t0 = time.monotonic()
-    response = harness.run(
-        message.message,
-        reset_history=message.reset_history,
+    if len(message.message) > _MAX_CHAT_MESSAGE_CHARS:
+        raise HTTPException(
+            status_code=413,
+            detail=f"Message exceeds {_MAX_CHAT_MESSAGE_CHARS} characters",
+        )
+    response = await asyncio.to_thread(
+        harness.run, message.message, None, message.reset_history
     )
     elapsed = time.monotonic() - t0
 
@@ -256,12 +324,16 @@ async def websocket_endpoint(ws: WebSocket, session_id: str) -> None:
     try:
         while True:
             raw = await ws.receive_text()
+            if len(raw.encode("utf-8")) > _MAX_WS_MESSAGE_BYTES:
+                await ws.send_json({"type": "error", "error": "Message too large"})
+                continue
             try:
                 data = json.loads(raw)
             except json.JSONDecodeError:
                 await ws.send_json({"type": "error", "error": "Invalid JSON"})
                 continue
 
+            manager.touch(session_id)
             action = data.get("action", "")
             if action == "message":
                 content = data.get("content", "")
@@ -274,14 +346,7 @@ async def websocket_endpoint(ws: WebSocket, session_id: str) -> None:
 
                 # Attempt to use the harness
                 try:
-                    async def run_agent(msg: str) -> AgentResponse:
-                        loop = asyncio.get_event_loop()
-                        response = await loop.run_in_executor(
-                            None, harness.run, msg
-                        )
-                        return response
-
-                    response = await run_agent(content)
+                    response = await asyncio.to_thread(harness.run, content)
 
                     await ws.send_json({
                         "type": "response",
@@ -336,6 +401,91 @@ async def websocket_endpoint(ws: WebSocket, session_id: str) -> None:
     except WebSocketDisconnect:
         manager.disconnect(session_id)
         logger.info("WebSocket client disconnected: %s", session_id)
+
+
+# ---------------------------------------------------------------------------
+# Structured request logging middleware
+# ---------------------------------------------------------------------------
+
+@app.middleware("http")
+async def log_requests(request: Request, call_next: Any) -> Any:
+    """Log every HTTP request with method, path, status, and latency."""
+    t0 = time.perf_counter()
+    try:
+        response = await call_next(request)
+    except Exception:
+        logger.exception(
+            "%s %s -> 500 (%.1f ms)",
+            request.method,
+            request.url.path,
+            (time.perf_counter() - t0) * 1000,
+        )
+        raise
+    logger.info(
+        "%s %s -> %d (%.1f ms)",
+        request.method,
+        request.url.path,
+        response.status_code,
+        (time.perf_counter() - t0) * 1000,
+    )
+    return response
+
+
+# ---------------------------------------------------------------------------
+# SSE streaming chat — event-level streaming endpoint
+# ---------------------------------------------------------------------------
+
+def _sse(event: str, data: dict[str, Any]) -> str:
+    """Format a single Server-Sent Event frame."""
+    return f"event: {event}\ndata: {json.dumps(data)}\n\n"
+
+
+@app.post("/v1/chat/stream")
+async def chat_stream(message: ChatMessage) -> StreamingResponse:
+    """Stream a chat interaction over Server-Sent Events.
+
+    Emits ``start`` → ``tool_call``* → ``response`` → ``done`` frames so the
+    frontend renders progress incrementally.  Token-level streaming will be
+    layered on once the underlying provider exposes a streaming API; today
+    the harness returns complete responses.
+    """
+    if len(message.message) > _MAX_CHAT_MESSAGE_CHARS:
+        raise HTTPException(
+            status_code=413,
+            detail=f"Message exceeds {_MAX_CHAT_MESSAGE_CHARS} characters",
+        )
+
+    session_id = f"sse-{uuid.uuid4().hex[:8]}"
+    harness = PydanticAgentHarness(
+        HarnessConfig(model=message.model, max_rounds=message.max_rounds)
+    )
+
+    async def event_stream() -> Any:
+        yield _sse("start", {"session_id": session_id})
+        try:
+            response = await asyncio.to_thread(
+                harness.run, message.message, None, message.reset_history
+            )
+            for tc in response.tool_calls:
+                yield _sse("tool_call", tc.to_dict())
+            yield _sse("response", {
+                "session_id": session_id,
+                "text": response.text,
+                "success": response.success,
+                "error": response.error,
+                "elapsed_seconds": response.elapsed_seconds,
+            })
+        except Exception as exc:
+            logger.exception("SSE chat failed for session %s", session_id)
+            yield _sse("error", {"error": str(exc)})
+        finally:
+            yield _sse("done", {"session_id": session_id})
+
+    return StreamingResponse(
+        event_stream(),
+        media_type="text/event-stream",
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+    )
 
 
 # Mount static files for the frontend

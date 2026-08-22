@@ -10,14 +10,14 @@ Named ``silverwing_platform`` to avoid collision with Python's stdlib
 from silverwing_platform.approvals import ApprovalManager, ApprovalRequest, ApprovalStatus
 from silverwing_platform.database import PlatformDatabase
 from silverwing_platform.models import (
+    GenerationConfig,
     GeneratorProvider,
     InferenceRequest,
     InferenceResponse,
-    GenerationConfig,
+    MockProvider,
     ModelMetadata,
     ModelProvider,
     ModelProviderError,
-    MockProvider,
 )
 from silverwing_platform.policies import PolicyDecision, PolicyEngine, PolicyRule
 

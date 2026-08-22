@@ -462,3 +462,12 @@ class PydanticAgentHarness:
     def conversation_history(self) -> list[dict[str, str]]:
         """Return the conversation history."""
         return self._conversation_history
+
+    def reset(self) -> None:
+        """Clear conversation history (public API for session management).
+
+        Callers outside the class (e.g. the serving bridge) should use this
+        instead of reaching into ``_conversation_history`` directly.
+        """
+        self._conversation_history.clear()
+        self._agent = None

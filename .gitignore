@@ -45,6 +45,12 @@ experiments/ingested/
 
 # Local experiment tracking DB
 mlflow.db
+experiments/mlruns/
+experiments/wandb/
+
+# Scratch files
+fix_js.py
+pip_out.txt
 
 # Evaluation reports
 experiments/eval/

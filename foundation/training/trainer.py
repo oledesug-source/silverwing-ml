@@ -128,7 +128,6 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
     # Initialize experiment trackers (MLflow local file backend + offline W&B).
     # All trackers are optional: training proceeds without them when absent.
     mlflow_tracker = None
-    wandb_run = None
     try:
         from foundation.ops.mlflow_tracker import MLflowTracker
 
@@ -142,7 +141,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
     try:
         import wandb
 
-        wandb_run = wandb.init(
+        wandb.init(
             project="silverwing-training",
             name=f"{model_cfg.model_name}-{run_id}",
             config=cfg.to_dict(),
@@ -154,7 +153,6 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
         use_wandb = True
     except ImportError:
         use_wandb = False
-        wandb_run = None
 
     if mlflow_tracker is not None:
         _mlflow_run = mlflow_tracker.start_run(run_name=f"{model_cfg.model_name}-{run_id}", config=cfg.to_dict())
@@ -345,7 +343,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
     report_path = Path(cfg.checkpoint_dir) / "training_report.json"
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    
+
      # Finish trackers
     if use_wandb:
         try:
