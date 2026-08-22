@@ -7,6 +7,8 @@ import json
 import sys
 from pathlib import Path
 
+import yaml
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from foundation.training import TrainConfig, train
@@ -32,7 +34,8 @@ def main() -> None:
     parser.add_argument("--no-clean-repo-check", action="store_true")
     args = parser.parse_args()
 
-    cfg = TrainConfig.from_yaml(args.config)
+    raw = yaml.safe_load(Path(args.config).read_text(encoding="utf-8")) or {}
+    section = raw.get("training", raw)
     overrides = {
         "model_config_path": args.model_config,
         "corpus_dir": args.corpus_dir,
@@ -48,7 +51,8 @@ def main() -> None:
         "seed": args.seed,
         "device": args.device,
     }
-    cfg = TrainConfig.from_dict({**cfg.to_dict(), **{k: v for k, v in overrides.items() if v is not None}})
+    merged = {**section, **{k: v for k, v in overrides.items() if v is not None}}
+    cfg = TrainConfig.from_dict(merged)
     if args.no_clean_repo_check:
         cfg = TrainConfig.from_dict({**cfg.to_dict(), "require_clean_repo": False})
     if args.amp:
