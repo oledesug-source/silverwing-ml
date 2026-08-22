@@ -340,7 +340,7 @@ class Evaluator:
             adapter._tokenizer = tokenizer
             adapter._device = device
             adapter._cfg = model.cfg if hasattr(model, "cfg") else None
-            adapter._eos_id = tokenizer.special_ids[""]
+            adapter._eos_id = tokenizer.special_ids["<|endoftext|>"]
             adapter._prompt_template = None
             adapter.model_id = f"silverwing:{Path(self._config.checkpoint_path).name}"
 
