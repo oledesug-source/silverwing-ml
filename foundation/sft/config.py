@@ -103,6 +103,18 @@ class SftConfig:
         return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
     @classmethod
+    def from_dict(cls, values: dict[str, Any]) -> SftConfig:
+        defaults = {f.name: f.default for f in fields(cls)}
+        filtered: dict[str, Any] = {}
+        for field in fields(cls):
+            key = field.name
+            if key in values and values[key] is not None:
+                filtered[key] = _coerce(values[key], field.type)
+            else:
+                filtered[key] = defaults[key]
+        return cls(**filtered)
+
+    @classmethod
     def from_yaml(cls, path: str | Path) -> SftConfig:
         import yaml
 

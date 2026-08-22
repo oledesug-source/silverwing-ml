@@ -10,6 +10,8 @@ import argparse
 import sys
 from pathlib import Path
 
+import yaml
+
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
@@ -30,32 +32,29 @@ def main() -> int:
     parser.add_argument("--no-clean-repo-check", action="store_true")
     args = parser.parse_args()
 
-    cfg = SftConfig.from_yaml(args.config)
+    raw = yaml.safe_load(Path(args.config).read_text(encoding="utf-8")) or {}
+    section = raw.get("sft", raw)
     overrides: dict = {}
     if args.init_from:
         overrides["init_from"] = args.init_from
     if args.checkpoint_dir:
         overrides["checkpoint_dir"] = args.checkpoint_dir
-    if args.max_steps:
+    if args.max_steps is not None:
         overrides["max_steps"] = args.max_steps
-    if args.batch_size:
+    if args.batch_size is not None:
         overrides["batch_size"] = args.batch_size
-    if args.lr:
+    if args.lr is not None:
         overrides["lr"] = args.lr
     if args.seed is not None:
         overrides["seed"] = args.seed
     if args.device:
         overrides["device"] = args.device
-    if overrides:
-        from dataclasses import replace
-
-        cfg = replace(cfg, **overrides)
     if args.no_clean_repo_check:
-        from dataclasses import replace
-        cfg = replace(cfg, require_clean_repo=False)
+        overrides["require_clean_repo"] = False
     if args.amp:
-        from dataclasses import replace
-        cfg = replace(cfg, amp=True)
+        overrides["amp"] = True
+    merged = {**section, **{k: v for k, v in overrides.items() if v is not None}}
+    cfg = SftConfig.from_dict(merged)
 
     report = train_sft(cfg)
     print(report["final_checkpoint"])
