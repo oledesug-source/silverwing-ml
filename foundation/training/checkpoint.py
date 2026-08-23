@@ -19,12 +19,22 @@ def capture_rng_state() -> dict[str, Any]:
 
 
 def restore_rng_state(state: dict[str, Any]) -> None:
-    """Restore state produced by :func:`capture_rng_state`."""
+    """Restore state produced by :func:`capture_rng_state`.
+
+    States are coerced to CPU uint8 first: checkpoints loaded with
+    ``map_location='cuda'`` contain CUDA copies of these tensors, which the
+    generators reject ("RNG state must be a torch.ByteTensor").
+    """
     if "torch" not in state:
         raise ValueError("checkpoint is missing torch RNG state")
-    torch.set_rng_state(state["torch"])
+    ts = state["torch"]
+    if not isinstance(ts, torch.Tensor):
+        raise ValueError("torch RNG state must be a tensor")
+    torch.set_rng_state(ts.detach().to(device="cpu", dtype=torch.uint8))
     if "cuda" in state and torch.cuda.is_available():
-        torch.cuda.set_rng_state_all(state["cuda"])
+        torch.cuda.set_rng_state_all(
+            [t.detach().to(device="cpu", dtype=torch.uint8) for t in state["cuda"]]
+        )
 
 
 def save_checkpoint(
