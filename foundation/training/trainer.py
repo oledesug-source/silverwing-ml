@@ -98,6 +98,8 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
 
     torch.manual_seed(cfg.seed)
     device = torch.device(cfg.device)
+    if device.type == "cuda":
+        torch.backends.cudnn.benchmark = True
     amp_dtype = {"float16": torch.float16, "bfloat16": torch.bfloat16}[cfg.amp_dtype]
     use_amp = bool(cfg.amp and device.type == "cuda")
     scaler = torch.amp.GradScaler("cuda", enabled=use_amp and amp_dtype == torch.float16)
@@ -169,7 +171,8 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
     tokens_per_step = cfg.batch_size * cfg.block_size * cfg.grad_accum_steps
     best_path: Path | None = None
     train_loss = float("nan")
-    grad_norm: float | None = None
+    grad_norm: torch.Tensor | None = None
+    pending_loss: torch.Tensor | None = None
 
     def persist(step: int, *, eval_loss: float | None = None, filename: str | None = None) -> Path:
         return save_checkpoint(
@@ -193,7 +196,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
 
     for step in range(start_step, cfg.max_steps + 1):
         optimizer.zero_grad(set_to_none=True)
-        micro_losses: list[float] = []
+        micro_losses: list[torch.Tensor] = []
         for _ in range(cfg.grad_accum_steps):
             x, y = next(batch_stream)
             x = x.to(device)
@@ -206,21 +209,25 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
                     ignore_index=_pad_id(tokenizer),
                 )
             scaler.scale(loss / cfg.grad_accum_steps).backward()
-            micro_losses.append(float(loss.item()))
+            micro_losses.append(loss.detach())
         if cfg.grad_clip is not None:
             scaler.unscale_(optimizer)
-            grad_norm = float(torch.nn.utils.clip_grad_norm_(model.parameters(), cfg.grad_clip).item())
+            grad_norm = torch.nn.utils.clip_grad_norm_(model.parameters(), cfg.grad_clip)
         lr = schedule_lr(step - 1, cfg.lr, cfg.warmup_steps, cfg.max_steps, cfg.min_lr_ratio)
         for group in optimizer.param_groups:
             group["lr"] = lr
         scaler.step(optimizer)
         scaler.update()
-        train_loss = sum(micro_losses) / len(micro_losses)
+        # Keep the mean loss on GPU; only sync with .item() when a log line
+        # actually needs it, so each step avoids a full pipeline stall.
+        pending_loss = torch.stack(micro_losses).mean()
 
         if cfg.log_steps and step % cfg.log_steps == 0:
+            train_loss = float(pending_loss)
+            gn = float(grad_norm) if grad_norm is not None else None
+            grad_norm_str = f"{gn:.4f}" if gn is not None else "n/a"
             elapsed = time.perf_counter() - start_time
             throughput = tokens_per_step * step / elapsed if elapsed > 0 else 0.0
-            grad_norm_str = f"{grad_norm:.4f}" if grad_norm is not None else "n/a"
             log(
                 f"step {step}/{cfg.max_steps} lr {lr:.2e} loss {train_loss:.4f} "
                 f"grad_norm {grad_norm_str} ({throughput:.0f} tok/s)"
@@ -231,7 +238,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
                     "step": step,
                     "train_loss": train_loss,
                     "lr": lr,
-                    "grad_norm": grad_norm,
+                    "grad_norm": gn,
                     "throughput": throughput,
                 })
             if mlflow_tracker is not None:
@@ -239,7 +246,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
                     "step": step,
                     "train_loss": train_loss,
                     "lr": lr,
-                    "grad_norm": grad_norm,
+                    "grad_norm": gn,
                     "throughput": throughput,
                 }, step=step)
 
@@ -269,6 +276,8 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
             persist(step)
 
     elapsed = time.perf_counter() - start_time
+    if math.isnan(train_loss) and pending_loss is not None:
+        train_loss = float(pending_loss)
     final_result = evaluate(model, tokenizer, data_val, cfg.eval_sequences, device, amp_dtype=amp_dtype if use_amp else None)
     final_path = persist(
         cfg.max_steps,
@@ -299,7 +308,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
         "micro_batch_size": cfg.batch_size,
         "grad_accum_steps": cfg.grad_accum_steps,
         "final_train_loss": train_loss,
-        "final_grad_norm": grad_norm,
+        "final_grad_norm": float(grad_norm) if grad_norm is not None else None,
         "final_eval_loss": final_result[0] if final_result else None,
         "final_perplexity": final_result[1] if final_result else None,
         "best_eval_loss": best_eval if best_eval != float("inf") else None,

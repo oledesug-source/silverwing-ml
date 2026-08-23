@@ -83,53 +83,77 @@ class PretrainingData:
         self.block_size = block_size
         self.eos_id = tokenizer.special_ids["<|endoftext|>"]
         corpus_dir = Path(corpus_dir)
-        tokens: list[int] = []
-        n_documents = 0
-        for shard in sorted(corpus_dir.glob(f"{split}.*.jsonl")):
-            for line in shard.read_text(encoding="utf-8").splitlines():
-                if not line.strip():
-                    continue
-                try:
-                    record = json.loads(line)
-                except json.JSONDecodeError:
-                    continue
-                text = record.get("text", "")
-                if not text:
-                    continue
-                tokens.extend(tokenizer.encode(text))
-                tokens.append(self.eos_id)
-                n_documents += 1
+        cache_path = corpus_dir / f".token-cache-{tokenizer.digest()[:12]}-{split}.pt"
+        cached = self._load_cache(cache_path)
+        if cached is not None:
+            self.tokens, self.n_documents = cached
+        else:
+            tokens: list[int] = []
+            n_documents = 0
+            for shard in sorted(corpus_dir.glob(f"{split}.*.jsonl")):
+                for line in shard.read_text(encoding="utf-8").splitlines():
+                    if not line.strip():
+                        continue
+                    try:
+                        record = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    text = record.get("text", "")
+                    if not text:
+                        continue
+                    tokens.extend(tokenizer.encode(text))
+                    tokens.append(self.eos_id)
+                    n_documents += 1
+                    if max_tokens is not None and len(tokens) >= max_tokens:
+                        break
                 if max_tokens is not None and len(tokens) >= max_tokens:
                     break
-            if max_tokens is not None and len(tokens) >= max_tokens:
-                break
-        self.tokens = tokens
-        self.n_documents = n_documents
-        self.n_blocks = max(0, (len(tokens) - 1) // block_size)
+            self.tokens = torch.tensor(tokens, dtype=torch.long)
+            self.n_documents = n_documents
+            self._save_cache(cache_path, self.tokens, n_documents)
+        self.n_blocks = max(0, (self.num_tokens() - 1) // block_size)
+
+    @staticmethod
+    def _load_cache(path: Path) -> tuple[torch.Tensor, int] | None:
+        """Load a previously tokenized stream; None on any mismatch/corruption."""
+        if not path.exists():
+            return None
+        try:
+            payload = torch.load(path, map_location="cpu", weights_only=True)
+            tokens = payload["tokens"]
+            if tokens.dtype != torch.long or tokens.dim() != 1:
+                return None
+            return tokens, int(payload["n_documents"])
+        except Exception:
+            return None
+
+    @staticmethod
+    def _save_cache(path: Path, tokens: torch.Tensor, n_documents: int) -> None:
+        """Best-effort cache write; failures never block training."""
+        try:
+            tmp = path.with_name(path.name + ".tmp")
+            torch.save({"tokens": tokens, "n_documents": int(n_documents)}, tmp)
+            tmp.replace(path)
+        except OSError:
+            pass
 
     def __len__(self) -> int:
         return self.n_blocks
 
     def num_tokens(self) -> int:
-        return len(self.tokens)
+        return int(self.tokens.numel())
 
-    def _block(self, index: int) -> list[int]:
+    def _block(self, index: int) -> torch.Tensor:
         start = index * self.block_size
         return self.tokens[start : start + self.block_size + 1]
 
     def batch(self, block_indices: list[int]) -> tuple[torch.Tensor, torch.Tensor]:
         if not block_indices:
             raise ValueError("cannot build a batch from empty block indices")
-        xs: list[list[int]] = []
-        ys: list[list[int]] = []
-        for i in block_indices:
-            block = self._block(i)
-            xs.append(block[: self.block_size])
-            ys.append(block[1:])
-        return (
-            torch.tensor(xs, dtype=torch.long),
-            torch.tensor(ys, dtype=torch.long),
-        )
+        starts = torch.as_tensor(block_indices, dtype=torch.long) * self.block_size
+        offsets = torch.arange(self.block_size + 1)
+        seq = self.tokens[starts[:, None] + offsets[None, :]]
+        return seq[:, :-1], seq[:, 1:]
 
     def shuffled_indices(self, rng: random.Random) -> list[int]:
         indices = list(range(self.n_blocks))
