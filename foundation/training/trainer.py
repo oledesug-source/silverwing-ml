@@ -87,6 +87,12 @@ def _validate_resume_checkpoint(
 
 
 def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
+    # Dump every thread's stack to stderr every 30 min so a wedged run
+    # leaves forensic evidence in the session log instead of silence.
+    import faulthandler
+
+    faulthandler.dump_traceback_later(1800, repeat=True)
+
     commit = require_clean_repo() if cfg.require_clean_repo else git_commit()
 
     inputs = preflight_train(cfg)
@@ -103,12 +109,18 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
     amp_dtype = {"float16": torch.float16, "bfloat16": torch.bfloat16}[cfg.amp_dtype]
     use_amp = bool(cfg.amp and device.type == "cuda")
     scaler = torch.amp.GradScaler("cuda", enabled=use_amp and amp_dtype == torch.float16)
-    model = build_model(model_cfg).to(device)
+    raw_model = build_model(model_cfg).to(device)
+    # DataParallel across every visible GPU; checkpoints always store the
+    # unwrapped module so they stay portable across 1-GPU and N-GPU hosts.
+    model = raw_model
+    if device.type == "cuda" and torch.cuda.device_count() > 1:
+        model = torch.nn.DataParallel(raw_model)
+        log(f"DataParallel over {torch.cuda.device_count()} GPUs")
     tokenizer_hash = tokenizer.digest()
     if cfg.init_from:
         if not Path(cfg.init_from).exists():
             raise ValueError(f"init_from checkpoint does not exist: {cfg.init_from}")
-        load_checkpoint(cfg.init_from, model, None, cfg.device)
+        load_checkpoint(cfg.init_from, raw_model, None, cfg.device)
 
     optimizer, opt_report = build_optimizer(model, cfg.lr, cfg.weight_decay, cfg.betas, cfg.eps)
 
@@ -154,7 +166,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
     best_eval = float("inf")
     batch_stream = data_train.batch_stream(cfg.batch_size, cfg.seed)
     if cfg.resume_from:
-        ckpt = load_checkpoint(cfg.resume_from, model, optimizer, cfg.device)
+        ckpt = load_checkpoint(cfg.resume_from, raw_model, optimizer, cfg.device)
         _validate_resume_checkpoint(
             ckpt,
             model_config_digest=model_cfg.digest(),
@@ -178,7 +190,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
         return save_checkpoint(
             cfg.checkpoint_dir,
             step=step,
-            model=model,
+            model=raw_model,
             optimizer=optimizer,
             run_id=run_id,
             config_digest=cfg.digest(),
@@ -297,7 +309,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
         "dataset_hash": dataset_hash,
         "train_config_digest": cfg.digest(),
         "train_config": cfg.to_dict(),
-        "num_parameters": model.num_parameters(),
+        "num_parameters": raw_model.num_parameters(),
         "num_train_blocks": data_train.n_blocks,
         "num_train_documents": data_train.n_documents,
         "train_tokens_in_corpus": data_train.num_tokens(),
