@@ -121,7 +121,7 @@ class PretrainingData:
         try:
             payload = torch.load(path, map_location="cpu", weights_only=True)
             tokens = payload["tokens"]
-            if tokens.dtype != torch.long or tokens.dim() != 1:
+            if tokens.dtype not in (torch.long, torch.int32, torch.int16) or tokens.dim() != 1:
                 return None
             return tokens, int(payload["n_documents"])
         except Exception:
@@ -153,7 +153,8 @@ class PretrainingData:
         starts = torch.as_tensor(block_indices, dtype=torch.long) * self.block_size
         offsets = torch.arange(self.block_size + 1)
         seq = self.tokens[starts[:, None] + offsets[None, :]]
-        return seq[:, :-1], seq[:, 1:]
+        # .long() is a no-op view for long caches and an upcast for int32/16 ones
+        return seq[:, :-1].long(), seq[:, 1:].long()
 
     def shuffled_indices(self, rng: random.Random) -> list[int]:
         indices = list(range(self.n_blocks))
