@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import sys as _stdlib_sys
 import time
 from collections.abc import Callable
@@ -146,7 +147,7 @@ def train(cfg: TrainConfig, log: Callable[[str], None] = print) -> dict:
             name=f"{model_cfg.model_name}-{run_id}",
             config=cfg.to_dict(),
             dir=str(Path("experiments/wandb").resolve()),
-            mode="offline",
+            mode=os.environ.get("WANDB_MODE", "offline"),
             anonymous="never",
             force=False,
         )
