@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from foundation.general_corpus import general_preference_pairs, write_jsonl  # noqa: E402
+from foundation.lesson_plan import UNIFIED_GENERATORS  # noqa: E402
 from scripts.build_preference_dataset import generate_preference_records  # noqa: E402
 
 DEFAULT_OUTPUT = "experiments/alignment/dpo-v2-all.jsonl"
@@ -36,9 +37,7 @@ def main() -> int:
     parser.add_argument("--output", default=DEFAULT_OUTPUT)
     args = parser.parse_args()
 
-    from foundation.math_corpus import PROBLEM_GENERATORS
-
-    topics = list(PROBLEM_GENERATORS.keys())
+    topics = list(UNIFIED_GENERATORS.keys())
 
     records: list[dict] = []
     seen_ids: set[str] = set()

@@ -1,16 +1,15 @@
-"""Build the mixed SFT dataset v3 (M17/M18): math + reasoning + general chat
-+ advanced STEM.
+"""Build the mixed SFT dataset v3 (M17-M19): unified lesson track + general.
 
-Combines the existing committed corpora (sft-v2-all.jsonl = 4,000 math +
-1,000 chain-of-thought) with the deterministic general-conversation bank
-(foundation/general_corpus) AND the M18 advanced generators (linear algebra,
-advanced probability, statistics - each emitted twice: bare-answer and
-chain-of-thought form), shuffles with a fixed seed, and writes:
+Layers:
+  1. base corpus      - sft-v2-all.jsonl (4,000 math + 1,000 CoT)
+  2. UNIFIED LESSONS  - foundation/lesson_plan.py: one graded track from
+                        lesson 1 (arithmetic) to lesson 16 (networking),
+                        every problem emitted as bare-answer AND
+                        chain-of-thought records
+  3. general chat     - foundation/general_corpus bank
 
-    experiments/sft/sft-v3-all.jsonl
-    experiments/sft/sft-v3-all.manifest.json
-
-Reproducible from seed alone (M01 rule).
+Writes experiments/sft/sft-v3-all.jsonl (+ .manifest.json). Reproducible
+from seed alone (M01 rule).
 """
 
 from __future__ import annotations
@@ -25,11 +24,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from foundation.general_corpus import expand_bank, write_jsonl  # noqa: E402
-from foundation.math_corpus import PROBLEM_GENERATORS  # noqa: E402
+from foundation.lesson_plan import lesson_records, manifest as lesson_manifest  # noqa: E402
 
 DEFAULT_BASE = "experiments/sft/sft-v2-all.jsonl"
 DEFAULT_OUTPUT = "experiments/sft/sft-v3-all.jsonl"
-ADVANCED_TOPICS = ("linear_algebra", "advanced_probability", "statistics")
 
 
 def main() -> int:
@@ -37,10 +35,6 @@ def main() -> int:
     parser.add_argument("--base", default=DEFAULT_BASE)
     parser.add_argument("--output", default=DEFAULT_OUTPUT)
     parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument(
-        "--per-topic-advanced", type=int, default=150,
-        help="problems per advanced topic (each also emitted as chain-of-thought)",
-    )
     args = parser.parse_args()
 
     base_path = ROOT / args.base
@@ -61,24 +55,12 @@ def main() -> int:
             add(json.loads(line))
     n_base = len(records)
 
-    # ---- advanced STEM topics (bare answer + chain-of-thought variants) ----
+    # ---- unified lesson track (lesson 1 .. last) ----
     rng = random.Random(args.seed)
-    n_advanced = 0
-    for topic in ADVANCED_TOPICS:
-        gen = PROBLEM_GENERATORS[topic]
-        for i in range(args.per_topic_advanced):
-            problem = gen(rng)
-            add({
-                "id": f"sft-v3-adv-{topic}-{i:04d}",
-                "instruction": problem.question,
-                "response": problem.answer,
-            })
-            add({
-                "id": f"cot-v3-{topic}-{i:04d}",
-                "instruction": problem.question,
-                "response": problem.solution,
-            })
-            n_advanced += 2
+    lessons = lesson_records(rng)
+    for record in lessons:
+        add(record)
+    n_lessons = len(lessons)
 
     for record in expand_bank(seed=args.seed):
         add(record)
@@ -91,7 +73,8 @@ def main() -> int:
     by_prefix: dict[str, int] = {}
     for record in records:
         parts = record["id"].split("-")
-        prefix = "-".join(parts[:2]) if record["id"].startswith(("sft-v3", "cot-v3")) else parts[1] if len(parts) > 1 else "?"
+        prefix = parts[0] if parts[0].startswith("U") else (
+            "-".join(parts[:2]) if record["id"].startswith(("sft-v3", "cot-v3")) else parts[1] if len(parts) > 1 else "?")
         by_prefix[prefix] = by_prefix.get(prefix, 0) + 1
 
     manifest = {
@@ -101,9 +84,9 @@ def main() -> int:
         "sources": {
             "base": str(args.base),
             "base_records": n_base,
-            "advanced_records": n_advanced,
-            "advanced_topics": list(ADVANCED_TOPICS),
-            "general_bank_records": len(records) - n_base - n_advanced,
+            "unified_lessons": n_lessons,
+            "lesson_plan": lesson_manifest(),
+            "general_bank_records": len(records) - n_base - n_lessons,
         },
         "records_by_kind": by_prefix,
         "total": len(records),

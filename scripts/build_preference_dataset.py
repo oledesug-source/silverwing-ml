@@ -126,9 +126,15 @@ def generate_preference_records(
     rng = random.Random(seed)
     records: list[dict] = []
     for topic in topics:
-        if topic not in PROBLEM_GENERATORS:
-            raise ValueError(f"unknown topic: {topic}")
-        gen = PROBLEM_GENERATORS[topic]
+        try:
+            gen = PROBLEM_GENERATORS[topic]
+        except KeyError:
+            # unified registry covers non-math domains too (M19)
+            from foundation.lesson_plan import UNIFIED_GENERATORS
+
+            if topic not in UNIFIED_GENERATORS:
+                raise ValueError(f"unknown topic: {topic}")
+            gen = UNIFIED_GENERATORS[topic]
         for i in range(per_topic):
             problem: Problem = gen(rng)
             rejected = make_rejection(rng, problem.answer)

@@ -5,32 +5,175 @@
   "sources": {
     "base": "experiments/sft/sft-v2-all.jsonl",
     "base_records": 5000,
-    "advanced_records": 900,
-    "advanced_topics": [
-      "linear_algebra",
-      "advanced_probability",
-      "statistics"
-    ],
+    "unified_lessons": 2840,
+    "lesson_plan": {
+      "lessons": [
+        {
+          "number": 1,
+          "title": "Arithmetic",
+          "domain": "math",
+          "topic": "arithmetic",
+          "per_topic": 120,
+          "records": 240
+        },
+        {
+          "number": 2,
+          "title": "Geometry basics",
+          "domain": "math",
+          "topic": "geometry",
+          "per_topic": 80,
+          "records": 160
+        },
+        {
+          "number": 3,
+          "title": "Probability I",
+          "domain": "math",
+          "topic": "probability",
+          "per_topic": 80,
+          "records": 160
+        },
+        {
+          "number": 4,
+          "title": "Algebra",
+          "domain": "math",
+          "topic": "algebra",
+          "per_topic": 100,
+          "records": 200
+        },
+        {
+          "number": 5,
+          "title": "Linear equations",
+          "domain": "math",
+          "topic": "linear_equations",
+          "per_topic": 90,
+          "records": 180
+        },
+        {
+          "number": 6,
+          "title": "Functions",
+          "domain": "math",
+          "topic": "functions",
+          "per_topic": 70,
+          "records": 140
+        },
+        {
+          "number": 7,
+          "title": "Number theory",
+          "domain": "math",
+          "topic": "number_theory",
+          "per_topic": 80,
+          "records": 160
+        },
+        {
+          "number": 8,
+          "title": "Statistics",
+          "domain": "math",
+          "topic": "statistics",
+          "per_topic": 70,
+          "records": 140
+        },
+        {
+          "number": 9,
+          "title": "Trigonometry",
+          "domain": "math",
+          "topic": "trigonometry",
+          "per_topic": 60,
+          "records": 120
+        },
+        {
+          "number": 10,
+          "title": "Differentiation",
+          "domain": "math",
+          "topic": "differentiation",
+          "per_topic": 90,
+          "records": 180
+        },
+        {
+          "number": 11,
+          "title": "Integration",
+          "domain": "math",
+          "topic": "integration",
+          "per_topic": 90,
+          "records": 180
+        },
+        {
+          "number": 12,
+          "title": "Linear algebra",
+          "domain": "math",
+          "topic": "linear_algebra",
+          "per_topic": 110,
+          "records": 220
+        },
+        {
+          "number": 13,
+          "title": "Probability II",
+          "domain": "math",
+          "topic": "advanced_probability",
+          "per_topic": 110,
+          "records": 220
+        },
+        {
+          "number": 14,
+          "title": "Programming (Python)",
+          "domain": "computing",
+          "topic": "programming",
+          "per_topic": 90,
+          "records": 180
+        },
+        {
+          "number": 15,
+          "title": "Machine language",
+          "domain": "computing",
+          "topic": "machine_language",
+          "per_topic": 90,
+          "records": 180
+        },
+        {
+          "number": 16,
+          "title": "Networking",
+          "domain": "computing",
+          "topic": "networking",
+          "per_topic": 90,
+          "records": 180
+        }
+      ],
+      "total_lessons": 16,
+      "total_records": 2840
+    },
     "general_bank_records": 127
   },
   "records_by_kind": {
-    "v2": 2000,
     "v1": 3000,
-    "sft-v3": 450,
-    "cot-v3": 450,
-    "affirmation": 10,
-    "wellbeing": 6,
-    "limits": 10,
+    "U01": 240,
+    "v2": 2000,
+    "U12": 220,
+    "U04": 200,
+    "U06": 140,
+    "U11": 180,
+    "U14": 180,
+    "U03": 160,
     "fact": 41,
-    "identity": 10,
-    "gratitude": 8,
+    "U13": 220,
+    "U10": 180,
+    "U16": 180,
+    "U15": 180,
+    "U08": 140,
+    "U09": 120,
+    "U07": 160,
+    "U05": 180,
+    "U02": 160,
+    "affirmation": 10,
+    "limits": 10,
     "smalltalk": 10,
     "farewell": 8,
-    "study": 4,
-    "help": 7,
     "capabilities": 8,
-    "apology": 5
+    "wellbeing": 6,
+    "apology": 5,
+    "help": 7,
+    "study": 4,
+    "identity": 10,
+    "gratitude": 8
   },
-  "total": 6027,
+  "total": 7967,
   "output_path": "F:\\AI\\Silverwing-ML\\experiments\\sft\\sft-v3-all.jsonl"
 }
