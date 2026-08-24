@@ -7,8 +7,10 @@ One command = trained model + orchestration + web dashboard::
     python scripts/serve_model.py --checkpoint PATH     # ad-hoc checkpoint
 
 Interactive surfaces (http://127.0.0.1:8000):
-    /                tactical dashboard - chat, capabilities, tools
-    /agentic         agentic console (capability levels L1-L6)
+    /                unified platform SPA - chat, agentic, tools, terminal, system
+    /agentic         legacy standalone agentic console
+    /chat            legacy standalone chat page
+    /workspace/      original workspace canvas SPA
     /docs            OpenAPI explorer
 
 API endpoints:
@@ -71,18 +73,10 @@ def main() -> int:
 
     from serving.api.platform_app import create_app  # noqa: E402
 
-    frontend_controller = None
-    try:
-        from silverwing_platform.frontend import FrontendController  # noqa: E402
-
-        frontend_controller = FrontendController()
-    except Exception as exc:
-        print(f"[warn] dashboard unavailable ({exc}) - API-only mode")
-
     app = create_app(
         registry=runtime.orchestrator.registry,
         orchestrator=runtime.orchestrator,
-        frontend_controller=frontend_controller,
+        frontend_dir=PROJECT_ROOT / "serving" / "frontend" / "app",
     )
 
     import uvicorn  # noqa: E402

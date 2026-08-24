@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Silverwing Platform</title>
+<style>
+  :root {
+    --bg: #070a12;
+    --bg2: #0b101c;
+    --panel: rgba(255,255,255,.028);
+    --panel-solid: #0e1524;
+    --edge: #1b2438;
+    --edge-hi: #2a3a5e;
+    --ink: #e7eef9;
+    --dim: #8ba0bf;
+    --faint: #5b6d8a;
+    --acc: #4da3ff;
+    --acc2: #22d3ee;
+    --grad: linear-gradient(135deg, #4da3ff, #22d3ee);
+    --ok: #39d98a;
+    --warn: #fbbf24;
+    --bad: #ff6b6b;
+    --user-bubble: linear-gradient(135deg, #1b2c50, #16233f);
+    --radius: 14px;
+    --mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background:
+      radial-gradient(1100px 500px at 85% -10%, rgba(34,211,238,.07), transparent 60%),
+      radial-gradient(900px 600px at -10% 110%, rgba(77,163,255,.08), transparent 60%),
+      var(--bg);
+    color: var(--ink);
+    font: 15px/1.55 "Segoe UI", system-ui, sans-serif;
+    display: grid;
+    grid-template-columns: 232px 1fr;
+    overflow: hidden;
+  }
+
+  /* ---------- sidebar ---------- */
+  .side {
+    background: var(--bg2);
+    border-right: 1px solid var(--edge);
+    display: flex; flex-direction: column;
+    padding: 18px 14px;
+    min-width: 0;
+  }
+  .brand { display:flex; align-items:center; gap:10px; padding: 4px 8px 16px; }
+  .brand-mark {
+    width: 34px; height: 34px; border-radius: 10px;
+    background: var(--grad);
+    display:grid; place-items:center;
+    color:#04101f; font-weight:800; font-size:15px; letter-spacing:.5px;
+    box-shadow: 0 0 22px rgba(77,163,255,.35);
+  }
+  .brand-name { font-size:15.5px; font-weight:700; letter-spacing:.4px; }
+  .brand-sub { font-size:11px; color:var(--faint); letter-spacing:.6px; }
+  nav { margin-top: 10px; display:flex; flex-direction:column; gap:3px; }
+  nav a {
+    display:flex; align-items:center; gap:11px;
+    padding: 9px 12px; border-radius: 10px;
+    color: var(--dim); text-decoration:none; font-size:14px;
+    border:1px solid transparent;
+    transition: all .15s ease;
+  }
+  nav a svg { width:17px; height:17px; stroke: currentColor; fill:none; stroke-width:1.8; }
+  nav a:hover { color: var(--ink); background: var(--panel); }
+  nav a.active {
+    color: var(--ink);
+    background: linear-gradient(90deg, rgba(77,163,255,.13), rgba(34,211,238,.05));
+    border-color: var(--edge-hi);
+  }
+  nav a.active svg { color: var(--acc); }
+  .side-foot { margin-top:auto; padding: 12px 8px 2px; border-top:1px solid var(--edge); }
+  .status-chip {
+    display:flex; align-items:center; gap:8px;
+    font-size:12.5px; color:var(--dim);
+  }
+  .dot { width:8px; height:8px; border-radius:50%; background:var(--bad); box-shadow:0 0 8px currentColor; }
+  .dot.on { background:var(--ok); }
+
+  /* ---------- main ---------- */
+  main { display:flex; flex-direction:column; min-width:0; height:100vh; }
+  topbar {
+    display:flex; align-items:center; gap:14px;
+    padding: 13px 26px;
+    border-bottom: 1px solid var(--edge);
+    background: rgba(11,16,28,.72);
+    backdrop-filter: blur(10px);
+  }
+  topbar h1 { font-size:16.5px; font-weight:650; letter-spacing:.3px; }
+  .tb-badge {
+    font: 11.5px/1 var(--mono); color: var(--dim);
+    border: 1px solid var(--edge); padding: 5px 10px; border-radius: 999px;
+  }
+  .spacer { flex: 1; }
+  .tb-link { color: var(--dim); font-size: 12.5px; text-decoration: none; }
+  .tb-link:hover { color: var(--acc); }
+
+  .view { flex:1; overflow-y:auto; padding: 26px; min-height: 0; }
+  .view::-webkit-scrollbar, .chat-log::-webkit-scrollbar, .term::-webkit-scrollbar { width:9px; }
+  .view::-webkit-scrollbar-thumb, .chat-log::-webkit-scrollbar-thumb, .term::-webkit-scrollbar-thumb {
+    background:#1d2942; border-radius:8px;
+  }
+
+  /* ---------- generic cards ---------- */
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--edge);
+    border-radius: var(--radius);
+    padding: 18px;
+  }
+  .grid { display:grid; gap:14px; }
+  .g2 { grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); }
+  .g3 { grid-template-columns: repeat(auto-fit,minmax(210px,1fr)); }
+  h2.vt { font-size:13px; text-transform:uppercase; letter-spacing:1.2px; color:var(--faint); margin-bottom:14px; font-weight:600; }
+  .kv { display:flex; justify-content:space-between; padding:7px 0; border-bottom:1px dashed var(--edge); font-size:13.5px; }
+  .kv:last-child { border-bottom:0; }
+  .kv b { font-weight:600; color:var(--ink); }
+  .kv span { color: var(--dim); }
+  .pill { font-size:11px; padding:2px 9px; border-radius:999px; border:1px solid var(--edge-hi); color:var(--dim); }
+  .pill.ok { color:var(--ok); border-color:rgba(57,217,138,.35); }
+  .pill.bad { color:var(--bad); border-color:rgba(255,107,107,.35); }
+
+  button.btn {
+    background: var(--grad); color:#04101f; font-weight:700;
+    border:0; border-radius:10px; padding:9px 20px; font-size:14px;
+    cursor:pointer; transition: filter .15s;
+  }
+  button.btn:hover { filter: brightness(1.12); }
+  button.btn:disabled { opacity:.45; cursor:wait; }
+  button.ghost {
+    background:none; border:1px solid var(--edge-hi); color:var(--dim);
+    border-radius:10px; padding:8px 16px; cursor:pointer; font-size:13px;
+  }
+  button.ghost:hover { color:var(--ink); border-color:var(--acc); }
+  input[type=text], input[type=number], textarea, select {
+    background:#0a1120; color:var(--ink);
+    border:1px solid var(--edge); border-radius:10px;
+    padding:10px 13px; font:inherit; outline:none; width:100%;
+  }
+  input:focus, textarea:focus, select:focus { border-color: var(--acc); }
+  label.fld { display:block; font-size:11.5px; color:var(--faint); text-transform:uppercase; letter-spacing:.8px; margin-bottom:5px; }
+
+  /* ---------- chat ---------- */
+  .chat-wrap { max-width: 860px; margin: 0 auto; display:flex; flex-direction:column; height:100%; }
+  .chat-log { flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:16px; padding: 6px 4px 18px; }
+  .msg { max-width: 80%; border-radius: var(--radius); padding: 12px 18px; white-space:pre-wrap; word-break:break-word; }
+  .msg.user { align-self:flex-end; background: var(--user-bubble); border:1px solid #2c4069; border-bottom-right-radius:4px; }
+  .msg.bot  { align-self:flex-start; background: var(--panel-solid); border:1px solid var(--edge); border-bottom-left-radius:4px; }
+  .msg.bot.err { border-color: var(--bad); color: var(--bad); }
+  .msg .meta { font-size:11.5px; color:var(--faint); margin-top:8px; }
+  .cursor { display:inline-block; width:8px; height:16px; background:var(--acc); vertical-align:text-bottom; animation: blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity:0; } }
+  .composer { display:flex; gap:10px; padding-top:16px; }
+  .composer textarea { resize:none; min-height:48px; max-height:160px; }
+  .params-row { display:flex; gap:12px; align-items:center; padding-bottom:12px; flex-wrap:wrap; }
+  .params-row label { display:flex; gap:6px; align-items:center; font-size:12.5px; color:var(--dim); }
+  .params-row input[type=number] { width:74px; padding:5px 8px; }
+  .params-row input[type=text] { width:230px; padding:5px 8px; }
+
+  /* ---------- agentic ---------- */
+  .lvl-grid { display:grid; gap:10px; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); margin-bottom:16px; }
+  .lvl {
+    border:1px solid var(--edge); border-radius:12px; padding:12px 14px;
+    cursor:pointer; transition:all .15s; background:var(--panel);
+  }
+  .lvl:hover { border-color:var(--edge-hi); }
+  .lvl.sel { border-color:var(--acc); background:linear-gradient(90deg, rgba(77,163,255,.12), transparent); }
+  .lvl b { font-size:13px; color:var(--acc); display:block; margin-bottom:3px; }
+  .lvl span { font-size:12px; color:var(--dim); }
+  .trace { margin-top:14px; border-top:1px dashed var(--edge); padding-top:12px; display:none; }
+  .step { display:flex; gap:10px; padding:5px 0; font-size:13.5px; }
+  .step .k { min-width:96px; color:var(--acc2); font-family:var(--mono); font-size:12.5px; }
+
+  /* ---------- tools ---------- */
+  .tool-card { cursor:pointer; transition: border-color .15s; }
+  .tool-card:hover { border-color: var(--edge-hi); }
+  .tool-card.sel { border-color: var(--acc); }
+  .tool-name { font-weight:650; font-size:14px; margin-bottom:4px; }
+  .tool-desc { font-size:12.5px; color:var(--dim); margin-bottom:8px; }
+
+  /* ---------- terminal ---------- */
+  .term-tabs { display:flex; gap:6px; margin-bottom:10px; }
+  .term-tab { padding:5px 14px; border-radius:8px; border:1px solid var(--edge); color:var(--dim); font-size:12.5px; cursor:pointer; background:none; }
+  .term-tab.active { color:var(--ink); border-color:var(--acc); }
+  .term {
+    background:#060a13; border:1px solid var(--edge); border-radius:12px;
+    height: calc(100vh - 300px); min-height:320px; overflow-y:auto;
+    padding:14px 16px; font: 12.5px/1.7 var(--mono);
+  }
+  .term .ln { white-space:pre-wrap; word-break:break-word; }
+  .term .ts { color:var(--faint); }
+  .term .sys { color:var(--ok); } .term .err { color:var(--bad); } .term .info { color:var(--dim); } .term .hl { color:var(--acc); }
+  .ws-row { display:flex; gap:10px; margin-top:12px; }
+  .conn-pill { font-size:12px; padding:4px 12px; border-radius:999px; border:1px solid var(--edge); color:var(--warn); }
+  .conn-pill.on { color:var(--ok); border-color:rgba(57,217,138,.4); }
+
+  @media (max-width: 900px) {
+    body { grid-template-columns: 64px 1fr; }
+    .brand-name, .brand-sub, nav a span, .side-foot { display:none; }
+    nav a { justify-content:center; }
+  }
+</style>
+</head>
+<body>
+
+<aside class="side">
+  <div class="brand">
+    <div class="brand-mark">SW</div>
+    <div><div class="brand-name">SILVERWING</div><div class="brand-sub">PLATFORM CONSOLE</div></div>
+  </div>
+  <nav id="nav">
+    <a href="#/chat" data-v="chat"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H4l2.5-2.5A8 8 0 1 1 21 12z"/></svg><span>Chat</span></a>
+    <a href="#/agentic" data-v="agentic"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 4.9L20 8l-4 3.9.9 5.6L12 14.9 7.1 17.5 8 11.9 4 8l5.6-1.1z"/></svg><span>Agentic</span></a>
+    <a href="#/tools" data-v="tools"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4L14 13l-3-3z"/></svg><span>Tools</span></a>
+    <a href="#/terminal" data-v="terminal"><svg viewBox="0 0 24 24"><path d="M4 17l6-5-6-5M12 19h8"/></svg><span>Terminal</span></a>
+    <a href="#/system" data-v="system"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><span>System</span></a>
+  </nav>
+  <div class="side-foot">
+    <div class="status-chip"><div class="dot" id="health-dot"></div><span id="health-txt">connecting…</span></div>
+  </div>
+</aside>
+
+<main>
+  <topbar>
+    <h1 id="view-title">Chat</h1>
+    <div class="spacer"></div>
+    <span class="tb-badge" id="model-badge">loading model…</span>
+    <a class="tb-link" href="/docs" target="_blank">API docs ↗</a>
+  </topbar>
+
+  <!-- ============ CHAT ============ -->
+  <section class="view" id="v-chat">
+    <div class="chat-wrap">
+      <div class="params-row">
+        <label>system <input type="text" id="c-sys" placeholder="(optional)"></label>
+        <label>temp <input type="number" id="c-temp" value="0.7" step="0.05" min="0" max="2"></label>
+        <label>max tokens <input type="number" id="c-max" value="128" step="16" min="8" max="512"></label>
+        <button class="ghost" id="c-clear">clear</button>
+      </div>
+      <div class="chat-log" id="c-log"></div>
+      <form class="composer" id="c-form">
+        <textarea id="c-input" rows="1" placeholder="Message Silverwing… (Enter to send)" autofocus></textarea>
+        <button class="btn" id="c-send" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ AGENTIC ============ -->
+  <section class="view" id="v-agentic" style="display:none">
+    <div style="max-width:860px;margin:0 auto">
+      <h2 class="vt">Capability levels — every run returns a full trace</h2>
+      <div class="lvl-grid" id="ag-levels"><span class="pill">loading…</span></div>
+      <div class="card">
+        <label class="fld">Goal / message</label>
+        <textarea id="ag-msg" rows="3" placeholder="Ask anything, or give an autonomous goal…"></textarea>
+        <div style="display:flex;gap:10px;margin-top:12px;align-items:center">
+          <button class="btn" id="ag-go">Run</button>
+          <span style="font-size:12.5px;color:var(--faint)" id="ag-stat"></span>
+        </div>
+        <div class="card trace" id="ag-res" style="margin-top:14px;background:var(--panel)">
+          <div id="ag-out" style="white-space:pre-wrap"></div>
+          <div style="font-size:12px;color:var(--faint);margin-top:8px" id="ag-meta"></div>
+          <div id="ag-steps" style="margin-top:10px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOOLS ============ -->
+  <section class="view" id="v-tools" style="display:none">
+    <div class="grid g3" id="tl-list"></div>
+    <div class="card" id="tl-panel" style="max-width:720px;margin-top:16px;display:none">
+      <div class="tool-name" id="tl-name"></div>
+      <div class="tool-desc" id="tl-desc"></div>
+      <label class="fld">Arguments (JSON)</label>
+      <textarea id="tl-args" rows="4">{}</textarea>
+      <div style="display:flex;gap:10px;margin-top:12px;align-items:center">
+        <button class="btn" id="tl-go">Execute</button>
+        <span style="font-size:12.5px;color:var(--faint)" id="tl-stat"></span>
+      </div>
+      <pre id="tl-out" style="margin-top:12px;font-family:var(--mono);font-size:12.5px;white-space:pre-wrap;display:none;background:#060a13;border:1px solid var(--edge);border-radius:10px;padding:12px"></pre>
+    </div>
+  </section>
+
+  <!-- ============ TERMINAL ============ -->
+  <section class="view" id="v-terminal" style="display:none">
+    <div style="display:flex;gap:10px;align-items:center;margin-bottom:12px">
+      <span class="conn-pill" id="ws-pill">agent bridge offline</span>
+      <button class="ghost" id="ws-reset">reset session</button>
+      <div class="spacer"></div>
+      <span style="font-size:12px;color:var(--faint)">pydantic_ai agent · sandboxed tools · audit logged</span>
+    </div>
+    <div class="term-tabs">
+      <button class="term-tab active" data-t="console">console</button>
+      <button class="term-tab" data-t="tools">tools</button>
+      <button class="term-tab" data-t="audit">audit</button>
+    </div>
+    <div class="term" id="t-console"></div>
+    <div class="term" id="t-tools" style="display:none"></div>
+    <div class="term" id="t-audit" style="display:none"></div>
+    <form class="ws-row" id="ws-form">
+      <input type="text" id="ws-input" placeholder="Talk to the agent harness…" autocomplete="off">
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- ============ SYSTEM ============ -->
+  <section class="view" id="v-system" style="display:none">
+    <h2 class="vt">Runtime</h2>
+    <div class="grid g3">
+      <div class="card"><div class="kv"><span>Health</span><b id="sy-health">—</b></div>
+        <div class="kv"><span>Model</span><b id="sy-model">—</b></div>
+        <div class="kv"><span>Provider</span><b id="sy-provider">—</b></div></div>
+      <div class="card"><div class="kv"><span>CPU</span><b id="sy-cpu">—</b></div>
+        <div class="kv"><span>Memory</span><b id="sy-mem">—</b></div>
+        <div class="kv"><span>Battery</span><b id="sy-bat">—</b></div></div>
+      <div class="card"><div class="kv"><span>Capabilities</span><b id="sy-caps">—</b></div>
+        <div class="kv"><span>Gesture subsystem</span><b id="sy-gest">—</b></div>
+        <div class="kv"><span>Uptime poll</span><b id="sy-up">every 10s</b></div></div>
+    </div>
+    <h2 class="vt" style="margin-top:22px">Legacy surfaces</h2>
+    <div class="grid g3">
+      <a class="card tool-card" href="/" style="text-decoration:none;color:inherit"><div class="tool-name">Command deck</div><div class="tool-desc">Server-rendered tactical dashboard (templates)</div></a>
+      <a class="card tool-card" href="/workspace/" style="text-decoration:none;color:inherit"><div class="tool-name">Workspace SPA</div><div class="tool-desc">Original drag-drop canvas workspace</div></a>
+      <a class="card tool-card" href="/docs" target="_blank" style="text-decoration:none;color:inherit"><div class="tool-name">OpenAPI explorer</div><div class="tool-desc">Interactive REST documentation (/docs)</div></a>
+    </div>
+  </section>
+</main>
+
+<script>
+"use strict";
+const $ = (id) => document.getElementById(id);
+
+/* ================= router ================= */
+const TITLES = { chat: "Chat", agentic: "Agentic Console", tools: "Tool Registry", terminal: "Agent Terminal", system: "System" };
+function route() {
+  const v = (location.hash.replace("#/", "") || "chat").split("?")[0];
+  for (const k of Object.keys(TITLES)) {
+    $("v-" + k).style.display = k === v ? "" : "none";
+  }
+  document.querySelectorAll("#nav a").forEach(a => a.classList.toggle("active", a.dataset.v === v));
+  $("view-title").textContent = TITLES[v] || "Chat";
+}
+window.addEventListener("hashchange", route);
+
+/* ================= health + info ================= */
+async function pollHealth() {
+  try {
+    const j = await (await fetch("/health")).json();
+    const ok = j.success && j.data.status === "ok";
+    $("health-dot").classList.toggle("on", ok);
+    $("health-txt").textContent = ok ? "server online" : "degraded";
+    $("sy-health").textContent = ok ? "operational" : "degraded";
+  } catch {
+    $("health-dot").classList.remove("on");
+    $("health-txt").textContent = "offline";
+  }
+}
+async function loadInfo() {
+  try {
+    const j = await (await fetch("/info")).json();
+    if (!j.success) return;
+    $("model-badge").textContent = `${j.data.model_id} · ${j.data.provider}`;
+    $("sy-model").textContent = j.data.model_id;
+    $("sy-provider").textContent = j.data.provider;
+  } catch {}
+}
+setInterval(pollHealth, 10000);
+
+/* ================= chat ================= */
+let history = [], busy = false;
+function addMsg(role, text) {
+  const d = document.createElement("div");
+  d.className = "msg " + role;
+  d.textContent = text;
+  $("c-log").appendChild(d);
+  $("c-log").scrollTop = $("c-log").scrollHeight;
+  return d;
+}
+$("c-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const text = $("c-input").value.trim();
+  if (!text || busy) return;
+  busy = true; $("c-send").disabled = true;
+  $("c-input").value = ""; $("c-input").style.height = "auto";
+  addMsg("user", text);
+  history.push({ role: "user", content: text });
+  const bot = addMsg("bot", "");
+  const cur = document.createElement("span"); cur.className = "cursor"; bot.appendChild(cur);
+  const t0 = performance.now();
+  try {
+    const msgs = ($("c-sys").value.trim() ? [{ role: "system", content: $("c-sys").value.trim() }] : []).concat(history);
+    const res = await fetch("/v1/chat/completions", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        messages: msgs, stream: true,
+        temperature: parseFloat($("c-temp").value) || 0.7,
+        max_tokens: parseInt($("c-max").value) || 128,
+      }),
+    });
+    if (!res.ok) throw new Error(await res.text());
+    const rd = res.body.getReader(), dec = new TextDecoder();
+    let buf = "", full = "";
+    while (true) {
+      const { done, value } = await rd.read();
+      if (done) break;
+      buf += dec.decode(value, { stream: true });
+      const parts = buf.split("\n\n"); buf = parts.pop();
+      for (const p of parts) {
+        const ln = p.trim();
+        if (!ln.startsWith("data: ")) continue;
+        const ds = ln.slice(6);
+        if (ds === "[DONE]") continue;
+        try {
+          const j = JSON.parse(ds);
+          const d = j.choices?.[0]?.delta?.content;
+          if (d) { full += d; bot.textContent = full; bot.appendChild(cur); $("c-log").scrollTop = $("c-log").scrollHeight; }
+        } catch {}
+      }
+    }
+    cur.remove();
+    if (!full) bot.textContent = "(empty response — model emitted EOS)";
+    history.push({ role: "assistant", content: full });
+    const m = document.createElement("div"); m.className = "meta";
+    m.textContent = ((performance.now() - t0) / 1000).toFixed(1) + "s";
+    bot.appendChild(m);
+  } catch (err) {
+    cur.remove(); bot.textContent = "request failed: " + err.message; bot.classList.add("err");
+  } finally { busy = false; $("c-send").disabled = false; $("c-input").focus(); }
+});
+$("c-clear").onclick = () => { history = []; $("c-log").innerHTML = ""; };
+
+/* ================= agentic ================= */
+async function initAgentic() {
+  try {
+    const j = await (await fetch("/v1/agentic/levels")).json();
+    if (!j.success) return;
+    $("ag-levels").innerHTML = "";
+    j.data.forEach((l, i) => {
+      const d = document.createElement("div");
+      d.className = "lvl" + (i === 0 ? " sel" : "");
+      d.dataset.lvl = l.level;
+      d.innerHTML = `<b>L${l.level}</b><span>${l.label}</span>`;
+      d.onclick = () => document.querySelectorAll(".lvl").forEach(x => x.classList.remove("sel")), d.classList.add("sel");
+      d.onclick = () => { document.querySelectorAll(".lvl").forEach(x => x.classList.remove("sel")); d.classList.add("sel"); };
+      $("ag-levels").appendChild(d);
+    });
+  } catch {}
+}
+$("ag-go").onclick = async () => {
+  const msg = $("ag-msg").value.trim();
+  if (!msg) return;
+  const lvl = document.querySelector(".lvl.sel")?.dataset.lvl || 1;
+  $("ag-go").disabled = true; $("ag-stat").textContent = "running…";
+  try {
+    const j = await (await fetch("/v1/agentic/run", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ level: +lvl, message: msg }),
+    })).json();
+    if (!j.success) throw new Error(j.error);
+    const d = j.data;
+    $("ag-res").style.display = "block";
+    $("ag-out").textContent = d.final_text || "(no text)";
+    $("ag-meta").textContent = `${d.level_label} · ${d.elapsed_seconds}s · ${d.steps.length} steps${d.success ? "" : " · did not converge"}`;
+    $("ag-steps").innerHTML = d.steps.map(s =>
+      `<div class="step"><span class="k">${s.kind}</span><span>${(s.detail || "").replace(/</g, "&lt;")}</span></div>`).join("");
+    $("ag-stat").textContent = "";
+  } catch (err) { $("ag-stat").textContent = "error: " + err.message; }
+  finally { $("ag-go").disabled = false; }
+};
+
+/* ================= tools ================= */
+let CAPS = [];
+async function initTools() {
+  try {
+    const j = await (await fetch("/v1/capabilities")).json();
+    if (!j.success) return;
+    CAPS = j.data;
+    $("sy-caps").textContent = CAPS.length + " registered";
+    $("tl-list").innerHTML = CAPS.map((c, i) => `
+      <div class="card tool-card" data-i="${i}">
+        <div class="tool-name">${c.name} <span class="pill ${c.risk_level === "high" ? "bad" : "ok"}">${c.risk_level}</span></div>
+        <div class="tool-desc">${c.description}</div>
+        <span class="pill">${c.enabled ? "enabled" : "disabled"} · v${c.version}</span>
+      </div>`).join("") || '<span class="pill">no capabilities registered</span>';
+    document.querySelectorAll("#tl-list .tool-card").forEach(el => {
+      el.onclick = () => {
+        document.querySelectorAll("#tl-list .tool-card").forEach(x => x.classList.remove("sel"));
+        el.classList.add("sel");
+        const c = CAPS[el.dataset.i];
+        $("tl-panel").style.display = "block";
+        $("tl-name").textContent = c.name;
+        $("tl-desc").textContent = c.description;
+        $("tl-args").value = JSON.stringify(c.input_schema?.example ?? {}, null, 2);
+        $("tl-out").style.display = "none";
+      };
+    });
+  } catch {}
+}
+$("tl-go").onclick = async () => {
+  const name = $("tl-name").textContent;
+  if (!name) return;
+  let args = {};
+  try { args = JSON.parse($("tl-args").value || "{}"); } catch { $("tl-stat").textContent = "invalid JSON args"; return; }
+  $("tl-go").disabled = true; $("tl-stat").textContent = "executing…";
+  try {
+    const j = await (await fetch("/v1/tools/execute", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ tool: name, arguments: args }),
+    })).json();
+    $("tl-out").style.display = "block";
+    $("tl-out").textContent = JSON.stringify(j.data ?? j, null, 2);
+    $("tl-stat").textContent = "";
+  } catch (err) { $("tl-stat").textContent = "error: " + err.message; }
+  finally { $("tl-go").disabled = false; }
+};
+
+/* ================= terminal (WS agent bridge) ================= */
+let ws = null, wsTerm = "console";
+function term(panel, cls, text) {
+  const t = $(`#t-${panel}`);
+  if (!t) return;
+  const ts = new Date().toLocaleTimeString("en-US", { hour12: false });
+  const ln = document.createElement("div");
+  ln.className = "ln";
+  ln.innerHTML = `<span class="ts">[${ts}]</span> <span class="${cls}"></span>`;
+  ln.lastChild.textContent = text;
+  t.appendChild(ln);
+  t.scrollTop = t.scrollHeight;
+}
+function wsConnect() {
+  const sid = "sess-" + Math.random().toString(36).slice(2, 10);
+  ws = new WebSocket(`${location.protocol === "https:" ? "wss:" : "ws:"}//${location.host}/ws/${sid}`);
+  ws.onopen = () => { $("ws-pill").textContent = "agent bridge connected"; $("ws-pill").classList.add("on"); term("console", "sys", "WebSocket connected"); };
+  ws.onclose = () => { $("ws-pill").textContent = "agent bridge offline"; $("ws-pill").classList.remove("on"); };
+  ws.onmessage = (ev) => {
+    let m; try { m = JSON.parse(ev.data); } catch { return; }
+    switch (m.type) {
+      case "session_ready":
+        term("console", "sys", `session ready · tools: ${(m.tools || []).join(", ")}`);
+        break;
+      case "typing":
+        if (m.status === "started") term("console", "info", "agent is thinking…");
+        break;
+      case "response":
+        term("console", "", m.text || "(empty)");
+        break;
+      case "tool_call":
+        term("tools", "hl", `→ ${m.data.tool_name}`);
+        term("tools", "info", `args: ${JSON.stringify(m.data.arguments ?? m.data.result ?? {})}`);
+        term("tools", "", `${m.data.result?.output || m.data.result?.error || "N/A"}`);
+        break;
+      case "audit":
+        term("audit", "info", `${m.data.action} — ${m.data.status}`);
+        break;
+      case "error":
+        term("console", "err", m.error);
+        break;
+      case "pong": term("console", "sys", "pong"); break;
+      case "reset_done": ["console", "tools", "audit"].forEach(p => $(`#t-${p}`).innerHTML = ""); term("console", "sys", "session reset"); break;
+    }
+  };
+}
+document.querySelectorAll(".term-tab").forEach(b => {
+  b.onclick = () => {
+    document.querySelectorAll(".term-tab").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    wsTerm = b.dataset.t;
+    ["console", "tools", "audit"].forEach(p => $(`#t-${p}`).style.display = p === wsTerm ? "" : "none");
+  };
+});
+$("ws-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const text = $("ws-input").value.trim();
+  if (!text) return;
+  if (!ws || ws.readyState !== 1) { term("console", "err", "not connected"); return; }
+  term("console", "info", "you › " + text);
+  ws.send(JSON.stringify({ action: "message", content: text }));
+  $("ws-input").value = "";
+});
+$("ws-reset").onclick = () => ws && ws.readyState === 1 && ws.send(JSON.stringify({ action: "reset" }));
+
+/* ================= system ================= */
+async function initSystem() {
+  pollHealth(); loadInfo();
+  try {
+    const s = await (await fetch("/v1/gestures/stats")).json();
+    if (s.success) {
+      $("sy-cpu").textContent = s.data.cpu_percent != null ? s.data.cpu_percent + "%" : "n/a";
+      $("sy-mem").textContent = s.data.memory_percent != null ? s.data.memory_percent + "%" : "n/a";
+      $("sy-bat").textContent = s.data.battery_percent != null ? s.data.battery_percent + "%" : "n/a";
+    }
+  } catch {}
+  try {
+    const g = await (await fetch("/v1/gestures/status")).json();
+    $("sy-gest").innerHTML = g.success
+      ? `<span class="pill ${g.data.available ? "ok" : ""}">${g.data.available ? "available" : "unavailable"}</span>`
+      : '<span class="pill bad">error</span>';
+  } catch { $("sy-gest").textContent = "n/a"; }
+}
+
+/* ================= boot ================= */
+route();
+pollHealth(); loadInfo(); initAgentic(); initTools(); initSystem(); wsConnect();
+</script>
+</body>
+</html>

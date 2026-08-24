@@ -29,6 +29,10 @@ DEFAULT_CURRICULUM: dict[str, int] = {
     "probability": 300,
     "number_theory": 300,
     "trigonometry": 300,
+    # M18 advanced STEM
+    "linear_algebra": 250,
+    "advanced_probability": 250,
+    "statistics": 200,
 }
 
 

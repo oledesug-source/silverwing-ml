@@ -34,9 +34,12 @@ STAGES = {
         "examples_per_topic": 250,
     },
     "stage3-advanced": {
-        "topics": ["differentiation", "integration", "trigonometry"],
-        "description": "Differentiation, integration, trigonometry",
-        "examples_per_topic": 334,
+        "topics": [
+            "differentiation", "integration", "trigonometry",
+            "linear_algebra", "advanced_probability", "statistics",
+        ],
+        "description": "Differentiation, integration, trigonometry, linear algebra, advanced probability, statistics",
+        "examples_per_topic": 250,
     },
 }
 

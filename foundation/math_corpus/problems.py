@@ -424,3 +424,20 @@ REFERENCES: Mapping[str, TopicReference] = {
         rules="Standard exact values: sin(30°) = 1/2, cos(45°) = √2/2, tan(60°) = √3.  sin(x) is positive in quadrants I and II; cos(x) is positive in quadrants I and IV.  The Pythagorean identity states sin^2(θ) + cos^2(θ) = 1.",
     ),
 }
+
+# ---------------------------------------------------------------------------
+# Advanced topics (M18) - linear algebra, advanced probability, statistics.
+# Merged here so every downstream consumer (dataset builders, preference
+# builder, corpus generator, config validation) sees one unified registry.
+# ---------------------------------------------------------------------------
+
+from .advanced import ADVANCED_GENERATORS, ADVANCED_REFERENCES  # noqa: E402
+
+PROBLEM_GENERATORS = {**PROBLEM_GENERATORS, **ADVANCED_GENERATORS}
+REFERENCES = {
+    **REFERENCES,
+    **{
+        name: TopicReference(**spec)
+        for name, spec in ADVANCED_REFERENCES.items()
+    },
+}

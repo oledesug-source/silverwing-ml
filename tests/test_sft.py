@@ -196,7 +196,9 @@ def test_build_sft_dataset_script(tmp_path: Path):
     )
     assert result.returncode == 0, result.stderr
     lines = [line for line in output.read_text(encoding="utf-8").splitlines() if line.strip()]
-    assert len(lines) == 20
+    from foundation.math_corpus import PROBLEM_GENERATORS
+
+    assert len(lines) == 2 * len(PROBLEM_GENERATORS)
     first = json.loads(lines[0])
     assert "instruction" in first and "response" in first
     rerun = output.read_bytes()

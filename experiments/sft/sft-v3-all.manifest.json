@@ -5,24 +5,32 @@
   "sources": {
     "base": "experiments/sft/sft-v2-all.jsonl",
     "base_records": 5000,
+    "advanced_records": 900,
+    "advanced_topics": [
+      "linear_algebra",
+      "advanced_probability",
+      "statistics"
+    ],
     "general_bank_records": 127
   },
   "records_by_kind": {
     "v2": 2000,
     "v1": 3000,
-    "fact": 41,
-    "gratitude": 8,
-    "capabilities": 8,
-    "farewell": 8,
-    "identity": 10,
-    "help": 7,
-    "limits": 10,
+    "sft-v3": 450,
+    "cot-v3": 450,
     "affirmation": 10,
-    "study": 4,
+    "wellbeing": 6,
+    "limits": 10,
+    "fact": 41,
+    "identity": 10,
+    "gratitude": 8,
     "smalltalk": 10,
-    "apology": 5,
-    "wellbeing": 6
+    "farewell": 8,
+    "study": 4,
+    "help": 7,
+    "capabilities": 8,
+    "apology": 5
   },
-  "total": 5127,
+  "total": 6027,
   "output_path": "F:\\AI\\Silverwing-ML\\experiments\\sft\\sft-v3-all.jsonl"
 }

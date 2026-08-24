@@ -52,4 +52,4 @@ curriculum:
       log_steps: 10
       eval_steps: 50
       save_steps: 100
-      description: "Differentiation, integration, trigonometry"
+      description: "Differentiation, integration, trigonometry, linear algebra, advanced probability, statistics"

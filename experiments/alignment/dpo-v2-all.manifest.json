@@ -3,7 +3,7 @@
   "version": "dpo-v2-all",
   "seed": 42,
   "sources": {
-    "math_pairs": 1000,
+    "math_pairs": 1300,
     "general_pairs": 127,
     "topics": [
       "arithmetic",
@@ -15,9 +15,12 @@
       "geometry",
       "probability",
       "number_theory",
-      "trigonometry"
+      "trigonometry",
+      "linear_algebra",
+      "advanced_probability",
+      "statistics"
     ]
   },
-  "total": 1127,
+  "total": 1427,
   "output_path": "F:\\AI\\Silverwing-ML\\experiments\\alignment\\dpo-v2-all.jsonl"
 }
