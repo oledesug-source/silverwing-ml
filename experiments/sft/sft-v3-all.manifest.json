@@ -1,0 +1,28 @@
+{
+  "dataset_name": "silverwing-sft",
+  "version": "sft-v3-all",
+  "seed": 42,
+  "sources": {
+    "base": "experiments/sft/sft-v2-all.jsonl",
+    "base_records": 5000,
+    "general_bank_records": 127
+  },
+  "records_by_kind": {
+    "v2": 2000,
+    "v1": 3000,
+    "fact": 41,
+    "gratitude": 8,
+    "capabilities": 8,
+    "farewell": 8,
+    "identity": 10,
+    "help": 7,
+    "limits": 10,
+    "affirmation": 10,
+    "study": 4,
+    "smalltalk": 10,
+    "apology": 5,
+    "wellbeing": 6
+  },
+  "total": 5127,
+  "output_path": "F:\\AI\\Silverwing-ML\\experiments\\sft\\sft-v3-all.jsonl"
+}

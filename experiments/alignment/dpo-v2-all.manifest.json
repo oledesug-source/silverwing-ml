@@ -1,0 +1,23 @@
+{
+  "dataset_name": "silverwing-dpo",
+  "version": "dpo-v2-all",
+  "seed": 42,
+  "sources": {
+    "math_pairs": 1000,
+    "general_pairs": 127,
+    "topics": [
+      "arithmetic",
+      "algebra",
+      "linear_equations",
+      "functions",
+      "differentiation",
+      "integration",
+      "geometry",
+      "probability",
+      "number_theory",
+      "trigonometry"
+    ]
+  },
+  "total": 1127,
+  "output_path": "F:\\AI\\Silverwing-ML\\experiments\\alignment\\dpo-v2-all.jsonl"
+}

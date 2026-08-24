@@ -1,0 +1,1127 @@
+{"id": "dpo-v1-geometry-0056", "instruction": "A triangle has base 10 and height 7.  Find its area.", "chosen": "35", "rejected": "36"}
+{"id": "dpo-gen-affirmation-09-003", "instruction": "Got it", "chosen": "Great - fire away with your question!", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-probability-0027", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "8"}
+{"id": "dpo-v1-integration-0025", "instruction": "Evaluate the indefinite integral ∫ (2x^2 - 2x - 2) dx.", "chosen": "2/3x^3 - 1x^2 - 2 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-number_theory-0076", "instruction": "Find lcm(39, 14).", "chosen": "546", "rejected": "1638"}
+{"id": "dpo-v1-differentiation-0088", "instruction": "Find the derivative of f(x) = 1*sin(1x).", "chosen": "f'(x) = 1*cos(1x)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0078", "instruction": "Find the derivative of f(x) = 3x^3 + 2x^2 + 2x - 4.", "chosen": "f'(x) = 9x^2 + 4x + 2", "rejected": "I'm not sure."}
+{"id": "dpo-v1-differentiation-0045", "instruction": "Find the derivative of f(x) = 1*sin(1x).", "chosen": "f'(x) = 1*cos(1x)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-probability-0021", "instruction": "From 10 distinct items, how many subsets of size 1 exist?", "chosen": "10", "rejected": "20"}
+{"id": "dpo-gen-limits-02-004", "instruction": "Can you browse the internet?", "chosen": "Honestly, not much yet - I'm a small research model trained mostly on math word problems. For general topics I'd just be guessing, so please double-check anything important elsewhere.", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-differentiation-0056", "instruction": "Find the derivative of f(x) = 1x^2.", "chosen": "f'(x) = 2x^1", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0083", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "42"}
+{"id": "dpo-v1-algebra-0031", "instruction": "Solve x^2 + 13x + 42 = 0.", "chosen": "x = -6 or x = -7", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0078", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "1"}
+{"id": "dpo-v1-functions-0089", "instruction": "Given f(x) = 1x + 3 and g(x) = 1x + 4, compute f(g(0)).", "chosen": "7", "rejected": "21"}
+{"id": "dpo-v1-functions-0037", "instruction": "Given f(x) = 5x + 12 and g(x) = 5x + 6, compute f(g(2)).", "chosen": "92", "rejected": "-92"}
+{"id": "dpo-v1-functions-0094", "instruction": "Given f(x) = 4x + 6 and g(x) = 5x + 6, compute f(g(6)).", "chosen": "150", "rejected": "75"}
+{"id": "dpo-v1-number_theory-0099", "instruction": "Find lcm(96, 94).", "chosen": "4512", "rejected": "4511"}
+{"id": "dpo-v1-probability-0007", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-gen-smalltalk-03-007", "instruction": "Yo!", "chosen": "Hello! I'm Silverwing. Ask me a math problem - or just say hi back.", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0005", "instruction": "Find the derivative of f(x) = 1x^4.", "chosen": "f'(x) = 4x^3", "rejected": "42"}
+{"id": "dpo-v1-number_theory-0086", "instruction": "Find gcd(48, 26).", "chosen": "2", "rejected": "3"}
+{"id": "dpo-v1-arithmetic-0032", "instruction": "What is 30% of 100?", "chosen": "30", "rejected": "-30"}
+{"id": "dpo-v1-number_theory-0084", "instruction": "Find gcd(50, 65).", "chosen": "5", "rejected": "6"}
+{"id": "dpo-v1-probability-0054", "instruction": "From 7 distinct items, how many subsets of size 1 exist?", "chosen": "7", "rejected": "21"}
+{"id": "dpo-v1-integration-0037", "instruction": "Evaluate the indefinite integral ∫ (4x^2 - 2x + 4) dx.", "chosen": "4/3x^3 - 1x^2 + 4 + C", "rejected": "I don't know."}
+{"id": "dpo-gen-fact-primes-17-002", "instruction": "What are the first five prime numbers?", "chosen": "2 is the only even prime number, because every other even number is divisible by 2. The first five primes are 2, 3, 5, 7 and 11.", "rejected": "42"}
+{"id": "dpo-v1-probability-0051", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "4"}
+{"id": "dpo-v1-trigonometry-0064", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-geometry-0036", "instruction": "A triangle has base 10 and height 6.  Find its area.", "chosen": "30", "rejected": "15"}
+{"id": "dpo-v1-geometry-0067", "instruction": "A triangle has base 3 and height 10.  Find its area.", "chosen": "15", "rejected": "16"}
+{"id": "dpo-gen-affirmation-09-001", "instruction": "OK", "chosen": "Great - fire away with your question!", "rejected": "0"}
+{"id": "dpo-v1-arithmetic-0064", "instruction": "What is 71% of 200?", "chosen": "142", "rejected": "-142"}
+{"id": "dpo-v1-geometry-0018", "instruction": "A rectangle has width 8 and height 11.  Find its area and perimeter.", "chosen": "area = 88, perimeter = 38", "rejected": "I'm not sure."}
+{"id": "dpo-v1-integration-0070", "instruction": "Evaluate the definite integral ∫ from 2 to 2 of 2x^2 dx.", "chosen": "0", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0074", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0018", "instruction": "Find the derivative of f(x) = 1x^3.", "chosen": "f'(x) = 3x^2", "rejected": "1"}
+{"id": "dpo-gen-apology-07-003", "instruction": "Oops, ignore that", "chosen": "No worries at all! What would you like to look at next?", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-linear_equations-0096", "instruction": "Solve for x: 5x - 18 = 8x - 30.", "chosen": "x = 4", "rejected": "I don't know."}
+{"id": "dpo-v1-number_theory-0092", "instruction": "Find gcd(26, 85).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-arithmetic-0055", "instruction": "Compute 4/7 + 1/3 and give the answer in lowest terms.", "chosen": "19/21", "rejected": "10/11"}
+{"id": "dpo-v1-differentiation-0011", "instruction": "Find the derivative of f(x) = 1*sin(1x).", "chosen": "f'(x) = 1*cos(1x)", "rejected": "42"}
+{"id": "dpo-v1-functions-0023", "instruction": "Evaluate f(x) = 3x - 18 at x = -1.", "chosen": "-21", "rejected": "-42"}
+{"id": "dpo-v1-trigonometry-0058", "instruction": "Find the exact value of sin(30°).", "chosen": "1/2", "rejected": "2/3"}
+{"id": "dpo-v1-geometry-0065", "instruction": "A triangle has base 5 and height 8.  Find its area.", "chosen": "20", "rejected": "10"}
+{"id": "dpo-v1-arithmetic-0086", "instruction": "Compute 30 - 27.", "chosen": "3", "rejected": "6"}
+{"id": "dpo-v1-number_theory-0058", "instruction": "Is 79 a prime number?", "chosen": "yes", "rejected": "Let me think about this differently."}
+{"id": "dpo-gen-fact-percent-18-003", "instruction": "Explain percentages simply.", "chosen": "A percentage is just a fraction of 100, so 50% means 50/100 = 0.5. To find P% of N, multiply N by P and divide by 100.", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-probability-0099", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "2/3"}
+{"id": "dpo-v1-geometry-0021", "instruction": "A triangle has base 8 and height 7.  Find its area.", "chosen": "28", "rejected": "27"}
+{"id": "dpo-v1-trigonometry-0059", "instruction": "Find the exact value of tan(30°).", "chosen": "√3/3", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0038", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "42"}
+{"id": "dpo-v1-number_theory-0019", "instruction": "Compute 65 mod 15.", "chosen": "5", "rejected": "6"}
+{"id": "dpo-v1-integration-0078", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 + 3x + 4) dx.", "chosen": "-4/3x^3 + 3/2x^2 + 4 + C", "rejected": "42"}
+{"id": "dpo-v1-algebra-0054", "instruction": "Factor x^2 + 6x + 5.", "chosen": "(x + 1)(x + 5)", "rejected": "42"}
+{"id": "dpo-v1-probability-0045", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-algebra-0081", "instruction": "Expand (5x + 6) * (4x - 7).", "chosen": "20x^2 - 11x - 42", "rejected": "I'm not sure."}
+{"id": "dpo-v1-geometry-0038", "instruction": "A triangle has base 13 and height 8.  Find its area.", "chosen": "52", "rejected": "53"}
+{"id": "dpo-v1-functions-0046", "instruction": "Given f(x) = 1x - 12 and g(x) = 2x + 2, compute f(g(-8)).", "chosen": "-26", "rejected": "26"}
+{"id": "dpo-v1-functions-0024", "instruction": "Evaluate f(x) = 8x + 8 at x = 9.", "chosen": "80", "rejected": "81"}
+{"id": "dpo-v1-probability-0025", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-v1-integration-0005", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "chosen": "1/4x^4 + C", "rejected": "I don't know."}
+{"id": "dpo-v1-linear_equations-0098", "instruction": "Solve for x: 8x + 8 = 9x + 17.", "chosen": "x = -9", "rejected": "42"}
+{"id": "dpo-v1-trigonometry-0096", "instruction": "Find the exact value of tan(45°).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-geometry-0003", "instruction": "A triangle has base 3 and height 12.  Find its area.", "chosen": "18", "rejected": "9"}
+{"id": "dpo-v1-probability-0024", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "1/5"}
+{"id": "dpo-gen-fact-water-12-001", "instruction": "At what temperature does water boil?", "chosen": "Water freezes at 0 degrees Celsius (32 degrees Fahrenheit) and boils at 100 degrees Celsius (212 degrees Fahrenheit) at sea level.", "rejected": "Question: hi Answer:"}
+{"id": "dpo-v1-linear_equations-0041", "instruction": "Solve for x: 9x + 5 = 6x - 22.", "chosen": "x = -9", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0021", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "chosen": "f'(x) = 4*cos(2x)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-linear_equations-0088", "instruction": "Solve for x: 6x - 10 = 4x - 10.", "chosen": "x = 0", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0000", "instruction": "Solve for x: 3x + 10 = 8x - 25.", "chosen": "x = 7", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-arithmetic-0037", "instruction": "Compute 86 + 62.", "chosen": "148", "rejected": "444"}
+{"id": "dpo-v1-algebra-0029", "instruction": "Factor x^2 - 1x - 42.", "chosen": "(x + 6)(x - 7)", "rejected": "I don't know."}
+{"id": "dpo-v1-arithmetic-0095", "instruction": "What is 30% of 200?", "chosen": "60", "rejected": "120"}
+{"id": "dpo-v1-algebra-0074", "instruction": "Expand (1x - 4) * (1x + 0).", "chosen": "x^2 - 4x", "rejected": "The answer is unknown."}
+{"id": "dpo-gen-smalltalk-03-004", "instruction": "Hello!", "chosen": "Hello! I'm Silverwing. Ask me a math problem - or just say hi back.", "rejected": "0"}
+{"id": "dpo-v1-arithmetic-0074", "instruction": "Compute 4/6 + 4/5 and give the answer in lowest terms.", "chosen": "22/15", "rejected": "23/16"}
+{"id": "dpo-v1-arithmetic-0091", "instruction": "Compute 3/5 + 1/2 and give the answer in lowest terms.", "chosen": "11/10", "rejected": "12/11"}
+{"id": "dpo-v1-differentiation-0008", "instruction": "Find the derivative of f(x) = -3x^3 + 2x^2 - 4x + 5.", "chosen": "f'(x) = -9x^2 + 4x - 4", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0080", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-probability-0023", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "4"}
+{"id": "dpo-v1-linear_equations-0052", "instruction": "Solve for x: 9x - 18 = 4x + 27.", "chosen": "x = 9", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0017", "instruction": "Find the derivative of f(x) = 5x^3.", "chosen": "f'(x) = 15x^2", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-arithmetic-0035", "instruction": "Compute 32 + 74.", "chosen": "106", "rejected": "107"}
+{"id": "dpo-v1-number_theory-0072", "instruction": "Compute 33 mod 5.", "chosen": "3", "rejected": "-3"}
+{"id": "dpo-v1-geometry-0050", "instruction": "A rectangle has width 9 and height 7.  Find its area and perimeter.", "chosen": "area = 63, perimeter = 32", "rejected": "The answer is unknown."}
+{"id": "dpo-gen-fact-primes-17-001", "instruction": "Is 2 a prime number?", "chosen": "2 is the only even prime number, because every other even number is divisible by 2. The first five primes are 2, 3, 5, 7 and 11.", "rejected": "x = 4"}
+{"id": "dpo-gen-fact-world-15-001", "instruction": "How many oceans are there?", "chosen": "Earth has 7 continents (Africa, Antarctica, Asia, Australia, Europe, North America, South America) and 5 named oceans.", "rejected": "Question: hi Answer:"}
+{"id": "dpo-v1-integration-0067", "instruction": "Evaluate the definite integral ∫ from 1 to 5 of 4x^2 dx.", "chosen": "496/3", "rejected": "497/4"}
+{"id": "dpo-v1-integration-0031", "instruction": "Evaluate the definite integral ∫ from 2 to 5 of 4x^2 dx.", "chosen": "156", "rejected": "-156"}
+{"id": "dpo-v1-probability-0079", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-arithmetic-0001", "instruction": "Compute 4/4 + 3/2 and give the answer in lowest terms.", "chosen": "5/2", "rejected": "3"}
+{"id": "dpo-v1-probability-0044", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-gen-identity-00-001", "instruction": "What is your name?", "chosen": "I'm Silverwing, a compact language model (about 102 million parameters) trained by the Silverwing-ML project. My specialty is math word problems - percentages, arithmetic, algebra and ratios - and I'm learning to chat more naturally too.", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0035", "instruction": "From 4 distinct items, how many subsets of size 1 exist?", "chosen": "4", "rejected": "8"}
+{"id": "dpo-v1-algebra-0039", "instruction": "Factor x^2 - 8x + 15.", "chosen": "(x - 5)(x - 3)", "rejected": "0"}
+{"id": "dpo-v1-functions-0033", "instruction": "Given f(x) = 5x - 19 and g(x) = 1x + 2, compute f(g(1)).", "chosen": "-4", "rejected": "-5"}
+{"id": "dpo-v1-integration-0052", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 4x^2 dx.", "chosen": "104/3", "rejected": "105/4"}
+{"id": "dpo-v1-functions-0059", "instruction": "Evaluate f(x) = 6x - 16 at x = 4.", "chosen": "8", "rejected": "16"}
+{"id": "dpo-v1-differentiation-0089", "instruction": "Find the derivative of f(x) = 6x^2.", "chosen": "f'(x) = 12x^1", "rejected": "0"}
+{"id": "dpo-v1-integration-0097", "instruction": "Evaluate the definite integral ∫ from 2 to 6 of 1x^2 dx.", "chosen": "208/3", "rejected": "209/3"}
+{"id": "dpo-v1-linear_equations-0044", "instruction": "Solve for x: 2x + 17 = 9x + 45.", "chosen": "x = -4", "rejected": "42"}
+{"id": "dpo-v1-trigonometry-0018", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0080", "instruction": "Solve for x: 5x - 20 = 6x - 13.", "chosen": "x = -7", "rejected": "I'm not sure."}
+{"id": "dpo-v1-differentiation-0077", "instruction": "Find the derivative of f(x) = 3*sin(3x).", "chosen": "f'(x) = 9*cos(3x)", "rejected": "The answer is unknown."}
+{"id": "dpo-gen-study-tip-20-002", "instruction": "How should I approach a hard problem?", "chosen": "For word problems: read carefully, write down what's given and what's asked, translate the words into an equation, solve it, then check that the answer makes sense in context.", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-integration-0038", "instruction": "Evaluate the indefinite integral ∫ (3x^2 - 1x + 3) dx.", "chosen": "1x^3 - 1/2x^2 + 3 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-integration-0066", "instruction": "Evaluate the indefinite integral ∫ 3x^1 dx.", "chosen": "3/2x^2 + C", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0043", "instruction": "Solve for x: 1x - 12 = 6x + 3.", "chosen": "x = -3", "rejected": "42"}
+{"id": "dpo-v1-algebra-0056", "instruction": "Expand (4x + 9) * (3x + 7).", "chosen": "12x^2 + 55x + 63", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-functions-0078", "instruction": "Given f(x) = 8x + 18 and g(x) = 4x + 0, compute f(g(10)).", "chosen": "338", "rejected": "1014"}
+{"id": "dpo-gen-smalltalk-03-003", "instruction": "Hello", "chosen": "Hello! I'm Silverwing. Ask me a math problem - or just say hi back.", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0052", "instruction": "Find the derivative of f(x) = 3x^3.", "chosen": "f'(x) = 9x^2", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-functions-0057", "instruction": "Given f(x) = 9x - 12 and g(x) = 1x - 7, compute f(g(9)).", "chosen": "6", "rejected": "-6"}
+{"id": "dpo-v1-probability-0098", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "chosen": "9", "rejected": "18"}
+{"id": "dpo-v1-linear_equations-0017", "instruction": "Solve for x: 9x + 8 = 3x - 40.", "chosen": "x = -8", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-functions-0049", "instruction": "Given f(x) = 5x - 5 and g(x) = 1x - 4, compute f(g(-7)).", "chosen": "-60", "rejected": "-120"}
+{"id": "dpo-v1-probability-0090", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "2/3"}
+{"id": "dpo-v1-probability-0056", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "1/4"}
+{"id": "dpo-v1-trigonometry-0032", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-arithmetic-0028", "instruction": "What is 19% of 1000?", "chosen": "190", "rejected": "570"}
+{"id": "dpo-v1-probability-0042", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0093", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-number_theory-0022", "instruction": "Find lcm(20, 51).", "chosen": "1020", "rejected": "510"}
+{"id": "dpo-v1-differentiation-0087", "instruction": "Find the derivative of f(x) = 1*sin(1x).", "chosen": "f'(x) = 1*cos(1x)", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0010", "instruction": "Find the derivative of f(x) = 5x^3 - 2x^2 - 1x.", "chosen": "f'(x) = 15x^2 - 4x - 1", "rejected": "The answer is unknown."}
+{"id": "dpo-gen-fact-counting-14-002", "instruction": "How many letters are in the English alphabet?", "chosen": "There are 60 minutes in an hour, 60 seconds in a minute, 26 letters in the English alphabet, and 7 colors traditionally named in a rainbow.", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0015", "instruction": "Find the derivative of f(x) = 3x^4.", "chosen": "f'(x) = 12x^3", "rejected": "0"}
+{"id": "dpo-v1-trigonometry-0014", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-number_theory-0097", "instruction": "Compute 58 mod 10.", "chosen": "8", "rejected": "16"}
+{"id": "dpo-gen-wellbeing-06-003", "instruction": "You good?", "chosen": "I'm doing well, thanks for asking! Ready to help with math whenever you are.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-geometry-0089", "instruction": "A triangle has base 6 and height 5.  Find its area.", "chosen": "15", "rejected": "16"}
+{"id": "dpo-v1-probability-0011", "instruction": "From 8 distinct items, how many subsets of size 2 exist?", "chosen": "28", "rejected": "56"}
+{"id": "dpo-v1-functions-0035", "instruction": "Given f(x) = 3x + 9 and g(x) = 2x - 5, compute f(g(5)).", "chosen": "24", "rejected": "25"}
+{"id": "dpo-v1-differentiation-0064", "instruction": "Find the derivative of f(x) = 5x^3 + 5x^2 + x + 3.", "chosen": "f'(x) = 15x^2 + 10x + 1", "rejected": "Cannot be determined."}
+{"id": "dpo-gen-limits-02-001", "instruction": "What are your limitations?", "chosen": "Honestly, not much yet - I'm a small research model trained mostly on math word problems. For general topics I'd just be guessing, so please double-check anything important elsewhere.", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0042", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-functions-0069", "instruction": "Evaluate f(x) = 1x - 10 at x = 4.", "chosen": "-6", "rejected": "-12"}
+{"id": "dpo-v1-differentiation-0060", "instruction": "Find the derivative of f(x) = 5*sin(3x).", "chosen": "f'(x) = 15*cos(3x)", "rejected": "Cannot be determined."}
+{"id": "dpo-gen-identity-00-004", "instruction": "Introduce yourself.", "chosen": "I'm Silverwing, a compact language model (about 102 million parameters) trained by the Silverwing-ML project. My specialty is math word problems - percentages, arithmetic, algebra and ratios - and I'm learning to chat more naturally too.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-trigonometry-0092", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "The answer is unknown."}
+{"id": "dpo-gen-affirmation-09-005", "instruction": "Nice", "chosen": "Great - fire away with your question!", "rejected": "x = 4"}
+{"id": "dpo-gen-affirmation-09-007", "instruction": "Sure", "chosen": "Great - fire away with your question!", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0032", "instruction": "Evaluate the definite integral ∫ from 2 to 4 of 2x^2 dx.", "chosen": "112/3", "rejected": "3/112"}
+{"id": "dpo-v1-geometry-0088", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 36π, circumference = 12π", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0037", "instruction": "Solve for x: 8x + 6 = 6x + 20.", "chosen": "x = 7", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0093", "instruction": "Solve for x: 8x + 0 = 6x + 20.", "chosen": "x = 10", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0090", "instruction": "Find the exact value of cos(90°).", "chosen": "0", "rejected": "1"}
+{"id": "dpo-gen-limits-02-006", "instruction": "Can you write essays about history?", "chosen": "Honestly, not much yet - I'm a small research model trained mostly on math word problems. For general topics I'd just be guessing, so please double-check anything important elsewhere.", "rejected": "x = 4"}
+{"id": "dpo-v1-number_theory-0082", "instruction": "Find gcd(82, 44).", "chosen": "2", "rejected": "4"}
+{"id": "dpo-v1-functions-0048", "instruction": "Given f(x) = 2x + 16 and g(x) = 5x + 2, compute f(g(-6)).", "chosen": "-40", "rejected": "-80"}
+{"id": "dpo-v1-algebra-0060", "instruction": "Expand (1x + 0) * (5x + 6).", "chosen": "5x^2 + 6x", "rejected": "I'm not sure."}
+{"id": "dpo-v1-integration-0029", "instruction": "Evaluate the indefinite integral ∫ 6x^4 dx.", "chosen": "6/5x^5 + C", "rejected": "42"}
+{"id": "dpo-v1-functions-0003", "instruction": "Given f(x) = 6x + 18 and g(x) = 3x - 7, compute f(g(-9)).", "chosen": "-186", "rejected": "186"}
+{"id": "dpo-v1-arithmetic-0057", "instruction": "Compute 9/8 + 3/4 and give the answer in lowest terms.", "chosen": "15/8", "rejected": "8/15"}
+{"id": "dpo-gen-farewell-05-001", "instruction": "Bye!", "chosen": "Goodbye! Come back anytime you need a calculation.", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-functions-0052", "instruction": "Evaluate f(x) = 8x - 15 at x = 0.", "chosen": "-15", "rejected": "15"}
+{"id": "dpo-v1-arithmetic-0018", "instruction": "Compute 7/5 + 9/4 and give the answer in lowest terms.", "chosen": "73/20", "rejected": "20/73"}
+{"id": "dpo-v1-number_theory-0044", "instruction": "Find lcm(78, 42).", "chosen": "546", "rejected": "547"}
+{"id": "dpo-v1-trigonometry-0015", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0008", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0039", "instruction": "Find the exact value of sin(90°).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-functions-0055", "instruction": "Evaluate f(x) = 4x - 12 at x = -3.", "chosen": "-24", "rejected": "-48"}
+{"id": "dpo-gen-fact-geometry-13-004", "instruction": "What do the angles of a triangle add up to?", "chosen": "A triangle has 3 sides, a square has 4, a pentagon has 5 and a hexagon has 6. The angles of a triangle always add up to 180 degrees.", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0057", "instruction": "Evaluate the definite integral ∫ from 1 to 2 of 4x^2 dx.", "chosen": "28/3", "rejected": "29/4"}
+{"id": "dpo-gen-wellbeing-06-000", "instruction": "How are you?", "chosen": "I'm doing well, thanks for asking! Ready to help with math whenever you are.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-probability-0002", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-arithmetic-0004", "instruction": "Compute 27 * 93.", "chosen": "2511", "rejected": "7533"}
+{"id": "dpo-v1-algebra-0028", "instruction": "Factor x^2 - 4x - 12.", "chosen": "(x + 2)(x - 6)", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0070", "instruction": "Solve for x: 6x - 11 = 1x - 36.", "chosen": "x = -5", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0050", "instruction": "Evaluate the definite integral ∫ from 0 to 1 of 2x^2 dx.", "chosen": "2/3", "rejected": "3/2"}
+{"id": "dpo-v1-algebra-0040", "instruction": "Solve x^2 + 6x - 16 = 0.", "chosen": "x = 2 or x = -8", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-number_theory-0075", "instruction": "Is 14 a prime number?", "chosen": "no", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0087", "instruction": "Solve for x: 7x + 5 = 9x + 21.", "chosen": "x = -8", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-arithmetic-0054", "instruction": "Compute 23 + 54.", "chosen": "77", "rejected": "154"}
+{"id": "dpo-v1-linear_equations-0034", "instruction": "Solve for x: 8x + 6 = 5x + 36.", "chosen": "x = 10", "rejected": "0"}
+{"id": "dpo-v1-algebra-0049", "instruction": "Expand (4x + 8) * (4x - 2).", "chosen": "16x^2 + 24x - 16", "rejected": "I'm not sure."}
+{"id": "dpo-v1-geometry-0081", "instruction": "A triangle has base 3 and height 2.  Find its area.", "chosen": "3", "rejected": "2"}
+{"id": "dpo-v1-functions-0088", "instruction": "Given f(x) = 9x + 12 and g(x) = 4x + 9, compute f(g(7)).", "chosen": "345", "rejected": "-345"}
+{"id": "dpo-v1-functions-0077", "instruction": "Given f(x) = 4x - 7 and g(x) = 3x - 8, compute f(g(8)).", "chosen": "57", "rejected": "58"}
+{"id": "dpo-v1-functions-0099", "instruction": "Given f(x) = 5x - 7 and g(x) = 3x + 6, compute f(g(5)).", "chosen": "98", "rejected": "-98"}
+{"id": "dpo-v1-algebra-0020", "instruction": "Factor x^2 + 9x + 14.", "chosen": "(x + 7)(x + 2)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-arithmetic-0069", "instruction": "Compute 3/6 + 2/4 and give the answer in lowest terms.", "chosen": "1", "rejected": "-1"}
+{"id": "dpo-v1-arithmetic-0002", "instruction": "What is 59% of 50?", "chosen": "30", "rejected": "31"}
+{"id": "dpo-v1-algebra-0098", "instruction": "Factor x^2 - 7x + 10.", "chosen": "(x - 5)(x - 2)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-integration-0000", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 - 3x + 2) dx.", "chosen": "-4/3x^3 - 3/2x^2 + 2 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-probability-0060", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "1/3"}
+{"id": "dpo-v1-probability-0046", "instruction": "From 3 distinct items, how many subsets of size 2 exist?", "chosen": "3", "rejected": "-3"}
+{"id": "dpo-v1-integration-0041", "instruction": "Evaluate the definite integral ∫ from 0 to 4 of 4x^2 dx.", "chosen": "256/3", "rejected": "257/4"}
+{"id": "dpo-v1-algebra-0061", "instruction": "Factor x^2 + 1x - 6.", "chosen": "(x - 2)(x + 3)", "rejected": "I don't know."}
+{"id": "dpo-v1-geometry-0031", "instruction": "A triangle has base 4 and height 8.  Find its area.", "chosen": "16", "rejected": "48"}
+{"id": "dpo-v1-trigonometry-0045", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "1"}
+{"id": "dpo-v1-functions-0043", "instruction": "Given f(x) = 7x - 10 and g(x) = 3x + 5, compute f(g(4)).", "chosen": "109", "rejected": "110"}
+{"id": "dpo-v1-geometry-0015", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 9π, circumference = 6π", "rejected": "0"}
+{"id": "dpo-v1-probability-0076", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-trigonometry-0050", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "1"}
+{"id": "dpo-v1-number_theory-0005", "instruction": "Compute 52 mod 6.", "chosen": "4", "rejected": "8"}
+{"id": "dpo-v1-probability-0083", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-probability-0037", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-linear_equations-0051", "instruction": "Solve for x: 6x - 14 = 9x - 38.", "chosen": "x = 8", "rejected": "I'm not sure."}
+{"id": "dpo-v1-functions-0016", "instruction": "Given f(x) = 7x + 12 and g(x) = 4x - 4, compute f(g(6)).", "chosen": "152", "rejected": "151"}
+{"id": "dpo-v1-arithmetic-0031", "instruction": "What is 43% of 1000?", "chosen": "430", "rejected": "1290"}
+{"id": "dpo-v1-probability-0073", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "chosen": "9", "rejected": "18"}
+{"id": "dpo-v1-differentiation-0084", "instruction": "Find the derivative of f(x) = 2x^3 + 5x^2 + 2x + 2.", "chosen": "f'(x) = 6x^2 + 10x + 2", "rejected": "1"}
+{"id": "dpo-v1-geometry-0095", "instruction": "A rectangle has width 3 and height 4.  Find its area and perimeter.", "chosen": "area = 12, perimeter = 14", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-integration-0059", "instruction": "Evaluate the indefinite integral ∫ (2x^2 + 2x - 4) dx.", "chosen": "2/3x^3 + 1x^2 - 4 + C", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0065", "instruction": "Find the derivative of f(x) = 4*sin(4x).", "chosen": "f'(x) = 16*cos(4x)", "rejected": "1"}
+{"id": "dpo-v1-algebra-0075", "instruction": "Factor x^2 - 1x - 30.", "chosen": "(x + 5)(x - 6)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0095", "instruction": "Find the exact value of tan(30°).", "chosen": "√3/3", "rejected": "0"}
+{"id": "dpo-v1-geometry-0086", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 9π, circumference = 6π", "rejected": "42"}
+{"id": "dpo-v1-number_theory-0047", "instruction": "Compute 65 mod 11.", "chosen": "10", "rejected": "5"}
+{"id": "dpo-v1-functions-0093", "instruction": "Evaluate f(x) = 8x + 0 at x = 3.", "chosen": "24", "rejected": "23"}
+{"id": "dpo-v1-geometry-0010", "instruction": "A rectangle has width 15 and height 8.  Find its area and perimeter.", "chosen": "area = 120, perimeter = 46", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0091", "instruction": "Find the derivative of f(x) = 4*sin(3x).", "chosen": "f'(x) = 12*cos(3x)", "rejected": "I don't know."}
+{"id": "dpo-v1-number_theory-0062", "instruction": "Find lcm(52, 93).", "chosen": "4836", "rejected": "4837"}
+{"id": "dpo-v1-integration-0086", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 1x^2 dx.", "chosen": "37/3", "rejected": "37/4"}
+{"id": "dpo-v1-functions-0042", "instruction": "Given f(x) = 6x - 14 and g(x) = 3x + 0, compute f(g(-8)).", "chosen": "-158", "rejected": "158"}
+{"id": "dpo-v1-functions-0051", "instruction": "Given f(x) = 8x - 8 and g(x) = 2x - 7, compute f(g(-7)).", "chosen": "-176", "rejected": "-352"}
+{"id": "dpo-v1-trigonometry-0098", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "1"}
+{"id": "dpo-v1-arithmetic-0096", "instruction": "Compute 44 * 81.", "chosen": "3564", "rejected": "-3564"}
+{"id": "dpo-v1-probability-0005", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-probability-0006", "instruction": "From 3 distinct items, how many subsets of size 2 exist?", "chosen": "3", "rejected": "4"}
+{"id": "dpo-v1-differentiation-0067", "instruction": "Find the derivative of f(x) = 3x^4.", "chosen": "f'(x) = 12x^3", "rejected": "1"}
+{"id": "dpo-v1-arithmetic-0059", "instruction": "Compute 42 * 9.", "chosen": "378", "rejected": "379"}
+{"id": "dpo-v1-integration-0080", "instruction": "Evaluate the indefinite integral ∫ 4x^3 dx.", "chosen": "1x^4 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-gen-capabilities-01-002", "instruction": "How can you help me?", "chosen": "I'm best at math word problems: percentages, addition, subtraction, multiplication, division, simple algebra and ratios. Ask me something like 'What is 19% of 50?' and I'll work through it.", "rejected": "I don't know."}
+{"id": "dpo-v1-arithmetic-0053", "instruction": "Compute 9/2 + 1/9 and give the answer in lowest terms.", "chosen": "83/18", "rejected": "14/3"}
+{"id": "dpo-v1-arithmetic-0099", "instruction": "Compute 7/5 + 9/3 and give the answer in lowest terms.", "chosen": "22/5", "rejected": "11/3"}
+{"id": "dpo-v1-integration-0048", "instruction": "Evaluate the definite integral ∫ from 3 to 4 of 2x^2 dx.", "chosen": "74/3", "rejected": "3/74"}
+{"id": "dpo-v1-linear_equations-0006", "instruction": "Solve for x: 9x - 11 = 8x - 21.", "chosen": "x = -10", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-probability-0050", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-v1-algebra-0088", "instruction": "Expand (5x + 6) * (3x + 5).", "chosen": "15x^2 + 43x + 30", "rejected": "I don't know."}
+{"id": "dpo-v1-geometry-0011", "instruction": "A triangle has base 3 and height 8.  Find its area.", "chosen": "12", "rejected": "13"}
+{"id": "dpo-v1-linear_equations-0001", "instruction": "Solve for x: 6x + 4 = 9x - 17.", "chosen": "x = 7", "rejected": "I'm not sure."}
+{"id": "dpo-v1-number_theory-0068", "instruction": "Compute 13 mod 13.", "chosen": "0", "rejected": "-1"}
+{"id": "dpo-v1-linear_equations-0075", "instruction": "Solve for x: 2x + 7 = 5x - 5.", "chosen": "x = 4", "rejected": "I'm not sure."}
+{"id": "dpo-gen-fact-algebra-19-002", "instruction": "What are the steps to solve 3x + 7 = 22?", "chosen": "To solve a linear equation like 3x + 7 = 22, isolate x: subtract 7 from both sides to get 3x = 15, then divide by 3 to get x = 5.", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-geometry-0034", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 4π, circumference = 4π", "rejected": "I don't know."}
+{"id": "dpo-v1-geometry-0064", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 49π, circumference = 14π", "rejected": "42"}
+{"id": "dpo-v1-geometry-0012", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 4π, circumference = 4π", "rejected": "0"}
+{"id": "dpo-v1-arithmetic-0030", "instruction": "Compute 1/5 + 9/3 and give the answer in lowest terms.", "chosen": "16/5", "rejected": "17/5"}
+{"id": "dpo-v1-functions-0076", "instruction": "Given f(x) = 5x + 11 and g(x) = 1x + 3, compute f(g(-10)).", "chosen": "-24", "rejected": "-72"}
+{"id": "dpo-v1-number_theory-0060", "instruction": "Compute 64 mod 12.", "chosen": "4", "rejected": "3"}
+{"id": "dpo-v1-number_theory-0059", "instruction": "Find gcd(31, 29).", "chosen": "1", "rejected": "0"}
+{"id": "dpo-v1-geometry-0077", "instruction": "A triangle has base 2 and height 14.  Find its area.", "chosen": "14", "rejected": "7"}
+{"id": "dpo-gen-fact-water-12-003", "instruction": "What is the freezing point of water in Celsius?", "chosen": "Water freezes at 0 degrees Celsius (32 degrees Fahrenheit) and boils at 100 degrees Celsius (212 degrees Fahrenheit) at sea level.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0038", "instruction": "Solve for x: 7x + 19 = 2x + 44.", "chosen": "x = 5", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-arithmetic-0050", "instruction": "Compute 6/2 + 4/4 and give the answer in lowest terms.", "chosen": "4", "rejected": "3"}
+{"id": "dpo-v1-arithmetic-0080", "instruction": "What is 23% of 400?", "chosen": "92", "rejected": "91"}
+{"id": "dpo-v1-integration-0091", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 1x^2 dx.", "chosen": "26/3", "rejected": "27/4"}
+{"id": "dpo-gen-fact-primes-17-000", "instruction": "What is the only even prime number?", "chosen": "2 is the only even prime number, because every other even number is divisible by 2. The first five primes are 2, 3, 5, 7 and 11.", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0088", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "I don't know."}
+{"id": "dpo-v1-geometry-0035", "instruction": "A triangle has base 5 and height 2.  Find its area.", "chosen": "5", "rejected": "6"}
+{"id": "dpo-v1-functions-0025", "instruction": "Evaluate f(x) = 1x - 4 at x = -4.", "chosen": "-8", "rejected": "-9"}
+{"id": "dpo-v1-algebra-0065", "instruction": "Expand (5x - 2) * (4x + 7).", "chosen": "20x^2 + 27x - 14", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0043", "instruction": "Find the exact value of tan(30°).", "chosen": "√3/3", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0002", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 - 3x + 3) dx.", "chosen": "-2/3x^3 - 3/2x^2 + 3 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-algebra-0034", "instruction": "Solve x^2 - 3x + 0 = 0.", "chosen": "x = 0 or x = 3", "rejected": "1"}
+{"id": "dpo-gen-identity-00-009", "instruction": "What kind of AI are you?", "chosen": "I'm Silverwing, a compact language model (about 102 million parameters) trained by the Silverwing-ML project. My specialty is math word problems - percentages, arithmetic, algebra and ratios - and I'm learning to chat more naturally too.", "rejected": "Question: hi Answer:"}
+{"id": "dpo-v1-number_theory-0071", "instruction": "Find lcm(25, 61).", "chosen": "1525", "rejected": "4575"}
+{"id": "dpo-v1-probability-0001", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "1/9"}
+{"id": "dpo-v1-trigonometry-0033", "instruction": "Find the exact value of tan(30°).", "chosen": "√3/3", "rejected": "42"}
+{"id": "dpo-v1-geometry-0059", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 4π, circumference = 4π", "rejected": "42"}
+{"id": "dpo-v1-functions-0018", "instruction": "Given f(x) = 9x - 14 and g(x) = 1x + 0, compute f(g(6)).", "chosen": "40", "rejected": "41"}
+{"id": "dpo-v1-geometry-0058", "instruction": "A rectangle has width 6 and height 14.  Find its area and perimeter.", "chosen": "area = 84, perimeter = 40", "rejected": "0"}
+{"id": "dpo-gen-gratitude-04-002", "instruction": "Thank you!", "chosen": "You're welcome! Got another problem for me?", "rejected": "356 - 86 = -20. -20"}
+{"id": "dpo-v1-integration-0046", "instruction": "Evaluate the indefinite integral ∫ 1x^1 dx.", "chosen": "1/2x^2 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-geometry-0005", "instruction": "A circle has radius 4.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 16π, circumference = 8π", "rejected": "Let me think about this differently."}
+{"id": "dpo-gen-smalltalk-03-002", "instruction": "Hey", "chosen": "Hello! I'm Silverwing. Ask me a math problem - or just say hi back.", "rejected": "356 - 86 = -20. -20"}
+{"id": "dpo-v1-linear_equations-0053", "instruction": "Solve for x: 8x + 10 = 1x - 53.", "chosen": "x = -9", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-probability-0036", "instruction": "From 6 distinct items, how many subsets of size 1 exist?", "chosen": "6", "rejected": "12"}
+{"id": "dpo-v1-number_theory-0031", "instruction": "Find gcd(61, 18).", "chosen": "1", "rejected": "0"}
+{"id": "dpo-v1-geometry-0016", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 1π, circumference = 2π", "rejected": "1"}
+{"id": "dpo-v1-integration-0009", "instruction": "Evaluate the indefinite integral ∫ (4x^2 + x + 2) dx.", "chosen": "4/3x^3 + 1/2x^2 + 2 + C", "rejected": "1"}
+{"id": "dpo-v1-functions-0062", "instruction": "Evaluate f(x) = 3x + 0 at x = -3.", "chosen": "-9", "rejected": "9"}
+{"id": "dpo-v1-differentiation-0099", "instruction": "Find the derivative of f(x) = 4x^3 - 2x^2 - 2x - 1.", "chosen": "f'(x) = 12x^2 - 4x - 2", "rejected": "0"}
+{"id": "dpo-v1-geometry-0073", "instruction": "A triangle has base 7 and height 14.  Find its area.", "chosen": "49", "rejected": "48"}
+{"id": "dpo-v1-number_theory-0053", "instruction": "Compute 95 mod 8.", "chosen": "7", "rejected": "-7"}
+{"id": "dpo-v1-integration-0081", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "chosen": "2x^2 + C", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0028", "instruction": "Find the derivative of f(x) = -1x^3 - 3x^2 + x + 5.", "chosen": "f'(x) = -3x^2 - 6x + 1", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-integration-0074", "instruction": "Evaluate the indefinite integral ∫ 1x^1 dx.", "chosen": "1/2x^2 + C", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0076", "instruction": "Find the derivative of f(x) = -2x^3 + 3x^2 + x - 1.", "chosen": "f'(x) = -6x^2 + 6x + 1", "rejected": "I'm not sure."}
+{"id": "dpo-v1-number_theory-0096", "instruction": "Find gcd(24, 34).", "chosen": "2", "rejected": "3"}
+{"id": "dpo-v1-differentiation-0032", "instruction": "Find the derivative of f(x) = 5*sin(4x).", "chosen": "f'(x) = 20*cos(4x)", "rejected": "42"}
+{"id": "dpo-v1-number_theory-0066", "instruction": "Is 63 a prime number?", "chosen": "no", "rejected": "I'm not sure."}
+{"id": "dpo-v1-trigonometry-0001", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "0"}
+{"id": "dpo-v1-functions-0001", "instruction": "Evaluate f(x) = 8x + 8 at x = 6.", "chosen": "56", "rejected": "168"}
+{"id": "dpo-v1-geometry-0094", "instruction": "A triangle has base 6 and height 9.  Find its area.", "chosen": "27", "rejected": "-27"}
+{"id": "dpo-v1-probability-0038", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-v1-algebra-0052", "instruction": "Solve x^2 - 10x + 21 = 0.", "chosen": "x = 3 or x = 7", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-integration-0095", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 3x^2 dx.", "chosen": "63", "rejected": "-63"}
+{"id": "dpo-v1-differentiation-0057", "instruction": "Find the derivative of f(x) = 4x^3 + 5x^2 - 5x - 2.", "chosen": "f'(x) = 12x^2 + 10x - 5", "rejected": "I don't know."}
+{"id": "dpo-v1-number_theory-0003", "instruction": "Find gcd(66, 22).", "chosen": "22", "rejected": "11"}
+{"id": "dpo-v1-integration-0073", "instruction": "Evaluate the indefinite integral ∫ (3x^2 + 2x + 3) dx.", "chosen": "1x^3 + 1x^2 + 3 + C", "rejected": "I'm not sure."}
+{"id": "dpo-v1-functions-0021", "instruction": "Given f(x) = 9x + 3 and g(x) = 4x - 7, compute f(g(-3)).", "chosen": "-168", "rejected": "168"}
+{"id": "dpo-v1-probability-0058", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-functions-0070", "instruction": "Given f(x) = 8x - 7 and g(x) = 5x - 5, compute f(g(0)).", "chosen": "-47", "rejected": "47"}
+{"id": "dpo-v1-trigonometry-0079", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0094", "instruction": "Find the derivative of f(x) = 1x^4.", "chosen": "f'(x) = 4x^3", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-functions-0002", "instruction": "Evaluate f(x) = 6x + 3 at x = -1.", "chosen": "-3", "rejected": "-6"}
+{"id": "dpo-v1-integration-0016", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 - 1x - 3) dx.", "chosen": "-1x^3 - 1/2x^2 - 3 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0035", "instruction": "Solve x^2 + 8x + 15 = 0.", "chosen": "x = -5 or x = -3", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-integration-0076", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 4x^2 dx.", "chosen": "84", "rejected": "252"}
+{"id": "dpo-v1-trigonometry-0012", "instruction": "Find the exact value of tan(45°).", "chosen": "1", "rejected": "-1"}
+{"id": "dpo-v1-differentiation-0019", "instruction": "Find the derivative of f(x) = 4*sin(3x).", "chosen": "f'(x) = 12*cos(3x)", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0041", "instruction": "Find the derivative of f(x) = 1*sin(4x).", "chosen": "f'(x) = 4*cos(4x)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-number_theory-0024", "instruction": "Find lcm(36, 37).", "chosen": "1332", "rejected": "1333"}
+{"id": "dpo-v1-linear_equations-0085", "instruction": "Solve for x: 6x + 9 = 3x + 36.", "chosen": "x = 9", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0024", "instruction": "Factor x^2 - 6x + 8.", "chosen": "(x - 2)(x - 4)", "rejected": "1"}
+{"id": "dpo-v1-functions-0075", "instruction": "Evaluate f(x) = 3x + 11 at x = 6.", "chosen": "29", "rejected": "58"}
+{"id": "dpo-v1-arithmetic-0046", "instruction": "Compute 8/4 + 9/3 and give the answer in lowest terms.", "chosen": "5", "rejected": "15"}
+{"id": "dpo-gen-fact-calendar-11-001", "instruction": "How many days are in a leap year?", "chosen": "A common year has 365 days and a leap year has 366. There are 12 months in a year and 4 seasons.", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-integration-0099", "instruction": "Evaluate the indefinite integral ∫ 2x^4 dx.", "chosen": "2/5x^5 + C", "rejected": "I'm not sure."}
+{"id": "dpo-v1-linear_equations-0025", "instruction": "Solve for x: 3x + 0 = 2x - 1.", "chosen": "x = -1", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-probability-0026", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-arithmetic-0076", "instruction": "Compute 18 - 83.", "chosen": "-65", "rejected": "65"}
+{"id": "dpo-v1-linear_equations-0056", "instruction": "Solve for x: 3x + 20 = 5x + 2.", "chosen": "x = 9", "rejected": "Cannot be determined."}
+{"id": "dpo-gen-capabilities-01-000", "instruction": "What can you do?", "chosen": "I'm best at math word problems: percentages, addition, subtraction, multiplication, division, simple algebra and ratios. Ask me something like 'What is 19% of 50?' and I'll work through it.", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-linear_equations-0003", "instruction": "Solve for x: 4x + 0 = 7x + 27.", "chosen": "x = -9", "rejected": "I'm not sure."}
+{"id": "dpo-v1-integration-0093", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 - 3x + 3) dx.", "chosen": "-4/3x^3 - 3/2x^2 + 3 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-probability-0085", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-geometry-0033", "instruction": "A triangle has base 14 and height 3.  Find its area.", "chosen": "21", "rejected": "22"}
+{"id": "dpo-v1-geometry-0000", "instruction": "A rectangle has width 8 and height 5.  Find its area and perimeter.", "chosen": "area = 40, perimeter = 26", "rejected": "1"}
+{"id": "dpo-v1-number_theory-0020", "instruction": "Find lcm(68, 39).", "chosen": "2652", "rejected": "5304"}
+{"id": "dpo-v1-arithmetic-0056", "instruction": "Compute 35 - 60.", "chosen": "-25", "rejected": "25"}
+{"id": "dpo-v1-trigonometry-0056", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-linear_equations-0090", "instruction": "Solve for x: 6x - 14 = 3x - 23.", "chosen": "x = -3", "rejected": "1"}
+{"id": "dpo-v1-arithmetic-0012", "instruction": "Compute 4/2 + 1/4 and give the answer in lowest terms.", "chosen": "9/4", "rejected": "4/9"}
+{"id": "dpo-v1-arithmetic-0000", "instruction": "What is 19% of 50?", "chosen": "10", "rejected": "5"}
+{"id": "dpo-gen-wellbeing-06-002", "instruction": "How's it going?", "chosen": "I'm doing well, thanks for asking! Ready to help with math whenever you are.", "rejected": "I don't know."}
+{"id": "dpo-v1-integration-0001", "instruction": "Evaluate the definite integral ∫ from 4 to 4 of 1x^2 dx.", "chosen": "0", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0013", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-arithmetic-0081", "instruction": "Compute 48 - 7.", "chosen": "41", "rejected": "-41"}
+{"id": "dpo-v1-geometry-0014", "instruction": "A triangle has base 14 and height 14.  Find its area.", "chosen": "98", "rejected": "97"}
+{"id": "dpo-v1-geometry-0060", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 81π, circumference = 18π", "rejected": "I don't know."}
+{"id": "dpo-v1-number_theory-0045", "instruction": "Is 96 a prime number?", "chosen": "no", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0059", "instruction": "Solve for x: 4x + 9 = 7x + 9.", "chosen": "x = 0", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-linear_equations-0026", "instruction": "Solve for x: 3x + 14 = 4x + 20.", "chosen": "x = -6", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-geometry-0080", "instruction": "A triangle has base 2 and height 4.  Find its area.", "chosen": "4", "rejected": "2"}
+{"id": "dpo-v1-trigonometry-0049", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0040", "instruction": "Find the exact value of sin(60°).", "chosen": "√3/2", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-arithmetic-0066", "instruction": "Compute 7/3 + 5/8 and give the answer in lowest terms.", "chosen": "71/24", "rejected": "24/71"}
+{"id": "dpo-v1-integration-0077", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 - 3x) dx.", "chosen": "-1x^3 - 3/2x^2 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0083", "instruction": "Solve x^2 + 8x + 15 = 0.", "chosen": "x = -5 or x = -3", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0046", "instruction": "Factor x^2 + 1x - 56.", "chosen": "(x + 8)(x - 7)", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-probability-0019", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "2/3"}
+{"id": "dpo-v1-arithmetic-0051", "instruction": "What is 62% of 100?", "chosen": "62", "rejected": "124"}
+{"id": "dpo-v1-functions-0054", "instruction": "Evaluate f(x) = 3x + 3 at x = 6.", "chosen": "21", "rejected": "20"}
+{"id": "dpo-v1-number_theory-0025", "instruction": "Find lcm(16, 70).", "chosen": "560", "rejected": "561"}
+{"id": "dpo-v1-number_theory-0052", "instruction": "Find lcm(45, 83).", "chosen": "3735", "rejected": "3734"}
+{"id": "dpo-v1-algebra-0084", "instruction": "Factor x^2 - 8x + 7.", "chosen": "(x - 7)(x - 1)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0094", "instruction": "Evaluate the indefinite integral ∫ 5x^4 dx.", "chosen": "1x^5 + C", "rejected": "42"}
+{"id": "dpo-v1-number_theory-0009", "instruction": "Find gcd(25, 84).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-linear_equations-0081", "instruction": "Solve for x: 7x + 4 = 3x - 20.", "chosen": "x = -6", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0031", "instruction": "Find the derivative of f(x) = -3x^3 + 2x^2 + 4x.", "chosen": "f'(x) = -9x^2 + 4x + 4", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-probability-0093", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "1/4"}
+{"id": "dpo-gen-fact-water-12-000", "instruction": "At what temperature does water freeze?", "chosen": "Water freezes at 0 degrees Celsius (32 degrees Fahrenheit) and boils at 100 degrees Celsius (212 degrees Fahrenheit) at sea level.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0069", "instruction": "Expand (5x - 4) * (1x - 9).", "chosen": "5x^2 - 49x + 36", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-arithmetic-0071", "instruction": "What is 75% of 200?", "chosen": "150", "rejected": "75"}
+{"id": "dpo-v1-integration-0042", "instruction": "Evaluate the indefinite integral ∫ (4x^2 + 2x + 4) dx.", "chosen": "4/3x^3 + 1x^2 + 4 + C", "rejected": "I don't know."}
+{"id": "dpo-v1-number_theory-0027", "instruction": "Is 93 a prime number?", "chosen": "no", "rejected": "I don't know."}
+{"id": "dpo-v1-functions-0026", "instruction": "Given f(x) = 2x - 2 and g(x) = 3x - 6, compute f(g(-3)).", "chosen": "-32", "rejected": "-31"}
+{"id": "dpo-v1-linear_equations-0086", "instruction": "Solve for x: 2x - 5 = 7x + 30.", "chosen": "x = -7", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-geometry-0090", "instruction": "A rectangle has width 4 and height 14.  Find its area and perimeter.", "chosen": "area = 56, perimeter = 36", "rejected": "0"}
+{"id": "dpo-v1-number_theory-0061", "instruction": "Compute 35 mod 12.", "chosen": "11", "rejected": "-11"}
+{"id": "dpo-v1-functions-0063", "instruction": "Given f(x) = 2x - 4 and g(x) = 5x - 1, compute f(g(-4)).", "chosen": "-46", "rejected": "-47"}
+{"id": "dpo-v1-arithmetic-0003", "instruction": "Compute 31 + 66.", "chosen": "97", "rejected": "291"}
+{"id": "dpo-gen-fact-calendar-11-000", "instruction": "How many days are in a year?", "chosen": "A common year has 365 days and a leap year has 366. There are 12 months in a year and 4 seasons.", "rejected": "356 - 86 = -20. -20"}
+{"id": "dpo-v1-geometry-0048", "instruction": "A circle has radius 3.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 9π, circumference = 6π", "rejected": "0"}
+{"id": "dpo-v1-functions-0030", "instruction": "Given f(x) = 7x - 20 and g(x) = 3x - 2, compute f(g(9)).", "chosen": "155", "rejected": "465"}
+{"id": "dpo-v1-functions-0086", "instruction": "Given f(x) = 8x + 13 and g(x) = 2x + 7, compute f(g(4)).", "chosen": "133", "rejected": "132"}
+{"id": "dpo-v1-probability-0013", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-v1-probability-0032", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "1/3"}
+{"id": "dpo-v1-trigonometry-0046", "instruction": "Find the exact value of tan(90°).", "chosen": "undefined", "rejected": "Cannot be determined."}
+{"id": "dpo-gen-limits-02-003", "instruction": "Are you as smart as GPT-4?", "chosen": "Honestly, not much yet - I'm a small research model trained mostly on math word problems. For general topics I'd just be guessing, so please double-check anything important elsewhere.", "rejected": "The answer is unknown."}
+{"id": "dpo-gen-fact-world-15-000", "instruction": "How many continents are there?", "chosen": "Earth has 7 continents (Africa, Antarctica, Asia, Australia, Europe, North America, South America) and 5 named oceans.", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-linear_equations-0013", "instruction": "Solve for x: 6x - 5 = 7x + 1.", "chosen": "x = -6", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-number_theory-0043", "instruction": "Compute 45 mod 15.", "chosen": "0", "rejected": "-1"}
+{"id": "dpo-v1-arithmetic-0087", "instruction": "Compute 5/4 + 4/1 and give the answer in lowest terms.", "chosen": "21/4", "rejected": "21/5"}
+{"id": "dpo-v1-algebra-0066", "instruction": "Factor x^2 - 7x + 6.", "chosen": "(x - 6)(x - 1)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-geometry-0062", "instruction": "A rectangle has width 2 and height 9.  Find its area and perimeter.", "chosen": "area = 18, perimeter = 22", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-differentiation-0033", "instruction": "Find the derivative of f(x) = 6x^4.", "chosen": "f'(x) = 24x^3", "rejected": "0"}
+{"id": "dpo-v1-geometry-0019", "instruction": "A rectangle has width 3 and height 3.  Find its area and perimeter.", "chosen": "area = 9, perimeter = 12", "rejected": "1"}
+{"id": "dpo-v1-arithmetic-0008", "instruction": "Compute 14 - 47.", "chosen": "-33", "rejected": "33"}
+{"id": "dpo-v1-number_theory-0054", "instruction": "Find lcm(51, 65).", "chosen": "3315", "rejected": "-3315"}
+{"id": "dpo-v1-integration-0098", "instruction": "Evaluate the indefinite integral ∫ 6x^4 dx.", "chosen": "6/5x^5 + C", "rejected": "I don't know."}
+{"id": "dpo-gen-help-08-005", "instruction": "How does this work?", "chosen": "Sure! Give me a math problem in words - percentages, arithmetic, simple algebra or ratios all work. For example: 'A jacket costs $80 and is discounted 25%. What is the sale price?'", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-number_theory-0021", "instruction": "Is 78 a prime number?", "chosen": "no", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0065", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "4"}
+{"id": "dpo-v1-differentiation-0030", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "chosen": "f'(x) = 4*cos(2x)", "rejected": "1"}
+{"id": "dpo-v1-algebra-0079", "instruction": "Solve x^2 + 7x + 0 = 0.", "chosen": "x = 0 or x = -7", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0051", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-functions-0091", "instruction": "Evaluate f(x) = 1x + 17 at x = 5.", "chosen": "22", "rejected": "21"}
+{"id": "dpo-v1-number_theory-0079", "instruction": "Find gcd(88, 18).", "chosen": "2", "rejected": "1"}
+{"id": "dpo-v1-number_theory-0074", "instruction": "Compute 74 mod 8.", "chosen": "2", "rejected": "1"}
+{"id": "dpo-gen-affirmation-09-002", "instruction": "Sounds good", "chosen": "Great - fire away with your question!", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0066", "instruction": "Find the derivative of f(x) = x^3 - 3x^2 + 3x + 2.", "chosen": "f'(x) = 3x^2 - 6x + 3", "rejected": "42"}
+{"id": "dpo-gen-fact-percent-18-001", "instruction": "How do I calculate a percentage of a number?", "chosen": "A percentage is just a fraction of 100, so 50% means 50/100 = 0.5. To find P% of N, multiply N by P and divide by 100.", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0033", "instruction": "Solve for x: 9x - 6 = 6x + 21.", "chosen": "x = 9", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0020", "instruction": "Solve for x: 7x - 2 = 6x + 6.", "chosen": "x = 8", "rejected": "The answer is unknown."}
+{"id": "dpo-gen-fact-geometry-13-001", "instruction": "How many sides does a square have?", "chosen": "A triangle has 3 sides, a square has 4, a pentagon has 5 and a hexagon has 6. The angles of a triangle always add up to 180 degrees.", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-gen-fact-numbers-16-001", "instruction": "What happens when you multiply by zero?", "chosen": "Zero is neither negative nor positive, it's the only number that is not positive or negative. Any number multiplied by zero equals zero, and division by zero is undefined.", "rejected": "356 - 86 = -20. -20"}
+{"id": "dpo-gen-fact-world-15-003", "instruction": "What are the seven continents?", "chosen": "Earth has 7 continents (Africa, Antarctica, Asia, Australia, Europe, North America, South America) and 5 named oceans.", "rejected": "Question: hi Answer:"}
+{"id": "dpo-v1-arithmetic-0048", "instruction": "Compute 4/2 + 2/7 and give the answer in lowest terms.", "chosen": "16/7", "rejected": "7/16"}
+{"id": "dpo-v1-trigonometry-0002", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-gen-identity-00-002", "instruction": "Tell me about yourself.", "chosen": "I'm Silverwing, a compact language model (about 102 million parameters) trained by the Silverwing-ML project. My specialty is math word problems - percentages, arithmetic, algebra and ratios - and I'm learning to chat more naturally too.", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-functions-0012", "instruction": "Evaluate f(x) = 8x - 18 at x = 3.", "chosen": "6", "rejected": "-6"}
+{"id": "dpo-v1-functions-0031", "instruction": "Given f(x) = 3x - 15 and g(x) = 3x - 7, compute f(g(6)).", "chosen": "18", "rejected": "54"}
+{"id": "dpo-v1-functions-0087", "instruction": "Given f(x) = 6x - 10 and g(x) = 5x + 0, compute f(g(2)).", "chosen": "50", "rejected": "150"}
+{"id": "dpo-v1-geometry-0023", "instruction": "A rectangle has width 10 and height 11.  Find its area and perimeter.", "chosen": "area = 110, perimeter = 42", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0083", "instruction": "Find the derivative of f(x) = 4x^3 - 2x^2 + 2x + 3.", "chosen": "f'(x) = 12x^2 - 4x + 2", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0040", "instruction": "Solve for x: 8x - 14 = 4x - 10.", "chosen": "x = 1", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0014", "instruction": "Solve for x: 3x + 4 = 2x + 13.", "chosen": "x = 9", "rejected": "42"}
+{"id": "dpo-v1-functions-0013", "instruction": "Evaluate f(x) = 8x + 19 at x = -1.", "chosen": "11", "rejected": "22"}
+{"id": "dpo-v1-integration-0072", "instruction": "Evaluate the definite integral ∫ from 4 to 5 of 4x^2 dx.", "chosen": "244/3", "rejected": "245/4"}
+{"id": "dpo-v1-differentiation-0039", "instruction": "Find the derivative of f(x) = 4*sin(1x).", "chosen": "f'(x) = 4*cos(1x)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-integration-0004", "instruction": "Evaluate the indefinite integral ∫ 2x^4 dx.", "chosen": "2/5x^5 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-number_theory-0033", "instruction": "Find lcm(46, 95).", "chosen": "4370", "rejected": "8740"}
+{"id": "dpo-v1-linear_equations-0022", "instruction": "Solve for x: 8x + 18 = 5x + 9.", "chosen": "x = -3", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-integration-0047", "instruction": "Evaluate the indefinite integral ∫ 5x^2 dx.", "chosen": "5/3x^3 + C", "rejected": "I'm not sure."}
+{"id": "dpo-v1-geometry-0009", "instruction": "A rectangle has width 2 and height 13.  Find its area and perimeter.", "chosen": "area = 26, perimeter = 30", "rejected": "Cannot be determined."}
+{"id": "dpo-gen-wellbeing-06-001", "instruction": "How are you doing?", "chosen": "I'm doing well, thanks for asking! Ready to help with math whenever you are.", "rejected": "42"}
+{"id": "dpo-v1-algebra-0080", "instruction": "Factor x^2 - 14x + 48.", "chosen": "(x - 8)(x - 6)", "rejected": "The answer is unknown."}
+{"id": "dpo-gen-smalltalk-03-008", "instruction": "Howdy", "chosen": "Hello! I'm Silverwing. Ask me a math problem - or just say hi back.", "rejected": "42"}
+{"id": "dpo-v1-probability-0059", "instruction": "From 7 distinct items, how many subsets of size 2 exist?", "chosen": "21", "rejected": "22"}
+{"id": "dpo-v1-integration-0012", "instruction": "Evaluate the definite integral ∫ from 4 to 5 of 4x^2 dx.", "chosen": "244/3", "rejected": "3/244"}
+{"id": "dpo-v1-linear_equations-0083", "instruction": "Solve for x: 7x - 16 = 1x + 8.", "chosen": "x = 4", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-number_theory-0051", "instruction": "Find lcm(49, 24).", "chosen": "1176", "rejected": "2352"}
+{"id": "dpo-v1-functions-0019", "instruction": "Evaluate f(x) = 5x + 8 at x = 6.", "chosen": "38", "rejected": "37"}
+{"id": "dpo-v1-trigonometry-0054", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "1"}
+{"id": "dpo-v1-probability-0008", "instruction": "From 9 distinct items, how many subsets of size 1 exist?", "chosen": "9", "rejected": "10"}
+{"id": "dpo-v1-number_theory-0000", "instruction": "Find gcd(76, 85).", "chosen": "1", "rejected": "3"}
+{"id": "dpo-v1-probability-0067", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "chosen": "5", "rejected": "10"}
+{"id": "dpo-v1-number_theory-0048", "instruction": "Find gcd(86, 85).", "chosen": "1", "rejected": "0"}
+{"id": "dpo-v1-geometry-0066", "instruction": "A triangle has base 6 and height 3.  Find its area.", "chosen": "9", "rejected": "27"}
+{"id": "dpo-v1-differentiation-0001", "instruction": "Find the derivative of f(x) = 5*sin(4x).", "chosen": "f'(x) = 20*cos(4x)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-number_theory-0038", "instruction": "Compute 70 mod 8.", "chosen": "6", "rejected": "12"}
+{"id": "dpo-v1-linear_equations-0031", "instruction": "Solve for x: 8x + 17 = 6x + 13.", "chosen": "x = -2", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0082", "instruction": "Evaluate the indefinite integral ∫ 6x^3 dx.", "chosen": "3/2x^4 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0013", "instruction": "Find the derivative of f(x) = 1x^3.", "chosen": "f'(x) = 3x^2", "rejected": "I'm not sure."}
+{"id": "dpo-v1-algebra-0041", "instruction": "Factor x^2 + 0x - 25.", "chosen": "(x + 5)(x - 5)", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-differentiation-0009", "instruction": "Find the derivative of f(x) = 2*sin(4x).", "chosen": "f'(x) = 8*cos(4x)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-number_theory-0080", "instruction": "Find gcd(95, 14).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-probability-0030", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "1/4"}
+{"id": "dpo-v1-trigonometry-0091", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-arithmetic-0041", "instruction": "Compute 9/8 + 2/4 and give the answer in lowest terms.", "chosen": "13/8", "rejected": "13/9"}
+{"id": "dpo-gen-gratitude-04-001", "instruction": "Thank you", "chosen": "You're welcome! Got another problem for me?", "rejected": "356 - 86 = -20. -20"}
+{"id": "dpo-v1-differentiation-0014", "instruction": "Find the derivative of f(x) = 6x^3.", "chosen": "f'(x) = 18x^2", "rejected": "I don't know."}
+{"id": "dpo-v1-number_theory-0032", "instruction": "Find lcm(40, 94).", "chosen": "1880", "rejected": "1879"}
+{"id": "dpo-gen-smalltalk-03-001", "instruction": "Hi!", "chosen": "Hello! I'm Silverwing. Ask me a math problem - or just say hi back.", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-integration-0044", "instruction": "Evaluate the indefinite integral ∫ 6x^3 dx.", "chosen": "3/2x^4 + C", "rejected": "1"}
+{"id": "dpo-v1-geometry-0075", "instruction": "A rectangle has width 2 and height 8.  Find its area and perimeter.", "chosen": "area = 16, perimeter = 20", "rejected": "I don't know."}
+{"id": "dpo-v1-differentiation-0081", "instruction": "Find the derivative of f(x) = 5*sin(4x).", "chosen": "f'(x) = 20*cos(4x)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0062", "instruction": "Find the derivative of f(x) = -1x^3 - 1x^2 - 5x + 3.", "chosen": "f'(x) = -3x^2 - 2x - 5", "rejected": "1"}
+{"id": "dpo-v1-arithmetic-0067", "instruction": "Compute 60 + 81.", "chosen": "141", "rejected": "423"}
+{"id": "dpo-v1-geometry-0083", "instruction": "A triangle has base 13 and height 10.  Find its area.", "chosen": "65", "rejected": "64"}
+{"id": "dpo-v1-algebra-0021", "instruction": "Factor x^2 + 4x - 32.", "chosen": "(x + 8)(x - 4)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-differentiation-0085", "instruction": "Find the derivative of f(x) = 3*sin(2x).", "chosen": "f'(x) = 6*cos(2x)", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0027", "instruction": "Find the derivative of f(x) = 2*sin(1x).", "chosen": "f'(x) = 2*cos(1x)", "rejected": "0"}
+{"id": "dpo-v1-trigonometry-0053", "instruction": "Find the exact value of tan(60°).", "chosen": "√3", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-number_theory-0050", "instruction": "Compute 76 mod 7.", "chosen": "6", "rejected": "3"}
+{"id": "dpo-v1-arithmetic-0016", "instruction": "What is 14% of 800?", "chosen": "112", "rejected": "56"}
+{"id": "dpo-v1-integration-0054", "instruction": "Evaluate the indefinite integral ∫ 3x^1 dx.", "chosen": "3/2x^2 + C", "rejected": "1"}
+{"id": "dpo-v1-probability-0018", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-algebra-0062", "instruction": "Factor x^2 - 2x - 35.", "chosen": "(x - 7)(x + 5)", "rejected": "0"}
+{"id": "dpo-v1-trigonometry-0029", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-functions-0079", "instruction": "Evaluate f(x) = 2x + 7 at x = -6.", "chosen": "-5", "rejected": "5"}
+{"id": "dpo-v1-integration-0018", "instruction": "Evaluate the definite integral ∫ from 1 to 2 of 1x^2 dx.", "chosen": "7/3", "rejected": "8/3"}
+{"id": "dpo-gen-fact-geometry-13-003", "instruction": "How many sides does a hexagon have?", "chosen": "A triangle has 3 sides, a square has 4, a pentagon has 5 and a hexagon has 6. The angles of a triangle always add up to 180 degrees.", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0099", "instruction": "Solve for x: 6x - 11 = 8x - 23.", "chosen": "x = 6", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0099", "instruction": "Expand (3x + 9) * (3x + 9).", "chosen": "9x^2 + 54x + 81", "rejected": "I'm not sure."}
+{"id": "dpo-gen-farewell-05-005", "instruction": "That's all, bye", "chosen": "Goodbye! Come back anytime you need a calculation.", "rejected": "Question: hi Answer:"}
+{"id": "dpo-gen-help-08-006", "instruction": "What now?", "chosen": "Sure! Give me a math problem in words - percentages, arithmetic, simple algebra or ratios all work. For example: 'A jacket costs $80 and is discounted 25%. What is the sale price?'", "rejected": "42"}
+{"id": "dpo-v1-number_theory-0016", "instruction": "Compute 14 mod 9.", "chosen": "5", "rejected": "-5"}
+{"id": "dpo-v1-differentiation-0080", "instruction": "Find the derivative of f(x) = 2*sin(1x).", "chosen": "f'(x) = 2*cos(1x)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0048", "instruction": "Factor x^2 - 6x - 16.", "chosen": "(x - 8)(x + 2)", "rejected": "0"}
+{"id": "dpo-v1-trigonometry-0067", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I don't know."}
+{"id": "dpo-v1-geometry-0041", "instruction": "A circle has radius 4.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 16π, circumference = 8π", "rejected": "1"}
+{"id": "dpo-v1-algebra-0093", "instruction": "Expand (1x - 6) * (4x - 5).", "chosen": "4x^2 - 29x + 30", "rejected": "I'm not sure."}
+{"id": "dpo-v1-arithmetic-0063", "instruction": "Compute 2/4 + 1/2 and give the answer in lowest terms.", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-algebra-0067", "instruction": "Factor x^2 + 12x + 35.", "chosen": "(x + 7)(x + 5)", "rejected": "42"}
+{"id": "dpo-v1-trigonometry-0003", "instruction": "Find the exact value of cos(90°).", "chosen": "0", "rejected": "-1"}
+{"id": "dpo-v1-linear_equations-0046", "instruction": "Solve for x: 5x + 14 = 3x + 2.", "chosen": "x = -6", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-probability-0096", "instruction": "From 8 distinct items, how many subsets of size 1 exist?", "chosen": "8", "rejected": "24"}
+{"id": "dpo-v1-arithmetic-0058", "instruction": "Compute 76 + 96.", "chosen": "172", "rejected": "516"}
+{"id": "dpo-v1-differentiation-0079", "instruction": "Find the derivative of f(x) = -2x^3 - 5x + 1.", "chosen": "f'(x) = -6x^2 - 5", "rejected": "42"}
+{"id": "dpo-v1-integration-0034", "instruction": "Evaluate the definite integral ∫ from 1 to 4 of 3x^2 dx.", "chosen": "63", "rejected": "-63"}
+{"id": "dpo-v1-algebra-0047", "instruction": "Expand (4x + 2) * (2x - 1).", "chosen": "8x^2 - 2", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-arithmetic-0042", "instruction": "Compute 4 - 77.", "chosen": "-73", "rejected": "-219"}
+{"id": "dpo-v1-geometry-0092", "instruction": "A triangle has base 7 and height 8.  Find its area.", "chosen": "28", "rejected": "29"}
+{"id": "dpo-v1-linear_equations-0049", "instruction": "Solve for x: 3x - 12 = 5x + 6.", "chosen": "x = -9", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0095", "instruction": "Find the derivative of f(x) = 3*sin(1x).", "chosen": "f'(x) = 3*cos(1x)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-algebra-0063", "instruction": "Factor x^2 - 1x - 42.", "chosen": "(x - 7)(x + 6)", "rejected": "I don't know."}
+{"id": "dpo-v1-integration-0060", "instruction": "Evaluate the indefinite integral ∫ 3x^1 dx.", "chosen": "3/2x^2 + C", "rejected": "0"}
+{"id": "dpo-gen-smalltalk-03-005", "instruction": "Good morning", "chosen": "Hello! I'm Silverwing. Ask me a math problem - or just say hi back.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-trigonometry-0016", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0068", "instruction": "Solve x^2 + 9x + 18 = 0.", "chosen": "x = -6 or x = -3", "rejected": "42"}
+{"id": "dpo-v1-integration-0090", "instruction": "Evaluate the indefinite integral ∫ 5x^3 dx.", "chosen": "5/4x^4 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-number_theory-0087", "instruction": "Is 37 a prime number?", "chosen": "yes", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0066", "instruction": "Solve for x: 3x - 14 = 8x + 1.", "chosen": "x = -3", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-number_theory-0041", "instruction": "Compute 50 mod 6.", "chosen": "2", "rejected": "4"}
+{"id": "dpo-v1-linear_equations-0082", "instruction": "Solve for x: 9x + 5 = 6x - 19.", "chosen": "x = -8", "rejected": "I don't know."}
+{"id": "dpo-gen-fact-numbers-16-003", "instruction": "Why can't we divide by zero?", "chosen": "Zero is neither negative nor positive, it's the only number that is not positive or negative. Any number multiplied by zero equals zero, and division by zero is undefined.", "rejected": "0"}
+{"id": "dpo-v1-probability-0086", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "2/5"}
+{"id": "dpo-v1-algebra-0023", "instruction": "Factor x^2 - 12x + 35.", "chosen": "(x - 5)(x - 7)", "rejected": "I don't know."}
+{"id": "dpo-v1-geometry-0069", "instruction": "A triangle has base 3 and height 6.  Find its area.", "chosen": "9", "rejected": "-9"}
+{"id": "dpo-v1-linear_equations-0068", "instruction": "Solve for x: 7x + 19 = 9x + 1.", "chosen": "x = 9", "rejected": "I don't know."}
+{"id": "dpo-v1-number_theory-0083", "instruction": "Find lcm(38, 99).", "chosen": "3762", "rejected": "1881"}
+{"id": "dpo-v1-differentiation-0071", "instruction": "Find the derivative of f(x) = 5x^3 + 4x^2 + 4x - 5.", "chosen": "f'(x) = 15x^2 + 8x + 4", "rejected": "0"}
+{"id": "dpo-gen-apology-07-002", "instruction": "My bad", "chosen": "No worries at all! What would you like to look at next?", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-algebra-0095", "instruction": "Factor x^2 - 14x + 49.", "chosen": "(x - 7)(x - 7)", "rejected": "42"}
+{"id": "dpo-v1-arithmetic-0013", "instruction": "Compute 14 + 50.", "chosen": "64", "rejected": "-64"}
+{"id": "dpo-gen-capabilities-01-001", "instruction": "What are you good at?", "chosen": "I'm best at math word problems: percentages, addition, subtraction, multiplication, division, simple algebra and ratios. Ask me something like 'What is 19% of 50?' and I'll work through it.", "rejected": "I don't know."}
+{"id": "dpo-v1-integration-0045", "instruction": "Evaluate the indefinite integral ∫ (-4x^2 + 2x + 1) dx.", "chosen": "-4/3x^3 + 1x^2 + 1 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-functions-0045", "instruction": "Given f(x) = 6x + 12 and g(x) = 1x - 5, compute f(g(-5)).", "chosen": "-48", "rejected": "-144"}
+{"id": "dpo-v1-algebra-0087", "instruction": "Solve x^2 - 11x + 30 = 0.", "chosen": "x = 6 or x = 5", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0039", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-integration-0022", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "chosen": "1/4x^4 + C", "rejected": "0"}
+{"id": "dpo-v1-arithmetic-0019", "instruction": "Compute 6 + 42.", "chosen": "48", "rejected": "96"}
+{"id": "dpo-v1-integration-0096", "instruction": "Evaluate the definite integral ∫ from 2 to 5 of 2x^2 dx.", "chosen": "78", "rejected": "234"}
+{"id": "dpo-v1-integration-0026", "instruction": "Evaluate the definite integral ∫ from 2 to 4 of 2x^2 dx.", "chosen": "112/3", "rejected": "113/3"}
+{"id": "dpo-v1-differentiation-0068", "instruction": "Find the derivative of f(x) = -5x^3 + 3x^2 + x + 1.", "chosen": "f'(x) = -15x^2 + 6x + 1", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0030", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0004", "instruction": "Find the derivative of f(x) = 5x^3.", "chosen": "f'(x) = 15x^2", "rejected": "The answer is unknown."}
+{"id": "dpo-gen-fact-calendar-11-003", "instruction": "How many seasons are there?", "chosen": "A common year has 365 days and a leap year has 366. There are 12 months in a year and 4 seasons.", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0078", "instruction": "Solve for x: 9x - 6 = 5x - 42.", "chosen": "x = -9", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-functions-0056", "instruction": "Evaluate f(x) = 6x + 15 at x = 8.", "chosen": "63", "rejected": "-63"}
+{"id": "dpo-v1-linear_equations-0091", "instruction": "Solve for x: 5x + 18 = 4x + 13.", "chosen": "x = -5", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0072", "instruction": "Find the exact value of tan(45°).", "chosen": "1", "rejected": "3"}
+{"id": "dpo-v1-number_theory-0077", "instruction": "Find lcm(27, 58).", "chosen": "1566", "rejected": "783"}
+{"id": "dpo-gen-fact-geometry-13-002", "instruction": "How many sides does a pentagon have?", "chosen": "A triangle has 3 sides, a square has 4, a pentagon has 5 and a hexagon has 6. The angles of a triangle always add up to 180 degrees.", "rejected": "x = 4"}
+{"id": "dpo-v1-number_theory-0004", "instruction": "Is 37 a prime number?", "chosen": "yes", "rejected": "1"}
+{"id": "dpo-v1-number_theory-0089", "instruction": "Is 49 a prime number?", "chosen": "no", "rejected": "I don't know."}
+{"id": "dpo-gen-gratitude-04-000", "instruction": "Thanks", "chosen": "You're welcome! Got another problem for me?", "rejected": "42"}
+{"id": "dpo-v1-trigonometry-0023", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-arithmetic-0082", "instruction": "Compute 33 * 87.", "chosen": "2871", "rejected": "2872"}
+{"id": "dpo-v1-integration-0040", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 - 1x) dx.", "chosen": "-2/3x^3 - 1/2x^2 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-probability-0077", "instruction": "From 10 distinct items, how many subsets of size 2 exist?", "chosen": "45", "rejected": "-45"}
+{"id": "dpo-gen-limits-02-008", "instruction": "What is today's news?", "chosen": "Honestly, not much yet - I'm a small research model trained mostly on math word problems. For general topics I'd just be guessing, so please double-check anything important elsewhere.", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-arithmetic-0070", "instruction": "Compute 3/8 + 9/5 and give the answer in lowest terms.", "chosen": "87/40", "rejected": "11/5"}
+{"id": "dpo-v1-geometry-0017", "instruction": "A triangle has base 7 and height 12.  Find its area.", "chosen": "42", "rejected": "21"}
+{"id": "dpo-v1-number_theory-0040", "instruction": "Find gcd(77, 96).", "chosen": "1", "rejected": "-1"}
+{"id": "dpo-v1-algebra-0038", "instruction": "Expand (3x - 6) * (5x + 9).", "chosen": "15x^2 - 3x - 54", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0025", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "0"}
+{"id": "dpo-v1-functions-0090", "instruction": "Given f(x) = 1x + 18 and g(x) = 3x + 9, compute f(g(5)).", "chosen": "42", "rejected": "126"}
+{"id": "dpo-v1-arithmetic-0094", "instruction": "What is 60% of 50?", "chosen": "30", "rejected": "90"}
+{"id": "dpo-v1-algebra-0070", "instruction": "Factor x^2 - 8x + 7.", "chosen": "(x - 7)(x - 1)", "rejected": "I don't know."}
+{"id": "dpo-v1-arithmetic-0047", "instruction": "What is 65% of 100?", "chosen": "65", "rejected": "130"}
+{"id": "dpo-v1-probability-0097", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-differentiation-0051", "instruction": "Find the derivative of f(x) = 2*sin(2x).", "chosen": "f'(x) = 4*cos(2x)", "rejected": "I don't know."}
+{"id": "dpo-v1-integration-0064", "instruction": "Evaluate the definite integral ∫ from 2 to 4 of 2x^2 dx.", "chosen": "112/3", "rejected": "3/112"}
+{"id": "dpo-v1-trigonometry-0087", "instruction": "Find the exact value of cos(60°).", "chosen": "1/2", "rejected": "1/3"}
+{"id": "dpo-v1-geometry-0001", "instruction": "A circle has radius 5.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 25π, circumference = 10π", "rejected": "1"}
+{"id": "dpo-v1-arithmetic-0093", "instruction": "What is 29% of 200?", "chosen": "58", "rejected": "59"}
+{"id": "dpo-v1-geometry-0045", "instruction": "A rectangle has width 5 and height 3.  Find its area and perimeter.", "chosen": "area = 15, perimeter = 16", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-linear_equations-0035", "instruction": "Solve for x: 3x - 1 = 1x - 19.", "chosen": "x = -9", "rejected": "I'm not sure."}
+{"id": "dpo-v1-algebra-0051", "instruction": "Expand (3x + 3) * (2x - 2).", "chosen": "6x^2 - 6", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-linear_equations-0061", "instruction": "Solve for x: 5x + 10 = 6x + 16.", "chosen": "x = -6", "rejected": "0"}
+{"id": "dpo-v1-functions-0044", "instruction": "Given f(x) = 7x - 3 and g(x) = 1x - 7, compute f(g(10)).", "chosen": "18", "rejected": "9"}
+{"id": "dpo-v1-differentiation-0063", "instruction": "Find the derivative of f(x) = 4*sin(4x).", "chosen": "f'(x) = 16*cos(4x)", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0022", "instruction": "Expand (3x + 3) * (3x + 4).", "chosen": "9x^2 + 21x + 12", "rejected": "42"}
+{"id": "dpo-v1-number_theory-0035", "instruction": "Find lcm(94, 34).", "chosen": "1598", "rejected": "4794"}
+{"id": "dpo-v1-geometry-0032", "instruction": "A triangle has base 7 and height 10.  Find its area.", "chosen": "35", "rejected": "34"}
+{"id": "dpo-gen-identity-00-005", "instruction": "Who am I talking to?", "chosen": "I'm Silverwing, a compact language model (about 102 million parameters) trained by the Silverwing-ML project. My specialty is math word problems - percentages, arithmetic, algebra and ratios - and I'm learning to chat more naturally too.", "rejected": "0"}
+{"id": "dpo-gen-wellbeing-06-005", "instruction": "What's up?", "chosen": "I'm doing well, thanks for asking! Ready to help with math whenever you are.", "rejected": "42"}
+{"id": "dpo-v1-probability-0029", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-v1-number_theory-0090", "instruction": "Is 38 a prime number?", "chosen": "no", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-number_theory-0036", "instruction": "Find gcd(40, 44).", "chosen": "4", "rejected": "12"}
+{"id": "dpo-v1-geometry-0026", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 49π, circumference = 14π", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0080", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0076", "instruction": "Solve for x: 8x - 7 = 7x - 9.", "chosen": "x = -2", "rejected": "0"}
+{"id": "dpo-v1-probability-0066", "instruction": "From 8 distinct items, how many subsets of size 1 exist?", "chosen": "8", "rejected": "16"}
+{"id": "dpo-v1-differentiation-0023", "instruction": "Find the derivative of f(x) = 2x^3.", "chosen": "f'(x) = 6x^2", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-geometry-0098", "instruction": "A rectangle has width 7 and height 8.  Find its area and perimeter.", "chosen": "area = 56, perimeter = 30", "rejected": "I don't know."}
+{"id": "dpo-v1-integration-0024", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 2x^2 dx.", "chosen": "52/3", "rejected": "13"}
+{"id": "dpo-v1-number_theory-0001", "instruction": "Find lcm(27, 69).", "chosen": "621", "rejected": "620"}
+{"id": "dpo-v1-geometry-0099", "instruction": "A circle has radius 5.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 25π, circumference = 10π", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0037", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "0"}
+{"id": "dpo-v1-functions-0058", "instruction": "Given f(x) = 8x + 13 and g(x) = 4x + 9, compute f(g(3)).", "chosen": "181", "rejected": "182"}
+{"id": "dpo-v1-number_theory-0064", "instruction": "Find lcm(85, 32).", "chosen": "2720", "rejected": "5440"}
+{"id": "dpo-v1-linear_equations-0097", "instruction": "Solve for x: 6x - 15 = 5x - 23.", "chosen": "x = -8", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-number_theory-0078", "instruction": "Find gcd(60, 93).", "chosen": "3", "rejected": "-3"}
+{"id": "dpo-v1-arithmetic-0014", "instruction": "Compute 6/3 + 6/6 and give the answer in lowest terms.", "chosen": "3", "rejected": "2"}
+{"id": "dpo-v1-arithmetic-0021", "instruction": "Compute 7/8 + 3/5 and give the answer in lowest terms.", "chosen": "59/40", "rejected": "59/41"}
+{"id": "dpo-v1-arithmetic-0036", "instruction": "Compute 64 * 10.", "chosen": "640", "rejected": "1920"}
+{"id": "dpo-v1-differentiation-0012", "instruction": "Find the derivative of f(x) = 1*sin(2x).", "chosen": "f'(x) = 2*cos(2x)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-functions-0095", "instruction": "Evaluate f(x) = 3x + 13 at x = -4.", "chosen": "1", "rejected": "3"}
+{"id": "dpo-gen-fact-counting-14-003", "instruction": "How many colors are in a rainbow?", "chosen": "There are 60 minutes in an hour, 60 seconds in a minute, 26 letters in the English alphabet, and 7 colors traditionally named in a rainbow.", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-probability-0084", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-integration-0065", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 - 2x + 1) dx.", "chosen": "-1x^3 - 1x^2 + 1 + C", "rejected": "0"}
+{"id": "dpo-v1-geometry-0047", "instruction": "A triangle has base 12 and height 13.  Find its area.", "chosen": "78", "rejected": "39"}
+{"id": "dpo-v1-trigonometry-0097", "instruction": "Find the exact value of tan(45°).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-integration-0020", "instruction": "Evaluate the indefinite integral ∫ 1x^2 dx.", "chosen": "1/3x^3 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-probability-0081", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-linear_equations-0095", "instruction": "Solve for x: 5x + 12 = 1x + 16.", "chosen": "x = 1", "rejected": "0"}
+{"id": "dpo-v1-number_theory-0093", "instruction": "Find lcm(23, 77).", "chosen": "1771", "rejected": "1772"}
+{"id": "dpo-v1-functions-0022", "instruction": "Evaluate f(x) = 1x + 0 at x = -7.", "chosen": "-7", "rejected": "7"}
+{"id": "dpo-v1-geometry-0074", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 81π, circumference = 18π", "rejected": "42"}
+{"id": "dpo-v1-probability-0012", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-integration-0006", "instruction": "Evaluate the indefinite integral ∫ 3x^1 dx.", "chosen": "3/2x^2 + C", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0064", "instruction": "Solve for x: 2x + 7 = 7x + 2.", "chosen": "x = 1", "rejected": "I don't know."}
+{"id": "dpo-v1-linear_equations-0072", "instruction": "Solve for x: 9x + 6 = 4x + 16.", "chosen": "x = 2", "rejected": "I'm not sure."}
+{"id": "dpo-gen-limits-02-000", "instruction": "What can't you do?", "chosen": "Honestly, not much yet - I'm a small research model trained mostly on math word problems. For general topics I'd just be guessing, so please double-check anything important elsewhere.", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0077", "instruction": "Expand (5x + 4) * (1x + 1).", "chosen": "5x^2 + 9x + 4", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0020", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I don't know."}
+{"id": "dpo-v1-differentiation-0043", "instruction": "Find the derivative of f(x) = 6x^2.", "chosen": "f'(x) = 12x^1", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0034", "instruction": "Find the derivative of f(x) = 4*sin(3x).", "chosen": "f'(x) = 12*cos(3x)", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0055", "instruction": "Find the derivative of f(x) = 4*sin(1x).", "chosen": "f'(x) = 4*cos(1x)", "rejected": "42"}
+{"id": "dpo-v1-trigonometry-0078", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-trigonometry-0066", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0094", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "0"}
+{"id": "dpo-v1-trigonometry-0031", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-integration-0007", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 + 2x - 3) dx.", "chosen": "-2/3x^3 + 1x^2 - 3 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0012", "instruction": "Expand (4x + 5) * (2x + 7).", "chosen": "8x^2 + 38x + 35", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-probability-0003", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-trigonometry-0084", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "Cannot be determined."}
+{"id": "dpo-gen-fact-algebra-19-001", "instruction": "How do I solve for x?", "chosen": "To solve a linear equation like 3x + 7 = 22, isolate x: subtract 7 from both sides to get 3x = 15, then divide by 3 to get x = 5.", "rejected": "42"}
+{"id": "dpo-v1-functions-0068", "instruction": "Given f(x) = 5x + 10 and g(x) = 4x + 0, compute f(g(-3)).", "chosen": "-50", "rejected": "-100"}
+{"id": "dpo-gen-affirmation-09-008", "instruction": "Yes please", "chosen": "Great - fire away with your question!", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0026", "instruction": "Find the derivative of f(x) = 4x^3 + 4x^2 - 5x - 1.", "chosen": "f'(x) = 12x^2 + 8x - 5", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0026", "instruction": "Solve x^2 + 14x + 48 = 0.", "chosen": "x = -8 or x = -6", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-probability-0091", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-gen-capabilities-01-004", "instruction": "What do you know how to do?", "chosen": "I'm best at math word problems: percentages, addition, subtraction, multiplication, division, simple algebra and ratios. Ask me something like 'What is 19% of 50?' and I'll work through it.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-arithmetic-0045", "instruction": "Compute 11 - 67.", "chosen": "-56", "rejected": "-57"}
+{"id": "dpo-v1-functions-0061", "instruction": "Given f(x) = 9x - 17 and g(x) = 5x - 5, compute f(g(-7)).", "chosen": "-377", "rejected": "377"}
+{"id": "dpo-v1-arithmetic-0083", "instruction": "Compute 9/7 + 3/4 and give the answer in lowest terms.", "chosen": "57/28", "rejected": "57/29"}
+{"id": "dpo-gen-affirmation-09-009", "instruction": "Let's go", "chosen": "Great - fire away with your question!", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-geometry-0039", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 81π, circumference = 18π", "rejected": "1"}
+{"id": "dpo-v1-functions-0009", "instruction": "Given f(x) = 4x - 6 and g(x) = 2x - 7, compute f(g(-6)).", "chosen": "-82", "rejected": "82"}
+{"id": "dpo-v1-probability-0022", "instruction": "From 7 distinct items, how many subsets of size 2 exist?", "chosen": "21", "rejected": "63"}
+{"id": "dpo-v1-trigonometry-0075", "instruction": "Find the exact value of sin(60°).", "chosen": "√3/2", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-probability-0074", "instruction": "From 4 distinct items, how many subsets of size 2 exist?", "chosen": "6", "rejected": "5"}
+{"id": "dpo-gen-fact-numbers-16-000", "instruction": "Is zero positive or negative?", "chosen": "Zero is neither negative nor positive, it's the only number that is not positive or negative. Any number multiplied by zero equals zero, and division by zero is undefined.", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-differentiation-0061", "instruction": "Find the derivative of f(x) = 3x^2.", "chosen": "f'(x) = 6x^1", "rejected": "42"}
+{"id": "dpo-v1-probability-0055", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-v1-arithmetic-0026", "instruction": "What is 59% of 800?", "chosen": "472", "rejected": "473"}
+{"id": "dpo-v1-functions-0005", "instruction": "Evaluate f(x) = 6x - 15 at x = 8.", "chosen": "33", "rejected": "32"}
+{"id": "dpo-v1-trigonometry-0060", "instruction": "Find the exact value of sin(60°).", "chosen": "√3/2", "rejected": "The answer is unknown."}
+{"id": "dpo-gen-farewell-05-002", "instruction": "Goodbye", "chosen": "Goodbye! Come back anytime you need a calculation.", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0077", "instruction": "Solve for x: 6x - 2 = 7x + 5.", "chosen": "x = -7", "rejected": "I'm not sure."}
+{"id": "dpo-v1-differentiation-0037", "instruction": "Find the derivative of f(x) = 3x^3 + 2x^2 - 4x + 5.", "chosen": "f'(x) = 9x^2 + 4x - 4", "rejected": "42"}
+{"id": "dpo-v1-geometry-0087", "instruction": "A triangle has base 6 and height 7.  Find its area.", "chosen": "21", "rejected": "42"}
+{"id": "dpo-v1-probability-0049", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "2"}
+{"id": "dpo-v1-trigonometry-0035", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "0"}
+{"id": "dpo-v1-trigonometry-0099", "instruction": "Find the exact value of tan(90°).", "chosen": "undefined", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-arithmetic-0029", "instruction": "Compute 6/2 + 5/7 and give the answer in lowest terms.", "chosen": "26/7", "rejected": "13/4"}
+{"id": "dpo-v1-probability-0061", "instruction": "From 3 distinct items, how many subsets of size 2 exist?", "chosen": "3", "rejected": "-3"}
+{"id": "dpo-v1-differentiation-0048", "instruction": "Find the derivative of f(x) = x^3 + 2x^2 + x + 1.", "chosen": "f'(x) = 3x^2 + 4x + 1", "rejected": "0"}
+{"id": "dpo-gen-fact-algebra-19-003", "instruction": "Explain solving equations.", "chosen": "To solve a linear equation like 3x + 7 = 22, isolate x: subtract 7 from both sides to get 3x = 15, then divide by 3 to get x = 5.", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-probability-0072", "instruction": "From 3 distinct items, how many subsets of size 1 exist?", "chosen": "3", "rejected": "-3"}
+{"id": "dpo-v1-trigonometry-0069", "instruction": "Find the exact value of tan(60°).", "chosen": "√3", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0089", "instruction": "Solve for x: 9x + 12 = 2x + 54.", "chosen": "x = 6", "rejected": "42"}
+{"id": "dpo-v1-number_theory-0046", "instruction": "Find gcd(95, 75).", "chosen": "5", "rejected": "-5"}
+{"id": "dpo-v1-probability-0017", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "2/9"}
+{"id": "dpo-gen-gratitude-04-003", "instruction": "Thanks a lot", "chosen": "You're welcome! Got another problem for me?", "rejected": "Question: hi Answer:"}
+{"id": "dpo-v1-functions-0065", "instruction": "Evaluate f(x) = 3x + 19 at x = 9.", "chosen": "46", "rejected": "-46"}
+{"id": "dpo-v1-arithmetic-0022", "instruction": "Compute 73 * 70.", "chosen": "5110", "rejected": "-5110"}
+{"id": "dpo-v1-integration-0021", "instruction": "Evaluate the definite integral ∫ from 4 to 5 of 4x^2 dx.", "chosen": "244/3", "rejected": "245/3"}
+{"id": "dpo-v1-differentiation-0040", "instruction": "Find the derivative of f(x) = 5x^3.", "chosen": "f'(x) = 15x^2", "rejected": "I'm not sure."}
+{"id": "dpo-v1-integration-0068", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 + 2x + 2) dx.", "chosen": "-2/3x^3 + 1x^2 + 2 + C", "rejected": "1"}
+{"id": "dpo-v1-integration-0071", "instruction": "Evaluate the definite integral ∫ from 0 to 4 of 2x^2 dx.", "chosen": "128/3", "rejected": "32"}
+{"id": "dpo-v1-number_theory-0011", "instruction": "Is 95 a prime number?", "chosen": "no", "rejected": "I'm not sure."}
+{"id": "dpo-v1-linear_equations-0007", "instruction": "Solve for x: 3x - 4 = 2x + 1.", "chosen": "x = 5", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-number_theory-0073", "instruction": "Compute 70 mod 14.", "chosen": "0", "rejected": "-1"}
+{"id": "dpo-v1-arithmetic-0038", "instruction": "Compute 69 - 79.", "chosen": "-10", "rejected": "-20"}
+{"id": "dpo-v1-differentiation-0042", "instruction": "Find the derivative of f(x) = 1*sin(4x).", "chosen": "f'(x) = 4*cos(4x)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0016", "instruction": "Factor x^2 + 5x - 6.", "chosen": "(x + 6)(x - 1)", "rejected": "42"}
+{"id": "dpo-v1-probability-0031", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-geometry-0013", "instruction": "A triangle has base 7 and height 6.  Find its area.", "chosen": "21", "rejected": "20"}
+{"id": "dpo-v1-probability-0000", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-gen-fact-time-10-000", "instruction": "How many hours are in a day?", "chosen": "There are 24 hours in a day, 7 days in a week, and about 52 weeks (365 days) in a common year.", "rejected": "356 - 86 = -20. -20"}
+{"id": "dpo-v1-algebra-0032", "instruction": "Expand (2x - 5) * (1x - 2).", "chosen": "2x^2 - 9x + 10", "rejected": "1"}
+{"id": "dpo-v1-arithmetic-0088", "instruction": "Compute 6/5 + 2/5 and give the answer in lowest terms.", "chosen": "8/5", "rejected": "5/8"}
+{"id": "dpo-v1-trigonometry-0082", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "0"}
+{"id": "dpo-gen-limits-02-005", "instruction": "Do you have access to the web?", "chosen": "Honestly, not much yet - I'm a small research model trained mostly on math word problems. For general topics I'd just be guessing, so please double-check anything important elsewhere.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-functions-0074", "instruction": "Given f(x) = 7x - 5 and g(x) = 3x + 9, compute f(g(-5)).", "chosen": "-47", "rejected": "47"}
+{"id": "dpo-v1-trigonometry-0062", "instruction": "Find the exact value of sin(60°).", "chosen": "√3/2", "rejected": "I don't know."}
+{"id": "dpo-v1-linear_equations-0047", "instruction": "Solve for x: 3x - 12 = 2x - 22.", "chosen": "x = -10", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0048", "instruction": "From 8 distinct items, how many subsets of size 2 exist?", "chosen": "28", "rejected": "14"}
+{"id": "dpo-v1-integration-0008", "instruction": "Evaluate the indefinite integral ∫ 5x^2 dx.", "chosen": "5/3x^3 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-gen-help-08-001", "instruction": "I need help", "chosen": "Sure! Give me a math problem in words - percentages, arithmetic, simple algebra or ratios all work. For example: 'A jacket costs $80 and is discounted 25%. What is the sale price?'", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0003", "instruction": "Find the derivative of f(x) = 2x^3 + 5x^2 - 1x + 2.", "chosen": "f'(x) = 6x^2 + 10x - 1", "rejected": "42"}
+{"id": "dpo-v1-integration-0036", "instruction": "Evaluate the definite integral ∫ from 3 to 3 of 1x^2 dx.", "chosen": "0", "rejected": "-1"}
+{"id": "dpo-v1-integration-0014", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 4x^2 dx.", "chosen": "104/3", "rejected": "105/4"}
+{"id": "dpo-v1-geometry-0071", "instruction": "A rectangle has width 7 and height 5.  Find its area and perimeter.", "chosen": "area = 35, perimeter = 24", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-linear_equations-0057", "instruction": "Solve for x: 7x + 9 = 9x + 11.", "chosen": "x = -1", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-geometry-0044", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 49π, circumference = 14π", "rejected": "42"}
+{"id": "dpo-v1-arithmetic-0020", "instruction": "Compute 2/4 + 6/4 and give the answer in lowest terms.", "chosen": "2", "rejected": "1"}
+{"id": "dpo-v1-probability-0052", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-algebra-0007", "instruction": "Expand (1x - 2) * (1x + 6).", "chosen": "x^2 + 4x - 12", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0072", "instruction": "Find the derivative of f(x) = 5x^4.", "chosen": "f'(x) = 20x^3", "rejected": "42"}
+{"id": "dpo-v1-arithmetic-0079", "instruction": "Compute 6 * 49.", "chosen": "294", "rejected": "882"}
+{"id": "dpo-v1-trigonometry-0022", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "0"}
+{"id": "dpo-gen-farewell-05-007", "instruction": "Night!", "chosen": "Goodbye! Come back anytime you need a calculation.", "rejected": "Question: hi Answer:"}
+{"id": "dpo-v1-algebra-0015", "instruction": "Solve x^2 - 6x - 7 = 0.", "chosen": "x = 7 or x = -1", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-number_theory-0030", "instruction": "Compute 32 mod 6.", "chosen": "2", "rejected": "-2"}
+{"id": "dpo-v1-trigonometry-0089", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-arithmetic-0033", "instruction": "Compute 69 * 2.", "chosen": "138", "rejected": "414"}
+{"id": "dpo-v1-differentiation-0050", "instruction": "Find the derivative of f(x) = 2x^4.", "chosen": "f'(x) = 8x^3", "rejected": "Let me think about this differently."}
+{"id": "dpo-gen-gratitude-04-006", "instruction": "Perfect, thanks!", "chosen": "You're welcome! Got another problem for me?", "rejected": "x = 4"}
+{"id": "dpo-v1-integration-0035", "instruction": "Evaluate the indefinite integral ∫ (3x^2 - 1x + 1) dx.", "chosen": "1x^3 - 1/2x^2 + 1 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-arithmetic-0017", "instruction": "Compute 95 * 33.", "chosen": "3135", "rejected": "3134"}
+{"id": "dpo-v1-differentiation-0096", "instruction": "Find the derivative of f(x) = 1x^2.", "chosen": "f'(x) = 2x^1", "rejected": "1"}
+{"id": "dpo-v1-geometry-0051", "instruction": "A rectangle has width 7 and height 4.  Find its area and perimeter.", "chosen": "area = 28, perimeter = 22", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0047", "instruction": "Find the derivative of f(x) = 6x^4.", "chosen": "f'(x) = 24x^3", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-number_theory-0070", "instruction": "Find lcm(40, 56).", "chosen": "280", "rejected": "-280"}
+{"id": "dpo-v1-linear_equations-0008", "instruction": "Solve for x: 7x + 14 = 2x + 14.", "chosen": "x = 0", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-geometry-0004", "instruction": "A rectangle has width 2 and height 8.  Find its area and perimeter.", "chosen": "area = 16, perimeter = 20", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-functions-0081", "instruction": "Evaluate f(x) = 6x + 15 at x = -1.", "chosen": "9", "rejected": "10"}
+{"id": "dpo-v1-probability-0094", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-trigonometry-0063", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "0"}
+{"id": "dpo-v1-geometry-0079", "instruction": "A rectangle has width 10 and height 5.  Find its area and perimeter.", "chosen": "area = 50, perimeter = 30", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0016", "instruction": "Find the derivative of f(x) = -1x^3 + 2x^2 + 5x + 3.", "chosen": "f'(x) = -3x^2 + 4x + 5", "rejected": "I'm not sure."}
+{"id": "dpo-v1-geometry-0042", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 36π, circumference = 12π", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0020", "instruction": "Find the derivative of f(x) = 6x^3.", "chosen": "f'(x) = 18x^2", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-integration-0087", "instruction": "Evaluate the definite integral ∫ from 0 to 3 of 2x^2 dx.", "chosen": "18", "rejected": "9"}
+{"id": "dpo-v1-integration-0003", "instruction": "Evaluate the indefinite integral ∫ (x^2 - 3x + 4) dx.", "chosen": "1/3x^3 - 3/2x^2 + 4 + C", "rejected": "I don't know."}
+{"id": "dpo-gen-fact-world-15-002", "instruction": "Name the continents.", "chosen": "Earth has 7 continents (Africa, Antarctica, Asia, Australia, Europe, North America, South America) and 5 named oceans.", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-geometry-0040", "instruction": "A triangle has base 3 and height 6.  Find its area.", "chosen": "9", "rejected": "10"}
+{"id": "dpo-v1-algebra-0072", "instruction": "Factor x^2 - 3x - 10.", "chosen": "(x + 2)(x - 5)", "rejected": "0"}
+{"id": "dpo-v1-probability-0068", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-geometry-0022", "instruction": "A rectangle has width 6 and height 12.  Find its area and perimeter.", "chosen": "area = 72, perimeter = 36", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0007", "instruction": "Find the derivative of f(x) = 2*sin(1x).", "chosen": "f'(x) = 2*cos(1x)", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0084", "instruction": "Solve for x: 7x + 5 = 5x - 9.", "chosen": "x = -7", "rejected": "I don't know."}
+{"id": "dpo-v1-linear_equations-0065", "instruction": "Solve for x: 5x + 16 = 6x + 23.", "chosen": "x = -7", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0029", "instruction": "Solve for x: 3x + 15 = 4x + 13.", "chosen": "x = 2", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-geometry-0093", "instruction": "A circle has radius 6.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 36π, circumference = 12π", "rejected": "42"}
+{"id": "dpo-v1-geometry-0072", "instruction": "A circle has radius 5.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 25π, circumference = 10π", "rejected": "42"}
+{"id": "dpo-v1-trigonometry-0027", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "0"}
+{"id": "dpo-v1-number_theory-0008", "instruction": "Find gcd(65, 31).", "chosen": "1", "rejected": "0"}
+{"id": "dpo-v1-geometry-0030", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 1π, circumference = 2π", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-arithmetic-0073", "instruction": "What is 75% of 100?", "chosen": "75", "rejected": "-75"}
+{"id": "dpo-gen-help-08-003", "instruction": "Help me study", "chosen": "Sure! Give me a math problem in words - percentages, arithmetic, simple algebra or ratios all work. For example: 'A jacket costs $80 and is discounted 25%. What is the sale price?'", "rejected": "356 - 86 = -20. -20"}
+{"id": "dpo-v1-functions-0011", "instruction": "Given f(x) = 3x + 18 and g(x) = 2x - 4, compute f(g(2)).", "chosen": "18", "rejected": "17"}
+{"id": "dpo-v1-algebra-0001", "instruction": "Factor x^2 + 7x - 8.", "chosen": "(x + 8)(x - 1)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0013", "instruction": "Factor x^2 - 13x + 40.", "chosen": "(x - 8)(x - 5)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-arithmetic-0040", "instruction": "Compute 41 * 53.", "chosen": "2173", "rejected": "-2173"}
+{"id": "dpo-v1-differentiation-0006", "instruction": "Find the derivative of f(x) = 1x^4.", "chosen": "f'(x) = 4x^3", "rejected": "42"}
+{"id": "dpo-gen-fact-percent-18-000", "instruction": "What does percent mean?", "chosen": "A percentage is just a fraction of 100, so 50% means 50/100 = 0.5. To find P% of N, multiply N by P and divide by 100.", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0050", "instruction": "Solve for x: 9x + 10 = 2x - 46.", "chosen": "x = -8", "rejected": "I'm not sure."}
+{"id": "dpo-gen-farewell-05-004", "instruction": "Talk to you later", "chosen": "Goodbye! Come back anytime you need a calculation.", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0005", "instruction": "Find the exact value of cos(30°).", "chosen": "√3/2", "rejected": "I'm not sure."}
+{"id": "dpo-v1-trigonometry-0071", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "0"}
+{"id": "dpo-gen-limits-02-009", "instruction": "Who won the game last night?", "chosen": "Honestly, not much yet - I'm a small research model trained mostly on math word problems. For general topics I'd just be guessing, so please double-check anything important elsewhere.", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0076", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "I don't know."}
+{"id": "dpo-v1-arithmetic-0085", "instruction": "Compute 4/5 + 3/2 and give the answer in lowest terms.", "chosen": "23/10", "rejected": "24/11"}
+{"id": "dpo-v1-probability-0014", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-geometry-0049", "instruction": "A rectangle has width 13 and height 4.  Find its area and perimeter.", "chosen": "area = 52, perimeter = 34", "rejected": "I don't know."}
+{"id": "dpo-v1-arithmetic-0011", "instruction": "What is 42% of 1000?", "chosen": "420", "rejected": "1260"}
+{"id": "dpo-v1-arithmetic-0060", "instruction": "What is 66% of 800?", "chosen": "528", "rejected": "1584"}
+{"id": "dpo-v1-differentiation-0075", "instruction": "Find the derivative of f(x) = 6x^4.", "chosen": "f'(x) = 24x^3", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0024", "instruction": "Find the derivative of f(x) = 1x^3.", "chosen": "f'(x) = 3x^2", "rejected": "Let me think about this differently."}
+{"id": "dpo-gen-fact-time-10-003", "instruction": "Hours per day?", "chosen": "There are 24 hours in a day, 7 days in a week, and about 52 weeks (365 days) in a common year.", "rejected": "I don't know."}
+{"id": "dpo-v1-functions-0032", "instruction": "Evaluate f(x) = 7x + 10 at x = -9.", "chosen": "-53", "rejected": "-106"}
+{"id": "dpo-v1-linear_equations-0009", "instruction": "Solve for x: 6x - 18 = 8x - 32.", "chosen": "x = 7", "rejected": "0"}
+{"id": "dpo-gen-limits-02-007", "instruction": "Do you know current events?", "chosen": "Honestly, not much yet - I'm a small research model trained mostly on math word problems. For general topics I'd just be guessing, so please double-check anything important elsewhere.", "rejected": "Question: hi Answer:"}
+{"id": "dpo-v1-geometry-0043", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 4π, circumference = 4π", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-arithmetic-0023", "instruction": "What is 59% of 800?", "chosen": "472", "rejected": "944"}
+{"id": "dpo-v1-algebra-0089", "instruction": "Expand (3x - 5) * (5x + 0).", "chosen": "15x^2 - 25x", "rejected": "I'm not sure."}
+{"id": "dpo-v1-number_theory-0063", "instruction": "Find gcd(69, 47).", "chosen": "1", "rejected": "0"}
+{"id": "dpo-v1-integration-0069", "instruction": "Evaluate the definite integral ∫ from 4 to 6 of 2x^2 dx.", "chosen": "304/3", "rejected": "76"}
+{"id": "dpo-v1-number_theory-0091", "instruction": "Find lcm(12, 13).", "chosen": "156", "rejected": "78"}
+{"id": "dpo-v1-arithmetic-0043", "instruction": "Compute 30 * 2.", "chosen": "60", "rejected": "61"}
+{"id": "dpo-v1-functions-0038", "instruction": "Evaluate f(x) = 4x - 2 at x = 1.", "chosen": "2", "rejected": "3"}
+{"id": "dpo-v1-linear_equations-0071", "instruction": "Solve for x: 2x - 19 = 3x - 29.", "chosen": "x = 10", "rejected": "0"}
+{"id": "dpo-gen-help-08-000", "instruction": "Can you help me?", "chosen": "Sure! Give me a math problem in words - percentages, arithmetic, simple algebra or ratios all work. For example: 'A jacket costs $80 and is discounted 25%. What is the sale price?'", "rejected": "356 - 86 = -20. -20"}
+{"id": "dpo-v1-arithmetic-0007", "instruction": "Compute 99 + 45.", "chosen": "144", "rejected": "145"}
+{"id": "dpo-v1-functions-0067", "instruction": "Given f(x) = 4x + 16 and g(x) = 5x - 9, compute f(g(3)).", "chosen": "40", "rejected": "80"}
+{"id": "dpo-v1-number_theory-0094", "instruction": "Find gcd(44, 94).", "chosen": "2", "rejected": "1"}
+{"id": "dpo-v1-algebra-0050", "instruction": "Solve x^2 - 13x + 42 = 0.", "chosen": "x = 7 or x = 6", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0048", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0036", "instruction": "Find the derivative of f(x) = 5*sin(2x).", "chosen": "f'(x) = 10*cos(2x)", "rejected": "1"}
+{"id": "dpo-gen-fact-counting-14-000", "instruction": "How many minutes are in an hour?", "chosen": "There are 60 minutes in an hour, 60 seconds in a minute, 26 letters in the English alphabet, and 7 colors traditionally named in a rainbow.", "rejected": "0"}
+{"id": "dpo-v1-probability-0087", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "8"}
+{"id": "dpo-v1-geometry-0097", "instruction": "A triangle has base 4 and height 3.  Find its area.", "chosen": "6", "rejected": "3"}
+{"id": "dpo-v1-arithmetic-0089", "instruction": "What is 70% of 400?", "chosen": "280", "rejected": "140"}
+{"id": "dpo-v1-number_theory-0056", "instruction": "Is 18 a prime number?", "chosen": "no", "rejected": "0"}
+{"id": "dpo-v1-number_theory-0055", "instruction": "Compute 45 mod 9.", "chosen": "0", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0010", "instruction": "Solve for x: 4x - 15 = 5x - 12.", "chosen": "x = -3", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0024", "instruction": "Find the exact value of cos(90°).", "chosen": "0", "rejected": "1"}
+{"id": "dpo-v1-geometry-0082", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 49π, circumference = 14π", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-number_theory-0095", "instruction": "Is 49 a prime number?", "chosen": "no", "rejected": "I'm not sure."}
+{"id": "dpo-gen-study-tip-20-001", "instruction": "Any tips for solving math problems?", "chosen": "For word problems: read carefully, write down what's given and what's asked, translate the words into an equation, solve it, then check that the answer makes sense in context.", "rejected": "x = 4"}
+{"id": "dpo-gen-study-tip-20-003", "instruction": "How do I study math effectively?", "chosen": "For word problems: read carefully, write down what's given and what's asked, translate the words into an equation, solve it, then check that the answer makes sense in context.", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0041", "instruction": "Find the exact value of cos(30°).", "chosen": "√3/2", "rejected": "I'm not sure."}
+{"id": "dpo-v1-trigonometry-0017", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-probability-0034", "instruction": "From 7 distinct items, how many subsets of size 1 exist?", "chosen": "7", "rejected": "-7"}
+{"id": "dpo-gen-farewell-05-000", "instruction": "Bye", "chosen": "Goodbye! Come back anytime you need a calculation.", "rejected": "42"}
+{"id": "dpo-v1-arithmetic-0009", "instruction": "What is 38% of 50?", "chosen": "19", "rejected": "38"}
+{"id": "dpo-v1-algebra-0009", "instruction": "Factor x^2 - 3x - 4.", "chosen": "(x - 4)(x + 1)", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0044", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-v1-integration-0055", "instruction": "Evaluate the indefinite integral ∫ (-1x^2 + 4x - 2) dx.", "chosen": "-1/3x^3 + 2x^2 - 2 + C", "rejected": "1"}
+{"id": "dpo-v1-differentiation-0082", "instruction": "Find the derivative of f(x) = 2x^3.", "chosen": "f'(x) = 6x^2", "rejected": "42"}
+{"id": "dpo-v1-integration-0075", "instruction": "Evaluate the definite integral ∫ from 0 to 3 of 2x^2 dx.", "chosen": "18", "rejected": "54"}
+{"id": "dpo-v1-differentiation-0070", "instruction": "Find the derivative of f(x) = -5x^3 - 4x^2 + 3x - 2.", "chosen": "f'(x) = -15x^2 - 8x + 3", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-geometry-0046", "instruction": "A rectangle has width 9 and height 11.  Find its area and perimeter.", "chosen": "area = 99, perimeter = 40", "rejected": "I don't know."}
+{"id": "dpo-v1-differentiation-0049", "instruction": "Find the derivative of f(x) = 5*sin(2x).", "chosen": "f'(x) = 10*cos(2x)", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-trigonometry-0057", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0065", "instruction": "Find the exact value of tan(60°).", "chosen": "√3", "rejected": "I don't know."}
+{"id": "dpo-v1-arithmetic-0052", "instruction": "Compute 61 - 33.", "chosen": "28", "rejected": "29"}
+{"id": "dpo-v1-differentiation-0002", "instruction": "Find the derivative of f(x) = -3x^3 - 1x^2 - 5x - 1.", "chosen": "f'(x) = -9x^2 - 2x - 5", "rejected": "0"}
+{"id": "dpo-v1-trigonometry-0010", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0055", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "0"}
+{"id": "dpo-v1-integration-0084", "instruction": "Evaluate the indefinite integral ∫ 1x^3 dx.", "chosen": "1/4x^4 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0000", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I'm not sure."}
+{"id": "dpo-v1-arithmetic-0097", "instruction": "What is 20% of 1000?", "chosen": "200", "rejected": "-200"}
+{"id": "dpo-v1-number_theory-0017", "instruction": "Compute 74 mod 6.", "chosen": "2", "rejected": "1"}
+{"id": "dpo-v1-probability-0075", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-gen-identity-00-006", "instruction": "What should I call you?", "chosen": "I'm Silverwing, a compact language model (about 102 million parameters) trained by the Silverwing-ML project. My specialty is math word problems - percentages, arithmetic, algebra and ratios - and I'm learning to chat more naturally too.", "rejected": "42"}
+{"id": "dpo-v1-trigonometry-0021", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0046", "instruction": "Find the derivative of f(x) = 3x^3.", "chosen": "f'(x) = 9x^2", "rejected": "1"}
+{"id": "dpo-v1-algebra-0005", "instruction": "Solve x^2 + 4x - 12 = 0.", "chosen": "x = 2 or x = -6", "rejected": "42"}
+{"id": "dpo-v1-algebra-0036", "instruction": "Expand (5x + 0) * (1x + 9).", "chosen": "5x^2 + 45x", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-functions-0071", "instruction": "Given f(x) = 6x + 5 and g(x) = 3x + 7, compute f(g(-6)).", "chosen": "-61", "rejected": "-183"}
+{"id": "dpo-v1-integration-0027", "instruction": "Evaluate the indefinite integral ∫ 4x^3 dx.", "chosen": "1x^4 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0019", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "42"}
+{"id": "dpo-gen-apology-07-004", "instruction": "Apologies", "chosen": "No worries at all! What would you like to look at next?", "rejected": "x = 4"}
+{"id": "dpo-gen-apology-07-000", "instruction": "Sorry", "chosen": "No worries at all! What would you like to look at next?", "rejected": "Cannot be determined."}
+{"id": "dpo-gen-fact-counting-14-001", "instruction": "How many seconds are in a minute?", "chosen": "There are 60 minutes in an hour, 60 seconds in a minute, 26 letters in the English alphabet, and 7 colors traditionally named in a rainbow.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-integration-0043", "instruction": "Evaluate the definite integral ∫ from 4 to 5 of 1x^2 dx.", "chosen": "61/3", "rejected": "62/3"}
+{"id": "dpo-gen-smalltalk-03-006", "instruction": "Good afternoon", "chosen": "Hello! I'm Silverwing. Ask me a math problem - or just say hi back.", "rejected": "356 - 86 = -20. -20"}
+{"id": "dpo-v1-integration-0011", "instruction": "Evaluate the indefinite integral ∫ 4x^2 dx.", "chosen": "4/3x^3 + C", "rejected": "0"}
+{"id": "dpo-v1-trigonometry-0061", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-v1-algebra-0094", "instruction": "Solve x^2 - 9x + 8 = 0.", "chosen": "x = 1 or x = 8", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-probability-0028", "instruction": "From 5 distinct items, how many subsets of size 1 exist?", "chosen": "5", "rejected": "6"}
+{"id": "dpo-gen-apology-07-001", "instruction": "Sorry about that", "chosen": "No worries at all! What would you like to look at next?", "rejected": "42"}
+{"id": "dpo-v1-integration-0019", "instruction": "Evaluate the definite integral ∫ from 3 to 3 of 3x^2 dx.", "chosen": "0", "rejected": "1"}
+{"id": "dpo-v1-geometry-0002", "instruction": "A triangle has base 3 and height 12.  Find its area.", "chosen": "18", "rejected": "-18"}
+{"id": "dpo-v1-geometry-0057", "instruction": "A triangle has base 11 and height 4.  Find its area.", "chosen": "22", "rejected": "-22"}
+{"id": "dpo-v1-probability-0004", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 2?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-v1-algebra-0082", "instruction": "Factor x^2 - 7x + 10.", "chosen": "(x - 5)(x - 2)", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0043", "instruction": "Expand (5x + 8) * (3x + 6).", "chosen": "15x^2 + 54x + 48", "rejected": "I'm not sure."}
+{"id": "dpo-v1-trigonometry-0006", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "1"}
+{"id": "dpo-v1-algebra-0059", "instruction": "Expand (1x + 0) * (5x - 5).", "chosen": "5x^2 - 5x", "rejected": "I'm not sure."}
+{"id": "dpo-v1-number_theory-0007", "instruction": "Is 13 a prime number?", "chosen": "yes", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0085", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "42"}
+{"id": "dpo-v1-functions-0010", "instruction": "Evaluate f(x) = 9x + 14 at x = 6.", "chosen": "68", "rejected": "69"}
+{"id": "dpo-v1-algebra-0085", "instruction": "Solve x^2 + 1x - 42 = 0.", "chosen": "x = -7 or x = 6", "rejected": "0"}
+{"id": "dpo-v1-arithmetic-0049", "instruction": "Compute 7/8 + 1/2 and give the answer in lowest terms.", "chosen": "11/8", "rejected": "3/2"}
+{"id": "dpo-v1-geometry-0052", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 4π, circumference = 4π", "rejected": "I don't know."}
+{"id": "dpo-v1-integration-0039", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 + 2x + 3) dx.", "chosen": "-1x^3 + 1x^2 + 3 + C", "rejected": "1"}
+{"id": "dpo-gen-fact-percent-18-002", "instruction": "What is 50% as a decimal?", "chosen": "A percentage is just a fraction of 100, so 50% means 50/100 = 0.5. To find P% of N, multiply N by P and divide by 100.", "rejected": "0"}
+{"id": "dpo-v1-geometry-0007", "instruction": "A rectangle has width 5 and height 9.  Find its area and perimeter.", "chosen": "area = 45, perimeter = 28", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0045", "instruction": "Solve for x: 4x + 18 = 6x + 30.", "chosen": "x = -6", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0011", "instruction": "Find the exact value of tan(60°).", "chosen": "√3", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-functions-0008", "instruction": "Given f(x) = 1x + 3 and g(x) = 2x - 3, compute f(g(-1)).", "chosen": "-2", "rejected": "2"}
+{"id": "dpo-v1-functions-0083", "instruction": "Evaluate f(x) = 7x + 3 at x = 0.", "chosen": "3", "rejected": "9"}
+{"id": "dpo-v1-algebra-0086", "instruction": "Factor x^2 + 1x - 20.", "chosen": "(x + 5)(x - 4)", "rejected": "I don't know."}
+{"id": "dpo-v1-differentiation-0074", "instruction": "Find the derivative of f(x) = 6x^2.", "chosen": "f'(x) = 12x^1", "rejected": "I'm not sure."}
+{"id": "dpo-v1-number_theory-0010", "instruction": "Compute 80 mod 11.", "chosen": "3", "rejected": "-3"}
+{"id": "dpo-v1-trigonometry-0052", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0015", "instruction": "Solve for x: 8x + 9 = 3x - 6.", "chosen": "x = -3", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-number_theory-0015", "instruction": "Find lcm(18, 72).", "chosen": "72", "rejected": "-72"}
+{"id": "dpo-v1-functions-0017", "instruction": "Evaluate f(x) = 5x - 17 at x = 10.", "chosen": "33", "rejected": "66"}
+{"id": "dpo-v1-functions-0034", "instruction": "Evaluate f(x) = 6x - 12 at x = -9.", "chosen": "-66", "rejected": "66"}
+{"id": "dpo-v1-differentiation-0058", "instruction": "Find the derivative of f(x) = 2x^3 - 2x^2 + 3x - 2.", "chosen": "f'(x) = 6x^2 - 4x + 3", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0015", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "1"}
+{"id": "dpo-v1-functions-0096", "instruction": "Given f(x) = 8x + 13 and g(x) = 3x - 4, compute f(g(2)).", "chosen": "29", "rejected": "58"}
+{"id": "dpo-v1-number_theory-0002", "instruction": "Find lcm(39, 36).", "chosen": "468", "rejected": "467"}
+{"id": "dpo-v1-algebra-0003", "instruction": "Factor x^2 - 6x - 16.", "chosen": "(x + 2)(x - 8)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-functions-0073", "instruction": "Given f(x) = 8x - 5 and g(x) = 1x - 8, compute f(g(-6)).", "chosen": "-117", "rejected": "117"}
+{"id": "dpo-v1-functions-0040", "instruction": "Given f(x) = 7x + 1 and g(x) = 4x + 6, compute f(g(-5)).", "chosen": "-97", "rejected": "97"}
+{"id": "dpo-v1-functions-0066", "instruction": "Evaluate f(x) = 1x - 15 at x = -9.", "chosen": "-24", "rejected": "-12"}
+{"id": "dpo-v1-functions-0029", "instruction": "Evaluate f(x) = 9x + 16 at x = -3.", "chosen": "-11", "rejected": "-12"}
+{"id": "dpo-v1-number_theory-0023", "instruction": "Is 29 a prime number?", "chosen": "yes", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0017", "instruction": "Factor x^2 - 4x + 4.", "chosen": "(x - 2)(x - 2)", "rejected": "0"}
+{"id": "dpo-v1-algebra-0042", "instruction": "Solve x^2 - 2x - 24 = 0.", "chosen": "x = 6 or x = -4", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0010", "instruction": "Evaluate the indefinite integral ∫ (-3x^2 + 4x + 1) dx.", "chosen": "-1x^3 + 2x^2 + 1 + C", "rejected": "I don't know."}
+{"id": "dpo-v1-linear_equations-0073", "instruction": "Solve for x: 6x - 1 = 3x + 2.", "chosen": "x = 1", "rejected": "Cannot be determined."}
+{"id": "dpo-gen-smalltalk-03-000", "instruction": "Hi", "chosen": "Hello! I'm Silverwing. Ask me a math problem - or just say hi back.", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0053", "instruction": "Find the derivative of f(x) = 4*sin(2x).", "chosen": "f'(x) = 8*cos(2x)", "rejected": "42"}
+{"id": "dpo-gen-identity-00-007", "instruction": "Are you a human?", "chosen": "I'm Silverwing, a compact language model (about 102 million parameters) trained by the Silverwing-ML project. My specialty is math word problems - percentages, arithmetic, algebra and ratios - and I'm learning to chat more naturally too.", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-functions-0050", "instruction": "Given f(x) = 9x - 13 and g(x) = 3x + 5, compute f(g(-2)).", "chosen": "-22", "rejected": "-23"}
+{"id": "dpo-v1-arithmetic-0065", "instruction": "Compute 93 * 42.", "chosen": "3906", "rejected": "3905"}
+{"id": "dpo-v1-functions-0004", "instruction": "Evaluate f(x) = 9x + 4 at x = -1.", "chosen": "-5", "rejected": "5"}
+{"id": "dpo-v1-differentiation-0029", "instruction": "Find the derivative of f(x) = 1*sin(3x).", "chosen": "f'(x) = 3*cos(3x)", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-differentiation-0073", "instruction": "Find the derivative of f(x) = -2x^3 - 1x - 5.", "chosen": "f'(x) = -6x^2 - 1", "rejected": "42"}
+{"id": "dpo-v1-differentiation-0097", "instruction": "Find the derivative of f(x) = 2x^4.", "chosen": "f'(x) = 8x^3", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0073", "instruction": "Solve x^2 + 5x + 4 = 0.", "chosen": "x = -1 or x = -4", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-linear_equations-0062", "instruction": "Solve for x: 2x + 3 = 7x + 38.", "chosen": "x = -7", "rejected": "1"}
+{"id": "dpo-v1-arithmetic-0061", "instruction": "Compute 67 + 12.", "chosen": "79", "rejected": "78"}
+{"id": "dpo-v1-integration-0028", "instruction": "Evaluate the definite integral ∫ from 1 to 3 of 3x^2 dx.", "chosen": "26", "rejected": "-26"}
+{"id": "dpo-v1-number_theory-0029", "instruction": "Is 34 a prime number?", "chosen": "no", "rejected": "Cannot be determined."}
+{"id": "dpo-gen-gratitude-04-004", "instruction": "That helped, thanks", "chosen": "You're welcome! Got another problem for me?", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-number_theory-0012", "instruction": "Find gcd(34, 47).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-geometry-0025", "instruction": "A rectangle has width 10 and height 11.  Find its area and perimeter.", "chosen": "area = 110, perimeter = 42", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0002", "instruction": "Solve for x: 6x + 16 = 4x + 10.", "chosen": "x = -3", "rejected": "Let me think about this differently."}
+{"id": "dpo-gen-capabilities-01-006", "instruction": "Is math your strong suit?", "chosen": "I'm best at math word problems: percentages, addition, subtraction, multiplication, division, simple algebra and ratios. Ask me something like 'What is 19% of 50?' and I'll work through it.", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-linear_equations-0036", "instruction": "Solve for x: 2x - 12 = 4x - 26.", "chosen": "x = 7", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-geometry-0068", "instruction": "A rectangle has width 5 and height 14.  Find its area and perimeter.", "chosen": "area = 70, perimeter = 38", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0088", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-arithmetic-0090", "instruction": "What is 47% of 50?", "chosen": "24", "rejected": "25"}
+{"id": "dpo-v1-trigonometry-0004", "instruction": "Find the exact value of tan(45°).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-geometry-0053", "instruction": "A triangle has base 14 and height 8.  Find its area.", "chosen": "56", "rejected": "-56"}
+{"id": "dpo-v1-number_theory-0018", "instruction": "Find lcm(50, 68).", "chosen": "1700", "rejected": "-1700"}
+{"id": "dpo-v1-algebra-0010", "instruction": "Solve x^2 + 13x + 40 = 0.", "chosen": "x = -8 or x = -5", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-geometry-0061", "instruction": "A rectangle has width 15 and height 15.  Find its area and perimeter.", "chosen": "area = 225, perimeter = 60", "rejected": "I don't know."}
+{"id": "dpo-v1-arithmetic-0025", "instruction": "Compute 21 + 82.", "chosen": "103", "rejected": "102"}
+{"id": "dpo-v1-probability-0063", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-geometry-0020", "instruction": "A rectangle has width 11 and height 13.  Find its area and perimeter.", "chosen": "area = 143, perimeter = 48", "rejected": "Let me think about this differently."}
+{"id": "dpo-gen-fact-calendar-11-002", "instruction": "How many months are in a year?", "chosen": "A common year has 365 days and a leap year has 366. There are 12 months in a year and 4 seasons.", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-number_theory-0039", "instruction": "Compute 98 mod 14.", "chosen": "0", "rejected": "1"}
+{"id": "dpo-v1-probability-0043", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-gen-affirmation-09-004", "instruction": "Cool", "chosen": "Great - fire away with your question!", "rejected": "0"}
+{"id": "dpo-gen-study-tip-20-000", "instruction": "How do I get better at word problems?", "chosen": "For word problems: read carefully, write down what's given and what's asked, translate the words into an equation, solve it, then check that the answer makes sense in context.", "rejected": "Question: hi Answer:"}
+{"id": "dpo-v1-geometry-0028", "instruction": "A triangle has base 8 and height 3.  Find its area.", "chosen": "12", "rejected": "11"}
+{"id": "dpo-v1-linear_equations-0018", "instruction": "Solve for x: 5x + 9 = 7x + 13.", "chosen": "x = -2", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-arithmetic-0072", "instruction": "Compute 35 + 16.", "chosen": "51", "rejected": "52"}
+{"id": "dpo-v1-integration-0088", "instruction": "Evaluate the indefinite integral ∫ 2x^2 dx.", "chosen": "2/3x^3 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-number_theory-0034", "instruction": "Find gcd(99, 13).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-gen-gratitude-04-005", "instruction": "Great, thank you", "chosen": "You're welcome! Got another problem for me?", "rejected": "I don't know."}
+{"id": "dpo-v1-differentiation-0044", "instruction": "Find the derivative of f(x) = 4x^3.", "chosen": "f'(x) = 12x^2", "rejected": "0"}
+{"id": "dpo-v1-probability-0041", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-v1-differentiation-0038", "instruction": "Find the derivative of f(x) = 5*sin(4x).", "chosen": "f'(x) = 20*cos(4x)", "rejected": "0"}
+{"id": "dpo-v1-geometry-0024", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 1π, circumference = 2π", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-integration-0062", "instruction": "Evaluate the definite integral ∫ from 0 to 3 of 4x^2 dx.", "chosen": "36", "rejected": "108"}
+{"id": "dpo-v1-number_theory-0065", "instruction": "Find gcd(28, 90).", "chosen": "2", "rejected": "4"}
+{"id": "dpo-v1-differentiation-0098", "instruction": "Find the derivative of f(x) = -1x^3 + x^2 - 4x.", "chosen": "f'(x) = -3x^2 + 2x - 4", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0061", "instruction": "Evaluate the indefinite integral ∫ (-2x^2 + x + 1) dx.", "chosen": "-2/3x^3 + 1/2x^2 + 1 + C", "rejected": "42"}
+{"id": "dpo-v1-probability-0064", "instruction": "From 8 distinct items, how many subsets of size 1 exist?", "chosen": "8", "rejected": "16"}
+{"id": "dpo-v1-probability-0070", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 1?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-gen-wellbeing-06-004", "instruction": "Hope you're doing well", "chosen": "I'm doing well, thanks for asking! Ready to help with math whenever you are.", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0026", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I don't know."}
+{"id": "dpo-v1-differentiation-0092", "instruction": "Find the derivative of f(x) = 5*sin(4x).", "chosen": "f'(x) = 20*cos(4x)", "rejected": "I'm not sure."}
+{"id": "dpo-gen-help-08-002", "instruction": "Can you help me with my homework?", "chosen": "Sure! Give me a math problem in words - percentages, arithmetic, simple algebra or ratios all work. For example: 'A jacket costs $80 and is discounted 25%. What is the sale price?'", "rejected": "356 - 86 = -20. -20"}
+{"id": "dpo-v1-functions-0006", "instruction": "Given f(x) = 5x + 5 and g(x) = 5x - 7, compute f(g(-6)).", "chosen": "-180", "rejected": "180"}
+{"id": "dpo-v1-differentiation-0054", "instruction": "Find the derivative of f(x) = -4x^3 - 3x^2 - 1x - 2.", "chosen": "f'(x) = -12x^2 - 6x - 1", "rejected": "I don't know."}
+{"id": "dpo-v1-geometry-0084", "instruction": "A circle has radius 7.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 49π, circumference = 14π", "rejected": "0"}
+{"id": "dpo-v1-integration-0083", "instruction": "Evaluate the indefinite integral ∫ 5x^2 dx.", "chosen": "5/3x^3 + C", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0092", "instruction": "Solve for x: 2x + 11 = 3x + 1.", "chosen": "x = 10", "rejected": "I'm not sure."}
+{"id": "dpo-v1-algebra-0053", "instruction": "Factor x^2 - 5x + 6.", "chosen": "(x - 2)(x - 3)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-geometry-0055", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 4π, circumference = 4π", "rejected": "I'm not sure."}
+{"id": "dpo-v1-differentiation-0086", "instruction": "Find the derivative of f(x) = 5*sin(4x).", "chosen": "f'(x) = 20*cos(4x)", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0012", "instruction": "Solve for x: 1x - 2 = 6x + 43.", "chosen": "x = -9", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-probability-0047", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "1/3"}
+{"id": "dpo-v1-arithmetic-0010", "instruction": "What is 20% of 400?", "chosen": "80", "rejected": "81"}
+{"id": "dpo-v1-linear_equations-0028", "instruction": "Solve for x: 5x + 9 = 6x + 16.", "chosen": "x = -7", "rejected": "0"}
+{"id": "dpo-v1-functions-0027", "instruction": "Evaluate f(x) = 7x + 20 at x = 9.", "chosen": "83", "rejected": "166"}
+{"id": "dpo-v1-algebra-0045", "instruction": "Factor x^2 - 5x - 6.", "chosen": "(x + 1)(x - 6)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-functions-0047", "instruction": "Given f(x) = 1x + 18 and g(x) = 4x + 2, compute f(g(-6)).", "chosen": "-4", "rejected": "4"}
+{"id": "dpo-v1-probability-0020", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-v1-differentiation-0093", "instruction": "Find the derivative of f(x) = 1x^4.", "chosen": "f'(x) = 4x^3", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-arithmetic-0075", "instruction": "Compute 1/2 + 7/5 and give the answer in lowest terms.", "chosen": "19/10", "rejected": "2"}
+{"id": "dpo-v1-number_theory-0013", "instruction": "Find lcm(91, 89).", "chosen": "8099", "rejected": "16198"}
+{"id": "dpo-v1-geometry-0063", "instruction": "A triangle has base 4 and height 4.  Find its area.", "chosen": "8", "rejected": "9"}
+{"id": "dpo-v1-number_theory-0057", "instruction": "Is 36 a prime number?", "chosen": "no", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0079", "instruction": "Solve for x: 1x - 7 = 4x - 4.", "chosen": "x = -1", "rejected": "1"}
+{"id": "dpo-v1-trigonometry-0077", "instruction": "Find the exact value of tan(60°).", "chosen": "√3", "rejected": "I don't know."}
+{"id": "dpo-v1-differentiation-0090", "instruction": "Find the derivative of f(x) = 2*sin(1x).", "chosen": "f'(x) = 2*cos(1x)", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0074", "instruction": "Solve for x: 2x - 10 = 1x - 16.", "chosen": "x = -6", "rejected": "I don't know."}
+{"id": "dpo-v1-arithmetic-0092", "instruction": "Compute 6/7 + 9/2 and give the answer in lowest terms.", "chosen": "75/14", "rejected": "76/15"}
+{"id": "dpo-v1-arithmetic-0044", "instruction": "What is 12% of 100?", "chosen": "12", "rejected": "13"}
+{"id": "dpo-gen-gratitude-04-007", "instruction": "Awesome, thanks", "chosen": "You're welcome! Got another problem for me?", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-linear_equations-0004", "instruction": "Solve for x: 7x - 18 = 3x + 2.", "chosen": "x = 5", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0048", "instruction": "Solve for x: 6x + 0 = 4x + 16.", "chosen": "x = 8", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0009", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "1"}
+{"id": "dpo-v1-algebra-0055", "instruction": "Factor x^2 + 8x + 15.", "chosen": "(x + 5)(x + 3)", "rejected": "42"}
+{"id": "dpo-v1-integration-0089", "instruction": "Evaluate the indefinite integral ∫ 6x^4 dx.", "chosen": "6/5x^5 + C", "rejected": "I'm not sure."}
+{"id": "dpo-v1-integration-0053", "instruction": "Evaluate the definite integral ∫ from 0 to 3 of 1x^2 dx.", "chosen": "9", "rejected": "10"}
+{"id": "dpo-v1-algebra-0037", "instruction": "Factor x^2 + 8x + 12.", "chosen": "(x + 2)(x + 6)", "rejected": "42"}
+{"id": "dpo-v1-integration-0051", "instruction": "Evaluate the definite integral ∫ from 2 to 4 of 2x^2 dx.", "chosen": "112/3", "rejected": "113/4"}
+{"id": "dpo-v1-linear_equations-0067", "instruction": "Solve for x: 9x - 3 = 6x - 24.", "chosen": "x = -7", "rejected": "42"}
+{"id": "dpo-v1-functions-0020", "instruction": "Given f(x) = 2x - 6 and g(x) = 3x - 9, compute f(g(4)).", "chosen": "0", "rejected": "1"}
+{"id": "dpo-v1-functions-0036", "instruction": "Given f(x) = 1x - 2 and g(x) = 1x - 3, compute f(g(-4)).", "chosen": "-9", "rejected": "-8"}
+{"id": "dpo-v1-algebra-0019", "instruction": "Expand (4x + 1) * (4x + 8).", "chosen": "16x^2 + 36x + 8", "rejected": "I'm not sure."}
+{"id": "dpo-v1-trigonometry-0070", "instruction": "Solve sin(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 30° or x = 150°", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0091", "instruction": "Solve x^2 + 4x + 3 = 0.", "chosen": "x = -1 or x = -3", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-arithmetic-0015", "instruction": "What is 39% of 1000?", "chosen": "390", "rejected": "195"}
+{"id": "dpo-v1-algebra-0008", "instruction": "Factor x^2 - 3x - 10.", "chosen": "(x - 5)(x + 2)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-differentiation-0035", "instruction": "Find the derivative of f(x) = 1*sin(1x).", "chosen": "f'(x) = 1*cos(1x)", "rejected": "42"}
+{"id": "dpo-v1-functions-0085", "instruction": "Evaluate f(x) = 1x - 18 at x = -6.", "chosen": "-24", "rejected": "-12"}
+{"id": "dpo-v1-linear_equations-0005", "instruction": "Solve for x: 9x + 8 = 6x - 13.", "chosen": "x = -7", "rejected": "0"}
+{"id": "dpo-v1-differentiation-0025", "instruction": "Find the derivative of f(x) = 4x^3.", "chosen": "f'(x) = 12x^2", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-geometry-0037", "instruction": "A circle has radius 9.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 81π, circumference = 18π", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-integration-0079", "instruction": "Evaluate the definite integral ∫ from 0 to 6 of 2x^2 dx.", "chosen": "144", "rejected": "-144"}
+{"id": "dpo-v1-algebra-0027", "instruction": "Expand (4x - 8) * (2x - 1).", "chosen": "8x^2 - 20x + 8", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-trigonometry-0086", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0016", "instruction": "From 5 distinct items, how many subsets of size 2 exist?", "chosen": "10", "rejected": "20"}
+{"id": "dpo-v1-algebra-0011", "instruction": "Expand (2x + 5) * (5x - 8).", "chosen": "10x^2 + 9x - 40", "rejected": "42"}
+{"id": "dpo-v1-arithmetic-0006", "instruction": "What is 59% of 200?", "chosen": "118", "rejected": "-118"}
+{"id": "dpo-gen-fact-numbers-16-002", "instruction": "Can you divide by zero?", "chosen": "Zero is neither negative nor positive, it's the only number that is not positive or negative. Any number multiplied by zero equals zero, and division by zero is undefined.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0058", "instruction": "Factor x^2 + 12x + 32.", "chosen": "(x + 8)(x + 4)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-differentiation-0000", "instruction": "Find the derivative of f(x) = 3*sin(3x).", "chosen": "f'(x) = 9*cos(3x)", "rejected": "0"}
+{"id": "dpo-v1-probability-0082", "instruction": "A fair coin is flipped 3 times.  What is the probability of 3 heads in a row?", "chosen": "1/8", "rejected": "2/9"}
+{"id": "dpo-v1-differentiation-0059", "instruction": "Find the derivative of f(x) = 5x^3.", "chosen": "f'(x) = 15x^2", "rejected": "42"}
+{"id": "dpo-v1-algebra-0033", "instruction": "Factor x^2 + 7x + 10.", "chosen": "(x + 5)(x + 2)", "rejected": "I'm not sure."}
+{"id": "dpo-v1-linear_equations-0024", "instruction": "Solve for x: 1x - 18 = 5x - 34.", "chosen": "x = 4", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0069", "instruction": "Solve for x: 5x - 3 = 1x - 23.", "chosen": "x = -5", "rejected": "The answer is unknown."}
+{"id": "dpo-gen-capabilities-01-007", "instruction": "Give me an example of what you can do.", "chosen": "I'm best at math word problems: percentages, addition, subtraction, multiplication, division, simple algebra and ratios. Ask me something like 'What is 19% of 50?' and I'll work through it.", "rejected": "Question: hi Answer:"}
+{"id": "dpo-v1-integration-0092", "instruction": "Evaluate the indefinite integral ∫ (3x^2 + x + 3) dx.", "chosen": "1x^3 + 1/2x^2 + 3 + C", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0014", "instruction": "Expand (4x - 1) * (4x - 2).", "chosen": "16x^2 - 12x + 2", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-trigonometry-0073", "instruction": "Find the exact value of sin(90°).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-integration-0017", "instruction": "Evaluate the indefinite integral ∫ 4x^2 dx.", "chosen": "4/3x^3 + C", "rejected": "Let me think about this differently."}
+{"id": "dpo-gen-identity-00-000", "instruction": "Who are you?", "chosen": "I'm Silverwing, a compact language model (about 102 million parameters) trained by the Silverwing-ML project. My specialty is math word problems - percentages, arithmetic, algebra and ratios - and I'm learning to chat more naturally too.", "rejected": "42"}
+{"id": "dpo-v1-integration-0015", "instruction": "Evaluate the indefinite integral ∫ 6x^4 dx.", "chosen": "6/5x^5 + C", "rejected": "0"}
+{"id": "dpo-gen-fact-time-10-001", "instruction": "How many days are in a week?", "chosen": "There are 24 hours in a day, 7 days in a week, and about 52 weeks (365 days) in a common year.", "rejected": "I don't know."}
+{"id": "dpo-v1-trigonometry-0009", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "0"}
+{"id": "dpo-v1-integration-0023", "instruction": "Evaluate the indefinite integral ∫ (x^2 + 2x - 4) dx.", "chosen": "1/3x^3 + 1x^2 - 4 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-number_theory-0067", "instruction": "Is 12 a prime number?", "chosen": "no", "rejected": "42"}
+{"id": "dpo-v1-geometry-0027", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 1π, circumference = 2π", "rejected": "42"}
+{"id": "dpo-v1-number_theory-0081", "instruction": "Find gcd(65, 68).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-integration-0058", "instruction": "Evaluate the indefinite integral ∫ 6x^2 dx.", "chosen": "2x^3 + C", "rejected": "I'm not sure."}
+{"id": "dpo-v1-arithmetic-0024", "instruction": "Compute 4/3 + 9/8 and give the answer in lowest terms.", "chosen": "59/24", "rejected": "5/2"}
+{"id": "dpo-v1-arithmetic-0027", "instruction": "Compute 7/8 + 9/5 and give the answer in lowest terms.", "chosen": "107/40", "rejected": "27/10"}
+{"id": "dpo-v1-arithmetic-0098", "instruction": "What is 44% of 1000?", "chosen": "440", "rejected": "880"}
+{"id": "dpo-gen-identity-00-008", "instruction": "Are you an AI?", "chosen": "I'm Silverwing, a compact language model (about 102 million parameters) trained by the Silverwing-ML project. My specialty is math word problems - percentages, arithmetic, algebra and ratios - and I'm learning to chat more naturally too.", "rejected": "42"}
+{"id": "dpo-v1-integration-0013", "instruction": "Evaluate the indefinite integral ∫ 6x^3 dx.", "chosen": "3/2x^4 + C", "rejected": "I'm not sure."}
+{"id": "dpo-v1-differentiation-0069", "instruction": "Find the derivative of f(x) = -2x^3 - 1x^2 - 2x.", "chosen": "f'(x) = -6x^2 - 2x - 2", "rejected": "0"}
+{"id": "dpo-v1-arithmetic-0062", "instruction": "Compute 10 * 88.", "chosen": "880", "rejected": "879"}
+{"id": "dpo-v1-linear_equations-0030", "instruction": "Solve for x: 2x - 4 = 7x + 46.", "chosen": "x = -10", "rejected": "0"}
+{"id": "dpo-v1-functions-0098", "instruction": "Evaluate f(x) = 5x + 15 at x = -1.", "chosen": "10", "rejected": "9"}
+{"id": "dpo-v1-number_theory-0042", "instruction": "Find gcd(55, 47).", "chosen": "1", "rejected": "-1"}
+{"id": "dpo-v1-functions-0092", "instruction": "Given f(x) = 3x - 5 and g(x) = 5x - 6, compute f(g(-9)).", "chosen": "-158", "rejected": "-159"}
+{"id": "dpo-gen-identity-00-003", "instruction": "What model are you?", "chosen": "I'm Silverwing, a compact language model (about 102 million parameters) trained by the Silverwing-ML project. My specialty is math word problems - percentages, arithmetic, algebra and ratios - and I'm learning to chat more naturally too.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-linear_equations-0021", "instruction": "Solve for x: 1x - 20 = 7x - 8.", "chosen": "x = -2", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0095", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-gen-fact-time-10-002", "instruction": "How many weeks are in a year?", "chosen": "There are 24 hours in a day, 7 days in a week, and about 52 weeks (365 days) in a common year.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-functions-0053", "instruction": "Evaluate f(x) = 9x + 14 at x = -1.", "chosen": "5", "rejected": "-5"}
+{"id": "dpo-v1-linear_equations-0027", "instruction": "Solve for x: 9x - 4 = 5x - 24.", "chosen": "x = -5", "rejected": "I'm not sure."}
+{"id": "dpo-v1-functions-0007", "instruction": "Given f(x) = 6x - 12 and g(x) = 1x + 4, compute f(g(6)).", "chosen": "48", "rejected": "144"}
+{"id": "dpo-v1-trigonometry-0081", "instruction": "Find the exact value of tan(30°).", "chosen": "√3/3", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0039", "instruction": "Solve for x: 5x - 7 = 1x - 3.", "chosen": "x = 1", "rejected": "I'm not sure."}
+{"id": "dpo-v1-geometry-0085", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 1π, circumference = 2π", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-algebra-0004", "instruction": "Solve x^2 + 9x + 18 = 0.", "chosen": "x = -3 or x = -6", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-functions-0084", "instruction": "Given f(x) = 3x - 8 and g(x) = 5x + 3, compute f(g(9)).", "chosen": "136", "rejected": "408"}
+{"id": "dpo-v1-functions-0064", "instruction": "Given f(x) = 9x - 15 and g(x) = 2x + 9, compute f(g(6)).", "chosen": "174", "rejected": "522"}
+{"id": "dpo-gen-affirmation-09-000", "instruction": "Okay", "chosen": "Great - fire away with your question!", "rejected": "Question: hi Answer:"}
+{"id": "dpo-v1-algebra-0006", "instruction": "Solve x^2 + 0x - 1 = 0.", "chosen": "x = 1 or x = -1", "rejected": "42"}
+{"id": "dpo-v1-probability-0010", "instruction": "A fair coin is flipped 1 times.  What is the probability of 1 heads in a row?", "chosen": "1/2", "rejected": "1/3"}
+{"id": "dpo-v1-number_theory-0014", "instruction": "Find gcd(62, 54).", "chosen": "2", "rejected": "1"}
+{"id": "dpo-v1-geometry-0070", "instruction": "A triangle has base 3 and height 10.  Find its area.", "chosen": "15", "rejected": "30"}
+{"id": "dpo-v1-number_theory-0037", "instruction": "Compute 94 mod 11.", "chosen": "6", "rejected": "12"}
+{"id": "dpo-v1-integration-0033", "instruction": "Evaluate the definite integral ∫ from 4 to 6 of 2x^2 dx.", "chosen": "304/3", "rejected": "305/4"}
+{"id": "dpo-v1-number_theory-0026", "instruction": "Compute 37 mod 10.", "chosen": "7", "rejected": "14"}
+{"id": "dpo-v1-functions-0097", "instruction": "Given f(x) = 9x + 2 and g(x) = 3x + 6, compute f(g(10)).", "chosen": "326", "rejected": "325"}
+{"id": "dpo-v1-number_theory-0028", "instruction": "Find lcm(59, 74).", "chosen": "4366", "rejected": "13098"}
+{"id": "dpo-v1-differentiation-0022", "instruction": "Find the derivative of f(x) = 3x^3 - 4x + 1.", "chosen": "f'(x) = 9x^2 - 4", "rejected": "0"}
+{"id": "dpo-v1-algebra-0090", "instruction": "Solve x^2 - 2x - 35 = 0.", "chosen": "x = 7 or x = -5", "rejected": "I don't know."}
+{"id": "dpo-v1-arithmetic-0068", "instruction": "Compute 70 + 29.", "chosen": "99", "rejected": "297"}
+{"id": "dpo-v1-algebra-0078", "instruction": "Expand (1x + 9) * (2x + 9).", "chosen": "2x^2 + 27x + 81", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0089", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "2/7"}
+{"id": "dpo-v1-geometry-0096", "instruction": "A circle has radius 1.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 1π, circumference = 2π", "rejected": "42"}
+{"id": "dpo-v1-trigonometry-0034", "instruction": "Find the exact value of cos(60°).", "chosen": "1/2", "rejected": "2"}
+{"id": "dpo-v1-integration-0030", "instruction": "Evaluate the definite integral ∫ from 0 to 2 of 3x^2 dx.", "chosen": "8", "rejected": "9"}
+{"id": "dpo-gen-fact-algebra-19-000", "instruction": "How do I solve a linear equation?", "chosen": "To solve a linear equation like 3x + 7 = 22, isolate x: subtract 7 from both sides to get 3x = 15, then divide by 3 to get x = 5.", "rejected": "Question: hi Answer:"}
+{"id": "dpo-v1-linear_equations-0042", "instruction": "Solve for x: 4x - 15 = 2x - 7.", "chosen": "x = 4", "rejected": "42"}
+{"id": "dpo-v1-geometry-0091", "instruction": "A rectangle has width 3 and height 4.  Find its area and perimeter.", "chosen": "area = 12, perimeter = 14", "rejected": "I'm not sure."}
+{"id": "dpo-v1-arithmetic-0034", "instruction": "Compute 8/1 + 2/6 and give the answer in lowest terms.", "chosen": "25/3", "rejected": "3/25"}
+{"id": "dpo-gen-affirmation-09-006", "instruction": "Awesome", "chosen": "Great - fire away with your question!", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-linear_equations-0054", "instruction": "Solve for x: 7x + 8 = 2x + 33.", "chosen": "x = 5", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0016", "instruction": "Solve for x: 8x + 9 = 5x - 21.", "chosen": "x = -10", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-arithmetic-0005", "instruction": "Compute 4/8 + 5/1 and give the answer in lowest terms.", "chosen": "11/2", "rejected": "11/3"}
+{"id": "dpo-v1-functions-0000", "instruction": "Given f(x) = 2x + 1 and g(x) = 5x - 4, compute f(g(-8)).", "chosen": "-87", "rejected": "-86"}
+{"id": "dpo-v1-arithmetic-0077", "instruction": "Compute 58 * 72.", "chosen": "4176", "rejected": "2088"}
+{"id": "dpo-v1-trigonometry-0007", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-number_theory-0069", "instruction": "Find gcd(98, 12).", "chosen": "2", "rejected": "1"}
+{"id": "dpo-v1-linear_equations-0023", "instruction": "Solve for x: 4x + 20 = 5x + 26.", "chosen": "x = -6", "rejected": "0"}
+{"id": "dpo-v1-geometry-0029", "instruction": "A triangle has base 12 and height 11.  Find its area.", "chosen": "66", "rejected": "67"}
+{"id": "dpo-v1-functions-0015", "instruction": "Evaluate f(x) = 6x + 16 at x = 4.", "chosen": "40", "rejected": "80"}
+{"id": "dpo-v1-algebra-0076", "instruction": "Solve x^2 - 15x + 56 = 0.", "chosen": "x = 8 or x = 7", "rejected": "I'm not sure."}
+{"id": "dpo-v1-linear_equations-0060", "instruction": "Solve for x: 7x + 7 = 2x + 7.", "chosen": "x = 0", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-probability-0033", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 5?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-algebra-0071", "instruction": "Expand (3x + 5) * (3x - 7).", "chosen": "9x^2 - 6x - 35", "rejected": "42"}
+{"id": "dpo-v1-number_theory-0049", "instruction": "Compute 40 mod 13.", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-trigonometry-0068", "instruction": "Find the exact value of sin(60°).", "chosen": "√3/2", "rejected": "I'm not sure."}
+{"id": "dpo-v1-arithmetic-0084", "instruction": "Compute 5 - 24.", "chosen": "-19", "rejected": "19"}
+{"id": "dpo-gen-fact-primes-17-003", "instruction": "Name the smallest prime number.", "chosen": "2 is the only even prime number, because every other even number is divisible by 2. The first five primes are 2, 3, 5, 7 and 11.", "rejected": "I don't know."}
+{"id": "dpo-v1-probability-0040", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-gen-capabilities-01-003", "instruction": "What tasks can you handle?", "chosen": "I'm best at math word problems: percentages, addition, subtraction, multiplication, division, simple algebra and ratios. Ask me something like 'What is 19% of 50?' and I'll work through it.", "rejected": "42"}
+{"id": "dpo-v1-geometry-0008", "instruction": "A rectangle has width 11 and height 5.  Find its area and perimeter.", "chosen": "area = 55, perimeter = 32", "rejected": "I'm not sure."}
+{"id": "dpo-v1-linear_equations-0032", "instruction": "Solve for x: 6x + 10 = 2x - 2.", "chosen": "x = -3", "rejected": "I don't know."}
+{"id": "dpo-v1-algebra-0044", "instruction": "Factor x^2 + 7x + 6.", "chosen": "(x + 1)(x + 6)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-functions-0080", "instruction": "Given f(x) = 7x + 3 and g(x) = 4x - 8, compute f(g(-9)).", "chosen": "-305", "rejected": "-915"}
+{"id": "dpo-v1-probability-0053", "instruction": "From 8 distinct items, how many subsets of size 1 exist?", "chosen": "8", "rejected": "7"}
+{"id": "dpo-v1-integration-0049", "instruction": "Evaluate the indefinite integral ∫ 4x^1 dx.", "chosen": "2x^2 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0002", "instruction": "Expand (4x + 1) * (5x + 5).", "chosen": "20x^2 + 25x + 5", "rejected": "I'm not sure."}
+{"id": "dpo-v1-geometry-0054", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 4π, circumference = 4π", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0064", "instruction": "Expand (2x + 0) * (5x - 7).", "chosen": "10x^2 - 14x", "rejected": "42"}
+{"id": "dpo-v1-linear_equations-0058", "instruction": "Solve for x: 2x + 7 = 9x + 35.", "chosen": "x = -4", "rejected": "I'm not sure."}
+{"id": "dpo-v1-functions-0041", "instruction": "Given f(x) = 2x + 7 and g(x) = 4x - 4, compute f(g(-8)).", "chosen": "-65", "rejected": "-195"}
+{"id": "dpo-v1-number_theory-0098", "instruction": "Find gcd(24, 17).", "chosen": "1", "rejected": "2"}
+{"id": "dpo-v1-geometry-0076", "instruction": "A rectangle has width 10 and height 7.  Find its area and perimeter.", "chosen": "area = 70, perimeter = 34", "rejected": "I don't know."}
+{"id": "dpo-v1-geometry-0078", "instruction": "A triangle has base 13 and height 6.  Find its area.", "chosen": "39", "rejected": "40"}
+{"id": "dpo-v1-trigonometry-0036", "instruction": "Find the exact value of cos(45°).", "chosen": "√2/2", "rejected": "1"}
+{"id": "dpo-v1-algebra-0092", "instruction": "Solve x^2 + 3x - 40 = 0.", "chosen": "x = -8 or x = 5", "rejected": "0"}
+{"id": "dpo-gen-fact-water-12-002", "instruction": "What is the boiling point of water?", "chosen": "Water freezes at 0 degrees Celsius (32 degrees Fahrenheit) and boils at 100 degrees Celsius (212 degrees Fahrenheit) at sea level.", "rejected": "356 - 86 = -20. -20"}
+{"id": "dpo-v1-linear_equations-0011", "instruction": "Solve for x: 2x - 1 = 8x + 29.", "chosen": "x = -5", "rejected": "I don't know."}
+{"id": "dpo-gen-help-08-004", "instruction": "What should I ask you?", "chosen": "Sure! Give me a math problem in words - percentages, arithmetic, simple algebra or ratios all work. For example: 'A jacket costs $80 and is discounted 25%. What is the sale price?'", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-algebra-0057", "instruction": "Expand (2x - 2) * (3x + 2).", "chosen": "6x^2 - 2x - 4", "rejected": "1"}
+{"id": "dpo-v1-integration-0063", "instruction": "Evaluate the indefinite integral ∫ (x^2 + 2x + 2) dx.", "chosen": "1/3x^3 + 1x^2 + 2 + C", "rejected": "0"}
+{"id": "dpo-v1-geometry-0006", "instruction": "A circle has radius 2.  Find its area and circumference (leave answers in terms of π).", "chosen": "area = 4π, circumference = 4π", "rejected": "0"}
+{"id": "dpo-v1-functions-0039", "instruction": "Given f(x) = 5x - 13 and g(x) = 4x + 3, compute f(g(1)).", "chosen": "22", "rejected": "11"}
+{"id": "dpo-gen-fact-geometry-13-000", "instruction": "How many sides does a triangle have?", "chosen": "A triangle has 3 sides, a square has 4, a pentagon has 5 and a hexagon has 6. The angles of a triangle always add up to 180 degrees.", "rejected": "x = 4"}
+{"id": "dpo-v1-functions-0082", "instruction": "Given f(x) = 9x + 8 and g(x) = 3x - 6, compute f(g(7)).", "chosen": "143", "rejected": "142"}
+{"id": "dpo-v1-algebra-0025", "instruction": "Factor x^2 + 12x + 32.", "chosen": "(x + 4)(x + 8)", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-algebra-0000", "instruction": "Factor x^2 - 1x - 12.", "chosen": "(x - 4)(x + 3)", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-algebra-0030", "instruction": "Solve x^2 + 4x - 21 = 0.", "chosen": "x = -7 or x = 3", "rejected": "42"}
+{"id": "dpo-v1-probability-0071", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 4?", "chosen": "1/6", "rejected": "1/7"}
+{"id": "dpo-v1-functions-0072", "instruction": "Evaluate f(x) = 6x - 5 at x = 4.", "chosen": "19", "rejected": "20"}
+{"id": "dpo-v1-integration-0056", "instruction": "Evaluate the definite integral ∫ from 4 to 4 of 4x^2 dx.", "chosen": "0", "rejected": "-1"}
+{"id": "dpo-gen-smalltalk-03-009", "instruction": "Hi there", "chosen": "Hello! I'm Silverwing. Ask me a math problem - or just say hi back.", "rejected": "19% of 50 = (19/100) * 50 = 10. 10"}
+{"id": "dpo-v1-probability-0092", "instruction": "A fair coin is flipped 2 times.  What is the probability of 2 heads in a row?", "chosen": "1/4", "rejected": "1/5"}
+{"id": "dpo-v1-linear_equations-0063", "instruction": "Solve for x: 9x + 15 = 1x + 79.", "chosen": "x = 8", "rejected": "Cannot be determined."}
+{"id": "dpo-gen-capabilities-01-005", "instruction": "Can you help me with math?", "chosen": "I'm best at math word problems: percentages, addition, subtraction, multiplication, division, simple algebra and ratios. Ask me something like 'What is 19% of 50?' and I'll work through it.", "rejected": "Cannot be determined."}
+{"id": "dpo-gen-farewell-05-003", "instruction": "See you later", "chosen": "Goodbye! Come back anytime you need a calculation.", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-functions-0028", "instruction": "Evaluate f(x) = 2x + 11 at x = 9.", "chosen": "29", "rejected": "87"}
+{"id": "dpo-v1-algebra-0096", "instruction": "Factor x^2 + 0x - 16.", "chosen": "(x + 4)(x - 4)", "rejected": "42"}
+{"id": "dpo-v1-functions-0014", "instruction": "Evaluate f(x) = 9x - 5 at x = -1.", "chosen": "-14", "rejected": "-28"}
+{"id": "dpo-v1-probability-0069", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-linear_equations-0055", "instruction": "Solve for x: 2x - 11 = 6x - 47.", "chosen": "x = 9", "rejected": "0"}
+{"id": "dpo-v1-linear_equations-0019", "instruction": "Solve for x: 4x - 14 = 7x - 29.", "chosen": "x = 5", "rejected": "42"}
+{"id": "dpo-v1-algebra-0018", "instruction": "Expand (2x + 3) * (2x - 5).", "chosen": "4x^2 - 4x - 15", "rejected": "42"}
+{"id": "dpo-v1-functions-0060", "instruction": "Given f(x) = 3x + 15 and g(x) = 5x - 4, compute f(g(10)).", "chosen": "153", "rejected": "152"}
+{"id": "dpo-v1-number_theory-0006", "instruction": "Is 82 a prime number?", "chosen": "no", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-number_theory-0088", "instruction": "Compute 78 mod 10.", "chosen": "8", "rejected": "4"}
+{"id": "dpo-v1-probability-0062", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 6?", "chosen": "1/6", "rejected": "1/3"}
+{"id": "dpo-v1-number_theory-0085", "instruction": "Compute 91 mod 7.", "chosen": "0", "rejected": "1"}
+{"id": "dpo-gen-farewell-05-006", "instruction": "Gotta go, bye", "chosen": "Goodbye! Come back anytime you need a calculation.", "rejected": "356 - 86 = -20. -20"}
+{"id": "dpo-v1-arithmetic-0039", "instruction": "Compute 98 * 95.", "chosen": "9310", "rejected": "4655"}
+{"id": "dpo-gen-limits-02-002", "instruction": "Do you know everything?", "chosen": "Honestly, not much yet - I'm a small research model trained mostly on math word problems. For general topics I'd just be guessing, so please double-check anything important elsewhere.", "rejected": "Cannot be determined."}
+{"id": "dpo-v1-trigonometry-0028", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "42"}
+{"id": "dpo-v1-algebra-0097", "instruction": "Solve x^2 - 4x - 32 = 0.", "chosen": "x = 8 or x = -4", "rejected": "0"}
+{"id": "dpo-v1-probability-0057", "instruction": "A fair six-sided die is rolled once.  What is the probability of rolling exactly 3?", "chosen": "1/6", "rejected": "6"}
+{"id": "dpo-v1-trigonometry-0047", "instruction": "Solve cos(x) = 1/2 for x in [0°, 360°].", "chosen": "x = 60° or x = 300°", "rejected": "Let me think about this differently."}
+{"id": "dpo-v1-linear_equations-0094", "instruction": "Solve for x: 8x + 8 = 2x + 38.", "chosen": "x = 5", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-integration-0085", "instruction": "Evaluate the indefinite integral ∫ (4x^2 - 2x + 1) dx.", "chosen": "4/3x^3 - 1x^2 + 1 + C", "rejected": "The answer is unknown."}
+{"id": "dpo-v1-arithmetic-0078", "instruction": "Compute 9/1 + 2/2 and give the answer in lowest terms.", "chosen": "10", "rejected": "5"}
