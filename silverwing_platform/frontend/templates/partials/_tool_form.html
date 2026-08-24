@@ -1,0 +1,96 @@
+<!-- Right: Manual Override + Black Box -->
+<div class="panel" style="display:flex;flex-direction:column">
+  <div class="panel-header"><span><span class="ph-accent">&#9670;</span> Manual Override</span></div>
+  <div class="tool-form">
+    <label>Capability Node</label>
+    <select id="toolSelect" onchange="onToolSelectChange(this.value)">
+      <option value="">-- SELECT NODE --</option>
+    </select>
+    <div id="toolFields"></div>
+    <textarea id="toolArgs" style="display:none" placeholder="key=value, comma-separated"></textarea>
+    <button class="trigger-btn volt" style="width:100%" onclick="executeTool()">Execute</button>
+    <div id="toolResult" style="display:none" class="tool-result"></div>
+  </div>
+  <div class="panel-header" style="border-top:1px solid var(--line)">
+    <span><span class="ph-accent">&#9670;</span> Black Box // Audit</span>
+    <button class="hud-btn" onclick="clearAudit()">Scrub</button>
+  </div>
+  <div class="panel-body" id="auditList" role="log" aria-label="Audit trail">
+    <div class="empty">NO EVENTS LOGGED<span class="blink">_</span></div>
+  </div>
+  <!-- Gesture Control panel -->
+  <div class="panel-header" style="border-top:1px solid var(--line)">
+    <span><span class="ph-accent">&#9670;</span> Gesture Control</span>
+    <span class="hud-chip" id="gestureBackendChip" style="font-size:8px;padding:2px 8px">---</span>
+  </div>
+  <div class="panel-body" id="gesturePanel">
+    <div id="gestureTableWrap">
+      <div class="gesture-table" id="gestureTable">
+        <div class="gt-header">GESTURE</div>
+        <div class="gt-header">ACTION</div>
+        <div class="gt-header">RISK</div>
+        <div class="empty" style="grid-column:1/-1;padding:20px 0">
+          <div class="icon">&#9881;</div>LOADING GESTURE MAP<span class="blink">_</span>
+        </div>
+      </div>
+    </div>
+    <div style="margin:8px 0;border-top:1px solid var(--line)"></div>
+    <!-- Subsystem status -->
+    <div style="font-family:var(--ui);font-size:10px;letter-spacing:.2em;color:var(--text2);margin-bottom:4px;text-transform:uppercase">
+      Subsystems
+    </div>
+    <div class="subsystem-grid" id="subsystemGrid">
+      <div class="empty" style="grid-column:1/-1;padding:10px 0">
+        <div class="icon">&#9881;</div>SCANNING<span class="blink">_</span>
+      </div>
+    </div>
+    <!-- System stats -->
+    <div style="font-family:var(--ui);font-size:10px;letter-spacing:.2em;color:var(--text2);margin:8px 0 4px;text-transform:uppercase">
+      System Stats
+    </div>
+    <div class="gesture-stats" id="gestureStats">
+      <div class="gs-cell">
+        <span class="gs-label">CPU</span>
+        <span class="gs-value" id="gsCpu">--</span>
+      </div>
+      <div class="gs-cell">
+        <span class="gs-label">MEM</span>
+        <span class="gs-value" id="gsMem">--</span>
+      </div>
+      <div class="gs-cell">
+        <span class="gs-label">BAT</span>
+        <span class="gs-value" id="gsBat">--</span>
+      </div>
+      <div class="gs-cell">
+        <span class="gs-label">NET</span>
+        <span class="gs-value" id="gsNet">--</span>
+      </div>
+      <div class="gs-cell">
+        <span class="gs-label">IP</span>
+        <span class="gs-value" id="gsIp" style="font-size:11px">--</span>
+      </div>
+      <div class="gs-cell">
+        <span class="gs-label">UPTIME</span>
+        <span class="gs-value" id="gsUp" style="font-size:11px">--</span>
+      </div>
+      <div class="gs-cell">
+        <span class="gs-label">GESTURE</span>
+        <span class="gs-value" id="gsGest">--</span>
+      </div>
+      <div class="gs-cell">
+        <span class="gs-label">HANDS</span>
+        <span class="gs-value" id="gsHands">--</span>
+      </div>
+    </div>
+    <!-- Action buttons -->
+    <div class="gesture-actions" style="margin-top:8px">
+      <select id="gestureExecSelect">
+        <option value="">-- SELECT GESTURE --</option>
+      </select>
+      <button class="execute" onclick="executeGesture()">Execute</button>
+      <input type="text" id="gestureIotCmd" placeholder="IoT command">
+      <input type="text" id="gestureIotPayload" placeholder='JSON payload (e.g. {"mode":"safe"})'>
+      <button class="iot" onclick="sendIotCommand()">Send</button>
+    </div>
+  </div>
+</div>

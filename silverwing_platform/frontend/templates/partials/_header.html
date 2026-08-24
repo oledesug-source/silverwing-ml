@@ -1,0 +1,26 @@
+<!-- boot overlay -->
+<div id="boot"><div id="bootInner">
+  <div class="bt">SILVERWING</div>
+  <div id="bootLines"></div>
+</div></div>
+
+<!-- header / HUD -->
+<div class="header">
+  <svg class="logo-wing" viewBox="0 0 32 32" fill="none">
+    <path d="M2 22 L14 4 L16 12 L18 4 L30 22 L20 18 L16 28 L12 18 Z" fill="#FF003C"/>
+  </svg>
+  <div class="brand">
+    <h1 id="brandTitle">SILVER<span>WING</span></h1>
+    <div class="sub">TACTICAL COMMAND INTERFACE</div>
+  </div>
+  <div class="hud-right">
+    <span class="hud-clock" id="hudClock">--:--:--</span>
+    <span class="hud-chip hud-toggle" id="adaptChip" onclick="toggleAdapt()" role="button" tabindex="0" title="Enable/disable adaptive ranking and prediction">ADAPT: ON</span>
+    <span class="hud-chip" id="modelChip">MODEL: ---</span>
+    <span class="hud-chip" id="gestureChip">GESTURE: ---</span>
+    <div class="hud-status">
+      <span class="dot" id="statusDot"></span>
+      <span id="statusText">LINKING...</span>
+    </div>
+  </div>
+</div>

@@ -16,22 +16,29 @@ from serving.api.server import ApiResponse, SilverwingHandler
 
 
 def _messages_to_prompt(messages: list[dict]) -> str:
-    """Flatten an OpenAI-style message list into a single prompt.
+    """Flatten an OpenAI-style message list into the SFT training format.
 
-    The Silverwing decoder is a small SFT model without native chat
-    templating, so we use a simple speaker-labelled transcript.
+    Silverwing Decoder V2 was instruction-tuned on
+    ``Question: {instruction}\\nAnswer: {response}`` pairs, so the
+    conversation is flattened to that template (user turns become
+    Questions, assistant turns become Answers).
     """
     parts: list[str] = []
     for msg in messages:
         role = str(msg.get("role", "user"))
         content = str(msg.get("content", ""))
+        if not content:
+            continue
         if role == "system":
             parts.append(content)
         elif role == "assistant":
-            parts.append(f"Assistant: {content}")
+            parts.append(f"Answer: {content}")
         else:
-            parts.append(f"User: {content}")
-    parts.append("Assistant:")
+            parts.append(f"Question: {content}")
+    if parts and parts[-1].startswith("Question:"):
+        # Trailing space matters: a bare "Answer:" tail makes the SFT model
+        # emit EOS immediately; "Answer: " anchors continuation correctly.
+        parts.append("Answer: ")
     return "\n".join(parts)
 
 

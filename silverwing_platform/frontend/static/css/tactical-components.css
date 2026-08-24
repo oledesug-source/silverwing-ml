@@ -1,0 +1,218 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   SILVERWING // TACTICAL COMMAND — COMPONENTS
+
+   Capability cards, badges, trigger buttons, trigger buttons,
+   chat message bubbles, tool forms, and audit log entries.
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* ── arsenal (capabilities) ── */
+.cap-card{
+  position:relative;
+  background:var(--panel2);
+  padding:10px 12px 10px 16px;
+  margin-bottom:8px;
+  cursor:pointer;
+  transition:transform .12s,background .12s;
+  clip-path:polygon(0 0,calc(100% - 12px) 0,100% 12px,100% 100%,12px 100%,0 calc(100% - 12px));
+  border-left:3px solid var(--steel);
+}
+.cap-card:hover{transform:translateX(4px);background:#181818}
+.cap-card.active{background:#1a1214;border-left-color:var(--crimson)}
+.cap-card.risk-medium{border-left-color:var(--amber)}
+.cap-card.risk-high,.cap-card.risk-critical{border-left-color:var(--crimson)}
+.cap-card.risk-high::after,.cap-card.risk-critical::after{
+  content:'SYSTEM ARMED';
+  position:absolute;
+  top:8px;
+  right:18px;
+  font-family:var(--mono);
+  font-size:8px;
+  letter-spacing:.3em;
+  color:var(--crimson);
+  animation:armedPulse 1.1s ease-in-out infinite;
+}
+@keyframes armedPulse{
+  0%,100%{opacity:1}
+  50%{opacity:.3}
+}
+.cap-name{
+  font-family:var(--ui);
+  font-weight:700;
+  font-size:14px;
+  letter-spacing:.06em;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.badge{
+  font-family:var(--mono);
+  font-size:10px;
+  padding:1px 7px;
+  letter-spacing:.14em;
+}
+.badge-low{color:var(--steel);border:1px solid var(--steel)}
+.badge-medium{color:var(--amber);border:1px solid var(--amber)}
+.badge-high{color:var(--crimson);border:1px solid var(--crimson)}
+.badge-critical{color:#fff;background:var(--crimson);border:1px solid var(--crimson)}
+.cap-desc{font-size:12px;color:var(--text3);margin-top:4px;line-height:1.4}
+.cap-meta{
+  display:flex;
+  gap:8px;
+  margin-top:6px;
+  font-family:var(--mono);
+  font-size:10px;
+  color:var(--text3);
+  flex-wrap:wrap;
+}
+.cap-tag{border:1px solid var(--line2);padding:0 6px;color:var(--text2)}
+.freq-tag{color:var(--volt);border-color:var(--volt)}
+.next-tag{
+  color:var(--crimson);
+  border-color:var(--crimson);
+  animation:armedPulse 1.4s ease-in-out infinite;
+}
+
+/* ── next-action bar ── */
+.next-action-bar{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:8px 16px;
+  border-bottom:1px solid var(--line);
+  background:#0a0a0a;
+  font-family:var(--mono);
+  font-size:10px;
+  letter-spacing:.26em;
+  color:var(--text3);
+}
+.qa-btn{
+  font-family:var(--mono);
+  font-size:11px;
+  color:var(--crimson);
+  background:var(--crimson-dim);
+  border:1px solid var(--crimson);
+  padding:4px 14px;
+  cursor:pointer;
+  letter-spacing:.14em;
+  clip-path:polygon(6px 0,100% 0,100% calc(100% - 6px),calc(100% - 6px) 100%,0 100%,0 6px);
+  transition:filter .12s;
+}
+.qa-btn:hover{filter:brightness(1.4) drop-shadow(0 0 6px rgba(255,0,60,.5))}
+.qa-dismiss{
+  font-family:var(--mono);
+  font-size:11px;
+  color:var(--text2);
+  background:transparent;
+  border:1px solid var(--line2);
+  padding:4px 9px;
+  cursor:pointer;
+  margin-left:6px;
+  transition:all .12s;
+}
+.qa-dismiss:hover{color:var(--crimson);border-color:var(--crimson)}
+.next-why{font-size:10px;letter-spacing:.14em;color:var(--text3)}
+.hud-toggle{cursor:pointer;transition:all .12s;user-select:none}
+.hud-toggle:hover{border-color:var(--volt);color:var(--volt)}
+.hud-toggle.off{color:var(--crimson);border-color:var(--crimson)}
+
+/* ── trigger buttons ── */
+.trigger-btn{
+  font-family:var(--display);
+  font-weight:700;
+  font-size:11px;
+  letter-spacing:.3em;
+  color:#000;
+  background:var(--crimson);
+  border:none;
+  padding:11px 26px;
+  cursor:pointer;
+  clip-path:polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);
+  position:relative;
+  overflow:hidden;
+  transition:filter .12s;
+  text-transform:uppercase;
+}
+.trigger-btn:hover{filter:brightness(1.25) drop-shadow(0 0 10px rgba(255,0,60,.6))}
+.trigger-btn:active{filter:brightness(1.6)}
+.trigger-btn:disabled{opacity:.35;cursor:not-allowed}
+.trigger-btn.volt{background:var(--volt)}
+
+/* ── tool forms & results ── */
+.tool-form{padding:14px}
+.tool-form label{
+  font-family:var(--mono);
+  font-size:10px;
+  letter-spacing:.26em;
+  color:var(--text3);
+  display:block;
+  margin-bottom:5px;
+  text-transform:uppercase;
+}
+.tool-form select,.tool-form textarea{
+  width:100%;
+  background:#0e0e0e;
+  border:1px solid var(--line2);
+  color:var(--text);
+  padding:8px 10px;
+  font-size:13px;
+  outline:none;
+  margin-bottom:12px;
+  font-family:var(--mono);
+}
+.tool-form .tf-input{
+  width:100%;
+  background:#0e0e0e;
+  border:1px solid var(--line2);
+  color:var(--text);
+  padding:8px 10px;
+  font-size:13px;
+  outline:none;
+  margin-bottom:12px;
+  font-family:var(--mono);
+}
+.tool-form .tf-input:focus{border-color:var(--amber)}
+.tool-form textarea{min-height:84px;resize:vertical;font-size:12px;line-height:1.6}
+.tool-form select:focus,.tool-form textarea:focus{border-color:var(--amber)}
+.tool-result{
+  margin-top:12px;
+  background:#0e0e0e;
+  border:1px solid var(--line2);
+  border-left:3px solid var(--steel);
+  padding:10px;
+  font-family:var(--mono);
+  font-size:12px;
+  white-space:pre-wrap;
+  max-height:220px;
+  overflow-y:auto;
+  line-height:1.6;
+}
+.tool-result.success{border-left-color:var(--volt)}
+.tool-result.error{border-left-color:var(--crimson);color:var(--crimson)}
+
+/* ── audit entries ── */
+.audit-entry{
+  font-family:var(--mono);
+  font-size:11px;
+  padding:6px 8px;
+  margin-bottom:2px;
+  border-left:2px solid var(--line2);
+  background:transparent;
+  line-height:1.5;
+  animation:logIn .15s ease-out;
+}
+@keyframes logIn{
+  from{opacity:0;transform:translateX(-8px)}
+  to{opacity:1;transform:none}
+}
+.audit-entry.st-success{border-left-color:var(--volt)}
+.audit-entry.st-error{border-left-color:var(--crimson)}
+.audit-entry.st-denied{border-left-color:var(--amber)}
+.audit-entry.st-pending{border-left-color:var(--steel)}
+.ae-line1{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.ae-time{color:var(--text3)}
+.ae-action{color:var(--text)}
+.ae-status-success{color:var(--volt)}
+.ae-status-error{color:var(--crimson)}
+.ae-status-denied{color:var(--amber)}
+.ae-status-pending{color:var(--steel)}
+.ae-detail{color:var(--text3);margin-top:2px;word-break:break-all}

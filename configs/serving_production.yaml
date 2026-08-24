@@ -1,0 +1,10 @@
+# Production serving config - points at the Colab-trained SFT artifact
+# (silverwing-decoder-v2, 102M params, SFT run 20260824T085151Z).
+serving:
+  checkpoint_path: experiments/checkpoints/sft-v2/best.pt
+  model_config_path: configs/model.yaml
+  tokenizer_dir: experiments/tokenizer-v2
+  device: cpu
+  host: 127.0.0.1
+  port: 8000
+  max_new_tokens: 128

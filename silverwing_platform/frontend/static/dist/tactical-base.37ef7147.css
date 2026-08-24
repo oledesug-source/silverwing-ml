@@ -1,0 +1,143 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   SILVERWING // TACTICAL COMMAND — BASE & DESIGN TOKENS
+
+   CSS custom properties (design tokens), reactive grid background,
+   CRT scanlines, and the boot overlay.  Everything else in the
+   tactical theme imports *after* this file so tokens resolve first.
+   ────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  --void:        #050505;
+  --gunmetal:    #111111;
+  --panel:       #0b0b0b;
+  --panel2:      #141414;
+  --line:        #1e1e1e;
+  --line2:       #2a2a2a;
+
+  --crimson:     #FF003C;
+  --crimson-dim: rgba(255, 0, 60, .14);
+  --volt:        #CCFF00;
+  --volt-dim:    rgba(204, 255, 0, .12);
+  --amber:       #FFB000;
+  --steel:       #5F7A8C;
+
+  --text:        #E8E6E3;
+  --text2:       #B0AFA6;
+  --text3:       #8F8E85;
+
+  --mono:        'Share Tech Mono', 'Cascadia Code', monospace;
+  --ui:          'Rajdhani', 'Segoe UI', sans-serif;
+  --display:     'Orbitron', 'Rajdhani', sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+::selection{background:var(--crimson);color:#000}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+  }
+}
+
+html,body{height:100%}
+
+body{
+  font-family:var(--ui);
+  background:var(--void);
+  color:var(--text);
+  height:100vh;
+  overflow:hidden;
+  font-size:14px;
+  letter-spacing:.02em;
+}
+
+/* ── reactive grid ── */
+body::before{
+  content:'';
+  position:fixed;
+  inset:-50%;
+  background-image:
+    linear-gradient(rgba(255,0,60,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,0,60,.04) 1px,transparent 1px);
+  background-size:44px 44px;
+  transform:perspective(600px) rotateX(0deg);
+  animation:gridDrift 24s linear infinite;
+  pointer-events:none;
+  z-index:0;
+}
+@keyframes gridDrift{
+  0%{transform:translate(0,0)}
+  100%{transform:translate(44px,44px)}
+}
+
+/* ── CRT scanlines + vignette ── */
+body::after{
+  content:'';
+  position:fixed;
+  inset:0;
+  z-index:9990;
+  pointer-events:none;
+  background:
+    repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px),
+    radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.55) 100%);
+}
+
+/* ── boot overlay ── */
+#boot{
+  position:fixed;
+  inset:0;
+  background:var(--void);
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:opacity .45s ease;
+  font-family:var(--mono);
+}
+#boot.done{opacity:0;pointer-events:none}
+#bootInner{
+  width:min(560px,90vw);
+  font-size:13px;
+  color:var(--volt);
+  line-height:1.9;
+}
+#bootInner .bt{
+  color:var(--crimson);
+  font-family:var(--display);
+  font-weight:900;
+  font-size:20px;
+  letter-spacing:.35em;
+  margin-bottom:14px;
+}
+#bootInner .ok{color:var(--volt)}
+#bootInner .dim{color:var(--text3)}
+
+/* ── execute flash ── */
+#flash{
+  position:fixed;
+  inset:0;
+  background:var(--crimson);
+  opacity:0;
+  pointer-events:none;
+  z-index:9995;
+  transition:opacity .3s ease-out;
+}
+#flash.firing{opacity:.14;transition:none}
+
+/* ── empty / loading states ── */
+.empty{
+  text-align:center;
+  color:var(--text3);
+  font-family:var(--mono);
+  font-size:12px;
+  padding:40px 20px;
+  letter-spacing:.14em;
+}
+.empty .icon{font-size:26px;margin-bottom:10px;opacity:.4}
+.blink{animation:cursorBlink 1s steps(2,end) infinite}
+@keyframes cursorBlink{
+  0%,100%{opacity:1}
+  50%{opacity:0}
+}

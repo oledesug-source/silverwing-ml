@@ -22,10 +22,11 @@ import logging
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from enum import StrEnum
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
-from sw_platform.audit.events import AuditEvent, AuditLog
-from sw_platform.capabilities.schema import CapabilitySchema
+if TYPE_CHECKING:
+    from sw_platform.audit.events import AuditLog
+    from sw_platform.capabilities.schema import CapabilitySchema
 
 logger = logging.getLogger(__name__)
 
@@ -221,6 +222,7 @@ class PolicyEngine:
     ) -> None:
         if self._audit is None:
             return
+        from sw_platform.audit.events import AuditEvent
         from sw_platform.context.models import RequestContext
 
         request_id = ""

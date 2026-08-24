@@ -158,9 +158,23 @@ class Runtime:
         for cap in builtin_tools:
             self._capability_registry.register(cap)
 
+        # Wrap the foundation Generator in the platform ModelProvider
+        # interface so every consumer (orchestration loop, OpenAI-compatible
+        # chat completions) speaks InferenceRequest/InferenceResponse.
+        generator: Any = self._generator
+        try:
+            from silverwing_platform.models import GeneratorProvider
+
+            generator = GeneratorProvider(
+                model_id="silverwing-decoder-v2-sft",
+                generator=self._generator,
+            )
+        except ImportError:
+            pass
+
         self._orchestrator = Orchestrator(
             registry=self._capability_registry,
-            generator=self._generator,
+            generator=generator,
             permissions=PermissionPolicy(),
         )
         self._log("Intelligence runtime initialized")

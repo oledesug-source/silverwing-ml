@@ -142,9 +142,13 @@ class GeneratorProvider(ModelProvider):
     can be constructed (and tested) without a GPU or model checkpoint.
     """
 
-    def __init__(self, model_id: str = "silverwing-v2") -> None:
+    def __init__(
+        self,
+        model_id: str = "silverwing-v2",
+        generator: Any = None,
+    ) -> None:
         self._model_id = model_id
-        self._generator: Any = None
+        self._generator: Any = generator
         self._metadata = ModelMetadata(
             model_id=model_id,
             version="2.0.0",

@@ -1,0 +1,15 @@
+{% for url in js_urls %}
+<script src="{{ url }}"></script>
+{% endfor %}
+<script>
+  window.PLATFORM_CONTEXT = {
+    modelName: "{{ model_name }}",
+    capabilityCount: {{ capability_count }},
+    clearanceLevel: "{{ clearance_level }}",
+    maxRounds: {{ max_rounds }},
+    adaptEnabled: {{ "true" if adapt_enabled else "false" }},
+    capEnabled: {{ "true" if cap_enabled else "false" }},
+    capabilities: {{ cap_json }},
+    theme: "{{ theme }}"
+  };
+</script>

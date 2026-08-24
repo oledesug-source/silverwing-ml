@@ -1,0 +1,35 @@
+<!-- Center: Comms (chat) -->
+<div class="panel chat-panel">
+  <div class="panel-header">
+    <span><span class="ph-accent">&#9670;</span> Orchestration Uplink</span>
+    <button class="hud-btn" onclick="clearChat()">Purge</button>
+  </div>
+  <div class="perm-bar">
+    <label>CLEARANCE:</label>
+    <select id="permLevel" onchange="onPermChange()">
+      <option value="L0">L0 &mdash; OBSERVE</option>
+      <option value="L1">L1 &mdash; WRITE</option>
+      <option value="L2">L2 &mdash; EXECUTE</option>
+      <option value="L3">L3 &mdash; NETWORK</option>
+      <option value="L4">L4 &mdash; ADMIN</option>
+      <option value="L5">L5 &mdash; SYSTEM</option>
+    </select>
+    <div class="rounds">
+      <label>MAX ROUNDS</label>
+      <input type="number" id="maxRounds" value="5" min="1" max="20">
+    </div>
+  </div>
+  <div class="chat-messages" id="chatMessages" role="log" aria-live="polite">
+    <div class="msg msg-system">// AWAITING DIRECTIVE &mdash; TYPE TO ENGAGE ORCHESTRATION LOOP //</div>
+  </div>
+  <div class="chat-meta">
+    <div class="stat-cell"><span class="stat-label">ROUNDS</span><span class="stat-value" id="metaRounds">0</span></div>
+    <div class="stat-cell"><span class="stat-label">LATENCY</span><span class="stat-value" id="metaTime">0MS</span></div>
+    <div class="stat-cell"><span class="stat-label">TOOL CALLS</span><span class="stat-value" id="metaCalls">0</span></div>
+  </div>
+  <div class="chat-input">
+    <span class="prompt-glyph">&gt;_</span>
+    <input type="text" id="chatInput" aria-label="Command input" placeholder="transmit directive..." onkeydown="if(event.key==='Enter')sendChat()" autocomplete="off">
+    <button class="trigger-btn" id="sendBtn" onclick="sendChat()">Transmit</button>
+  </div>
+</div>
