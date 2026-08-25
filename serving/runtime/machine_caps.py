@@ -123,6 +123,26 @@ def shell(command: str) -> str:
     return output or f"(no output, rc={result.returncode})"
 
 
+def python_exec(code: str) -> str:
+    """Run a short Python snippet (gated like system.shell)."""
+    import sys as _sys
+
+    if os.environ.get("SILVERWING_CODE_ALLOW") != "1":
+        raise PermissionError(
+            "code execution disabled - start server with SILVERWING_CODE_ALLOW=1"
+        )
+    result = subprocess.run(
+        [_sys.executable, "-c", code],
+        capture_output=True,
+        text=True,
+        timeout=20,
+    )
+    output = ((result.stdout or "") + (result.stderr or "")).strip()
+    if len(output) > MAX_OUTPUT_CHARS:
+        output = output[:MAX_OUTPUT_CHARS] + f"\n... [truncated, rc={result.returncode}]"
+    return output or f"(no output, rc={result.returncode})"
+
+
 def machine_capabilities(schema_cls: type) -> list[Any]:
     """Build CapabilitySchema instances (class injected to avoid import cycle)."""
     return [
@@ -163,6 +183,16 @@ def machine_capabilities(schema_cls: type) -> list[Any]:
             input_schema={"command": {"type": "string"}},
             tags=["machine", "admin", "dangerous"],
             fn=shell,
+        ),
+        schema_cls(
+            name="python_exec",
+            description=(
+                "Execute a short Python snippet and return its output "
+                "(server must be started with SILVERWING_CODE_ALLOW=1)"
+            ),
+            input_schema={"code": {"type": "string"}},
+            tags=["machine", "code", "dangerous"],
+            fn=python_exec,
         ),
     ]
 

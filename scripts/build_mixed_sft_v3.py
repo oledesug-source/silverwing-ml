@@ -66,13 +66,12 @@ def main() -> int:
         add(record)
 
     # ---- integrated tool-use traces (M21): model learns to call tools ----
-    tool_traces = ROOT / "experiments" / "sft" / "tool-traces-v1.jsonl"
-    n_tools = 0
-    if tool_traces.exists():
-        for line in tool_traces.read_text(encoding="utf-8").splitlines():
-            if line.strip():
-                add(json.loads(line))
-                n_tools += 1
+    for extra in ("tool-traces-v1.jsonl", "coding-v1.jsonl"):
+        trace_path = ROOT / "experiments" / "sft" / extra
+        if trace_path.exists():
+            for line in trace_path.read_text(encoding="utf-8").splitlines():
+                if line.strip():
+                    add(json.loads(line))
 
     random.Random(args.seed + 7).shuffle(records)
 
