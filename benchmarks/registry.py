@@ -54,4 +54,10 @@ def default_registry() -> BenchmarkRegistry:
     math_v1 = Path(__file__).resolve().parent / "math" / "math-v1.jsonl"
     if math_v1.exists():
         registry.register("math-benchmark-v1", math_v1, "numeric", "M09 held-out mathematics benchmark")
+    unified_v2 = Path(__file__).resolve().parent / "unified" / "unified-v2.jsonl"
+    if unified_v2.exists():
+        registry.register(
+            "unified-benchmark-v2", unified_v2, "numeric",
+            "M20 held-out evaluation across all 16 lesson-plan topics",
+        )
     return registry

@@ -1,0 +1,25 @@
+{
+  "benchmark": "unified-benchmark-v2",
+  "seed": 42,
+  "per_topic": 20,
+  "topics": [
+    "arithmetic",
+    "geometry",
+    "probability",
+    "algebra",
+    "linear_equations",
+    "functions",
+    "number_theory",
+    "statistics",
+    "trigonometry",
+    "differentiation",
+    "integration",
+    "linear_algebra",
+    "advanced_probability",
+    "programming",
+    "machine_language",
+    "networking"
+  ],
+  "total": 320,
+  "path": "F:\\AI\\Silverwing-ML\\benchmarks\\unified\\unified-v2.jsonl"
+}

@@ -1,0 +1,320 @@
+{"id": "uni-arithmetic-0000", "prompt": "Compute 755 x 25 - 2. Reply with the number only.", "reference": "18873", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0001", "prompt": "Compute 860 x 46 - 5. Reply with the number only.", "reference": "39555", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0002", "prompt": "Compute 329 x 28 - 3. Reply with the number only.", "reference": "9209", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0003", "prompt": "Compute 793 x 80 - 3. Reply with the number only.", "reference": "63437", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0004", "prompt": "Compute 705 x 65 - 2. Reply with the number only.", "reference": "45823", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0005", "prompt": "Compute 131 x 22 - 5. Reply with the number only.", "reference": "2877", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0006", "prompt": "Compute 339 x 75 - 11. Reply with the number only.", "reference": "25414", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0007", "prompt": "Compute 128 x 82 - 5. Reply with the number only.", "reference": "10491", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0008", "prompt": "Compute 834 x 94 - 10. Reply with the number only.", "reference": "78386", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0009", "prompt": "Compute 530 x 39 - 9. Reply with the number only.", "reference": "20661", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0010", "prompt": "Compute 704 x 46 - 2. Reply with the number only.", "reference": "32382", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0011", "prompt": "Compute 878 x 31 - 8. Reply with the number only.", "reference": "27210", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0012", "prompt": "Compute 449 x 46 - 4. Reply with the number only.", "reference": "20650", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0013", "prompt": "Compute 321 x 54 - 3. Reply with the number only.", "reference": "17331", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0014", "prompt": "Compute 195 x 59 - 3. Reply with the number only.", "reference": "11502", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0015", "prompt": "Compute 468 x 55 - 11. Reply with the number only.", "reference": "25729", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0016", "prompt": "Compute 371 x 16 - 9. Reply with the number only.", "reference": "5927", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0017", "prompt": "Compute 650 x 26 - 8. Reply with the number only.", "reference": "16892", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0018", "prompt": "Compute 181 x 81 - 6. Reply with the number only.", "reference": "14655", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-arithmetic-0019", "prompt": "Compute 950 x 91 - 11. Reply with the number only.", "reference": "86439", "category": "arithmetic", "task_type": "numeric"}
+{"id": "uni-geometry-0000", "prompt": "A rectangle measures 30 cm by 17 cm. How many square centimeters is its area?", "reference": "510", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0001", "prompt": "A rectangle measures 52 cm by 9 cm. How many square centimeters is its area?", "reference": "468", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0002", "prompt": "A rectangle measures 9 cm by 19 cm. How many square centimeters is its area?", "reference": "171", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0003", "prompt": "A rectangle measures 56 cm by 23 cm. How many square centimeters is its area?", "reference": "1288", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0004", "prompt": "A rectangle measures 12 cm by 19 cm. How many square centimeters is its area?", "reference": "228", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0005", "prompt": "A rectangle measures 13 cm by 29 cm. How many square centimeters is its area?", "reference": "377", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0006", "prompt": "A rectangle measures 24 cm by 34 cm. How many square centimeters is its area?", "reference": "816", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0007", "prompt": "A rectangle measures 47 cm by 28 cm. How many square centimeters is its area?", "reference": "1316", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0008", "prompt": "A rectangle measures 17 cm by 28 cm. How many square centimeters is its area?", "reference": "476", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0009", "prompt": "A rectangle measures 29 cm by 18 cm. How many square centimeters is its area?", "reference": "522", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0010", "prompt": "A rectangle measures 49 cm by 22 cm. How many square centimeters is its area?", "reference": "1078", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0011", "prompt": "A rectangle measures 51 cm by 9 cm. How many square centimeters is its area?", "reference": "459", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0012", "prompt": "A rectangle measures 45 cm by 15 cm. How many square centimeters is its area?", "reference": "675", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0013", "prompt": "A rectangle measures 41 cm by 20 cm. How many square centimeters is its area?", "reference": "820", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0014", "prompt": "A rectangle measures 17 cm by 34 cm. How many square centimeters is its area?", "reference": "578", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0015", "prompt": "A rectangle measures 31 cm by 22 cm. How many square centimeters is its area?", "reference": "682", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0016", "prompt": "A rectangle measures 47 cm by 40 cm. How many square centimeters is its area?", "reference": "1880", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0017", "prompt": "A rectangle measures 21 cm by 25 cm. How many square centimeters is its area?", "reference": "525", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0018", "prompt": "A rectangle measures 60 cm by 8 cm. How many square centimeters is its area?", "reference": "480", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-geometry-0019", "prompt": "A rectangle measures 21 cm by 7 cm. How many square centimeters is its area?", "reference": "147", "category": "geometry", "task_type": "numeric"}
+{"id": "uni-probability-0000", "prompt": "One fair 8-sided die is rolled once. What is the probability of rolling a number of 5 or higher? Answer as a decimal fraction.", "reference": "0.5", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0001", "prompt": "One fair 8-sided die is rolled once. What is the probability of rolling a number of 2 or higher? Answer as a decimal fraction.", "reference": "0.875", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0002", "prompt": "One fair 6-sided die is rolled once. What is the probability of rolling a number of 4 or higher? Answer as a decimal fraction.", "reference": "0.5", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0003", "prompt": "One fair 6-sided die is rolled once. What is the probability of rolling a number of 5 or higher? Answer as a decimal fraction.", "reference": "0.3333", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0004", "prompt": "One fair 8-sided die is rolled once. What is the probability of rolling a number of 5 or higher? Answer as a decimal fraction.", "reference": "0.5", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0005", "prompt": "One fair 6-sided die is rolled once. What is the probability of rolling a number of 4 or higher? Answer as a decimal fraction.", "reference": "0.5", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0006", "prompt": "One fair 6-sided die is rolled once. What is the probability of rolling a number of 3 or higher? Answer as a decimal fraction.", "reference": "0.6667", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0007", "prompt": "One fair 8-sided die is rolled once. What is the probability of rolling a number of 5 or higher? Answer as a decimal fraction.", "reference": "0.5", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0008", "prompt": "One fair 8-sided die is rolled once. What is the probability of rolling a number of 4 or higher? Answer as a decimal fraction.", "reference": "0.625", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0009", "prompt": "One fair 6-sided die is rolled once. What is the probability of rolling a number of 3 or higher? Answer as a decimal fraction.", "reference": "0.6667", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0010", "prompt": "One fair 8-sided die is rolled once. What is the probability of rolling a number of 2 or higher? Answer as a decimal fraction.", "reference": "0.875", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0011", "prompt": "One fair 6-sided die is rolled once. What is the probability of rolling a number of 2 or higher? Answer as a decimal fraction.", "reference": "0.8333", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0012", "prompt": "One fair 6-sided die is rolled once. What is the probability of rolling a number of 3 or higher? Answer as a decimal fraction.", "reference": "0.6667", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0013", "prompt": "One fair 8-sided die is rolled once. What is the probability of rolling a number of 2 or higher? Answer as a decimal fraction.", "reference": "0.875", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0014", "prompt": "One fair 8-sided die is rolled once. What is the probability of rolling a number of 5 or higher? Answer as a decimal fraction.", "reference": "0.5", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0015", "prompt": "One fair 8-sided die is rolled once. What is the probability of rolling a number of 4 or higher? Answer as a decimal fraction.", "reference": "0.625", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0016", "prompt": "One fair 6-sided die is rolled once. What is the probability of rolling a number of 2 or higher? Answer as a decimal fraction.", "reference": "0.8333", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0017", "prompt": "One fair 8-sided die is rolled once. What is the probability of rolling a number of 4 or higher? Answer as a decimal fraction.", "reference": "0.625", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0018", "prompt": "One fair 6-sided die is rolled once. What is the probability of rolling a number of 4 or higher? Answer as a decimal fraction.", "reference": "0.5", "category": "probability", "task_type": "numeric"}
+{"id": "uni-probability-0019", "prompt": "One fair 8-sided die is rolled once. What is the probability of rolling a number of 3 or higher? Answer as a decimal fraction.", "reference": "0.75", "category": "probability", "task_type": "numeric"}
+{"id": "uni-algebra-0000", "prompt": "Find n if 10 times n plus (32) equals -218. Numeric answer only.", "reference": "-25", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0001", "prompt": "Find n if 14 times n plus (4) equals -122. Numeric answer only.", "reference": "-9", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0002", "prompt": "Find n if 5 times n plus (56) equals 91. Numeric answer only.", "reference": "7", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0003", "prompt": "Find n if 4 times n plus (-22) equals 38. Numeric answer only.", "reference": "15", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0004", "prompt": "Find n if 13 times n plus (17) equals 108. Numeric answer only.", "reference": "7", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0005", "prompt": "Find n if 6 times n plus (-13) equals -109. Numeric answer only.", "reference": "-16", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0006", "prompt": "Find n if 5 times n plus (39) equals 84. Numeric answer only.", "reference": "9", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0007", "prompt": "Find n if 11 times n plus (16) equals -259. Numeric answer only.", "reference": "-25", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0008", "prompt": "Find n if 8 times n plus (-58) equals -10. Numeric answer only.", "reference": "6", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0009", "prompt": "Find n if 4 times n plus (52) equals 44. Numeric answer only.", "reference": "-2", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0010", "prompt": "Find n if 7 times n plus (-53) equals -123. Numeric answer only.", "reference": "-10", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0011", "prompt": "Find n if 6 times n plus (-50) equals 16. Numeric answer only.", "reference": "11", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0012", "prompt": "Find n if 4 times n plus (2) equals 86. Numeric answer only.", "reference": "21", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0013", "prompt": "Find n if 4 times n plus (8) equals 100. Numeric answer only.", "reference": "23", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0014", "prompt": "Find n if 5 times n plus (24) equals -61. Numeric answer only.", "reference": "-17", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0015", "prompt": "Find n if 10 times n plus (-39) equals 61. Numeric answer only.", "reference": "10", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0016", "prompt": "Find n if 7 times n plus (51) equals 107. Numeric answer only.", "reference": "8", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0017", "prompt": "Find n if 12 times n plus (-33) equals -9. Numeric answer only.", "reference": "2", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0018", "prompt": "Find n if 11 times n plus (33) equals 286. Numeric answer only.", "reference": "23", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-algebra-0019", "prompt": "Find n if 14 times n plus (31) equals -151. Numeric answer only.", "reference": "-13", "category": "algebra", "task_type": "numeric"}
+{"id": "uni-linear_equations-0000", "prompt": "Solve for x: 7x + 9y = -69, given that y = -3.", "reference": "-6", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0001", "prompt": "Solve for x: 9x + 3y = 120, given that y = 1.", "reference": "13", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0002", "prompt": "Solve for x: 3x + 7y = -80, given that y = -8.", "reference": "-8", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0003", "prompt": "Solve for x: 5x + 5y = -60, given that y = 3.", "reference": "-15", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0004", "prompt": "Solve for x: 2x + 5y = -95, given that y = -13.", "reference": "-15", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0005", "prompt": "Solve for x: 2x + 7y = 65, given that y = 13.", "reference": "-13", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0006", "prompt": "Solve for x: 5x + 6y = -59, given that y = 1.", "reference": "-13", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0007", "prompt": "Solve for x: 5x + 4y = 30, given that y = 0.", "reference": "6", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0008", "prompt": "Solve for x: 9x + 5y = 142, given that y = 14.", "reference": "8", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0009", "prompt": "Solve for x: 8x + 5y = 80, given that y = 0.", "reference": "10", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0010", "prompt": "Solve for x: 8x + 7y = -180, given that y = -12.", "reference": "-12", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0011", "prompt": "Solve for x: 9x + 2y = -22, given that y = -2.", "reference": "-2", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0012", "prompt": "Solve for x: 3x + 2y = 28, given that y = 5.", "reference": "6", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0013", "prompt": "Solve for x: 7x + 3y = 3, given that y = 8.", "reference": "-3", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0014", "prompt": "Solve for x: 5x + 9y = -121, given that y = -9.", "reference": "-8", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0015", "prompt": "Solve for x: 4x + 6y = -56, given that y = -2.", "reference": "-11", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0016", "prompt": "Solve for x: 3x + 9y = -75, given that y = -8.", "reference": "-1", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0017", "prompt": "Solve for x: 3x + 2y = 54, given that y = 12.", "reference": "10", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0018", "prompt": "Solve for x: 2x + 3y = 16, given that y = 2.", "reference": "5", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-linear_equations-0019", "prompt": "Solve for x: 5x + 4y = 106, given that y = 9.", "reference": "14", "category": "linear_equations", "task_type": "numeric"}
+{"id": "uni-functions-0000", "prompt": "If g(t) = 8t + (6), what is g(10)?", "reference": "86", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0001", "prompt": "If g(t) = 5t + (3), what is g(3)?", "reference": "18", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0002", "prompt": "If g(t) = 4t + (3), what is g(3)?", "reference": "15", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0003", "prompt": "If g(t) = 8t + (-1), what is g(10)?", "reference": "79", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0004", "prompt": "If g(t) = 6t + (4), what is g(11)?", "reference": "70", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0005", "prompt": "If g(t) = 9t + (-5), what is g(6)?", "reference": "49", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0006", "prompt": "If g(t) = 6t + (-3), what is g(3)?", "reference": "15", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0007", "prompt": "If g(t) = 2t + (1), what is g(3)?", "reference": "7", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0008", "prompt": "If g(t) = 2t + (9), what is g(10)?", "reference": "29", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0009", "prompt": "If g(t) = 4t + (-8), what is g(11)?", "reference": "36", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0010", "prompt": "If g(t) = 3t + (-4), what is g(4)?", "reference": "8", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0011", "prompt": "If g(t) = 3t + (-2), what is g(9)?", "reference": "25", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0012", "prompt": "If g(t) = 3t + (9), what is g(6)?", "reference": "27", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0013", "prompt": "If g(t) = 2t + (-7), what is g(9)?", "reference": "11", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0014", "prompt": "If g(t) = 7t + (-1), what is g(6)?", "reference": "41", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0015", "prompt": "If g(t) = 7t + (-2), what is g(7)?", "reference": "47", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0016", "prompt": "If g(t) = 8t + (-5), what is g(7)?", "reference": "51", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0017", "prompt": "If g(t) = 9t + (1), what is g(4)?", "reference": "37", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0018", "prompt": "If g(t) = 2t + (5), what is g(12)?", "reference": "29", "category": "functions", "task_type": "numeric"}
+{"id": "uni-functions-0019", "prompt": "If g(t) = 3t + (-7), what is g(11)?", "reference": "26", "category": "functions", "task_type": "numeric"}
+{"id": "uni-number_theory-0000", "prompt": "Calculate the greatest common divisor of 66 and 141.", "reference": "3", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0001", "prompt": "Calculate the greatest common divisor of 79 and 45.", "reference": "1", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0002", "prompt": "Calculate the greatest common divisor of 101 and 29.", "reference": "1", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0003", "prompt": "Calculate the greatest common divisor of 74 and 106.", "reference": "2", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0004", "prompt": "Calculate the greatest common divisor of 84 and 52.", "reference": "4", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0005", "prompt": "Calculate the greatest common divisor of 124 and 151.", "reference": "1", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0006", "prompt": "Calculate the greatest common divisor of 192 and 89.", "reference": "1", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0007", "prompt": "Calculate the greatest common divisor of 168 and 179.", "reference": "1", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0008", "prompt": "Calculate the greatest common divisor of 147 and 14.", "reference": "7", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0009", "prompt": "Calculate the greatest common divisor of 182 and 153.", "reference": "1", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0010", "prompt": "Calculate the greatest common divisor of 88 and 181.", "reference": "1", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0011", "prompt": "Calculate the greatest common divisor of 38 and 46.", "reference": "2", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0012", "prompt": "Calculate the greatest common divisor of 79 and 41.", "reference": "1", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0013", "prompt": "Calculate the greatest common divisor of 39 and 153.", "reference": "3", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0014", "prompt": "Calculate the greatest common divisor of 51 and 81.", "reference": "3", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0015", "prompt": "Calculate the greatest common divisor of 84 and 166.", "reference": "2", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0016", "prompt": "Calculate the greatest common divisor of 65 and 195.", "reference": "65", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0017", "prompt": "Calculate the greatest common divisor of 99 and 64.", "reference": "1", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0018", "prompt": "Calculate the greatest common divisor of 187 and 174.", "reference": "1", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-number_theory-0019", "prompt": "Calculate the greatest common divisor of 79 and 141.", "reference": "1", "category": "number_theory", "task_type": "numeric"}
+{"id": "uni-statistics-0000", "prompt": "For the population [23, 24, 25, 26, 27], compute the variance (mean mu = 25).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0001", "prompt": "For the population [16, 17, 18, 19, 20], compute the variance (mean mu = 18).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0002", "prompt": "For the population [36, 37, 38, 39, 40], compute the variance (mean mu = 38).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0003", "prompt": "For the population [37, 38, 39, 40, 41], compute the variance (mean mu = 39).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0004", "prompt": "For the population [35, 36, 37, 38, 39], compute the variance (mean mu = 37).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0005", "prompt": "For the population [9, 10, 11, 12, 13], compute the variance (mean mu = 11).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0006", "prompt": "For the population [10, 11, 12, 13, 14], compute the variance (mean mu = 12).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0007", "prompt": "For the population [28, 29, 30, 31, 32], compute the variance (mean mu = 30).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0008", "prompt": "For the population [21, 22, 23, 24, 25], compute the variance (mean mu = 23).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0009", "prompt": "For the population [34, 35, 36, 37, 38], compute the variance (mean mu = 36).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0010", "prompt": "For the population [16, 17, 18, 19, 20], compute the variance (mean mu = 18).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0011", "prompt": "For the population [9, 10, 11, 12, 13], compute the variance (mean mu = 11).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0012", "prompt": "For the population [8, 9, 10, 11, 12], compute the variance (mean mu = 10).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0013", "prompt": "For the population [18, 19, 20, 21, 22], compute the variance (mean mu = 20).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0014", "prompt": "For the population [32, 33, 34, 35, 36], compute the variance (mean mu = 34).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0015", "prompt": "For the population [12, 13, 14, 15, 16], compute the variance (mean mu = 14).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0016", "prompt": "For the population [28, 29, 30, 31, 32], compute the variance (mean mu = 30).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0017", "prompt": "For the population [16, 17, 18, 19, 20], compute the variance (mean mu = 18).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0018", "prompt": "For the population [13, 14, 15, 16, 17], compute the variance (mean mu = 15).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-statistics-0019", "prompt": "For the population [31, 32, 33, 34, 35], compute the variance (mean mu = 33).", "reference": "2", "category": "statistics", "task_type": "numeric"}
+{"id": "uni-trigonometry-0000", "prompt": "To four decimals, what is the cosine of 45 degrees?", "reference": "0.7071", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0001", "prompt": "To four decimals, what is the sine of 60 degrees?", "reference": "0.866", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0002", "prompt": "To four decimals, what is the sine of 30 degrees?", "reference": "0.5", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0003", "prompt": "To four decimals, what is the sine of 30 degrees?", "reference": "0.5", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0004", "prompt": "To four decimals, what is the sine of 60 degrees?", "reference": "0.866", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0005", "prompt": "To four decimals, what is the sine of 60 degrees?", "reference": "0.866", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0006", "prompt": "To four decimals, what is the sine of 45 degrees?", "reference": "0.7071", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0007", "prompt": "To four decimals, what is the sine of 45 degrees?", "reference": "0.7071", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0008", "prompt": "To four decimals, what is the sine of 30 degrees?", "reference": "0.5", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0009", "prompt": "To four decimals, what is the cosine of 45 degrees?", "reference": "0.7071", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0010", "prompt": "To four decimals, what is the sine of 30 degrees?", "reference": "0.5", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0011", "prompt": "To four decimals, what is the sine of 45 degrees?", "reference": "0.7071", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0012", "prompt": "To four decimals, what is the sine of 60 degrees?", "reference": "0.866", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0013", "prompt": "To four decimals, what is the sine of 60 degrees?", "reference": "0.866", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0014", "prompt": "To four decimals, what is the cosine of 45 degrees?", "reference": "0.7071", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0015", "prompt": "To four decimals, what is the sine of 60 degrees?", "reference": "0.866", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0016", "prompt": "To four decimals, what is the sine of 30 degrees?", "reference": "0.5", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0017", "prompt": "To four decimals, what is the sine of 30 degrees?", "reference": "0.5", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0018", "prompt": "To four decimals, what is the sine of 30 degrees?", "reference": "0.5", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-trigonometry-0019", "prompt": "To four decimals, what is the sine of 45 degrees?", "reference": "0.7071", "category": "trigonometry", "task_type": "numeric"}
+{"id": "uni-differentiation-0000", "prompt": "f(x) = 4x^4. Evaluate the derivative f'(3). Integer answer.", "reference": "432", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0001", "prompt": "f(x) = 8x^4. Evaluate the derivative f'(6). Integer answer.", "reference": "6912", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0002", "prompt": "f(x) = 5x^3. Evaluate the derivative f'(2). Integer answer.", "reference": "60", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0003", "prompt": "f(x) = 3x^3. Evaluate the derivative f'(1). Integer answer.", "reference": "9", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0004", "prompt": "f(x) = 9x^2. Evaluate the derivative f'(2). Integer answer.", "reference": "36", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0005", "prompt": "f(x) = 9x^3. Evaluate the derivative f'(3). Integer answer.", "reference": "243", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0006", "prompt": "f(x) = 5x^2. Evaluate the derivative f'(1). Integer answer.", "reference": "10", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0007", "prompt": "f(x) = 5x^3. Evaluate the derivative f'(3). Integer answer.", "reference": "135", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0008", "prompt": "f(x) = 6x^2. Evaluate the derivative f'(3). Integer answer.", "reference": "36", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0009", "prompt": "f(x) = 7x^4. Evaluate the derivative f'(5). Integer answer.", "reference": "3500", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0010", "prompt": "f(x) = 8x^4. Evaluate the derivative f'(5). Integer answer.", "reference": "4000", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0011", "prompt": "f(x) = 7x^2. Evaluate the derivative f'(1). Integer answer.", "reference": "14", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0012", "prompt": "f(x) = 6x^2. Evaluate the derivative f'(5). Integer answer.", "reference": "60", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0013", "prompt": "f(x) = 6x^2. Evaluate the derivative f'(1). Integer answer.", "reference": "12", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0014", "prompt": "f(x) = 8x^3. Evaluate the derivative f'(6). Integer answer.", "reference": "864", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0015", "prompt": "f(x) = 7x^3. Evaluate the derivative f'(5). Integer answer.", "reference": "525", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0016", "prompt": "f(x) = 3x^3. Evaluate the derivative f'(5). Integer answer.", "reference": "225", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0017", "prompt": "f(x) = 5x^3. Evaluate the derivative f'(1). Integer answer.", "reference": "15", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0018", "prompt": "f(x) = 8x^2. Evaluate the derivative f'(5). Integer answer.", "reference": "80", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-differentiation-0019", "prompt": "f(x) = 5x^3. Evaluate the derivative f'(4). Integer answer.", "reference": "240", "category": "differentiation", "task_type": "numeric"}
+{"id": "uni-integration-0000", "prompt": "Compute the definite integral of 2x from 0 to 3.", "reference": "9", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0001", "prompt": "Compute the definite integral of 6x from 0 to 3.", "reference": "27", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0002", "prompt": "Compute the definite integral of 8x from 0 to 1.", "reference": "4", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0003", "prompt": "Compute the definite integral of 8x from 0 to 3.", "reference": "36", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0004", "prompt": "Compute the definite integral of 6x from 0 to 3.", "reference": "27", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0005", "prompt": "Compute the definite integral of 7x from 0 to 4.", "reference": "56", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0006", "prompt": "Compute the definite integral of 4x from 0 to 4.", "reference": "32", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0007", "prompt": "Compute the definite integral of 8x from 0 to 3.", "reference": "36", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0008", "prompt": "Compute the definite integral of 6x from 0 to 2.", "reference": "12", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0009", "prompt": "Compute the definite integral of 3x from 0 to 4.", "reference": "24", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0010", "prompt": "Compute the definite integral of 7x from 0 to 4.", "reference": "56", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0011", "prompt": "Compute the definite integral of 7x from 0 to 2.", "reference": "14", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0012", "prompt": "Compute the definite integral of 6x from 0 to 5.", "reference": "75", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0013", "prompt": "Compute the definite integral of 4x from 0 to 4.", "reference": "32", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0014", "prompt": "Compute the definite integral of 6x from 0 to 1.", "reference": "3", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0015", "prompt": "Compute the definite integral of 4x from 0 to 3.", "reference": "18", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0016", "prompt": "Compute the definite integral of 3x from 0 to 4.", "reference": "24", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0017", "prompt": "Compute the definite integral of 8x from 0 to 5.", "reference": "100", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0018", "prompt": "Compute the definite integral of 6x from 0 to 3.", "reference": "27", "category": "integration", "task_type": "numeric"}
+{"id": "uni-integration-0019", "prompt": "Compute the definite integral of 5x from 0 to 4.", "reference": "40", "category": "integration", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0000", "prompt": "For the 2x2 grid [5, -2; 3, 2], give its determinant.", "reference": "16", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0001", "prompt": "A square matrix has diagonal entries -4 and 0, and one off-diagonal entry 4. What is its trace?", "reference": "-4", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0002", "prompt": "Tuples u = (-3, 1, 3) and v = (3, 2, -2). Their scalar product equals?", "reference": "-13", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0003", "prompt": "Tuples u = (6, 5, -4) and v = (3, -3, -4). Their scalar product equals?", "reference": "19", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0004", "prompt": "Tuples u = (-5, -7, -7) and v = (-4, 0, 2). Their scalar product equals?", "reference": "6", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0005", "prompt": "Tuples u = (0, -1, 7) and v = (3, 2, -4). Their scalar product equals?", "reference": "-30", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0006", "prompt": "A square matrix has diagonal entries 3 and 0, and one off-diagonal entry 1. What is its trace?", "reference": "3", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0007", "prompt": "For the 2x2 grid [-2, -3; 5, -5], give its determinant.", "reference": "25", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0008", "prompt": "Tuples u = (5, -1, -4) and v = (-5, 5, 4). Their scalar product equals?", "reference": "-46", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0009", "prompt": "A square matrix has diagonal entries 5 and 0, and one off-diagonal entry -6. What is its trace?", "reference": "5", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0010", "prompt": "A square matrix has diagonal entries -2 and 0, and one off-diagonal entry -5. What is its trace?", "reference": "-2", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0011", "prompt": "For the 2x2 grid [-3, 2; 5, 3], give its determinant.", "reference": "-19", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0012", "prompt": "A square matrix has diagonal entries 1 and 0, and one off-diagonal entry 6. What is its trace?", "reference": "1", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0013", "prompt": "For the 2x2 grid [4, 3; 1, 3], give its determinant.", "reference": "9", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0014", "prompt": "For the 2x2 grid [-3, 2; 2, -1], give its determinant.", "reference": "-1", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0015", "prompt": "Tuples u = (6, 3, -3) and v = (5, 5, 1). Their scalar product equals?", "reference": "42", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0016", "prompt": "For the 2x2 grid [5, -2; -1, 2], give its determinant.", "reference": "8", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0017", "prompt": "Tuples u = (4, -3, -4) and v = (-3, -2, -2). Their scalar product equals?", "reference": "2", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0018", "prompt": "A square matrix has diagonal entries -7 and 0, and one off-diagonal entry -4. What is its trace?", "reference": "-7", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-linear_algebra-0019", "prompt": "Tuples u = (-4, -1, 4) and v = (-5, 4, -4). Their scalar product equals?", "reference": "0", "category": "linear_algebra", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0000", "prompt": "From 9 candidates, how many distinct unordered teams of exactly 3 can be formed?", "reference": "84", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0001", "prompt": "A uniform spinner labeled 1..8 is spun once. Expected value (2 dp)?", "reference": "4.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0002", "prompt": "A uniform spinner labeled 1..6 is spun once. Expected value (2 dp)?", "reference": "3.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0003", "prompt": "From 9 candidates, how many distinct unordered teams of exactly 3 can be formed?", "reference": "84", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0004", "prompt": "From 10 candidates, how many distinct unordered teams of exactly 3 can be formed?", "reference": "120", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0005", "prompt": "A uniform spinner labeled 1..6 is spun once. Expected value (2 dp)?", "reference": "3.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0006", "prompt": "A uniform spinner labeled 1..8 is spun once. Expected value (2 dp)?", "reference": "4.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0007", "prompt": "A uniform spinner labeled 1..8 is spun once. Expected value (2 dp)?", "reference": "4.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0008", "prompt": "From 9 candidates, how many distinct unordered teams of exactly 2 can be formed?", "reference": "36", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0009", "prompt": "A uniform spinner labeled 1..8 is spun once. Expected value (2 dp)?", "reference": "4.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0010", "prompt": "A uniform spinner labeled 1..6 is spun once. Expected value (2 dp)?", "reference": "3.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0011", "prompt": "A uniform spinner labeled 1..8 is spun once. Expected value (2 dp)?", "reference": "4.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0012", "prompt": "A uniform spinner labeled 1..6 is spun once. Expected value (2 dp)?", "reference": "3.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0013", "prompt": "A uniform spinner labeled 1..6 is spun once. Expected value (2 dp)?", "reference": "3.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0014", "prompt": "From 9 candidates, how many distinct unordered teams of exactly 4 can be formed?", "reference": "126", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0015", "prompt": "From 6 candidates, how many distinct unordered teams of exactly 4 can be formed?", "reference": "15", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0016", "prompt": "A uniform spinner labeled 1..6 is spun once. Expected value (2 dp)?", "reference": "3.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0017", "prompt": "A uniform spinner labeled 1..6 is spun once. Expected value (2 dp)?", "reference": "3.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0018", "prompt": "From 8 candidates, how many distinct unordered teams of exactly 3 can be formed?", "reference": "56", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-advanced_probability-0019", "prompt": "A uniform spinner labeled 1..6 is spun once. Expected value (2 dp)?", "reference": "3.5", "category": "advanced_probability", "task_type": "numeric"}
+{"id": "uni-programming-0000", "prompt": "A loop accumulates these values into a running sum: 2, 4, 6, 8, 10, 12. What is the final sum?", "reference": "42", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0001", "prompt": "A loop accumulates these values into a running sum: 2, 4, 6, 8, 10. What is the final sum?", "reference": "30", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0002", "prompt": "A loop accumulates these values into a running sum: 2, 4, 6, 8, 10. What is the final sum?", "reference": "30", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0003", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4, 5. What is the final sum?", "reference": "15", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0004", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4, 5, 6. What is the final sum?", "reference": "21", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0005", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4, 5, 6, 7, 8. What is the final sum?", "reference": "36", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0006", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4, 5. What is the final sum?", "reference": "15", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0007", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4, 5, 6, 7, 8. What is the final sum?", "reference": "36", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0008", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4, 5, 6, 7, 8, 9. What is the final sum?", "reference": "45", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0009", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4, 5, 6, 7, 8, 9. What is the final sum?", "reference": "45", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0010", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4. What is the final sum?", "reference": "10", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0011", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4, 5, 6, 7, 8, 9. What is the final sum?", "reference": "45", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0012", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4, 5, 6, 7. What is the final sum?", "reference": "28", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0013", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4. What is the final sum?", "reference": "10", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0014", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4, 5, 6. What is the final sum?", "reference": "21", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0015", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4, 5, 6, 7. What is the final sum?", "reference": "28", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0016", "prompt": "A loop accumulates these values into a running sum: 2, 4, 6, 8, 10, 12. What is the final sum?", "reference": "42", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0017", "prompt": "A loop accumulates these values into a running sum: 2, 4, 6, 8, 10, 12, 14, 16, 18. What is the final sum?", "reference": "90", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0018", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4. What is the final sum?", "reference": "10", "category": "programming", "task_type": "numeric"}
+{"id": "uni-programming-0019", "prompt": "A loop accumulates these values into a running sum: 1, 2, 3, 4, 5, 6, 7, 8, 9. What is the final sum?", "reference": "45", "category": "programming", "task_type": "numeric"}
+{"id": "uni-machine_language-0000", "prompt": "Bitwise OR of 158 and 16 equals what integer?", "reference": "158", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0001", "prompt": "Bitwise OR of 183 and 106 equals what integer?", "reference": "255", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0002", "prompt": "Bitwise OR of 193 and 60 equals what integer?", "reference": "253", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0003", "prompt": "The byte 0b10100000 represents which base-ten value?", "reference": "160", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0004", "prompt": "The byte 0b00100011 represents which base-ten value?", "reference": "35", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0005", "prompt": "Bitwise OR of 185 and 163 equals what integer?", "reference": "187", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0006", "prompt": "The byte 0b11010100 represents which base-ten value?", "reference": "212", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0007", "prompt": "The byte 0b01100001 represents which base-ten value?", "reference": "97", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0008", "prompt": "Bitwise OR of 104 and 27 equals what integer?", "reference": "123", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0009", "prompt": "Bitwise OR of 117 and 135 equals what integer?", "reference": "247", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0010", "prompt": "The byte 0b01110111 represents which base-ten value?", "reference": "119", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0011", "prompt": "Bitwise OR of 127 and 191 equals what integer?", "reference": "255", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0012", "prompt": "The byte 0b01111000 represents which base-ten value?", "reference": "120", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0013", "prompt": "The byte 0b11000100 represents which base-ten value?", "reference": "196", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0014", "prompt": "Bitwise OR of 147 and 133 equals what integer?", "reference": "151", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0015", "prompt": "Bitwise OR of 197 and 161 equals what integer?", "reference": "229", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0016", "prompt": "Bitwise OR of 72 and 32 equals what integer?", "reference": "104", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0017", "prompt": "Bitwise OR of 125 and 72 equals what integer?", "reference": "125", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0018", "prompt": "Bitwise OR of 166 and 181 equals what integer?", "reference": "183", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-machine_language-0019", "prompt": "Bitwise OR of 17 and 136 equals what integer?", "reference": "153", "category": "machine_language", "task_type": "numeric"}
+{"id": "uni-networking-0000", "prompt": "On what TCP port does the DNS protocol conventionally listen? Number only.", "reference": "53", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0001", "prompt": "On what TCP port does the DNS protocol conventionally listen? Number only.", "reference": "53", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0002", "prompt": "On what TCP port does the HTTP protocol conventionally listen? Number only.", "reference": "80", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0003", "prompt": "On what TCP port does the HTTP protocol conventionally listen? Number only.", "reference": "80", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0004", "prompt": "On what TCP port does the SMTP protocol conventionally listen? Number only.", "reference": "25", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0005", "prompt": "How many usable host addresses exist in an IPv4 /28 subnet?", "reference": "14", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0006", "prompt": "How many usable host addresses exist in an IPv4 /24 subnet?", "reference": "254", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0007", "prompt": "How many usable host addresses exist in an IPv4 /27 subnet?", "reference": "30", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0008", "prompt": "On what TCP port does the SMTP protocol conventionally listen? Number only.", "reference": "25", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0009", "prompt": "How many usable host addresses exist in an IPv4 /27 subnet?", "reference": "30", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0010", "prompt": "On what TCP port does the HTTPS protocol conventionally listen? Number only.", "reference": "443", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0011", "prompt": "How many usable host addresses exist in an IPv4 /24 subnet?", "reference": "254", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0012", "prompt": "On what TCP port does the DNS protocol conventionally listen? Number only.", "reference": "53", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0013", "prompt": "On what TCP port does the DNS protocol conventionally listen? Number only.", "reference": "53", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0014", "prompt": "On what TCP port does the SMTP protocol conventionally listen? Number only.", "reference": "25", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0015", "prompt": "On what TCP port does the HTTPS protocol conventionally listen? Number only.", "reference": "443", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0016", "prompt": "On what TCP port does the HTTPS protocol conventionally listen? Number only.", "reference": "443", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0017", "prompt": "On what TCP port does the HTTP protocol conventionally listen? Number only.", "reference": "80", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0018", "prompt": "On what TCP port does the HTTP protocol conventionally listen? Number only.", "reference": "80", "category": "networking", "task_type": "numeric"}
+{"id": "uni-networking-0019", "prompt": "On what TCP port does the HTTP protocol conventionally listen? Number only.", "reference": "80", "category": "networking", "task_type": "numeric"}

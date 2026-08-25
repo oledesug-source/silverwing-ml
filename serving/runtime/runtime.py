@@ -158,6 +158,17 @@ class Runtime:
         for cap in builtin_tools:
             self._capability_registry.register(cap)
 
+        # Machine-control capabilities (M20): read-only host introspection
+        # always on; system.shell double-gated via SILVERWING_SHELL_ALLOW.
+        try:
+            from serving.runtime.machine_caps import machine_capabilities
+
+            for cap in machine_capabilities(CapabilitySchema):
+                self._capability_registry.register(cap)
+            self._log("machine-control capabilities registered")
+        except Exception as exc:  # pragma: no cover - defensive
+            self._log(f"machine capabilities unavailable: {exc}")
+
         # Wrap the foundation Generator in the platform ModelProvider
         # interface so every consumer (orchestration loop, OpenAI-compatible
         # chat completions) speaks InferenceRequest/InferenceResponse.

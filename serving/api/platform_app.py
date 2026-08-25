@@ -140,6 +140,54 @@ def _is_math_query(text: str) -> bool:
     return bool(_MATH_HINT_RE.search(text or ""))
 
 
+# ---------------------------------------------------------------------------
+# Integrated agentic loop (M21): the model itself decides when to invoke
+# capabilities. Tools are injected into its context as a text protocol; any
+# <tool>{...}</tool> span it emits is executed by the platform and the result
+# fed back until it answers. No named modules on the user side.
+# ---------------------------------------------------------------------------
+
+_AGENT_SYSTEM = (
+    "You are Silverwing. You can use tools inside your answer.\n"
+    "To run a tool, write exactly:\n"
+    '<tool>{"name": "...", "arguments": {...}}</tool>\n'
+    "The platform replaces the span with <result>...</result> and you continue.\n"
+    "Show any formula you use before computing. Answer the user directly when ready.\n"
+    "Example:\n"
+    "Area uses A = pi*r^2.\n"
+    '<tool>{"name": "calculator", "arguments": {"expression": "3.14159*7**2"}}</tool>\n'
+    "<result>153.93791</result>\n"
+    "So the area is about 153.94 square units."
+)
+
+_TOOL_RE = re.compile(r"<tool>\s*(\{.*?\})\s*</tool>", re.DOTALL)
+
+
+def _extract_tool_call(text: str) -> tuple[str, dict] | None:
+    match = _TOOL_RE.search(text or "")
+    if not match:
+        return None
+    try:
+        payload = json.loads(match.group(1))
+        return str(payload.get("name", "")), payload.get("arguments") or {}
+    except json.JSONDecodeError:
+        return None
+
+
+def _run_capability(registry: Any, name: str, arguments: dict) -> tuple[bool, str]:
+    try:
+        from intelligence.tools.protocol import ToolCall
+
+        args_str = ", ".join(f"{k}={v}" for k, v in arguments.items())
+        call = ToolCall(tool_name=name, arguments=args_str)
+        result = registry.execute_call(call)
+    except Exception as exc:
+        return False, f"error: {exc}"
+    if getattr(result, "success", True):
+        return True, str(getattr(result, "output", "") or "")
+    return False, f"error: {getattr(result, 'error', 'unknown')}"
+
+
 def _messages_to_prompt(messages: list[ChatCompletionsMessage]) -> str:
     """Flatten an OpenAI-style message list into the SFT training format.
 
@@ -674,23 +722,74 @@ def create_app(
             usage_block = {
                 "prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0,
             }
+            tool_events: list[dict[str, Any]] = []
         else:
             try:
                 from silverwing_platform.models import GenerationConfig, InferenceRequest
 
-                config = GenerationConfig(
-                    max_new_tokens=body.max_tokens,
-                    temperature=body.temperature,
-                    top_p=body.top_p,
-                )
-                prompt = _messages_to_prompt(body.messages)
-                response = generator.infer(
-                    InferenceRequest(prompt=prompt, config=config)
-                )
+                # Integrated agentic loop: model decides when to use tools.
+                messages_for_model = [
+                    m.model_dump() if hasattr(m, "model_dump") else dict(m)
+                    for m in body.messages
+                ]
+                if not any(
+                    (m.get("role") if isinstance(m, dict) else m.role) == "system"
+                    for m in messages_for_model
+                ):
+                    messages_for_model.insert(0, {"role": "system", "content": _AGENT_SYSTEM})
+
+                # A trailing assistant message acts as a prefill: its content
+                # counts as part of the model output for tool extraction.
+                prefill = ""
+                if messages_for_model:
+                    last = messages_for_model[-1]
+                    last_role = last.get("role") if isinstance(last, dict) else last.role
+                    last_content = last.get("content") if isinstance(last, dict) else last.content
+                    if last_role == "assistant" and last_content:
+                        prefill = str(last_content)
+
+                tool_events = []
+                response = None
+                max_rounds = 3
+                for round_idx in range(max_rounds + 1):
+                    prompt = _messages_to_prompt([
+                        ChatCompletionsMessage(**m) if isinstance(m, dict) else m
+                        for m in messages_for_model
+                        if (m.get("content") if isinstance(m, dict) else m.content)
+                    ])
+                    response = generator.infer(
+                        InferenceRequest(
+                            prompt=prompt,
+                            config=GenerationConfig(
+                                max_new_tokens=body.max_tokens,
+                                temperature=body.temperature,
+                                top_p=body.top_p,
+                            ),
+                        )
+                    )
+                    combined = prefill + (response.text or "")
+                    call = _extract_tool_call(combined)
+                    if call is None or round_idx == max_rounds:
+                        reply_text = combined
+                        break
+                    name, arguments = call
+                    ok, output = _run_capability(registry, name, arguments)
+                    tool_events.append({
+                        "name": name,
+                        "arguments": arguments,
+                        "ok": ok,
+                        "output": output[:300],
+                    })
+                    messages_for_model.append({"role": "assistant", "content": combined})
+                    messages_for_model.append({
+                        "role": "user",
+                        "content": f"<result>{output}</result>\nContinue your answer to the user.",
+                    })
+                    prefill = ""
+
+                usage = getattr(response, "usage", None) or {}
             except Exception as exc:
                 return JSONResponse(_api(success=False, error=str(exc)), status_code=500)
-            usage = getattr(response, "usage", None) or {}
-            reply_text = response.text or ""
             usage_block = {
                 "prompt_tokens": usage.get("prompt_tokens", 0),
                 "completion_tokens": usage.get("generated_tokens", 0),
@@ -716,6 +815,7 @@ def create_app(
                     }
                     return f"data: {json.dumps(payload)}\n\n"
 
+                yield f"data: {json.dumps({'type': 'tool_events', 'tools': tool_events})}\n\n"
                 yield chunk({"role": "assistant"}, None)
                 words = reply_text.split(" ")
                 for i in range(0, len(words), 3):
@@ -754,6 +854,7 @@ def create_app(
                 }
             ],
             "usage": usage_block,
+            "tool_calls": tool_events,
         }
         return JSONResponse(payload)
 
