@@ -290,8 +290,8 @@ def main() -> int:
             "checkpoint_dir": str(sft_dir),
             "require_clean_repo": False,
             "device": "cpu",
-            "amp": True,
-            "amp_dtype": "float16",
+            "amp": device.startswith("cuda"),
+            **({"amp_dtype": "float16"} if device.startswith("cuda") else {}),
         })
         assert Path("experiments/sft/sft-v3-all.jsonl").exists(), \
             "sft-v3-all.jsonl missing - is the repo synced?"
@@ -318,8 +318,8 @@ def main() -> int:
             "checkpoint_dir": str(align_dir),
             "require_clean_repo": False,
             "device": "cpu",
-            "amp": True,
-            "amp_dtype": "float16",
+            "amp": device.startswith("cuda"),
+            **({"amp_dtype": "float16"} if device.startswith("cuda") else {}),
         })
         assert Path("experiments/alignment/dpo-v2-all.jsonl").exists(), \
             "dpo-v2-all.jsonl missing - is the repo synced?"
