@@ -169,6 +169,17 @@ class Runtime:
         except Exception as exc:  # pragma: no cover - defensive
             self._log(f"machine capabilities unavailable: {exc}")
 
+        # Self-awareness capabilities (M23): the model can inspect its own
+        # project to locate enhancement targets.
+        try:
+            from serving.runtime.self_caps import register_self_capabilities
+
+            for cap in register_self_capabilities(CapabilitySchema):
+                self._capability_registry.register(cap)
+            self._log("self-capabilities registered (project.status, project.gaps)")
+        except Exception as exc:  # pragma: no cover - defensive
+            self._log(f"self capabilities unavailable: {exc}")
+
         # Wrap the foundation Generator in the platform ModelProvider
         # interface so every consumer (orchestration loop, OpenAI-compatible
         # chat completions) speaks InferenceRequest/InferenceResponse.
