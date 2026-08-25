@@ -65,6 +65,15 @@ def main() -> int:
     for record in expand_bank(seed=args.seed):
         add(record)
 
+    # ---- integrated tool-use traces (M21): model learns to call tools ----
+    tool_traces = ROOT / "experiments" / "sft" / "tool-traces-v1.jsonl"
+    n_tools = 0
+    if tool_traces.exists():
+        for line in tool_traces.read_text(encoding="utf-8").splitlines():
+            if line.strip():
+                add(json.loads(line))
+                n_tools += 1
+
     random.Random(args.seed + 7).shuffle(records)
 
     output_path = ROOT / args.output
